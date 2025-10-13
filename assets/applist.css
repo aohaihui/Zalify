@@ -1,0 +1,187 @@
+.container_bg {
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex-grow: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.pc_layout {
+/*   width: 35%; */
+  width: 730px;
+}
+
+.mobile_layout {
+  width: 100%;
+}
+
+.title {
+  color: #343a40;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Montserrat";
+  margin: 30px 0px;
+}
+
+.applist_row_layout_pc {
+  width: 100%;
+  height: 240px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: -25px;
+}
+
+.app_image {
+  width: 100px;
+  height: 100px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+}
+
+.app_info_layout {
+  display: flex;
+  height: 100px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: left;
+  flex: 1;
+  margin-left: 10rpx;
+}
+
+.app_name {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  color: #212529;
+  margin-bottom: 7px;
+  font-family: "Montserrat";
+  font-weight: bold;
+}
+
+.app_desc {
+  line-height: 1.5;
+  font-size: 0.9rem;
+  color: #212529;
+  margin-bottom: 7px;
+  font-family: "Montserrat";
+}
+
+.app_support {
+  line-height: 1.5;
+  font-size: 0.8rem;
+  color: #777777;
+  font-family: "Montserrat";
+}
+
+.app_download_layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
+  width: 130px;
+}
+
+.download_icon {
+  width: 40px;
+  height: 40px;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #cccccc;
+}
+
+.applist_row_layout_mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.download_icon_mobile {
+  width: 140px;
+  height: 60px;
+}
+
+@media only screen and (max-width: 750px) {
+  .pc_layout {
+    display: none;
+  }
+
+  .line {
+    width: auto;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+  }
+
+  .app_image {
+    width: 130px;
+    height: 130px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .app_name {
+    margin-top: 10px;
+  }
+
+  .app_desc {
+    margin-top: 10px;
+    width: 80%;
+    font-size: 1rem;
+  }
+
+  .app_support {
+    width: 80%;
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+    line-height: 1.5;
+  }
+
+  .app_download_layout {
+    height: 80px;
+    width: auto;
+    justify-content: space-around;
+  }
+
+  .download_icon {
+    width: 140px;
+    height: 60px;
+  }
+
+  .download_btn {
+	position: relative;
+	width: 140px;
+    height: 60px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+  }
+
+  .download_btn a {
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	width: 100%;
+  	height: 100%;
+	z-index: 1;
+  }
+}
+
+@media only screen and (min-width: 750px) {
+  .mobile_layout {
+    display: none;
+  }
+}

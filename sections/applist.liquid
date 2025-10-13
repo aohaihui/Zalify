@@ -1,0 +1,317 @@
+{{ 'applist.css' | asset_url | stylesheet_tag }}
+
+<div class='container_bg'>
+  <div class='container'>
+    <div class='title'>{{ 'applist.title' | t }}</div>
+    <div class='pc_layout'>      
+      <div class='applist_row_layout_pc'>
+        <img class='app_image' src={{ section.settings.supercube_icon }}>
+        <div class='app_info_layout'>
+          <div class='app_name'>{{ 'applist.supercube_name' | t }}</div>
+          <div class='app_desc'>{{ 'applist.supercube_desc' | t }}</div>
+          <div class='app_support'>{{ 'applist.supercube_support' | t }}</div>
+        </div>
+        <div class='app_download_layout'>
+          <a href={{ section.settings.supercube_ios_url }} target="_blank">
+            <img class='download_icon' src={{ section.settings.ios_icon }}>
+          </a>
+          <a href={{ section.settings.supercube_android_url }}  target="_blank">
+            <img class='download_icon' src={{ section.settings.android_icon }}>
+          </a>
+        </div>
+      </div>
+
+      <div class='line'> </div>
+
+      <div class='applist_row_layout_pc'>
+        <img class='app_image' src={{ section.settings.smartfour_icon }}>
+        <div class='app_info_layout'>
+          <div class='app_name'>{{ 'applist.smartfour_name' | t }}</div>
+          <div class='app_desc'>{{ 'applist.smartfour_desc' | t }}</div>
+          <div class='app_support'>{{ 'applist.smartfour_support' | t }}</div>
+        </div>
+        <div class='app_download_layout'>
+          <a href={{ section.settings.smartfour_ios_url }} target="_blank">
+            <img class='download_icon' src={{ section.settings.ios_icon }}>
+          </a>
+          <a href={{ section.settings.smartfour_android_url }}  target="_blank">
+            <img class='download_icon' src={{ section.settings.android_icon }}>
+          </a>
+        </div>
+      </div>
+
+      <div class='line'> </div>
+
+      <div class='applist_row_layout_pc'>
+        <img class='app_image' src={{ section.settings.puzzleschool_icon }}>
+        <div class='app_info_layout'>
+          <div class="app_name">{{ 'applist.puzzleschool_name' | t }}</div>
+          <div class="app_desc">{{ 'applist.puzzleschool_desc' | t }}</div>
+          <div class="app_support">{{ 'applist.puzzleschool_support' | t }}</div>
+        </div>
+        <div class='app_download_layout'>
+          <a href={{ section.settings.puzzleschool_ios_url }} target="_blank">
+            <img class='download_icon' src={{ section.settings.ios_icon }}>
+          </a>
+          <a href={{ section.settings.puzzleschool_android_url }}  target="_blank">
+            <img class='download_icon' src={{ section.settings.android_icon }}>
+          </a>
+        </div>
+      </div>
+
+      <div class='line'> </div>
+
+      <div class='applist_row_layout_pc'>
+        <img class='app_image' src={{ section.settings.superslide_icon }}>
+        <div class='app_info_layout'>
+          <div class='app_name'>{{ 'applist.superslide_name' | t }}</div>
+          <div class='app_desc'>{{ 'applist.superslide_desc' | t }}</div>
+          <div class='app_support'>{{ 'applist.superslide_support' | t }}</div>
+        </div>
+        <div class='app_download_layout'>
+          <a href={{ section.settings.superslide_ios_url }} target="_blank">
+            <img class='download_icon' src={{ section.settings.ios_icon }}>
+          </a>
+          <a href={{ section.settings.superslide_android_url }}  target="_blank">
+            <img class='download_icon' src={{ section.settings.android_icon }}>
+          </a>
+        </div>
+      </div>
+
+      <div class='line'> </div>
+
+      <div class='applist_row_layout_pc'>
+        <img class='app_image' src={{ section.settings.superblock_icon }}>
+        <div class='app_info_layout'>
+          <div class="app_name">{{ 'applist.superblock_name' | t }}</div>
+          <div class="app_desc">{{ 'applist.superblock_desc' | t }}</div>
+          <div class="app_support">{{ 'applist.superblock_support' | t }}</div>
+        </div>
+        <div class='app_download_layout'>
+          <a href={{ section.settings.superblock_ios_url }} target="_blank">
+            <img class='download_icon' src={{ section.settings.ios_icon }}>
+          </a>
+          <a href={{ section.settings.superblock_android_url }}  target="_blank">
+            <img class='download_icon' src={{ section.settings.android_icon }}>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class='mobile_layout'>
+      <div class='applist_row_layout_mobile'>
+        <img class='app_image' src={{ section.settings.supercube_icon }}>
+        <div class="app_name">{{ 'applist.supercube_name' | t }}</div>
+        <div class="app_desc">{{ 'applist.supercube_desc' | t }}</div>
+        <div class="app_support">{{ 'applist.supercube_support' | t }}</div>
+        <div class='app_download_layout'>
+          <div class="download_btn" style="background-image: url({{ section.settings.ios_download_icon }})">
+        	<a href={{ section.settings.supercube_ios_url }}></a>
+          </div>
+          <div class="download_btn" style="background-image: url({{ section.settings.android_download_icon }})">
+        	<a href={{ section.settings.supercube_android_url }}></a>
+          </div>
+        </div>
+      </div>
+
+      <div class='line'> </div>
+
+      <div class='applist_row_layout_mobile'>
+        <img class='app_image' src={{ section.settings.smartfour_icon }}>
+        <div class="app_name">{{ 'applist.smartfour_name' | t }}</div>
+        <div class="app_desc">{{ 'applist.smartfour_desc' | t }}</div>
+        <div class="app_support">{{ 'applist.smartfour_support' | t }}</div>
+        <div class='app_download_layout'>
+          <div class="download_btn" style="background-image: url({{ section.settings.ios_download_icon }})">
+        	<a href={{ section.settings.smartfour_ios_url }}></a>
+          </div>
+          <div class="download_btn" style="background-image: url({{ section.settings.android_download_icon }})">
+        	<a href={{ section.settings.smartfour_android_url }}></a>
+          </div>
+        </div>
+      </div>
+
+      <div class='line'> </div>
+
+      <div class='applist_row_layout_mobile'>
+        <img class='app_image' src={{ section.settings.puzzleschool_icon }}>
+        <div class="app_name">{{ 'applist.puzzleschool_name' | t }}</div>
+        <div class="app_desc">{{ 'applist.puzzleschool_desc' | t }}</div>
+        <div class="app_support">{{ 'applist.puzzleschool_support' | t }}</div>
+        <div class='app_download_layout'>
+          <div class="download_btn" style="background-image: url({{ section.settings.ios_download_icon }})">
+        	<a href={{ section.settings.puzzleschool_ios_url }}></a>
+          </div>
+          <div class="download_btn" style="background-image: url({{ section.settings.android_download_icon }})">
+        	<a href={{ section.settings.puzzleschool_android_url }}></a>
+          </div>
+        </div>
+      </div>
+
+      <div class='line'> </div>
+
+      <div class='applist_row_layout_mobile'>
+        <img class='app_image' src={{ section.settings.superslide_icon }}>
+        <div class="app_name">{{ 'applist.superslide_name' | t }}</div>
+        <div class="app_desc">{{ 'applist.superslide_desc' | t }}</div>
+        <div class="app_support">{{ 'applist.superslide_support' | t }}</div>
+        <div class='app_download_layout'>
+          <div class="download_btn" style="background-image: url({{ section.settings.ios_download_icon }})">
+        	<a href={{ section.settings.superslide_ios_url }}></a>
+          </div>
+          <div class="download_btn" style="background-image: url({{ section.settings.android_download_icon }})">
+        	<a href={{ section.settings.superslide_android_url }}></a>
+          </div>
+        </div>
+      </div>
+
+      <div class='line'> </div>
+
+      <div class='applist_row_layout_mobile'>
+        <img class='app_image' src={{ section.settings.superblock_icon }}>
+        <div class="app_name">{{ 'applist.superblock_name' | t }}</div>
+        <div class="app_desc">{{ 'applist.superblock_desc' | t }}</div>
+        <div class="app_support">{{ 'applist.superblock_support' | t }}</div>
+        <div class='app_download_layout'>
+          <div class="download_btn" style="background-image: url({{ section.settings.ios_download_icon }})">
+        	<a href={{ section.settings.superblock_ios_url }}></a>
+          </div>
+          <div class="download_btn" style="background-image: url({{ section.settings.android_download_icon }})">
+        	<a href={{ section.settings.superblock_android_url }}></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+{% schema %}
+  {
+    "name": "AppList",
+    "settings": [
+      {
+        "type": "text",
+        "id": "puzzleschool_icon",
+        "default": "https://cdn.shopifycdn.net/s/files/1/0609/5611/5196/files/puzzleSchool.jpg?v=1661509234",
+        "label": "text"
+      },
+      {
+        "type": "text",
+        "id": "supercube_icon",
+        "default": "https://cdn.shopifycdn.net/s/files/1/0609/5611/5196/files/superCube.jpg?v=1661509234",
+        "label": "text"
+      },
+      {
+        "type": "text",
+        "id": "smartfour_icon",
+        "default": "https://cdn.shopifycdn.net/s/files/1/0609/5611/5196/files/smartFour.jpg?v=1661509235",
+        "label": "text"
+      },
+      {
+        "type": "text",
+        "id": "superslide_icon",
+        "default": "https://cdn.shopifycdn.net/s/files/1/0609/5611/5196/files/superSlide.jpg?v=1661509234",
+        "label": "text"
+      },
+      {
+        "type": "text",
+        "id": "superblock_icon",
+        "default": "https://cdn.shopify.com/s/files/1/0609/5611/5196/files/superBlock.jpg?v=1676343510",
+        "label": "text"
+      },
+      
+      {
+        "type": "text",
+        "id": "ios_icon",
+        "default": "https://cdn.shopifycdn.net/s/files/1/0609/5611/5196/files/ios.png?v=1661768018",
+        "label": "text"
+      },
+      {
+        "type": "text",
+        "id": "android_icon",
+        "default": "https://cdn.shopifycdn.net/s/files/1/0609/5611/5196/files/android.png?v=1661768017",
+        "label": "text"
+      },
+      {
+        "type": "text",
+        "id": "ios_download_icon",
+        "default": "https://cdn.shopify.com/s/files/1/0609/5611/5196/files/ios_download.png?v=1661942467",
+        "label": "text"
+      },
+      {
+        "type": "text",
+        "id": "android_download_icon",
+        "default": "https://cdn.shopify.com/s/files/1/0609/5611/5196/files/android_download.png?v=1661942461",
+        "label": "text"
+      },
+      
+      {
+        "type": "text",
+        "id": "puzzleschool_ios_url",
+        "default": "https://apps.apple.com/cn/app/%E9%AD%94%E6%96%B9%E5%AD%A6%E9%99%A2-%E6%95%99%E4%BD%A030%E7%A7%92%E8%BF%98%E5%8E%9F%E6%89%8B%E4%B8%8A%E9%AD%94%E6%96%B9/id1228471305",
+        "label": "text"
+      },
+      {
+        "type": "text",
+        "id": "puzzleschool_android_url",
+        "default": "https://play.google.com/store/apps/details?id=com.GiTeam.PuzzleSchool",
+        "label": "text"
+      },
+      {
+        "type": "text",
+        "id": "supercube_ios_url",
+        "default": "https://apps.apple.com/cn/app/%E8%B6%85%E7%BA%A7%E9%AD%94%E6%96%B9-%E9%A6%96%E4%B8%AA%E6%99%BA%E8%83%BD%E9%AD%94%E6%96%B9%E5%B9%B3%E5%8F%B0/id1317695009",
+        "label": "text"
+      },
+      {
+        "type": "text",
+        "id": "supercube_android_url",
+        "default": "https://play.google.com/store/apps/details?id=com.GiTeam.PuzzleSchoolGame",
+        "label": "text"
+      },
+      {
+        "type": "text",
+        "id": "smartfour_ios_url",
+        "default": "https://apps.apple.com/cn/app/智能四子棋/id1524139564",
+        "label": "text"
+      },
+      {
+        "type": "text",
+        "id": "smartfour_android_url",
+        "default": "https://play.google.com/store/apps/details?id=com.GiTeam.SmartFour",
+        "label": "text"
+      },
+      {
+        "type": "text",
+        "id": "superslide_ios_url",
+        "default": "https://apps.apple.com/cn/app/%E8%B6%85%E7%BA%A7%E5%8D%8E%E5%AE%B9%E9%81%93-by-giiker/id1540256291",
+        "label": "text"
+      },
+      {
+        "type": "text",
+        "id": "superslide_android_url",
+        "default": "https://play.google.com/store/apps/details?id=com.GiTeam.SuperSlide",
+        "label": "text"
+      },
+      {
+        "type": "text",
+        "id": "superblock_ios_url",
+        "default": "https://apps.apple.com/cn/app/superblock-puzzle-editor/id1630326260",
+        "label": "text"
+      },
+      {
+        "type": "text",
+        "id": "superblock_android_url",
+        "default": "https://play.google.com/store/apps/details?id=com.GiTeam.SuperBlock",
+        "label": "text"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
