@@ -1,3 +1,54 @@
+@font-face {
+  font-family: "Overlock";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url("{{ 'Overlock-Regular.ttf' | asset_url }}");
+}
+@font-face {
+  font-family: "Overlock";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url("{{ 'Overlock-Bold.ttf' | asset_url }}");
+}
+@font-face {
+  font-family: "Overlock";
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  src: url("{{ 'Overlock-Black.ttf' | asset_url }}");
+}
+@font-face {
+  font-family: "Overlock";
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  src: url("{{ 'Overlock-Italic.ttf' | asset_url }}");
+}
+@font-face {
+  font-family: "Overlock";
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+  src: url("{{ 'Overlock-BoldItalic.ttf' | asset_url }}");
+}
+@font-face {
+  font-family: "Overlock";
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+  src: url("{{ 'Overlock-BlackItalic.ttf' | asset_url }}");
+}
+@font-face {
+  font-family: 'Oslla' ;
+  src: url('https://cdn.shopify.com/s/files/1/0609/5611/5196/files/Oslla.ttf?v=1760510109') format('truetype'),
+       url('https://cdn.shopify.com/s/files/1/0609/5611/5196/files/Oslla.woff2?v=1760510109') format('woff2'),
+       url('https://cdn.shopify.com/s/files/1/0736/4961/9173/files/Oslla.woff?v=1760510109') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;  /* 添加这行改善字体加载性能 */
+}
 .pc-image {
   display: flex !important;
 }
@@ -55,7 +106,7 @@
 }
 .giiker-home-banner{
   width: 100%;
-  padding: 60px 0;
+  margin: 60px 0;
   .giiker-home-banner-item{
     width: 80%;
     border-radius: 30px;
@@ -64,4 +115,85 @@
 }
 .giiker-home-image-video{
   width: 100%;
+}
+.giiker-home-text-image-container{
+  width: 100%;
+  margin: 60px 0;
+  .giiker-home-text-image{
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+    display: flex;
+    gap: 60px;
+    .giiker-home-text-image-item{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &.giiker-home-text-image-item-reversal{
+        flex-direction: row-reverse;
+      }
+      .giiker-home-text-image-item-image{
+        width: 50%;
+        img{
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+      .giiker-home-text-image-item-content{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .giiker-home-text-image-item-content-background{
+          width: 100%;
+          position: absolute;
+          bottom: 10%;
+          right: -10%;
+          img{
+            object-fit: cover;
+          }
+        }
+        .giiker-home-text-image-item-title{
+
+          *{
+            font-weight: blod;
+            font-family: Oslla;
+            font-size: 72px;
+            line-height: 1;
+            margin: 0;
+            color: #000;
+          }
+        }
+        .giiker-home-text-image-item-detail{
+          margin-top: 60px;
+          *{
+            font-weight: 400;
+            font-family: Overlock;
+            font-size: 24px;
+            line-height: 36px;
+            margin: 0;
+            color: #000;
+          }
+        }
+        .giiker-home-text-image-item-button{
+          margin-top: 130px;
+          width: max-content;
+          background: #fff;
+          border-radius: 20px;
+          overflow: hidden;
+          padding: 12px 32px;
+          color: #000;
+          font-size: 24px;
+          line-height: 1;
+          font-weight: 400;
+          svg{
+            margin-left: 25px;
+          }
+        }
+      }
+    }
+  }
 }
