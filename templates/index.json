@@ -62,8 +62,8 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "title": "Play smarter. Stay connected.",
-            "detail": "GiiKER turns everyday play into meaningful moments—with classic games reimagined through smart tech and family-friendly fun.",
+            "title": "<p>Play smarter. Stay connected. </p>",
+            "detail": "<p>GiiKER turns everyday play into meaningful moments—with classic games reimagined through smart tech and family-friendly fun. </p>",
             "background_color": "",
             "background_image": "shopify://shop_images/1_cedbd247-d458-4b1b-897f-d0e18828b06f.png",
             "pc_image": "shopify://shop_images/2J2A6066_1.png",
@@ -76,8 +76,8 @@
           "type": "content",
           "settings": {
             "is_reversal": true,
-            "title": "Made for thinkers, not scrollers",
-            "detail": "We combine logic, fine-motor, and real-time feedback to create toys that challenge the brain and learn through play.",
+            "title": "<p>Made for thinkers, not scrollers</p>",
+            "detail": "<p>We combine logic, fine-motor, and real-time feedback to create toys that challenge the brain and learn through play.</p>",
             "background_color": "",
             "background_image": "shopify://shop_images/1_7d70a0c8-7306-4c7a-92b9-d7f837f892c8.png",
             "pc_image": "shopify://shop_images/4_1.png",
