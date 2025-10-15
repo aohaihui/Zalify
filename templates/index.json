@@ -24,10 +24,28 @@
             "mobile_image": "shopify://shop_images/image_26.png",
             "tablet_image": "shopify://shop_images/image_26_1.png"
           }
+        },
+        "banner_rdkVqq": {
+          "type": "banner",
+          "settings": {
+            "pc_image": "shopify://shop_images/image_26.png",
+            "mobile_image": "shopify://shop_images/image_26.png",
+            "tablet_image": "shopify://shop_images/image_26_1.png"
+          }
+        },
+        "banner_kL4TfF": {
+          "type": "banner",
+          "settings": {
+            "pc_image": "shopify://shop_images/image_26.png",
+            "mobile_image": "shopify://shop_images/image_26.png",
+            "tablet_image": "shopify://shop_images/image_26_1.png"
+          }
         }
       },
       "block_order": [
-        "banner_6N3TYW"
+        "banner_6N3TYW",
+        "banner_rdkVqq",
+        "banner_kL4TfF"
       ],
       "name": "Giiker Home Banner",
       "settings": {}
