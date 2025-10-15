@@ -154,7 +154,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="stylesheet" href="{{ 'giiker.css' | asset_url }}">
 </head>
 
-<body id="{{ page_title | handle }}" class="no-touchevents
+<body id="{{ page_title | handle }}" class="no-touchevents cc-animate-enabled
   {% if customer %} customer-logged-in {% endif %} 
   template-{{ template.name }} template-{{ template | replace: '.', ' ' | handle }}
   {% if settings.enable_quick_buy == false %} quick-buy-disabled {% endif %}

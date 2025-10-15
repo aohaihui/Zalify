@@ -48,19 +48,22 @@ body{
     display: flex !important;
   }
 }
+:root{
+  --aos-animate-duration: 0.6s;
+}
 .cc-animate-enabled [data-cc-animate] {
   opacity: 0;
 }
-@media (prefers-reduced-motion) {
-  .cc-animate-enabled [data-cc-animate] {
-    animation: none !important;
-    opacity: 1 !important;
-  }
-}
-.no-js .cc-animate-enabled [data-cc-animate] {
-  animation: none !important;
-  opacity: 1 !important;
-}
+// @media (prefers-reduced-motion) {
+//   .cc-animate-enabled [data-cc-animate] {
+//     animation: none !important;
+//     opacity: 1 !important;
+//   }
+// }
+// .no-js .cc-animate-enabled [data-cc-animate] {
+//   animation: none !important;
+//   opacity: 1 !important;
+// }
 
 @keyframes fade-in {
   0% {
@@ -101,7 +104,7 @@ body{
 }
 .giiker-home-text-image-container{
   width: 100%;
-  margin: 60px 0;
+  margin: 0 0 60px;
   .giiker-home-text-image{
     width: 100%;
     max-width: 1800px;
@@ -118,6 +121,9 @@ body{
       overflow: hidden;
       &.reversal{
         flex-direction: row-reverse;
+        .giiker-home-text-image-item-content{
+          padding-left: 6%;
+        }
         .giiker-home-text-image-item-content .giiker-home-text-image-item-content-background{
           position: absolute;
           bottom: 10%;
@@ -129,9 +135,11 @@ body{
       }
       .giiker-home-text-image-item-image{
         width: 50%;
+        align-self: stretch;
         img{
           width: 100%;
           object-fit: cover;
+          height: 100%;
         }
       }
       .giiker-home-text-image-item-content{
@@ -142,7 +150,8 @@ body{
         align-items: center;
         position: relative;
         align-self: stretch;
-        
+        padding-left: 5%;
+        padding-right: 10px;
         .giiker-home-text-image-item-content-background{
           position: absolute;
           bottom: 10%;
@@ -184,6 +193,9 @@ body{
           font-size: 24px;
           line-height: 1;
           font-weight: 400;
+          display: flex;
+          align-items: center;
+          margin-bottom: 20px;
           svg{
             margin-left: 25px;
           }
