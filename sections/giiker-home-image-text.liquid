@@ -1,43 +1,103 @@
 <section id="#{{ section.id }}">
-  <div class="giiker-home-image-video">
-    <div class="giiker-home-image">
-      {{
-        section.settings.pc_image
-        | image_url: width: section.settings.pc_image.width
-        | image_tag: height: section.settings.pc_image.height, 
-        loading: 'eager', fetchpriority: 'high', decoding: 'async', class: 'image-tag', data-cc-animate: 'fade-in'
-    }}
-    </div>
-    <div class="giiker-home-video">
-      {{
-      section.settings.video
-      | video_url: autoplay: true, loop: true, controls: false, preload: "none"
-      | video_tag: loading: 'eager', fetchpriority: 'high', decoding: 'async', class: 'video-tag', data-cc-animate: 'fade-in'
-      }}
-    </div>
+  <div class="giiker-home-text-image">
+    {% for block in section.blocks %}
+      <div class="giiker-home-text-image-item">
+        <div class="giiker-home-text-image-item-image">
+          {{
+            block.settings.pc_image
+            | image_url: width: block.settings.pc_image.width
+            | image_tag: height: block.settings.pc_image.height, 
+            loading: 'eager', fetchpriority: 'high', decoding: 'async', class: 'image-tag', data-cc-animate: 'fade-in'
+          }}
+          {{
+            block.settings.mobile_image
+            | image_url: width: block.settings.mobile_image.width
+            | image_tag: height: block.settings.mobile_image.height, fetchpriority: 'high', loading: 'lazy', class: 'mb-image', data-cc-animate: 'fade-in'
+          }}
+        </div>
+        <div class="giiker-home-text-image-item-content">
+          <div class="giiker-home-text-image-item-content-background">
+            {{
+              block.settings.background_image
+              | image_url: width: block.settings.background_image.width
+              | image_tag: height: block.settings.background_image.height, fetchpriority: 'high', loading: 'lazy', class: 'image-tag', data-cc-animate: 'fade-in'
+            }}
+          </div>
+          <h2 class="giiker-home-text-image-item-title">{{ block.settings.title }}</h2>
+          <p class="giiker-home-text-image-item-detail">{{ block.settings.detail }}</p>
+          {% if block.settings.url != blank %}
+            <a href="{{ block.settings.url }}" class="giiker-home-text-image-item-button">{{ block.settings.url_label }}</a>
+          {% endif %}
+        </div>
+      </div>
+    {% endfor %}
   </div>
 </section>
 
 {% schema %}
 {
-  "name": "Giiker Home Image Video",
+  "name": "Giiker Home Text Image",
   "settings": [
+    
+  ],
+  "blocks": [
     {
-      "type": "image_picker",
-      "id": "pc_image",
-      "label": "Image"
-    },
-    {
-      "type": "video_url",
-      "id": "video",
-      "label": "Video",
-      "accept": ["youtube", "vimeo"],
-      "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+      "type": "content",
+      "name": "Content",
+      "settings": [
+        {
+          "type": "checkbox",
+          "id": "is_reversal",
+          "label": "Is Reversal Content",
+          "default": false
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "detail",
+          "label": "Detail"
+        },
+        {
+          "type": "color",
+          "id": "background_color",
+          "label": "Background Color"
+        },
+        {
+          "type": "image_picker",
+          "id": "background_image",
+          "label": "Background Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "pc_image",
+          "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "mobile_image",
+          "label": "Mobile Image"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL"
+        },
+        {
+          "type": "text",
+          "id": "url_label",
+          "label": "URL Label",
+          "default": "Discover More"
+        }
+      ]
     }
   ],
   "presets": [
     {
-      "name": "Giiker Home Image Video"
+      "name": "Giiker Home Text Image"
     }
   ]
 }
