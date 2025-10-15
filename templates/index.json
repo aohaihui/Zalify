@@ -13,9 +13,28 @@
       "type": "shogun-home",
       "disabled": true,
       "settings": {}
+    },
+    "giiker_home_banner_MFAcbG": {
+      "type": "giiker-home-banner",
+      "blocks": {
+        "banner_6N3TYW": {
+          "type": "banner",
+          "settings": {
+            "pc_image": "shopify://shop_images/image_26.png",
+            "mobile_image": "shopify://shop_images/image_26.png",
+            "tablet_image": "shopify://shop_images/image_26_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "banner_6N3TYW"
+      ],
+      "name": "Giiker Home Banner",
+      "settings": {}
     }
   },
   "order": [
-    "shogun-home"
+    "shogun-home",
+    "giiker_home_banner_MFAcbG"
   ]
 }
