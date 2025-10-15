@@ -14,6 +14,14 @@
       "disabled": true,
       "settings": {}
     },
+    "giiker_home_image_video_XEiWJf": {
+      "type": "giiker-home-image-video",
+      "name": "Giiker Home Image Video",
+      "settings": {
+        "pc_image": "shopify://shop_images/c929fd5b8e477afae3169af1547c879e.jpg",
+        "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+      }
+    },
     "giiker_home_banner_MFAcbG": {
       "type": "giiker-home-banner",
       "blocks": {
@@ -21,24 +29,21 @@
           "type": "banner",
           "settings": {
             "pc_image": "shopify://shop_images/image_26.png",
-            "mobile_image": "shopify://shop_images/image_26.png",
-            "tablet_image": "shopify://shop_images/image_26_1.png"
+            "mobile_image": "shopify://shop_images/image_26.png"
           }
         },
         "banner_rdkVqq": {
           "type": "banner",
           "settings": {
             "pc_image": "shopify://shop_images/image_26.png",
-            "mobile_image": "shopify://shop_images/image_26.png",
-            "tablet_image": "shopify://shop_images/image_26_1.png"
+            "mobile_image": "shopify://shop_images/image_26.png"
           }
         },
         "banner_kL4TfF": {
           "type": "banner",
           "settings": {
             "pc_image": "shopify://shop_images/image_26.png",
-            "mobile_image": "shopify://shop_images/image_26.png",
-            "tablet_image": "shopify://shop_images/image_26_1.png"
+            "mobile_image": "shopify://shop_images/image_26.png"
           }
         }
       },
@@ -49,10 +54,51 @@
       ],
       "name": "Giiker Home Banner",
       "settings": {}
+    },
+    "giiker_home_image_text_CExhrn": {
+      "type": "giiker-home-image-text",
+      "blocks": {
+        "content_tLBKrC": {
+          "type": "content",
+          "settings": {
+            "is_reversal": false,
+            "title": "Play smarter. Stay connected.",
+            "detail": "GiiKER turns everyday play into meaningful moments—with classic games reimagined through smart tech and family-friendly fun.",
+            "background_color": "",
+            "background_image": "shopify://shop_images/1_cedbd247-d458-4b1b-897f-d0e18828b06f.png",
+            "pc_image": "shopify://shop_images/2J2A6066_1.png",
+            "mobile_image": "shopify://shop_images/2J2A6066_1_45a8c8dc-57b8-406b-8236-18ea3a023e73.png",
+            "url": "",
+            "url_label": "Discover More"
+          }
+        },
+        "content_zr8T3j": {
+          "type": "content",
+          "settings": {
+            "is_reversal": true,
+            "title": "Made for thinkers, not scrollers",
+            "detail": "We combine logic, fine-motor, and real-time feedback to create toys that challenge the brain and learn through play.",
+            "background_color": "",
+            "background_image": "shopify://shop_images/1_7d70a0c8-7306-4c7a-92b9-d7f837f892c8.png",
+            "pc_image": "shopify://shop_images/4_1.png",
+            "mobile_image": "shopify://shop_images/4_1_e760ac38-2bf8-4b58-8443-68b05fc0889e.png",
+            "url": "",
+            "url_label": "Discover More"
+          }
+        }
+      },
+      "block_order": [
+        "content_tLBKrC",
+        "content_zr8T3j"
+      ],
+      "name": "Giiker Home Text Image",
+      "settings": {}
     }
   },
   "order": [
     "shogun-home",
-    "giiker_home_banner_MFAcbG"
+    "giiker_home_image_video_XEiWJf",
+    "giiker_home_banner_MFAcbG",
+    "giiker_home_image_text_CExhrn"
   ]
 }
