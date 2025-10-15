@@ -148,6 +148,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {% render 'sca-aff-refer-customer' %}
 
 	{{ shop.metafields.loox["global_html_head"] }}
+  <link rel="preload" href="{{ 'swiper-bundle.min.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'animate-on-scroll.js' | asset_url }}" defer="defer"></script>
+  <link rel="stylesheet" href="{{ 'giiker.css' | asset_url }}">
 </head>
 
 <body id="{{ page_title | handle }}" class="no-touchevents

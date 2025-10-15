@@ -1,0 +1,61 @@
+.pc-image {
+  display: flex !important;
+}
+
+.mb-image {
+  display: none !important;
+}
+
+@media (max-width: 767px) {
+  .pc-image {
+    display: none;
+  }
+  .mb-image {
+    display: flex !important;
+  }
+}
+.cc-animate-enabled [data-cc-animate] {
+  opacity: 0;
+}
+@media (prefers-reduced-motion) {
+  .cc-animate-enabled [data-cc-animate] {
+    animation: none !important;
+    opacity: 1 !important;
+  }
+}
+.no-js .cc-animate-enabled [data-cc-animate] {
+  animation: none !important;
+  opacity: 1 !important;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.cc-animate-enabled [data-cc-animate=""].cc-animate-in,
+.cc-animate-enabled .fade-in.cc-animate-in {
+  animation: fade-in calc(var(--aos-animate-duration, 1s) * 0.8) 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.cc-animate-enabled .fade-in-up.cc-animate-in {
+  animation: fade-in-up calc(var(--aos-animate-duration, 1s) * 0.8) 0.3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+.giiker-home-banner{
+  width: 100%;
+  .giiker-home-banner-item{
+    width: 80%;
+  }
+}
