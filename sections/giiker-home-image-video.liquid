@@ -8,13 +8,7 @@
         loading: 'eager', fetchpriority: 'high', decoding: 'async', class: 'image-tag', data-cc-animate: 'fade-in'
     }}
     </div>
-    <div class="giiker-home-video">
-      {{
-      section.settings.video
-      | video_url: autoplay: true, loop: true, controls: false, preload: "none"
-      | video_tag: loading: 'eager', fetchpriority: 'high', decoding: 'async', class: 'video-tag', data-cc-animate: 'fade-in'
-      }}
-    </div>
+
   </div>
 </section>
 
@@ -26,13 +20,6 @@
       "type": "image_picker",
       "id": "pc_image",
       "label": "Image"
-    },
-    {
-      "type": "video_url",
-      "id": "video",
-      "label": "Video",
-      "accept": ["youtube", "vimeo"],
-      "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
     }
   ],
   "presets": [

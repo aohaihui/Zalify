@@ -3,43 +3,23 @@
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-  src: url("{{ 'Overlock-Regular.ttf' | asset_url }}");
+  src: url('https://cdn.shopify.com/s/files/1/0609/5611/5196/files/Overlock-Regular.ttf?v=1760513454') format('truetype');
 }
 @font-face {
   font-family: "Overlock";
   font-weight: 500;
   font-style: normal;
   font-display: swap;
-  src: url("{{ 'Overlock-Bold.ttf' | asset_url }}");
+  src: url('https://cdn.shopify.com/s/files/1/0609/5611/5196/files/Overlock-Bold.ttf?v=1760513454') format('truetype');
 }
 @font-face {
   font-family: "Overlock";
-  font-weight: 600;
+  font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: url("{{ 'Overlock-Black.ttf' | asset_url }}");
+  src: url('https://cdn.shopify.com/s/files/1/0609/5611/5196/files/Overlock-Black.ttf?v=1760513454') format('truetype');
 }
-@font-face {
-  font-family: "Overlock";
-  font-weight: 400;
-  font-style: italic;
-  font-display: swap;
-  src: url("{{ 'Overlock-Italic.ttf' | asset_url }}");
-}
-@font-face {
-  font-family: "Overlock";
-  font-weight: 500;
-  font-style: italic;
-  font-display: swap;
-  src: url("{{ 'Overlock-BoldItalic.ttf' | asset_url }}");
-}
-@font-face {
-  font-family: "Overlock";
-  font-weight: 600;
-  font-style: italic;
-  font-display: swap;
-  src: url("{{ 'Overlock-BlackItalic.ttf' | asset_url }}");
-}
+
 @font-face {
   font-family: 'Oslla' ;
   src: url('https://cdn.shopify.com/s/files/1/0609/5611/5196/files/Oslla.ttf?v=1760510109') format('truetype'),
@@ -134,8 +114,18 @@ body{
       display: flex;
       justify-content: center;
       align-items: center;
-      &.giiker-home-text-image-item-reversal{
+      border-radius: 50px;
+      overflow: hidden;
+      &.reversal{
         flex-direction: row-reverse;
+        .giiker-home-text-image-item-content .giiker-home-text-image-item-content-background{
+          position: absolute;
+          bottom: 10%;
+          left: -10%;
+          img{
+            object-fit: cover;
+          }
+        }
       }
       .giiker-home-text-image-item-image{
         width: 50%;
@@ -151,8 +141,9 @@ body{
         justify-content: center;
         align-items: center;
         position: relative;
+        align-self: stretch;
+        
         .giiker-home-text-image-item-content-background{
-          width: 100%;
           position: absolute;
           bottom: 10%;
           right: -10%;
@@ -174,7 +165,7 @@ body{
         .giiker-home-text-image-item-detail{
           margin-top: 60px;
           *{
-            font-weight: 400;
+            font-weight: 500;
             font-family: Overlock;
             font-size: 24px;
             line-height: 36px;
