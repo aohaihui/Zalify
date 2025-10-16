@@ -18,8 +18,7 @@
       "type": "giiker-home-image-video",
       "name": "Giiker Home Image Video",
       "settings": {
-        "pc_image": "shopify://shop_images/c929fd5b8e477afae3169af1547c879e.jpg",
-        "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+        "pc_image": "shopify://shop_images/c929fd5b8e477afae3169af1547c879e.jpg"
       }
     },
     "giiker_home_banner_MFAcbG": {
@@ -93,12 +92,75 @@
       ],
       "name": "Giiker Home Text Image",
       "settings": {}
+    },
+    "giiker_home_favourite_wyCJKc": {
+      "type": "giiker-home-favourite",
+      "blocks": {
+        "banner_HaEBAc": {
+          "type": "banner",
+          "settings": {
+            "product": "giiker-super-decoder"
+          }
+        },
+        "banner_yNkR9g": {
+          "type": "banner",
+          "settings": {
+            "product": "battle-pad"
+          }
+        },
+        "banner_nqMLnR": {
+          "type": "banner",
+          "settings": {
+            "product": "giiker-super-slide-puzzle-games-copy"
+          }
+        },
+        "banner_YHjFbw": {
+          "type": "banner",
+          "settings": {
+            "product": "giiker-super-slide-puzzle-games-copy"
+          }
+        },
+        "banner_D43zUE": {
+          "type": "banner",
+          "settings": {
+            "product": "giiker-smart-sudoku"
+          }
+        },
+        "banner_UHmhcj": {
+          "type": "banner",
+          "settings": {
+            "product": "giiker-super-ludo"
+          }
+        },
+        "banner_QrAEJG": {
+          "type": "banner",
+          "settings": {
+            "product": "super-slide"
+          }
+        }
+      },
+      "block_order": [
+        "banner_HaEBAc",
+        "banner_yNkR9g",
+        "banner_nqMLnR",
+        "banner_YHjFbw",
+        "banner_D43zUE",
+        "banner_UHmhcj",
+        "banner_QrAEJG"
+      ],
+      "name": "Giiker Home Favourite",
+      "settings": {
+        "title": "Find your favourite",
+        "background_color": "#737373",
+        "background_image": "shopify://shop_images/1_792915b5-b458-4c67-ad75-6dfafad115e5.png"
+      }
     }
   },
   "order": [
     "shogun-home",
     "giiker_home_image_video_XEiWJf",
     "giiker_home_banner_MFAcbG",
-    "giiker_home_image_text_CExhrn"
+    "giiker_home_image_text_CExhrn",
+    "giiker_home_favourite_wyCJKc"
   ]
 }
