@@ -366,6 +366,7 @@
           "type": "text",
           "settings": {
             "icon": "shopify://shop_images/52532039b3cfb76850b2a8c945361cb3.png",
+            "background_color": "",
             "title": "<p>Our daughter loves this game! It's agreat substitution to screen time and she loves that it \"challenges her brain.\" We've also loved playing it! It gets addicting!</p>"
           }
         },
@@ -379,6 +380,7 @@
           "type": "text",
           "settings": {
             "icon": "shopify://shop_images/52532039b3cfb76850b2a8c945361cb3.png",
+            "background_color": "#78e35e",
             "title": "<p>Great for beginners! My young one is learning the game on it. It was some-thing I had hoped I could play on too.</p>"
           }
         },
@@ -386,6 +388,7 @@
           "type": "text",
           "settings": {
             "icon": "shopify://shop_images/52532039b3cfb76850b2a8c945361cb3.png",
+            "background_color": "#f0674f",
             "title": "<p>It's a blast. We play with our 6-year-old daughter, and the game is both chal-lenging and enjoyable. It is exceptional-ly well-designed and visually beautiful. We highly recommend it.</p>"
           }
         },
@@ -399,6 +402,7 @@
           "type": "text",
           "settings": {
             "icon": "shopify://shop_images/52532039b3cfb76850b2a8c945361cb3.png",
+            "background_color": "",
             "title": "<p>Very well made. Al opponent is great when you don't have a real person to play against. The whole family loves it!</p>"
           }
         },
@@ -423,7 +427,7 @@
       "settings": {
         "title": "<p>Real Families. </p><p>Real Fun.</p>",
         "detail": "<p>GiiKER toys have sparked playtime in homes across 50+ countries / regions.</p><p>Scroll down to see what parents and kids are saying—and share your moments</p><p>with #GiiKERPlay!</p>",
-        "background_color": "rgba(255, 223, 87, 1)",
+        "background_color": "#ffdf57",
         "background_image": "shopify://shop_images/Vector_24.png",
         "background_flower_image": "shopify://shop_images/1_f4199bd5-1690-4b5f-8100-b8792332582d.png"
       }
