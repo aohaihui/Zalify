@@ -16,45 +16,17 @@
         "layout": "split"
       }
     },
-    "166098719235439c52": {
-      "type": "heading",
-      "blocks": {
-        "1660987192b1bc13c3-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h2"
-          }
-        },
-        "1660987192b1bc13c3-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Describe a product, share announcements, or welcome customers to your store.</p>"
-          }
-        },
-        "1660987192b1bc13c3-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "Button label",
-            "button_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "1660987192b1bc13c3-0",
-        "1660987192b1bc13c3-1",
-        "1660987192b1bc13c3-2"
-      ],
-      "disabled": true,
+    "giiker_help_text_eypYtx": {
+      "type": "giiker-help-text",
+      "name": "Giiker Help Text",
       "settings": {
-        "text_alignment": "center",
-        "custom_background": "rgba(0,0,0,0)",
-        "custom_text": "rgba(0,0,0,0)"
+        "title": "",
+        "background_color": "rgba(255, 185, 87, 1)"
       }
     }
   },
   "order": [
     "main",
-    "166098719235439c52"
+    "giiker_help_text_eypYtx"
   ]
 }
