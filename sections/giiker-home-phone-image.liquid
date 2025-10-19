@@ -1,9 +1,12 @@
 <div class="giiker-home-phone-image-container">
-  <div class="giiker-home-phone-image-content">
+  <div class="giiker-home-phone-image-content" style="background-color: {{ section.settings.background_color }};">
     <div class="giiker-home-phone-image-title">
       {{ section.settings.title }}
     </div>
-    <div class="giiker-home-phone-image-list" data-cc-animate="fade-phone-list">
+    <div class="giiker-home-phone-image-background">
+      {{ section.settings.background_top_image | image_url: width: section.settings.background_top_image.width | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag',data-cc-animate: 'fade-in'}}
+    </div>
+    <div class="giiker-home-phone-image-list" >
       {% for block in section.blocks %}
         <div class="giiker-home-phone-image-list-item">
           <a class="giiker-home-phone-image-list-item-image" href="{{ block.settings.url }}" target="_blank">
@@ -27,7 +30,7 @@
     {
       "type": "image_picker",
       "id": "background_top_image",
-      "label": "Image"
+      "label": "Background Top Image"
     },
     {
       "type": "color",
@@ -39,7 +42,7 @@
   "blocks": [
     {
       "type": "phone",
-      "name": "Phone Image",
+      "name": "Phone Image", 
       "settings": [
         {
           "type": "image_picker",
@@ -61,3 +64,11 @@
   ]
 }
 {% endschema %}
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const phoneList = document.querySelector('.giiker-home-phone-image-list');
+    if (phoneList) {
+      phoneList.classList.add('fade-phone-list');
+    }
+  });
+</script>
