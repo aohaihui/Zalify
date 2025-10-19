@@ -1,0 +1,89 @@
+<div class="giiker-contact-us-text-container" style="background-color: {{ section.settings.background_color }}">
+  <div class="giiker-contact-us-text-title">{{ section.settings.title }}</div>
+  <div class="giiker-contact-us-text-background">
+    {{
+      section.settings.background_image
+      | image_url: width: section.settings.background_image.width
+      | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag', data-cc-animate: 'fade-in'
+    }}
+    {{
+      section.settings.background_flower_image
+      | image_url: width: section.settings.background_flower_image.width
+      | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-flower-tag', data-cc-animate: 'fade-in'
+    }}
+  </div>
+  <div class="giiker-contact-us-text-list">
+    {% for block in section.blocks %}
+      <div class="giiker-contact-us-text-item" data-cc-animate="fade-in">
+        <div class="giiker-contact-us-text-item-content" >
+          <div class="giiker-contact-us-text-item-content-background">
+            {{ block.settings.background_image | image_url: width: block.settings.background_image.width | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag' }}
+          </div>
+          <div class="giiker-contact-us-text-item-detail">{{ block.settings.detail }}</div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Giiker Contact Us Text",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "rgba(255, 185, 87, 1)"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_left_image",
+      "label": "Background Left Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_right_image",
+      "label": "Background Right Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "list",
+      "name": "List",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon" 
+        },
+        {
+          "type": "image_picker",
+          "id": "background_image",
+          "label": "Background Image" 
+        },
+        {
+          "type": "liquid",
+          "id": "detail",
+          "label": "Detail"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Giiker Contact Us Text"
+    }
+  ]
+}
+{% endschema %}
