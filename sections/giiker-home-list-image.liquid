@@ -6,7 +6,12 @@
       section.settings.background_image
       | image_url: width: section.settings.background_image.width
       | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag', data-cc-animate: 'fade-in'
-    }} 
+    }}
+    {{
+      section.settings.background_flower_image
+      | image_url: width: section.settings.background_flower_image.width
+      | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-flower-tag', data-cc-animate: 'fade-in'
+    }}
   </div>
   <div class="giiker-home-list-image">
     {% for block in section.blocks %}
@@ -56,7 +61,7 @@
       "type": "image_picker",
       "id": "background_flower_image",
       "label": "Background Flower Image"
-    },
+    }
   ],
   "blocks": [
     {

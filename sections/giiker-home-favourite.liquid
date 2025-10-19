@@ -50,13 +50,13 @@
       </svg>
     </div>
   </div>
-  <div class="favourite-background" >
+  {% comment %} <div class="favourite-background" >
     {{
       section.settings.background_image
       | image_url: width: section.settings.background_image.width
       | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag', data-cc-animate: 'fade-in'
     }}
-  </div>
+  </div> {% endcomment %}
 </div>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
@@ -84,11 +84,6 @@
       "type": "color",
       "id": "background_color",
       "label": "Background Color"
-    },
-    {
-      "type": "image_picker",
-      "id": "background_image",
-      "label": "Background Image"
     }
   ],
   "blocks": [
