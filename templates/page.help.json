@@ -31,7 +31,7 @@
         "list_BVmwwU": {
           "type": "list",
           "settings": {
-            "background_image": "shopify://shop_images/x0020_1_3.png",
+            "icon": "shopify://shop_images/x0020_1_2.png",
             "url": "",
             "title": "<p>Orders</p>",
             "detail": "<p>Tracking details about your order.</p>"
@@ -40,7 +40,7 @@
         "list_kATeYC": {
           "type": "list",
           "settings": {
-            "background_image": "shopify://shop_images/x0020_1_1.png",
+            "icon": "shopify://shop_images/x0020_1_1.png",
             "url": "",
             "title": "<p>Shipping</p>",
             "detail": "<p>Questions and answers about shipping</p><p>issues.</p>"
@@ -49,7 +49,7 @@
         "list_cpQtMN": {
           "type": "list",
           "settings": {
-            "background_image": "shopify://shop_images/x0020_1.png",
+            "icon": "shopify://shop_images/x0020_1.png",
             "url": "",
             "title": "<p>Service</p>",
             "detail": "<p>Find our return policy, order cancellation</p><p>policy and warranty.</p>"
@@ -58,7 +58,7 @@
         "list_dkeDNp": {
           "type": "list",
           "settings": {
-            "background_image": "shopify://shop_images/x0020_1_3.png",
+            "icon": "shopify://shop_images/x0020_1_3.png",
             "url": "",
             "title": "<p>App Download</p>",
             "detail": "<p>Get the GiiKER app and start playing</p><p>smarter.</p>"
@@ -67,7 +67,7 @@
         "list_cRm8fp": {
           "type": "list",
           "settings": {
-            "background_image": "shopify://shop_images/x0020_1_2.png",
+            "icon": "shopify://shop_images/x0020_1_2.png",
             "url": "",
             "title": "<p>Compliance</p>",
             "detail": "<p>Certified to meet all EU safety and quality</p><p>standards.</p>"
@@ -85,7 +85,7 @@
       "name": "Giiker Help Text",
       "settings": {
         "title": "<p>WE’RE HERE TO HELP!<br/><br/></p>",
-        "background_color": "rgba(255, 185, 87, 1)",
+        "background_color": "#ffb957",
         "background_left_image": "shopify://shop_images/2_1_41aff5cb-36ca-4229-bafb-a140eaf345db.png",
         "background_right_image": "shopify://shop_images/11.png"
       }
