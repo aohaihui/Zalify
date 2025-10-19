@@ -23,42 +23,7 @@
 {
   "name": "Giiker Home Awards Image",
   "settings": [
-    {
-      "type": "range",
-      "id": "autoplay_delay",
-      "label": "Autoplay Delay (ms)",
-      "min": 1000,
-      "max": 10000,
-      "step": 500,
-      "default": 3000
-    },
-    {
-      "type": "checkbox",
-      "id": "autoplay_enabled",
-      "label": "Enable Autoplay",
-      "default": true
-    },
-    {
-      "type": "range",
-      "id": "slides_per_view",
-      "label": "Slides Per View",
-      "min": 1,
-      "max": 6,
-      "step": 1,
-      "default": 4
-    },
-    {
-      "type": "checkbox",
-      "id": "show_navigation",
-      "label": "Show Navigation Arrows",
-      "default": false
-    },
-    {
-      "type": "checkbox",
-      "id": "show_pagination",
-      "label": "Show Pagination Dots",
-      "default": false
-    }
+
   ],
   "blocks": [
     {
@@ -90,11 +55,11 @@
 document.addEventListener('DOMContentLoaded', function() {
   const swiperElement = document.querySelector('.giiker-awards-swiper');
   if (swiperElement) {
-    const autoplayDelay = {{ section.settings.autoplay_delay | default: 3000 }};
-    const autoplayEnabled = {{ section.settings.autoplay_enabled | default: true }};
-    const slidesPerView = {{ section.settings.slides_per_view | default: 4 }};
-    const showNavigation = {{ section.settings.show_navigation | default: false }};
-    const showPagination = {{ section.settings.show_pagination | default: false }};
+    const autoplayDelay = 3000;
+    const autoplayEnabled = true;
+    const slidesPerView = 4;
+    const showNavigation = false;
+    const showPagination = false;
     
     new Swiper('.giiker-awards-swiper', {
       // 基本配置
