@@ -431,6 +431,20 @@
         "background_image": "shopify://shop_images/Vector_24.png",
         "background_flower_image": "shopify://shop_images/1_f4199bd5-1690-4b5f-8100-b8792332582d.png"
       }
+    },
+    "giiker_home_community_D9tYhV": {
+      "type": "giiker-home-community",
+      "name": "Giiker Home Community",
+      "settings": {
+        "title": "<p>Let’s Play Together</p>",
+        "detail": "<p>Our Facebook Group is more than a page — it’s a space to celebrate victories, ask</p><p>questions, and get insider updates. Come join the fun!</p>",
+        "url": "",
+        "url_label": "Join our Community",
+        "background_color": "#ffffff",
+        "background_image": "shopify://shop_images/Vector_25.png",
+        "background_pc_image": "shopify://shop_images/2J2A6419_1.png",
+        "background_mobile_image": "shopify://shop_images/2J2A6419_1.png"
+      }
     }
   },
   "order": [
@@ -443,6 +457,7 @@
     "giiker_home_how_image_G67RDW",
     "giiker_home_awards_image_j9RtQ8",
     "giiker_home_phone_image_mQi8cU",
-    "giiker_home_evaluate_list_n4gEEV"
+    "giiker_home_evaluate_list_n4gEEV",
+    "giiker_home_community_D9tYhV"
   ]
 }
