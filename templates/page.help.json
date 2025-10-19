@@ -84,7 +84,7 @@
       ],
       "name": "Giiker Help Text",
       "settings": {
-        "title": "<p>WE’RE HERE TO HELP!<br/><br/></p>",
+        "title": "<p>WE’RE HERE TO HELP!</p>",
         "background_color": "#ffb957",
         "background_left_image": "shopify://shop_images/2_1_41aff5cb-36ca-4229-bafb-a140eaf345db.png",
         "background_right_image": "shopify://shop_images/11.png"
