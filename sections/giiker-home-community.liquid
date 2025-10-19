@@ -1,0 +1,81 @@
+<div class="giiker-home-community-container" style="background-color: {{ section.settings.background_color }}">
+  <div class="giiker-home-community-content" data-cc-animate="fade-in">
+    <div class="giiker-home-community-title" >{{ section.settings.title }}</div>
+    <div class="giiker-home-community-detail" >{{ section.settings.detail }}</div>
+    <a class="giiker-home-community-url" href="{{ section.settings.url }}" target="_blank">{{ section.settings.url_label }}</a>
+  </div>
+  <div class="giiker-home-community-image">
+    {{
+      section.settings.background_pc_image
+      | image_url: width: section.settings.background_pc_image.width
+      | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag', data-cc-animate: 'fade-in'
+    }}
+    {{
+      section.settings.background_mobile_image
+      | image_url: width: section.settings.background_mobile_image.width
+      | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag', data-cc-animate: 'fade-in'
+    }}
+  </div>
+  <div class="giiker-home-community-background">
+    {{
+      section.settings.background_image
+      | image_url: width: section.settings.background_image.width
+      | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag', data-cc-animate: 'fade-in'
+    }}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Giiker Home Community",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "detail",
+      "label": "Detail"
+    },
+    {
+      "type": "text",
+      "id": "url",
+      "label": "URL"
+    },
+    {
+      "type": "text",
+      "id": "url_label",
+      "label": "URL Label",
+      "default": "Join our Community"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image", 
+      "label": "Background Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_pc_image",
+      "label": "Background PC Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_mobile_image",
+      "label": "Background Mobile Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Giiker Home Community"
+    }
+  ]
+}
+{% endschema %}

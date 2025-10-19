@@ -1,6 +1,6 @@
 <div class="giiker-home-evaluate-list-container" style="background-color: {{ section.settings.background_color }}">
-  <div class="giiker-home-evaluate-list-title">{{ section.settings.title }}</div>
-  <div class="giiker-home-evaluate-list-detail">{{ section.settings.detail }}</div>
+  <div class="giiker-home-evaluate-list-title" data-cc-animate="fade-in">{{ section.settings.title }}</div>
+  <div class="giiker-home-evaluate-list-detail" data-cc-animate="fade-in">{{ section.settings.detail }}</div>
   <div class="giiker-home-evaluate-list-background">
     {{
       section.settings.background_image
@@ -17,17 +17,15 @@
     {% for block in section.blocks %}
       {% case block.type %}
         {% when 'text' %}
-          <div class="giiker-home-evaluate-list-item" style="background-color: {{ block.settings.background_color }}">
-            <div class="giiker-home-evaluate-list-item-text">
-              <div class="giiker-home-list-image-item-text-icon">
-                {{ block.settings.icon | image_url: width: block.settings.icon.width | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag', data-cc-animate: 'fade-in' }}
-              </div>
+          <div class="giiker-home-evaluate-list-item" style="background-color: {{ block.settings.background_color }}" data-cc-animate="fade-in">
+            <div class="giiker-home-list-image-item-text-icon">
+              {{ block.settings.icon | image_url: width: block.settings.icon.width | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag' }}
             </div>
             <h2 class="giiker-home-evaluate-list-item-text-title">{{ block.settings.title }}</h2>
          </div>
       {% when 'image' %}
-        <div class="giiker-home-evaluate-list-item-image">
-          {{ block.settings.image | image_url: width: block.settings.image.width | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag', data-cc-animate: 'fade-in' }}
+        <div class="giiker-home-evaluate-list-item-image" data-cc-animate="fade-in">
+          {{ block.settings.image | image_url: width: block.settings.image.width | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag'}}
         </div>
       {% endcase %}
     {% endfor %}
@@ -89,7 +87,8 @@
         {
           "type": "color",
           "id": "background_color",
-          "label": "Background Color" 
+          "label": "Background Color" ,
+          "default": "#ffffff"
         },
         {
           "type": "richtext",
