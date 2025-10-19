@@ -152,7 +152,8 @@
       "settings": {
         "title": "Find your favourite",
         "background_color": "#737373",
-        "background_image": "shopify://shop_images/1_792915b5-b458-4c67-ad75-6dfafad115e5.png"
+        "background_image": "shopify://shop_images/1_792915b5-b458-4c67-ad75-6dfafad115e5.png",
+        "background_bottom_image": "shopify://shop_images/Vector_22_2.png"
       }
     },
     "giiker_home_list_image_qmNPVK": {
@@ -201,7 +202,7 @@
       "settings": {
         "title": "<p>Smart Toys for Everyday Moments</p>",
         "detail": "<p>Screen-free play for real connection. Building confidence through</p><p>every challenge.<br/></p>",
-        "background_color": "rgba(255, 223, 87, 1)",
+        "background_color": "#ffdf57",
         "background_image": "shopify://shop_images/Vector_22_2.png"
       }
     }
