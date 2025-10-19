@@ -206,6 +206,15 @@
         "background_image": "shopify://shop_images/Vector_22_2.png",
         "background_flower_image": "shopify://shop_images/1_792915b5-b458-4c67-ad75-6dfafad115e5.png"
       }
+    },
+    "giiker_home_how_image_G67RDW": {
+      "type": "giiker-home-how-image",
+      "name": "Giiker Home How Image",
+      "settings": {
+        "title": "<p>How A</p><p>GiiKER Toy</p><p>Comes to Life</p>",
+        "url": "shopify://products/battle-pad",
+        "url_label": "Discover More"
+      }
     }
   },
   "order": [
@@ -214,6 +223,7 @@
     "giiker_home_banner_MFAcbG",
     "giiker_home_image_text_CExhrn",
     "giiker_home_favourite_wyCJKc",
-    "giiker_home_list_image_qmNPVK"
+    "giiker_home_list_image_qmNPVK",
+    "giiker_home_how_image_G67RDW"
   ]
 }
