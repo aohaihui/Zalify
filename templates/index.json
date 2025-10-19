@@ -219,45 +219,45 @@
         "url_label": "Discover More"
       }
     },
-    "giiker_home_awards_image_Nwrteq": {
-      "type": "giiker-home-phone-image",
+    "giiker_home_awards_image_j9RtQ8": {
+      "type": "giiker-home-awards-image",
       "blocks": {
-        "awards_AickMa": {
+        "awards_UD7Wwn": {
           "type": "awards",
           "settings": {
-            "image": "shopify://shop_images/Tillywig.png",
+            "image": "shopify://shop_images/CBME.png",
             "title": "<p>CBME Award</p>"
           }
         },
-        "awards_xTL7Mw": {
+        "awards_7UXCHk": {
           "type": "awards",
           "settings": {
             "image": "shopify://shop_images/USE.png",
             "title": "<p>USE Design Award</p><p>Gold Winner 2023</p>"
           }
         },
-        "awards_JQY4j7": {
+        "awards_DJTCgH": {
           "type": "awards",
           "settings": {
             "image": "shopify://shop_images/family_choice.png",
             "title": "<p>Family Choice</p><p>Award</p>"
           }
         },
-        "awards_PTGAmV": {
+        "awards_99KaDf": {
           "type": "awards",
           "settings": {
             "image": "shopify://shop_images/NAPPA.png",
             "title": "<p>National Parenting</p><p>Product Awards (NAPPA)</p>"
           }
         },
-        "awards_UtkWkC": {
+        "awards_pXziHk": {
           "type": "awards",
           "settings": {
             "image": "shopify://shop_images/Parents.png",
             "title": "<p>Parents' Picks</p><p>Award</p>"
           }
         },
-        "awards_QBTUbD": {
+        "awards_aimbVV": {
           "type": "awards",
           "settings": {
             "image": "shopify://shop_images/Tillywig.png",
@@ -266,12 +266,12 @@
         }
       },
       "block_order": [
-        "awards_AickMa",
-        "awards_xTL7Mw",
-        "awards_JQY4j7",
-        "awards_PTGAmV",
-        "awards_UtkWkC",
-        "awards_QBTUbD"
+        "awards_UD7Wwn",
+        "awards_7UXCHk",
+        "awards_DJTCgH",
+        "awards_99KaDf",
+        "awards_pXziHk",
+        "awards_aimbVV"
       ],
       "name": "Giiker Home Awards Image",
       "settings": {}
@@ -285,6 +285,6 @@
     "giiker_home_favourite_wyCJKc",
     "giiker_home_list_image_qmNPVK",
     "giiker_home_how_image_G67RDW",
-    "giiker_home_awards_image_Nwrteq"
+    "giiker_home_awards_image_j9RtQ8"
   ]
 }
