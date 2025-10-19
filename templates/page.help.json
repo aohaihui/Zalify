@@ -11,13 +11,13 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "layout": "split"
       }
     },
     "166098719235439c52": {
       "type": "heading",
-      "disabled": true,
       "blocks": {
         "1660987192b1bc13c3-0": {
           "type": "heading",
@@ -45,6 +45,7 @@
         "1660987192b1bc13c3-1",
         "1660987192b1bc13c3-2"
       ],
+      "disabled": true,
       "settings": {
         "text_alignment": "center",
         "custom_background": "rgba(0,0,0,0)",
