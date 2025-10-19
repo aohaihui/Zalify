@@ -9,8 +9,8 @@
             <a href="{{ block.settings.product.url }}">
               {% if block.settings.product_image %}
                 {{
-                    block.settings.product.featured_image
-                    | image_url: width: block.settings.product.featured_image.width
+                    block.settings.product_image
+                    | image_url: width: block.settings.product_image.width
                     | image_tag: loading: 'eager', fetchpriority: 'high', decoding: 'async', class: ''
                 }}
               {% else  %}
