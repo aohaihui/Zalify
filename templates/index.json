@@ -154,6 +154,56 @@
         "background_color": "#737373",
         "background_image": "shopify://shop_images/1_792915b5-b458-4c67-ad75-6dfafad115e5.png"
       }
+    },
+    "giiker_home_list_image_qmNPVK": {
+      "type": "giiker-home-list-image",
+      "blocks": {
+        "list_cBhXh8": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/x0020_1.png",
+            "title": "<p>Smart and no Screentime</p>",
+            "detail": "<p>No apps, no Internet — just hands-on problem solving that keeps kids focused, thinking, and fully engaged.</p>"
+          }
+        },
+        "list_JTNjWh": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/x0020_1_1.png",
+            "title": "<p>Easy to learn, </p><p>hard to master</p>",
+            "detail": "<p>Easy enough for kids to pick up, fun enough for adults to join in. From age 6 to 99, everyone finds their way to have fun.</p>"
+          }
+        },
+        "list_kmmFKX": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/x0020_1_2.png",
+            "title": "<p>Grab-and-Go Ready</p>",
+            "detail": "<p>No set up needed, ready to play the moment you take it out. Enjoy the fun wherever you can imagine.</p>"
+          }
+        },
+        "list_Pn6PBa": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/x0020_1_3.png",
+            "title": "<p>Safetly First</p>",
+            "detail": "<p>Crafted from high-quality ABS material, guaranteeing a safe playing environment for children.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "list_cBhXh8",
+        "list_JTNjWh",
+        "list_kmmFKX",
+        "list_Pn6PBa"
+      ],
+      "name": "Giiker Home List Image",
+      "settings": {
+        "title": "<p>Smart Toys for Everyday Moments</p>",
+        "detail": "<p>Screen-free play for real connection. Building confidence through</p><p>every challenge.<br/></p>",
+        "background_color": "rgba(255, 223, 87, 1)",
+        "background_image": "shopify://shop_images/Vector_22_2.png"
+      }
     }
   },
   "order": [
@@ -161,6 +211,7 @@
     "giiker_home_image_video_XEiWJf",
     "giiker_home_banner_MFAcbG",
     "giiker_home_image_text_CExhrn",
-    "giiker_home_favourite_wyCJKc"
+    "giiker_home_favourite_wyCJKc",
+    "giiker_home_list_image_qmNPVK"
   ]
 }
