@@ -212,6 +212,7 @@
       "name": "Giiker Home How Image",
       "settings": {
         "title": "<p>How A</p><p>GiiKER Toy</p><p>Comes to Life</p>",
+        "background_image": "shopify://shop_images/1_46a9ba71-dd90-4074-b70c-635d39d99f67.png",
         "background_flower_image": "shopify://shop_images/Mask_group_1_5736e227-1f09-4330-a300-e5f867b6815c.png",
         "url": "shopify://products/battle-pad",
         "url_label": "Discover More"
