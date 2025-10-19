@@ -14,7 +14,7 @@
   </div>
   <div class="giiker-contact-us-text-list">
     {% for block in section.blocks %}
-      <div class="giiker-contact-us-text-item" data-cc-animate="fade-in">
+      <div class="giiker-contact-us-text-item contact-us-text-item-{{forloop.index}}" data-cc-animate="fade-in">
         <div class="giiker-contact-us-text-item-content" >
           {% if block.settings.icon %}
             <div class="giiker-contact-us-text-item-content-icon">
