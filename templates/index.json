@@ -225,43 +225,43 @@
         "awards_AickMa": {
           "type": "awards",
           "settings": {
-            "title": ""
+            "image": "shopify://shop_images/Tillywig.png",
+            "title": "<p>CBME Award</p>"
           }
         },
         "awards_xTL7Mw": {
           "type": "awards",
           "settings": {
-            "title": ""
+            "image": "shopify://shop_images/USE.png",
+            "title": "<p>USE Design Award</p><p>Gold Winner 2023</p>"
           }
         },
         "awards_JQY4j7": {
           "type": "awards",
           "settings": {
-            "title": ""
+            "image": "shopify://shop_images/family_choice.png",
+            "title": "<p>Family Choice</p><p>Award</p>"
           }
         },
         "awards_PTGAmV": {
           "type": "awards",
           "settings": {
-            "title": ""
+            "image": "shopify://shop_images/NAPPA.png",
+            "title": "<p>National Parenting</p><p>Product Awards (NAPPA)</p>"
+          }
+        },
+        "awards_UtkWkC": {
+          "type": "awards",
+          "settings": {
+            "image": "shopify://shop_images/Parents.png",
+            "title": "<p>Parents' Picks</p><p>Award</p>"
           }
         },
         "awards_QBTUbD": {
           "type": "awards",
           "settings": {
-            "title": ""
-          }
-        },
-        "awards_3GxE84": {
-          "type": "awards",
-          "settings": {
-            "title": ""
-          }
-        },
-        "awards_BHf6RJ": {
-          "type": "awards",
-          "settings": {
-            "title": ""
+            "image": "shopify://shop_images/Tillywig.png",
+            "title": "<p>Tillywig Brain Child</p><p>Award</p>"
           }
         }
       },
@@ -270,9 +270,8 @@
         "awards_xTL7Mw",
         "awards_JQY4j7",
         "awards_PTGAmV",
-        "awards_QBTUbD",
-        "awards_3GxE84",
-        "awards_BHf6RJ"
+        "awards_UtkWkC",
+        "awards_QBTUbD"
       ],
       "name": "Giiker Home Awards Image",
       "settings": {}
