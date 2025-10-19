@@ -218,6 +218,64 @@
         "url": "shopify://products/battle-pad",
         "url_label": "Discover More"
       }
+    },
+    "giiker_home_awards_image_Nwrteq": {
+      "type": "giiker-home-awards-image",
+      "blocks": {
+        "awards_AickMa": {
+          "type": "awards",
+          "settings": {
+            "title": ""
+          }
+        },
+        "awards_xTL7Mw": {
+          "type": "awards",
+          "settings": {
+            "title": ""
+          }
+        },
+        "awards_JQY4j7": {
+          "type": "awards",
+          "settings": {
+            "title": ""
+          }
+        },
+        "awards_PTGAmV": {
+          "type": "awards",
+          "settings": {
+            "title": ""
+          }
+        },
+        "awards_QBTUbD": {
+          "type": "awards",
+          "settings": {
+            "title": ""
+          }
+        },
+        "awards_3GxE84": {
+          "type": "awards",
+          "settings": {
+            "title": ""
+          }
+        },
+        "awards_BHf6RJ": {
+          "type": "awards",
+          "settings": {
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "awards_AickMa",
+        "awards_xTL7Mw",
+        "awards_JQY4j7",
+        "awards_PTGAmV",
+        "awards_QBTUbD",
+        "awards_3GxE84",
+        "awards_BHf6RJ"
+      ],
+      "name": "Giiker Home Awards Image",
+      "settings": {}
     }
   },
   "order": [
@@ -227,6 +285,7 @@
     "giiker_home_image_text_CExhrn",
     "giiker_home_favourite_wyCJKc",
     "giiker_home_list_image_qmNPVK",
-    "giiker_home_how_image_G67RDW"
+    "giiker_home_how_image_G67RDW",
+    "giiker_home_awards_image_Nwrteq"
   ]
 }
