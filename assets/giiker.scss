@@ -316,30 +316,18 @@ body{
   }
   .giiker-home-list-image{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
     margin-top: 60px;
-    
-    .giiker-swiper {
-      width: 100%;
-      padding: 0 20px;
-      
-      .swiper-wrapper {
-        align-items: stretch;
-      }
-      
-      .swiper-slide {
-        height: auto;
-        display: flex;
-        align-items: stretch;
-      }
-    }
     .giiker-home-list-image-item{
-      width: 100%;
-      max-width: 339px;
+      width: 339px;
+      max-width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      margin: 0 auto;
       .giiker-home-list-image-item-content-icon{
         width: 100%;
         display: flex;
@@ -374,23 +362,6 @@ body{
           color: #000;
           margin: 0;
         }
-      }
-    }
-    
-    // 响应式样式
-    @media (max-width: 1024px) {
-      .giiker-swiper {
-        padding: 0 15px;
-      }
-    }
-    
-    @media (max-width: 768px) {
-      .giiker-swiper {
-        padding: 0 10px;
-      }
-      
-      .giiker-home-list-image-item {
-        max-width: 100%;
       }
     }
   }
@@ -470,90 +441,6 @@ body{
       top: -1px;
       z-index: 1;
       object-fit: cover;
-    }
-  }
-}
-
-// Giiker Awards Swiper 样式
-.giiker-home-awards-image-container {
-  width: 100%;
-  padding: 40px 20px;
-  box-sizing: border-box;
-  
-  .giiker-awards-swiper {
-    width: 100%;
-    overflow: hidden;
-    
-    .swiper-wrapper {
-      align-items: stretch;
-    }
-    
-    .swiper-slide {
-      height: auto;
-      display: flex;
-      align-items: stretch;
-    }
-  }
-  
-  .giiker-home-awards-image-item {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 20px;
-    box-sizing: border-box;
-    
-    .giiker-home-awards-image-item-content {
-      width: 100%;
-      margin-bottom: 20px;
-      
-      .giiker-home-awards-image-item-content-image {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        img {
-          max-width: 100%;
-          height: auto;
-          border-radius: 8px;
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-          transition: transform 0.3s ease;
-          
-          &:hover {
-            transform: scale(1.05);
-          }
-        }
-      }
-    }
-    
-    .giiker-home-awards-image-item-title {
-      width: 100%;
-      font-size: 18px;
-      font-weight: 500;
-      font-family: 'Oslla', sans-serif;
-      color: #000;
-      line-height: 1.4;
-      margin: 0;
-    }
-  }
-  
-  // 响应式样式
-  @media (max-width: 1024px) {
-    padding: 30px 15px;
-  }
-  
-  @media (max-width: 768px) {
-    padding: 20px 10px;
-    
-    .giiker-home-awards-image-item {
-      padding: 15px;
-      
-      .giiker-home-awards-image-item-title {
-        font-size: 16px;
-      }
     }
   }
 }
