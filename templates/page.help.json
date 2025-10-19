@@ -40,33 +40,37 @@
         "list_kATeYC": {
           "type": "list",
           "settings": {
+            "background_image": "shopify://shop_images/x0020_1_1.png",
             "url": "",
-            "title": "",
-            "detail": ""
+            "title": "<p>Shipping</p>",
+            "detail": "<p>Questions and answers about shipping</p><p>issues.</p>"
           }
         },
         "list_cpQtMN": {
           "type": "list",
           "settings": {
+            "background_image": "shopify://shop_images/x0020_1.png",
             "url": "",
-            "title": "",
-            "detail": ""
+            "title": "<p>Service</p>",
+            "detail": "<p>Find our return policy, order cancellation</p><p>policy and warranty.</p>"
           }
         },
         "list_dkeDNp": {
           "type": "list",
           "settings": {
+            "background_image": "shopify://shop_images/x0020_1_3.png",
             "url": "",
-            "title": "",
-            "detail": ""
+            "title": "<p>App Download</p>",
+            "detail": "<p>Get the GiiKER app and start playing</p><p>smarter.</p>"
           }
         },
         "list_cRm8fp": {
           "type": "list",
           "settings": {
+            "background_image": "shopify://shop_images/x0020_1_2.png",
             "url": "",
-            "title": "",
-            "detail": ""
+            "title": "<p>Compliance</p>",
+            "detail": "<p>Certified to meet all EU safety and quality</p><p>standards.</p>"
           }
         }
       },
