@@ -1,0 +1,103 @@
+<div class="giiker-home-evaluate-list-container" style="background-color: {{ section.settings.background_color }}">
+  <div class="giiker-home-evaluate-list-title">{{ section.settings.title }}</div>
+  <div class="giiker-home-evaluate-list-detail">{{ section.settings.detail }}</div>
+  <div class="giiker-home-evaluate-list-background">
+    {{
+      section.settings.background_image
+      | image_url: width: section.settings.background_image.width
+      | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag', data-cc-animate: 'fade-in'
+    }}
+    {{
+      section.settings.background_flower_image
+      | image_url: width: section.settings.background_flower_image.width
+      | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-flower-tag', data-cc-animate: 'fade-in'
+    }}
+  </div>
+  <div class="giiker-home-evaluate-list">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'text' %}
+          <div class="giiker-home-evaluate-list-item">
+            <div class="giiker-home-evaluate-list-item-text">
+              <div class="giiker-home-list-image-item-text-icon">
+                {{ block.settings.icon | image_url: width: block.settings.icon.width | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag', data-cc-animate: 'fade-in' }}
+              </div>
+            </div>
+            <h2 class="giiker-home-evaluate-list-item-text-title">{{ block.settings.title }}</h2>
+         </div>
+      {% when 'image' %}
+        <div class="giiker-home-evaluate-list-item-image">
+          {{ block.settings.image | image_url: width: block.settings.image.width | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag', data-cc-animate: 'fade-in' }}
+        </div>
+      {% endcase %}
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Giiker Home Evaluate List",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "detail",
+      "label": "Detail"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "rgba(255, 223, 87, 1)"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_flower_image",
+      "label": "Background Flower Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image" 
+        }
+      ]
+    },
+    {
+      "type": "text",
+      "name": "Text",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Icon" 
+        },
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "Title"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Giiker Home Evaluate List"
+    }
+  ]
+}
+{% endschema %}
