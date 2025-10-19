@@ -1,0 +1,52 @@
+<div class="giiker-home-phone-image-container">
+  <div class="giiker-home-phone-image-content">
+    <div class="giiker-home-phone-image-title">
+      {{ section.settings.title }}
+    </div>
+    <div class="giiker-home-phone-image-list" data-cc-animate="fade-phone-list">
+      {% for block in section.blocks %}
+        <div class="giiker-home-phone-image-list-item">
+          <a class="giiker-home-phone-image-list-item-image" href="{{ block.settings.url }}" target="_blank">
+            {{ block.settings.image | image_url: width: block.settings.image.width | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag'}}
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Giiker Home Phone Image",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "awards",
+      "name": "Awards",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Giiker Home Phone Image"
+    }
+  ]
+}
+{% endschema %}

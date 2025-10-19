@@ -1,8 +1,23 @@
 <div class="giiker-home-awards-image-container">
-  <div class="swiper giiker-awards-swiper">
-    <div class="swiper-wrapper">
+  <div class="awards-marquee">
+    <div class="awards-marquee-content">
       {% for block in section.blocks %}
-        <div class="swiper-slide">
+        <div class="awards-marquee-item">
+          <div class="giiker-home-awards-image-item">
+            <div class="giiker-home-awards-image-item-content">
+              <div class="giiker-home-awards-image-item-content-image">
+                {{ block.settings.image | image_url: width: block.settings.image.width | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag', data-cc-animate: 'fade-in' }}
+              </div>
+            </div>
+            <div class="giiker-home-awards-image-item-title">
+              {{ block.settings.title }}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+      <!-- 复制一份用于无缝循环 -->
+      {% for block in section.blocks %}
+        <div class="awards-marquee-item">
           <div class="giiker-home-awards-image-item">
             <div class="giiker-home-awards-image-item-content">
               <div class="giiker-home-awards-image-item-content-image">
@@ -51,77 +66,29 @@
 }
 {% endschema %}
 
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  const swiperElement = document.querySelector('.giiker-awards-swiper');
-  if (swiperElement) {
-    const autoplayDelay = 3000;
-    const autoplayEnabled = true;
-    const slidesPerView = 4;
-    const showNavigation = false;
-    const showPagination = false;
-    
-    new Swiper('.giiker-awards-swiper', {
-      // 基本配置
-      slidesPerView: slidesPerView,
-      spaceBetween: 20,
-      loop: true,
-      
-      // 自动播放配置
-      autoplay: autoplayEnabled ? {
-        delay: autoplayDelay,
-        disableOnInteraction: false,
-        pauseOnMouseEnter: true
-      } : false,
-      
-      // 导航箭头
-      navigation: showNavigation ? {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      } : false,
-      
-      // 分页器
-      pagination: showPagination ? {
-        el: '.swiper-pagination',
-        clickable: true,
-      } : false,
-      
-      // 响应式配置
-      breakpoints: {
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 15
-        },
-        480: {
-          slidesPerView: 2,
-          spaceBetween: 15
-        },
-        768: {
-          slidesPerView: 3,
-          spaceBetween: 20
-        },
-        1024: {
-          slidesPerView: slidesPerView,
-          spaceBetween: 20
-        }
-      },
-      
-      // 效果配置
-      speed: 1000,
-      effect: 'slide',
-      direction: 'horizontal',
-      
-      // 其他配置
-      grabCursor: true,
-      centeredSlides: false,
-      freeMode: false,
-      
-      // 事件
-      on: {
-        init: function() {
-          console.log('Giiker Awards Swiper initialized');
-        }
+  const marqueeElement = document.querySelector('.awards-marquee-content');
+  if (marqueeElement) {
+    // 确保有足够的内容进行无缝循环
+    const items = marqueeElement.querySelectorAll('.awards-marquee-item');
+    if (items.length > 0) {
+      // 如果内容不够多，复制更多内容
+      const originalItems = items.length / 2; // 因为我们已经复制了一份
+      if (originalItems < 4) {
+        const content = marqueeElement.innerHTML;
+        marqueeElement.innerHTML = content + content;
       }
+    }
+    
+    // 鼠标悬停暂停动画
+    marqueeElement.addEventListener('mouseenter', function() {
+      this.style.animationPlayState = 'paused';
+    });
+    
+    marqueeElement.addEventListener('mouseleave', function() {
+      this.style.animationPlayState = 'running';
     });
   }
 });
