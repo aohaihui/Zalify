@@ -1,6 +1,6 @@
-<div class="giiker-contact-us-text-container" style="background-color: {{ section.settings.background_color }}">
-  <div class="giiker-contact-us-text-title">{{ section.settings.title }}</div>
-  <div class="giiker-contact-us-text-background">
+<div class="giiker-help-text-container" style="background-color: {{ section.settings.background_color }}">
+  <div class="giiker-help-text-title">{{ section.settings.title }}</div>
+  <div class="giiker-help-text-background">
     {{
       section.settings.background_left_image
       | image_url: width: section.settings.background_left_image.width
@@ -12,22 +12,20 @@
       | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-right-tag', data-cc-animate: 'fade-in'
     }}
   </div>
-  <div class="giiker-contact-us-text-list">
+  <div class="giiker-help-text-list">
     {% for block in section.blocks %}
-      <div class="giiker-contact-us-text-item contact-us-text-item-{{forloop.index}}"
+      <div class="giiker-help-text-item help-text-item-{{forloop.index}}"
       data-cc-animate-delay="{{ forloop.index | times: 0.07 }}s"
       data-cc-animate="fade-in-up">
-        <div class="giiker-contact-us-text-item-content" >
+        <a href="{{ block.settings.url }}" target="_blank" class="giiker-help-text-item-content" >
           {% if block.settings.icon %}
-            <div class="giiker-contact-us-text-item-content-icon">
+            <div class="giiker-help-text-item-content-icon">
               {{ block.settings.icon | image_url: width: block.settings.icon.width | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag' }}
             </div>
           {% endif %}
-          <div class="giiker-contact-us-text-item-content-background">
-            {{ block.settings.background_image | image_url: width: block.settings.background_image.width | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag' }}
-          </div>
-          <div class="giiker-contact-us-text-item-detail">{{ block.settings.detail }}</div>
-        </div>
+          <div class="giiker-help-text-item-title">{{ block.settings.detail }}</div>
+          <div class="giiker-help-text-item-detail">{{ block.settings.detail }}</div>
+        </a>
       </div>
     {% endfor %}
   </div>
@@ -35,7 +33,7 @@
 
 {% schema %}
 {
-  "name": "Giiker Contact Us Text",
+  "name": "Giiker Help Text",
   "settings": [
     {
       "type": "richtext",
@@ -75,7 +73,17 @@
           "label": "Background Image" 
         },
         {
-          "type": "liquid",
+          "type": "url",
+          "id": "url",
+          "label": "URL"
+        },
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
           "id": "detail",
           "label": "Detail"
         }
@@ -84,7 +92,7 @@
   ],
   "presets": [
     {
-      "name": "Giiker Contact Us Text"
+      "name": "Giiker Help Text"
     }
   ]
 }

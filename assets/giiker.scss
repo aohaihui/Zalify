@@ -1006,6 +1006,7 @@ body{
     align-items: center;
     flex-direction: column;
     gap: 5px;
+    margin-top: 80px;
     .giiker-contact-us-text-item{
       width: auto;
       max-width: 100%;
@@ -1041,10 +1042,59 @@ body{
         font-family: Overlock;
         color: #000;
         transform: rotate(-1deg);
+        span{
+          margin: 0 5px;
+        }
+      }
+    }
+    .contact-us-text-item-2{
+      transform: translateX(-41%);
+    }
+    .contact-us-text-item-3{
+      transform: translateX(10%);
+      .giiker-contact-us-text-item-detail{
+        transform: rotate(2deg);
+        padding-left: 123px;
+      }
+      .giiker-contact-us-text-item-content-icon {
+        position: absolute;
+        left: -40px;
+        top: 10px;
+      }
+    }
+    .contact-us-text-item-4{
+      // transform: translateX(-123%);
+      .giiker-contact-us-text-item-detail{
+        padding-left: 123px;
+      }
+      .giiker-contact-us-text-item-content-icon {
+        position: absolute;
+        left: -40px;
+        top: -40px;
+      }
+    }
+    .contact-us-text-item-5{
+      transform: translateX(5%);
+      margin-top: 10px;
+      .giiker-contact-us-text-item-detail{
+        transform: rotate(2deg);
+        padding-left: 123px;
+      }
+      .giiker-contact-us-text-item-content-icon {
+        position: absolute;
+        left: -40px;
+        top: -40px;
+      }
+    }
+    .contact-us-text-item-6{
+      margin-top: 120px;
+      .giiker-contact-us-text-item-detail{
+        transform: rotate(0);
+        padding-left: 123px;
       }
     }
   }
-  
+
   .giiker-contact-us-text-background{
     .image-left-tag{
       position: absolute;
