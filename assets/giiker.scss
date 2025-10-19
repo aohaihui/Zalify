@@ -1130,21 +1130,51 @@ body{
     }
   }
   .giiker-help-text-list{
-    width: max-content;
+    width: 958px;
+    max-width: 100%;
     margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 20px;
     margin-top: 80px;
     .giiker-help-text-item{
-      width: auto;
+      width: 404px;
       max-width: 100%;
       padding: 0 20px;
       box-sizing: border-box;
       position: relative;
+      .giiker-help-text-item-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .giiker-help-text-item-title{
+          margin-top: 20px;
+          text-align: center;
+          *{
+            margin: 0;
+            font-size: 32px;
+            line-height: 1;
+            font-weight: 400;
+            font-family: Oslla;
+            color: #000;
+          }
+        }
+        .giiker-help-text-item-detail{
+          margin-top: 20px;
+          text-align: center;
+          *{
+            margin: 0;
+            font-size: 20px;
+            line-height: 1;
+            font-weight: 400;
+            font-family: Overlock;
+            color: #000;
+          }
+        }
+      }
     }
   }
   .giiker-help-text-background{
