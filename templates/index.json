@@ -99,12 +99,14 @@
         "banner_HaEBAc": {
           "type": "banner",
           "settings": {
+            "product_image": "shopify://shop_images/2_1.png",
             "product": "giiker-super-decoder"
           }
         },
         "banner_yNkR9g": {
           "type": "banner",
           "settings": {
+            "product_image": "shopify://shop_images/2_5884e794-fafe-4b41-99db-693365300352.png",
             "product": "battle-pad"
           }
         },
@@ -151,8 +153,7 @@
       "name": "Giiker Home Favourite",
       "settings": {
         "title": "Find your favourite",
-        "background_color": "#737373",
-        "background_image": "shopify://shop_images/1_792915b5-b458-4c67-ad75-6dfafad115e5.png"
+        "background_color": "#737373"
       }
     },
     "giiker_home_list_image_qmNPVK": {
