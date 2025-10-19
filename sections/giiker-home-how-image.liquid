@@ -1,0 +1,60 @@
+<div class="giiker-home-how-image-container" style="background-color: {{ section.settings.background_color }}">
+  <div class="giiker-home-how-image-title">{{ section.settings.title }}</div>
+  <div class="giiker-home-how-image-url">
+    <a href="{{ section.settings.url }}" target="_blank">
+      {{ section.settings.url_label }}
+    </a>
+  </div>
+  <div class="giiker-home-how-image-background">
+    {{
+      section.settings.background_image
+      | image_url: width: section.settings.background_image.width
+      | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag', data-cc-animate: 'fade-in'
+    }}
+    {{
+      section.settings.background_flower_image
+      | image_url: width: section.settings.background_flower_image.width
+      | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-flower-tag', data-cc-animate: 'fade-in'
+    }}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Giiker Home How Image",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "Title"
+    },
+
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_flower_image",
+      "label": "Background Flower Image"
+    },
+    {
+      "type": "url",
+      "id": "url",
+      "label": "URL"
+    },
+    {
+      "type": "text",
+      "id": "url_label",
+      "label": "URL Label",
+      "default": "Discover More"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Giiker Home How Image"
+    }
+  ]
+}
+{% endschema %}
