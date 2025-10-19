@@ -1,0 +1,163 @@
+<div class="giiker-home-awards-image-container">
+  <div class="swiper giiker-awards-swiper">
+    <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+        <div class="swiper-slide">
+          <div class="giiker-home-awards-image-item">
+            <div class="giiker-home-awards-image-item-content">
+              <div class="giiker-home-awards-image-item-content-image">
+                {{ block.settings.image | image_url: width: block.settings.image.width | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag', data-cc-animate: 'fade-in' }}
+              </div>
+            </div>
+            <div class="giiker-home-awards-image-item-title">
+              {{ block.settings.title }}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Giiker Home Awards Image",
+  "settings": [
+    {
+      "type": "range",
+      "id": "autoplay_delay",
+      "label": "Autoplay Delay (ms)",
+      "min": 1000,
+      "max": 10000,
+      "step": 500,
+      "default": 3000
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay_enabled",
+      "label": "Enable Autoplay",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "slides_per_view",
+      "label": "Slides Per View",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "default": 4
+    },
+    {
+      "type": "checkbox",
+      "id": "show_navigation",
+      "label": "Show Navigation Arrows",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_pagination",
+      "label": "Show Pagination Dots",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "awards",
+      "name": "Awards",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "Title"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Giiker Home Awards Image"
+    }
+  ]
+}
+{% endschema %}
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const swiperElement = document.querySelector('.giiker-awards-swiper');
+  if (swiperElement) {
+    const autoplayDelay = {{ section.settings.autoplay_delay | default: 3000 }};
+    const autoplayEnabled = {{ section.settings.autoplay_enabled | default: true }};
+    const slidesPerView = {{ section.settings.slides_per_view | default: 4 }};
+    const showNavigation = {{ section.settings.show_navigation | default: false }};
+    const showPagination = {{ section.settings.show_pagination | default: false }};
+    
+    new Swiper('.giiker-awards-swiper', {
+      // 基本配置
+      slidesPerView: slidesPerView,
+      spaceBetween: 20,
+      loop: true,
+      
+      // 自动播放配置
+      autoplay: autoplayEnabled ? {
+        delay: autoplayDelay,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true
+      } : false,
+      
+      // 导航箭头
+      navigation: showNavigation ? {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      } : false,
+      
+      // 分页器
+      pagination: showPagination ? {
+        el: '.swiper-pagination',
+        clickable: true,
+      } : false,
+      
+      // 响应式配置
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 15
+        },
+        480: {
+          slidesPerView: 2,
+          spaceBetween: 15
+        },
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 20
+        },
+        1024: {
+          slidesPerView: slidesPerView,
+          spaceBetween: 20
+        }
+      },
+      
+      // 效果配置
+      speed: 1000,
+      effect: 'slide',
+      direction: 'horizontal',
+      
+      // 其他配置
+      grabCursor: true,
+      centeredSlides: false,
+      freeMode: false,
+      
+      // 事件
+      on: {
+        init: function() {
+          console.log('Giiker Awards Swiper initialized');
+        }
+      }
+    });
+  }
+});
+</script>
