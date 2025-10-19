@@ -18,10 +18,72 @@
     },
     "giiker_help_text_eypYtx": {
       "type": "giiker-help-text",
+      "blocks": {
+        "list_KdhC7p": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/x0020_1_2.png",
+            "url": "",
+            "title": "<p>Manual</p>",
+            "detail": "<p>How to get started and master your</p><p>GiiKER Games.</p>"
+          }
+        },
+        "list_BVmwwU": {
+          "type": "list",
+          "settings": {
+            "background_image": "shopify://shop_images/x0020_1_3.png",
+            "url": "",
+            "title": "<p>Orders</p>",
+            "detail": "<p>Tracking details about your order.</p>"
+          }
+        },
+        "list_kATeYC": {
+          "type": "list",
+          "settings": {
+            "url": "",
+            "title": "",
+            "detail": ""
+          }
+        },
+        "list_cpQtMN": {
+          "type": "list",
+          "settings": {
+            "url": "",
+            "title": "",
+            "detail": ""
+          }
+        },
+        "list_dkeDNp": {
+          "type": "list",
+          "settings": {
+            "url": "",
+            "title": "",
+            "detail": ""
+          }
+        },
+        "list_cRm8fp": {
+          "type": "list",
+          "settings": {
+            "url": "",
+            "title": "",
+            "detail": ""
+          }
+        }
+      },
+      "block_order": [
+        "list_KdhC7p",
+        "list_BVmwwU",
+        "list_kATeYC",
+        "list_cpQtMN",
+        "list_dkeDNp",
+        "list_cRm8fp"
+      ],
       "name": "Giiker Help Text",
       "settings": {
-        "title": "",
-        "background_color": "rgba(255, 185, 87, 1)"
+        "title": "<p>WE’RE HERE TO HELP!<br/><br/></p>",
+        "background_color": "rgba(255, 185, 87, 1)",
+        "background_left_image": "shopify://shop_images/2_1_41aff5cb-36ca-4229-bafb-a140eaf345db.png",
+        "background_right_image": "shopify://shop_images/11.png"
       }
     }
   },
