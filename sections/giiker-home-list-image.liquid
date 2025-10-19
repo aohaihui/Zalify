@@ -1,6 +1,13 @@
 <div class="giiker-home-list-image-container" style="background-color: {{ section.settings.background_color }}">
   <div class="giiker-home-list-image-title">{{ section.settings.title }}</div>
   <div class="giiker-home-list-image-detail">{{ section.settings.detail }}</div>
+  <div class="giiker-home-list-image-background">
+    {{
+      section.settings.background_image
+      | image_url: width: section.settings.background_image.width
+      | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag', data-cc-animate: 'fade-in'
+    }}
+  </div>
   <div class="giiker-home-list-image">
     {% for block in section.blocks %}
       <div class="giiker-home-list-image-item" data-cc-animate="fade-in">
@@ -39,6 +46,11 @@
       "id": "background_color",
       "label": "Background Color",
       "default": "rgba(255, 223, 87, 1)"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
     }
   ],
   "blocks": [
