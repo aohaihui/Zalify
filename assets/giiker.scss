@@ -112,10 +112,13 @@ body{
 }
 .giiker-home-image-video{
   width: 100%;
+  img{
+    width: 100%;
+  }
 }
 .giiker-home-text-image-container{
   width: 100%;
-  margin: 0 0 60px;
+  margin: 60px 0;
   .giiker-home-text-image{
     width: 100%;
     max-width: 1800px;
@@ -903,5 +906,78 @@ body{
       }
     }
 
+  }
+}
+.giiker-home-community-container{
+  width: 1920px;
+  max-width: 100%;
+  padding: 120px 60px 50px;
+  box-sizing: border-box;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .giiker-home-community-content{
+    width: 50%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+    .giiker-home-community-title{
+      *{
+        font-size: 48px;
+        line-height: 1;
+        font-weight: 400;
+        font-family: Oslla;
+        color: #000;
+        margin: 0;
+      }
+    }
+    .giiker-home-community-detail{
+      text-align: center;
+      margin-top: 30px;
+      *{
+        font-size: 20px;
+        line-height: 1;
+        font-weight: 500;
+        font-family: Overlock;
+        color: #000;
+        margin: 0;
+      }
+    }
+    .giiker-home-community-url{
+      width: max-content;
+      background: #fff;
+      overflow: hidden;
+      color: #000;
+      font-size: 20px;
+      font-weight: 500;
+      border: 3px solid #000;
+      border-radius: 30px;
+      padding: 0 32px;
+      line-height: 43px;
+      height: 43px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      text-align: center;
+      margin-top: 40px;
+    }
+  }
+  .giiker-home-community-background{
+    position: absolute;
+    top: -1px;
+    right: 0;
+    z-index: 1;
+    max-width: 100%;
+    object-fit: cover;
+    .image-tag{
+      object-fit: cover;
+    }
   }
 }
