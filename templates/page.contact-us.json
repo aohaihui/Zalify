@@ -65,7 +65,7 @@
           "settings": {
             "icon": "shopify://shop_images/2_hires_1.png",
             "background_image": "shopify://shop_images/2_25.png",
-            "detail": "Contact our team by <span style=\"color:rgba(0, 200, 255, 1)\"></span>"
+            "detail": "Contact our team by <span style=\"color:rgba(0, 200, 255, 1)\">emai</span>"
           }
         },
         "list_ape8VK": {
@@ -89,7 +89,14 @@
           "settings": {
             "icon": "shopify://shop_images/5_hires_1.png",
             "background_image": "shopify://shop_images/5_1.png",
-            "detail": "<span style=\"color:rgba(255, 119, 0, 1)\"></span> is also on Instagram"
+            "detail": "<span style=\"color:rgba(255, 119, 0, 1)\">@giikerglobal</span> is also on Instagram"
+          }
+        },
+        "list_dn3jcj": {
+          "type": "list",
+          "settings": {
+            "background_image": "shopify://shop_images/6_1.png",
+            "detail": "Wherever you follow us, thank you."
           }
         }
       },
@@ -98,7 +105,8 @@
         "list_RndYcq",
         "list_ape8VK",
         "list_PWRMqT",
-        "list_re9pAe"
+        "list_re9pAe",
+        "list_dn3jcj"
       ],
       "name": "Giiker Contact Us Text",
       "settings": {
