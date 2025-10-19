@@ -218,6 +218,63 @@
         "url": "shopify://products/battle-pad",
         "url_label": "Discover More"
       }
+    },
+    "giiker_home_awards_image_Nwrteq": {
+      "type": "giiker-home-awards-image",
+      "blocks": {
+        "awards_AickMa": {
+          "type": "awards",
+          "settings": {
+            "image": "shopify://shop_images/Tillywig.png",
+            "title": "<p>CBME Award</p>"
+          }
+        },
+        "awards_xTL7Mw": {
+          "type": "awards",
+          "settings": {
+            "image": "shopify://shop_images/USE.png",
+            "title": "<p>USE Design Award</p><p>Gold Winner 2023</p>"
+          }
+        },
+        "awards_JQY4j7": {
+          "type": "awards",
+          "settings": {
+            "image": "shopify://shop_images/family_choice.png",
+            "title": "<p>Family Choice</p><p>Award</p>"
+          }
+        },
+        "awards_PTGAmV": {
+          "type": "awards",
+          "settings": {
+            "image": "shopify://shop_images/NAPPA.png",
+            "title": "<p>National Parenting</p><p>Product Awards (NAPPA)</p>"
+          }
+        },
+        "awards_UtkWkC": {
+          "type": "awards",
+          "settings": {
+            "image": "shopify://shop_images/Parents.png",
+            "title": "<p>Parents' Picks</p><p>Award</p>"
+          }
+        },
+        "awards_QBTUbD": {
+          "type": "awards",
+          "settings": {
+            "image": "shopify://shop_images/Tillywig.png",
+            "title": "<p>Tillywig Brain Child</p><p>Award</p>"
+          }
+        }
+      },
+      "block_order": [
+        "awards_AickMa",
+        "awards_xTL7Mw",
+        "awards_JQY4j7",
+        "awards_PTGAmV",
+        "awards_UtkWkC",
+        "awards_QBTUbD"
+      ],
+      "name": "Giiker Home Awards Image",
+      "settings": {}
     }
   },
   "order": [
@@ -227,6 +284,7 @@
     "giiker_home_image_text_CExhrn",
     "giiker_home_favourite_wyCJKc",
     "giiker_home_list_image_qmNPVK",
-    "giiker_home_how_image_G67RDW"
+    "giiker_home_how_image_G67RDW",
+    "giiker_home_awards_image_Nwrteq"
   ]
 }
