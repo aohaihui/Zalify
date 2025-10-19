@@ -1112,3 +1112,55 @@ body{
     }
   }
 }
+.giiker-help-text-container{
+  width: 100%;
+  padding-top: 250px;
+  padding-bottom: 200px;
+  position: relative;
+  .giiker-help-text-title{
+    width: 100%;
+    text-align: center;
+    *{
+      margin: 0;
+      font-size: 96px;
+      line-height: 1.1;
+      font-weight: 400;
+      font-family: Oslla;
+      color: #000;
+    }
+  }
+  .giiker-help-text-list{
+    width: max-content;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 80px;
+    .giiker-help-text-item{
+      width: auto;
+      max-width: 100%;
+      padding: 0 20px;
+      box-sizing: border-box;
+      position: relative;
+    }
+  }
+  .giiker-help-text-background{
+    .image-left-tag{
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      object-fit: cover;
+    }
+    .image-right-tag{
+      position: absolute;
+      top: 60%;
+      right: 0;
+      transform: translateY(-50%);
+      object-fit: cover;
+    }
+  }
+}
