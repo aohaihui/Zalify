@@ -215,14 +215,14 @@ body{
     line-height: 1;
     font-weight: 400;
     font-family: Oslla;
-    color: #000;
+    color: rgba(255, 223, 87, 1);
     text-align: center;
     padding-top: 120px;
   }
   .favourite-background{
     width: 100%;
     display: flex;
-    margin-top: -8%;
+    margin-top: -16%;
 
   }
   .favourite-swiper{
@@ -233,6 +233,55 @@ body{
     .swiper-slide{
       width: 260px;
       max-width: 100%;
+      .item-title{
+        margin-top: 10px;
+        color: #fff;
+        font-family: Overlock;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+      }
+    }
+    .swiper-button-next, .swiper-button-prev{
+      position: absolute;
+      top: 34%;
+      transform: translateY(-50%);
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      cursor: pointer;
+      z-index: 10;
+      &::after{
+        display: none;
+      }
+    }
+  }
+}
+.iiker-home-list-image-container{
+  width: 100%;
+  position: relative;
+  .giiker-home-list-image-title{
+    padding-top: -155px;
+    text-align: center;
+    *{
+      margin: 0;
+      font-size: 72px;
+      line-height: 1;
+      font-weight: 400;
+      font-family: Oslla;
+      color: #000;
+    }
+  }
+  .giiker-home-list-image-detail{
+    margin-top: 36px;
+    text-align: center;
+    *{
+      font-size: 36px;
+      line-height: 1;
+      font-weight: 400;
+      font-family: Overlock;
+      color: #000;
+      margin: 0;
     }
   }
 }

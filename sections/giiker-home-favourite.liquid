@@ -27,7 +27,7 @@
         {% endfor %}
       </div>
     </div>
-    <div class="swiper-button-next">
+    <div class="swiper-button-prev">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="118" height="118" viewBox="0 0 118 118" fill="none">
         <rect width="117.539" height="117.539" transform="matrix(1 0 0 -1 0 118)" fill="url(#pattern0_582_512)"/>
         <defs>
@@ -38,7 +38,7 @@
         </defs>
       </svg>
     </div>
-    <div class="swiper-button-prev">
+    <div class="swiper-button-next">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="118" height="118" viewBox="0 0 118 118" fill="none">
         <rect width="117.539" height="117.539" transform="matrix(1 0 0 -1 0 118)" fill="url(#pattern0_582_511)"/>
         <defs>
@@ -56,11 +56,7 @@
       | image_url: width: section.settings.background_image.width
       | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag', data-cc-animate: 'fade-in'
     }}
-    {{
-      section.settings.background_image
-      | image_url: width: section.settings.background_image.width
-      | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-bottom-tag', data-cc-animate: 'fade-in'
-    }}
+
   </div>
 </div>
 <script>
