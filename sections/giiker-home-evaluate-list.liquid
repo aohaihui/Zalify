@@ -17,7 +17,7 @@
     {% for block in section.blocks %}
       {% case block.type %}
         {% when 'text' %}
-          <div class="giiker-home-evaluate-list-item">
+          <div class="giiker-home-evaluate-list-item" style="background-color: {{ block.settings.background_color }}">
             <div class="giiker-home-evaluate-list-item-text">
               <div class="giiker-home-list-image-item-text-icon">
                 {{ block.settings.icon | image_url: width: block.settings.icon.width | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag', data-cc-animate: 'fade-in' }}
@@ -52,7 +52,7 @@
       "type": "color",
       "id": "background_color",
       "label": "Background Color",
-      "default": "rgba(255, 223, 87, 1)"
+      "default": "rgba(40, 79, 179, 1)"
     },
     {
       "type": "image_picker",

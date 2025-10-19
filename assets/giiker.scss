@@ -790,3 +790,21 @@ body{
     transform: translateY(0) scale(1) rotateX(0deg);
   }
 }
+.giiker-home-evaluate-list-container{
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  position: relative;
+  .giiker-home-evaluate-list-title{
+    padding-top: 155px;
+    text-align: center;
+    *{
+      margin: 0;
+      font-size: 72px;
+      line-height: 1;
+      font-weight: 400;
+      font-family: Oslla;
+      color: rgba(255, 223, 87, 1);
+    }
+  }
+}
