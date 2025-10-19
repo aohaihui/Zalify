@@ -279,57 +279,57 @@
     "giiker_home_phone_image_mQi8cU": {
       "type": "giiker-home-phone-image",
       "blocks": {
-        "awards_mGc34i": {
-          "type": "awards",
+        "phone_c94yVp": {
+          "type": "phone",
           "settings": {
             "image": "shopify://shop_images/1_c9fd0048-ba93-434d-906a-1b6e25a25b2a.png",
             "url": ""
           }
         },
-        "awards_XKzGHL": {
-          "type": "awards",
+        "phone_TFHGTz": {
+          "type": "phone",
           "settings": {
             "image": "shopify://shop_images/2_c125959c-83c2-4ec3-b6c0-b26de45a3b20.png",
             "url": ""
           }
         },
-        "awards_LFDeqB": {
-          "type": "awards",
+        "phone_NpRhG7": {
+          "type": "phone",
           "settings": {
             "image": "shopify://shop_images/3_75a487fa-67f7-4272-83ca-02be569a06a9.png",
             "url": ""
           }
         },
-        "awards_MCP9Ch": {
-          "type": "awards",
+        "phone_k7e9FT": {
+          "type": "phone",
           "settings": {
             "image": "shopify://shop_images/4_b6259831-eddc-4006-8d67-d8925f1683fc.png",
             "url": ""
           }
         },
-        "awards_hMiQTj": {
-          "type": "awards",
+        "phone_LV9WF9": {
+          "type": "phone",
           "settings": {
             "image": "shopify://shop_images/5_2777aacb-de15-4330-9856-9ea8f49544d7.png",
             "url": ""
           }
         },
-        "awards_XcWXTG": {
-          "type": "awards",
+        "phone_LxR4eK": {
+          "type": "phone",
           "settings": {
             "image": "shopify://shop_images/6.png",
             "url": ""
           }
         },
-        "awards_hnHPra": {
-          "type": "awards",
+        "phone_9pcxdc": {
+          "type": "phone",
           "settings": {
             "image": "shopify://shop_images/7.png",
             "url": ""
           }
         },
-        "awards_3kEYqB": {
-          "type": "awards",
+        "phone_4BBDhf": {
+          "type": "phone",
           "settings": {
             "image": "shopify://shop_images/8.png",
             "url": ""
@@ -337,18 +337,19 @@
         }
       },
       "block_order": [
-        "awards_mGc34i",
-        "awards_XKzGHL",
-        "awards_LFDeqB",
-        "awards_MCP9Ch",
-        "awards_hMiQTj",
-        "awards_XcWXTG",
-        "awards_hnHPra",
-        "awards_3kEYqB"
+        "phone_c94yVp",
+        "phone_TFHGTz",
+        "phone_NpRhG7",
+        "phone_k7e9FT",
+        "phone_LV9WF9",
+        "phone_LxR4eK",
+        "phone_9pcxdc",
+        "phone_4BBDhf"
       ],
       "name": "Giiker Home Phone Image",
       "settings": {
-        "title": ""
+        "title": "",
+        "background_color": "#f0674f"
       }
     }
   },
