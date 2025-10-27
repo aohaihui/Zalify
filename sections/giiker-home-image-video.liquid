@@ -7,8 +7,9 @@
         | image_url: width: section.settings.pc_image.width
         | image_tag: loading: 'eager', fetchpriority: 'high', decoding: 'async', class: 'image-tag', data-cc-animate: 'fade-in'
     }} 
-    {% endif %} {% if section.settings.video != blank %}
-      {{ section.settings.video | video_tag: loading: 'eager', fetchpriority: 'high', decoding: 'async', class: 'video-tag', data-cc-animate: 'fade-in' }}
+    {% endif %}
+    {% if section.settings.video_picker != blank %}
+      {{ section.settings.video_picker | video_tag: loading: 'eager', fetchpriority: 'high', decoding: 'async', class: 'video-tag', playsinline: true, autoplay: true, muted: true, loop: true, data-cc-animate: 'fade-in' }}
     {% endif %}
 
     </div>

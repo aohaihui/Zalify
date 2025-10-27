@@ -115,6 +115,11 @@ body{
   img{
     width: 100%;
   }
+  video{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
 }
 .giiker-home-text-image-container{
   width: 100%;
