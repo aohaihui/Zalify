@@ -2,14 +2,24 @@
   <div class="giiker-home-image-video">
     <div class="giiker-home-image">
       {% if section.settings.pc_image != blank %}
-      {{
-        section.settings.pc_image
-        | image_url: width: section.settings.pc_image.width
-        | image_tag: loading: 'eager', fetchpriority: 'high', decoding: 'async', class: 'image-tag', data-cc-animate: 'fade-in'
-    }} 
+      <img src="{{ section.settings.pc_image | image_url: width: section.settings.pc_image.width }}" 
+           alt=""
+           class="image-tag"
+           data-cc-animate="fade-in"
+           loading="eager"
+           width="{{ section.settings.pc_image.width }}"
+           height="{{ section.settings.pc_image.height }}">
     {% endif %}
     {% if section.settings.video_picker != blank %}
-      {{ section.settings.video_picker | video_tag: loading: 'eager', fetchpriority: 'high', decoding: 'async', class: 'video-tag', playsinline: true, autoplay: true, muted: true, loop: true, data-cc-animate: 'fade-in' }}
+      <video src="{{ section.settings.video_picker }}" 
+             class="video-tag"
+             playsinline
+             autoplay
+             muted
+             loop
+             data-cc-animate="fade-in"
+             loading="eager">
+      </video>
     {% endif %}
 
     </div>

@@ -1,16 +1,20 @@
 <div class="giiker-help-text-container" style="background-color: {{ section.settings.background_color }}">
   <div class="giiker-help-text-title">{{ section.settings.title }}</div>
   <div class="giiker-help-text-background">
-    {{
-      section.settings.background_left_image
-      | image_url: width: section.settings.background_left_image.width
-      | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-left-tag', data-cc-animate: 'fade-in'
-    }}
-    {{
-      section.settings.background_right_image
-      | image_url: width: section.settings.background_right_image.width
-      | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-right-tag', data-cc-animate: 'fade-in'
-    }}
+    <img src="{{ section.settings.background_left_image | image_url: width: section.settings.background_left_image.width }}" 
+         alt=""
+         class="image-left-tag"
+         data-cc-animate="fade-in"
+         loading="lazy"
+         width="{{ section.settings.background_left_image.width }}"
+         height="{{ section.settings.background_left_image.height }}">
+    <img src="{{ section.settings.background_right_image | image_url: width: section.settings.background_right_image.width }}" 
+         alt=""
+         class="image-right-tag"
+         data-cc-animate="fade-in"
+         loading="lazy"
+         width="{{ section.settings.background_right_image.width }}"
+         height="{{ section.settings.background_right_image.height }}">
   </div>
   <div class="giiker-help-text-list">
     {% for block in section.blocks %}
@@ -20,7 +24,12 @@
         <a href="{{ block.settings.url }}" target="_blank" class="giiker-help-text-item-content" >
           {% if block.settings.icon %}
             <div class="giiker-help-text-item-content-icon">
-              {{ block.settings.icon | image_url: width: block.settings.icon.width | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag' }}
+              <img src="{{ block.settings.icon | image_url: width: block.settings.icon.width }}" 
+                   alt=""
+                   class="image-tag"
+                   loading="lazy"
+                   width="{{ block.settings.icon.width }}"
+                   height="{{ block.settings.icon.height }}">
             </div>
           {% endif %}
           <div class="giiker-help-text-item-title">{{ block.settings.title }}</div>

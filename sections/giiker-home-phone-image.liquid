@@ -1,151 +1,865 @@
 <div class="giiker-home-phone-image-container">
-  <div class="giiker-home-phone-image-content" style="background-color: {{ section.settings.background_color }};">
+  <div class="giiker-home-phone-image-content product-tracker-elevate-connection"
+    style="background-color: {{ section.settings.background_color }};">
     <div class="giiker-home-phone-image-title">
       {{ section.settings.title }}
     </div>
     <div class="giiker-home-phone-image-background">
-      {{ section.settings.background_top_image | image_url: width: section.settings.background_top_image.width | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag',data-cc-animate: 'fade-in'}}
+      <img src="{{ section.settings.background_top_image | image_url: width: section.settings.background_top_image.width }}" 
+           alt=""
+           class="image-tag"
+           data-cc-animate="fade-in"
+           loading="lazy"
+           width="{{ section.settings.background_top_image.width }}"
+           height="{{ section.settings.background_top_image.height }}">
     </div>
-    <div class="giiker-home-phone-image-list" data-phone-animation>
+    <div class="giiker-home-phone-image-list" style="display: none;" data-phone-animation>
       {% for block in section.blocks %}
-        <div class="giiker-home-phone-image-list-item" data-phone-item style="--delay: {{ forloop.index0 | times: 0.15 }}s; --index: {{ forloop.index0 }}">
-          <a class="giiker-home-phone-image-list-item-image" href="{{ block.settings.url }}" target="_blank">
-            {{ block.settings.image | image_url: width: block.settings.image.width | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag'}}
-          </a>
-        </div>
+      <div class="giiker-home-phone-image-list-item" data-phone-item
+        style="--delay: {{ forloop.index0 | times: 0.15 }}s; --index: {{ forloop.index0 }}">
+        <a class="giiker-home-phone-image-list-item-image" href="{{ block.settings.url }}" target="_blank">
+          <img src="{{ block.settings.image | image_url: width: block.settings.image.width }}" 
+               alt=""
+               class="image-tag"
+               loading="lazy"
+               width="{{ block.settings.image.width }}"
+               height="{{ block.settings.image.height }}">
+        </a>
+      </div>
       {% endfor %}
+    </div>
+    {% comment %} // 测试 {% endcomment %}
+    <div class="slide-button-cover">
+      <div class="slide-button left">
+        <svg class="icon-arrow left" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="118" height="118" viewBox="0 0 118 118" fill="none">
+        <rect width="117.539" height="117.539" transform="matrix(1 0 0 -1 0 118)" fill="url(#pattern0_582_512)"></rect>
+        <defs>
+        <pattern id="pattern0_582_512" patternContentUnits="objectBoundingBox" width="1" height="1">
+        <use xlink:href="#image0_582_512" transform="scale(0.00260417)"></use>
+        </pattern>
+        <image id="image0_582_512" width="384" height="384" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"></image>
+        </defs>
+      </svg>
+        </div>
+      <div class="slide-button right">
+        <svg class="icon-arrow right" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="118" height="118" viewBox="0 0 118 118" fill="none">
+          <rect width="117.539" height="117.539" transform="matrix(1 0 0 -1 0 118)" fill="url(#pattern0_582_511)"></rect>
+          <defs>
+          <pattern id="pattern0_582_511" patternContentUnits="objectBoundingBox" width="1" height="1">
+          <use xlink:href="#image0_582_511" transform="scale(0.00260417)"></use>
+          </pattern>
+          <image id="image0_582_511" width="384" height="384" preserveAspectRatio="none" xlink:href="data:image/png;base64,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"></image>
+          </defs>
+        </svg>
+        </div>
+      <div class="user-videos-cover">
+        <div class="user-videos scrollable flex-row flex-justify-center">
+          <div id="1" class="phone-video"
+            data-full-video-url="https://petcube.com/videos/sections/product-tracker-elevate-connection/video-1.mp4"
+            ><video class=" lazyloaded" autoplay="" loop="" muted="" playsinline=""
+              preload="auto"
+              data-poster="https://petcube.com/videos/sections/product-tracker-elevate-connection/poster-1.jpg"
+              poster="https://petcube.com/videos/sections/product-tracker-elevate-connection/poster-1.jpg">
+              <source src="https://petcube.com/videos/sections/product-tracker-elevate-connection/video-1-short.mp4"
+                type="video/mp4"><img class="lazyload"
+                data-src="https://petcube.com/videos/sections/product-tracker-elevate-connection/poster-1.jpg"
+                title="Your browser does not support the &lt;video&gt; tag"
+                alt="Your browser does not support the &lt;video&gt; tag">
+            </video>
+            <div class="phone-mask"><img class=" ls-is-cached lazyloaded"
+                data-src="https://petcube.com/images/sections/product-tracker-elevate-connection/phone-mask.png"
+                alt="Phone mask"
+                src="https://petcube.com/images/sections/product-tracker-elevate-connection/phone-mask.png"></div>
+          </div>
+          <div id="2" class="phone-video"
+            data-full-video-url="https://petcube.com/videos/sections/product-tracker-elevate-connection/video-2.mp4"
+            ><video class=" lazyloaded" autoplay="" loop="" muted="" playsinline=""
+              preload="auto"
+              data-poster="https://petcube.com/videos/sections/product-tracker-elevate-connection/poster-2.jpg"
+              poster="https://petcube.com/videos/sections/product-tracker-elevate-connection/poster-2.jpg">
+              <source src="https://petcube.com/videos/sections/product-tracker-elevate-connection/video-2-short.mp4"
+                type="video/mp4"><img class="lazyload"
+                data-src="https://petcube.com/videos/sections/product-tracker-elevate-connection/poster-2.jpg"
+                title="Your browser does not support the &lt;video&gt; tag"
+                alt="Your browser does not support the &lt;video&gt; tag">
+            </video>
+            <div class="phone-mask"><img class=" ls-is-cached lazyloaded"
+                data-src="https://petcube.com/images/sections/product-tracker-elevate-connection/phone-mask.png"
+                alt="Phone mask"
+                src="https://petcube.com/images/sections/product-tracker-elevate-connection/phone-mask.png"></div>
+          </div>
+          <div id="3" class="phone-video"
+            data-full-video-url="https://petcube.com/videos/sections/product-tracker-elevate-connection/video-3.mp4"
+            ><video class=" lazyloaded" autoplay="" loop="" muted="" playsinline=""
+              preload="auto"
+              data-poster="https://petcube.com/videos/sections/product-tracker-elevate-connection/poster-3.jpg"
+              poster="https://petcube.com/videos/sections/product-tracker-elevate-connection/poster-3.jpg">
+              <source src="https://petcube.com/videos/sections/product-tracker-elevate-connection/video-3-short.mp4"
+                type="video/mp4"><img class="lazyload"
+                data-src="https://petcube.com/videos/sections/product-tracker-elevate-connection/poster-3.jpg"
+                title="Your browser does not support the &lt;video&gt; tag"
+                alt="Your browser does not support the &lt;video&gt; tag">
+            </video>
+            <div class="phone-mask"><img class=" ls-is-cached lazyloaded"
+                data-src="https://petcube.com/images/sections/product-tracker-elevate-connection/phone-mask.png"
+                alt="Phone mask"
+                src="https://petcube.com/images/sections/product-tracker-elevate-connection/phone-mask.png"></div>
+          </div>
+          <div id="4" class="phone-video"
+            data-full-video-url="https://petcube.com/videos/sections/product-tracker-elevate-connection/video-4.mp4"
+            ><video class=" lazyloaded" autoplay="" loop="" muted="" playsinline=""
+              preload="auto"
+              data-poster="https://petcube.com/videos/sections/product-tracker-elevate-connection/poster-4.jpg"
+              poster="https://petcube.com/videos/sections/product-tracker-elevate-connection/poster-4.jpg">
+              <source src="https://petcube.com/videos/sections/product-tracker-elevate-connection/video-4-short.mp4"
+                type="video/mp4"><img class="lazyload"
+                data-src="https://petcube.com/videos/sections/product-tracker-elevate-connection/poster-4.jpg"
+                title="Your browser does not support the &lt;video&gt; tag"
+                alt="Your browser does not support the &lt;video&gt; tag">
+            </video>
+            <div class="phone-mask"><img class=" ls-is-cached lazyloaded"
+                data-src="https://petcube.com/images/sections/product-tracker-elevate-connection/phone-mask.png"
+                alt="Phone mask"
+                src="https://petcube.com/images/sections/product-tracker-elevate-connection/phone-mask.png"></div>
+          </div>
+          <div id="5" class="phone-video"
+            data-full-video-url="https://petcube.com/videos/sections/product-tracker-elevate-connection/video-5.mp4"
+            ><video class=" lazyloaded" autoplay="" loop="" muted="" playsinline=""
+              preload="auto"
+              data-poster="https://petcube.com/videos/sections/product-tracker-elevate-connection/poster-5.jpg"
+              poster="https://petcube.com/videos/sections/product-tracker-elevate-connection/poster-5.jpg">
+              <source src="https://petcube.com/videos/sections/product-tracker-elevate-connection/video-5-short.mp4"
+                type="video/mp4"><img class="lazyload"
+                data-src="https://petcube.com/videos/sections/product-tracker-elevate-connection/poster-5.jpg"
+                title="Your browser does not support the &lt;video&gt; tag"
+                alt="Your browser does not support the &lt;video&gt; tag">
+            </video>
+            <div class="phone-mask"><img class=" ls-is-cached lazyloaded"
+                data-src="https://petcube.com/images/sections/product-tracker-elevate-connection/phone-mask.png"
+                alt="Phone mask"
+                src="https://petcube.com/images/sections/product-tracker-elevate-connection/phone-mask.png"></div>
+          </div>
+          <div id="6" class="phone-video"
+            data-full-video-url="https://petcube.com/videos/sections/product-tracker-elevate-connection/video-6.mp4"
+            ><video class=" lazyloaded" autoplay="" loop="" muted="" playsinline=""
+              preload="auto"
+              data-poster="https://petcube.com/videos/sections/product-tracker-elevate-connection/poster-6.jpg"
+              poster="https://petcube.com/videos/sections/product-tracker-elevate-connection/poster-6.jpg">
+              <source src="https://petcube.com/videos/sections/product-tracker-elevate-connection/video-6-short.mp4"
+                type="video/mp4"><img class="lazyload"
+                data-src="https://petcube.com/videos/sections/product-tracker-elevate-connection/poster-6.jpg"
+                title="Your browser does not support the &lt;video&gt; tag"
+                alt="Your browser does not support the &lt;video&gt; tag">
+            </video>
+            <div class="phone-mask"><img class=" ls-is-cached lazyloaded"
+                data-src="https://petcube.com/images/sections/product-tracker-elevate-connection/phone-mask.png"
+                alt="Phone mask"
+                src="https://petcube.com/images/sections/product-tracker-elevate-connection/phone-mask.png"></div>
+          </div>
+          <div id="7" class="phone-video"
+            data-full-video-url="https://petcube.com/videos/sections/product-tracker-elevate-connection/video-7.mp4"
+            ><video class=" lazyloaded" autoplay="" loop="" muted="" playsinline=""
+              preload="auto"
+              data-poster="https://petcube.com/videos/sections/product-tracker-elevate-connection/poster-7.jpg"
+              poster="https://petcube.com/videos/sections/product-tracker-elevate-connection/poster-7.jpg">
+              <source src="https://petcube.com/videos/sections/product-tracker-elevate-connection/video-7-short.mp4"
+                type="video/mp4"><img class="lazyload"
+                data-src="https://petcube.com/videos/sections/product-tracker-elevate-connection/poster-7.jpg"
+                title="Your browser does not support the &lt;video&gt; tag"
+                alt="Your browser does not support the &lt;video&gt; tag">
+            </video>
+            <div class="phone-mask"><img class=" ls-is-cached lazyloaded"
+                data-src="https://petcube.com/images/sections/product-tracker-elevate-connection/phone-mask.png"
+                alt="Phone mask"
+                src="https://petcube.com/images/sections/product-tracker-elevate-connection/phone-mask.png"></div>
+          </div>
+          <div id="8" class="phone-video"
+            data-full-video-url="https://petcube.com/videos/sections/product-tracker-elevate-connection/video-8.mp4"
+            ><video class=" lazyloaded" autoplay="" loop="" muted="" playsinline=""
+              preload="auto"
+              data-poster="https://petcube.com/videos/sections/product-tracker-elevate-connection/poster-8.jpg"
+              poster="https://petcube.com/videos/sections/product-tracker-elevate-connection/poster-8.jpg">
+              <source src="https://petcube.com/videos/sections/product-tracker-elevate-connection/video-8-short.mp4"
+                type="video/mp4"><img class="lazyload"
+                data-src="https://petcube.com/videos/sections/product-tracker-elevate-connection/poster-8.jpg"
+                title="Your browser does not support the &lt;video&gt; tag"
+                alt="Your browser does not support the &lt;video&gt; tag">
+            </video>
+            <div class="phone-mask"><img class=" ls-is-cached lazyloaded"
+                data-src="https://petcube.com/images/sections/product-tracker-elevate-connection/phone-mask.png"
+                alt="Phone mask"
+                src="https://petcube.com/images/sections/product-tracker-elevate-connection/phone-mask.png"></div>
+          </div>
+          <div id="9" class="phone-video"
+            data-full-video-url="https://petcube.com/videos/sections/product-tracker-elevate-connection/video-9.mp4"
+            ><video class=" lazyloaded" autoplay="" loop="" muted="" playsinline=""
+              preload="auto"
+              data-poster="https://petcube.com/videos/sections/product-tracker-elevate-connection/poster-9.jpg"
+              poster="https://petcube.com/videos/sections/product-tracker-elevate-connection/poster-9.jpg">
+              <source src="https://petcube.com/videos/sections/product-tracker-elevate-connection/video-9-short.mp4"
+                type="video/mp4"><img class="lazyload"
+                data-src="https://petcube.com/videos/sections/product-tracker-elevate-connection/poster-9.jpg"
+                title="Your browser does not support the &lt;video&gt; tag"
+                alt="Your browser does not support the &lt;video&gt; tag">
+            </video>
+            <div class="phone-mask"><img class=" ls-is-cached lazyloaded"
+                data-src="https://petcube.com/images/sections/product-tracker-elevate-connection/phone-mask.png"
+                alt="Phone mask"
+                src="https://petcube.com/images/sections/product-tracker-elevate-connection/phone-mask.png"></div>
+          </div>
+          <div id="10" class="phone-video"
+            data-full-video-url="https://petcube.com/videos/sections/product-tracker-elevate-connection/video-10.mp4"
+            ><video class=" lazyloaded" autoplay="" loop="" muted="" playsinline=""
+              preload="auto"
+              data-poster="https://petcube.com/videos/sections/product-tracker-elevate-connection/poster-10.jpg"
+              poster="https://petcube.com/videos/sections/product-tracker-elevate-connection/poster-10.jpg">
+              <source src="https://petcube.com/videos/sections/product-tracker-elevate-connection/video-10-short.mp4"
+                type="video/mp4"><img class="lazyload"
+                data-src="https://petcube.com/videos/sections/product-tracker-elevate-connection/poster-10.jpg"
+                title="Your browser does not support the &lt;video&gt; tag"
+                alt="Your browser does not support the &lt;video&gt; tag">
+            </video>
+            <div class="phone-mask"><img class=" ls-is-cached lazyloaded"
+                data-src="https://petcube.com/images/sections/product-tracker-elevate-connection/phone-mask.png"
+                alt="Phone mask"
+                src="https://petcube.com/images/sections/product-tracker-elevate-connection/phone-mask.png"></div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
+<div id="video-popup" class="modal-container" >
+  <div class="modal-box middle">
+    <a class="icon-close modal-close inside" href="#">
+      <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+      <path d="M15.7508 13.9998L23.3341 21.5832L21.5841 23.3332L14.0008 15.7498L6.41748 23.3332L4.66748 21.5832L12.2508 13.9998L4.66748 6.4165L6.41748 4.6665L14.0008 12.2498L21.5841 4.6665L23.3341 6.4165L15.7508 13.9998Z" fill="#fff"></path>
+      </svg>
+    </a>
+    <div class="modal-box-content">
+      <div class="hold-wrapper -dark">
+        <div class="loader transfused treats white"></div>
+        </div>
+        <video controls></video>
+      </div>
+  </div>
+</div>
 {% schema %}
 {
-  "name": "Giiker Home Phone Image",
-  "settings": [
+"name": "Giiker Home Phone Image",
+"settings": [
     {
-      "type": "text",
-      "id": "title",
-      "label": "Title"
+    "type": "text",
+    "id": "title",
+    "label": "Title"
     },
     {
-      "type": "image_picker",
-      "id": "background_top_image",
-      "label": "Background Top Image"
+    "type": "image_picker",
+    "id": "background_top_image",
+    "label": "Background Top Image"
     },
     {
-      "type": "color",
-      "id": "background_color",
-      "label": "Background Color",
-      "default": "rgba(240, 103, 79, 1)"
+    "type": "color",
+    "id": "background_color",
+    "label": "Background Color",
+    "default": "rgba(240, 103, 79, 1)"
     }
-  ],
-  "blocks": [
+    ],
+    "blocks": [
     {
-      "type": "phone",
-      "name": "Phone Image", 
-      "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        },
-        {
-          "type": "url",
-          "id": "url",
-          "label": "URL"
-        }
-      ]
-    }
-  ],
-  "presets": [
+    "type": "phone",
+    "name": "Phone Image",
+    "settings": [
     {
-      "name": "Giiker Home Phone Image"
+    "type": "image_picker",
+    "id": "image",
+    "label": "Image"
+    },
+    {
+    "type": "url",
+    "id": "url",
+    "label": "URL"
     }
-  ]
+    ]
+    }
+    ],
+    "presets": [
+    {
+    "name": "Giiker Home Phone Image"
+    }
+    ]
 }
 {% endschema %}
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  const phoneContainer = document.querySelector('.giiker-home-phone-image-container');
-  const phoneList = document.querySelector('.giiker-home-phone-image-list');
-  const phoneItems = document.querySelectorAll('[data-phone-item]');
+(function() {
+  'use strict';
   
-  if (phoneContainer && phoneList && phoneItems.length > 0) {
-    let animationTriggered = false;
-    
-    // 初始状态：所有项目从左到右露出20%叠在一起
-    phoneItems.forEach((item, index) => {
-      item.style.position = 'absolute';
-      item.style.top = '50%';
-      item.style.left = '50%';
-      item.style.transform = `translate(calc(-50% + ${index * 40}px), -50%) scale(0.8)`;
-      item.style.zIndex = phoneItems.length - index; // 后面的项目在上层
-      item.style.transition = 'none';
-      item.style.width = '200px'; // 初始较小尺寸
-    });
-    
-    // 创建 Intersection Observer
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting && !animationTriggered) {
-          animationTriggered = true;
-          
-          // 开始展开动画
-          setTimeout(() => {
-            phoneItems.forEach((item, index) => {
-              item.style.transition = `all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) ${item.style.getPropertyValue('--delay')}`;
-              
-              // 计算展开后的位置 - 从中间向两边展开
-              const totalItems = phoneItems.length;
-              const containerWidth = phoneList.offsetWidth;
-              const maxItemWidth = 200; // 设置最大单个项目宽度
-              const minGap = 10; // 最小间距
-              const availableWidth = containerWidth - (minGap * (totalItems - 1));
-              const calculatedItemWidth = availableWidth / totalItems;
-              const itemWidth = Math.min(calculatedItemWidth, maxItemWidth);
-              const totalUsedWidth = (itemWidth * totalItems) + (minGap * (totalItems - 1));
-              const startX = (containerWidth - totalUsedWidth) / 2; // 居中起始位置
-              
-              const centerIndex = Math.floor(totalItems / 2);
-              const offsetFromCenter = index - centerIndex;
-              const leftPosition = startX + (index * (itemWidth + minGap)) + (itemWidth / 2);
-              
-              item.style.position = 'absolute';
-              item.style.top = '50%';
-              item.style.left = `${leftPosition}px`;
-              item.style.transform = 'translate(-50%, -50%) scale(1)';
-              item.style.zIndex = '1';
-              item.style.width = `${itemWidth}px`;
-            });
-          }, 300);
-          
-          // 停止观察，避免重复触发
-          observer.unobserve(entry.target);
-        }
-      });
-    }, {
-      threshold: 0.3, // 当模块30%可见时触发
-      rootMargin: '0px 0px -50px 0px' // 提前50px触发
-    });
-    
-    // 开始观察容器
-    observer.observe(phoneContainer);
-    
-    // 添加鼠标悬停效果
-    phoneItems.forEach(item => {
-      const link = item.querySelector('a');
-      if (link) {
-        link.addEventListener('mouseenter', function() {
-          item.style.transform = 'translateY(-5px) scale(1.02)';
-          item.style.zIndex = '10';
+  // 防抖工具函数
+  function _debounce(func, wait) {
+    wait = wait || 300;
+    var timeout;
+    return function executedFunction() {
+      var context = this;
+      var args = arguments;
+      var later = function() {
+        clearTimeout(timeout);
+        func.apply(context, args);
+      };
+      clearTimeout(timeout);
+      timeout = setTimeout(later, wait);
+    };
+  }
+  
+  // VideoPopup 对象 - 使用 IIFE 创建单例
+  if (typeof window.VideoPopup === 'undefined') {
+    window.VideoPopup = (function(e, a, d) {
+    var o = e('#video-popup')
+      , r = o.find('.modal-box-content')
+      , t = o.find('video')
+      , n = t.get(0);
+    function i() {
+        // 点击背景关闭弹窗
+        o.on('click', function(e) {
+            // 如果点击的是背景区域（不是 .modal-box）
+            if (e.target === o[0]) {
+                closePopup();
+            }
         });
         
-        link.addEventListener('mouseleave', function() {
-          item.style.transform = 'translateY(0) scale(1)';
-          item.style.zIndex = '1';
+        // 点击关闭按钮关闭弹窗
+        o.find('.modal-close').on('click', function(e) {
+            e.preventDefault();
+            closePopup();
         });
+        
+        // 原有的 popup-close 事件
+        o.on('popup-close', function() {
+            n.pause();
+            t.removeAttr('src')
+        })
+    }
+    
+    // 关闭弹窗的函数
+    function closePopup() {
+        n.pause();
+        t.removeAttr('src');
+        o.fadeOut(300, function() {
+            o.css('display', 'none');
+            r.addClass('hold');
+        });
+        o.trigger('popup-close');
+    }
+    
+    ;function p() {
+        r.addClass('hold');
+        // 显示弹窗 - 使用 jQuery show 或者自定义的显示逻辑
+        o.css('display', 'block');
+        o.css('overflow', 'visible');
+        o.fadeIn();
+        return o
+    }
+    ;function u(e, a, d) {
+        r.css('padding-bottom', (d * 100) / a + '%');
+        t.attr('src', e);
+        t.attr('controlsList', 'nodownload');
+        t.attr('oncontextmenu', 'return false;');
+        t.attr('disablepictureinpicture', '');
+        t.attr('loop', '');
+        o.find('.modal-box-content').removeClass('hold');
+        n.load();
+        n.play();
+        return o
+    }
+    ;function l() {
+        var o, t = 0;
+        for (o = 0; o < n.played.length; o++) {
+            t += n.played.end(o) - n.played.start(o)
+        }
+        ;return Math.floor(t)
+    }
+    ;return {
+        init: i,
+        show: p,
+        play: u,
+        getPlayedTime: l,
+        close: closePopup
+    }
+    })(jQuery, window, document);
+  }
+  
+  // 等待所有依赖加载完成
+  (function() {
+    // 检查依赖是否已加载
+    function checkDependencies() {
+      if (typeof jQuery === 'undefined' || typeof ScrollMagic === 'undefined' || typeof TweenMax === 'undefined') {
+        return false;
+      }
+      return true;
+    }
+    
+    // 递归检查并加载
+    function waitForDependencies(callback) {
+      if (checkDependencies()) {
+        callback();
+      } else {
+        setTimeout(function() {
+          waitForDependencies(callback);
+        }, 50);
+      }
+    }
+    
+    waitForDependencies(function() {
+      // 确保 DOM 已加载
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', function() {
+          init();
+        });
+      } else {
+        init();
       }
     });
+    
+    function init() {
+      (function ($, window, document) {
+      
+      // 添加辅助函数
+      function isElementInViewport(el, offset) {
+        if (!el) return false;
+        var rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) + (offset || 0) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+
+      function getScrollPercentage() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        return height > 0 ? (winScroll / height) * 100 : 0;
+      }
+        
+      let scrollAnimateVideos = [
+      $('#battery-video').get(0),
+      $('#health-video').get(0),
+    ],
+      scrollPlayVideos = [
+        $('#fitness-video').get(0),
+        $('#alerts-video').get(0),
+        $('#vet-chat-lottie').get(0),
+      ]
+      ;
+
+    scrollAnimateVideos.forEach(function (video) {
+      if (!video) {
+        return;
+      }
+
+      let scrollDiff = video.offsetHeight - video.offsetHeight / 6,
+        miniMenuHeight = $('#mini-menu').outerHeight(),
+        seeking = false,
+        ticking = false
+        ;
+
+      video.removeAttribute('autoplay');
+      video.removeAttribute('loop');
+      video.currentTime = 0;
+      video.pause();
+
+      video.addEventListener('seeking', function () {
+        seeking = true;
+      });
+
+      video.addEventListener('seeked', function () {
+        seeking = false;
+      });
+
+      window.addEventListener('scroll', function () {
+        if (isElementInViewport(video, scrollDiff)) {
+          let windowHeight = window.innerHeight - scrollDiff,
+            rect = video.getBoundingClientRect(),
+            step = (1 / (windowHeight - miniMenuHeight)) * video.duration
+            ;
+
+          if (!ticking) {
+            window.requestAnimationFrame(function () {
+              if (!seeking) {
+                video.currentTime = (windowHeight - rect.y) * step;
+              }
+
+              ticking = false;
+            });
+
+            ticking = true;
+          }
+        }
+      });
+    });
+
+    scrollPlayVideos.forEach(function (video) {
+      if (!video) {
+        return;
+      }
+
+      let scrollDiff = video.offsetHeight,
+        playVideo = function () {
+          video.play();
+          video.removeEventListener('play-video', playVideo);
+        }
+        ;
+
+      video.addEventListener('play-video', playVideo);
+      window.addEventListener('scroll', function () {
+        if (isElementInViewport(video, scrollDiff)) {
+          video.dispatchEvent(new CustomEvent('play-video'));
+        }
+      });
+    });
+
+    $(document)
+
+      .on('scroll ready', function () {
+        if (getScrollPercentage() >= 20) {
+          $(document).trigger('screen-scroll-20');
+        }
+
+        if (getScrollPercentage() >= 50) {
+          $(document).trigger('screen-scroll-50');
+        }
+
+        if (getScrollPercentage() >= 75) {
+          $(document).trigger('screen-scroll-75');
+        }
+
+        if (getScrollPercentage() >= 90) {
+          $(document).trigger('screen-scroll-90');
+        }
+      });
+
+    function trackScreenScrollEvent(progress) {
+      // 安全检查 mp 对象是否存在
+      if (typeof mp !== 'undefined' && mp.track_server) {
+        mp.track_server('Landing Screen Scroll', {
+          'Landing ID': 'GPS Tracker Product page',
+          'Progress': progress
+        });
+      }
+    }
+
+    $('.product-tracker-dog-location-tracking .alerts').on('click', '.mode-switcher a', function (e) {
+      e.preventDefault();
+
+      let $alerts = $(e.delegateTarget),
+        $modeSwitcher = $alerts.find('.mode-switcher'),
+        $modeSwitchers = $modeSwitcher.find('a'),
+        $this = $(this)
+        ;
+
+      if ($this.is('.light-on')) {
+        $alerts.removeClass('sound-on');
+        $alerts.addClass('light-on');
+      }
+
+      if ($this.is('.sound-on')) {
+        $alerts.removeClass('light-on');
+        $alerts.addClass('sound-on');
+      }
+
+      $modeSwitcher.removeClass('pulsing');
+
+      $modeSwitchers.removeClass('active');
+      $this.addClass('active');
+    });
+
+    const getPhoneVideoAnimationMargin = function () {
+      let screenWidth = window.innerWidth;
+
+      if (screenWidth >= 640) {
+        return 24;
+      }
+
+      return 16;
+    };
+
+    const handleTrackerElevateConnection = function () {
+      const $section = $(".product-tracker-elevate-connection"),
+        scrollMagicController = new ScrollMagic.Controller(),
+        miniMenuHeight = $("#site-header").outerHeight(),
+        $userVideos = $('.user-videos.scrollable'),
+        $userPhoneVideos = $userVideos.find('.phone-video'),
+        $userVideosCover = $('.user-videos-cover');
+      console.log($section, ';进来');
+      if (!$section.is(":visible")) {
+        return;
+      }
+
+      const phoneVideoMargin = getPhoneVideoAnimationMargin(),
+        phoneVideoWidth = $userPhoneVideos.first().outerWidth(),
+        endUserVideosWidthNum = ((phoneVideoWidth + phoneVideoMargin * 2) * ($userPhoneVideos.length + 1)) + phoneVideoWidth - phoneVideoMargin,
+        endUserVideosWidth = endUserVideosWidthNum + 'px',
+        windowWidth = $(window).outerWidth();
+
+      let coverScrollLeft,
+        sceneOffset = -(miniMenuHeight * 1.5)
+        ;
+
+      if (windowWidth > 1024) {
+        coverScrollLeft = phoneVideoWidth * 2 - phoneVideoMargin / 2 - (windowWidth - 1920);
+      } else if (windowWidth > 640) {
+        coverScrollLeft = (endUserVideosWidthNum / 2) - phoneVideoMargin * 5.5 - phoneVideoWidth * 2.5 - (windowWidth - 1024);
+      } else {
+        coverScrollLeft = (endUserVideosWidthNum / 2) - phoneVideoMargin * 2.5 - phoneVideoWidth * 1.5 - (windowWidth - 375) / 2;
+      }
+
+      const marginScene = new ScrollMagic.Scene({
+        triggerElement: $section.get(0),
+        duration: 1500,
+        triggerHook: 0,
+        offset: sceneOffset,
+      })
+        .setTween(
+          TweenMax.to(
+            ".product-tracker-elevate-connection .user-videos.scrollable .phone-video",
+            1,
+            {
+              margin: `0 ${phoneVideoMargin}`,
+              ease: Linear.easeNone,
+            },
+          ),
+        )
+        .addTo(scrollMagicController);
+
+      const widthScene = new ScrollMagic.Scene({
+        triggerElement: $section.get(0),
+        duration: 1500,
+        triggerHook: 0,
+        offset: sceneOffset,
+      })
+        .setTween(
+          TweenMax.to(
+            ".product-tracker-elevate-connection .user-videos.scrollable",
+            1,
+            {
+              width: endUserVideosWidth,
+              ease: Linear.easeNone,
+            },
+          ),
+        )
+        .addTo(scrollMagicController);
+
+      const scrollScene = new ScrollMagic.Scene({
+        triggerElement: $section.get(0),
+        duration: 1500,
+        triggerHook: 0,
+        offset: sceneOffset,
+      })
+        .setPin($section.get(0), { pushFollowers: true })
+        .setTween(
+          TweenMax.to(
+            ".product-tracker-elevate-connection .user-videos-cover",
+            1,
+            {
+              scrollLeft: coverScrollLeft,
+              ease: Linear.easeNone,
+            },
+          ),
+        )
+        .addTo(scrollMagicController);
+
+      let coverScrollLeftEnd = null,
+        isScrollSceneEnded = false,
+        isScrollSceneDestroyed = false,
+        isTouchScroll = false,
+        windowScrollTopSceneStart = 0,
+        touchScrollTopSceneStart = 0
+        ;
+
+      scrollScene.on("end", () => {
+        coverScrollLeftEnd = $userVideosCover.scrollLeft();
+        isScrollSceneEnded = true;
+
+        if (!isTouchScroll) {
+          scrollScene.destroy(true);
+        }
+      });
+
+      marginScene.on("end", () => marginScene.destroy(true));
+      widthScene.on("end", () => widthScene.destroy(true));
+
+      $section
+        .on('touchstart touchmove', (e) => {
+          isTouchScroll = true;
+        })
+        .on('touchend touchcancel', (e) => {
+          setTimeout(() => {
+            touchScrollTopSceneStart = windowScrollTopSceneStart - $section.get(0).getBoundingClientRect().top - sceneOffset;
+
+            if (isScrollSceneEnded && !isScrollSceneDestroyed) {
+              scrollScene.destroy(true);
+            }
+          }, 100);
+        })
+        ;
+
+      scrollScene.on('start', () => {
+        windowScrollTopSceneStart = $(window).scrollTop();
+      });
+
+      scrollScene.on('destroy', () => {
+        $userVideosCover.animate({
+          scrollLeft: coverScrollLeftEnd,
+        }, 1);
+
+        let isMouseMoved = false;
+
+        const initDraggableUserVideos = () => {
+          let isMouseDown = false,
+            startX,
+            scrollLeft;
+
+          $('.user-videos.scrollable').on({
+            mousedown: function (e) {
+              isMouseDown = true;
+              isMouseMoved = false;
+              startX = e.pageX - $userVideosCover.offset().left;
+              scrollLeft = $userVideosCover.scrollLeft();
+
+              $userVideosCover.css('cursor', 'grab');
+            },
+            mouseup: function () {
+              isMouseDown = false;
+              $userVideosCover.css('cursor', '');
+            },
+            mouseleave: function () {
+              isMouseDown = false;
+              $userVideosCover.css('cursor', '');
+            },
+            mousemove: function (e) {
+              if (!isMouseDown) return;
+
+              e.preventDefault();
+
+              isMouseMoved = true;
+
+              let x = e.pageX - $userVideosCover.offset().left,
+                walk = (x - startX);
+
+              $userVideosCover.css('cursor', 'grabbing');
+              $userVideosCover.scrollLeft(scrollLeft - walk);
+            }
+          });
+        };
+
+        initDraggableUserVideos();
+
+        $section.on('click', '.user-videos .phone-video', function () {
+          if (isMouseMoved) {
+            return;
+          }
+
+          if (window.VideoPopup) {
+            window.VideoPopup.show();
+
+            let videoWidth = $(window).width() < 640 ? 607 : 1080,
+              videoHeight = $(window).width() < 640 ? 1080 : 911;
+
+            window.VideoPopup.play($(this).data('full-video-url'), videoWidth, videoHeight);
+          }
+        });
+
+        if ($(window).outerWidth() >= 640) {
+          $('.slide-button').css('display', 'block');
+        }
+
+        $section.on('click', '.slide-button.left', function () {
+          $userVideosCover.animate({
+            scrollLeft: '-=' + ($userPhoneVideos.first().outerWidth() + phoneVideoMargin * 2),
+          }, 200);
+        });
+
+        $section.on('click', '.slide-button.right', function () {
+          $userVideosCover.animate({
+            scrollLeft: '+=' + ($userPhoneVideos.first().outerWidth() + phoneVideoMargin * 2),
+          }, 200);
+        });
+
+        isScrollSceneDestroyed = true;
+      });
+
+      scrollScene.on('remove', () => {
+        if (isTouchScroll) {
+          windowScrollTopSceneStart = touchScrollTopSceneStart;
+        }
+
+        $(window).scrollTop(windowScrollTopSceneStart);
+      });
+
+      widthScene.on('destroy', function () {
+        $userVideos.css('min-width', endUserVideosWidth);
+      })
+
+      marginScene.on('destroy', () => {
+        $('.product-tracker-elevate-connection .user-videos.scrollable .phone-video').css(
+          'margin',
+          `0 ${phoneVideoMargin}px`,
+        );
+      });
+    };
+
+    handleTrackerElevateConnection();
+
+    const initLicensedVetsAnimationListener = () => {
+      const mediaCover = $('.product-licensed-vets .media-cover'),
+        vetChatLottie = $('#vet-chat-lottie'),
+        initialLottieWidth = 487,
+        initialMediaCoverWidth = 1312,
+        initialMediaCoverHeight = 844,
+        initialBottom = 53.8,
+        initialRight = 143
+        ;
+
+      const adjustLottiePlayer = () => {
+        if (window.innerWidth > 640) {
+          const mediaCoverWidth = mediaCover.width(),
+            mediaCoverHeight = Math.max(mediaCover.height(), vetChatLottie.height()),
+            lottieWidth = initialLottieWidth * (mediaCoverWidth / initialMediaCoverWidth),
+            bottom = initialBottom * (mediaCoverHeight / initialMediaCoverHeight),
+            right = initialRight * (mediaCoverWidth / initialMediaCoverWidth)
+            ;
+
+          vetChatLottie.css({
+            width: lottieWidth,
+            bottom: -bottom,
+            right: right,
+            left: '',
+            transform: '',
+          });
+        } else {
+          vetChatLottie.css({
+            width: '',
+            bottom: '',
+            right: '',
+            left: '',
+            transform: '',
+          });
+        }
+      };
+
+      adjustLottiePlayer();
+
+      $(window).on('resize', _debounce(adjustLottiePlayer));
+    };
+
+    $('.product-licensed-vets .background').on('lazyloaded', initLicensedVetsAnimationListener);
+
+      })(jQuery, window, document);
+    }
+  })();
+  
+  // 初始化 VideoPopup
+  if (window.VideoPopup) {
+    window.VideoPopup.init();
   }
-});
+})();
 </script>

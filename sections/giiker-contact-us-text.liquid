@@ -1,16 +1,20 @@
 <div class="giiker-contact-us-text-container" style="background-color: {{ section.settings.background_color }}">
   <div class="giiker-contact-us-text-title">{{ section.settings.title }}</div>
   <div class="giiker-contact-us-text-background">
-    {{
-      section.settings.background_left_image
-      | image_url: width: section.settings.background_left_image.width
-      | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-left-tag', data-cc-animate: 'fade-in'
-    }}
-    {{
-      section.settings.background_right_image
-      | image_url: width: section.settings.background_right_image.width
-      | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-right-tag', data-cc-animate: 'fade-in'
-    }}
+    <img src="{{ section.settings.background_left_image | image_url: width: section.settings.background_left_image.width }}" 
+         alt=""
+         class="image-left-tag"
+         data-cc-animate="fade-in"
+         loading="lazy"
+         width="{{ section.settings.background_left_image.width }}"
+         height="{{ section.settings.background_left_image.height }}">
+    <img src="{{ section.settings.background_right_image | image_url: width: section.settings.background_right_image.width }}" 
+         alt=""
+         class="image-right-tag"
+         data-cc-animate="fade-in"
+         loading="lazy"
+         width="{{ section.settings.background_right_image.width }}"
+         height="{{ section.settings.background_right_image.height }}">
   </div>
   <div class="giiker-contact-us-text-list">
     {% for block in section.blocks %}
@@ -20,11 +24,21 @@
         <div class="giiker-contact-us-text-item-content" >
           {% if block.settings.icon %}
             <div class="giiker-contact-us-text-item-content-icon">
-              {{ block.settings.icon | image_url: width: block.settings.icon.width | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag' }}
+              <img src="{{ block.settings.icon | image_url: width: block.settings.icon.width }}" 
+                   alt=""
+                   class="image-tag"
+                   loading="lazy"
+                   width="{{ block.settings.icon.width }}"
+                   height="{{ block.settings.icon.height }}">
             </div>
           {% endif %}
           <div class="giiker-contact-us-text-item-content-background">
-            {{ block.settings.background_image | image_url: width: block.settings.background_image.width | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag' }}
+            <img src="{{ block.settings.background_image | image_url: width: block.settings.background_image.width }}" 
+                 alt=""
+                 class="image-tag"
+                 loading="lazy"
+                 width="{{ block.settings.background_image.width }}"
+                 height="{{ block.settings.background_image.height }}">
           </div>
           <div class="giiker-contact-us-text-item-detail">{{ block.settings.detail }}</div>
         </div>

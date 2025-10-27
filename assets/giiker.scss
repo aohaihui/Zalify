@@ -128,7 +128,7 @@ body{
     width: 100%;
     max-width: 1800px;
     margin: 0 auto;
-    padding: 0 20px;
+    // padding: 0 20px;
     display: flex;
     gap: 60px;
     flex-direction: column;
@@ -229,6 +229,8 @@ body{
 }
 .giiker-home-favourite{
   width: 100%;
+  max-width: 1800px;
+  margin: 0 auto;
   margin-top: 60px;
   padding-bottom: 100px;
   position: relative;
@@ -292,9 +294,10 @@ body{
 }
 .giiker-home-list-image-container{
   width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
   position: relative;
   margin-top: -115px;
-  padding: 0 20px;
   box-sizing: border-box;
   padding-bottom: 125px;
   .giiker-home-list-image-title{
@@ -397,6 +400,8 @@ body{
 }
 .giiker-home-how-image-container{
   width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
   box-sizing: border-box;
   position: relative;
   display: flex;
@@ -620,7 +625,8 @@ body{
 }
 .giiker-home-phone-image-container {
   width: 100%;
-  padding: 0 70px;
+  max-width: 1800px;
+  margin: 0 auto;
   box-sizing: border-box;
   position: relative;
   
@@ -1357,58 +1363,70 @@ body{
   .giiker-home-text-image-container .giiker-home-text-image .giiker-home-text-image-item .giiker-home-text-image-item-content{
     align-items: baseline;
     .giiker-home-text-image-item-title{
-      margin-top: 20px;
+      margin-top: 10px;
+      text-align: center;
       *{
-        font-size: 4.5vw;
+        display: inline;
+        font-size: 20px;
         line-height: 1.1;
       }
     }
     .giiker-home-text-image-item-detail{
-      margin-top: 40px;
+      margin-top: 25px;
+      text-align: center;
       *{
-        font-size: 3.14vw;
+        font-size: 13px;
         line-height: 1.1;
+        font-weight: 700;
       }
     }
     .giiker-home-text-image-item-button{
-      margin-top: 40px;
-      padding: 10px;
+      margin: 0 auto; 
+      margin-top: 15px;
+      padding: 7px;
       border-radius: 10px;
-      margin-bottom: 45px;
+      margin-bottom: 20px;
       max-width: 100%;
       font-size: 14px;
       *{
-        font-size: 3.14vw;
+        font-size: 12px;
         line-height: 1.1;
       }
       svg{
-        width: 4.5vw;
-        height: 4.5vw;
+        width: 18px;
+        height: 18px;
+        margin-left: 15px;
       }
     }
+  }
+  .giiker-home-favourite-content{
+    width: 100%;
+    padding: 0 15px;
+    box-sizing: border-box;
   }
   .giiker-home-favourite{
     margin-top: 0;
     border-radius: 50px 50px 0 0;
     .favourite-title{
-      font-size: 32px;
-      padding-top: 60px;
+      font-size: 16px;
+      padding-top: 20px;
     }
     .favourite-swiper .swiper-button-next, .favourite-swiper .swiper-button-prev{
       width: 40px;
       height: 40px;
     }
     .favourite-swiper{
-      padding: 60px 60px;
+      padding: 0 60px 30px;
+      margin-top: 10px;
       .swiper-slide .item-title{
         font-size: 20px;
         line-height: 1;
       }
     }
     .favourite-swiper .swiper-slide{
-      width: 33%;
+      width: 50%;
       img{
-        height: 200px;
+        height: 150px;
         width: 100%;
         object-fit: contain;
       }
@@ -1416,6 +1434,7 @@ body{
     
   }
   .giiker-home-list-image-container{
+    padding: 0 20px;
     padding-bottom: 80px;
     .giiker-home-list-image-title{
       padding-top: 60px;
@@ -1435,7 +1454,7 @@ body{
       }
     }
     .giiker-home-list-image-background .image-flower-tag{
-      width: 80px;
+      width: 60px;
       top: -64px;
     }
     .giiker-home-list-image-background .image-tag{
@@ -1469,10 +1488,12 @@ body{
     }
   }
   .giiker-home-how-image-container{
+    flex-direction: column-reverse;
     .giiker-home-how-image-posi{
       bottom: 50%;
       left: 50%;
-      transform: translate(-50%, 50%);
+      transform: translate(-50%, 10px);
+      position: relative;
       width: 100%;
       max-width: 100%;
       z-index: 1;
@@ -1504,6 +1525,8 @@ body{
     .giiker-home-how-image-title *{
       font-size: 24px;
       display: inline;
+      color: #000;
+      margin-right: 3px;
     }
     .giiker-home-how-image-background .image-flower-tag{
       width: 80px;
@@ -1534,8 +1557,9 @@ body{
     }
     .giiker-home-phone-image-background{
       top: 10px;
+      left: -78px;
       .image-tag{
-        height: 100px;
+        height: 60px;
         object-fit: contain;
       }
     }
@@ -1544,7 +1568,7 @@ body{
     }
   }
   .giiker-home-evaluate-list-container{
-    padding: 100px 20px;
+    padding: 100px 20px 50px;
     padding-top: 60px;
     .giiker-home-evaluate-list-background .image-flower-tag{
       width: 250px;
@@ -1567,7 +1591,7 @@ body{
       justify-content: space-between;
       .giiker-home-evaluate-list-item{
         width: calc(50% - 10px);
-        height: 300px;
+        height: 250px;
         padding: 20px;
         .giiker-home-list-image-item-text-icon img{
           width: 70%;
@@ -1577,46 +1601,50 @@ body{
         .giiker-home-evaluate-list-item-text-title{
           margin-top: 20px;
           margin-bottom: 0;
+          *{
+            font-size: 14px;
+            line-height: 1.1;
+          }
         }
       }
       .giiker-home-evaluate-list-item-image{
         width: calc(50% - 10px);
-        height: 300px;
+        height: 250px;
       }
+    }
+    .giiker-home-evaluate-list-swiper{
+      padding-bottom: 50px;
     }
   }
   .giiker-home-community-container{
-    padding: 50px 20px 30px;
+    padding: 50px 15px 30px;
     position: relative;
+    flex-direction: column-reverse;
     .giiker-home-community-content{
-      position: absolute;
+      position: unset;
       left: 50%;
       top: 50%;
-      transform: translate(-50%, -50%);
       z-index: 1;
-      width: 80%;
+      width: 100%;
+      margin: 15px auto 0;
       .giiker-home-community-title *{
-        font-size: 48px;
+        font-size: 24px;
         line-height: 1.1;
         text-align: center;
-        -webkit-text-stroke: 1px #fff; /* 2px黑色描边 */
-        text-stroke: 1px #fff;
         font-weight: 500;
       }
       .giiker-home-community-detail{
         margin-top: 10px;
         *{
-          font-size: 16px;
+          font-size: 12px;
           line-height: 1.2;
           color: #000;
           font-weight: bold;
-          -webkit-text-stroke: .1px #fff; /* 2px黑色描边 */
-          text-stroke: .1px #fff;
           display: inline;
         }
       }
       .giiker-home-community-url{
-        font-size: 16px;
+        font-size: 14px;
         line-height: 1;
         padding: 0 20px;
         height: 36px;
@@ -1625,11 +1653,9 @@ body{
         align-items: center;
         justify-content: center;
         gap: 12px;
-        border-color: #fff;
-        background-color: transparent;
-        -webkit-text-stroke: .1px #fff; /* 2px黑色描边 */
-        text-stroke: .1px #fff;
-        font-weight: bold;
+        border: 3px solid #000;
+        font-weight: 400;
+        margin-top: 15px;
       }
     }
     .giiker-home-community-image{
@@ -1638,4 +1664,259 @@ body{
       opacity: 0.7;
     }
   }
+  .giiker-home-banner{
+    width: 100%;
+    margin-top: 20px;
+    .giiker-home-banner-item{
+      width: 60%;
+      border-radius: 30px;
+      overflow: hidden;
+    }
+  }
+  .giiker-home-text-image-container{
+    margin: 20px 0;
+    padding: 0 15px;
+    box-sizing: border-box;
+    .giiker-home-text-image{
+      gap: 20px;
+      .giiker-home-text-image-item{
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+        .giiker-home-text-image-item-image{
+          width: 100%;
+        }
+         .giiker-home-text-image-item-content{
+          width: 100%;
+          padding: 0 10px;
+          .giiker-home-text-image-item-content-background{
+            right: 10px;
+            top: 0;
+            img{
+              width: 74px;
+            }
+          }
+         }
+      }
+      .giiker-home-text-image-item.reversal .giiker-home-text-image-item-content .giiker-home-text-image-item-content-background{
+        right: 10px;
+        top: 0;
+        left: unset;
+        bottom: unset;
+      }
+    }
+  }
+  // .giiker-home-evaluate-list-swiper{
+  //   margin-top: 20px;
+  //   .giiker-home-evaluate-list-item-image{
+  //     border-radius: 100px;
+  //     overflow: hidden;
+  //   }
+  //   .giiker-home-evaluate-list-item{
+  //     height: auto;
+  //     background: #fff;
+  //     border-radius: 40px;
+  //   }
+  //   .giiker-home-list-image-item-text-icon{
+  //     max-width: 80%;
+  //   }
+  // }
+}
+@media screen and (min-width: 768px) and (max-width: 1480px) {
+  .giiker-home-list-image-container .giiker-home-list-image .giiker-home-list-image-item{
+    max-width: calc(25% - 15px);
+  }
+  .giiker-home-list-image-container .giiker-home-list-image{
+    gap: 15px;
+  }
+}
+.product-tracker-elevate-connection{
+  position: relative;
+  .user-videos.scrollable {
+    width: 100%;
+    flex-wrap: nowrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    .phone-video{
+      margin: 0 -68px;
+    }
+    
+  }
+  .user-videos-cover{
+    position: relative;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    min-height: 446px;
+  }
+  .slide-button-cover{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    .phone-video {
+      display: inline-block;
+      position: relative;
+      max-width: 200px;
+      height: 446px;
+      margin: 0;
+      padding: 2px 0;
+      video{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 24px;
+      }
+      .phone-mask {
+          position: absolute;
+          top: 0;
+          left: -9px;
+          right: -9px;
+          bottom: 0;
+          pointer-events: none;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+      }
+    }
+    .slide-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      z-index: 9999;
+      color: #fff;
+      display: none;
+      width: 36px;
+      height: 36px;
+      cursor: pointer;
+      svg{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .slide-button.left {
+      left: 48px;
+      padding-left: 8px;
+    }
+    .slide-button.right {
+      right: 48px;
+      padding-right: 8px;
+    }
+  }
+
+}
+.flex-justify-center {
+  justify-content: center;
+}
+.flex-row {
+  display: flex;
+  flex-flow: row wrap;
+}
+.modal-container {
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100000002;
+  background-color: #959595;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  -webkit-overflow-scrolling: touch;
+  justify-content: center;
+}
+.modal-container .modal-box {
+  position: relative;
+  font-weight: 400;
+  background-color: #fff;
+  padding: 27px 29px;
+  text-align: center;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  zoom: 1;
+  opacity: 0;
+  transition: opacity 0.3s 
+ease;
+  border-radius: 12px;
+  max-width: 600px;
+}
+.modal-container .modal-box.middle {
+  opacity: 1;
+  top: 50%;
+  
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%) ;
+}
+#video-popup .modal-box {
+  background: transparent;
+  position: relative;
+  padding: 0;
+  border-radius: 0;
+  max-width: none;
+  width: 60%;
+}
+.modal-container .icon-close {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -35px;
+  font-size: 22px;
+  line-height: 22px;
+  text-decoration: none;
+  color: #f1f1f1;
+}
+.modal-container .icon-close.inside {
+  color: #9a9a9c;
+  font-size: 16px;
+  line-height: 16px;
+  top: 24px;
+  right: 24px;
+  z-index: 2;
+}
+#video-popup .modal-close {
+  color: #fff;
+  z-index: 101;
+  right: 24px;
+  top: 24px;
+  font-size: 16px;
+  line-height: 16px;
+}
+#video-popup .modal-box-content {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  z-index: 0;
+}
+.hold-wrapper {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 100;
+}
+.hold-wrapper.-dark {
+  background-color: rgba(0, 0, 0, 1);
+}
+#video-popup video {
+  position: absolute;
+  background: #000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }

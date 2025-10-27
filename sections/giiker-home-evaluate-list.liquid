@@ -2,36 +2,94 @@
   <div class="giiker-home-evaluate-list-title" data-cc-animate="fade-in">{{ section.settings.title }}</div>
   <div class="giiker-home-evaluate-list-detail" data-cc-animate="fade-in">{{ section.settings.detail }}</div>
   <div class="giiker-home-evaluate-list-background">
-    {{
-      section.settings.background_image
-      | image_url: width: section.settings.background_image.width
-      | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag', data-cc-animate: 'fade-in'
-    }}
-    {{
-      section.settings.background_flower_image
-      | image_url: width: section.settings.background_flower_image.width
-      | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-flower-tag', data-cc-animate: 'fade-in'
-    }}
+    <img src="{{ section.settings.background_image | image_url: width: section.settings.background_image.width }}" 
+         alt=""
+         class="image-tag"
+         data-cc-animate="fade-in"
+         loading="lazy"
+         width="{{ section.settings.background_image.width }}"
+         height="{{ section.settings.background_image.height }}">
+    <img src="{{ section.settings.background_flower_image | image_url: width: section.settings.background_flower_image.width }}" 
+         alt=""
+         class="image-flower-tag"
+         data-cc-animate="fade-in"
+         loading="lazy"
+         width="{{ section.settings.background_flower_image.width }}"
+         height="{{ section.settings.background_flower_image.height }}">
   </div>
-  <div class="giiker-home-evaluate-list">
+  <div class="giiker-home-evaluate-list desktop-layout pc-image">
     {% for block in section.blocks %}
       {% case block.type %}
         {% when 'text' %}
           <div class="giiker-home-evaluate-list-item" style="background-color: {{ block.settings.background_color }}" data-cc-animate="fade-in">
             <div class="giiker-home-list-image-item-text-icon">
-              {{ block.settings.icon | image_url: width: block.settings.icon.width | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag' }}
+              <img src="{{ block.settings.icon | image_url: width: block.settings.icon.width }}" 
+                   alt=""
+                   class="image-tag"
+                   loading="lazy"
+                   width="{{ block.settings.icon.width }}"
+                   height="{{ block.settings.icon.height }}">
             </div>
             <h2 class="giiker-home-evaluate-list-item-text-title">{{ block.settings.title }}</h2>
          </div>
       {% when 'image' %}
         <div class="giiker-home-evaluate-list-item-image" data-cc-animate="fade-in">
-          {{ block.settings.image | image_url: width: block.settings.image.width | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag'}}
+          <img src="{{ block.settings.image | image_url: width: block.settings.image.width }}" 
+               alt=""
+               class="image-tag"
+               loading="lazy"
+               width="{{ block.settings.image.width }}"
+               height="{{ block.settings.image.height }}">
         </div>
       {% endcase %}
     {% endfor %}
   </div>
+  <div class="swiper giiker-home-evaluate-list-swiper mb-image giiker-home-evaluate-list" style="">
+    <div class="swiper-wrapper">
+      {% for block in section.blocks %}
+        {% case block.type %}
+          {% when 'text' %}
+            <div class="swiper-slide giiker-home-evaluate-list-item" style="background-color: {{ block.settings.background_color }}" >
+              <div class="giiker-home-list-image-item-text-icon">
+                <img src="{{ block.settings.icon | image_url: width: block.settings.icon.width }}" 
+                     alt=""
+                     class="image-tag"
+                     loading="lazy"
+                     width="{{ block.settings.icon.width }}"
+                     height="{{ block.settings.icon.height }}">
+              </div>
+              <h2 class="giiker-home-evaluate-list-item-text-title">{{ block.settings.title }}</h2>
+          </div>
+        {% when 'image' %}
+          <div class="swiper-slide giiker-home-evaluate-list-item-image" >
+            <img src="{{ block.settings.image | image_url: width: block.settings.image.width }}" 
+                 alt=""
+                 class="image-tag"
+                 loading="lazy"
+                 width="{{ block.settings.image.width }}"
+                 height="{{ block.settings.image.height }}">
+          </div>
+        {% endcase %}
+      {% endfor %}
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
 </div>
-
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const swiperProductFeatures = new Swiper('#shopify-section-{{ section.id }} .giiker-home-evaluate-list-swiper', {
+      spaceBetween: 10,
+      slidesPerView: 2,
+      slidesPerColumn: 2,
+      slidesPerGroup: 2,
+      paginationClickable: true,
+      pagination: {
+        el: '#shopify-section-{{ section.id }} .giiker-home-evaluate-list-swiper .swiper-pagination',
+        clickable: true,
+      },
+    });
+  });
+</script>
 {% schema %}
 {
   "name": "Giiker Home Evaluate List",

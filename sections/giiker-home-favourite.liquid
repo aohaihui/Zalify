@@ -8,17 +8,17 @@
           <div class="favourite-item swiper-slide">
             <a href="{{ block.settings.product.url }}">
               {% if block.settings.product_image %}
-                {{
-                    block.settings.product_image
-                    | image_url: width: block.settings.product_image.width
-                    | image_tag: loading: 'eager', fetchpriority: 'high', decoding: 'async', class: ''
-                }}
+                <img src="{{ block.settings.product_image | image_url: width: block.settings.product_image.width }}" 
+                     alt="{{ block.settings.product.title | escape }}"
+                     loading="eager"
+                     width="{{ block.settings.product_image.width }}"
+                     height="{{ block.settings.product_image.height }}">
               {% else  %}
-                {{
-                  block.settings.product.featured_image 
-                  | image_url: width: block.settings.product.featured_image.width
-                  | image_tag: loading: 'eager', fetchpriority: 'high', decoding: 'async', class: ''
-                }}
+                <img src="{{ block.settings.product.featured_image | image_url: width: block.settings.product.featured_image.width }}" 
+                     alt="{{ block.settings.product.title | escape }}"
+                     loading="eager"
+                     width="{{ block.settings.product.featured_image.width }}"
+                     height="{{ block.settings.product.featured_image.height }}">
               {% endif %}
                 
             <div class="item-title 1111 111">{{ block.settings.product.title }}</div>
@@ -67,13 +67,14 @@
       navigation: {
         nextEl: '#shopify-section-{{ section.id }} .swiper-button-next',
         prevEl: '#shopify-section-{{ section.id }} .swiper-button-prev',
-      }, 
+      },
     });
   });
 </script>
 {% schema %}
 {
   "name": "Giiker Home Favourite",
+  "class": "giiker-home-favourite-content",
   "settings": [
     {
       "type": "text",

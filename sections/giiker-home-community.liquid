@@ -5,23 +5,29 @@
     <a class="giiker-home-community-url" href="{{ section.settings.url }}" target="_blank">{{ section.settings.url_label }}</a>
   </div>
   <div class="giiker-home-community-image">
-    {{
-      section.settings.background_pc_image
-      | image_url: width: section.settings.background_pc_image.width
-      | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag pc-image', data-cc-animate: 'fade-in'
-    }}
-    {{
-      section.settings.background_mobile_image
-      | image_url: width: section.settings.background_mobile_image.width
-      | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag mb-image', data-cc-animate: 'fade-in'
-    }}
+    <img src="{{ section.settings.background_pc_image | image_url: width: section.settings.background_pc_image.width }}" 
+         alt=""
+         class="image-tag pc-image"
+         data-cc-animate="fade-in"
+         loading="lazy"
+         width="{{ section.settings.background_pc_image.width }}"
+         height="{{ section.settings.background_pc_image.height }}">
+    <img src="{{ section.settings.background_mobile_image | image_url: width: section.settings.background_mobile_image.width }}" 
+         alt=""
+         class="image-tag mb-image"
+         data-cc-animate="fade-in"
+         loading="lazy"
+         width="{{ section.settings.background_mobile_image.width }}"
+         height="{{ section.settings.background_mobile_image.height }}">
   </div>
   <div class="giiker-home-community-background">
-    {{
-      section.settings.background_image
-      | image_url: width: section.settings.background_image.width
-      | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag', data-cc-animate: 'fade-in'
-    }}
+    <img src="{{ section.settings.background_image | image_url: width: section.settings.background_image.width }}" 
+         alt=""
+         class="image-tag"
+         data-cc-animate="fade-in"
+         loading="lazy"
+         width="{{ section.settings.background_image.width }}"
+         height="{{ section.settings.background_image.height }}">
   </div>
 </div>
 

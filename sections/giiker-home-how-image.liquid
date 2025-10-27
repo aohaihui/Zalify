@@ -20,21 +20,27 @@
     </div>
   </div>
   <div class="giiker-home-how-image-background">
-    {{
-      section.settings.background_image
-      | image_url: width: section.settings.background_image.width
-      | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag', data-cc-animate: 'fade-in'
-    }}
-    {{
-      section.settings.background_flower_image
-      | image_url: width: section.settings.background_flower_image.width
-      | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-flower-tag', data-cc-animate: 'fade-in'
-    }}
-    {{
-      section.settings.background_top_image
-      | image_url: width: section.settings.background_top_image.width
-      | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-top-tag', data-cc-animate: 'fade-in'
-    }}
+    <img src="{{ section.settings.background_image | image_url: width: section.settings.background_image.width }}" 
+         alt=""
+         class="image-tag"
+         data-cc-animate="fade-in"
+         loading="lazy"
+         width="{{ section.settings.background_image.width }}"
+         height="{{ section.settings.background_image.height }}">
+    <img src="{{ section.settings.background_flower_image | image_url: width: section.settings.background_flower_image.width }}" 
+         alt=""
+         class="image-flower-tag"
+         data-cc-animate="fade-in"
+         loading="lazy"
+         width="{{ section.settings.background_flower_image.width }}"
+         height="{{ section.settings.background_flower_image.height }}">
+    <img src="{{ section.settings.background_top_image | image_url: width: section.settings.background_top_image.width }}" 
+         alt=""
+         class="image-top-tag"
+         data-cc-animate="fade-in"
+         loading="lazy"
+         width="{{ section.settings.background_top_image.width }}"
+         height="{{ section.settings.background_top_image.height }}">
   </div>
 </div>
 

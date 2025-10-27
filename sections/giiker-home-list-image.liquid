@@ -2,27 +2,33 @@
   <div class="giiker-home-list-image-title">{{ section.settings.title }}</div>
   <div class="giiker-home-list-image-detail">{{ section.settings.detail }}</div>
   <div class="giiker-home-list-image-background">
-    {{
-      section.settings.background_image
-      | image_url: width: section.settings.background_image.width
-      | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag', data-cc-animate: 'fade-in'
-    }}
-    {{
-      section.settings.background_flower_image
-      | image_url: width: section.settings.background_flower_image.width
-      | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-flower-tag', data-cc-animate: 'fade-in'
-    }}
+    <img src="{{ section.settings.background_image | image_url: width: section.settings.background_image.width }}" 
+         alt=""
+         class="image-tag"
+         data-cc-animate="fade-in"
+         loading="lazy"
+         width="{{ section.settings.background_image.width }}"
+         height="{{ section.settings.background_image.height }}">
+    <img src="{{ section.settings.background_flower_image | image_url: width: section.settings.background_flower_image.width }}" 
+         alt=""
+         class="image-flower-tag"
+         data-cc-animate="fade-in"
+         loading="lazy"
+         width="{{ section.settings.background_flower_image.width }}"
+         height="{{ section.settings.background_flower_image.height }}">
   </div>
   <div class="giiker-home-list-image">
     {% for block in section.blocks %}
       <div class="giiker-home-list-image-item" data-cc-animate="fade-in">
         <div class="giiker-home-text-image-item-content" >
           <div class="giiker-home-list-image-item-content-icon">
-            {{
-              block.settings.icon
-              | image_url: width: block.settings.icon.width
-              | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag', data-cc-animate: 'fade-in'
-            }}
+            <img src="{{ block.settings.icon | image_url: width: block.settings.icon.width }}" 
+                 alt=""
+                 class="image-tag"
+                 data-cc-animate="fade-in"
+                 loading="lazy"
+                 width="{{ block.settings.icon.width }}"
+                 height="{{ block.settings.icon.height }}">
           </div>
           <h2 class="giiker-home-list-image-item-title">{{ block.settings.title }}</h2>
           <div class="giiker-home-list-image-item-detail">{{ block.settings.detail }}</div>
