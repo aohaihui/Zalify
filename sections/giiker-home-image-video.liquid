@@ -7,7 +7,10 @@
         | image_url: width: section.settings.pc_image.width
         | image_tag: loading: 'eager', fetchpriority: 'high', decoding: 'async', class: 'image-tag', data-cc-animate: 'fade-in'
     }} 
+    {% endif %} {% if section.settings.video != blank %}
+      {{ section.settings.video | video_tag: loading: 'eager', fetchpriority: 'high', decoding: 'async', class: 'video-tag', data-cc-animate: 'fade-in' }}
     {% endif %}
+
     </div>
   </div>
 </section>
@@ -20,11 +23,11 @@
       "type": "image_picker",
       "id": "pc_image",
       "label": "Image"
-    }
-  ],
-  "presets": [
+    },
     {
-      "name": "Giiker Home Image Video"
+      "type": "video",
+      "id": "video_picker",
+      "label": "Video Picker"
     }
   ]
 }
