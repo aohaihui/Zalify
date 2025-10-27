@@ -105,7 +105,7 @@ body{
   width: 100%;
   margin-top: 60px;
   .giiker-home-banner-item{
-    width: 80%;
+    width: 60%;
     border-radius: 30px;
     overflow: hidden;
   }
@@ -185,7 +185,7 @@ body{
           *{
             font-weight: blod;
             font-family: Oslla;
-            font-size: 72px;
+            font-size: 5vw;
             line-height: 1;
             margin: 0;
             color: #000;
@@ -356,15 +356,19 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 130px;
         img{
           max-width: 100%;
           height: auto;
+          max-height: 100%;
+          object-fit: contain;
         }
       }
       .giiker-home-list-image-item-title{
         width: 100%;
         margin-top: 50px;
         text-align: center;
+        height: 48px;
         *{
           font-size: 24px;
           line-height: 1;
@@ -1447,6 +1451,7 @@ body{
       }
       .giiker-home-list-image-item-title{
         margin-top: 20px;
+        height: 36px;
         *{
           font-size: 18px;
           line-height: 1;
