@@ -29,6 +29,15 @@
 {%- endcomment -%}
 
 {%- liquid
+  # Validate src_width
+  unless src_width and src_width > 0
+    assign src_width = 1680
+  endunless
+  
+  if src_width > 5760
+    assign src_width = 5760
+  endif
+  
   if srcset_2x
     assign image_width = src_width
     assign src_width_2x = src_width | times: 2
@@ -71,6 +80,10 @@
     else
       assign quality = settings.image_quality
     endif
+    
+    unless quality and quality > 0
+      assign quality = 1
+    endunless
 
     for size in output_srcset
       capture srcset
@@ -79,6 +92,12 @@
           echo ', '
         endunless
         assign output_image_width = size | times: quality
+        if output_image_width < 1
+          assign output_image_width = size
+        endif
+        if output_image_width > 5760
+          assign output_image_width = 5760
+        endif
         echo image | image_url: width: output_image_width | append: ' ' | append: size | append: 'w'
       endcapture
 
@@ -117,17 +136,40 @@
           unless forloop.first
             echo ', '
           endunless
-          echo image | image_url: width: size | append: ' ' | append: size | append: 'w'
+          assign mobile_size_int = size | times: 1
+          if mobile_size_int < 1
+            assign mobile_size_int = 1
+          endif
+          if mobile_size_int > 5760
+            assign mobile_size_int = 5760
+          endif
+          echo image | image_url: width: mobile_size_int | append: ' ' | append: size | append: 'w'
         endcapture
 
         if forloop.last
-          assign mobile_image_width = size
+          assign mobile_image_width = mobile_size_int
         endif
       endfor
     endif
   endif
 
-  assign image_height = image_width | divided_by: image.aspect_ratio | round
+  unless image_width and image_width > 0
+    assign image_width = src_width
+  endunless
+  
+  unless image_width and image_width > 0
+    assign image_width = 1
+  endunless
+
+  if image.aspect_ratio and image.aspect_ratio > 0
+    assign image_height = image_width | divided_by: image.aspect_ratio | round
+  else
+    assign image_height = image_width
+  endif
+  
+  unless image_height and image_height > 0
+    assign image_height = 1
+  endunless
 
   unless lazy_load == false or section_index == 1
     assign lazy_load = true
@@ -143,10 +185,18 @@
 {%- if image and src_width -%}
   {%- if mobile_srcset -%}
     <picture>
+      {%- if image.aspect_ratio and image.aspect_ratio > 0 -%}
+        {%- assign mobile_image_height = mobile_image_width | divided_by: image.aspect_ratio | round -%}
+      {%- else -%}
+        {%- assign mobile_image_height = mobile_image_width -%}
+      {%- endif -%}
+      {%- unless mobile_image_height and mobile_image_height > 0 -%}
+        {%- assign mobile_image_height = 1 -%}
+      {%- endunless -%}
       <source srcset="{{ mobile_srcset }}"
               media="(max-width: 600px)"
               width="{{ mobile_image_width }}"
-              height="{{ mobile_image_width | divided_by: image.aspect_ratio | round }}">
+              height="{{ mobile_image_height }}">
   {%- endif -%}
 
   {%- if as_mobile_source -%}
