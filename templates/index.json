@@ -445,6 +445,19 @@
         "background_pc_image": "shopify://shop_images/2J2A6419_1.png",
         "background_mobile_image": "shopify://shop_images/2J2A6419_1.png"
       }
+    },
+    "video_w3gCqX": {
+      "type": "video",
+      "name": "Video",
+      "settings": {
+        "video_shopify": "shopify://files/videos/Tic-tac-toeBoltIntroductionvideo.mp4",
+        "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video_description": "",
+        "video_size": "md",
+        "video_autoplay": true,
+        "text_align": "text-center",
+        "color_scheme": "1"
+      }
     }
   },
   "order": [
@@ -458,6 +471,7 @@
     "giiker_home_awards_image_j9RtQ8",
     "giiker_home_phone_image_mQi8cU",
     "giiker_home_evaluate_list_n4gEEV",
-    "giiker_home_community_D9tYhV"
+    "giiker_home_community_D9tYhV",
+    "video_w3gCqX"
   ]
 }
