@@ -75,7 +75,7 @@
           "type": "content",
           "settings": {
             "is_reversal": true,
-            "title": "<p>Made for thinkers, not scrollers</p>",
+            "title": "<p>Made for thinkers, </p><p>not scrollers</p>",
             "detail": "<p>We combine logic, fine-motor, and real-time feedback to create toys that challenge the brain and learn through play.</p>",
             "background_color": "#a3d445",
             "background_image": "shopify://shop_images/1_7d70a0c8-7306-4c7a-92b9-d7f837f892c8.png",
