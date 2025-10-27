@@ -453,6 +453,7 @@
         "video_shopify": "shopify://files/videos/Tic-tac-toeBoltIntroductionvideo.mp4",
         "video_external": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "video_description": "",
+        "poster_image": "shopify://shop_images/1_414d2bba-bf29-4c8a-9d93-ac165e7d7a95.png",
         "video_size": "md",
         "video_autoplay": true,
         "text_align": "text-center",
