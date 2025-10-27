@@ -18,7 +18,8 @@
       "type": "giiker-home-image-video",
       "name": "Giiker Home Image Video",
       "settings": {
-        "pc_image": "shopify://shop_images/c929fd5b8e477afae3169af1547c879e.jpg"
+        "pc_image": "shopify://shop_images/2J2A6419_1.png",
+        "video_picker": "shopify://files/videos/Tic-tac-toeBoltIntroductionvideo.mp4"
       }
     },
     "giiker_home_banner_MFAcbG": {
