@@ -1,13 +1,14 @@
 <section id="#{{ section.id }}">
   <div class="giiker-home-image-video">
     <div class="giiker-home-image">
+      {% if section.settings.pc_image != blank %}
       {{
         section.settings.pc_image
         | image_url: width: section.settings.pc_image.width
         | image_tag: loading: 'eager', fetchpriority: 'high', decoding: 'async', class: 'image-tag', data-cc-animate: 'fade-in'
     }}
+    {% endif %}
     </div>
-
   </div>
 </section>
 
@@ -19,6 +20,11 @@
       "type": "image_picker",
       "id": "pc_image",
       "label": "Image"
+    },
+    {
+      "type": "video_url",
+      "id": "video",
+      "label": "Video"
     }
   ],
   "presets": [
