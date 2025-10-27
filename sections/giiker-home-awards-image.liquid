@@ -1,0 +1,95 @@
+<div class="giiker-home-awards-image-container">
+  <div class="awards-marquee">
+    <div class="awards-marquee-content">
+      {% for block in section.blocks %}
+        <div class="awards-marquee-item">
+          <div class="giiker-home-awards-image-item">
+            <div class="giiker-home-awards-image-item-content">
+              <div class="giiker-home-awards-image-item-content-image">
+                {{ block.settings.image | image_url: width: block.settings.image.width | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag', data-cc-animate: 'fade-in' }}
+              </div>
+            </div>
+            <div class="giiker-home-awards-image-item-title">
+              {{ block.settings.title }}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+      <!-- 复制一份用于无缝循环 -->
+      {% for block in section.blocks %}
+        <div class="awards-marquee-item">
+          <div class="giiker-home-awards-image-item">
+            <div class="giiker-home-awards-image-item-content">
+              <div class="giiker-home-awards-image-item-content-image">
+                {{ block.settings.image | image_url: width: block.settings.image.width | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag', data-cc-animate: 'fade-in' }}
+              </div>
+            </div>
+            <div class="giiker-home-awards-image-item-title">
+              {{ block.settings.title }}
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Giiker Home Awards Image",
+  "settings": [
+
+  ],
+  "blocks": [
+    {
+      "type": "awards",
+      "name": "Awards",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "Title"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Giiker Home Awards Image"
+    }
+  ]
+}
+{% endschema %}
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const marqueeElement = document.querySelector('.awards-marquee-content');
+  if (marqueeElement) {
+    // 确保有足够的内容进行无缝循环
+    const items = marqueeElement.querySelectorAll('.awards-marquee-item');
+    if (items.length > 0) {
+      // 如果内容不够多，复制更多内容
+      const originalItems = items.length / 2; // 因为我们已经复制了一份
+      if (originalItems < 4) {
+        const content = marqueeElement.innerHTML;
+        marqueeElement.innerHTML = content + content;
+      }
+    }
+    
+    // 鼠标悬停暂停动画
+    marqueeElement.addEventListener('mouseenter', function() {
+      this.style.animationPlayState = 'paused';
+    });
+    
+    marqueeElement.addEventListener('mouseleave', function() {
+      this.style.animationPlayState = 'running';
+    });
+  }
+});
+</script>

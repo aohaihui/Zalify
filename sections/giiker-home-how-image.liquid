@@ -1,0 +1,83 @@
+<div class="giiker-home-how-image-container" >
+  <div class="giiker-home-how-image-posi">
+    <div class="giiker-home-how-image-title">{{ section.settings.title }}</div>
+    <div class="giiker-home-how-image-url">
+      <a href="{{ section.settings.url }}" target="_blank">
+        {{ section.settings.url_label }}
+        <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33" fill="none">
+          <g clip-path="url(#clip0_629_196)">
+          <path d="M5.1039 5.20218C8.22516 2.08091 12.3166 0.520279 16.4081 0.520279C20.4996 0.520279 24.5911 2.08091 27.7124 5.20218C30.8336 8.32344 32.3943 12.4149 32.3943 16.5064C32.3943 20.5979 30.8336 24.6894 27.7124 27.8106C24.5911 30.9319 20.4996 32.4925 16.4081 32.4925C12.3166 32.4925 8.22516 30.9319 5.1039 27.8106C1.98263 24.6894 0.421997 20.5979 0.421997 16.5064C0.421997 12.4149 1.98263 8.32344 5.1039 5.20218ZM16.4081 4.14046C13.2437 4.14046 10.0775 5.34719 7.66409 7.76238C5.24891 10.1776 4.04218 13.342 4.04218 16.5064C4.04218 19.6708 5.24891 22.837 7.66409 25.2504C10.0793 27.6656 13.2437 28.8724 16.4081 28.8724C19.5726 28.8724 22.7387 27.6656 25.1522 25.2504C27.5673 22.8353 28.7741 19.6708 28.7741 16.5064C28.7741 13.342 27.5673 10.1758 25.1522 7.76238C22.737 5.34719 19.5726 4.14046 16.4081 4.14046Z" fill="black"></path>
+          <path d="M15.1979 11.203C14.4918 10.4969 14.4918 9.35064 15.1979 8.64283C15.904 7.93675 17.0503 7.93675 17.7581 8.64283L24.3424 15.2272C25.0485 15.9333 25.0485 17.0796 24.3424 17.7874L17.7581 24.3717C17.052 25.0778 15.9057 25.0778 15.1979 24.3717C14.4918 23.6657 14.4918 22.5193 15.1979 21.8115L20.503 16.5081L15.1979 11.2048V11.203Z" fill="black"></path>
+          <path d="M23.0615 14.6972C24.061 14.6972 24.8724 15.5068 24.8724 16.5081C24.8724 17.5077 24.0628 18.3191 23.0615 18.3191H9.75639C8.75683 18.3191 7.94543 17.5094 7.94543 16.5081C7.94543 15.5086 8.7551 14.6972 9.75639 14.6972H23.0615Z" fill="black"></path>
+          </g>
+          <defs>
+          <clipPath id="clip0_629_196">
+          <rect width="31.974" height="31.974" fill="white" transform="translate(0.421997 0.520279)"></rect>
+          </clipPath>
+          </defs>
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="giiker-home-how-image-background">
+    {{
+      section.settings.background_image
+      | image_url: width: section.settings.background_image.width
+      | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag', data-cc-animate: 'fade-in'
+    }}
+    {{
+      section.settings.background_flower_image
+      | image_url: width: section.settings.background_flower_image.width
+      | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-flower-tag', data-cc-animate: 'fade-in'
+    }}
+    {{
+      section.settings.background_top_image
+      | image_url: width: section.settings.background_top_image.width
+      | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-top-tag', data-cc-animate: 'fade-in'
+    }}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Giiker Home How Image",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_flower_image",
+      "label": "Background Flower Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_top_image",
+      "label": "Background Top Image"
+    },
+    {
+      "type": "url",
+      "id": "url",
+      "label": "URL"
+    },
+    {
+      "type": "text",
+      "id": "url_label",
+      "label": "URL Label",
+      "default": "Discover More"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Giiker Home How Image"
+    }
+  ]
+}
+{% endschema %}

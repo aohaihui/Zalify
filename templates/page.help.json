@@ -1,0 +1,98 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "layout": "split"
+      }
+    },
+    "giiker_help_text_eypYtx": {
+      "type": "giiker-help-text",
+      "blocks": {
+        "list_KdhC7p": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/x0020_1_2.png",
+            "url": "",
+            "title": "<p>Manual</p>",
+            "detail": "<p>How to get started and master your</p><p>GiiKER Games.</p>"
+          }
+        },
+        "list_BVmwwU": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/x0020_1_2.png",
+            "url": "",
+            "title": "<p>Orders</p>",
+            "detail": "<p>Tracking details about your order.</p>"
+          }
+        },
+        "list_kATeYC": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/x0020_1_1.png",
+            "url": "",
+            "title": "<p>Shipping</p>",
+            "detail": "<p>Questions and answers about shipping</p><p>issues.</p>"
+          }
+        },
+        "list_cpQtMN": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/x0020_1.png",
+            "url": "",
+            "title": "<p>Service</p>",
+            "detail": "<p>Find our return policy, order cancellation</p><p>policy and warranty.</p>"
+          }
+        },
+        "list_dkeDNp": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/x0020_1_3.png",
+            "url": "",
+            "title": "<p>App Download</p>",
+            "detail": "<p>Get the GiiKER app and start playing</p><p>smarter.</p>"
+          }
+        },
+        "list_cRm8fp": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/x0020_1_2.png",
+            "url": "",
+            "title": "<p>Compliance</p>",
+            "detail": "<p>Certified to meet all EU safety and quality</p><p>standards.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "list_KdhC7p",
+        "list_BVmwwU",
+        "list_kATeYC",
+        "list_cpQtMN",
+        "list_dkeDNp",
+        "list_cRm8fp"
+      ],
+      "name": "Giiker Help Text",
+      "settings": {
+        "title": "<p>WE’RE HERE TO HELP!</p>",
+        "background_color": "#ffb957",
+        "background_left_image": "shopify://shop_images/2_1_41aff5cb-36ca-4229-bafb-a140eaf345db.png",
+        "background_right_image": "shopify://shop_images/11.png"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "giiker_help_text_eypYtx"
+  ]
+}

@@ -1,0 +1,151 @@
+<div class="giiker-home-phone-image-container">
+  <div class="giiker-home-phone-image-content" style="background-color: {{ section.settings.background_color }};">
+    <div class="giiker-home-phone-image-title">
+      {{ section.settings.title }}
+    </div>
+    <div class="giiker-home-phone-image-background">
+      {{ section.settings.background_top_image | image_url: width: section.settings.background_top_image.width | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag',data-cc-animate: 'fade-in'}}
+    </div>
+    <div class="giiker-home-phone-image-list" data-phone-animation>
+      {% for block in section.blocks %}
+        <div class="giiker-home-phone-image-list-item" data-phone-item style="--delay: {{ forloop.index0 | times: 0.15 }}s; --index: {{ forloop.index0 }}">
+          <a class="giiker-home-phone-image-list-item-image" href="{{ block.settings.url }}" target="_blank">
+            {{ block.settings.image | image_url: width: block.settings.image.width | image_tag: fetchpriority: 'high', loading: 'lazy', class: 'image-tag'}}
+          </a>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Giiker Home Phone Image",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_top_image",
+      "label": "Background Top Image"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "rgba(240, 103, 79, 1)"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "phone",
+      "name": "Phone Image", 
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Giiker Home Phone Image"
+    }
+  ]
+}
+{% endschema %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const phoneContainer = document.querySelector('.giiker-home-phone-image-container');
+  const phoneList = document.querySelector('.giiker-home-phone-image-list');
+  const phoneItems = document.querySelectorAll('[data-phone-item]');
+  
+  if (phoneContainer && phoneList && phoneItems.length > 0) {
+    let animationTriggered = false;
+    
+    // 初始状态：所有项目从左到右露出20%叠在一起
+    phoneItems.forEach((item, index) => {
+      item.style.position = 'absolute';
+      item.style.top = '50%';
+      item.style.left = '50%';
+      item.style.transform = `translate(calc(-50% + ${index * 40}px), -50%) scale(0.8)`;
+      item.style.zIndex = phoneItems.length - index; // 后面的项目在上层
+      item.style.transition = 'none';
+      item.style.width = '200px'; // 初始较小尺寸
+    });
+    
+    // 创建 Intersection Observer
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && !animationTriggered) {
+          animationTriggered = true;
+          
+          // 开始展开动画
+          setTimeout(() => {
+            phoneItems.forEach((item, index) => {
+              item.style.transition = `all 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) ${item.style.getPropertyValue('--delay')}`;
+              
+              // 计算展开后的位置 - 从中间向两边展开
+              const totalItems = phoneItems.length;
+              const containerWidth = phoneList.offsetWidth;
+              const maxItemWidth = 200; // 设置最大单个项目宽度
+              const minGap = 10; // 最小间距
+              const availableWidth = containerWidth - (minGap * (totalItems - 1));
+              const calculatedItemWidth = availableWidth / totalItems;
+              const itemWidth = Math.min(calculatedItemWidth, maxItemWidth);
+              const totalUsedWidth = (itemWidth * totalItems) + (minGap * (totalItems - 1));
+              const startX = (containerWidth - totalUsedWidth) / 2; // 居中起始位置
+              
+              const centerIndex = Math.floor(totalItems / 2);
+              const offsetFromCenter = index - centerIndex;
+              const leftPosition = startX + (index * (itemWidth + minGap)) + (itemWidth / 2);
+              
+              item.style.position = 'absolute';
+              item.style.top = '50%';
+              item.style.left = `${leftPosition}px`;
+              item.style.transform = 'translate(-50%, -50%) scale(1)';
+              item.style.zIndex = '1';
+              item.style.width = `${itemWidth}px`;
+            });
+          }, 300);
+          
+          // 停止观察，避免重复触发
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.3, // 当模块30%可见时触发
+      rootMargin: '0px 0px -50px 0px' // 提前50px触发
+    });
+    
+    // 开始观察容器
+    observer.observe(phoneContainer);
+    
+    // 添加鼠标悬停效果
+    phoneItems.forEach(item => {
+      const link = item.querySelector('a');
+      if (link) {
+        link.addEventListener('mouseenter', function() {
+          item.style.transform = 'translateY(-5px) scale(1.02)';
+          item.style.zIndex = '10';
+        });
+        
+        link.addEventListener('mouseleave', function() {
+          item.style.transform = 'translateY(0) scale(1)';
+          item.style.zIndex = '1';
+        });
+      }
+    });
+  }
+});
+</script>
