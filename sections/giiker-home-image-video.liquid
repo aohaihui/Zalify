@@ -11,15 +11,9 @@
            height="{{ section.settings.pc_image.height }}">
     {% endif %}
     {% if section.settings.video_picker != blank %}
-      <video src="{{ section.settings.video_picker }}" 
-             class="video-tag"
-             playsinline
-             autoplay
-             muted
-             loop
-             data-cc-animate="fade-in"
-             loading="eager">
-      </video>
+
+      {{ section.settings.video_picker | video_tag: loading: 'eager', fetchpriority: 'high', decoding: 'async', class: 'video-tag', playsinline: true, autoplay: true, muted: true, loop: true, data-cc-animate: 'fade-in' }}
+
     {% endif %}
 
     </div>
