@@ -1,6 +1,4 @@
 <div class="giiker-home-list-image-container" style="background-color: {{ section.settings.background_color }}">
-  <div class="giiker-home-list-image-title">{{ section.settings.title }}</div>
-  <div class="giiker-home-list-image-detail">{{ section.settings.detail }}</div>
   <div class="giiker-home-list-image-background">
     <img src="{{ section.settings.background_image | image_url: width: section.settings.background_image.width }}" 
          alt=""
@@ -16,7 +14,10 @@
          loading="lazy"
          width="{{ section.settings.background_flower_image.width }}"
          height="{{ section.settings.background_flower_image.height }}">
-  </div>
+  </div>  
+  <div class="giiker-home-list-image-title" data-cc-animate="fade-in">{{ section.settings.title }}</div>
+  <div class="giiker-home-list-image-detail" data-cc-animate="fade-in">{{ section.settings.detail }}</div>
+
   <div class="giiker-home-list-image">
     {% for block in section.blocks %}
       <div class="giiker-home-list-image-item" data-cc-animate="fade-in">
