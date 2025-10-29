@@ -341,11 +341,11 @@ body{
     position: relative;
     .image-tag{
       position: absolute;
-      top: -13px;
+      top: -7px;
       left: 0;
       z-index: 1;
       width: 100%;
-      height: 115px;
+      // height: 115px;
       object-fit: contain;
     }
     .image-flower-tag{
@@ -718,7 +718,7 @@ body{
     width: 100%;
     height: 100%;
     position: absolute;
-    top: -100px;
+    top: -154px;
     left: -70px;
     z-index: 1;
     
