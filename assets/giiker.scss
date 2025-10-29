@@ -1008,6 +1008,7 @@ body{
       display: flex;
       align-items: center;
       justify-content: center;
+      font-family: Overlock;
       text-decoration: none;
       text-align: center;
       margin-top: 40px;
@@ -1501,13 +1502,14 @@ body{
       .giiker-home-list-image-item-title{
         margin-top: 20px;
         height: 36px;
+        margin-bottom: 0;
         *{
           font-size: 18px;
           line-height: 1;
         }
       }
       .giiker-home-list-image-item-detail{
-        margin-top: 10px;
+        margin-top: 5px;
         *{
           font-size: 16px;
           line-height: 1;
@@ -1576,18 +1578,18 @@ body{
   }
   .giiker-home-phone-image-container{
     .giiker-home-phone-image-content{
-      padding: 40px 20px;
+      padding: 40px 0;
       .giiker-home-phone-image-title{
         font-size: 32px;
-        margin-bottom: 0;
+        margin-bottom: 40px;
         line-height: 1;
       }
     }
     .giiker-home-phone-image-background{
       top: 10px;
-      left: -78px;
+      left: -93px;
       .image-tag{
-        height: 60px;
+        height: 70px;
         object-fit: contain;
       }
     }
@@ -1596,12 +1598,24 @@ body{
     }
   }
   .giiker-home-evaluate-list-container{
-    padding: 100px 20px 50px;
+    padding: 100px 15px 50px;
     padding-top: 60px;
+    z-index: 11;
+    .giiker-home-evaluate-list-box{
+      width: 100%;
+      padding: 0;
+    }
     .giiker-home-evaluate-list-background .image-flower-tag{
       width: 250px;
-      right: -33px;
-      top: -50px;
+      right: -52px;
+      top: -100px;
+      transform: rotate(357deg);
+      z-index: 10;
+    }
+    .giiker-home-evaluate-list-background .image-tag{
+      width: 100%;
+      right: 0;
+      top: -61px;
     }
     .giiker-home-evaluate-list-title *{
       font-size: 32px;
@@ -1610,6 +1624,7 @@ body{
     .giiker-home-evaluate-list-detail{
       margin-top: 10px;
       *{
+        display: inline;
         font-size: 14px;
         line-height: 1.2;
       }
@@ -1667,7 +1682,7 @@ body{
           font-size: 12px;
           line-height: 1.2;
           color: #000;
-          font-weight: bold;
+          font-weight: 500;
           display: inline;
         }
       }
@@ -1680,16 +1695,19 @@ body{
         display: inline-flex;
         align-items: center;
         justify-content: center;
+        font-family: Overlock;
         gap: 12px;
         border: 3px solid #000;
-        font-weight: 400;
+        font-weight: 700;
         margin-top: 15px;
       }
     }
     .giiker-home-community-image{
       width: 100%;
       height: 100%;
-      opacity: 0.7;
+    }
+    .giiker-home-community-background{
+      top: -1px;
     }
   }
   .giiker-home-banner{
