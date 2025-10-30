@@ -142,7 +142,7 @@ body{
       &.reversal{
         flex-direction: row-reverse;
         .giiker-home-text-image-item-content{
-          padding-left: 6%;
+          padding-left: 4%;
         }
         .giiker-home-text-image-item-content .giiker-home-text-image-item-content-background{
           position: absolute;
@@ -190,7 +190,7 @@ body{
           *{
             font-weight: blod;
             font-family: Oslla;
-            font-size: 3.7vw; 
+            font-size: 3.3vw; 
             line-height: 1;
             margin: 0;
             color: #000;
@@ -423,7 +423,7 @@ body{
 }
 .giiker-home-how-image-container{
   width: 100%;
-  max-width: 1920px;
+  // max-width: 1920px;
   margin: 0 auto;
   box-sizing: border-box;
   position: relative;
@@ -498,6 +498,7 @@ body{
       top: -3px;
       z-index: 1;
       object-fit: cover;
+      width: 100%;
     }
   }
 }
@@ -843,7 +844,7 @@ body{
   box-sizing: border-box;
   position: relative;
   .giiker-home-evaluate-list-box{
-    max-width: 1920px;
+    // max-width: 1920px;
     margin: 0 auto;
     padding: 155px 60px;
     box-sizing: border-box;
