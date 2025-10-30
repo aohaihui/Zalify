@@ -1,3 +1,12 @@
+<div class="giiker-home-evaluate-list-background-box">
+  <img src="{{ section.settings.background_flower_image | image_url: width: section.settings.background_flower_image.width }}" 
+      alt=""
+      class="image-flower-tag"
+      data-cc-animate="fade-in"
+      loading="lazy"
+      width="{{ section.settings.background_flower_image.width }}"
+      height="{{ section.settings.background_flower_image.height }}">
+</div>
 <div class="giiker-home-evaluate-list-container" style="background-color: {{ section.settings.background_color }}">
   <div class="giiker-home-evaluate-list-box">
     <div class="giiker-home-evaluate-list-background">
@@ -8,13 +17,6 @@
           loading="lazy"
           width="{{ section.settings.background_image.width }}"
           height="{{ section.settings.background_image.height }}">
-      <img src="{{ section.settings.background_flower_image | image_url: width: section.settings.background_flower_image.width }}" 
-          alt=""
-          class="image-flower-tag"
-          data-cc-animate="fade-in"
-          loading="lazy"
-          width="{{ section.settings.background_flower_image.width }}"
-          height="{{ section.settings.background_flower_image.height }}">
     </div>
     <div class="giiker-home-evaluate-list-title" data-cc-animate="fade-in">{{ section.settings.title }}</div>
     <div class="giiker-home-evaluate-list-detail" data-cc-animate="fade-in">{{ section.settings.detail }}</div>
@@ -77,6 +79,30 @@
     </div>
   </div>
 </div>
+<style>
+  #shopify-section-{{ section.id }} {
+    position: relative;
+  }
+  .giiker-home-evaluate-list-background-box{
+    position: absolute;
+    top: -120px;
+    right: 0;
+    z-index: 1111;
+  }
+  .giiker-home-evaluate-list-background-box img{
+    width: 250px;
+    height: auto;
+  }
+  @media screen and (max-width: 768px) {
+    .giiker-home-evaluate-list-background-box{
+      top: -50px; 
+    }
+    .giiker-home-evaluate-list-background-box img{
+      width: 120px;
+      height: auto;
+    }
+  }
+</style>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     const swiperProductFeatures = new Swiper('#shopify-section-{{ section.id }} .giiker-home-evaluate-list-swiper', {

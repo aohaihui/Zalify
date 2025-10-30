@@ -265,8 +265,13 @@ body{
   .favourite-swiper{
     margin-top: 60px;
     padding: 0 120px;
-    padding-bottom: 100px;
     position: relative;
+    .swiper{
+      padding-bottom: 100px;
+      .swiper-pagination{
+        bottom: 40px;
+      }
+    }
     .swiper-slide{
       width: 260px;
       max-width: 100%;
@@ -643,7 +648,7 @@ body{
   margin: 0 auto;
   padding: 0 60px;
   box-sizing: border-box;
-  position: relative;
+  // position: relative;
   
   .giiker-home-phone-image-content {
     width: 100%;
@@ -1446,6 +1451,9 @@ body{
       margin-top: 10px;
       .favourite{
         padding-bottom: 30px;
+        .swiper-pagination{
+          bottom: 0px;
+        }
       }
       .swiper-slide .item-title{
         font-size: 14px;
@@ -1609,10 +1617,9 @@ body{
       padding: 0;
     }
     .giiker-home-evaluate-list-background .image-flower-tag{
-      width: 250px;
-      right: -52px;
+      right: -15px;
       top: -100px;
-      transform: rotate(357deg);
+      height: 120px;
       z-index: 10;
     }
     .giiker-home-evaluate-list-background .image-tag{

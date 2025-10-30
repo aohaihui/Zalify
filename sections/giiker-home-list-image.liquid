@@ -1,3 +1,12 @@
+<div class="giiker-home-list-image-background-box">
+  <img src="{{ section.settings.background_flower_image | image_url: width: section.settings.background_flower_image.width }}" 
+       alt=""
+       class="image-flower-tag"
+       data-cc-animate="fade-in"
+       loading="lazy"
+       width="{{ section.settings.background_flower_image.width }}"
+       height="{{ section.settings.background_flower_image.height }}">
+</div>  
 <div class="giiker-home-list-image-container" style="background-color: {{ section.settings.background_color }}">
   <div class="giiker-home-list-image-background">
     <img src="{{ section.settings.background_image | image_url: width: section.settings.background_image.width }}" 
@@ -7,13 +16,7 @@
          loading="lazy"
          width="{{ section.settings.background_image.width }}"
          height="{{ section.settings.background_image.height }}">
-    <img src="{{ section.settings.background_flower_image | image_url: width: section.settings.background_flower_image.width }}" 
-         alt=""
-         class="image-flower-tag"
-         data-cc-animate="fade-in"
-         loading="lazy"
-         width="{{ section.settings.background_flower_image.width }}"
-         height="{{ section.settings.background_flower_image.height }}">
+
   </div>  
   <div class="giiker-home-list-image-title" data-cc-animate="fade-in">{{ section.settings.title }}</div>
   <div class="giiker-home-list-image-detail" data-cc-animate="fade-in">{{ section.settings.detail }}</div>
@@ -38,7 +41,30 @@
     {% endfor %}
   </div>
 </div>
-
+<style>
+  #shopify-section-{{ section.id }} {
+    position: relative;
+  }
+  .giiker-home-list-image-background-box{
+    position: absolute;
+    top: -120px;
+    left: 0;
+    z-index: 1111;
+  }
+  .giiker-home-list-image-background-box img{
+    width: 200px;
+    height: auto;
+  }
+  @media screen and (max-width: 768px) {
+    .giiker-home-list-image-background-box{
+      top: -30px; 
+    }
+    .giiker-home-list-image-background-box img{
+      width: 50px;
+      height: auto;
+    }
+  }
+</style>
 {% schema %}
 {
   "name": "Giiker Home List Image",
