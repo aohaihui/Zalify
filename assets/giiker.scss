@@ -142,7 +142,7 @@ body{
       &.reversal{
         flex-direction: row-reverse;
         .giiker-home-text-image-item-content{
-          padding-left: 4%;
+          padding-left: 5%;
         }
         .giiker-home-text-image-item-content .giiker-home-text-image-item-content-background{
           position: absolute;
@@ -153,7 +153,7 @@ body{
           }
         }
         .giiker-home-text-image-item-content .giiker-home-text-image-item-detail{
-          padding-right: 5vw;
+          // padding-right: 5vw;
         }
       }
       .giiker-home-text-image-item-image{
@@ -198,7 +198,7 @@ body{
         }
         .giiker-home-text-image-item-detail{
           margin-top: 60px;
-          padding-right: 10px;
+          width: 90%;
           *{
             font-weight: 500;
             font-family: Overlock;

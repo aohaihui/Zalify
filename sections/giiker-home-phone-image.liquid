@@ -1,15 +1,16 @@
-<div class="giiker-home-phone-image-background">
-  <img src="{{ section.settings.background_top_image | image_url: width: section.settings.background_top_image.width }}" 
-       alt=""
-       class="image-tag"
-       data-cc-animate="fade-in"
-       loading="lazy"
-       width="{{ section.settings.background_top_image.width }}"
-       height="{{ section.settings.background_top_image.height }}">
-</div>
+
 <div class="giiker-home-phone-image-container">
   <div class="giiker-home-phone-image-content product-tracker-elevate-connection"
     style="background-color: {{ section.settings.background_color }};">
+    <div class="giiker-home-phone-image-background">
+      <img src="{{ section.settings.background_top_image | image_url: width: section.settings.background_top_image.width }}" 
+          alt=""
+          class="image-tag"
+          data-cc-animate="fade-in"
+          loading="lazy"
+          width="{{ section.settings.background_top_image.width }}"
+          height="{{ section.settings.background_top_image.height }}">
+    </div>
     <div class="giiker-home-phone-image-title">
       {{ section.settings.title }}
     </div>
