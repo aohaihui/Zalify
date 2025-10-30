@@ -82,7 +82,7 @@
             "pc_image": "shopify://shop_images/4_1.png",
             "mobile_image": "shopify://shop_images/4_1_e760ac38-2bf8-4b58-8443-68b05fc0889e.png",
             "url": "shopify://pages/about-us",
-            "url_label": "Discover More"
+            "url_label": "explore all games"
           }
         }
       },
@@ -100,6 +100,7 @@
           "type": "banner",
           "settings": {
             "product_image": "shopify://shop_images/2_1.png",
+            "product_title": "",
             "product": "giiker-super-decoder"
           }
         },
@@ -107,36 +108,42 @@
           "type": "banner",
           "settings": {
             "product_image": "shopify://shop_images/2_5884e794-fafe-4b41-99db-693365300352.png",
+            "product_title": "",
             "product": "battle-pad"
           }
         },
         "banner_nqMLnR": {
           "type": "banner",
           "settings": {
+            "product_title": "",
             "product": "giiker-super-slide-puzzle-games-copy"
           }
         },
         "banner_YHjFbw": {
           "type": "banner",
           "settings": {
+            "product_title": "",
             "product": "giiker-super-slide-puzzle-games-copy"
           }
         },
         "banner_D43zUE": {
           "type": "banner",
           "settings": {
+            "product_title": "",
             "product": "giiker-smart-sudoku"
           }
         },
         "banner_UHmhcj": {
           "type": "banner",
           "settings": {
+            "product_title": "",
             "product": "giiker-super-ludo"
           }
         },
         "banner_QrAEJG": {
           "type": "banner",
           "settings": {
+            "product_title": "",
             "product": "super-slide"
           }
         }
@@ -203,7 +210,7 @@
         "title": "<p>Smart Toys for Everyday Moments</p>",
         "detail": "<p>Screen-free play for real connection. Building confidence through</p><p>every challenge.<br/></p>",
         "background_color": "#ffdf57",
-        "background_image": "shopify://shop_images/Vector_22_2.png",
+        "background_image": "shopify://shop_images/Vector_22_3.png",
         "background_flower_image": "shopify://shop_images/1_792915b5-b458-4c67-ad75-6dfafad115e5.png"
       }
     },
@@ -213,6 +220,7 @@
       "settings": {
         "title": "<p>How A</p><p>GiiKER Toy</p><p>Comes to Life</p>",
         "background_image": "shopify://shop_images/1_5b762347-d913-41fb-a38a-237c32e6c724.png",
+        "background_mobile_image": "shopify://shop_images/1_1.png",
         "background_flower_image": "shopify://shop_images/Mask_group_1_5736e227-1f09-4330-a300-e5f867b6815c.png",
         "background_top_image": "shopify://shop_images/Vector_23.png",
         "url": "shopify://products/battle-pad",
@@ -281,59 +289,35 @@
       "blocks": {
         "phone_c94yVp": {
           "type": "phone",
-          "settings": {
-            "image": "shopify://shop_images/1_c9fd0048-ba93-434d-906a-1b6e25a25b2a.png",
-            "url": ""
-          }
+          "settings": {}
         },
         "phone_TFHGTz": {
           "type": "phone",
-          "settings": {
-            "image": "shopify://shop_images/2_c125959c-83c2-4ec3-b6c0-b26de45a3b20.png",
-            "url": ""
-          }
+          "settings": {}
         },
         "phone_NpRhG7": {
           "type": "phone",
-          "settings": {
-            "image": "shopify://shop_images/3_75a487fa-67f7-4272-83ca-02be569a06a9.png",
-            "url": ""
-          }
+          "settings": {}
         },
         "phone_k7e9FT": {
           "type": "phone",
-          "settings": {
-            "image": "shopify://shop_images/4_b6259831-eddc-4006-8d67-d8925f1683fc.png",
-            "url": ""
-          }
+          "settings": {}
         },
         "phone_LV9WF9": {
           "type": "phone",
-          "settings": {
-            "image": "shopify://shop_images/5_2777aacb-de15-4330-9856-9ea8f49544d7.png",
-            "url": ""
-          }
+          "settings": {}
         },
         "phone_LxR4eK": {
           "type": "phone",
-          "settings": {
-            "image": "shopify://shop_images/6.png",
-            "url": ""
-          }
+          "settings": {}
         },
         "phone_9pcxdc": {
           "type": "phone",
-          "settings": {
-            "image": "shopify://shop_images/7.png",
-            "url": ""
-          }
+          "settings": {}
         },
         "phone_4BBDhf": {
           "type": "phone",
-          "settings": {
-            "image": "shopify://shop_images/8.png",
-            "url": ""
-          }
+          "settings": {}
         }
       },
       "block_order": [

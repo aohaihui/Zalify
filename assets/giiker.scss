@@ -126,9 +126,9 @@ body{
   margin: 60px 0;
   .giiker-home-text-image{
     width: 100%;
-    max-width: 1800px;
+    max-width: 1920px;
     margin: 0 auto;
-    // padding: 0 20px;
+    padding: 0 60px;
     display: flex;
     gap: 60px;
     flex-direction: column;
@@ -227,9 +227,14 @@ body{
     }
   }
 }
+.giiker-home-favourite-content{
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 60px;
+  box-sizing: border-box;
+}
 .giiker-home-favourite{
   width: 100%;
-  max-width: 1800px;
   margin: 0 auto;
   margin-top: 60px;
   padding-bottom: 100px;
@@ -266,15 +271,21 @@ body{
       width: 260px;
       max-width: 100%;
       .item-title{
-        margin-top: 10px;
+        // margin-top: 10px;
         color: #fff;
         font-family: Overlock;
-        font-size: 24px;
-        line-height: 30px;
+        font-size: 20px;
+        line-height: 24px;
         text-align: center;
       }
       img{
         max-height: 240px;
+      }
+      a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
       }
     }
     .swiper-button-next, .swiper-button-prev{
@@ -296,6 +307,7 @@ body{
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
+  padding: 0 60px;
   position: relative;
   margin-top: -115px;
   box-sizing: border-box;
@@ -326,19 +338,20 @@ body{
   }
   .giiker-home-list-image-background{
     width: 100%;
+    position: relative;
     .image-tag{
       position: absolute;
-      top: -1px;
+      top: -7px;
       left: 0;
       z-index: 1;
       width: 100%;
-      height: 115px;
-      object-fit: cover;
+      // height: 115px;
+      object-fit: contain;
     }
     .image-flower-tag{
       position: absolute;
-      top: -221px;
-      left: 0;
+      top: -177px;
+      left: -60px;
       z-index: 2;
     }
   }
@@ -371,7 +384,8 @@ body{
       }
       .giiker-home-list-image-item-title{
         width: 100%;
-        margin-top: 50px;
+        margin-top: 20px;
+        margin-bottom: 10px;
         text-align: center;
         height: 48px;
         *{
@@ -472,7 +486,7 @@ body{
     .image-top-tag{
       position: absolute;
       left: 0;
-      top: -1px;
+      top: -3px;
       z-index: 1;
       object-fit: cover;
     }
@@ -632,7 +646,7 @@ body{
   
   .giiker-home-phone-image-content {
     width: 100%;
-    padding: 120px 60px;
+    padding: 120px 0;
     border-radius: 30px 30px 0 0;
     
     .giiker-home-phone-image-title {
@@ -642,7 +656,7 @@ body{
       font-family: Oslla;
       color: #000;
       text-align: center;
-      margin-bottom: 60px;
+      margin-bottom: 100px;
       opacity: 0;
       transform: translateY(30px);
       animation: titleFadeIn 1s ease-out 0.3s forwards;
@@ -704,7 +718,7 @@ body{
     width: 100%;
     height: 100%;
     position: absolute;
-    top: -100px;
+    top: -154px;
     left: -70px;
     z-index: 1;
     
@@ -816,9 +830,15 @@ body{
 }
 .giiker-home-evaluate-list-container{
   width: 100%;
-  padding: 155px 20px;
   box-sizing: border-box;
   position: relative;
+  .giiker-home-evaluate-list-box{
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 155px 60px;
+    box-sizing: border-box;
+    position: relative;
+  }
   .giiker-home-evaluate-list-title{
     text-align: center;
     *{
@@ -844,20 +864,22 @@ body{
   }
   .giiker-home-evaluate-list-background{
     width: 100%;
-    position: absolute;
-    top: -1px;
-    left: 0;
+    position: relative;
     z-index: 1;
     .image-tag{
+      position: absolute;
+      top: -157px;
+      left: 0;
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      object-fit: contain;
+      z-index: 1;
     }
     .image-flower-tag{
       position: absolute;
       right: -80px;
-      top: -155px;
+      top: -222px;
       z-index: 2;
+      transform: rotate(9deg);
     }
   }
   .giiker-home-evaluate-list{
@@ -986,6 +1008,7 @@ body{
       display: flex;
       align-items: center;
       justify-content: center;
+      font-family: Overlock;
       text-decoration: none;
       text-align: center;
       margin-top: 40px;
@@ -993,13 +1016,13 @@ body{
   }
   .giiker-home-community-background{
     position: absolute;
-    top: -1px;
+    top: -6px;
     right: 0;
     z-index: 1;
     max-width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     .image-tag{
-      object-fit: cover;
+      object-fit: contain;
     }
   }
 }
@@ -1366,13 +1389,13 @@ body{
       margin-top: 10px;
       text-align: center;
       *{
-        display: inline;
+        // display: inline;
         font-size: 20px;
-        line-height: 1.1;
+        line-height: 1.2;
       }
     }
     .giiker-home-text-image-item-detail{
-      margin-top: 25px;
+      margin-top: 20px;
       text-align: center;
       *{
         font-size: 13px;
@@ -1408,7 +1431,8 @@ body{
     margin-top: 0;
     border-radius: 50px 50px 0 0;
     .favourite-title{
-      font-size: 16px;
+      font-size: 20px;
+      line-height: 1.2;
       padding-top: 20px;
     }
     .favourite-swiper .swiper-button-next, .favourite-swiper .swiper-button-prev{
@@ -1416,11 +1440,14 @@ body{
       height: 40px;
     }
     .favourite-swiper{
-      padding: 0 60px 30px;
+      padding: 0 0 30px;
       margin-top: 10px;
+      .favourite{
+        padding-bottom: 30px;
+      }
       .swiper-slide .item-title{
-        font-size: 20px;
-        line-height: 1;
+        font-size: 14px;
+        line-height: 1.2;
       }
     }
     .favourite-swiper .swiper-slide{
@@ -1434,7 +1461,7 @@ body{
     
   }
   .giiker-home-list-image-container{
-    padding: 0 20px;
+    padding: 0 15px;
     padding-bottom: 80px;
     .giiker-home-list-image-title{
       padding-top: 60px;
@@ -1456,9 +1483,11 @@ body{
     .giiker-home-list-image-background .image-flower-tag{
       width: 60px;
       top: -64px;
+      left: -15px;
     }
     .giiker-home-list-image-background .image-tag{
       height: auto;
+      top: -1px;
     }
     .giiker-home-list-image .giiker-home-list-image-item{
       width: calc(50% - 25px);
@@ -1473,13 +1502,14 @@ body{
       .giiker-home-list-image-item-title{
         margin-top: 20px;
         height: 36px;
+        margin-bottom: 0;
         *{
           font-size: 18px;
           line-height: 1;
         }
       }
       .giiker-home-list-image-item-detail{
-        margin-top: 10px;
+        margin-top: 5px;
         *{
           font-size: 16px;
           line-height: 1;
@@ -1548,18 +1578,19 @@ body{
   }
   .giiker-home-phone-image-container{
     .giiker-home-phone-image-content{
-      padding: 40px 20px;
+      padding: 40px 0;
       .giiker-home-phone-image-title{
         font-size: 32px;
-        margin-bottom: 0;
+        margin-bottom: 40px;
         line-height: 1;
+        padding: 0 54px;
       }
     }
     .giiker-home-phone-image-background{
       top: 10px;
-      left: -78px;
+      left: -93px;
       .image-tag{
-        height: 60px;
+        height: 70px;
         object-fit: contain;
       }
     }
@@ -1568,12 +1599,24 @@ body{
     }
   }
   .giiker-home-evaluate-list-container{
-    padding: 100px 20px 50px;
+    padding: 100px 15px 50px;
     padding-top: 60px;
+    z-index: 11;
+    .giiker-home-evaluate-list-box{
+      width: 100%;
+      padding: 0;
+    }
     .giiker-home-evaluate-list-background .image-flower-tag{
       width: 250px;
-      right: -33px;
-      top: -50px;
+      right: -52px;
+      top: -100px;
+      transform: rotate(357deg);
+      z-index: 10;
+    }
+    .giiker-home-evaluate-list-background .image-tag{
+      width: 100%;
+      right: 0;
+      top: -61px;
     }
     .giiker-home-evaluate-list-title *{
       font-size: 32px;
@@ -1582,6 +1625,7 @@ body{
     .giiker-home-evaluate-list-detail{
       margin-top: 10px;
       *{
+        display: inline;
         font-size: 14px;
         line-height: 1.2;
       }
@@ -1639,7 +1683,7 @@ body{
           font-size: 12px;
           line-height: 1.2;
           color: #000;
-          font-weight: bold;
+          font-weight: 500;
           display: inline;
         }
       }
@@ -1652,16 +1696,19 @@ body{
         display: inline-flex;
         align-items: center;
         justify-content: center;
+        font-family: Overlock;
         gap: 12px;
         border: 3px solid #000;
-        font-weight: 400;
+        font-weight: 700;
         margin-top: 15px;
       }
     }
     .giiker-home-community-image{
       width: 100%;
       height: 100%;
-      opacity: 0.7;
+    }
+    .giiker-home-community-background{
+      top: -1px;
     }
   }
   .giiker-home-banner{
@@ -1679,6 +1726,7 @@ body{
     box-sizing: border-box;
     .giiker-home-text-image{
       gap: 20px;
+      padding: 0;
       .giiker-home-text-image-item{
         flex-direction: column;
         width: 100%;
@@ -1791,8 +1839,8 @@ body{
       z-index: 9999;
       color: #fff;
       display: none;
-      width: 36px;
-      height: 36px;
+      width: 48px;
+      height: 48px;
       cursor: pointer;
       svg{
         width: 100%;

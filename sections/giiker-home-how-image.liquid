@@ -22,11 +22,18 @@
   <div class="giiker-home-how-image-background">
     <img src="{{ section.settings.background_image | image_url: width: section.settings.background_image.width }}" 
          alt=""
-         class="image-tag"
+         class="image-tag pc-image"
          data-cc-animate="fade-in"
          loading="lazy"
          width="{{ section.settings.background_image.width }}"
          height="{{ section.settings.background_image.height }}">
+    <img src="{{ section.settings.background_mobile_image | image_url: width: section.settings.background_mobile_image.width }}" 
+         alt=""
+         class="image-mobile-tag mb-image"
+         data-cc-animate="fade-in"
+         loading="lazy"
+         width="{{ section.settings.background_mobile_image.width }}"
+         height="{{ section.settings.background_mobile_image.height }}">
     <img src="{{ section.settings.background_flower_image | image_url: width: section.settings.background_flower_image.width }}" 
          alt=""
          class="image-flower-tag"
@@ -57,6 +64,11 @@
       "type": "image_picker",
       "id": "background_image",
       "label": "Background Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_mobile_image",
+      "label": "Background Mobile Image"
     },
     {
       "type": "image_picker",
