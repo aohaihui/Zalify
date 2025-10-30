@@ -7,7 +7,7 @@
        width="{{ section.settings.background_flower_image.width }}"
        height="{{ section.settings.background_flower_image.height }}">
 </div>  
-<div class="giiker-home-list-image-container" style="background-color: {{ section.settings.background_color }}">
+<div class="giiker-home-list-image-container" style="">
   <div class="giiker-home-list-image-background">
     <img src="{{ section.settings.background_image | image_url: width: section.settings.background_image.width }}" 
          alt=""
@@ -44,6 +44,7 @@
 <style>
   #shopify-section-{{ section.id }} {
     position: relative;
+    background-color: {{ section.settings.background_color }}
   }
   .giiker-home-list-image-background-box{
     position: absolute;
