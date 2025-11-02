@@ -78,7 +78,7 @@
       "settings": {
         "gallery_style": "slider",
         "gallery_aspect": true,
-        "gallery_pagination": "dots",
+        "gallery_pagination": "thumbnails",
         "enable_zoom": true,
         "enable_video_looping": false
       }
@@ -107,7 +107,8 @@
             "aggregated": false,
             "limit": 20,
             "hide_thumbnails": false,
-            "maxwidth": 1080
+            "maxwidth": 1080,
+            "is_sample": true
           }
         }
       },
