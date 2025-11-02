@@ -9,27 +9,17 @@
       {% if section.settings.background_top_image != blank %}
         {{
           section.settings.background_top_image
-          | image_url: width: 750
-          | image_tag: 
-            height: section.settings.background_top_image.height,
-            widths: '375, 750',
-            sizes: '(max-width: 767px) 100vw, 0',
-            loading: 'eager',
-            fetchpriority: 'high',
-            class: 'image-top-tag',
-            decoding: 'async'
+          | image_url: width: section.settings.background_top_image.width
+          | image_tag: height: section.settings.background_top_image.height,
+           fetchpriority: 'high', loading: 'lazy', class: 'image-top-tag', data-cc-animate: 'fade-in'
         }}
       {% endif %}
       {% if section.settings.background_bottom_image != blank %}
         {{
           section.settings.background_bottom_image
-          | image_url: width: 1440
-          | image_tag:
-            height: section.settings.background_bottom_image.height,
-            loading: 'eager',
-            fetchpriority: 'high',
-            class: 'image-bottom-tag',
-            decoding: 'async'
+          | image_url: width: section.settings.background_bottom_image.width
+          | image_tag: height: section.settings.background_bottom_image.height,
+           fetchpriority: 'high', loading: 'lazy', class: 'image-bottom-tag', data-cc-animate: 'fade-in'
         }}
       {% endif %}
     </div>
