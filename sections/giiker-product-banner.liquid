@@ -1,0 +1,61 @@
+<section id="#{{ section.id }}">
+  <div class="giiker-product-banner">
+    <div class="giiker-product-banner-image">
+    {% if section.settings.video_picker != blank %}
+      {{ section.settings.video_picker | video_tag: loading: 'eager', fetchpriority: 'high', decoding: 'async', class: 'video-tag', playsinline: true, autoplay: true, muted: true, loop: true, data-cc-animate: 'fade-in' }}
+    {% endif %}
+    </div>
+    <div class="giiker-product-banner-background">
+      {% if section.settings.background_top_image != blank %}
+        {{
+          section.settings.background_top_image
+          | image_url: width: 750
+          | image_tag: 
+            height: section.settings.background_top_image.height,
+            widths: '375, 750',
+            sizes: '(max-width: 767px) 100vw, 0',
+            loading: 'eager',
+            fetchpriority: 'high',
+            class: 'image-top-tag',
+            decoding: 'async'
+        }}
+      {% endif %}
+      {% if section.settings.background_bottom_image != blank %}
+        {{
+          section.settings.background_bottom_image
+          | image_url: width: 1440
+          | image_tag:
+            height: section.settings.background_bottom_image.height,
+            loading: 'eager',
+            fetchpriority: 'high',
+            class: 'image-bottom-tag',
+            decoding: 'async'
+        }}
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Giiker Product Banner",
+  "settings": [
+
+    {
+      "type": "video",
+      "id": "video_picker",
+      "label": "Video Picker"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_top_image",
+      "label": "Background Top Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_bottom_image",
+      "label": "Background Bottom Image"
+    }
+  ]
+}
+{% endschema %}
