@@ -125,6 +125,16 @@
         "background_top_image": "shopify://shop_images/Vector_26_1.png",
         "background_bottom_image": "shopify://shop_images/Vector_25_1.png"
       }
+    },
+    "giiker_product_basice_NMHCEQ": {
+      "type": "giiker-product-basice",
+      "name": "Giiker Product Basice",
+      "settings": {
+        "background_left_image": "shopify://shop_images/0037_1.png",
+        "background_right_image": "shopify://shop_images/2_1_18f89e96-ae22-4f37-b195-e3fe27077c2b.png",
+        "title": "Learn the basics",
+        "detail": "A step-by-step tutorial on how our smart product makes learning a breeze."
+      }
     }
   },
   "order": [
@@ -136,6 +146,7 @@
     "16631491426163ff2b",
     "shogun-below",
     "loox-product-reviews-app-section",
-    "giiker_product_banner_ny4JVp"
+    "giiker_product_banner_ny4JVp",
+    "giiker_product_basice_NMHCEQ"
   ]
 }
