@@ -85,17 +85,24 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "disabled": true,
       "settings": {
         "heading": "You may also like"
       }
     },
-    "16631491426163ff2b": {
-      "type": "apps",
-      "settings": {}
-    },
     "shogun-below": {
       "type": "shogun-below",
+      "disabled": true,
       "settings": {}
+    },
+    "giiker_product_banner_tzTcDT": {
+      "type": "giiker-product-banner",
+      "name": "Giiker Product Banner",
+      "settings": {
+        "video_picker": "shopify://files/videos/Tic-tac-toeBoltIntroductionvideo.mp4",
+        "background_top_image": "shopify://shop_images/Vector_26.png",
+        "background_bottom_image": "shopify://shop_images/Vector_25_1.png"
+      }
     },
     "loox-product-reviews-app-section": {
       "type": "apps",
@@ -124,8 +131,8 @@
     "23897632015cc15783",
     "main",
     "product-recommendations",
-    "16631491426163ff2b",
     "shogun-below",
+    "giiker_product_banner_tzTcDT",
     "loox-product-reviews-app-section"
   ]
 }
