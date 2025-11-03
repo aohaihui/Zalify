@@ -210,26 +210,6 @@
       "settings": {
         "background_image": "shopify://shop_images/Sku_2_1.png"
       }
-    },
-    "loox-product-reviews-app-section": {
-      "type": "apps",
-      "blocks": {
-        "loox-product-reviews": {
-          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-          "settings": {
-            "only_photos": false,
-            "aggregated": false,
-            "limit": 20,
-            "hide_thumbnails": false,
-            "maxwidth": 1080,
-            "is_sample": true
-          }
-        }
-      },
-      "block_order": [
-        "loox-product-reviews"
-      ],
-      "settings": {}
     }
   },
   "order": [
@@ -242,7 +222,6 @@
     "giiker_product_banner_tzTcDT",
     "giiker_product_basice_UEt668",
     "giiker_product_gsap_inTccQ",
-    "giiker_product_icon_yjLqaX",
-    "loox-product-reviews-app-section"
+    "giiker_product_icon_yjLqaX"
   ]
 }
