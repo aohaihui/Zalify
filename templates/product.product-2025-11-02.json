@@ -129,7 +129,7 @@
         "content_top_XmH9VP": {
           "type": "content_top",
           "settings": {
-            "background_color": "#f0674f",
+            "background_color": "#28b372",
             "title": "Immersive Sound Effects",
             "detail": "With each press and turn, the morse code sound effects will indulge the user in an engaging detective setting.",
             "image": "shopify://shop_images/image_9_1.png"
@@ -216,7 +216,8 @@
       "name": "Giiker Product Recommended",
       "settings": {
         "background_image": "shopify://shop_images/Vector_27.png",
-        "title": "You may also like"
+        "title": "You may also like",
+        "product_list": []
       }
     }
   },
