@@ -1,5 +1,5 @@
-<div class="giiker-home-list-image-container" style="">
-  <div class="giiker-home-list-image-background">
+<div class="giiker-product-icon-container" style="">
+  <div class="giiker-product-icon-background">
     {{
     section.settings.background_image
     | image_url: width: section.settings.background_image.width
@@ -27,31 +27,7 @@
     {% endfor %}
   </div>
 </div>
-<style>
-  #shopify-section-{{ section.id }} {
-    position: relative;
-    background-color: {{ section.settings.background_color }}
-  }
-  .giiker-home-list-image-background-box{
-    position: absolute;
-    top: -120px;
-    left: 0;
-    z-index: 1111;
-  }
-  .giiker-home-list-image-background-box img{
-    width: 200px;
-    height: auto;
-  } 
-  @media screen and (max-width: 768px) {
-    .giiker-home-list-image-background-box{
-      top: -30px; 
-    }
-    .giiker-home-list-image-background-box img{
-      width: 50px;
-      height: auto;
-    }
-  }
-</style>
+
 {% schema %}
 {
   "name": "Giiker Product Icon",

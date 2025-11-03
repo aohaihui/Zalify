@@ -2221,3 +2221,28 @@ ease;
     padding: 40px 20px;
   }
 }
+.giiker-product-icon-container{
+  width: 100%;
+  position: relative;
+  .giiker-product-icon-background{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    .image-tag-background{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      min-height: 530px;
+    }
+  }
+  .giiker-product-icon-list{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
