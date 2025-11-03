@@ -143,6 +143,14 @@
             "image": "shopify://shop_images/image_9_1.png"
           }
         },
+        "content_top_LUP3hY": {
+          "type": "content_top",
+          "settings": {
+            "title": "Two Game Modes",
+            "detail": "Challenge yourself to become a deduction master with 600 levels, or break the code set by the Code Setter within a time limit.",
+            "image": "shopify://shop_images/image_9_1.png"
+          }
+        },
         "content_bottom_Bg6PRr": {
           "type": "content_bottom",
           "settings": {
@@ -150,12 +158,22 @@
             "detail": "Get instant feedback with two types of hints, decipher the hints to break the code.",
             "image": "shopify://shop_images/Group_24.png"
           }
+        },
+        "content_bottom_QzAzha": {
+          "type": "content_bottom",
+          "settings": {
+            "title": "Travel Friendly",
+            "detail": "This compact portable handheld console is perfect for on-the-go use, enjoy brain-teasing challenges at anytime.",
+            "image": "shopify://shop_images/Group_24_1.png"
+          }
         }
       },
       "block_order": [
         "content_top_3MtwXV",
         "content_top_XmH9VP",
-        "content_bottom_Bg6PRr"
+        "content_top_LUP3hY",
+        "content_bottom_Bg6PRr",
+        "content_bottom_QzAzha"
       ],
       "name": "Giiker Product Gsap",
       "settings": {}
