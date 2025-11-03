@@ -1,4 +1,4 @@
-<section id="#{{ section.id }}">
+<div  class="horizontal">
   <div class="giiker-product-gsap">
     {% comment %} <div class="giiker-product-banner-image">
     {% if section.settings.video_picker != blank %}
@@ -23,10 +23,10 @@
         }}
       {% endif %}
     </div> {% endcomment %}
-    <div class="giiker-product-gsap-content">
+    <div class="giiker-product-gsap-content to-right">
       {% for block in section.blocks %}
         {% if block.type == 'content_top' %}
-          <div class="giiker-product-gsap-content-item">
+          <div class="giiker-product-gsap-content-item" >
             <div class="right-content" style="background-color: {{ block.settings.background_color }}">
               <div class="giiker-product-gsap-content-item-title">
                 {{ block.settings.title }}
@@ -40,14 +40,18 @@
                   block.settings.image
                   | image_url: width: block.settings.image.width
                   | image_tag: height: block.settings.image.height,
-                  fetchpriority: 'high', loading: 'lazy', class: 'image-tag', data-cc-animate: 'fade-in'
+                  fetchpriority: 'high', loading: 'lazy', class: 'image-tag'
                 }}
             </div>
           </div>
         {% endif %}
       {% endfor %}
     </div>
-    <div class="giiker-product-gsap-content bottom-content">
+  </div>
+</div>
+<div  class="horizontal">
+  <div class="giiker-product-gsap">
+    <div class="giiker-product-gsap-content bottom-content to-left">
       {% for block in section.blocks %}
         {% if block.type == 'content_bottom' %}
           <div class="giiker-product-gsap-content-item">
@@ -56,7 +60,7 @@
                   block.settings.image
                   | image_url: width: block.settings.image.width
                   | image_tag: height: block.settings.image.height,
-                  fetchpriority: 'high', loading: 'lazy', class: 'image-tag', data-cc-animate: 'fade-in'
+                  fetchpriority: 'high', loading: 'lazy', class: 'image-tag'
                 }}
             </div>
             <div class="right-content" style="background-color: {{ block.settings.background_color }}">
@@ -72,8 +76,38 @@
       {% endfor %}
     </div>
   </div>
-</section>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+<script>
+  (function() {
+    const horizontalSections = gsap.utils.toArray('div.horizontal')
+    horizontalSections.forEach(function (sec, i) {	
+      var thisPinWrap = sec.querySelector('.giiker-product-gsap');
+      var thisAnimWrap = thisPinWrap.querySelector('.giiker-product-gsap-content');
+      
+      var getToValue = () => -(thisAnimWrap.scrollWidth - window.innerWidth); 
 
+      gsap.fromTo(thisAnimWrap, { 
+        x: () => thisAnimWrap.classList.contains('to-right') ? 0 : getToValue() 
+      }, { 
+        x: () => thisAnimWrap.classList.contains('to-right') ? getToValue() : 0, 
+        ease: "none",
+        scrollTrigger: {
+          trigger: sec,		
+          start: "top top",
+          end: () => "+=" + (thisAnimWrap.scrollWidth - window.innerWidth),
+          pin: thisPinWrap,
+          invalidateOnRefresh: true,
+          //anticipatePin: 1,
+          scrub: true,
+          //markers: true,
+        }
+      });
+
+    });	
+  })();
+</script>
 {% schema %}
 {
   "name": "Giiker Product Gsap",

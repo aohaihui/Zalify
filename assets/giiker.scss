@@ -2012,3 +2012,36 @@ ease;
   }
 
 }
+.horizontal{
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+.giiker-product-gsap{
+  display: flex;
+  position: relative;
+  z-index: 1;
+  .giiker-product-gsap-content{
+    display: flex;
+    position: relative;
+    z-index: 1;
+    counter-reset: item;
+    // float: left;
+    .giiker-product-gsap-content-item{
+      position: relative;
+      display: flex;
+      align-items: center;
+      line-height: 1.7;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      border-right: 1px solid rgba(0, 0, 0, 0.06);
+      background-color: transparent; 
+      width: 100vw;
+      .giiker-product-gsap-content-item-image{
+        width: 50%;
+      }
+    }
+  }
+}
