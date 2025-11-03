@@ -2303,3 +2303,109 @@ ease;
     }
   }
 }
+.giiker-product-recommended-container{
+  width: 100%;
+  padding: 100px 0;
+  position: relative;
+  background: rgba(255, 211, 150, 1);
+  .giiker-product-recommended-title{
+    text-align: center;
+    font-size: 55px;
+    font-family: Oslla;
+    line-height: 1;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  .giiker-product-recommended-background{
+    width: 100%;
+    position: absolute;
+    top: -5px;
+    left: 0;
+    z-index: 1;
+    .image-tag-background{
+      width: 100%;
+    }
+  }
+  .giiker-product-recommended-list{
+    .giiker-product-recommended-item{
+      .giiker-product-recommended-item-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .giiker-product-recommended-item-content-icon{
+          width: 326px;
+          height: 326px;
+          max-width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .image-tag{
+            max-width: 100%;
+          }
+        }
+        .giiker-product-recommended-item-title{
+          margin: 0 auto;
+          margin-top: 15px;
+          width: 206px;
+          max-width: 100%;
+          text-align: center;
+          font-family: Overlock;
+          font-size: 16px;
+          font-weight: 400;
+          color: #000
+        }
+        .giiker-product-recommended-item-price{
+          margin: 0 auto;
+          width: 206px;
+          max-width: 100%;
+          text-align: center;
+          font-family: Overlock;
+          font-size: 16px;
+          font-weight: 400;
+          color: #000
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .giiker-product-gsap .giiker-product-gsap-content .giiker-product-gsap-content-item .right-content{
+    padding:0 ;
+    background: transparent;
+  }
+  .giiker-product-gsap .giiker-product-gsap-content .giiker-product-gsap-content-item .right-content .giiker-product-gsap-content-item-background{
+    background: transparent;
+  }
+  .giiker-product-gsap .giiker-product-gsap-content .giiker-product-gsap-content-item{
+    padding: 10px;
+  }
+  .giiker-product-gsap .giiker-product-gsap-content .giiker-product-gsap-content-item .right-content .giiker-product-gsap-content-item-background{
+    padding: 0 10px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .giiker-product-gsap .giiker-product-gsap-content .giiker-product-gsap-content-item .right-content .giiker-product-gsap-content-item-background .giiker-product-gsap-content-item-title{
+    font-size: 16px;
+    background: rgba(240, 103, 79, 1);
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 0;
+    line-height: 1.2;
+  }
+  .giiker-product-gsap .giiker-product-gsap-content{
+    height: 200px;
+  }
+  .giiker-product-gsap .giiker-product-gsap-content .giiker-product-gsap-content-item .right-content .giiker-product-gsap-content-item-background .giiker-product-gsap-content-item-detail{
+    width: 100%;
+    background: rgba(240, 103, 79, 1);
+    border-radius: 10px;
+    padding: 10px;
+    line-height: 1.2;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 0;
+  }
+}
