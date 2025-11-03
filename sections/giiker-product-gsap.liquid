@@ -1,0 +1,117 @@
+<section id="#{{ section.id }}">
+  <div class="giiker-product-gsap">
+    {% comment %} <div class="giiker-product-banner-image">
+    {% if section.settings.video_picker != blank %}
+      {{ section.settings.video_picker | video_tag: loading: 'eager', fetchpriority: 'high', decoding: 'async', class: 'video-tag', playsinline: true, autoplay: true, muted: true, loop: true, data-cc-animate: 'fade-in' }}
+    {% endif %}
+    </div>
+    <div class="giiker-product-banner-background">
+      {% if section.settings.background_top_image != blank %}
+        {{
+          section.settings.background_top_image
+          | image_url: width: section.settings.background_top_image.width
+          | image_tag: height: section.settings.background_top_image.height,
+           fetchpriority: 'high', loading: 'lazy', class: 'image-top-tag', data-cc-animate: 'fade-in'
+        }}
+      {% endif %}
+      {% if section.settings.background_bottom_image != blank %}
+        {{
+          section.settings.background_bottom_image
+          | image_url: width: section.settings.background_bottom_image.width
+          | image_tag: height: section.settings.background_bottom_image.height,
+           fetchpriority: 'high', loading: 'lazy', class: 'image-bottom-tag', data-cc-animate: 'fade-in'
+        }}
+      {% endif %}
+    </div> {% endcomment %}
+    <div class="giiker-product-gsap-content">
+      {% for block in section.blocks %}
+        {% if block.type == 'content_top' %}
+          <div class="giiker-product-gsap-content-item">
+            <div class="right-content">
+              <div class="giiker-product-gsap-content-item-title">
+                {{ block.settings.title }}
+              </div>
+              <div class="giiker-product-gsap-content-item-detail">
+                {{ block.settings.detail }}
+              </div>
+            </div>
+            <div class="giiker-product-gsap-content-item-image">
+                {{
+                  block.settings.image
+                  | image_url: width: block.settings.image.width
+                  | image_tag: height: block.settings.image.height,
+                  fetchpriority: 'high', loading: 'lazy', class: 'image-tag', data-cc-animate: 'fade-in'
+                }}
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+      {% for block in section.blocks %}
+        {% if block.type == 'content_bottom' %}
+          <div class="giiker-product-gsap-content-item">
+            <div class="giiker-product-gsap-content-item-title">
+              {{ block.settings.title }}
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Giiker Product Gsap",
+  "settings": [
+  ],
+  "blocks": [
+    {
+      "type": "content_top",
+      "name": "Content Top",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "detail",
+          "label": "Detail"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    },
+    {
+      "type": "content_bottom",
+      "name": "Content Bottom",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "detail",
+          "label": "Detail"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Giiker Product Gsap"
+    }
+  ]
+}
+{% endschema %}
