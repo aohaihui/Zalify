@@ -123,6 +123,65 @@
         "loox-product-reviews"
       ],
       "settings": {}
+    },
+    "giiker_product_gsap_inTccQ": {
+      "type": "giiker-product-gsap",
+      "blocks": {
+        "content_top_3MtwXV": {
+          "type": "content_top",
+          "settings": {
+            "background_color": "#6cc1d4",
+            "title": "Innovative Code-Breaking Game",
+            "detail": "Break the 4 digit color code within 7steps, putting your logical reasoning and problem-solving abilities to the test",
+            "image": "shopify://shop_images/image_9.png"
+          }
+        },
+        "content_top_XmH9VP": {
+          "type": "content_top",
+          "settings": {
+            "background_color": "#f0674f",
+            "title": "Immersive Sound Effects",
+            "detail": "With each press and turn, the morse code sound effects will indulge the user in an engaging detective setting.",
+            "image": "shopify://shop_images/image_9_1.png"
+          }
+        },
+        "content_top_LUP3hY": {
+          "type": "content_top",
+          "settings": {
+            "background_color": "#2860b3",
+            "title": "Two Game Modes",
+            "detail": "Challenge yourself to become a deduction master with 600 levels, or break the code set by the Code Setter within a time limit.",
+            "image": "shopify://shop_images/image_9_1.png"
+          }
+        },
+        "content_bottom_Bg6PRr": {
+          "type": "content_bottom",
+          "settings": {
+            "background_color": "#bc573e",
+            "title": "Interactive Hints",
+            "detail": "Get instant feedback with two types of hints, decipher the hints to break the code.",
+            "image": "shopify://shop_images/Group_24.png"
+          }
+        },
+        "content_bottom_QzAzha": {
+          "type": "content_bottom",
+          "settings": {
+            "background_color": "#813ebc",
+            "title": "Travel Friendly",
+            "detail": "This compact portable handheld console is perfect for on-the-go use, enjoy brain-teasing challenges at anytime.",
+            "image": "shopify://shop_images/Group_24_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "content_top_3MtwXV",
+        "content_top_XmH9VP",
+        "content_top_LUP3hY",
+        "content_bottom_Bg6PRr",
+        "content_bottom_QzAzha"
+      ],
+      "name": "Giiker Product Gsap",
+      "settings": {}
     }
   },
   "order": [
@@ -133,6 +192,7 @@
     "product-recommendations",
     "shogun-below",
     "giiker_product_banner_tzTcDT",
-    "loox-product-reviews-app-section"
+    "loox-product-reviews-app-section",
+    "giiker_product_gsap_inTccQ"
   ]
 }
