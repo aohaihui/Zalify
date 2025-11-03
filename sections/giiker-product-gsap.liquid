@@ -26,15 +26,18 @@
     <div class="giiker-product-gsap-content to-right">
       {% for block in section.blocks %}
         {% if block.type == 'content_top' %}
-          <div class="giiker-product-gsap-content-item" >
-            <div class="right-content" style="background-color: {{ block.settings.background_color }}">
-              <div class="giiker-product-gsap-content-item-title">
-                {{ block.settings.title }}
-              </div>
-              <div class="giiker-product-gsap-content-item-detail">
-                {{ block.settings.detail }}
+          <div class="giiker-product-gsap-content-item" style="background-color: {{ block.settings.background_color }}">
+            <div class="right-content" >
+              <div class="giiker-product-gsap-content-item-background" >
+                <div class="giiker-product-gsap-content-item-title">
+                  {{ block.settings.title }}
+                </div>
+                <div class="giiker-product-gsap-content-item-detail">
+                  {{ block.settings.detail }}
+                </div>
               </div>
             </div>
+           
             <div class="giiker-product-gsap-content-item-image">
                 {{
                   block.settings.image
@@ -64,11 +67,13 @@
                 }}
             </div>
             <div class="right-content" style="background-color: {{ block.settings.background_color }}">
-              <div class="giiker-product-gsap-content-item-title">
-                {{ block.settings.title }}
-              </div>
-              <div class="giiker-product-gsap-content-item-detail">
-                {{ block.settings.detail }}
+              <div class="giiker-product-gsap-content-item-background">
+                <div class="giiker-product-gsap-content-item-title">
+                  {{ block.settings.title }}
+                </div>
+                <div class="giiker-product-gsap-content-item-detail">
+                  {{ block.settings.detail }}
+                </div>
               </div>
             </div>
           </div>

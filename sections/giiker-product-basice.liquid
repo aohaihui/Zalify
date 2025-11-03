@@ -1,11 +1,11 @@
 <section id="#{{ section.id }}">
-  <div class="giiker-product-basice">
+  <div class="giiker-product-basice" data-cc-animate="fade-in">
     <div class="left-content">
         {{
           section.settings.background_left_image
           | image_url: width: section.settings.background_left_image.width
           | image_tag: height: section.settings.background_left_image.height,
-           fetchpriority: 'high', loading: 'lazy', class: 'image-left-tag', data-cc-animate: 'fade-in'
+           fetchpriority: 'high', loading: 'lazy', class: 'image-left-tag'
         }}
     </div>
     <div class="right-content">
@@ -13,14 +13,18 @@
         section.settings.background_right_image
         | image_url: width: section.settings.background_right_image.width
         | image_tag: height: section.settings.background_right_image.height,
-         fetchpriority: 'high', loading: 'lazy', class: 'image-right-tag', data-cc-animate: 'fade-in'
+         fetchpriority: 'high', loading: 'lazy', class: 'image-right-tag'
       }}
       <div class="right-content-title">{{ section.settings.title }}</div>
       <div class="right-content-detail">{{ section.settings.detail }}</div>
     </div>
   </div>
 </section>
-
+<style>
+  #shopify-section-{{ section.id }}  {
+    background: rgba(249, 144, 50, 1);
+  }
+</style>
 {% schema %}
 {
   "name": "Giiker Product Basice",
