@@ -1,8 +1,7 @@
 <div class="giiker-product-recommended-container" style="">
   <h2 class="giiker-product-recommended-title">{{ section.settings.title }}</h2>
   <div class="giiker-product-recommended-list">
-    {{ product.metafields.custom.recommended_products }}
-    {% for item in product.metafields.custom.recommended_products %}
+    {% for item in section.settings.product_list %}
       <div class="giiker-product-recommended-item" data-cc-animate="fade-in">
         <div class="giiker-product-recommended-item-content" >
           <div class="giiker-product-recommended-item-content-icon">
@@ -35,6 +34,11 @@
       "id": "title",
       "label": "Title",
       "default": "You may also like"
+    },
+    {
+      "type": "product_list",
+      "id": "product_list",
+      "label": "Product List"
     }
   ],
   "blocks": [
