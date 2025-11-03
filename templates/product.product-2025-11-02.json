@@ -104,25 +104,15 @@
         "background_bottom_image": "shopify://shop_images/Vector_25_1.png"
       }
     },
-    "loox-product-reviews-app-section": {
-      "type": "apps",
-      "blocks": {
-        "loox-product-reviews": {
-          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-          "settings": {
-            "only_photos": false,
-            "aggregated": false,
-            "limit": 20,
-            "hide_thumbnails": false,
-            "maxwidth": 1080,
-            "is_sample": true
-          }
-        }
-      },
-      "block_order": [
-        "loox-product-reviews"
-      ],
-      "settings": {}
+    "giiker_product_basice_UEt668": {
+      "type": "giiker-product-basice",
+      "name": "Giiker Product Basice",
+      "settings": {
+        "background_left_image": "shopify://shop_images/0037_1.png",
+        "background_right_image": "shopify://shop_images/2_1_18f89e96-ae22-4f37-b195-e3fe27077c2b.png",
+        "title": "Learn the basics",
+        "detail": "A step-by-step tutorial on how our smart product makes learning a breeze."
+      }
     },
     "giiker_product_gsap_inTccQ": {
       "type": "giiker-product-gsap",
@@ -182,6 +172,26 @@
       ],
       "name": "Giiker Product Gsap",
       "settings": {}
+    },
+    "loox-product-reviews-app-section": {
+      "type": "apps",
+      "blocks": {
+        "loox-product-reviews": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "loox-product-reviews"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -192,7 +202,8 @@
     "product-recommendations",
     "shogun-below",
     "giiker_product_banner_tzTcDT",
-    "loox-product-reviews-app-section",
-    "giiker_product_gsap_inTccQ"
+    "giiker_product_basice_UEt668",
+    "giiker_product_gsap_inTccQ",
+    "loox-product-reviews-app-section"
   ]
 }
