@@ -2016,6 +2016,11 @@ ease;
   width: 100%;
   overflow-x: hidden;
   position: relative;
+  .pin-spacer{
+    // height: auto !important;
+    // padding: 0 !important;
+  }
+
 }
 .giiker-product-gsap{
   display: flex;
@@ -2026,7 +2031,14 @@ ease;
     position: relative;
     z-index: 1;
     counter-reset: item;
+    height: 500px;
+    // max-height: unset !important;
+    z-index: 1;
+    // height: auto !important;
     // float: left;
+    &.to-left{
+      flex-direction: row-reverse;
+    }
     .giiker-product-gsap-content-item{
       position: relative;
       display: flex;
@@ -2039,8 +2051,22 @@ ease;
       border-right: 1px solid rgba(0, 0, 0, 0.06);
       background-color: transparent; 
       width: 100vw;
+      flex-shrink: 0;
       .giiker-product-gsap-content-item-image{
         width: 50%;
+        height: 100%;
+        flex-shrink: 0;
+        img{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .right-content{
+        width: 50%;
+        flex-shrink: 0;
+        padding: 40px;
+        box-sizing: border-box;
       }
     }
   }
