@@ -27,7 +27,7 @@
       {% for block in section.blocks %}
         {% if block.type == 'content_top' %}
           <div class="giiker-product-gsap-content-item">
-            <div class="right-content">
+            <div class="right-content" style="background-color: {{ block.settings.background_color }}">
               <div class="giiker-product-gsap-content-item-title">
                 {{ block.settings.title }}
               </div>
@@ -46,11 +46,26 @@
           </div>
         {% endif %}
       {% endfor %}
+    </div>
+    <div class="giiker-product-gsap-content bottom-content">
       {% for block in section.blocks %}
         {% if block.type == 'content_bottom' %}
           <div class="giiker-product-gsap-content-item">
-            <div class="giiker-product-gsap-content-item-title">
-              {{ block.settings.title }}
+            <div class="giiker-product-gsap-content-item-image">
+                {{
+                  block.settings.image
+                  | image_url: width: block.settings.image.width
+                  | image_tag: height: block.settings.image.height,
+                  fetchpriority: 'high', loading: 'lazy', class: 'image-tag', data-cc-animate: 'fade-in'
+                }}
+            </div>
+            <div class="right-content" style="background-color: {{ block.settings.background_color }}">
+              <div class="giiker-product-gsap-content-item-title">
+                {{ block.settings.title }}
+              </div>
+              <div class="giiker-product-gsap-content-item-detail">
+                {{ block.settings.detail }}
+              </div>
             </div>
           </div>
         {% endif %}
@@ -69,6 +84,11 @@
       "type": "content_top",
       "name": "Content Top",
       "settings": [
+        {
+          "type": "color",
+          "id": "background_color",
+          "label": "Background Color"
+        },
         {
           "type": "text",
           "id": "title",
@@ -90,6 +110,11 @@
       "type": "content_bottom",
       "name": "Content Bottom",
       "settings": [
+        {
+          "type": "color",
+          "id": "background_color",
+          "label": "Background Color"
+        },
         {
           "type": "text",
           "id": "title",
