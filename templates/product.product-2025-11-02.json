@@ -192,6 +192,44 @@
         "loox-product-reviews"
       ],
       "settings": {}
+    },
+    "giiker_product_icon_yjLqaX": {
+      "type": "giiker-product-icon",
+      "blocks": {
+        "list_JkLgDm": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/x0020_1.png",
+            "title": "<p>Fast & Easy Returns</p>",
+            "detail": "<p>Change your mind? Enjoy hassle-freereturns within 30 days.</p>"
+          }
+        },
+        "list_wLCkfw": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/x0020_1_3.png",
+            "title": "<p>100% secure payment.</p>",
+            "detail": "<p>We accept all major credit cards withShop Pay and PayPal. Your credit cardinformation is private.</p>"
+          }
+        },
+        "list_B3cRM9": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/x0020_1.png",
+            "title": "<p>1 Year Warranty</p>",
+            "detail": "<p>Play smarter, worry less—every GiiKER product is backed by our 1-year warranty, a promise of lasting quality and endless fun.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "list_JkLgDm",
+        "list_wLCkfw",
+        "list_B3cRM9"
+      ],
+      "name": "Giiker Product Icon",
+      "settings": {
+        "background_image": "shopify://shop_images/Sku_2_1.png"
+      }
     }
   },
   "order": [
@@ -204,6 +242,7 @@
     "giiker_product_banner_tzTcDT",
     "giiker_product_basice_UEt668",
     "giiker_product_gsap_inTccQ",
-    "loox-product-reviews-app-section"
+    "loox-product-reviews-app-section",
+    "giiker_product_icon_yjLqaX"
   ]
 }
