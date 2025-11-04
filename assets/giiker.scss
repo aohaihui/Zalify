@@ -2412,4 +2412,65 @@ ease;
     border-radius: 0 0 0 80px;
     overflow: hidden;
   }
+  .giiker-product-gsap .giiker-product-gsap-content.to-left .giiker-product-gsap-content-item .giiker-product-gsap-content-item-image{
+    border-radius: 0 80px 0 0;
+  }
+  .giiker-product-gsap .giiker-product-gsap-content.to-left .giiker-product-gsap-content-item .right-content .giiker-product-gsap-content-item-background{
+    padding: 0 0 0 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .giiker-product-icon-container .giiker-product-icon-list{
+    gap: 10px;
+    padding: 0 10px;
+  }
+  .giiker-product-icon-container .giiker-product-icon-list .giiker-product-icon-item .giiker-product-icon-item-content .giiker-product-icon-item-content-icon{
+    width: 80px;
+    height: 80px;
+  }
+  .giiker-product-icon-container .giiker-product-icon-list .giiker-product-icon-item .giiker-product-icon-item-content .giiker-product-icon-item-title *{
+    font-size: 14px;
+    line-height: 1.2;
+  }
+  .giiker-product-icon-container .giiker-product-icon-list .giiker-product-icon-item .giiker-product-icon-item-content .giiker-product-icon-item-detail *{
+    font-size: 12px;
+    line-height: 1.2;
+  }
+  .giiker-product-icon-container .giiker-product-icon-list .giiker-product-icon-item .giiker-product-icon-item-content .giiker-product-icon-item-detail{
+    height: 72px;
+  }
+  .giiker-product-recommended-container .giiker-product-recommended-title{
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  .giiker-product-recommended-container{
+    padding: 50px 0;
+    margin-top: -5px;
+    .swiper-button-next, .swiper-button-prev{
+      margin-top: 0;
+      top: 35%;
+      transform: translateY(-50%);
+    }
+    .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after, .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+      display: none;
+    }
+  }
+  .giiker-product-recommended-list{
+    padding-left: 40px;
+  }
+  .giiker-product-recommended-container .giiker-product-recommended-list .giiker-product-recommended-item .giiker-product-recommended-item-content .giiker-product-recommended-item-content-icon{
+    width: auto;
+    height: auto;
+  }
+  .giiker-product-recommended-container .giiker-product-recommended-list .giiker-product-recommended-item .giiker-product-recommended-item-content .giiker-product-recommended-item-title{
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+.product-header .product-title{
+  font-size: 64px;
+  font-family: Oslla;
+  line-height: 1;
+  color: #000;
 }

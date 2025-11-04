@@ -57,7 +57,7 @@
     <div class="giiker-product-gsap-content bottom-content to-left">
       {% for block in section.blocks %}
         {% if block.type == 'content_bottom' %}
-          <div class="giiker-product-gsap-content-item">
+          <div class="giiker-product-gsap-content-item" style="background-color: {{ block.settings.background_color }}">
             <div class="giiker-product-gsap-content-item-image">
                 {{
                   block.settings.image
