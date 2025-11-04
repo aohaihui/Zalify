@@ -80,7 +80,8 @@
         "gallery_aspect": true,
         "gallery_pagination": "thumbnails",
         "enable_zoom": true,
-        "enable_video_looping": false
+        "enable_video_looping": false,
+        "new_product_11_05": true
       }
     },
     "product-recommendations": {
