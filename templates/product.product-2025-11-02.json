@@ -27,9 +27,9 @@
         "header": {
           "type": "header",
           "settings": {
-            "show_vendor": true,
+            "show_vendor": false,
             "show_badge": true,
-            "show_reviews": true,
+            "show_reviews": false,
             "show_tax_info": false,
             "show_sku": false,
             "show_barcode": false,
