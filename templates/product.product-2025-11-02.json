@@ -146,15 +146,6 @@
             "image": "shopify://shop_images/image_9_1.png"
           }
         },
-        "content_bottom_Bg6PRr": {
-          "type": "content_bottom",
-          "settings": {
-            "background_color": "#bc573e",
-            "title": "Interactive Hints",
-            "detail": "Get instant feedback with two types of hints, decipher the hints to break the code.",
-            "image": "shopify://shop_images/Group_24.png"
-          }
-        },
         "content_bottom_QzAzha": {
           "type": "content_bottom",
           "settings": {
@@ -163,14 +154,23 @@
             "detail": "This compact portable handheld console is perfect for on-the-go use, enjoy brain-teasing challenges at anytime.",
             "image": "shopify://shop_images/Group_24_1.png"
           }
+        },
+        "content_bottom_Bg6PRr": {
+          "type": "content_bottom",
+          "settings": {
+            "background_color": "#bc573e",
+            "title": "Interactive Hints",
+            "detail": "Get instant feedback with two types of hints, decipher the hints to break the code.",
+            "image": "shopify://shop_images/Group_24.png"
+          }
         }
       },
       "block_order": [
         "content_top_3MtwXV",
         "content_top_XmH9VP",
         "content_top_LUP3hY",
-        "content_bottom_Bg6PRr",
-        "content_bottom_QzAzha"
+        "content_bottom_QzAzha",
+        "content_bottom_Bg6PRr"
       ],
       "name": "Giiker Product Gsap",
       "settings": {}
