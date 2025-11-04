@@ -1,5 +1,5 @@
 <section id="#{{ section.id }}">
-  <div class="giiker-product-basice" data-cc-animate="fade-in">
+  <div class="giiker-product-basice pc-image" data-cc-animate="fade-in">
     <div class="left-content">
         {{
           section.settings.background_left_image
@@ -19,8 +19,13 @@
       <div class="right-content-detail">{{ section.settings.detail }}</div>
     </div>
   </div>
-  <div class="mobile-video">
-     
+  <div class="mobile-video mb-image">
+    {% if section.settings.mobile_video != blank %}
+      {{ section.settings.mobile_video | video_tag: loading: 'eager', fetchpriority: 'high', decoding: 'async', class: 'video-tag', playsinline: true, autoplay: true, muted: true, loop: true, data-cc-animate: 'fade-in' }}
+    {% endif %}
+    {% if section.settings.mobile_background_image != blank %}
+      {{ section.settings.mobile_background_image | image_url: width: section.settings.mobile_background_image.width | image_tag: height: section.settings.mobile_background_image.height, fetchpriority: 'high', loading: 'lazy', class: 'image-tag', data-cc-animate: 'fade-in' }}
+    {% endif %}
   </div>
 </section>
 <style>
