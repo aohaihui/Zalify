@@ -4,7 +4,7 @@
 -%}
 
 <product-page 
-  id="product-{{ section.id }}" class="site-box-container container--fullscreen box--can-stick product--section product" 
+  id="product-{{ section.id }}" class="site-box-container {% if section.settings.new_product_11_05 %}new-product-11-05{% endif %} container--fullscreen box--can-stick product--section product" 
   data-collection="{{ collection.handle }}" data-id="{{ product.id }}" 
   data-availability="{{ product.available }}" 
   style="display:block"
@@ -711,7 +711,14 @@
         "id": "enable_video_looping",
         "label": "t:sections.main-product.settings.enable_video_looping.label",
         "default": false
+      },
+      {
+        "type": "checkbox",
+        "id": "new_product_11_05",
+        "label": "New Product 11-05",
+        "default": false
       }
+
     ],
     "presets": [
       {
