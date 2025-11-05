@@ -1,5 +1,5 @@
-<product-quantity  class="quantity-selector-holder" {% unless variant.available %} style="display:none" {% endunless %}>
-
+<product-quantity  class="quantity-selector-holder add-to-cart-button-text-holder" {% unless variant.available %} style="display:none" {% endunless %}>
+  <span class="quantity-selector-holder-text">Quantity</span>
   <button class="qty-button qty-minus" aria-label="{{ 'general.accessibility_labels.increase_quantity' | t }}" role="button" controls="qty-{{ id }}">
     {%- render 'theme-symbols', icon: 'minus_icon' -%}
   </button>
@@ -10,5 +10,8 @@
   <button class="qty-button qty-plus" aria-label="{{ 'general.accessibility_labels.decrease_quantity' | t }}" role="button" controls="qty-{{ id }}">
     {%- render 'theme-symbols', icon: 'plus_icon' -%}
   </button>
-
+  <span class="add-to-cart-button-text" role="button" tabindex="0" data-trigger-add-to-cart>
+    <span class="add-to-cart-button-text-label">add to cart</span>
+    {%- render 'preloader', class: 'add-to-cart__preloader' -%}
+  </span>
 </product-quantity>

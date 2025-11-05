@@ -2481,12 +2481,96 @@ ease;
   line-height: 1;
   font-weight: 400;
   color: #000;
+  padding-right: 0 !important;
 }
 .new-product-11-05 .site-box:after{
   display: none;
 }
 .new-product-11-05{
-  
+  .product-variant__container .product-variant__item--color{
+    height: 100px;
+    width: 100px;
+  }
+  .site-box.box__product-content{
+    padding: 0 20px;
+    .site-box-content{
+      width: 500px;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+  }
+  .shogun-root{
+    border-radius: 20px;
+    background: rgba(247, 165, 69, 1);
+    padding: 15px;
+    *{
+      font-size: 12px;
+      font-family: Oslla;
+      color: #000;
+    }
+    p{
+      margin: 8px 0;
+    }
+  }
+  .product-variant__container .product-variant__item label{
+    border-radius: 0;
+    background: #fff;
+    border-width: 2px;
+    padding: 0;
+    span{
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      margin-right: 0;
+      background-size: cover;
+    }
+  }
+  .quantity-selector-holder{
+    background: #fff;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    .quantity-selector-holder-text{
+      height: 100%;
+      padding: 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Oslla;
+      font-size: 20px;
+      line-height: 1.1;
+      font-weight: 400;
+      color: #000;
+      margin-right: 20px;
+    }
+    input{
+      width: 60px;
+      padding: 0 5px;
+      flex: unset;
+      font-size: 24px;
+      font-family: Oslla;
+      font-weight: 400;
+      line-height: 1.1;
+    }
+    .add-to-cart-button-text{
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .qty-button{
+      width: 23px;
+      height: 23px;
+      border: 2px solid #000;
+    }
+  }
+}
+.product-variant__name *{
+  font-family: Overlock;
+  font-size: 20px;
+  line-height: 1.1;
+  font-weight: 700;
 }
 .new-product-11-05 .product-header .price .product-price{
   color: rgba(129, 129, 129, 1);
@@ -2495,6 +2579,7 @@ ease;
   line-height: 1.1;
   font-weight: 400;
 }
+
 @media screen and (max-width: 768px) {
   .new-product-11-05 .product-header .product-title{
     font-size: 24px;
@@ -2507,5 +2592,259 @@ ease;
     font-family: Oslla;
     line-height: 1.1;
     font-weight: 400;
+  }
+}
+
+// product-quantity 中的 preloader 样式
+.add-to-cart-button-text {
+  position: relative;
+  display: inline-block;
+  
+  .add-to-cart__preloader {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .add-to-cart-button-text-label {
+    display: inline-block;
+  }
+  
+  &.working {
+    .add-to-cart__preloader {
+      display: block;
+    }
+    // 当 working 时，隐藏文本
+    .add-to-cart-button-text-label {
+      opacity: 0;
+    }
+  }
+}
+// product-quantity 组件样式 - 一体化设计
+.product-quantity-wrapper {
+  display: flex;
+  align-items: center;
+  border-radius: 50px;
+  overflow: hidden;
+  background: #fff;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-quantity-selector {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  padding: 15px 20px;
+  flex: 1;
+  gap: 15px;
+  
+  .quantity-selector-holder-text {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #000;
+    font-size: 14px;
+    white-space: nowrap;
+    letter-spacing: 0.5px;
+  }
+  
+  .qty-button {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #000;
+    background: transparent;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0;
+    transition: background-color 0.2s;
+    
+    svg {
+      width: 16px;
+      height: 16px;
+      
+      path {
+        stroke: #000;
+        stroke-width: 2;
+      }
+    }
+    
+    &:hover {
+      background: #f5f5f5;
+    }
+    
+    &:active {
+      background: #e0e0e0;
+    }
+  }
+  
+  .qty-display {
+    font-weight: bold;
+    font-size: 16px;
+    color: #000;
+    min-width: 30px;
+    text-align: center;
+  }
+}
+
+.add-to-cart-button-text {
+  background: #ff0000;
+  color: #000;
+  padding: 15px 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  white-space: nowrap;
+  border-radius: 50px;
+  margin-left: -20px;
+  position: relative;
+  z-index: 1;
+  transition: background-color 0.2s;
+  
+  .add-to-cart-button-text-label {
+    color: #000;
+    font-size: 20px;
+    line-height: 1.1;
+    font-weight: 400;
+    font-family: Oslla;
+  }
+  
+  // 购物车图标样式
+  svg {
+    width: 20px;
+    height: 20px;
+    opacity: 0.8;
+    
+    path {
+      fill: #000;
+      stroke: #000;
+    }
+  }
+  
+  &:hover {
+    background: #e60000;
+  }
+  
+  &:active {
+    background: #cc0000;
+  }
+  
+  // 覆盖之前的 preloader 样式
+  .add-to-cart__preloader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+}
+@media screen and (max-width: 1225px) {
+  .new-product-11-05 .quantity-selector-holder .quantity-selector-holder-text{
+    margin-right: 0;
+    padding-right: 10px;
+  }
+}
+
+// Collapse FAQ 手风琴样式
+.Collapse-faq {
+  width: 100%;
+  
+  .Collapse-faq-item {
+    margin-bottom: 15px;
+    
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  
+  .Collapse-faq-item-question {
+    background: #ff6b9d;
+    padding: 18px 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0;
+    transition: background-color 0.3s ease;
+    user-select: none;
+    position: relative;
+    
+    &:hover {
+      background: #ff5a8a;
+    }
+    
+    .Collapse-faq-item-question-text {
+      color: #000;
+      font-weight: bold;
+      font-size: 15px;
+      flex: 1;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      line-height: 1.4;
+    }
+    
+    .Collapse-faq-item-question-icon {
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000;
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+      margin-left: 15px;
+      
+      svg {
+        width: 12px;
+        height: 12px;
+      }
+    }
+    
+    &.active {
+      .Collapse-faq-item-question-icon {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  
+  .Collapse-faq-item-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.4s ease;
+    background: transparent;
+    
+    &.active {
+      max-height: 2000px;
+      padding: 20px 25px;
+      background: transparent;
+    }
+    
+    .Collapse-faq-item-answer-content {
+      color: #000;
+      font-size: 14px;
+      line-height: 1.6;
+      
+      p {
+        margin: 0 0 10px 0;
+        
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      
+      ul, ol {
+        margin: 10px 0;
+        padding-left: 20px;
+      }
+    }
   }
 }

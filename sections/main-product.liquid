@@ -222,10 +222,16 @@
 
                     {%- for option in product.options_with_values -%}
                       {%- assign downcased_option = option.name | downcase -%}
+                      {%- assign option_position = forloop.index -%}
 
                       <div class="product-variant" data-name="product-{{ option.name | escape | downcase | strip }}-{{ section.id }}">
 
-                        <span class="product-variant__name">{{ 'product.select_variant' | t }} {{ option.name }}</span>
+                        <span class="product-variant__name">
+                          <span class="product-variant__name-label">
+                            {% comment %} {{ 'product.select_variant' | t }} {% endcomment %}
+                          {{ option.name }}:</span>
+                          <span class="product-variant__name-value">{% if option.selected_value != blank %}{{ option.selected_value }}{% else %}{{ option.values.first }}{% endif %}</span>
+                        </span>
 
                         <div class="product-variant__container">
                           {%- for value in option.values -%}
@@ -239,10 +245,21 @@
                               <input type="radio" name="product-{{ option.name | escape | downcase | strip }}-{{ section.id }}" id="{{ product.handle }}-option-{{ option.name | escape | downcase | strip }}-{{ forloop.index }}-{{ section.id }}" value="{{ value | escape }}" {% if option.selected_value == value %}checked{% endif %} class="product-variant__input product-variant-value">
                               <label for="{{ product.handle }}-option-{{ option.name | escape | downcase | strip }}-{{ forloop.index }}-{{ section.id }}" class="product-variant__label">
                                 {%- if color_label contains downcased_option and block.settings.show_color_swatches -%}
-                                  {%- assign color_swatch_name = value | handle | append: '.png' -%}
-                                  {%- assign color_swatch_image = images[color_swatch_name] -%}
-                                  <span aria-hidden="true" style="{% if color_swatch_image != blank %} background-image: url({{ color_swatch_image | image_url: width: 44, height: 44 }} {% else %} background-color: {{ value | escape | replace: ' ', '' | downcase }} {% endif %}"></span>
-                                  {{ value }}
+                                  {%- comment -%} 查找匹配当前选项值的变体的第一张图片 {%- endcomment -%}
+                                  {%- assign color_swatch_image = null -%}
+                                  {%- for variant in product.variants -%}
+                                    {%- if color_swatch_image == null -%}
+                                      {%- if option_position == 1 and variant.option1 == value and variant.featured_image != blank -%}
+                                        {%- assign color_swatch_image = variant.featured_image -%}
+                                      {%- elsif option_position == 2 and variant.option2 == value and variant.featured_image != blank -%}
+                                        {%- assign color_swatch_image = variant.featured_image -%}
+                                      {%- elsif option_position == 3 and variant.option3 == value and variant.featured_image != blank -%}
+                                        {%- assign color_swatch_image = variant.featured_image -%}
+                                      {%- endif -%}
+                                    {%- endif -%}
+                                  {%- endfor -%}
+                                  <span aria-hidden="true" style="{% if color_swatch_image != blank %} background-image: url({{ color_swatch_image | image_url: width: 100, height: 100 }}); {% else %} background-color: {{ value | escape | replace: ' ', '' | downcase }}; {% endif %}"></span>
+                                  {% comment %} {{ value }} {% endcomment %}
                                 {%- else -%}
                                   {{ value }}
                                 {%- endif -%}
@@ -296,6 +313,25 @@
                   {{ product.variants | json }}
                 </script>
 
+                <script>
+                  document.addEventListener('DOMContentLoaded', function() {
+                    // 处理选项值切换
+                    const variantInputs = document.querySelectorAll('#shopify-section-{{ section.id }} .product-variant__input');
+                    
+                    variantInputs.forEach(function(input) {
+                      input.addEventListener('change', function() {
+                        const variantContainer = this.closest('.product-variant');
+                        const nameValueSpan = variantContainer.querySelector('.product-variant__name-value');
+                        
+                        if (nameValueSpan && this.checked) {
+                          // 直接使用 input 的 value 属性
+                          nameValueSpan.textContent = this.value;
+                        }
+                      });
+                    });
+                  });
+                </script>
+
               </product-variants>
 
             {%- when 'buy_buttons' -%}
@@ -332,7 +368,7 @@
                       
                       <div class="buttons-holder">
 
-                        <button type="submit" name="add" class="product__add-to-cart product--add-to-cart-button button button--outline {% unless current_variant.available %} disabled {% endunless %}">
+                        <button type="submit" name="add" class="product__add-to-cart product--add-to-cart-button button button--outline {% unless current_variant.available %} disabled {% endunless %}" style="display: none !important;">
                           <span class="button-scroll-in add-to-cart__text add-to-cart__text">
                             {%- liquid
                               if current_variant.available
@@ -360,8 +396,61 @@
                   </div>
 
                 {%- endform -%}
-
+                <script>
+                  // 处理 product-quantity 中的添加购物车按钮点击
+                  document.addEventListener('DOMContentLoaded', function() {
+                    const addToCartTriggers = document.querySelectorAll('#shopify-section-{{ section.id }} [data-trigger-add-to-cart]');
+                    
+                    addToCartTriggers.forEach(function(trigger) {
+                      trigger.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        // 找到最近的表单
+                        const form = this.closest('form');
+                        if (form) {
+                          // 找到表单中的提交按钮并点击
+                          const submitButton = form.querySelector('.product__add-to-cart, button[type="submit"][name="add"]');
+                          if (submitButton && !submitButton.disabled && !submitButton.classList.contains('disabled')) {
+                            // 给触发按钮的父元素添加 working 类，以便显示 preloader
+                            const productQuantity = this.closest('product-quantity');
+                            if (productQuantity) {
+                              const preloader = productQuantity.querySelector('.add-to-cart__preloader');
+                              if (preloader) {
+                                // 临时给触发按钮添加 working 类，以便显示 preloader
+                                this.classList.add('working');
+                                // 监听原始按钮的 working 状态变化
+                                const observer = new MutationObserver(function(mutations) {
+                                  mutations.forEach(function(mutation) {
+                                    if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
+                                      if (!submitButton.classList.contains('working')) {
+                                        // 当原始按钮完成时，移除触发按钮的 working 类
+                                        trigger.classList.remove('working');
+                                        observer.disconnect();
+                                      }
+                                    }
+                                  });
+                                });
+                                observer.observe(submitButton, { attributes: true });
+                              }
+                            }
+                            // 触发原始按钮的点击
+                            submitButton.click();
+                          }
+                        }
+                      });
+                      
+                      // 支持键盘操作（Enter 和 Space）
+                      trigger.addEventListener('keydown', function(e) {
+                        if (e.key === 'Enter' || e.key === ' ') {
+                          e.preventDefault();
+                          this.click();
+                        }
+                      });
+                    });
+                  });
+                </script>
               </product-form>
+
+              
 
             {%- when 'pickup_avaiability' -%} 
 
@@ -414,10 +503,66 @@
                   -%}
                 </div>
               </toggle-tab>
+              {%- when 'Collapse' -%}
+              <div class="Collapse-faq" {{ block.shopify_attributes }}>
+                <div class="Collapse-faq-item">
+                  <div class="Collapse-faq-item-question" data-collapse-toggle>
+                    <span class="Collapse-faq-item-question-text">
+                      {{ block.settings.heading | default: 'FAQ Question' }}
+                    </span>
+                    <span class="Collapse-faq-item-question-icon">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </span>
+                  </div>
+                  <div class="Collapse-faq-item-answer">
+                    <div class="Collapse-faq-item-answer-content">
+                      {%- if block.settings.content != blank -%}
+                        {{ block.settings.content }}
+                      {%- elsif block.settings.page != blank -%}
+                        {{ block.settings.page.content }}
+                      {%- endif -%}
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <script>
+                // 手风琴功能
+                document.addEventListener('DOMContentLoaded', function() {
+                  const collapseToggles = document.querySelectorAll('#shopify-section-{{ section.id }} [data-collapse-toggle]');
+                  
+                  collapseToggles.forEach(function(toggle) {
+                    toggle.addEventListener('click', function() {
+                      const item = this.closest('.Collapse-faq-item');
+                      const answer = item.querySelector('.Collapse-faq-item-answer');
+                      const isActive = this.classList.contains('active');
+                      
+                      // 关闭所有其他项（可选：如果只允许一个展开，取消下面这段的注释）
+                      // document.querySelectorAll('#shopify-section-{{ section.id }} .Collapse-faq-item-question').forEach(function(otherToggle) {
+                      //   if (otherToggle !== this) {
+                      //     otherToggle.classList.remove('active');
+                      //     otherToggle.nextElementSibling.classList.remove('active');
+                      //   }
+                      // }, this);
+                      
+                      // 切换当前项
+                      if (isActive) {
+                        this.classList.remove('active');
+                        answer.classList.remove('active');
+                      } else {
+                        this.classList.add('active');
+                        answer.classList.add('active');
+                      }
+                    });
+                  });
+                });
+              </script>
+        {%- endcase -%}
 
-          {%- endcase -%}
+          {%- endfor -%}
 
-        {%- endfor -%}
+         
 
       </div>
 
@@ -648,10 +793,32 @@
         ]
       }, 
       {
+        "type": "Collapse",
+        "name": "Collapse FAQ",
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Question",
+            "default": "FAQ Question"
+          },
+          {
+            "type": "richtext",
+            "id": "content",
+            "label": "Answer"
+          },
+          {
+            "type": "page",
+            "id": "page",
+            "label": "Answer from page"
+          }
+        ]
+      },
+      {
         "type": "pickup_avaiability",
         "name": "t:sections.main-product.blocks.pickup_availability.name",
         "limit": 1
-      }
+    }
     ],
     "settings": [
       {
