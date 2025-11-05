@@ -2473,7 +2473,12 @@ ease;
   
 }
 .new-product-11-05.site-box-container{
-  background: rgba(255, 211, 150, 0.9922) ;
+  background: rgba(255, 211, 150, 0.9922);
+  background-image: url('https://cdn.shopify.com/s/files/1/0609/5611/5196/files/Vector_27_2.png?v=1762371066');
+  background-position: center 100px;
+  background-repeat: repeat-x;
+  background-size: 100% 100px;
+  position: relative;
 }
 .new-product-11-05 .product-header .product-title{
   font-size: 64px;
@@ -2592,6 +2597,13 @@ ease;
     font-family: Oslla;
     line-height: 1.1;
     font-weight: 400;
+  }
+  .new-product-11-05.site-box-container{
+    padding-top: 116px !important;
+    background-position: center 11px;
+  }
+  .new-product-11-05 .site-box.box__product-content .site-box-content{
+    width: 100%;
   }
 }
 
@@ -2757,17 +2769,19 @@ ease;
 // Collapse FAQ 手风琴样式
 .Collapse-faq {
   width: 100%;
+  border: 1px solid #000;
   
   .Collapse-faq-item {
-    margin-bottom: 15px;
-    
+    border-bottom: 1px solid #000;
+    background: rgba(255, 174, 179, 1);
     &:last-child {
       margin-bottom: 0;
+    border-bottom: none;
+
     }
   }
   
   .Collapse-faq-item-question {
-    background: #ff6b9d;
     padding: 18px 25px;
     cursor: pointer;
     display: flex;
@@ -2778,18 +2792,19 @@ ease;
     user-select: none;
     position: relative;
     
-    &:hover {
-      background: #ff5a8a;
-    }
+    // &:hover {
+    //   background: #ff5a8a;
+    // }
     
     .Collapse-faq-item-question-text {
       color: #000;
-      font-weight: bold;
+      font-weight: 400;
       font-size: 15px;
       flex: 1;
       text-transform: uppercase;
       letter-spacing: 0.3px;
       line-height: 1.4;
+      font-family: Oslla;
     }
     
     .Collapse-faq-item-question-icon {
@@ -2817,22 +2832,18 @@ ease;
   }
   
   .Collapse-faq-item-answer {
-    max-height: 0;
+    height: 0;
     overflow: hidden;
-    transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.4s ease;
+    transition: height 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     background: transparent;
-    
-    &.active {
-      max-height: 2000px;
-      padding: 20px 25px;
-      background: transparent;
-    }
     
     .Collapse-faq-item-answer-content {
       color: #000;
-      font-size: 14px;
-      line-height: 1.6;
-      
+      font-size: 13px;
+      line-height: 1.2;
+      font-family: Overlock;
+      font-weight: 700;
+      padding: 18px 25px;
       p {
         margin: 0 0 10px 0;
         

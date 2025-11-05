@@ -503,32 +503,52 @@
                   -%}
                 </div>
               </toggle-tab>
-              {%- when 'Collapse' -%}
+            {%- when 'Collapse' -%}
               <div class="Collapse-faq" {{ block.shopify_attributes }}>
-                <div class="Collapse-faq-item">
-                  <div class="Collapse-faq-item-question" data-collapse-toggle>
-                    <span class="Collapse-faq-item-question-text">
-                      {{ block.settings.heading | default: 'FAQ Question' }}
-                    </span>
-                    <span class="Collapse-faq-item-question-icon">
-                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
-                    </span>
-                  </div>
-                  <div class="Collapse-faq-item-answer">
-                    <div class="Collapse-faq-item-answer-content">
-                      {%- if block.settings.content != blank -%}
-                        {{ block.settings.content }}
-                      {%- elsif block.settings.page != blank -%}
-                        {{ block.settings.page.content }}
-                      {%- endif -%}
+                {% comment %} 获取产品元字段 custom.product_faq，遍历每个FAQ对象，显示 product_faq_title 和 product_faq_detail {% endcomment %}
+                {% assign faqs = product.metafields.custom.product_faq.value %}
+                {% if faqs and faqs.size > 0 %}
+                  {% for faq in faqs %}
+                    <div class="Collapse-faq-item">
+                      <div class="Collapse-faq-item-question" data-collapse-toggle>
+                        <span class="Collapse-faq-item-question-text">
+                          {{ faq.product_faq_title }}
+                        </span>
+                        <span class="Collapse-faq-item-question-icon">
+                          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+                        </span>
+                      </div>
+                      <div class="Collapse-faq-item-answer">
+                        <div class="Collapse-faq-item-answer-content">
+                          {{ faq.product_faq_detail }}
+                        </div>
+                      </div>
+                    </div>
+                  {% endfor %}
+                {% else %}
+                  <div class="Collapse-faq-item">
+                    <div class="Collapse-faq-item-question" data-collapse-toggle>
+                      <span class="Collapse-faq-item-question-text">
+                        暂无FAQ内容
+                      </span>
+                      <span class="Collapse-faq-item-question-icon">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      </span>
+                    </div>
+                    <div class="Collapse-faq-item-answer">
+                      <div class="Collapse-faq-item-answer-content">
+                        未找到相关FAQ。
+                      </div>
                     </div>
                   </div>
-                </div>
+                {% endif %}
               </div>
               <script>
-                // 手风琴功能
+                // 手风琴功能 - 流畅动画版本
                 document.addEventListener('DOMContentLoaded', function() {
                   const collapseToggles = document.querySelectorAll('#shopify-section-{{ section.id }} [data-collapse-toggle]');
                   
@@ -541,18 +561,53 @@
                       // 关闭所有其他项（可选：如果只允许一个展开，取消下面这段的注释）
                       // document.querySelectorAll('#shopify-section-{{ section.id }} .Collapse-faq-item-question').forEach(function(otherToggle) {
                       //   if (otherToggle !== this) {
+                      //     const otherAnswer = otherToggle.closest('.Collapse-faq-item').querySelector('.Collapse-faq-item-answer');
                       //     otherToggle.classList.remove('active');
-                      //     otherToggle.nextElementSibling.classList.remove('active');
+                      //     otherAnswer.style.height = '0px';
+                      //     otherAnswer.classList.remove('active');
                       //   }
                       // }, this);
                       
-                      // 切换当前项
                       if (isActive) {
-                        this.classList.remove('active');
-                        answer.classList.remove('active');
+                        // 收起
+                        const currentHeight = answer.scrollHeight;
+                        answer.style.height = currentHeight + 'px';
+                        // 强制重排，确保高度设置生效
+                        answer.offsetHeight;
+                        // 使用 requestAnimationFrame 确保流畅动画
+                        requestAnimationFrame(function() {
+                          requestAnimationFrame(function() {
+                            answer.style.height = '0px';
+                            this.classList.remove('active');
+                            answer.classList.remove('active');
+                          }.bind(this));
+                        });
                       } else {
+                        // 展开
                         this.classList.add('active');
                         answer.classList.add('active');
+                        // 先设置为 auto 来获取实际高度
+                        answer.style.height = 'auto';
+                        const targetHeight = answer.scrollHeight;
+                        // 重置为 0，准备动画
+                        answer.style.height = '0px';
+                        // 强制重排
+                        answer.offsetHeight;
+                        // 使用双重 requestAnimationFrame 确保浏览器重排后再设置目标高度
+                        requestAnimationFrame(function() {
+                          requestAnimationFrame(function() {
+                            answer.style.height = targetHeight + 'px';
+                          });
+                        });
+                        
+                        // 动画结束后设置为 auto，以便内容变化时自适应
+                        const transitionEndHandler = function() {
+                          if (answer.classList.contains('active')) {
+                            answer.style.height = 'auto';
+                          }
+                          answer.removeEventListener('transitionend', transitionEndHandler);
+                        };
+                        answer.addEventListener('transitionend', transitionEndHandler);
                       }
                     });
                   });
@@ -882,7 +937,7 @@
         "type": "checkbox",
         "id": "new_product_11_05",
         "label": "New Product 11-05",
-        "default": false
+        "default": true
       }
     ]
   }
