@@ -55,12 +55,22 @@
           "type": "description",
           "settings": {}
         },
+        "collapse_HQqnfc": {
+          "type": "Collapse",
+          "settings": {
+            "heading": "FAQ Question",
+            "content": "",
+            "page": ""
+          }
+        },
         "share": {
           "type": "share",
+          "disabled": true,
           "settings": {}
         },
         "93880648-978b-4d31-9200-dc7244fdc064": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>User Manual： <a href=\"/pages/smart-four-user-manual\" title=\"smart four user manual\"><strong>Click here</strong></a></p>",
             "text_style": "body"
@@ -72,6 +82,7 @@
         "variant_picker",
         "buy_buttons",
         "description",
+        "collapse_HQqnfc",
         "share",
         "93880648-978b-4d31-9200-dc7244fdc064"
       ],
