@@ -290,19 +290,27 @@
       "blocks": {
         "phone_c94yVp": {
           "type": "phone",
-          "settings": {}
+          "settings": {
+            "video": "shopify://files/videos/retro-super slide.mp4"
+          }
         },
         "phone_TFHGTz": {
           "type": "phone",
-          "settings": {}
+          "settings": {
+            "video": "shopify://files/videos/aliceariley.mp4"
+          }
         },
         "phone_NpRhG7": {
           "type": "phone",
-          "settings": {}
+          "settings": {
+            "video": "shopify://files/videos/never.boardgame.mp4"
+          }
         },
         "phone_k7e9FT": {
           "type": "phone",
-          "settings": {}
+          "settings": {
+            "video": "shopify://files/videos/banterandboards.mp4"
+          }
         },
         "phone_LV9WF9": {
           "type": "phone",
