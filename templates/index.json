@@ -223,7 +223,7 @@
         "background_mobile_image": "shopify://shop_images/1_1.png",
         "background_flower_image": "shopify://shop_images/Mask_group_1_5736e227-1f09-4330-a300-e5f867b6815c.png",
         "background_top_image": "shopify://shop_images/Vector_23.png",
-        "url": "shopify://products/battle-pad",
+        "url": "shopify://pages/about-us",
         "url_label": "Discover More"
       }
     },
@@ -233,15 +233,15 @@
         "awards_UD7Wwn": {
           "type": "awards",
           "settings": {
-            "image": "shopify://shop_images/CBME.png",
-            "title": "<p>CBME Award</p>"
+            "image": "shopify://shop_images/1_f48c4c04-c760-4b2a-b63d-34408c2e2133.png",
+            "title": "<p>Reddot Award</p>"
           }
         },
         "awards_7UXCHk": {
           "type": "awards",
           "settings": {
-            "image": "shopify://shop_images/USE.png",
-            "title": "<p>USE Design Award</p><p>Gold Winner 2023</p>"
+            "image": "shopify://shop_images/1_0819e68a-c61b-4e7c-9620-0dc5691e4bed.png",
+            "title": "<p>Top Holiday Toy Winner</p>"
           }
         },
         "awards_DJTCgH": {
