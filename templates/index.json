@@ -26,6 +26,7 @@
       "blocks": {
         "banner_6N3TYW": {
           "type": "banner",
+          "disabled": true,
           "settings": {
             "pc_image": "shopify://shop_images/image_26.png",
             "mobile_image": "shopify://shop_images/image_26.png"
@@ -41,7 +42,7 @@
         "banner_kL4TfF": {
           "type": "banner",
           "settings": {
-            "pc_image": "shopify://shop_images/kv_807b2326-f10c-4ba1-a485-07ba8ad9416e.jpg",
+            "pc_image": "shopify://shop_images/kv1.jpg",
             "mobile_image": "shopify://shop_images/kv_807b2326-f10c-4ba1-a485-07ba8ad9416e.jpg"
           }
         }
