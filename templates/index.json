@@ -18,7 +18,7 @@
       "type": "giiker-home-image-video",
       "name": "Giiker Home Image Video",
       "settings": {
-        "video_picker": "shopify://files/videos/banner 15秒无声版.mp4"
+        "video_picker": "shopify://files/videos/giiker banner video.mp4"
       }
     },
     "giiker_home_banner_MFAcbG": {
@@ -34,15 +34,15 @@
         "banner_rdkVqq": {
           "type": "banner",
           "settings": {
-            "pc_image": "shopify://shop_images/image_26.png",
-            "mobile_image": "shopify://shop_images/image_26.png"
+            "pc_image": "shopify://shop_images/kv_01_4167x2344_6939e51f-dde8-4f48-972c-943f1fbb245a.jpg",
+            "mobile_image": "shopify://shop_images/kv_01_4167x2344_6939e51f-dde8-4f48-972c-943f1fbb245a.jpg"
           }
         },
         "banner_kL4TfF": {
           "type": "banner",
           "settings": {
-            "pc_image": "shopify://shop_images/image_26.png",
-            "mobile_image": "shopify://shop_images/image_26.png"
+            "pc_image": "shopify://shop_images/kv_807b2326-f10c-4ba1-a485-07ba8ad9416e.jpg",
+            "mobile_image": "shopify://shop_images/kv_807b2326-f10c-4ba1-a485-07ba8ad9416e.jpg"
           }
         }
       },
@@ -81,7 +81,7 @@
             "background_image": "shopify://shop_images/1_7d70a0c8-7306-4c7a-92b9-d7f837f892c8.png",
             "pc_image": "shopify://shop_images/4_1.png",
             "mobile_image": "shopify://shop_images/4_1_e760ac38-2bf8-4b58-8443-68b05fc0889e.png",
-            "url": "shopify://pages/about-us",
+            "url": "shopify://collections/learning-educational-toys",
             "url_label": "explore all games"
           }
         }
@@ -194,7 +194,7 @@
           "type": "list",
           "settings": {
             "icon": "shopify://shop_images/x0020_1_3.png",
-            "title": "<p>Safetly First</p>",
+            "title": "<p>Safety First</p>",
             "detail": "<p>Crafted from high-quality ABS material, guaranteeing a safe playing environment for children.</p>"
           }
         }
