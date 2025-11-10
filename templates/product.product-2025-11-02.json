@@ -232,7 +232,13 @@
       "settings": {
         "background_image": "shopify://shop_images/Vector_27.png",
         "title": "You may also like",
-        "product_list": []
+        "product_list": [
+          "battle-pad",
+          "fidget-cube",
+          "giiker-super-slide-puzzle-games-copy",
+          "giiker-smart-four-board-games",
+          "smart-sudoku"
+        ]
       }
     }
   },
