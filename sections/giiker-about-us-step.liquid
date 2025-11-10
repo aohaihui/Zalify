@@ -7,20 +7,21 @@
           <div class="giiker-about-us-our-story-item swiper-slide" data-title="{{ block.settings.step_number | strip_html }}">
             <div class="top-image-tag">
               <div class="giiker-about-us-our-story-item-image">
-                {{ block.settings.image | image_url: width: block.settings.image.width | image_tag: height: block.settings.image.height, fetchpriority: 'high', loading: 'lazy', class: 'image-tag' }}
+                {{ block.settings.image_top | image_url: width: block.settings.image_top.width | image_tag: height: block.settings.image_top.height, fetchpriority: 'high', loading: 'lazy', class: 'image-tag' }}
               </div>
               <div class="giiker-about-us-our-story-item-content">
-                <h3 class="giiker-about-us-our-story-item-content-title">{{ block.settings.title }}</h3>
-                <div class="giiker-about-us-our-story-item-content-detail">{{ block.settings.detail }}</div>
+                <h3 class="giiker-about-us-our-story-item-content-title">{{ block.settings.title_top }}</h3>
+                <h3 class="giiker-about-us-our-story-item-content-next-title">{{ block.settings.next_title_top }}</h3>
+                <div class="giiker-about-us-our-story-item-content-detail">{{ block.settings.detail_top }}</div>
               </div>
             </div>
             <div class="bottom-image-tag">
               <div class="giiker-about-us-our-story-item-image">
-                {{ block.settings.image | image_url: width: block.settings.image.width | image_tag: height: block.settings.image.height, fetchpriority: 'high', loading: 'lazy', class: 'image-tag' }}
+                {{ block.settings.image_bottom | image_url: width: block.settings.image_bottom.width | image_tag: height: block.settings.image_bottom.height, fetchpriority: 'high', loading: 'lazy', class: 'image-tag' }}
               </div>
               <div class="giiker-about-us-our-story-item-content">
-                <h3 class="giiker-about-us-our-story-item-content-title">{{ block.settings.title }}</h3>
-                <div class="giiker-about-us-our-story-item-content-detail">{{ block.settings.detail }}</div>
+                <h3 class="giiker-about-us-our-story-item-content-title">{{ block.settings.title_bottom }}</h3>
+                <div class="giiker-about-us-our-story-item-content-detail">{{ block.settings.detail_bottom }}</div>
               </div>
             </div>
           </div>
@@ -34,11 +35,11 @@
 </div>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    const swiperContainer = document.querySelector('#shopify-section-{{ section.id }} .our-story-swiper');
+    const swiperContainer = document.querySelector('#shopify-section-{{ section.id }} .step-swiper');
     const slides = swiperContainer.querySelectorAll('.swiper-slide');
     const titles = Array.from(slides).map(slide => slide.getAttribute('data-title'));
     
-    const ourStorySwiper = new Swiper('#shopify-section-{{ section.id }} .our-story-swiper', {
+    const stepSwiper = new Swiper('#shopify-section-{{ section.id }} .step-swiper', {
       slidesPerView: 1,
       spaceBetween: 20,
       pagination: {
