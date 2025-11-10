@@ -11,7 +11,7 @@
   <h2 class="giiker-product-recommended-title">{{ section.settings.title }}</h2>
   <div class="giiker-product-recommended-list swiper" data-cc-animate="fade-in">
     <div class="swiper-wrapper">  
-    {% assign recommended_products = product.metafields.custom.recommended_products.value %}
+    {% comment %} {% assign recommended_products = product.metafields.custom.recommended_products.value %}
     {% if recommended_products != blank %}
       {% for item in recommended_products %}
         {% assign product_obj = item %}
@@ -36,7 +36,33 @@
             </div>
           {% endif %}
         {% endfor %}
-      {% endif %}
+      {% endif %} {% endcomment %}
+      {% assign recommended_products = section.settings.product_list %}
+      {% if recommended_products != blank %}
+        {% for item in recommended_products %}
+          {% assign product_obj = item %}
+            {% if product_obj != blank and product_obj.featured_image != blank %}
+              <div class="giiker-product-recommended-item swiper-slide" >
+                <div class="giiker-product-recommended-item-content">
+                  <div class="giiker-product-recommended-item-content-icon">
+                    <a href="{{ product_obj.url }}">
+                      {{
+                        product_obj.featured_image
+                        | image_url: width: product_obj.featured_image.width
+                        | image_tag: height: product_obj.featured_image.height,
+                          fetchpriority: 'high', loading: 'lazy', class: 'image-tag'
+                      }}
+                    </a>
+                  </div>
+                  <a href="{{ product_obj.url }}">
+                    <h2 class="giiker-product-recommended-item-title">{{ product_obj.title }}</h2>
+                    <div class="giiker-product-recommended-item-price">{{ product_obj.price | money }}</div>
+                  </a>
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
     </div>
     <div class=" swiper-button-prev mb-image">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="29" height="29" viewBox="0 0 29 29" fill="none">
