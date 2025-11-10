@@ -11,13 +11,13 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "layout": "split"
       }
     },
     "166098719235439c52": {
       "type": "heading",
-      "disabled": true,
       "blocks": {
         "1660987192b1bc13c3-0": {
           "type": "heading",
@@ -45,15 +45,172 @@
         "1660987192b1bc13c3-1",
         "1660987192b1bc13c3-2"
       ],
+      "disabled": true,
       "settings": {
         "text_alignment": "center",
         "custom_background": "rgba(0,0,0,0)",
         "custom_text": "rgba(0,0,0,0)"
       }
+    },
+    "giiker_about_us_text_aKUqMY": {
+      "type": "giiker-about-us-text",
+      "name": "Giiker about us text",
+      "settings": {
+        "image": "shopify://shop_images/CEO.png",
+        "background_color": "#62a7c9",
+        "title": "<p>GiiKER (derived from “Geeker\") is a technology company with a dedication to the development of smart and connected edutainment products. </p>",
+        "detail": "<p>Alongside with the connected products, GiiKER also develops mobile apps with playful contents to bring a whole new level of user experience.</p>"
+      }
+    },
+    "giiker_about_us_our_story_NedJ4Q": {
+      "type": "giiker-about-us-our-story",
+      "blocks": {
+        "story_iB6B9R": {
+          "type": "story",
+          "settings": {
+            "image": "shopify://shop_images/image_33.png",
+            "title": "<p>2012</p>",
+            "detail": "<p>We founded the GiiKER team in 2012, and by 2014, we proudly released GiCUBE®, laying the essential foundation for our smart cube development.</p>"
+          }
+        },
+        "story_h7qMHr": {
+          "type": "story",
+          "settings": {
+            "image": "shopify://shop_images/image_33.png",
+            "title": "<p>2018</p>",
+            "detail": "<p>Super Cube's \"XiaoMi\" crowdfunding project garnered 15,000 backers.</p>"
+          }
+        },
+        "story_YwGAw9": {
+          "type": "story",
+          "settings": {
+            "image": "shopify://shop_images/image_33.png",
+            "title": "<p>2019</p>",
+            "detail": "<p>Showcased the Super Cube series at renowned events such as CES, New York toy fair, and the Nuremberg toy fair.</p>"
+          }
+        },
+        "story_ejntVA": {
+          "type": "story",
+          "settings": {
+            "image": "shopify://shop_images/image_33.png",
+            "title": "<p>2021</p>",
+            "detail": "<p>Successfully launched Super Slide, achieving over 100,000 sales for 3 consecutive months.</p>"
+          }
+        },
+        "story_9tygUC": {
+          "type": "story",
+          "settings": {
+            "image": "shopify://shop_images/image_33.png",
+            "title": "<p>2022</p>",
+            "detail": "<p>Growing in popularity, Super Slide became the top 5 best-selling educational toys on multiple online platforms, amassing over 2 million purchases worldwide.</p>"
+          }
+        },
+        "story_Pnhfgp": {
+          "type": "story",
+          "settings": {
+            "image": "shopify://shop_images/image_33.png",
+            "title": "<p>2023</p>",
+            "detail": "<p>Smart Sudoku makes its way to all markets. Meanwhile, Smart Four and Super Slide are awarded as the 2023 Reddot Winner</p>"
+          }
+        },
+        "story_FepmT9": {
+          "type": "story",
+          "settings": {
+            "image": "shopify://shop_images/image_33.png",
+            "title": "<p>2024</p>",
+            "detail": "<p>Tic-Tac-Toe Bolt was launched in China and exceeded 100,000 sales within the first month！</p>"
+          }
+        },
+        "story_drnP3W": {
+          "type": "story",
+          "settings": {
+            "image": "shopify://shop_images/image_33.png",
+            "title": "<p>Today</p>",
+            "detail": "<p>In 2025, we proudly earned recognition as both our Tic-Tac-Toe Bolt and Super Decoder were featured in THE TOY INSIDER’S 2025 Holiday Gift Guide.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "story_iB6B9R",
+        "story_h7qMHr",
+        "story_YwGAw9",
+        "story_ejntVA",
+        "story_9tygUC",
+        "story_Pnhfgp",
+        "story_FepmT9",
+        "story_drnP3W"
+      ],
+      "name": "Giiker our story",
+      "settings": {
+        "background_color": "#62a7c9",
+        "title": "<p>OUR STORY</p>",
+        "bottom_image": "shopify://shop_images/20251111012608_23_267.png"
+      }
+    },
+    "giiker_about_us_step_9X9QCN": {
+      "type": "giiker-about-us-step",
+      "blocks": {
+        "step_8DPArj": {
+          "type": "step",
+          "settings": {
+            "step_number": "Step1",
+            "image_top": "shopify://shop_images/1_2.png",
+            "title_top": "<p>From Idea to Purpose</p>",
+            "detail_top": "<p>We explore who it’s for, how it fits into real life, and what kind of fun (and challenge) it should bring. This concept phase takes 3–6 months of deep thinking and creative planning.</p>",
+            "image_bottom": "shopify://shop_images/2J2A6066_2.png",
+            "title_bottom": "<p>Then it’s ready—for your family.</p>",
+            "detail_bottom": "<p>After a year or more of thoughtful work, the final toy is in your hands—ready to inspire solo focus, shared laughs, and smart play anytime, anywhere.</p>"
+          }
+        },
+        "step_3fkwmt": {
+          "type": "step",
+          "settings": {
+            "step_number": "",
+            "title_top": "",
+            "detail_top": "",
+            "title_bottom": "",
+            "detail_bottom": ""
+          }
+        },
+        "step_hxYhCV": {
+          "type": "step",
+          "settings": {
+            "step_number": "",
+            "title_top": "",
+            "detail_top": "",
+            "title_bottom": "",
+            "detail_bottom": ""
+          }
+        },
+        "step_tK9K47": {
+          "type": "step",
+          "settings": {
+            "step_number": "",
+            "title_top": "",
+            "detail_top": "",
+            "title_bottom": "",
+            "detail_bottom": ""
+          }
+        }
+      },
+      "block_order": [
+        "step_8DPArj",
+        "step_3fkwmt",
+        "step_hxYhCV",
+        "step_tK9K47"
+      ],
+      "name": "Giiker about us step",
+      "settings": {
+        "background_color": "#62a7c9",
+        "title": ""
+      }
     }
   },
   "order": [
     "main",
-    "166098719235439c52"
+    "166098719235439c52",
+    "giiker_about_us_text_aKUqMY",
+    "giiker_about_us_our_story_NedJ4Q",
+    "giiker_about_us_step_9X9QCN"
   ]
 }
