@@ -58,7 +58,7 @@
         </div>
       <div class="user-videos-cover">
         <div class="user-videos scrollable flex-row flex-justify-center">
-          <div id="1" class="phone-video"
+          {% comment %} <div id="1" class="phone-video"
             data-full-video-url="https://petcube.com/videos/sections/product-tracker-elevate-connection/video-1.mp4"
             ><video class=" lazyloaded" autoplay="" loop="" muted="" playsinline=""
               preload="auto"
@@ -227,7 +227,21 @@
                 data-src="https://petcube.com/images/sections/product-tracker-elevate-connection/phone-mask.png"
                 alt="Phone mask"
                 src="https://petcube.com/images/sections/product-tracker-elevate-connection/phone-mask.png"></div>
+          </div> {% endcomment %}
+      {% for block in section.blocks %}
+        <div id="{{ forloop.index }}" class="phone-video"
+            data-full-video-url="{{ block.settings.video.url }}"
+            >
+            {{ block.settings.video | video_tag: loading: 'eager', fetchpriority: 'high', decoding: 'async', class: 'video-tag lazyloaded', playsinline: true, autoplay: true, muted: true, loop: true }}
+            <div class="phone-mask">
+              <img class=" ls-is-cached lazyloaded"
+                data-src="https://petcube.com/images/sections/product-tracker-elevate-connection/phone-mask.png"
+                alt="Phone mask"
+                src="https://petcube.com/images/sections/product-tracker-elevate-connection/phone-mask.png">
+              </div>
           </div>
+      {% endfor %}
+
         </div>
       </div>
     </div>
@@ -286,7 +300,6 @@
       "type": "phone",
       "name": "Phone Image",
       "settings": [
-
         {
           "type": "video",
           "id": "video",
