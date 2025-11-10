@@ -1,12 +1,15 @@
 <section id="#{{ section.id }}">
   <div class="giiker-product-basice pc-image" data-cc-animate="fade-in">
     <div class="left-content">
-        {{
+        {% comment %} {{
           section.settings.background_left_image
           | image_url: width: section.settings.background_left_image.width
           | image_tag: height: section.settings.background_left_image.height,
            fetchpriority: 'high', loading: 'lazy', class: 'image-left-tag'
-        }}
+        }} {% endcomment %}
+        {% if section.settings.background_left_video != blank %}
+          {{ section.settings.background_left_video | video_tag: loading: 'eager', fetchpriority: 'high', decoding: 'async', class: 'video-tag image-left-tag', playsinline: true, muted: true, loop: true }}
+        {% endif %}
     </div>
     <div class="right-content">
       {{
@@ -171,6 +174,12 @@
       "id": "background_left_image",
       "label": "Background Left Image"
     },
+    {
+      "type": "video",
+      "id": "background_left_video",
+      "label": "Background Left Video"
+    },
+
     {
       "type": "image_picker",
       "id": "background_right_image",
