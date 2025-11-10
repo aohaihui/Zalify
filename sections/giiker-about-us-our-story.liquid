@@ -1,0 +1,95 @@
+<div class="giiker-about-us-our-story-container" style="background-color: {{ section.settings.background_color }};">
+  <div class="giiker-about-us-our-story-content">
+    <h2 class="giiker-about-us-our-story-title">{{ section.settings.title }}</h2>
+    <div class="giiker-about-us-our-story-list">
+      <div class="our-story-swiper swiper">
+        <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          <div class="giiker-about-us-our-story-item swiper-slide" data-title="{{ block.settings.title | strip_html }}">
+            <div class="giiker-about-us-our-story-item-image">
+              {{ block.settings.image | image_url: width: block.settings.image.width | image_tag: height: block.settings.image.height, fetchpriority: 'high', loading: 'lazy', class: 'image-tag' }}
+            </div>
+            <div class="giiker-about-us-our-story-item-content">
+              <h3 class="giiker-about-us-our-story-item-content-title">{{ block.settings.title }}</h3>
+              <div class="giiker-about-us-our-story-item-content-detail">{{ block.settings.detail }}</div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+    <div class="giiker-about-us-our-story-bottom-image">
+      {{ section.settings.bottom_image | image_url: width: section.settings.bottom_image.width | image_tag: height: section.settings.bottom_image.height, fetchpriority: 'high', loading: 'lazy', class: 'image-tag' }}
+    </div>
+  </div> 
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const swiperContainer = document.querySelector('#shopify-section-{{ section.id }} .our-story-swiper');
+    const slides = swiperContainer.querySelectorAll('.swiper-slide');
+    const titles = Array.from(slides).map(slide => slide.getAttribute('data-title'));
+    
+    const ourStorySwiper = new Swiper('#shopify-section-{{ section.id }} .our-story-swiper', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      pagination: {
+        el: '#shopify-section-{{ section.id }} .swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '">' + (titles[index] || '') + '</span>';
+        },
+      },
+    });
+  });
+</script>
+{% schema %}
+{
+  "name": "Giiker our story",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color"
+    },
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "Title" 
+    },
+    {
+      "type": "image_picker",
+      "id": "bottom_image",
+      "label": "Bottom Image"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "story",
+      "name": "Story",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "richtext",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "detail",
+          "label": "Detail"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Giiker our story"
+    }
+  ]
+}
+{% endschema %}

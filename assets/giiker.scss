@@ -2321,6 +2321,7 @@ ease;
   padding: 100px 0;
   position: relative;
   background: rgba(255, 211, 150, 1);
+  margin-top: -5px;
   .giiker-product-recommended-title{
     text-align: center;
     font-size: 55px;
@@ -2332,7 +2333,7 @@ ease;
   .giiker-product-recommended-background{
     width: 100%;
     position: absolute;
-    top: -5px;
+    top: 0;
     left: 0;
     z-index: 1;
     .image-tag-background{
