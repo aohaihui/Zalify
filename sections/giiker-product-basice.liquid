@@ -8,7 +8,7 @@
            fetchpriority: 'high', loading: 'lazy', class: 'image-left-tag'
         }} {% endcomment %}
         {% if section.settings.background_left_video != blank %}
-          {{ section.settings.background_left_video | video_tag: loading: 'eager', fetchpriority: 'high', decoding: 'async', class: 'video-tag image-left-tag', playsinline: true, muted: true, loop: true }}
+          {{ section.settings.background_left_video | video_tag: loading: 'eager', fetchpriority: 'high', decoding: 'async', class: 'video-tag image-left-tag', playsinline: true, muted: true, autoplay: true, loop: true }}
         {% endif %}
     </div>
     <div class="right-content">
@@ -30,7 +30,7 @@
   <div class="mobile-fixed-image" id="mobile-fixed-image-{{ section.id }}">
     {% if section.settings.mobile_video != blank %}
       <div class="mobile-video-container">
-        {{ section.settings.mobile_video | video_tag: loading: 'eager', fetchpriority: 'high', decoding: 'async', class: 'video-tag', playsinline: true, muted: true, loop: true }}
+        {{ section.settings.mobile_video | video_tag: loading: 'eager', fetchpriority: 'high', decoding: 'async', class: 'video-tag', playsinline: false, muted: false, loop: true, controls: true }}
       </div>
     {% endif %}
   </div>
