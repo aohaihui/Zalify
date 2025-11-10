@@ -18,7 +18,7 @@
       "type": "giiker-home-image-video",
       "name": "Giiker Home Image Video",
       "settings": {
-        "video_picker": "shopify://files/videos/banner 15秒无声版.mp4"
+        "video_picker": "shopify://files/videos/giiker banner video.mp4"
       }
     },
     "giiker_home_banner_MFAcbG": {
@@ -26,6 +26,7 @@
       "blocks": {
         "banner_6N3TYW": {
           "type": "banner",
+          "disabled": true,
           "settings": {
             "pc_image": "shopify://shop_images/image_26.png",
             "mobile_image": "shopify://shop_images/image_26.png"
@@ -34,15 +35,15 @@
         "banner_rdkVqq": {
           "type": "banner",
           "settings": {
-            "pc_image": "shopify://shop_images/image_26.png",
-            "mobile_image": "shopify://shop_images/image_26.png"
+            "pc_image": "shopify://shop_images/kv2.jpg",
+            "mobile_image": "shopify://shop_images/kv_01_4167x2344_6939e51f-dde8-4f48-972c-943f1fbb245a.jpg"
           }
         },
         "banner_kL4TfF": {
           "type": "banner",
           "settings": {
-            "pc_image": "shopify://shop_images/image_26.png",
-            "mobile_image": "shopify://shop_images/image_26.png"
+            "pc_image": "shopify://shop_images/kv1.jpg",
+            "mobile_image": "shopify://shop_images/kv_807b2326-f10c-4ba1-a485-07ba8ad9416e.jpg"
           }
         }
       },
@@ -81,7 +82,7 @@
             "background_image": "shopify://shop_images/1_7d70a0c8-7306-4c7a-92b9-d7f837f892c8.png",
             "pc_image": "shopify://shop_images/4_1.png",
             "mobile_image": "shopify://shop_images/4_1_e760ac38-2bf8-4b58-8443-68b05fc0889e.png",
-            "url": "shopify://pages/about-us",
+            "url": "shopify://collections/learning-educational-toys",
             "url_label": "explore all games"
           }
         }
@@ -194,7 +195,7 @@
           "type": "list",
           "settings": {
             "icon": "shopify://shop_images/x0020_1_3.png",
-            "title": "<p>Safetly First</p>",
+            "title": "<p>Safety First</p>",
             "detail": "<p>Crafted from high-quality ABS material, guaranteeing a safe playing environment for children.</p>"
           }
         }
@@ -223,7 +224,7 @@
         "background_mobile_image": "shopify://shop_images/1_1.png",
         "background_flower_image": "shopify://shop_images/Mask_group_1_5736e227-1f09-4330-a300-e5f867b6815c.png",
         "background_top_image": "shopify://shop_images/Vector_23.png",
-        "url": "shopify://products/battle-pad",
+        "url": "shopify://pages/about-us",
         "url_label": "Discover More"
       }
     },
@@ -233,15 +234,15 @@
         "awards_UD7Wwn": {
           "type": "awards",
           "settings": {
-            "image": "shopify://shop_images/CBME.png",
-            "title": "<p>CBME Award</p>"
+            "image": "shopify://shop_images/1_f48c4c04-c760-4b2a-b63d-34408c2e2133.png",
+            "title": "<p>Reddot Award</p>"
           }
         },
         "awards_7UXCHk": {
           "type": "awards",
           "settings": {
-            "image": "shopify://shop_images/USE.png",
-            "title": "<p>USE Design Award</p><p>Gold Winner 2023</p>"
+            "image": "shopify://shop_images/1_0819e68a-c61b-4e7c-9620-0dc5691e4bed.png",
+            "title": "<p>Top Holiday Toy Winner</p>"
           }
         },
         "awards_DJTCgH": {
@@ -289,19 +290,27 @@
       "blocks": {
         "phone_c94yVp": {
           "type": "phone",
-          "settings": {}
+          "settings": {
+            "video": "shopify://files/videos/retro-super slide.mp4"
+          }
         },
         "phone_TFHGTz": {
           "type": "phone",
-          "settings": {}
+          "settings": {
+            "video": "shopify://files/videos/aliceariley.mp4"
+          }
         },
         "phone_NpRhG7": {
           "type": "phone",
-          "settings": {}
+          "settings": {
+            "video": "shopify://files/videos/never.boardgame.mp4"
+          }
         },
         "phone_k7e9FT": {
           "type": "phone",
-          "settings": {}
+          "settings": {
+            "video": "shopify://files/videos/banterandboards.mp4"
+          }
         },
         "phone_LV9WF9": {
           "type": "phone",
