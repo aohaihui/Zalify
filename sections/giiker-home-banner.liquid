@@ -22,6 +22,7 @@
         </div>
       {% endfor %}
     </div>
+    <div class="swiper-pagination"></div>
   </div>
 </div>
 <script>
@@ -29,8 +30,17 @@
     const swiperProductFeatures = new Swiper('#shopify-section-{{ section.id }} .swiper', {
       slidesPerView: 'auto',
       centeredSlides: true,
-      paginationClickable: true,
+      pagination: {
+        el: '#shopify-section-{{ section.id }} .swiper-pagination',
+        clickable: true,
+      },
       loop: true,
+      {% if section.settings.autoplay %}
+      autoplay: {
+        delay: {{ section.settings.autoplay_delay | default: 3000 }},
+        disableOnInteraction: false,
+      },
+      {% endif %}
       spaceBetween: 30,
       breakpoints: {
         0: {
@@ -40,8 +50,6 @@
         768: {
           slidesPerView: 30,
           slidesPerView: 'auto',
-
-
         }
       }
     });
@@ -50,7 +58,20 @@
 {% schema %}
 {
   "name": "Giiker Home Banner",
-  "settings": [],
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Autoplay",
+      "default": true
+    },
+    {
+      "type": "number",
+      "id": "autoplay_delay",
+      "label": "Autoplay Delay (ms)",
+      "default": 3000
+    }
+  ],
   "blocks": [
     {
       "type": "banner",
@@ -59,12 +80,12 @@
         {
           "type": "image_picker",
           "id": "pc_image",
-          "label": "Image"
+          "label": "Image PC 2160*1296"
         },
         {
           "type": "image_picker",
           "id": "mobile_image",
-          "label": "Mobile Image"
+          "label": "Mobile Image 2160*1296 目前是pc端的尺寸  可以单独配置移动端尺寸"
         }
       ]
     }

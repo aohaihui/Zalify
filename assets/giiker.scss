@@ -109,6 +109,18 @@ body{
     border-radius: 30px;
     overflow: hidden;
   }
+  .swiper-pagination{
+    bottom: 20px;
+  }
+  .swiper-pagination-bullet{
+    background: #fff;
+    opacity: 1;
+    width: 10px;
+    height: 10px;
+  }
+  .swiper-pagination-bullet-active{
+    background: rgba(255, 223, 87, 1);
+  }
 }
 .giiker-home-image-video{
   width: 100%;
