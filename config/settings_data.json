@@ -672,8 +672,8 @@
       "header": {
         "type": "header",
         "settings": {
-          "logo_src": "shopify://shop_images/logo70_70.jpg",
-          "logo_height": 70,
+          "logo_src": "shopify://shop_images/Vector_2.png",
+          "logo_height": 34,
           "main_linklist": "main-menu",
           "menu_style": "classic",
           "collection_linklist": "",
