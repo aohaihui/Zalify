@@ -53,7 +53,10 @@
         "banner_kL4TfF"
       ],
       "name": "Giiker Home Banner",
-      "settings": {}
+      "settings": {
+        "autoplay": true,
+        "autoplay_delay": 3000
+      }
     },
     "giiker_home_image_text_CExhrn": {
       "type": "giiker-home-image-text",
@@ -311,33 +314,13 @@
           "settings": {
             "video": "shopify://files/videos/banterandboards.mp4"
           }
-        },
-        "phone_LV9WF9": {
-          "type": "phone",
-          "settings": {}
-        },
-        "phone_LxR4eK": {
-          "type": "phone",
-          "settings": {}
-        },
-        "phone_9pcxdc": {
-          "type": "phone",
-          "settings": {}
-        },
-        "phone_4BBDhf": {
-          "type": "phone",
-          "settings": {}
         }
       },
       "block_order": [
         "phone_c94yVp",
         "phone_TFHGTz",
         "phone_NpRhG7",
-        "phone_k7e9FT",
-        "phone_LV9WF9",
-        "phone_LxR4eK",
-        "phone_9pcxdc",
-        "phone_4BBDhf"
+        "phone_k7e9FT"
       ],
       "name": "Giiker Home Phone Image",
       "settings": {
