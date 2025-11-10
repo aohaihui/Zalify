@@ -166,12 +166,14 @@
         "step_3fkwmt": {
           "type": "step",
           "settings": {
-            "step_number": "",
-            "title_top": "",
-            "next_title_top": "",
-            "detail_top": "",
-            "title_bottom": "",
-            "detail_bottom": ""
+            "step_number": "Step2",
+            "image_top": "shopify://shop_images/1_2.png",
+            "title_top": "<p>From Idea to Purpose</p>",
+            "next_title_top": "<p>Every toy begins with a big idea—and a clear mission.</p>",
+            "detail_top": "<p>We explore who it’s for, how it fits into real life, and what kind of fun (and challenge) it should bring. This concept phase takes 3–6 months of deep thinking and creative planning.</p>",
+            "image_bottom": "shopify://shop_images/2J2A6066_2.png",
+            "title_bottom": "<p>Then it’s ready—for your family.</p>",
+            "detail_bottom": "<p>After a year or more of thoughtful work, the final toy is in your hands—ready to inspire solo focus, shared laughs, and smart play anytime, anywhere.</p>"
           }
         },
         "step_hxYhCV": {
