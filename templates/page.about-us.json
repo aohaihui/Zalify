@@ -57,6 +57,7 @@
       "name": "Giiker about us text",
       "settings": {
         "image": "shopify://shop_images/CEO.png",
+        "image_mobile": "shopify://shop_images/CEO.png",
         "background_color": "#62a7c9",
         "title": "<p>GiiKER (derived from “Geeker\") is a technology company with a dedication to the development of smart and connected edutainment products. </p>",
         "detail": "<p>Alongside with the connected products, GiiKER also develops mobile apps with playful contents to bring a whole new level of user experience.</p>"
@@ -144,7 +145,8 @@
       "settings": {
         "background_color": "#62a7c9",
         "title": "<p>OUR STORY</p>",
-        "bottom_image": "shopify://shop_images/20251111012608_23_267.png"
+        "bottom_image": "shopify://shop_images/20251111012608_23_267.png",
+        "title_bottom": "<p>How a GiiKER Toy Comes to Life</p>"
       }
     },
     "giiker_about_us_step_9X9QCN": {
