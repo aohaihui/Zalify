@@ -165,10 +165,12 @@
           "settings": {
             "step_number": "Step1",
             "image_top": "shopify://shop_images/1_2.png",
+            "image_top_mobile": "shopify://shop_images/1_4.png",
             "title_top": "<p>From Idea to Purpose</p>",
             "next_title_top": "<p>Every toy begins with a big idea—and a clear mission.</p>",
             "detail_top": "<p>We explore who it’s for, how it fits into real life, and what kind of fun (and challenge) it should bring. This concept phase takes 3–6 months of deep thinking and creative planning.</p>",
             "image_bottom": "shopify://shop_images/2J2A6066_2.png",
+            "image_bottom_mobile": "shopify://shop_images/2J2A6066_2_1.png",
             "title_bottom": "<p>Then it’s ready—for your family.</p>",
             "detail_bottom": "<p>After a year or more of thoughtful work, the final toy is in your hands—ready to inspire solo focus, shared laughs, and smart play anytime, anywhere.</p>"
           }
@@ -178,10 +180,12 @@
           "settings": {
             "step_number": "Step2",
             "image_top": "shopify://shop_images/1_2.png",
+            "image_top_mobile": "shopify://shop_images/1_4.png",
             "title_top": "<p>From Idea to Purpose</p>",
             "next_title_top": "<p>Every toy begins with a big idea—and a clear mission.</p>",
             "detail_top": "<p>We explore who it’s for, how it fits into real life, and what kind of fun (and challenge) it should bring. This concept phase takes 3–6 months of deep thinking and creative planning.</p>",
             "image_bottom": "shopify://shop_images/2J2A6066_2.png",
+            "image_bottom_mobile": "shopify://shop_images/2J2A6066_2_1.png",
             "title_bottom": "<p>Then it’s ready—for your family.</p>",
             "detail_bottom": "<p>After a year or more of thoughtful work, the final toy is in your hands—ready to inspire solo focus, shared laughs, and smart play anytime, anywhere.</p>"
           }
@@ -191,10 +195,12 @@
           "settings": {
             "step_number": "Step3",
             "image_top": "shopify://shop_images/1_2.png",
+            "image_top_mobile": "shopify://shop_images/1_4.png",
             "title_top": "<p>From Idea to Purpose</p>",
             "next_title_top": "<p>Every toy begins with a big idea—and a clear mission.</p>",
             "detail_top": "<p>We explore who it’s for, how it fits into real life, and what kind of fun (and challenge) it should bring. This concept phase takes 3–6 months of deep thinking and creative planning.</p>",
             "image_bottom": "shopify://shop_images/2J2A6066_2.png",
+            "image_bottom_mobile": "shopify://shop_images/2J2A6066_2_1.png",
             "title_bottom": "<p>Then it’s ready—for your family.</p>",
             "detail_bottom": "<p>After a year or more of thoughtful work, the final toy is in your hands—ready to inspire solo focus, shared laughs, and smart play anytime, anywhere.</p>"
           }
@@ -204,10 +210,12 @@
           "settings": {
             "step_number": "Step4",
             "image_top": "shopify://shop_images/1_2.png",
+            "image_top_mobile": "shopify://shop_images/1_4.png",
             "title_top": "<p>From Idea to Purpose</p>",
             "next_title_top": "<p>Every toy begins with a big idea—and a clear mission.</p>",
             "detail_top": "<p>We explore who it’s for, how it fits into real life, and what kind of fun (and challenge) it should bring. This concept phase takes 3–6 months of deep thinking and creative planning.</p>",
             "image_bottom": "shopify://shop_images/2J2A6066_2.png",
+            "image_bottom_mobile": "shopify://shop_images/2J2A6066_2_1.png",
             "title_bottom": "<p>Then it’s ready—for your family.</p>",
             "detail_bottom": "<p>After a year or more of thoughtful work, the final toy is in your hands—ready to inspire solo focus, shared laughs, and smart play anytime, anywhere.</p>"
           }
