@@ -3242,6 +3242,12 @@ ease;
 }
 @media (max-width: 768px) {
   .giiker-about-us-text-container{
+    .giiker-about-us-text-image{
+      padding-bottom: 50px;
+      &::before{
+        display: none;
+      }
+    }
     .giiker-about-us-text-title{
       *{
         font-size: 4vw;
@@ -3256,4 +3262,32 @@ ease;
       } 
     }
   }
+  .giiker-about-us-our-story-content{
+    .giiker-about-us-our-story-title{
+      padding: 0 20px;
+      margin-bottom: 25px;
+      *{
+        font-size: 20px;
+        line-height: 1.2;
+      }
+    }
+    .giiker-about-us-our-story-list{
+      .giiker-about-us-our-story-item{
+        border-radius: 0;
+        flex-direction: column;
+        .giiker-about-us-our-story-item-image{
+         width: 100%;
+         height: 215px;
+         img{
+          height: 100%;
+          width: 100%;
+         }
+        } 
+       }
+       .our-story-swiper{
+        padding: 0 20px;
+      }
+    }
+  } 
+    
 }

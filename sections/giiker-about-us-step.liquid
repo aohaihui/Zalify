@@ -6,7 +6,9 @@
         {% for block in section.blocks %}
           <div class="giiker-about-us-our-story-item swiper-slide" data-title="{{ block.settings.step_number | strip_html }}">
             <div class="top-image-tag">
-              <div class="giiker-about-us-our-story-item-image">                {{ block.settings.image_top | image_url: width: block.settings.image_top.width | image_tag: height: block.settings.image_top.height, fetchpriority: 'high', loading: 'lazy', class: 'image-tag' }}
+              <div class="giiker-about-us-our-story-item-image">      
+                {{ block.settings.image_top | image_url: width: block.settings.image_top.width | image_tag: height: block.settings.image_top.height, fetchpriority: 'high', loading: 'lazy', class: 'image-tag pc-image' }}
+                {{ block.settings.image_top_mobile | image_url: width: block.settings.image_top_mobile.width | image_tag: height: block.settings.image_top_mobile.height, fetchpriority: 'high', loading: 'lazy', class: 'image-tag mb-image' }}
               </div>
               <div class="giiker-about-us-our-story-item-content">
                 <h3 class="giiker-about-us-our-story-item-content-title">{{ block.settings.title_top }}</h3>
@@ -19,7 +21,8 @@
             </div>
             <div class="bottom-image-tag">
               <div class="giiker-about-us-our-story-item-image">
-                {{ block.settings.image_bottom | image_url: width: block.settings.image_bottom.width | image_tag: height: block.settings.image_bottom.height, fetchpriority: 'high', loading: 'lazy', class: 'image-tag' }}
+                {{ block.settings.image_bottom | image_url: width: block.settings.image_bottom.width | image_tag: height: block.settings.image_bottom.height, fetchpriority: 'high', loading: 'lazy', class: 'image-tag pc-image' }}
+                {{ block.settings.image_bottom_mobile | image_url: width: block.settings.image_bottom_mobile.width | image_tag: height: block.settings.image_bottom_mobile.height, fetchpriority: 'high', loading: 'lazy', class: 'image-tag mb-image' }}
               </div>
               <div class="giiker-about-us-our-story-item-content">
                 <h3 class="giiker-about-us-our-story-item-content-title">{{ block.settings.title_bottom }}</h3>
@@ -85,6 +88,11 @@
           "label": "Image Top 879*495"
         },
         {
+          "type": "image_picker",
+          "id": "image_top_mobile",
+          "label": "Image Top Mobile 218*122"
+        },
+        {
           "type": "richtext",
           "id": "title_top",
           "label": "Title Top"
@@ -103,6 +111,11 @@
           "type": "image_picker",
           "id": "image_bottom",
           "label": "Image Bottom 574*383 带圆角"
+        },
+        {
+          "type": "image_picker",
+          "id": "image_bottom_mobile",
+          "label": "Image Bottom Mobile 220*147"
         },
         {
           "type": "richtext",
