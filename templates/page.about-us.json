@@ -70,6 +70,7 @@
           "type": "story",
           "settings": {
             "image": "shopify://shop_images/image_33.png",
+            "image_mobile": "shopify://shop_images/image_33_1.png",
             "title": "<p>2012</p>",
             "detail": "<p>We founded the GiiKER team in 2012, and by 2014, we proudly released GiCUBE®, laying the essential foundation for our smart cube development.</p>"
           }
@@ -78,6 +79,7 @@
           "type": "story",
           "settings": {
             "image": "shopify://shop_images/image_33.png",
+            "image_mobile": "shopify://shop_images/image_33_1.png",
             "title": "<p>2018</p>",
             "detail": "<p>Super Cube's \"XiaoMi\" crowdfunding project garnered 15,000 backers.</p>"
           }
@@ -86,6 +88,7 @@
           "type": "story",
           "settings": {
             "image": "shopify://shop_images/image_33.png",
+            "image_mobile": "shopify://shop_images/image_33_1.png",
             "title": "<p>2019</p>",
             "detail": "<p>Showcased the Super Cube series at renowned events such as CES, New York toy fair, and the Nuremberg toy fair.</p>"
           }
@@ -94,6 +97,7 @@
           "type": "story",
           "settings": {
             "image": "shopify://shop_images/image_33.png",
+            "image_mobile": "shopify://shop_images/image_33_1.png",
             "title": "<p>2021</p>",
             "detail": "<p>Successfully launched Super Slide, achieving over 100,000 sales for 3 consecutive months.</p>"
           }
@@ -102,6 +106,7 @@
           "type": "story",
           "settings": {
             "image": "shopify://shop_images/image_33.png",
+            "image_mobile": "shopify://shop_images/image_33_1.png",
             "title": "<p>2022</p>",
             "detail": "<p>Growing in popularity, Super Slide became the top 5 best-selling educational toys on multiple online platforms, amassing over 2 million purchases worldwide.</p>"
           }
@@ -110,6 +115,7 @@
           "type": "story",
           "settings": {
             "image": "shopify://shop_images/image_33.png",
+            "image_mobile": "shopify://shop_images/image_33_1.png",
             "title": "<p>2023</p>",
             "detail": "<p>Smart Sudoku makes its way to all markets. Meanwhile, Smart Four and Super Slide are awarded as the 2023 Reddot Winner</p>"
           }
@@ -118,6 +124,7 @@
           "type": "story",
           "settings": {
             "image": "shopify://shop_images/image_33.png",
+            "image_mobile": "shopify://shop_images/image_33_1.png",
             "title": "<p>2024</p>",
             "detail": "<p>Tic-Tac-Toe Bolt was launched in China and exceeded 100,000 sales within the first month！</p>"
           }
@@ -126,6 +133,7 @@
           "type": "story",
           "settings": {
             "image": "shopify://shop_images/image_33.png",
+            "image_mobile": "shopify://shop_images/image_33_1.png",
             "title": "<p>Today</p>",
             "detail": "<p>In 2025, we proudly earned recognition as both our Tic-Tac-Toe Bolt and Super Decoder were featured in THE TOY INSIDER’S 2025 Holiday Gift Guide.</p>"
           }
