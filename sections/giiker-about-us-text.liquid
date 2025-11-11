@@ -1,14 +1,21 @@
 <div class="giiker-about-us-text-container" style="background-color: {{ section.settings.background_color }};">
   <div class="giiker-about-us-text-content">
-    <h2 class="giiker-about-us-text-title">{{ section.settings.title }}</h2>
-    <div class="giiker-about-us-text-detail">{{ section.settings.detail }}</div>
-    <div class="giiker-about-us-text-image">
+    <h2 class="giiker-about-us-text-title" data-cc-animate="fade-in">{{ section.settings.title }}</h2>
+    <div class="giiker-about-us-text-detail" data-cc-animate="fade-in">{{ section.settings.detail }}</div>
+    <div class="giiker-about-us-text-image" data-cc-animate="fade-in">
       {{
       section.settings.image
       | image_url: width: section.settings.image.width
       | image_tag: height: section.settings.image.height,
-        fetchpriority: 'high', loading: 'lazy', class: 'image-tag'
+        fetchpriority: 'high', loading: 'lazy', class: 'image-tag pc-image'
       }}
+      {{
+      section.settings.image_mobile
+      | image_url: width: section.settings.image_mobile.width
+      | image_tag: height: section.settings.image_mobile.height,
+        fetchpriority: 'high', loading: 'lazy', class: 'image-tag mb-image'
+      }}
+
     </div>
   </div>
 </div>
@@ -21,6 +28,11 @@
       "type": "image_picker",
       "id": "image",
       "label": "Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_mobile",
+      "label": "Image Mobile"
     },
     {
       "type": "color",

@@ -19,6 +19,7 @@
         <div class="swiper-pagination"></div>
       </div>
     </div>
+    <h2 class="giiker-about-us-our-story-bottom-title">{{ section.settings.title_bottom }}</h2>
     <div class="giiker-about-us-our-story-bottom-image">
       {{ section.settings.bottom_image | image_url: width: section.settings.bottom_image.width | image_tag: height: section.settings.bottom_image.height, fetchpriority: 'high', loading: 'lazy', class: 'image-tag' }}
     </div>
@@ -28,16 +29,22 @@
   document.addEventListener('DOMContentLoaded', function() {
     const swiperContainer = document.querySelector('#shopify-section-{{ section.id }} .our-story-swiper');
     const slides = swiperContainer.querySelectorAll('.swiper-slide');
-    const titles = Array.from(slides).map(slide => slide.getAttribute('data-title'));
+    const titles = Array.from(slides).map(slide => {
+      const title = slide.getAttribute('data-title');
+      return title && title.trim() !== '' ? title : null;
+    });
     
     const ourStorySwiper = new Swiper('#shopify-section-{{ section.id }} .our-story-swiper', {
-      slidesPerView: 1,
-      spaceBetween: 20,
+      slidesPerView: 'auto',
+      spaceBetween: 40,
       pagination: {
         el: '#shopify-section-{{ section.id }} .swiper-pagination',
         clickable: true,
         renderBullet: function (index, className) {
-          return '<span class="' + className + '">' + (titles[index] || '') + '</span>';
+          if (titles[index]) {
+            return '<span class="' + className + '">' + titles[index] + '</span>';
+          }
+          return '<span class="' + className + '" style="display: none;"></span>';
         },
       },
     });
@@ -60,7 +67,13 @@
     {
       "type": "image_picker",
       "id": "bottom_image",
-      "label": "Bottom Image"
+      "label": "Bottom Image  1920*420 "
+    },
+    {
+      "type": "richtext",
+      "id": "title_bottom",
+      "label": "Title Bottom",
+      "default": "<p>How a GiiKER Toy Comes to Life</p>"
     }
   ],
   "blocks": [
