@@ -18,10 +18,10 @@
 
   <div class="template-404">
     <p>
-      {{ '404.general.description' | t }}
+      The page you are looking for does not exist.
     </p>
     <h1 class="title">
-      {{ '404.general.title' | t }}
+      Page not found
     </h1>
     <a href="{{ routes.all_products_collection_url }}" class="button">
       {{ '404.general.continue_shopping' | t }}
@@ -114,7 +114,7 @@
       }
     {%- endif -%}
   </style>
-
+  <link rel="stylesheet" href="{{ 'theme-collection.css' | asset_url }}">
   <section>
     <div class="container">
       <product-facet section-id="{{ section.id }}" class="product-facet">
@@ -348,7 +348,7 @@
                       {%- assign featured_product = all_products[handle] -%}
 
                       {% if featured_product != empty %}
-                        {%- render 'product-item',
+                        {%- render 'product-item-gilker',
                           product: featured_product,
                           collection: collection,
                           block: block,
@@ -363,7 +363,7 @@
                     {% if handles contains product.handle %}
                       {% continue %}
                     {% else %}
-                      {%- render 'product-item',
+                      {%- render 'product-item-gilker',
                         product: product,
                         collection: collection,
                         block: block,
@@ -416,54 +416,54 @@
 
 {% schema %}
 {
-  "name": "t:Collection_page",
-  "class": "shopify-section--main-collection",
+  "name": "Main collection gilker",
+  "class": "shopify-section--main-collection--gilker",
   "max_blocks": 2,
   "blocks": [
     {
       "type": "image",
-      "name": "t:Promotion_block",
+      "name": "Promotion block",
       "settings": [
         {
           "type": "image_picker",
           "id": "image",
-          "label": "t:Image",
+          "label": "Image",
           "info": "t:1200_x_600px_jpg_recommended_if_two_blocks_2400_x_800px_jpg_recommended_if_one_block"
         },
         {
           "type": "text",
           "id": "subheading",
-          "label": "t:Subheading",
+          "label": "Subheading",
           "default": "Your subheading"
         },
         {
           "type": "text",
           "id": "title",
-          "label": "t:Heading",
+          "label": "Heading",
           "default": "Your heading"
         },
         {
           "type": "text",
           "id": "link_text",
-          "label": "t:Link_text"
+          "label": "Link text"
         },
         {
           "type": "url",
           "id": "link_url",
-          "label": "t:Link_url"
+          "label": "Link url"
         },
         {
           "type": "select",
           "id": "link_style",
-          "label": "t:Link_style",
+          "label": "Link style",
           "options": [
             {
               "value": "link",
-              "label": "t:Link"
+              "label": "Link"
             },
             {
               "value": "button",
-              "label": "t:Button"
+              "label": "Button"
             }
           ],
           "default": "link"
@@ -471,43 +471,43 @@
         {
           "type": "select",
           "id": "text_position",
-          "label": "t:Text_position",
+          "label": "Text position",
           "options": [
             {
               "value": "top_left",
-              "label": "t:Top_left"
+              "label": "Top left"
             },
             {
               "value": "top_center",
-              "label": "t:Top_center"
+              "label": "Top center"
             },
             {
               "value": "top_right",
-              "label": "t:Top_right"
+              "label": "Top right"
             },
             {
               "value": "middle_left",
-              "label": "t:Middle_left"
+              "label": "Middle left"
             },
             {
               "value": "middle_center",
-              "label": "t:Middle_center"
+              "label": "Middle center"
             },
             {
               "value": "middle_right",
-              "label": "t:Middle_right"
+              "label": "Middle right"
             },
             {
               "value": "bottom_left",
-              "label": "t:Bottom_left"
+              "label": "Bottom left"
             },
             {
               "value": "bottom_center",
-              "label": "t:Bottom_center"
+              "label": "Bottom center"
             },
             {
               "value": "bottom_right",
-              "label": "t:Bottom_right"
+              "label": "Bottom right"
             }
           ],
           "default": "middle_left"
@@ -515,26 +515,26 @@
         {
           "type": "color",
           "id": "background",
-          "label": "t:Background",
+          "label": "Background",
           "default": "#f7f8fd",
-          "info": "t:Only_used_when_no_image_is_uploaded"
+          "info": "Only used when no image is uploaded"
         },
         {
           "type": "color",
           "id": "text_color",
-          "label": "t:Text_color",
+          "label": "Text color",
           "default": "#1e316a"
         },
         {
           "type": "color",
           "id": "button_background",
-          "label": "t:Button_background",
+          "label": "Button background",
           "default": "#ffffff"
         },
         {
           "type": "color",
           "id": "button_text_color",
-          "label": "t:Button_text_color",
+          "label": "Button text color",
           "default": "#1e316a"
         }
       ]
@@ -544,13 +544,13 @@
     {
       "type": "checkbox",
       "id": "show_product_count",
-      "label": "t:Show_product_count",
+      "label": "Show product count",
       "default": true
     },
     {
       "type": "range",
       "id": "products_per_page",
-      "label": "t:Products_per_page",
+      "label": "Products per page",
       "min": 8,
       "max": 50,
       "step": 1,
@@ -559,15 +559,15 @@
     {
       "type": "select",
       "id": "mobile_products_per_row",
-      "label": "t:Products_per_row_mobile",
+      "label": "Products per row mobile",
       "options": [
         {
           "value": "1",
-          "label": "t:1"
+          "label": "1"
         },
         {
           "value": "2",
-          "label": "t:2"
+          "label": "2"
         }
       ],
       "default": "2"
@@ -577,95 +577,95 @@
       "min": 3,
       "max": 5,
       "id": "desktop_products_per_row",
-      "label": "t:Products_per_row_desktop",
+      "label": "Products per row desktop",
       "default": 4
     },
     {
       "type": "header",
-      "content": "t:Sort_by"
+      "content": "Sort by"
     },
     {
       "type": "checkbox",
       "id": "show_sort_by",
-      "label": "t:Show_sort_by",
+      "label": "Show sort by",
       "default": true
     },
     {
       "type": "checkbox",
       "id": "show_alphabetical_sorting_options",
-      "label": "t:Show_alphabetical_sorting_options",
-      "info": "t:If_the_default_sorting_option_is_alphabetical_you_must_change_the_default_sorting_option_to_the_other",
+      "label": "Show alphabetical sorting options",
+      "info": "If the default sorting option is alphabetical you must change the default sorting option to the other",
       "default": true
     },
     {
       "type": "checkbox",
       "id": "show_created_ascending_option",
-      "label": "t:Show_from_old_to_new_date",
+      "label": "Show from old to new date",
       "default": true
     },
     {
       "type": "header",
-      "content": "t:Filters"
+      "content": "Filters"
     },
     {
       "type": "checkbox",
       "id": "show_filters",
-      "label": "t:Show_filters",
-      "info": "t:Customize_filters",
+      "label": "Show filters",
+      "info": "Customize filters",
       "default": true
     },
     {
       "type": "checkbox",
       "id": "show_filter_group_name",
-      "label": "t:Show_group_name",
-      "info": "t:Group_name_will_be_shown_inside_selected_filters",
+      "label": "Show group name",
+      "info": "Group name will be shown inside selected filters",
       "default": false
     },
     {
       "type": "checkbox",
       "id": "show_color_swatch",
-      "label": "t:Show_filter_color_swatch",
+      "label": "Show filter color swatch",
       "default": true
     },
     {
       "type": "checkbox",
       "id": "open_first_filter_group",
-      "label": "t:Open_first_group_by_default",
+      "label": "Open first group by default",
       "default": false
     },
     {
       "type": "select",
       "id": "filter_position",
-      "label": "t:Position",
+      "label": "Position",
       "options": [
         {
           "value": "always_visible",
-          "label": "t:Always_visible"
+          "label": "Always visible"
         },
         {
           "value": "drawer",
-          "label": "t:Drawer"
+          "label": "Drawer"
         }
       ],
       "default": "always_visible"
     },
     {
       "type": "header",
-      "content": "t:Promotion_blocks",
-      "info": "t:Add_extra_information_to_push_other_collections_or_products"
+      "content": "Promotion blocks",
+      "info": "Add extra information to push other collections or products"
     },
     {
       "type": "select",
       "id": "promotion_position",
-      "label": "t:Position",
+      "label": "Position",
       "options": [
         {
           "value": "top",
-          "label": "t:Top"
+          "label": "Top"
         },
         {
           "value": "bottom",
-          "label": "t:Bottom"
+          "label": "Bottom"
         }
       ],
       "default": "top"
@@ -673,22 +673,27 @@
     {
       "type": "select",
       "id": "promotion_height",
-      "label": "t:Block_height",
+      "label": "Block height",
       "options": [
         {
           "value": "small",
-          "label": "t:Small"
+          "label": "Small"
         },
         {
           "value": "medium",
-          "label": "t:Medium"
+          "label": "Medium"
         },
         {
           "value": "large",
-          "label": "t:Large"
+          "label": "Large"
         }
       ],
       "default": "small"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Main collection gilker"
     }
   ]
 }
