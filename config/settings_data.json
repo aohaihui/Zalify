@@ -634,7 +634,7 @@
     "product_animation": "one alt color--light",
     "product_overlay_bg": "#ffffff",
     "product_overlay_txt": "#111111",
-    "product_show_secondary": false,
+    "product_show_secondary": true,
     "thumb_resize": "fit",
     "reviews_badge_desktop": "no",
     "favicon": "shopify://shop_images/giiker-logo.png",
