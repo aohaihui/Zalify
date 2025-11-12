@@ -1,18 +1,21 @@
 <div class="gsap-product">
   <div class="gsap-product-box">
     <div class="gsap-product-left">
+      <div class="sticky">
       {% for block in section.blocks %}
-        <div class="gsap-product-left-item">
+        {% assign is_first = forloop.first %}
+        <div class="gsap-product-left-item {% if is_first %}active{% endif %}" data-background="{{ block.settings.background_color }};">
           <div class="title">{{ block.settings.title }}</div>
           <div class="detail">{{ block.settings.detail }}</div>
         </div>
       {% endfor %}
+      </div>
     </div>
     <div class="gsap-product-right">
       {% for block in section.blocks %}
         {% if block.type == 'content_top' %}
-          <div class="gsap-product-left-item">
-            <div class="gsap-product-left-item-image">
+          <div class="gsap-product-right-item">
+            <div class="gsap-product-right-item-image">
               {{ block.settings.image | image_url: width: block.settings.image.width | image_tag: width: block.settings.image.width, height: block.settings.image.height }}
             </div>
           </div>
@@ -22,16 +25,278 @@
   </div>
 </div>
 <style>
-  
+  .giiker-product-gsap-new{
+    width: 100%;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+  }
+  .gsap-product{
+    width: 100%;
+    display: flex;
+    .gsap-product-box{
+      width: 100%;
+      display: flex;
+      background: rgba(188, 87, 62, 1);
+      padding: 200px 0;
+
+      .gsap-product-left-item{
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        /* position: fixed; */
+        top: 0;
+        left: 0;
+        transition: opacity 0.4s ease;
+        z-index: 10;
+        padding: 0 30px;
+        .title{
+          font-size: 72px;
+          font-family: Oslla;
+          font-weight: 400;
+          line-height: 1;
+          color: #fff;
+          text-align: left;
+          margin: 0;
+          padding: 0;
+          margin-bottom: 50px;
+        }    
+        .detail{
+          font-size: 40px;
+          font-family: Overlock;
+          font-weight: 400;
+          line-height: 1.2;
+          color: #fff;
+          text-align: left;
+        }
+      }
+      .gsap-product-left-item.active{
+        display: flex;
+      }
+      .gsap-product-left{
+        position: relative;
+        flex: 1;
+        width: 50%;
+        .sticky{
+          position: sticky;
+          top: 50%;
+          left: 0;
+          z-index: 10;
+        }
+      }
+      .gsap-product-right{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 200px;
+      }
+      .gsap-product-right-item-image{
+        width: 100%;
+        img{
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .gsap-product-right-item{
+        max-width: 100%;
+        position: relative;
+        min-height: 500px;
+        /* height: 100vh; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  } 
 </style>
 <script>
   (function() {
-
+    // 等待 DOM 加载完成
+    function initScrollDetection() {
+      // 获取所有右侧图片项和左侧文案项
+      const rightImageItems = document.querySelectorAll('.gsap-product-right-item-image');
+      const leftItems = document.querySelectorAll('.gsap-product-left-item');
+      
+      if (rightImageItems.length === 0 || leftItems.length === 0) return;
+      
+      // 当前激活的 index
+      let currentActiveIndex = -1;
+      
+      // 检查元素是否完全在视口内
+      function isFullyInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight || document.documentElement.clientHeight;
+        const windowWidth = window.innerWidth || document.documentElement.clientWidth;
+        
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= windowHeight &&
+          rect.right <= windowWidth
+        );
+      }
+      
+      // 更新 active class
+      function updateActiveClass(index) {
+        // 如果 index 没有改变，不需要更新
+        if (index === currentActiveIndex) return;
+        
+        // 获取 .gsap-product-box 元素
+        const productBox = document.querySelector('.gsap-product-box');
+        
+        // 移除所有 active class
+        leftItems.forEach((item) => {
+          item.classList.remove('active');
+        });
+        
+        // 如果 index 有效，添加 active class
+        if (index >= 0 && index < leftItems.length) {
+          const activeItem = leftItems[index];
+          activeItem.classList.add('active');
+          currentActiveIndex = index;
+          
+          // 获取对应 index 位置的 data-background 属性
+          let backgroundColor = activeItem.getAttribute('data-background');
+          
+          // 清理背景色值（移除末尾的分号、空格等）
+          if (backgroundColor) {
+            backgroundColor = backgroundColor.trim().replace(/;$/, '');
+          }
+          
+          // 如果存在背景色，设置到 .gsap-product-box
+          if (backgroundColor && productBox) {
+            productBox.style.backgroundColor = backgroundColor;
+          }
+        }
+      }
+      
+      // 检查当前哪个图片完全在视口内
+      function checkActiveItem() {
+        let activeIndex = -1;
+        let minDistance = Infinity;
+        const viewportCenter = window.innerHeight / 2;
+        
+        rightImageItems.forEach((imageItem, index) => {
+          if (isFullyInViewport(imageItem)) {
+            // 计算图片中心到视口中心的距离
+            const rect = imageItem.getBoundingClientRect();
+            const itemCenter = rect.top + rect.height / 2;
+            const distance = Math.abs(itemCenter - viewportCenter);
+            
+            // 选择距离视口中心最近的图片
+            if (distance < minDistance) {
+              minDistance = distance;
+              activeIndex = index;
+            }
+          }
+        });
+        
+        // 如果找到完全在视口内的图片，更新 active class
+        if (activeIndex >= 0) {
+          updateActiveClass(activeIndex);
+        }
+      }
+      
+      // 使用 Intersection Observer 监听图片是否完全在视口内
+      const observerOptions = {
+        root: null, // 使用视口作为根
+        rootMargin: '0px',
+        threshold: 1.0 // 完全在视口内时触发
+      };
+      
+      const observer = new IntersectionObserver((entries) => {
+        // 收集所有完全在视口内的图片
+        const fullyVisibleItems = [];
+        
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && entry.intersectionRatio === 1.0) {
+            const imageItem = entry.target;
+            const index = Array.from(rightImageItems).indexOf(imageItem);
+            
+            if (index >= 0) {
+              fullyVisibleItems.push({ index, element: imageItem });
+            }
+          }
+        });
+        
+        // 如果有多个图片完全在视口内，选择最接近视口中心的
+        if (fullyVisibleItems.length > 0) {
+          const viewportCenter = window.innerHeight / 2;
+          let activeIndex = fullyVisibleItems[0].index;
+          let minDistance = Infinity;
+          
+          fullyVisibleItems.forEach(({ index, element }) => {
+            const rect = element.getBoundingClientRect();
+            const itemCenter = rect.top + rect.height / 2;
+            const distance = Math.abs(itemCenter - viewportCenter);
+            
+            if (distance < minDistance) {
+              minDistance = distance;
+              activeIndex = index;
+            }
+          });
+          
+          updateActiveClass(activeIndex);
+        }
+      }, observerOptions);
+      
+      // 观察所有右侧图片
+      rightImageItems.forEach((imageItem) => {
+        observer.observe(imageItem);
+      });
+      
+      // 监听滚动事件作为备用方案（Intersection Observer 可能在某些情况下不够精确）
+      let ticking = false;
+      function onScroll() {
+        if (!ticking) {
+          window.requestAnimationFrame(() => {
+            checkActiveItem();
+            ticking = false;
+          });
+          ticking = true;
+        }
+      }
+      
+      window.addEventListener('scroll', onScroll, { passive: true });
+      
+      // 初始化：设置第一个 active item 的背景色
+      const firstActiveItem = document.querySelector('.gsap-product-left-item.active');
+      if (firstActiveItem) {
+        let backgroundColor = firstActiveItem.getAttribute('data-background');
+        const productBox = document.querySelector('.gsap-product-box');
+        
+        // 清理背景色值（移除末尾的分号、空格等）
+        if (backgroundColor) {
+          backgroundColor = backgroundColor.trim().replace(/;$/, '');
+        }
+        
+        if (backgroundColor && productBox) {
+          productBox.style.backgroundColor = backgroundColor;
+        }
+      }
+      
+      // 初始检查
+      checkActiveItem();
+      
+      // 监听窗口大小变化
+      window.addEventListener('resize', () => {
+        checkActiveItem();
+      });
+    }
+    
+    // 初始化
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initScrollDetection);
+    } else {
+      initScrollDetection();
+    }
   })();
 </script>
 {% schema %}
 {
   "name": "Giiker Gsap New",
+  "class": "giiker-product-gsap-new",
   "settings": [
   ],
   "blocks": [
