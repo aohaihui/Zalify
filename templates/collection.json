@@ -262,6 +262,7 @@
     },
     "05021a69-e0ca-4aa4-bdf4-1d5879c04fdd": {
       "type": "featured-collection",
+      "disabled": true,
       "settings": {
         "title": "Replacement",
         "subtitle": "",
