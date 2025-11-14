@@ -1,0 +1,30 @@
+.collection-page-giiker, .site-filter-giiker{
+  padding: var(--header-padding) var(--site-horizontal-padding);
+  box-sizing: border-box;
+}
+#main-collection-product-grid{
+  margin-top: 100px;
+}
+.site-filter-giiker .facets__form{
+  display: flex;
+  justify-content: end;
+}
+.mount-products .site-filter-handle-holder{
+  display: none;
+}
+.site-filter-giiker .collection-filters__item{
+  width: max-content;
+
+  .collection-filters__field{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .facets__heading{
+      margin-bottom: 0;
+      margin-right: 20px;
+    }
+    .select__select{
+      margin-top: 0;
+    }
+  }
+}

@@ -35,11 +35,84 @@
       const title = slide.getAttribute('data-title');
       return title && title.trim() !== '' ? title : null;
     });
-    console.log(titles, 'titles');
     
     let ourStorySwiper;
     
-    // 强制创建所有bullet的函数
+    function centerBullet(bulletElement) {
+      const paginationEl = document.querySelector('#shopify-section-{{ section.id }} .swiper-pagination');
+      if (!paginationEl || !bulletElement) return;
+      
+      const paginationRect = paginationEl.getBoundingClientRect();
+      const paginationWidth = paginationRect.width;
+      const paginationCenter = paginationWidth / 2;
+      
+      const bulletRect = bulletElement.getBoundingClientRect();
+      const bulletWidth = bulletRect.width;
+      const bulletLeftRelative = bulletRect.left - paginationRect.left;
+      const bulletCenterRelative = bulletLeftRelative + bulletWidth / 2;
+      
+      const scrollOffset = bulletCenterRelative - paginationCenter;
+      
+      const targetScrollLeft = paginationEl.scrollLeft + scrollOffset;
+      
+      const maxScrollLeft = paginationEl.scrollWidth - paginationEl.clientWidth;
+      const finalScrollLeft = Math.max(0, Math.min(maxScrollLeft, targetScrollLeft));
+      
+      paginationEl.scrollTo({
+        left: finalScrollLeft,
+        behavior: 'smooth'
+      });
+    }
+    
+    function centerBulletByIndex(slideIndex) {
+      if (slideIndex < 0 || slideIndex >= totalSlides) return;
+      
+      const paginationEl = document.querySelector('#shopify-section-{{ section.id }} .swiper-pagination');
+      if (!paginationEl) return;
+      
+      const allBullets = Array.from(paginationEl.querySelectorAll('.swiper-pagination-bullet'));
+      if (slideIndex < allBullets.length) {
+        const targetBullet = allBullets[slideIndex];
+        if (targetBullet) {
+          centerBullet(targetBullet);
+        }
+      }
+    }
+    
+    function centerSlide(index) {
+      if (!ourStorySwiper || index < 0 || index >= totalSlides) return;
+      
+      const targetSlide = ourStorySwiper.slides[index];
+      if (!targetSlide) return;
+      
+      const containerWidth = ourStorySwiper.width;
+      
+      const wrapperWidth = ourStorySwiper.wrapperEl.scrollWidth;
+      const slideLeft = targetSlide.offsetLeft;
+      const slideWidth = targetSlide.offsetWidth;
+      const containerCenter = containerWidth / 2;
+      let translate = containerCenter - slideLeft - slideWidth / 2;
+      
+      const minTranslate = containerWidth - wrapperWidth;
+      const maxTranslate = 0;
+      
+      translate = Math.max(minTranslate, Math.min(maxTranslate, translate));
+      
+      ourStorySwiper.wrapperEl.style.transition = 'transform 0.5s ease';
+      
+      ourStorySwiper.setTranslate(translate);
+      
+      ourStorySwiper.updateActiveIndex(index);
+      
+      ourStorySwiper.emit('slideChange');
+      
+      setTimeout(function() {
+        if (ourStorySwiper && ourStorySwiper.wrapperEl) {
+          ourStorySwiper.wrapperEl.style.transition = '';
+        }
+      }, 500);
+    }
+    
     function ensureAllBullets() {
       const paginationEl = document.querySelector('#shopify-section-{{ section.id }} .swiper-pagination');
       if (!paginationEl) return;
@@ -47,7 +120,6 @@
       const bullets = paginationEl.querySelectorAll('.swiper-pagination-bullet');
       const currentBulletCount = bullets.length;
       
-      // 如果bullet数量少于slides数量，手动创建缺失的bullet
       if (currentBulletCount < totalSlides) {
         for (let i = currentBulletCount; i < totalSlides; i++) {
           const bullet = document.createElement('span');
@@ -60,9 +132,10 @@
             bullet.innerHTML = '&nbsp;';
           }
           bullet.setAttribute('data-index', i);
-          bullet.addEventListener('click', function() {
+          bullet.addEventListener('click', function(e) {
+            centerBullet(this);
             if (ourStorySwiper) {
-              ourStorySwiper.slideTo(i);
+              centerSlide(i);
             }
           });
           paginationEl.appendChild(bullet);
@@ -78,39 +151,119 @@
         clickable: true,
         dynamicBullets: false,
         renderBullet: function (index, className) {
-          // 确保为所有slides创建bullet
           if (index >= totalSlides) {
             return '';
           }
           if (titles[index]) {
             return '<span class="' + className + '">' + titles[index] + '</span>';
           }
-          // 返回一个不可见但存在的bullet，避免被:empty选择器隐藏
           return '<span class="' + className + '" style="visibility: hidden; pointer-events: none;">&nbsp;</span>';
         },
       },
       on: {
         init: function() {
-          // 初始化后确保所有bullet都存在
           setTimeout(ensureAllBullets, 100);
+          setTimeout(function() {
+            centerBulletByIndex(0);
+          }, 200);
         },
         resize: function() {
-          // 窗口大小变化时重新检查
           setTimeout(ensureAllBullets, 100);
+        },
+        slideChange: function() {
+          const activeIndex = this.activeIndex;
+          if (activeIndex >= 0 && activeIndex < totalSlides) {
+            setTimeout(function() {
+              centerBulletByIndex(activeIndex);
+            }, 100);
+          }
+        },
+        transitionEnd: function() {
+          const activeIndex = this.activeIndex;
+          if (activeIndex >= 0 && activeIndex < totalSlides) {
+            setTimeout(function() {
+              centerBulletByIndex(activeIndex);
+            }, 50);
+          }
+        },
+        slideChangeTransitionEnd: function() {
+          const activeIndex = this.activeIndex;
+          if (activeIndex >= 0 && activeIndex < totalSlides) {
+            setTimeout(function() {
+              centerBulletByIndex(activeIndex);
+            }, 50);
+          }
         }
       }
     });
     
-    // 初始化后立即检查
     setTimeout(ensureAllBullets, 200);
     
-    // 监听窗口大小变化，确保在宽屏时也显示所有bullet
+    function handleSwipeEndForBullet() {
+      if (!ourStorySwiper) return;
+      
+      const containerWidth = ourStorySwiper.width;
+      const containerRect = swiperContainer.getBoundingClientRect();
+      const containerCenter = containerRect.left + containerWidth / 2;
+      
+      let closestSlide = null;
+      let closestDistance = Infinity;
+      
+      for (let i = 0; i < totalSlides; i++) {
+        const slide = ourStorySwiper.slides[i];
+        if (!slide) continue;
+        
+        const slideRect = slide.getBoundingClientRect();
+        const slideCenter = slideRect.left + slideRect.width / 2;
+        const distance = Math.abs(slideCenter - containerCenter);
+        
+        if (distance < closestDistance) {
+          closestDistance = distance;
+          closestSlide = i;
+        }
+      }
+      
+      if (closestSlide !== null && closestSlide >= 0 && closestSlide < totalSlides) {
+        centerBulletByIndex(closestSlide);
+      }
+    }
+    
+    setTimeout(function() {
+      if (ourStorySwiper) {
+        ourStorySwiper.on('touchEnd', function() {
+          setTimeout(handleSwipeEndForBullet, 150);
+        });
+        
+        ourStorySwiper.on('transitionEnd', function() {
+          setTimeout(handleSwipeEndForBullet, 50);
+        });
+      }
+    }, 500);
+    
+    setTimeout(function() {
+      const paginationEl = document.querySelector('#shopify-section-{{ section.id }} .swiper-pagination');
+      if (paginationEl) {
+        paginationEl.addEventListener('click', function(e) {
+          const bullet = e.target.closest('.swiper-pagination-bullet');
+          if (!bullet) return;
+          
+          centerBullet(bullet);
+          
+          const allBullets = Array.from(paginationEl.querySelectorAll('.swiper-pagination-bullet'));
+          const targetIndex = allBullets.indexOf(bullet);
+          
+          if (targetIndex >= 0 && targetIndex < totalSlides) {
+            centerSlide(targetIndex);
+          }
+        });
+      }
+    }, 300);
+    
     let resizeTimer;
     window.addEventListener('resize', function() {
       clearTimeout(resizeTimer);
       resizeTimer = setTimeout(function() {
         ensureAllBullets();
-        // 更新Swiper的pagination状态
         if (ourStorySwiper && ourStorySwiper.pagination) {
           ourStorySwiper.pagination.render();
           ourStorySwiper.pagination.update();

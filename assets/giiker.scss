@@ -2482,14 +2482,14 @@ ease;
     margin-top: 10px;
   }
   .new-product-11-05.site-box-container{
-    margin-top: 100px;
+    margin-top: 80px;
   }
   
 }
 .new-product-11-05.site-box-container{
   background: rgba(255, 211, 150, 0.9922);
   background-image: url('https://cdn.shopify.com/s/files/1/0609/5611/5196/files/Vector_27_2.png?v=1762371066');
-  background-position: center 100px;
+  background-position: center 80px;
   background-repeat: repeat-x;
   background-size: 100% 100px;
   position: relative;
@@ -2614,7 +2614,7 @@ ease;
   }
   .new-product-11-05.site-box-container{
     padding-top: 116px !important;
-    background-position: center 11px;
+    background-position: center 0;
   }
   .new-product-11-05 .site-box.box__product-content .site-box-content{
     width: 100%;
@@ -2917,7 +2917,7 @@ ease;
     padding: 0 20px;
     box-sizing: border-box;
     position: relative;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     // &::before{
     //   content: '';
     //   position: absolute;
@@ -3019,7 +3019,7 @@ ease;
         *{
           margin: 0;
           font-size: 32px;
-          line-height: 1.1;
+          line-height: 1.3;
           font-weight: 500;
           font-family: Overlock;
           color: #000;
@@ -3036,6 +3036,15 @@ ease;
       /* position: relative; */
       width: calc(100% - 20%);
       left: 10%;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scroll-behavior: smooth;
+      // 隐藏滚动条但保持滚动功能
+      scrollbar-width: none; // Firefox
+      -ms-overflow-style: none; // IE and Edge
+      &::-webkit-scrollbar {
+        display: none; // Chrome, Safari, Opera
+      }
       &::before{
         content: '';
         position: absolute;
@@ -3076,7 +3085,7 @@ ease;
     width: 100%;
     padding: 0 20px;
     box-sizing: border-box;
-    margin-top: -40px;
+    margin-top: 20px;
     img{
       max-width: 100%;
     }
@@ -3166,7 +3175,7 @@ ease;
           *{
             margin: 0;
             font-size: 18px;
-            line-height: 1.1;
+            line-height: 1.3;
             font-weight: 400;
             font-family: Overlock;
             color: #000;
@@ -3253,7 +3262,7 @@ ease;
         max-width: 100%;
         *{
           font-size: 18px; 
-          line-height: 1.1;
+          line-height: 1.3;
           font-weight: 400;
           font-family: Overlock;
           color: #000;
@@ -3330,8 +3339,16 @@ ease;
        .swiper-pagination{
         left: 20px;
         width: calc(100% - 40px);
+        overflow: hidden;
+        background-image: linear-gradient(to right, #000, #000);
+        background-size: 100% 2px;
+        background-position: center;
+        background-repeat: no-repeat;
+        &::before{
+          display: none;
+        }
         .swiper-pagination-bullet{
-
+          margin-right: 60px;
         }
        }
        .our-story-swiper{
@@ -3346,10 +3363,10 @@ ease;
     }
   } 
   .giiker-about-us-step-content{
+    padding: 0 20px;
+    padding-bottom: 50px;
     .giiker-about-us-step-list{
       width: 100%;
-      padding-left: 20px;
-      padding-right: 20px;
       box-sizing: border-box;
     }
     .step-swiper{
@@ -3396,43 +3413,12 @@ ease;
             padding-bottom: 30px;
             *{
               font-size: 16px;
-              line-height: 1.2;
+              line-height: 1.3;
             }
           }
         }
       }
-      .bottom-image-tag{
-        flex-direction: column;
-        border-radius: 40px 40px 0 0;
-        overflow: hidden;
-        border: 2px solid #000;
-        .giiker-about-us-our-story-item-image{
-          width: 100%;
-          height: auto;
-          img{
-            height: 100%;
-            width: 100%;
-          }
-        }
-        .giiker-about-us-our-story-item-content{
-          padding: 10px;
-          .giiker-about-us-our-story-item-content-title{
-            width: 100%;
-            *{
-              font-size: 24px;
-              line-height: 1.2;
-            }
-          }
-          .giiker-about-us-our-story-item-content-detail{
-            width: 100%;
-            padding-bottom: 30px;
-            *{
-              font-size: 16px;
-              line-height: 1.2;
-            }
-          }
-        } 
-      }
+
 
       .swiper-pagination{
         left: 20px;
@@ -3445,6 +3431,38 @@ ease;
           font-size: 16px;
         }
       }
+    }
+    .bottom-image-tag{
+      flex-direction: column;
+      border-radius: 40px 40px 0 0;
+      overflow: hidden;
+      border: 2px solid #000;
+      .giiker-about-us-our-story-item-image{
+        width: 100%;
+        height: auto;
+        img{
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .giiker-about-us-our-story-item-content{
+        padding: 10px;
+        .giiker-about-us-our-story-item-content-title{
+          width: 100%;
+          *{
+            font-size: 24px;
+            line-height: 1.2;
+          }
+        }
+        .giiker-about-us-our-story-item-content-detail{
+          width: 100%;
+          padding-bottom: 30px;
+          *{
+            font-size: 16px;
+            line-height: 1.3;
+          }
+        }
+      } 
     }
   } 
 }
