@@ -2918,17 +2918,17 @@ ease;
     box-sizing: border-box;
     position: relative;
     padding-bottom: 100px;
-    &::before{
-      content: '';
-      position: absolute;
-      bottom: 50px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 842px;
-      max-width: 100%;
-      height: 4px;
-      background: rgba(0, 0, 0, 1);
-    }
+    // &::before{
+    //   content: '';
+    //   position: absolute;
+    //   bottom: 50px;
+    //   left: 50%;
+    //   transform: translateX(-50%);
+    //   width: 842px;
+    //   max-width: 100%;
+    //   height: 4px;
+    //   background: rgba(0, 0, 0, 1);
+    // }
     img{
       max-width: 100%;
     }
@@ -3069,6 +3069,7 @@ ease;
     margin: 0;
     margin-top: 50px;
     padding: 0 20px;
+    display: none;
     *{
       margin: 0;
       font-size: 72px;
@@ -3086,7 +3087,6 @@ ease;
     max-width: 100%;
     margin: 0 auto;
     padding-top: 80px;
-    padding-bottom: 120px;
     
     .giiker-about-us-our-story-item{
       display: flex;
@@ -3155,66 +3155,7 @@ ease;
         }
       }
     }
-    .bottom-content-tag{
-      margin: 10px 0;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .bottom-image-tag{
-      width: 100%;
-      display: flex;
-      flex-direction: row-reverse;
-      align-items: center;
-      background: #fff;
-      border-radius: 0 100px 100px 0;
-      overflow: hidden;
-      .giiker-about-us-our-story-item-image{
-        height: 383px;
-        width: 575px;
-        img{
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-      }
-      .giiker-about-us-our-story-item-content{
-        flex: 1;
-        height: 100%; 
-        padding: 0 24px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        .giiker-about-us-our-story-item-content-title{
-          margin: 0;
-          width: 306px;
-          max-width: 100%;
-          *{
-            color: rgba(255, 206, 0, 1);
-            font-size: 32px;
-            line-height: 1.1;
-            font-weight: 700;
-            font-family: Overlock;
-            margin: 0;
-          }
-        }
-        .giiker-about-us-our-story-item-content-detail{
-          margin: 0;
-          margin-top: 15px;
-          width: 306px;
-          max-width: 100%;
-          *{
-            font-size: 18px; 
-            line-height: 1.1;
-            font-weight: 400;
-            font-family: Overlock;
-            color: #000;
-            margin: 0;
-          }
-        }
-      }
-    }
+
     .swiper-pagination{
       bottom: unset;
       top: 0;
@@ -3237,6 +3178,69 @@ ease;
         -webkit-text-stroke: 1px #000;
         -moz-text-stroke: 1px #000;
         text-stroke: 1px #000;
+      }
+    }
+  }
+  .bottom-content-tag{
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 120px;
+  }
+  .bottom-image-tag{
+    max-width: 100%;
+    width: 946px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background: #fff;
+    border-radius: 0 100px 100px 0;
+    overflow: hidden;
+    .giiker-about-us-our-story-item-image{
+      height: 383px;
+      width: 575px;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .giiker-about-us-our-story-item-content{
+      flex: 1;
+      height: 100%; 
+      padding: 0 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .giiker-about-us-our-story-item-content-title{
+        margin: 0;
+        width: 306px;
+        max-width: 100%;
+        *{
+          color: rgba(255, 206, 0, 1);
+          font-size: 32px;
+          line-height: 1.1;
+          font-weight: 700;
+          font-family: Overlock;
+          margin: 0;
+        }
+      }
+      .giiker-about-us-our-story-item-content-detail{
+        margin: 0;
+        margin-top: 15px;
+        width: 306px;
+        max-width: 100%;
+        *{
+          font-size: 18px; 
+          line-height: 1.1;
+          font-weight: 400;
+          font-family: Overlock;
+          color: #000;
+          margin: 0;
+        }
       }
     }
   }
