@@ -229,7 +229,10 @@
       ],
       "name": "Giiker about us step",
       "settings": {
-        "background_color": "#62a7c9"
+        "background_color": "#62a7c9",
+        "image_bottom": "shopify://shop_images/2J2A6066_2.png",
+        "title_bottom": "<p>Then it’s ready—for your family.</p>",
+        "detail_bottom": "<p>After a year or more of thoughtful work, the final toy is in your hands—ready to inspire solo focus, shared laughs, and smart play anytime, anywhere.</p>"
       }
     }
   },
