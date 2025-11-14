@@ -30,24 +30,92 @@
   document.addEventListener('DOMContentLoaded', function() {
     const swiperContainer = document.querySelector('#shopify-section-{{ section.id }} .our-story-swiper');
     const slides = swiperContainer.querySelectorAll('.swiper-slide');
+    const totalSlides = slides.length;
     const titles = Array.from(slides).map(slide => {
       const title = slide.getAttribute('data-title');
       return title && title.trim() !== '' ? title : null;
     });
+    console.log(titles, 'titles');
     
-    const ourStorySwiper = new Swiper('#shopify-section-{{ section.id }} .our-story-swiper', {
+    let ourStorySwiper;
+    
+    // 强制创建所有bullet的函数
+    function ensureAllBullets() {
+      const paginationEl = document.querySelector('#shopify-section-{{ section.id }} .swiper-pagination');
+      if (!paginationEl) return;
+      
+      const bullets = paginationEl.querySelectorAll('.swiper-pagination-bullet');
+      const currentBulletCount = bullets.length;
+      
+      // 如果bullet数量少于slides数量，手动创建缺失的bullet
+      if (currentBulletCount < totalSlides) {
+        for (let i = currentBulletCount; i < totalSlides; i++) {
+          const bullet = document.createElement('span');
+          bullet.className = 'swiper-pagination-bullet';
+          if (titles[i]) {
+            bullet.textContent = titles[i];
+          } else {
+            bullet.style.visibility = 'hidden';
+            bullet.style.pointerEvents = 'none';
+            bullet.innerHTML = '&nbsp;';
+          }
+          bullet.setAttribute('data-index', i);
+          bullet.addEventListener('click', function() {
+            if (ourStorySwiper) {
+              ourStorySwiper.slideTo(i);
+            }
+          });
+          paginationEl.appendChild(bullet);
+        }
+      }
+    }
+    
+    ourStorySwiper = new Swiper('#shopify-section-{{ section.id }} .our-story-swiper', {
       slidesPerView: 'auto',
       spaceBetween: 40,
       pagination: {
         el: '#shopify-section-{{ section.id }} .swiper-pagination',
         clickable: true,
+        dynamicBullets: false,
         renderBullet: function (index, className) {
+          // 确保为所有slides创建bullet
+          if (index >= totalSlides) {
+            return '';
+          }
           if (titles[index]) {
             return '<span class="' + className + '">' + titles[index] + '</span>';
           }
-          return '<span class="' + className + '" style="display: none;"></span>';
+          // 返回一个不可见但存在的bullet，避免被:empty选择器隐藏
+          return '<span class="' + className + '" style="visibility: hidden; pointer-events: none;">&nbsp;</span>';
         },
       },
+      on: {
+        init: function() {
+          // 初始化后确保所有bullet都存在
+          setTimeout(ensureAllBullets, 100);
+        },
+        resize: function() {
+          // 窗口大小变化时重新检查
+          setTimeout(ensureAllBullets, 100);
+        }
+      }
+    });
+    
+    // 初始化后立即检查
+    setTimeout(ensureAllBullets, 200);
+    
+    // 监听窗口大小变化，确保在宽屏时也显示所有bullet
+    let resizeTimer;
+    window.addEventListener('resize', function() {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(function() {
+        ensureAllBullets();
+        // 更新Swiper的pagination状态
+        if (ourStorySwiper && ourStorySwiper.pagination) {
+          ourStorySwiper.pagination.render();
+          ourStorySwiper.pagination.update();
+        }
+      }, 250);
     });
   });
 </script>
