@@ -3515,10 +3515,12 @@ ease;
   width: 100%;
   min-height: 100vh;
 }
+#shopify-section-home_slideshow .site-box{
+  float: right;
+}
 .site-box {
   display: flex;
   position: relative;
-  float: left;
   overflow: hidden;
   background-color: #fff; }
   @media screen and (min-width: 769px) and (orientation: landscape) {
@@ -4430,10 +4432,12 @@ ease;
       margin-bottom: 70px;
       text-align: left; }
     .site-box.box__slideshow-split .slideshow-item .title {
-      font-size: 5rem;
-      font-size: 50px;
-      line-height: 1.125;
+      font-size: 72px;
+      font-family: "Oslla";
+      font-weight: 400;
+      line-height: 1.2;
       margin-bottom: 0;
+      color: #fff;
       text-align: left; }
     .site-box.box__slideshow-split .slideshow-item .subtitle {
       /*         @include font-quote(); */
@@ -4451,7 +4455,7 @@ ease;
       position: fixed;
       width: 50%;
       height: 100vh;
-      right: 0;
+      left: 0;
       top: 0; }
       .site-box.box__slideshow-split .slideshow-item .site-box-background-container > div {
         position: absolute;
@@ -4478,7 +4482,7 @@ ease;
     .site-box.box__slideshow-split.back-to-normal .site-box-background-container {
       position: absolute;
       width: 100%;
-      right: -100%; }
+      left: -100%; }
     @media screen and (max-width: 1024px) {
       .site-box.box__slideshow-split .title {
         transform: none !important; }

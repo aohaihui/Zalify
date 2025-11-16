@@ -1304,13 +1304,29 @@ console.log('function 进来');
                 }, 1e3))
             },
             mount: function(flick) {
-                console.log('mount 进来 这个');
+                console.log('mount 进来 这个方法');
                 var $slider = $2(".box__slideshow-split")
                   , $slides = $slider.find(".slideshow-item")
                   , $slidesMedia = $slider.find(".site-box-background-container").children("div")
                   , slidesBlackArray = [];
-                currentScroll = $2(window).scrollTop(),
-                sliderI = Math.min(Math.ceil(currentScroll / $2(window).height()), $slides.length - 1),
+                
+                // 检查滑块是否存在
+                if ($slider.length === 0) {
+                    console.log('未找到 .box__slideshow-split 元素');
+                    return;
+                }
+                
+                // 获取模块的位置
+                var $section = $2("#shopify-section-home_slideshow");
+                var sectionTop = $section.length > 0 ? $section.offset().top : 0;
+                
+                
+                // 计算相对于模块的滚动位置
+                currentScroll = $2(window).scrollTop();
+                var relativeScroll = Math.max(0, currentScroll - sectionTop);
+                
+                
+                sliderI = Math.min(Math.ceil(relativeScroll / $2(window).height()), $slides.length - 1),
                 sliderJ = sliderI - 1,
                 sliderT = $slides.length,
                 flick && this._mountFlickity(),
@@ -1339,25 +1355,51 @@ console.log('function 进来');
                     slidesBlackArray.push($2(this).find(".site-box-black-overlay"))
                 }),
                 $2(window).on("scroll.split-slider", function(e) {
-                    if (currentScroll < $2(window).scrollTop())
-                        $slides.eq(sliderI + 1).length > 0 && $2(window).scrollTop() + $2(window).height() >= $slides.eq(sliderI + 1).offset().top ? (sliderI != 0 && ($slidesMedia.eq(sliderI).css("clip", "rect(0 " + Math.ceil($2(window).width() / 2) + "px " + $2(window).height() + "px 0)"),
-                        slidesBlackArray[sliderJ] && slidesBlackArray[sliderJ].css("opacity", .5)),
-                        sliderJ = sliderI,
-                        sliderI++,
-                        down = !0) : $2(window).scrollTop() + $2(window).height() >= $slider.height() && !$slider.hasClass("back-to-normal") && ($slider.addClass("back-to-normal"),
-                        $slidesMedia.eq(sliderI).css("clip", "rect(0 " + Math.ceil($2(window).width() / 2) + "px " + $2(window).height() + "px 0)"));
-                    else if ($slides.eq(sliderI).length > 0 && $slides.eq(sliderI - 1).length > 0 && $2(window).scrollTop() + $2(window).height() < $slides.eq(sliderI).offset().top) {
+                    var currentWindowScroll = $2(window).scrollTop();
+                    var relativeCurrentScroll = Math.max(0, currentScroll - sectionTop);
+                    var relativeNewScroll = Math.max(0, currentWindowScroll - sectionTop);
+                    
+                    
+                    // 只有当滚动到模块位置时才触发动画
+                    if (currentWindowScroll < sectionTop) {
+                        $slider.addClass("back-to-normal")
+                        return;
+                    }
+                    
+                    if (relativeCurrentScroll < relativeNewScroll) {
+                        
+                        if ($slides.eq(sliderI + 1).length > 0 && currentWindowScroll + $2(window).height() >= $slides.eq(sliderI + 1).offset().top) {
+                            console.log('切换到下一个 slide:', sliderI + 1);
+                            if (sliderI != 0) {
+                                $slidesMedia.eq(sliderI).css("clip", "rect(0 " + Math.ceil($2(window).width() / 2) + "px " + $2(window).height() + "px 0)");
+                                slidesBlackArray[sliderJ] && slidesBlackArray[sliderJ].css("opacity", .5);
+                            }
+                            sliderJ = sliderI;
+                            sliderI++;
+                            down = !0;
+                        } 
+                        else if (relativeNewScroll + $2(window).height() >= $slider.height() && !$slider.hasClass("back-to-normal")) {
+                            $slider.addClass("back-to-normal");
+                            $slidesMedia.eq(sliderI).css("clip", "rect(0 " + Math.ceil($2(window).width() / 2) + "px " + $2(window).height() + "px 0)");
+                        }
+                        else {
+                        }
+                    }
+                    else if ($slides.eq(sliderI).length > 0 && $slides.eq(sliderI - 1).length > 0 && currentWindowScroll + $2(window).height() < $slides.eq(sliderI).offset().top) {
                         var stupid = $slidesMedia.eq(sliderI).hasClass("obs") ? 1 : 0;
                         $slidesMedia.eq(sliderI).css("clip", "rect(0 " + Math.ceil($2(window).width() / 2) + "px " + stupid + "px 0)"),
                         slidesBlackArray[sliderJ] && slidesBlackArray[sliderJ].css("opacity", 0),
                         sliderI--,
                         sliderJ = sliderI - 1,
-                        down = !1
-                    } else
-                        $2(window).scrollTop() + $2(window).height() <= $slider.height() && $slider.hasClass("back-to-normal") && $slider.removeClass("back-to-normal");
+                        down = !1;
+                    } 
+                    if (relativeNewScroll + $2(window).height() <= $slider.height() && $slider.hasClass("back-to-normal")) {
+                        $slider.removeClass("back-to-normal");
+                    }
                     if (!$slider.hasClass("back-to-normal")) {
-                        var scrollValue = Math.ceil($2(window).scrollTop() - $2(window).height() * sliderJ)
+                        var scrollValue = Math.ceil(relativeNewScroll - $2(window).height() * sliderJ)
                           , stupid = $slidesMedia.eq(sliderI).hasClass("obs") ? 1 : 0;
+                        
                         $slidesMedia.eq(sliderI).css("clip", "rect(0 " + Math.ceil($2(window).width() / 2) + "px " + Math.max(stupid, scrollValue) + "px 0)"),
                         slidesBlackArray[sliderJ] && slidesBlackArray[sliderJ].css("opacity", Math.ceil(scrollValue * 50 / $2(window).height()) / 100);
                         var scrollFactor = Math.round($2(window).height() / 6);
@@ -1370,7 +1412,7 @@ console.log('function 进来');
                         $slides.eq(sliderI).find(".subtitle").css("transform", "translateY(" + (Math.ceil(scrollValue * (scrollFactor * .5) / $2(window).height()) - scrollFactor * .5) + "px)"),
                         $slides.eq(sliderI).find(".button").css("transform", "translateY(" + (Math.ceil(scrollValue * (scrollFactor * .25) / $2(window).height()) - scrollFactor * .25) + "px)")
                     }
-                    currentScroll = $2(window).scrollTop()
+                    currentScroll = currentWindowScroll;
                 }).trigger("scroll.split-slider"),
                 $2(window).on("resize.split-slider", window.debounce(function() {
                     this.unmount(),
