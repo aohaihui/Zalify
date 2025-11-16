@@ -229,8 +229,21 @@
                 src="https://petcube.com/images/sections/product-tracker-elevate-connection/phone-mask.png"></div>
           </div> {% endcomment %}
       {% for block in section.blocks %}
+        {%- liquid
+          assign video_url = ''
+          if block.settings.video != blank
+            assign video_url = block.settings.video.url
+            if video_url != blank
+              unless video_url contains 'http'
+                if video_url contains '//'
+                  assign video_url = video_url | prepend: 'https:'
+                endif
+              endunless
+            endif
+          endif
+        -%}
         <div id="{{ forloop.index }}" class="phone-video"
-            data-full-video-url="{{ block.settings.video.url }}"
+            {% if video_url != blank %}data-full-video-url="{{ video_url }}"{% endif %}
             >
             {{ block.settings.video | video_tag: loading: 'eager', fetchpriority: 'high', decoding: 'async', class: 'video-tag lazyloaded', playsinline: true, autoplay: true, muted: true, loop: true }}
             <div class="phone-mask">
@@ -778,6 +791,28 @@
 
         initDraggableUserVideos();
 
+        // 从 video 元素中提取 URL 并设置到 data-full-video-url
+        $section.find('.phone-video').each(function() {
+          var $phoneVideo = $(this);
+          var videoUrl = $phoneVideo.data('full-video-url');
+          
+          // 如果 data-full-video-url 为空或只有域名，从 video 元素中提取
+          if (!videoUrl || videoUrl === 'https://cdn.shopify.com' || videoUrl.indexOf('https://cdn.shopify.com') === 0 && videoUrl.length < 30) {
+            var $video = $phoneVideo.find('video');
+            if ($video.length > 0) {
+              var $source = $video.find('source').first();
+              if ($source.length > 0) {
+                videoUrl = $source.attr('src');
+              } else {
+                videoUrl = $video.attr('src');
+              }
+              if (videoUrl) {
+                $phoneVideo.attr('data-full-video-url', videoUrl);
+              }
+            }
+          }
+        });
+
         $section.on('click', '.user-videos .phone-video', function () {
           if (isMouseMoved) {
             return;
@@ -789,7 +824,24 @@
             let videoWidth = $(window).width() < 640 ? 607 : 1080,
               videoHeight = $(window).width() < 640 ? 1080 : 911;
 
-            window.VideoPopup.play($(this).data('full-video-url'), videoWidth, videoHeight);
+            var videoUrl = $(this).data('full-video-url');
+            
+            // 如果还是没有 URL，尝试从 video 元素中获取
+            if (!videoUrl || videoUrl === 'https://cdn.shopify.com') {
+              var $video = $(this).find('video');
+              if ($video.length > 0) {
+                var $source = $video.find('source').first();
+                if ($source.length > 0) {
+                  videoUrl = $source.attr('src');
+                } else {
+                  videoUrl = $video.attr('src');
+                }
+              }
+            }
+
+            if (videoUrl) {
+              window.VideoPopup.play(videoUrl, videoWidth, videoHeight);
+            }
           }
         });
 

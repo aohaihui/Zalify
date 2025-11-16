@@ -258,7 +258,7 @@
                                       {%- endif -%}
                                     {%- endif -%}
                                   {%- endfor -%}
-                                  <span aria-hidden="true" style="{% if color_swatch_image != blank %} background-image: url({{ color_swatch_image | image_url: width: 100, height: 100 }}); {% else %} background-color: {{ value | escape | replace: ' ', '' | downcase }}; {% endif %}"></span>
+                                  <span aria-hidden="true" style="{% if color_swatch_image != blank %} background-image: url({{ color_swatch_image | image_url: width: 500, height: 500 }}); {% else %} background-color: {{ value | escape | replace: ' ', '' | downcase }}; {% endif %}"></span>
                                   {% comment %} {{ value }} {% endcomment %}
                                 {%- else -%}
                                   {{ value }}
@@ -554,38 +554,55 @@
                   
                   collapseToggles.forEach(function(toggle) {
                     toggle.addEventListener('click', function() {
-                      const item = this.closest('.Collapse-faq-item');
+                      const toggleBtn = this; // 保存 this 引用
+                      const item = toggleBtn.closest('.Collapse-faq-item');
                       const answer = item.querySelector('.Collapse-faq-item-answer');
-                      const isActive = this.classList.contains('active');
+                      const isActive = toggleBtn.classList.contains('active');
                       
-                      // 关闭所有其他项（可选：如果只允许一个展开，取消下面这段的注释）
-                      // document.querySelectorAll('#shopify-section-{{ section.id }} .Collapse-faq-item-question').forEach(function(otherToggle) {
-                      //   if (otherToggle !== this) {
-                      //     const otherAnswer = otherToggle.closest('.Collapse-faq-item').querySelector('.Collapse-faq-item-answer');
-                      //     otherToggle.classList.remove('active');
-                      //     otherAnswer.style.height = '0px';
-                      //     otherAnswer.classList.remove('active');
-                      //   }
-                      // }, this);
+                      // 如果正在动画中，忽略点击（通过检查是否有过渡样式）
+                      if (answer.dataset.animating === 'true') {
+                        return;
+                      }
+                      
+                      // 标记动画开始
+                      answer.dataset.animating = 'true';
                       
                       if (isActive) {
                         // 收起
-                        const currentHeight = answer.scrollHeight;
-                        answer.style.height = currentHeight + 'px';
+                        // 如果当前是 auto，先获取实际高度
+                        let currentHeight = answer.scrollHeight;
+                        if (answer.style.height === 'auto' || answer.style.height === '') {
+                          answer.style.height = currentHeight + 'px';
+                          // 强制重排
+                          answer.offsetHeight;
+                          currentHeight = answer.scrollHeight;
+                        } else {
+                          // 如果已经有具体高度值，解析它
+                          currentHeight = parseInt(answer.style.height) || answer.scrollHeight;
+                        }
+                        
+                        // 设置过渡结束处理
+                        const transitionEndHandler = function() {
+                          answer.style.height = '';
+                          toggleBtn.classList.remove('active');
+                          answer.classList.remove('active');
+                          answer.dataset.animating = 'false';
+                        };
+                        answer.addEventListener('transitionend', transitionEndHandler, { once: true });
+                        
                         // 强制重排，确保高度设置生效
                         answer.offsetHeight;
                         // 使用 requestAnimationFrame 确保流畅动画
                         requestAnimationFrame(function() {
                           requestAnimationFrame(function() {
                             answer.style.height = '0px';
-                            this.classList.remove('active');
-                            answer.classList.remove('active');
-                          }.bind(this));
+                          });
                         });
                       } else {
                         // 展开
-                        this.classList.add('active');
+                        toggleBtn.classList.add('active');
                         answer.classList.add('active');
+                        
                         // 先设置为 auto 来获取实际高度
                         answer.style.height = 'auto';
                         const targetHeight = answer.scrollHeight;
@@ -605,9 +622,9 @@
                           if (answer.classList.contains('active')) {
                             answer.style.height = 'auto';
                           }
-                          answer.removeEventListener('transitionend', transitionEndHandler);
+                          answer.dataset.animating = 'false';
                         };
-                        answer.addEventListener('transitionend', transitionEndHandler);
+                        answer.addEventListener('transitionend', transitionEndHandler, { once: true });
                       }
                     });
                   });

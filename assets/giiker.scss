@@ -124,13 +124,20 @@ body{
 }
 .giiker-home-image-video{
   width: 100%;
+  height: calc(100vh - 114px);
+  background: #000;
+  .giiker-home-image{
+    height: 100%;
+  }
   img{
     width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
   video{
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    object-fit: contain;
+    height: 100%;
   }
 }
 .giiker-home-text-image-container{
@@ -350,7 +357,7 @@ body{
     text-align: center;
     *{
       font-size: 36px;
-      line-height: 1;
+      line-height: 1.5;
       font-weight: 500;
       font-family: Overlock;
       color: #000;
@@ -609,7 +616,7 @@ body{
     }
     
     .awards-marquee-content {
-      animation-duration: 25s;
+      animation-duration: 10s;
     }
   }
   
@@ -626,7 +633,7 @@ body{
     }
     
     .awards-marquee-content {
-      animation-duration: 30s;
+      animation-duration: 10s;
     }
     
     .giiker-home-awards-image-item-title {
@@ -645,7 +652,7 @@ body{
     }
     
     .awards-marquee-content {
-      animation-duration: 35s;
+      animation-duration: 10s;
     }
   }
 }
@@ -769,14 +776,12 @@ body{
           a {
             border-radius: 15px;
           }
-        }
+        } 
       }
     }
   }
   
   @media (max-width: 768px) {
-    padding: 0 20px;
-    
     .giiker-home-phone-image-content {
       padding: 60px 20px;
       border-radius: 20px 20px 0 0;
@@ -1419,12 +1424,13 @@ body{
       }
     }
     .giiker-home-text-image-item-detail{
-      margin-top: 20px;
+      margin-top: 10px;
       text-align: center;
+      width: 100%;
       *{
         font-size: 13px;
-        line-height: 1.1;
-        font-weight: 700;
+        line-height: 1.5;
+        font-weight: 500;
       }
     }
     .giiker-home-text-image-item-button{
@@ -1473,8 +1479,9 @@ body{
         }
       }
       .swiper-slide .item-title{
-        font-size: 14px;
-        line-height: 1.2;
+        font-size: 13px;
+        padding: 0 10px;
+        line-height: 1.5;
       }
     }
     .favourite-swiper .swiper-slide{
@@ -1503,7 +1510,7 @@ body{
       margin-top: 10px;
       *{
         font-size: 16px;
-        line-height: 1;
+        line-height: 1.5;
         display: inline;
       }
     }
@@ -1518,6 +1525,7 @@ body{
     }
     .giiker-home-list-image .giiker-home-list-image-item{
       width: calc(50% - 25px);
+      justify-content: right;
       .giiker-home-list-image-item-content-icon{
         width: 100%;
         height: 100px;
@@ -1539,7 +1547,7 @@ body{
         margin-top: 5px;
         *{
           font-size: 16px;
-          line-height: 1;
+          line-height: 1.5;
         }
       }
     }
@@ -1673,7 +1681,7 @@ body{
           margin-bottom: 0;
           *{
             font-size: 14px;
-            line-height: 1.1;
+            line-height: 1.5;
           }
         }
       }
@@ -2384,6 +2392,14 @@ ease;
   }
 }
 @media screen and (max-width: 768px) {
+  .giiker-home-image-video{
+    background: transparent;
+    height: auto;
+    video{
+      height: 100%;
+      object-fit: cover;
+    }
+  }
   .giiker-product-gsap .giiker-product-gsap-content .giiker-product-gsap-content-item .right-content{
     padding:0 ;
     background: transparent;
@@ -2489,7 +2505,7 @@ ease;
 .new-product-11-05.site-box-container{
   background: rgba(255, 211, 150, 0.9922);
   background-image: url('https://cdn.shopify.com/s/files/1/0609/5611/5196/files/Vector_27_2.png?v=1762371066');
-  background-position: center 100px;
+  background-position: center 80px;
   background-repeat: repeat-x;
   background-size: 100% 100px;
   position: relative;
@@ -2600,6 +2616,10 @@ ease;
 }
 
 @media screen and (max-width: 768px) {
+  .new-product-11-05 .product-variant__container .product-variant__item--color{
+    width: 50px;
+    height: 50px;
+  }
   .new-product-11-05 .product-header .product-title{
     font-size: 24px;
     font-weight: 400;
@@ -2614,7 +2634,8 @@ ease;
   }
   .new-product-11-05.site-box-container{
     padding-top: 116px !important;
-    background-position: center 11px;
+    background-position: center 0;
+    margin-top: 60px;
   }
   .new-product-11-05 .site-box.box__product-content .site-box-content{
     width: 100%;
@@ -2777,6 +2798,13 @@ ease;
   .new-product-11-05 .quantity-selector-holder .quantity-selector-holder-text{
     margin-right: 0;
     padding-right: 10px;
+    display: none;
+  }
+  .new-product-11-05 .quantity-selector-holder .qty-button.qty-minus{
+    margin-left: 30px;
+  }
+  .new-product-11-05 .quantity-selector-holder .add-to-cart-button-text{
+    height: 42px;
   }
 }
 
