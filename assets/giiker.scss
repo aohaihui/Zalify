@@ -2510,13 +2510,16 @@ ease;
   
 }
 .new-product-11-05.site-box-container{
-  background: rgba(255, 211, 150, 0.9922);
+  background-color: rgba(255, 211, 150, 0.9922);
   background-image: url('https://cdn.shopify.com/s/files/1/0609/5611/5196/files/Vector_27_2.png?v=1762371066');
   background-position: center 80px;
   background-position: center 80px;
   background-repeat: repeat-x;
   background-size: 100% 100px;
   position: relative;
+}
+.new-product-11-05.site-box-container .site-box{
+  background-color: inherit !important;
 }
 .new-product-11-05 .product-header .product-title{
   font-size: 64px;
@@ -2643,7 +2646,7 @@ ease;
   .new-product-11-05.site-box-container{
     padding-top: 116px !important;
     background-position: center 0;
-    margin-top: 60px;
+    margin-top: 0;
   }
   .new-product-11-05 .site-box.box__product-content .site-box-content{
     width: 100%;
@@ -3313,6 +3316,9 @@ ease;
   .giiker-about-us-text-container{
     padding-top: 100px;
   }
+  .new-product-11-05 .quantity-selector-holder{
+    height: 42px;
+  }
   .site-header .logo img{
     width: 100px;
   }
@@ -3533,8 +3539,9 @@ ease;
   .template-index .shopify-section:nth-child(2n+1) .site-box:not(.box__product-gallery) {
     background-color: white; }
   .shopify-section:not(.mount-slideshow) .site-box {
-    border-right: 1px solid #ededed;
-    border-bottom: 1px solid #ededed; }
+    // border-right: 1px solid #ededed;
+    // border-bottom: 1px solid #ededed;
+   }
   .shopify-section:not(.mount-slideshow):not(.mount-testimonials):not(.mount-products) > .site-box:nth-child(even), .product--section > .site-box:nth-child(even), .template-page .site-box:nth-child(even), .template-article .site-box:nth-child(even), .template-page-contact .site-box:nth-child(even) {
     border-right: none; }
   .site-box.box--no-padding .site-box-content {
