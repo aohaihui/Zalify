@@ -44,6 +44,23 @@
             </div>
           </div>
         </div>
+        {% for block in section.blocks %}
+          <div class="slideshow-item" style="background-color: {{ block.settings.background_color }};">
+            <div class="site-box box--big box--center-align box--column-flow box__slideshow-item active">
+              <div class="site-box-content fix-me-with-margin" style="margin-top: 81px;">
+                <h3 class="title custom-underline inline" style="transform: translateY(0px);">{{ block.settings.title }}</h3>
+                <p class="caption" style="transform: translateY(-213px);">{{ block.settings.detail }}</p>
+              </div>
+              <div class="site-box-background-container">
+                <div class="active" style="clip: rect(0px, 651px, 0px, 0px);">
+                  <span class="site-box-background with-image" aria-hidden="true">
+                    <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.title }}" width="651" height="1278">
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
       </div>
       
       <div class="slider-meta hide lap--show active">
