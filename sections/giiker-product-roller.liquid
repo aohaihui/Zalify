@@ -1,60 +1,24 @@
-<div id="shopify-section-home_slideshow" class="shopify-section mount-slideshow mount-images"
+<div id="shopify-section-home_slideshow" class="shopify-section mount-slideshow mount-images  "
   style="margin-top: -81px;">
-  <div id="section-home_slideshow" class="site-box-container container--fullscreen">
-    <div class="site-box box--bigger box--center-align box--column-flow box--no-padding box__slideshow-split active back-to-normal pc-image"
+  <div id="section-home_slideshow" class="site-box-container container--fullscreen pc-image">
+    <div class="site-box box--bigger box--center-align box--column-flow box--no-padding box__slideshow-split active back-to-normal "
       style="height: auto;">
-      <div class="site-box-content responsive-flickity">
-        <div id="block-1489675770018" class="slideshow-item">
-          <div class="site-box box--big box--center-align box--column-flow box__slideshow-item active">
-            <div class="site-box-content fix-me-with-margin" style="margin-top: 81px;">
-              <h3 class="title custom-underline inline" style="transform: translateY(0px);">Interactive Hints</h3>
-              <p class="caption" style="transform: translateY(-213px);">Get instant feedback with two types of hints, decipher the hints to break the code.</p>
-            </div>
-            <div class="site-box-background-container">
-              <div class="active" style="clip: rect(0px, 651px, 1278px, 0px); opacity: 1;">
-                <span class="site-box-background with-image" aria-hidden="true">
-                  <img src="//www.olive-era.nl/cdn/shop/files/Shop_1_fade_960x.png?v=1722885683" alt=""
-                    srcset="//www.olive-era.nl/cdn/shop/files/Shop_1_fade_600x.png?v=1722885683 480w, //www.olive-era.nl/cdn/shop/files/Shop_1_fade_900x.png?v=1722885683 720w, //www.olive-era.nl/cdn/shop/files/Shop_1_fade_1100x.png?v=1722885683 960w, //www.olive-era.nl/cdn/shop/files/Shop_1_fade_1600x.png?v=1722885683 1440w, //www.olive-era.nl/cdn/shop/files/Shop_1_fade_2100x.png?v=1722885683 1920w"
-                    data-srcset="//www.olive-era.nl/cdn/shop/files/Shop_1_fade_600x.png?v=1722885683 480w, //www.olive-era.nl/cdn/shop/files/Shop_1_fade_900x.png?v=1722885683 720w, //www.olive-era.nl/cdn/shop/files/Shop_1_fade_1100x.png?v=1722885683 960w, //www.olive-era.nl/cdn/shop/files/Shop_1_fade_1600x.png?v=1722885683 1440w, //www.olive-era.nl/cdn/shop/files/Shop_1_fade_2100x.png?v=1722885683 1920w"
-                    data-sizes="auto" class="lazyautosizes lazyloaded" sizes="651px">
-                </span>
-                <span class="site-box-black-overlay" style="opacity: 0;"></span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div id="block-1489661084071" class="slideshow-item">
-          <div class="site-box box--big box--center-align box--column-flow box__slideshow-item active">
-            <div class="site-box-content fix-me-with-margin" style="margin-top: 81px;">
-              <h3 class="title custom-underline inline" style="transform: translateY(0px);">Immersive Sound Effects</h3>
-              <p class="caption" style="transform: translateY(-213px);">With each press and turn, the morse code sound effects will indulge the user in an engaging detective setting.</p>
-            </div>
-            <div class="site-box-background-container">
-              <div class="active" style="clip: rect(0px, 651px, 0px, 0px);">
-                <span class="site-box-background with-image" aria-hidden="true">
-                  <img src="//www.olive-era.nl/cdn/shop/files/Shop_2_fade_960x.png?v=1722885836" alt=""
-                    srcset="//www.olive-era.nl/cdn/shop/files/Shop_2_fade_600x.png?v=1722885836 480w, //www.olive-era.nl/cdn/shop/files/Shop_2_fade_900x.png?v=1722885836 720w, //www.olive-era.nl/cdn/shop/files/Shop_2_fade_1100x.png?v=1722885836 960w, //www.olive-era.nl/cdn/shop/files/Shop_2_fade_1600x.png?v=1722885836 1440w, //www.olive-era.nl/cdn/shop/files/Shop_2_fade_2100x.png?v=1722885836 1920w"
-                    data-srcset="//www.olive-era.nl/cdn/shop/files/Shop_2_fade_600x.png?v=1722885836 480w, //www.olive-era.nl/cdn/shop/files/Shop_2_fade_900x.png?v=1722885836 720w, //www.olive-era.nl/cdn/shop/files/Shop_2_fade_1100x.png?v=1722885836 960w, //www.olive-era.nl/cdn/shop/files/Shop_2_fade_1600x.png?v=1722885836 1440w, //www.olive-era.nl/cdn/shop/files/Shop_2_fade_2100x.png?v=1722885836 1920w"
-                    data-sizes="auto" class="lazyautosizes lazyloaded" sizes="651px">
-                  <noscript><span class="ll-fallback"
-                      style="background-image:url(//www.olive-era.nl/cdn/shop/files/Shop_2_fade_960x.png?v=1722885836)"></span></noscript>
-                </span>
-                <span class="site-box-black-overlay"></span>
-              </div>
-            </div>
-          </div>
-        </div>
+      <div class="site-box-content responsive-flickity ">
         {% for block in section.blocks %}
           <div class="slideshow-item" style="background-color: {{ block.settings.background_color }};">
             <div class="site-box box--big box--center-align box--column-flow box__slideshow-item active">
-              <div class="site-box-content fix-me-with-margin" style="margin-top: 81px;">
+              <div class="site-box-content fix-me-with-margin">
                 <h3 class="title custom-underline inline" >{{ block.settings.title }}</h3>
                 <p class="caption" >{{ block.settings.detail }}</p>
               </div>
               <div class="site-box-background-container">
                 <div class="active" >
                   <span class="site-box-background with-image" aria-hidden="true">
-                    <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.title }}" width="651" height="1278">
+                    <img src="{{ block.settings.image | img_url: 'master' }}"
+                      srcset="{{ block.settings.image | img_url: 'master' }} 1x, {{ block.settings.image | img_url: 'master' | replace: '_1x.', '_2x.' }} 2x"
+                     data-srcset="{{ block.settings.image | img_url: 'master' }} 1x, {{ block.settings.image | img_url: 'master' | replace: '_1x.', '_2x.' }} 2x"
+                     data-sizes="auto" class="lazyautosizes lazyloaded" sizes="{{ block.settings.image.width }}px"
+                      alt="{{ block.settings.title }}" width="{{ block.settings.image.width }}" height="{{ block.settings.image.height }}">
                   </span>
                 </div>
               </div>
@@ -62,23 +26,27 @@
           </div>
         {% endfor %}
       </div>
-      
-      <div class="slider-meta hide lap--show active">
-        <div class="slider-index"><span class="current">1</span> / <span class="total">2</span></div>
-        <div class="slider-nav"><span class="go-prev"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31 10"
-              style="enable-background:new 0 0 31 10; width: 31px; height: 10px;" xml:space="preserve">
-              <polygon points="31,5 25,0 25,4 0,4 0,6 25,6 25,10 "></polygon>
-            </svg></span><span class="go-next"><svg version="1.1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 31 10"
-              style="enable-background:new 0 0 31 10; width: 31px; height: 10px;" xml:space="preserve">
-              <polygon points="31,5 25,0 25,4 0,4 0,6 25,6 25,10 "></polygon>
-            </svg></span></div>
-      </div>
     </div>
 
   </div>
-
+  <div class="section-home_slideshow-swiper mb-image">
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        {% for block in section.blocks %}
+          <div class="swiper-slide">
+            <div class="box">
+              <h3 class="title custom-underline inline" >{{ block.settings.title }}</h3>
+              <p class="caption" >{{ block.settings.detail }}</p>
+            </div>
+            <div class="image-tag">
+              {{ block.settings.image | image_url: width: block.settings.image.width | image_tag: height: block.settings.image.height, fetchpriority: 'high', loading: 'lazy', class: 'image-tag' }}
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
   <style type="text/css">
     @media screen and (min-width: 768px),
     screen and (min-width: 1024px) and (orientation: landscape) {
@@ -116,6 +84,19 @@
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="{{ 'js_plugins.min.js' | asset_url }}"></script>
 <script src="{{ 'roller.js' | asset_url }}"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const swiperProductFeatures = new Swiper('#shopify-section-{{ section.id }} .swiper', {
+      slidesPerView: 1,
+      spaceBetween: 15,
+      loop: true,
+      pagination: {
+        el: '#shopify-section-{{ section.id }} .swiper-pagination',
+        clickable: true,
+      }
+    });
+  });
+</script>
 {% schema %}
 {
 "name": "Giiker Product Roller",
