@@ -227,6 +227,11 @@
         "background_image": "shopify://shop_images/Sku_2_1.png"
       }
     },
+    "giiker_product_roller_bdKzfP": {
+      "type": "giiker-product-roller",
+      "name": "Giiker Product Roller",
+      "settings": {}
+    },
     "giiker_product_recommended_ndfAnB": {
       "type": "giiker-product-recommended",
       "name": "Giiker Product Recommended",
@@ -241,11 +246,6 @@
           "smart-sudoku"
         ]
       }
-    },
-    "giiker_product_roller_bdKzfP": {
-      "type": "giiker-product-roller",
-      "name": "Giiker Product Roller",
-      "settings": {}
     }
   },
   "order": [
@@ -259,7 +259,7 @@
     "giiker_product_basice_UEt668",
     "giiker_product_gsap_inTccQ",
     "giiker_product_icon_yjLqaX",
-    "giiker_product_recommended_ndfAnB",
-    "giiker_product_roller_bdKzfP"
+    "giiker_product_roller_bdKzfP",
+    "giiker_product_recommended_ndfAnB"
   ]
 }
