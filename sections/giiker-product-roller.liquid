@@ -103,22 +103,34 @@
 {
 "name": "Giiker Product Roller",
 "settings": [
-
-{
-"type": "video",
-"id": "video_picker",
-"label": "Video Picker"
-},
-{
-"type": "image_picker",
-"id": "background_top_image",
-"label": "Background Top Image"
-},
-{
-"type": "image_picker",
-"id": "background_bottom_image",
-"label": "Background Bottom Image"
-}
+],
+"blocks": [
+    {
+      "type": "content",
+      "name": "Content",
+      "settings": [
+        {
+          "type": "color",
+          "id": "background_color",
+          "label": "Background Color"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title"
+        },
+        {
+          "type": "text",
+          "id": "detail",
+          "label": "Detail"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        }
+      ]
+    }
 ],
 "presets": [
 {
