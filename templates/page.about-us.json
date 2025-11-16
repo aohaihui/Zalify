@@ -56,8 +56,8 @@
       "type": "giiker-about-us-text",
       "name": "Giiker about us text",
       "settings": {
-        "image": "shopify://shop_images/CEO.png",
-        "image_mobile": "shopify://shop_images/CEO.png",
+        "image": "shopify://shop_images/20251113104336_857_911.png",
+        "image_mobile": "shopify://shop_images/20251113104336_857_911.png",
         "background_color": "#62a7c9",
         "title": "<p>GiiKER (derived from “Geeker\") is a technology company with a dedication to the development of smart and connected edutainment products. </p>",
         "detail": "<p>Alongside with the connected products, GiiKER also develops mobile apps with playful contents to bring a whole new level of user experience.</p>"
@@ -153,7 +153,7 @@
       "settings": {
         "background_color": "#62a7c9",
         "title": "<p>OUR STORY</p>",
-        "bottom_image": "shopify://shop_images/20251111012608_23_267.png",
+        "bottom_image": "shopify://shop_images/20251114161239_866_911.png",
         "title_bottom": "<p>How a GiiKER Toy Comes to Life</p>"
       }
     },
@@ -229,7 +229,11 @@
       ],
       "name": "Giiker about us step",
       "settings": {
-        "background_color": "#62a7c9"
+        "background_color": "#62a7c9",
+        "image_bottom": "shopify://shop_images/2J2A6066_2.png",
+        "image_bottom_mobile": "shopify://shop_images/2J2A6066_2_1.png",
+        "title_bottom": "<p>Then it’s ready—for your family.</p>",
+        "detail_bottom": "<p>After a year or more of thoughtful work, the final toy is in your hands—ready to inspire solo focus, shared laughs, and smart play anytime, anywhere.</p>"
       }
     }
   },

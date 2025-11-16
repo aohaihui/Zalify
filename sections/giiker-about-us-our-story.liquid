@@ -30,24 +30,245 @@
   document.addEventListener('DOMContentLoaded', function() {
     const swiperContainer = document.querySelector('#shopify-section-{{ section.id }} .our-story-swiper');
     const slides = swiperContainer.querySelectorAll('.swiper-slide');
+    const totalSlides = slides.length;
     const titles = Array.from(slides).map(slide => {
       const title = slide.getAttribute('data-title');
       return title && title.trim() !== '' ? title : null;
     });
     
-    const ourStorySwiper = new Swiper('#shopify-section-{{ section.id }} .our-story-swiper', {
+    let ourStorySwiper;
+    
+    function centerBullet(bulletElement) {
+      const paginationEl = document.querySelector('#shopify-section-{{ section.id }} .swiper-pagination');
+      if (!paginationEl || !bulletElement) return;
+      
+      const paginationRect = paginationEl.getBoundingClientRect();
+      const paginationWidth = paginationRect.width;
+      const paginationCenter = paginationWidth / 2;
+      
+      const bulletRect = bulletElement.getBoundingClientRect();
+      const bulletWidth = bulletRect.width;
+      const bulletLeftRelative = bulletRect.left - paginationRect.left;
+      const bulletCenterRelative = bulletLeftRelative + bulletWidth / 2;
+      
+      const scrollOffset = bulletCenterRelative - paginationCenter;
+      
+      const targetScrollLeft = paginationEl.scrollLeft + scrollOffset;
+      
+      const maxScrollLeft = paginationEl.scrollWidth - paginationEl.clientWidth;
+      const finalScrollLeft = Math.max(0, Math.min(maxScrollLeft, targetScrollLeft));
+      
+      paginationEl.scrollTo({
+        left: finalScrollLeft,
+        behavior: 'smooth'
+      });
+    }
+    
+    function centerBulletByIndex(slideIndex) {
+      if (slideIndex < 0 || slideIndex >= totalSlides) return;
+      
+      const paginationEl = document.querySelector('#shopify-section-{{ section.id }} .swiper-pagination');
+      if (!paginationEl) return;
+      
+      const allBullets = Array.from(paginationEl.querySelectorAll('.swiper-pagination-bullet'));
+      if (slideIndex < allBullets.length) {
+        const targetBullet = allBullets[slideIndex];
+        if (targetBullet) {
+          centerBullet(targetBullet);
+        }
+      }
+    }
+    
+    function centerSlide(index) {
+      if (!ourStorySwiper || index < 0 || index >= totalSlides) return;
+      
+      const targetSlide = ourStorySwiper.slides[index];
+      if (!targetSlide) return;
+      
+      const containerWidth = ourStorySwiper.width;
+      
+      const wrapperWidth = ourStorySwiper.wrapperEl.scrollWidth;
+      const slideLeft = targetSlide.offsetLeft;
+      const slideWidth = targetSlide.offsetWidth;
+      const containerCenter = containerWidth / 2;
+      let translate = containerCenter - slideLeft - slideWidth / 2;
+      
+      const minTranslate = containerWidth - wrapperWidth;
+      const maxTranslate = 0;
+      
+      translate = Math.max(minTranslate, Math.min(maxTranslate, translate));
+      
+      ourStorySwiper.wrapperEl.style.transition = 'transform 0.5s ease';
+      
+      ourStorySwiper.setTranslate(translate);
+      
+      ourStorySwiper.updateActiveIndex(index);
+      
+      ourStorySwiper.emit('slideChange');
+      
+      setTimeout(function() {
+        if (ourStorySwiper && ourStorySwiper.wrapperEl) {
+          ourStorySwiper.wrapperEl.style.transition = '';
+        }
+      }, 500);
+    }
+    
+    function ensureAllBullets() {
+      const paginationEl = document.querySelector('#shopify-section-{{ section.id }} .swiper-pagination');
+      if (!paginationEl) return;
+      
+      const bullets = paginationEl.querySelectorAll('.swiper-pagination-bullet');
+      const currentBulletCount = bullets.length;
+      
+      if (currentBulletCount < totalSlides) {
+        for (let i = currentBulletCount; i < totalSlides; i++) {
+          const bullet = document.createElement('span');
+          bullet.className = 'swiper-pagination-bullet';
+          if (titles[i]) {
+            bullet.textContent = titles[i];
+          } else {
+            bullet.style.visibility = 'hidden';
+            bullet.style.pointerEvents = 'none';
+            bullet.innerHTML = '&nbsp;';
+          }
+          bullet.setAttribute('data-index', i);
+          bullet.addEventListener('click', function(e) {
+            centerBullet(this);
+            if (ourStorySwiper) {
+              centerSlide(i);
+            }
+          });
+          paginationEl.appendChild(bullet);
+        }
+      }
+    }
+    
+    ourStorySwiper = new Swiper('#shopify-section-{{ section.id }} .our-story-swiper', {
       slidesPerView: 'auto',
       spaceBetween: 40,
       pagination: {
         el: '#shopify-section-{{ section.id }} .swiper-pagination',
         clickable: true,
+        dynamicBullets: false,
         renderBullet: function (index, className) {
+          if (index >= totalSlides) {
+            return '';
+          }
           if (titles[index]) {
             return '<span class="' + className + '">' + titles[index] + '</span>';
           }
-          return '<span class="' + className + '" style="display: none;"></span>';
+          return '<span class="' + className + '" style="visibility: hidden; pointer-events: none;">&nbsp;</span>';
         },
       },
+      on: {
+        init: function() {
+          setTimeout(ensureAllBullets, 100);
+          setTimeout(function() {
+            centerBulletByIndex(0);
+          }, 200);
+        },
+        resize: function() {
+          setTimeout(ensureAllBullets, 100);
+        },
+        slideChange: function() {
+          const activeIndex = this.activeIndex;
+          if (activeIndex >= 0 && activeIndex < totalSlides) {
+            setTimeout(function() {
+              centerBulletByIndex(activeIndex);
+            }, 100);
+          }
+        },
+        transitionEnd: function() {
+          const activeIndex = this.activeIndex;
+          if (activeIndex >= 0 && activeIndex < totalSlides) {
+            setTimeout(function() {
+              centerBulletByIndex(activeIndex);
+            }, 50);
+          }
+        },
+        slideChangeTransitionEnd: function() {
+          const activeIndex = this.activeIndex;
+          if (activeIndex >= 0 && activeIndex < totalSlides) {
+            setTimeout(function() {
+              centerBulletByIndex(activeIndex);
+            }, 50);
+          }
+        }
+      }
+    });
+    
+    setTimeout(ensureAllBullets, 200);
+    
+    function handleSwipeEndForBullet() {
+      if (!ourStorySwiper) return;
+      
+      const containerWidth = ourStorySwiper.width;
+      const containerRect = swiperContainer.getBoundingClientRect();
+      const containerCenter = containerRect.left + containerWidth / 2;
+      
+      let closestSlide = null;
+      let closestDistance = Infinity;
+      
+      for (let i = 0; i < totalSlides; i++) {
+        const slide = ourStorySwiper.slides[i];
+        if (!slide) continue;
+        
+        const slideRect = slide.getBoundingClientRect();
+        const slideCenter = slideRect.left + slideRect.width / 2;
+        const distance = Math.abs(slideCenter - containerCenter);
+        
+        if (distance < closestDistance) {
+          closestDistance = distance;
+          closestSlide = i;
+        }
+      }
+      
+      if (closestSlide !== null && closestSlide >= 0 && closestSlide < totalSlides) {
+        centerBulletByIndex(closestSlide);
+      }
+    }
+    
+    setTimeout(function() {
+      if (ourStorySwiper) {
+        ourStorySwiper.on('touchEnd', function() {
+          setTimeout(handleSwipeEndForBullet, 150);
+        });
+        
+        ourStorySwiper.on('transitionEnd', function() {
+          setTimeout(handleSwipeEndForBullet, 50);
+        });
+      }
+    }, 500);
+    
+    setTimeout(function() {
+      const paginationEl = document.querySelector('#shopify-section-{{ section.id }} .swiper-pagination');
+      if (paginationEl) {
+        paginationEl.addEventListener('click', function(e) {
+          const bullet = e.target.closest('.swiper-pagination-bullet');
+          if (!bullet) return;
+          
+          centerBullet(bullet);
+          
+          const allBullets = Array.from(paginationEl.querySelectorAll('.swiper-pagination-bullet'));
+          const targetIndex = allBullets.indexOf(bullet);
+          
+          if (targetIndex >= 0 && targetIndex < totalSlides) {
+            centerSlide(targetIndex);
+          }
+        });
+      }
+    }, 300);
+    
+    let resizeTimer;
+    window.addEventListener('resize', function() {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(function() {
+        ensureAllBullets();
+        if (ourStorySwiper && ourStorySwiper.pagination) {
+          ourStorySwiper.pagination.render();
+          ourStorySwiper.pagination.update();
+        }
+      }, 250);
     });
   });
 </script>

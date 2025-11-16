@@ -2498,13 +2498,14 @@ ease;
     margin-top: 10px;
   }
   .new-product-11-05.site-box-container{
-    margin-top: 100px;
+    margin-top: 80px;
   }
   
 }
 .new-product-11-05.site-box-container{
   background: rgba(255, 211, 150, 0.9922);
   background-image: url('https://cdn.shopify.com/s/files/1/0609/5611/5196/files/Vector_27_2.png?v=1762371066');
+  background-position: center 80px;
   background-position: center 80px;
   background-repeat: repeat-x;
   background-size: 100% 100px;
@@ -2905,7 +2906,7 @@ ease;
   width: 100%;
   padding-top: 150px;
   .giiker-about-us-text-title{
-    width: 1318px;
+    width: 1118px;
     padding: 0 20px;
     box-sizing: border-box;
     max-width: 100%;
@@ -2921,7 +2922,7 @@ ease;
     }
   }
   .giiker-about-us-text-detail{
-    width: 1318px;
+    width: 1018px;
     max-width: 100%;
     margin: 0 auto;
     padding: 0 20px;
@@ -2941,22 +2942,22 @@ ease;
     width: 1700px;
     max-width: 100%;
     margin: 0 auto;
-    margin-top: 50px;
+    margin-top: 10px;
     padding: 0 20px;
     box-sizing: border-box;
     position: relative;
-    padding-bottom: 100px;
-    &::before{
-      content: '';
-      position: absolute;
-      bottom: 50px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 842px;
-      max-width: 100%;
-      height: 4px;
-      background: rgba(0, 0, 0, 1);
-    }
+    padding-bottom: 50px;
+    // &::before{
+    //   content: '';
+    //   position: absolute;
+    //   bottom: 50px;
+    //   left: 50%;
+    //   transform: translateX(-50%);
+    //   width: 842px;
+    //   max-width: 100%;
+    //   height: 4px;
+    //   background: rgba(0, 0, 0, 1);
+    // }
     img{
       max-width: 100%;
     }
@@ -2985,6 +2986,7 @@ ease;
     width: 100%;
     .our-story-swiper{
       padding-left: 10%;
+      padding-right: 10%;
       width: 100%;
       box-sizing: border-box;
       padding-bottom: 100px;
@@ -2995,6 +2997,23 @@ ease;
       border-radius: 0 30px 30px 0;
       overflow: hidden;
       width: max-content;
+      position: relative;
+      &::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, .75);
+        transition: background-color .5s ease;
+        z-index: 1;
+      }
+      &.swiper-slide-active{
+        &::before{
+          background: rgba(255, 255, 255, 0);
+        }
+      }
       .giiker-about-us-our-story-item-image{
         width: 485px;
         max-width: 100%;
@@ -3029,7 +3048,7 @@ ease;
         *{
           margin: 0;
           font-size: 32px;
-          line-height: 1.1;
+          line-height: 1.3;
           font-weight: 500;
           font-family: Overlock;
           color: #000;
@@ -3046,6 +3065,15 @@ ease;
       /* position: relative; */
       width: calc(100% - 20%);
       left: 10%;
+      overflow-x: auto;
+      overflow-y: hidden;
+      scroll-behavior: smooth;
+      // 隐藏滚动条但保持滚动功能
+      scrollbar-width: none; // Firefox
+      -ms-overflow-style: none; // IE and Edge
+      &::-webkit-scrollbar {
+        display: none; // Chrome, Safari, Opera
+      }
       &::before{
         content: '';
         position: absolute;
@@ -3086,6 +3114,7 @@ ease;
     width: 100%;
     padding: 0 20px;
     box-sizing: border-box;
+    margin-top: 20px;
     img{
       max-width: 100%;
     }
@@ -3096,6 +3125,7 @@ ease;
     margin: 0;
     margin-top: 50px;
     padding: 0 20px;
+    display: none;
     *{
       margin: 0;
       font-size: 72px;
@@ -3108,12 +3138,12 @@ ease;
 }
 .giiker-about-us-step-content{
   width: 100%;
+  padding-bottom: 120px;
   .step-swiper{
     width: 946px;
     max-width: 100%;
     margin: 0 auto;
     padding-top: 80px;
-    padding-bottom: 120px;
     
     .giiker-about-us-our-story-item{
       display: flex;
@@ -3174,7 +3204,7 @@ ease;
           *{
             margin: 0;
             font-size: 18px;
-            line-height: 1.1;
+            line-height: 1.3;
             font-weight: 400;
             font-family: Overlock;
             color: #000;
@@ -3182,66 +3212,7 @@ ease;
         }
       }
     }
-    .bottom-content-tag{
-      margin: 10px 0;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .bottom-image-tag{
-      width: 100%;
-      display: flex;
-      flex-direction: row-reverse;
-      align-items: center;
-      background: #fff;
-      border-radius: 0 100px 100px 0;
-      overflow: hidden;
-      .giiker-about-us-our-story-item-image{
-        height: 383px;
-        width: 575px;
-        img{
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-        }
-      }
-      .giiker-about-us-our-story-item-content{
-        flex: 1;
-        height: 100%; 
-        padding: 0 24px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        .giiker-about-us-our-story-item-content-title{
-          margin: 0;
-          width: 306px;
-          max-width: 100%;
-          *{
-            color: rgba(255, 206, 0, 1);
-            font-size: 32px;
-            line-height: 1.1;
-            font-weight: 700;
-            font-family: Overlock;
-            margin: 0;
-          }
-        }
-        .giiker-about-us-our-story-item-content-detail{
-          margin: 0;
-          margin-top: 15px;
-          width: 306px;
-          max-width: 100%;
-          *{
-            font-size: 18px; 
-            line-height: 1.1;
-            font-weight: 400;
-            font-family: Overlock;
-            color: #000;
-            margin: 0;
-          }
-        }
-      }
-    }
+
     .swiper-pagination{
       bottom: unset;
       top: 0;
@@ -3267,8 +3238,73 @@ ease;
       }
     }
   }
+  .bottom-content-tag{
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .bottom-image-tag{
+    max-width: 100%;
+    width: 946px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background: #fff;
+    border-radius: 0 100px 100px 0;
+    overflow: hidden;
+    .giiker-about-us-our-story-item-image{
+      height: 383px;
+      width: 575px;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .giiker-about-us-our-story-item-content{
+      flex: 1;
+      height: 100%; 
+      padding: 0 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .giiker-about-us-our-story-item-content-title{
+        margin: 0;
+        width: 306px;
+        max-width: 100%;
+        *{
+          color: rgba(255, 206, 0, 1);
+          font-size: 32px;
+          line-height: 1.1;
+          font-weight: 700;
+          font-family: Overlock;
+          margin: 0;
+        }
+      }
+      .giiker-about-us-our-story-item-content-detail{
+        margin: 0;
+        margin-top: 15px;
+        width: 306px;
+        max-width: 100%;
+        *{
+          font-size: 18px; 
+          line-height: 1.3;
+          font-weight: 400;
+          font-family: Overlock;
+          color: #000;
+          margin: 0;
+        }
+      }
+    }
+  }
 }
 @media (max-width: 768px) {
+  .giiker-about-us-text-container{
+    padding-top: 100px;
+  }
   .giiker-about-us-text-container{
     .giiker-about-us-text-image{
       padding-bottom: 50px;
@@ -3332,8 +3368,16 @@ ease;
        .swiper-pagination{
         left: 20px;
         width: calc(100% - 40px);
+        overflow: hidden;
+        background-image: linear-gradient(to right, #000, #000);
+        background-size: 100% 2px;
+        background-position: center;
+        background-repeat: no-repeat;
+        &::before{
+          display: none;
+        }
         .swiper-pagination-bullet{
-
+          margin-right: 60px;
         }
        }
        .our-story-swiper{
@@ -3348,10 +3392,10 @@ ease;
     }
   } 
   .giiker-about-us-step-content{
+    padding: 0 20px;
+    padding-bottom: 50px;
     .giiker-about-us-step-list{
       width: 100%;
-      padding-left: 20px;
-      padding-right: 20px;
       box-sizing: border-box;
     }
     .step-swiper{
@@ -3398,43 +3442,12 @@ ease;
             padding-bottom: 30px;
             *{
               font-size: 16px;
-              line-height: 1.2;
+              line-height: 1.3;
             }
           }
         }
       }
-      .bottom-image-tag{
-        flex-direction: column;
-        border-radius: 40px 40px 0 0;
-        overflow: hidden;
-        border: 2px solid #000;
-        .giiker-about-us-our-story-item-image{
-          width: 100%;
-          height: auto;
-          img{
-            height: 100%;
-            width: 100%;
-          }
-        }
-        .giiker-about-us-our-story-item-content{
-          padding: 10px;
-          .giiker-about-us-our-story-item-content-title{
-            width: 100%;
-            *{
-              font-size: 24px;
-              line-height: 1.2;
-            }
-          }
-          .giiker-about-us-our-story-item-content-detail{
-            width: 100%;
-            padding-bottom: 30px;
-            *{
-              font-size: 16px;
-              line-height: 1.2;
-            }
-          }
-        } 
-      }
+
 
       .swiper-pagination{
         left: 20px;
@@ -3447,6 +3460,38 @@ ease;
           font-size: 16px;
         }
       }
+    }
+    .bottom-image-tag{
+      flex-direction: column;
+      border-radius: 40px 40px 0 0;
+      overflow: hidden;
+      border: 2px solid #000;
+      .giiker-about-us-our-story-item-image{
+        width: 100%;
+        height: auto;
+        img{
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .giiker-about-us-our-story-item-content{
+        padding: 10px;
+        .giiker-about-us-our-story-item-content-title{
+          width: 100%;
+          *{
+            font-size: 24px;
+            line-height: 1.2;
+          }
+        }
+        .giiker-about-us-our-story-item-content-detail{
+          width: 100%;
+          padding-bottom: 30px;
+          *{
+            font-size: 16px;
+            line-height: 1.3;
+          }
+        }
+      } 
     }
   } 
 }

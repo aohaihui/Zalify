@@ -16,26 +16,26 @@
                 <div class="giiker-about-us-our-story-item-content-detail">{{ block.settings.detail_top }}</div>
               </div>
             </div>
-            <div class="bottom-content-tag">
-              <img src="https://cdn.shopify.com/s/files/1/0609/5611/5196/files/Vector_35.png?v=1762880883" alt="">
-            </div>
-            <div class="bottom-image-tag">
-              <div class="giiker-about-us-our-story-item-image">
-                {{ block.settings.image_bottom | image_url: width: block.settings.image_bottom.width | image_tag: height: block.settings.image_bottom.height, fetchpriority: 'high', loading: 'lazy', class: 'image-tag pc-image' }}
-                {{ block.settings.image_bottom_mobile | image_url: width: block.settings.image_bottom_mobile.width | image_tag: height: block.settings.image_bottom_mobile.height, fetchpriority: 'high', loading: 'lazy', class: 'image-tag mb-image' }}
-              </div>
-              <div class="giiker-about-us-our-story-item-content">
-                <h3 class="giiker-about-us-our-story-item-content-title">{{ block.settings.title_bottom }}</h3>
-                <div class="giiker-about-us-our-story-item-content-detail">{{ block.settings.detail_bottom }}</div>
-              </div>
-            </div>
+
           </div>
           {% endfor %}
         </div>
         <div class="swiper-pagination"></div>
       </div>
     </div>
-
+    <div class="bottom-content-tag">
+      <img src="https://cdn.shopify.com/s/files/1/0609/5611/5196/files/Vector_35.png?v=1762880883" alt="">
+    </div>
+    <div class="bottom-image-tag">
+      <div class="giiker-about-us-our-story-item-image">
+        {{ section.settings.image_bottom | image_url: width: section.settings.image_bottom.width | image_tag: height: section.settings.image_bottom.height, fetchpriority: 'high', loading: 'lazy', class: 'image-tag pc-image' }}
+        {{ section.settings.image_bottom_mobile | image_url: width: section.settings.image_bottom_mobile.width | image_tag: height: section.settings.image_bottom_mobile.height, fetchpriority: 'high', loading: 'lazy', class: 'image-tag mb-image' }}
+      </div>
+      <div class="giiker-about-us-our-story-item-content">
+        <h3 class="giiker-about-us-our-story-item-content-title">{{ section.settings.title_bottom }}</h3>
+        <div class="giiker-about-us-our-story-item-content-detail">{{ section.settings.detail_bottom }}</div>
+      </div>
+    </div>
   </div> 
 </div>
 <script>
@@ -49,6 +49,10 @@
     const stepSwiper = new Swiper('#shopify-section-{{ section.id }} .step-swiper', {
       slidesPerView: 1,
       spaceBetween: 20,
+      effect: 'fade',
+      fadeEffect: {
+        crossFade: true,
+      },
       pagination: {
         el: '#shopify-section-{{ section.id }} .swiper-pagination',
         clickable: true,
@@ -69,7 +73,27 @@
     {
       "type": "color",
       "id": "background_color",
-      "label": "Background Color"
+      "label": "Background Color",
+    },
+    {
+      "type": "image_picker",
+      "id": "image_bottom",
+      "label": "Image Bottom 574*383 带圆角"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_bottom_mobile",
+      "label": "Image Bottom Mobile 220*147"
+    },
+    {
+      "type": "richtext",
+      "id": "title_bottom",
+      "label": "Title Bottom"
+    },
+    {
+      "type": "richtext",
+      "id": "detail_bottom",
+      "label": "Detail Bottom"
     }
   ],
   "blocks": [
