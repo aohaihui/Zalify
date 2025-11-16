@@ -241,45 +241,6 @@
           "smart-sudoku"
         ]
       }
-    },
-    "giiker_product_gsap_new_cVtCL6": {
-      "type": "giiker-product-gsap-new",
-      "blocks": {
-        "content_top_H6z4HU": {
-          "type": "content_top",
-          "settings": {
-            "background_color": "#6cc1d4",
-            "title": "Innovative Code-Breaking Game",
-            "detail": "Break the 4 digit color code within 7steps, putting your logical reasoning and problem-solving abilities to the test",
-            "image": "shopify://shop_images/image_9.png"
-          }
-        },
-        "content_top_XVTpaE": {
-          "type": "content_top",
-          "settings": {
-            "background_color": "#28b372",
-            "title": "Immersive Sound Effects",
-            "detail": "With each press and turn, the morse code sound effects will indulge the user in an engaging detective setting.",
-            "image": "shopify://shop_images/image_9.png"
-          }
-        },
-        "content_top_dapqjf": {
-          "type": "content_top",
-          "settings": {
-            "background_color": "#2860b3",
-            "title": "Two Game Modes",
-            "detail": "Challenge yourself to become a deduction master with 600 levels, or break the code set by the Code Setter within a time limit.",
-            "image": "shopify://shop_images/image_9.png"
-          }
-        }
-      },
-      "block_order": [
-        "content_top_H6z4HU",
-        "content_top_XVTpaE",
-        "content_top_dapqjf"
-      ],
-      "name": "Giiker Product Gsap New",
-      "settings": {}
     }
   },
   "order": [
@@ -293,7 +254,6 @@
     "giiker_product_basice_UEt668",
     "giiker_product_gsap_inTccQ",
     "giiker_product_icon_yjLqaX",
-    "giiker_product_recommended_ndfAnB",
-    "giiker_product_gsap_new_cVtCL6"
+    "giiker_product_recommended_ndfAnB"
   ]
 }
