@@ -229,6 +229,40 @@
     },
     "giiker_product_roller_bdKzfP": {
       "type": "giiker-product-roller",
+      "blocks": {
+        "content_BFwkR3": {
+          "type": "content",
+          "settings": {
+            "background_color": "#6cc1d4",
+            "title": "Innovative Code-Breaking Game",
+            "detail": "Break the 4 digit color code within 7steps, putting your logical reasoning and problem-solving abilities to the test",
+            "image": "shopify://shop_images/image_9_1.png"
+          }
+        },
+        "content_iirxpf": {
+          "type": "content",
+          "settings": {
+            "background_color": "#28b372",
+            "title": "Immersive Sound Effects",
+            "detail": "With each press and turn, the morse code sound effects will indulge the user in an engaging detective setting.",
+            "image": "shopify://shop_images/image_9_1.png"
+          }
+        },
+        "content_bNXnpp": {
+          "type": "content",
+          "settings": {
+            "background_color": "#2860b3",
+            "title": "Two Game Modes",
+            "detail": "Challenge yourself to become a deduction master with 600 levels, or break the code set by the Code Setter within a time limit.",
+            "image": "shopify://shop_images/image_9_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "content_BFwkR3",
+        "content_iirxpf",
+        "content_bNXnpp"
+      ],
       "name": "Giiker Product Roller",
       "settings": {}
     },
