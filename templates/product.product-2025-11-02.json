@@ -241,6 +241,11 @@
           "smart-sudoku"
         ]
       }
+    },
+    "giiker_product_roller_bdKzfP": {
+      "type": "giiker-product-roller",
+      "name": "Giiker Product Roller",
+      "settings": {}
     }
   },
   "order": [
@@ -254,6 +259,7 @@
     "giiker_product_basice_UEt668",
     "giiker_product_gsap_inTccQ",
     "giiker_product_icon_yjLqaX",
-    "giiker_product_recommended_ndfAnB"
+    "giiker_product_recommended_ndfAnB",
+    "giiker_product_roller_bdKzfP"
   ]
 }
