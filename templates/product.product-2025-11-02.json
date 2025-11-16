@@ -17,11 +17,6 @@
       "type": "shogun-above",
       "settings": {}
     },
-    "giiker_product_roller_bdKzfP": {
-      "type": "giiker-product-roller",
-      "name": "Giiker Product Roller",
-      "settings": {}
-    },
     "23897632015cc15783": {
       "type": "apps",
       "settings": {}
@@ -246,12 +241,16 @@
           "smart-sudoku"
         ]
       }
+    },
+    "giiker_product_roller_bdKzfP": {
+      "type": "giiker-product-roller",
+      "name": "Giiker Product Roller",
+      "settings": {}
     }
   },
   "order": [
     "shogun-helper",
     "shogun-above",
-    "giiker_product_roller_bdKzfP",
     "23897632015cc15783",
     "main",
     "product-recommendations",
@@ -260,6 +259,7 @@
     "giiker_product_basice_UEt668",
     "giiker_product_gsap_inTccQ",
     "giiker_product_icon_yjLqaX",
-    "giiker_product_recommended_ndfAnB"
+    "giiker_product_recommended_ndfAnB",
+    "giiker_product_roller_bdKzfP"
   ]
 }
