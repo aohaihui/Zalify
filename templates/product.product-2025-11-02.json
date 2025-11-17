@@ -144,66 +144,6 @@
         "mobile_background_image": "shopify://shop_images/slogan.png"
       }
     },
-    "giiker_product_gsap_inTccQ": {
-      "type": "giiker-product-gsap",
-      "blocks": {
-        "content_top_3MtwXV": {
-          "type": "content_top",
-          "settings": {
-            "background_color": "#6cc1d4",
-            "title": "Innovative Code-Breaking Game",
-            "detail": "Break the 4 digit color code within 7steps, putting your logical reasoning and problem-solving abilities to the test",
-            "image": "shopify://shop_images/image_9.png"
-          }
-        },
-        "content_top_XmH9VP": {
-          "type": "content_top",
-          "settings": {
-            "background_color": "#28b372",
-            "title": "Immersive Sound Effects",
-            "detail": "With each press and turn, the morse code sound effects will indulge the user in an engaging detective setting.",
-            "image": "shopify://shop_images/image_9_1.png"
-          }
-        },
-        "content_top_LUP3hY": {
-          "type": "content_top",
-          "settings": {
-            "background_color": "#2860b3",
-            "title": "Two Game Modes",
-            "detail": "Challenge yourself to become a deduction master with 600 levels, or break the code set by the Code Setter within a time limit.",
-            "image": "shopify://shop_images/image_9_1.png"
-          }
-        },
-        "content_bottom_QzAzha": {
-          "type": "content_bottom",
-          "settings": {
-            "background_color": "#813ebc",
-            "title": "Travel Friendly",
-            "detail": "This compact portable handheld console is perfect for on-the-go use, enjoy brain-teasing challenges at anytime.",
-            "image": "shopify://shop_images/Group_24_1.png"
-          }
-        },
-        "content_bottom_Bg6PRr": {
-          "type": "content_bottom",
-          "settings": {
-            "background_color": "#bc573e",
-            "title": "Interactive Hints",
-            "detail": "Get instant feedback with two types of hints, decipher the hints to break the code.",
-            "image": "shopify://shop_images/Group_24.png"
-          }
-        }
-      },
-      "block_order": [
-        "content_top_3MtwXV",
-        "content_top_XmH9VP",
-        "content_top_LUP3hY",
-        "content_bottom_QzAzha",
-        "content_bottom_Bg6PRr"
-      ],
-      "disabled": true,
-      "name": "Giiker Product Gsap",
-      "settings": {}
-    },
     "giiker_product_roller_bdKzfP": {
       "type": "giiker-product-roller",
       "blocks": {
@@ -212,8 +152,11 @@
           "settings": {
             "is_reversal": false,
             "background_color": "#6cc1d4",
+            "text_color": "",
             "title": "Become a Master Detective",
+            "title_color": "",
             "detail": "Can you crack the secret code? You’ve got 7 chances to solve the 4-color puzzle! Every guess brings you closer to the truth—or closer to defeat. Do you have what it takes to solve all 600 codes?",
+            "detail_color": "",
             "image": "shopify://shop_images/image_9_1.png"
           }
         },
@@ -222,8 +165,11 @@
           "settings": {
             "is_reversal": true,
             "background_color": "#28b372",
+            "text_color": "",
             "title": "Secret Hints",
+            "title_color": "",
             "detail": "The code is tricky, but clues are on your side! After each guess, the device gives hints—study them carefully and make your next move. But be quick—you only have 7 tries to crack the secret color code!",
+            "detail_color": "",
             "image": "shopify://shop_images/Interactive_Hints.png"
           }
         },
@@ -232,8 +178,11 @@
           "settings": {
             "is_reversal": false,
             "background_color": "#2860b3",
+            "text_color": "",
             "title": "From Codebreaker to Code Setter",
+            "title_color": "",
             "detail": "Flip the game and become the master! Set your own secret code and challenge a friend—can they crack it, or will your code leave them guessing?",
+            "detail_color": "",
             "image": "shopify://shop_images/image.png"
           }
         },
@@ -242,8 +191,11 @@
           "settings": {
             "is_reversal": false,
             "background_color": "",
+            "text_color": "",
             "title": "On-the-Go Detective",
+            "title_color": "",
             "detail": "Carry the thrill in your pocket! This tiny handheld console goes wherever you do—no loose pieces, no mess, just nonstop code-breaking fun.",
+            "detail_color": "",
             "image": "shopify://shop_images/image_1.png"
           }
         }
@@ -408,7 +360,6 @@
     "shogun-below",
     "giiker_product_banner_tzTcDT",
     "giiker_product_basice_UEt668",
-    "giiker_product_gsap_inTccQ",
     "giiker_product_roller_bdKzfP",
     "giiker_home_phone_image_7bXqQP",
     "rich_text_TaQaJm",
