@@ -5005,3 +5005,41 @@ ease;
     }
   }
 }
+.section-home_slideshow-swiper-mobile{
+  width: 100%;
+  .section-home_slideshow-swiper-mobile-item{
+    width: 100%;
+    .image-tag{
+      width: 100%;
+      overflow: hidden;
+    }
+    .content{
+      padding: 20px;
+      width: 100%;
+      box-sizing: border-box;
+      .box-title{
+        background-color: var(--background-color);
+        font-size: 24px;
+        line-height: 1.2;
+        font-weight: 700;
+        font-family: Overlock;
+        text-align: center;
+        border-radius: 6px;
+        padding: 10px;
+        color: #fff;
+      }
+      .box-detail{
+        margin-top: 10px;
+        background-color: var(--background-color);
+        font-size: 16px;
+        line-height: 1.5;
+        font-weight: 400;
+        font-family: Overlock;
+        text-align: center;
+        border-radius: 6px;
+        padding: 10px;
+        color: #fff;
+      }
+    }
+  }
+}
