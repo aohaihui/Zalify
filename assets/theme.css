@@ -3701,7 +3701,7 @@ modal-box.popup.active .popup-content {
   margin-bottom: 0;
 }
 .box__product-content .site-box-content > div > *:not(:last-child):not(product-variants) {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
   display: block;
 }
 .box__product-content .site-box-content > div > product-variants > .product-variants:last-of-type {
