@@ -144,6 +144,9 @@
             assign results_url = '?q=' | append: terms | append: '&options%5Bprefix%5D=last&sort_by=' | append: sort_by
           endif
         -%}
+        <div class="collection-title">
+          <h1>{{ collection.title }}</h1>
+        </div>
         <facet-filters-form class="facets don-t-duplicate">
 
         <form id="FacetFiltersForm" class="facets__form facets__form--mobile">
@@ -495,7 +498,17 @@
     }
   {% endstyle %}
 {%- endif -%}
-
+<style>
+  .collection-title h1{
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 400;
+    font-family: Overlock;
+    color: #000;
+    margin: 0;
+    text-align: center;
+  }
+</style>
 {% schema %}
   {
     "name": "t:sections.split-extra-words.sections.main-collection-page.name",
