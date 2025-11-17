@@ -197,8 +197,8 @@
           "settings": {
             "is_reversal": false,
             "background_color": "#6cc1d4",
-            "title": "Innovative Code-Breaking Game",
-            "detail": "Break the 4 digit color code within 7steps, putting your logical reasoning and problem-solving abilities to the test",
+            "title": "Become a Master Detective",
+            "detail": "Can you crack the secret code? You’ve got 7 chances to solve the 4-color puzzle! Every guess brings you closer to the truth—or closer to defeat. Do you have what it takes to solve all 600 codes?",
             "image": "shopify://shop_images/image_9_1.png"
           }
         },
@@ -207,9 +207,9 @@
           "settings": {
             "is_reversal": true,
             "background_color": "#28b372",
-            "title": "Immersive Sound Effects",
-            "detail": "With each press and turn, the morse code sound effects will indulge the user in an engaging detective setting.",
-            "image": "shopify://shop_images/image_9_1.png"
+            "title": "Secret Hints",
+            "detail": "The code is tricky, but clues are on your side! After each guess, the device gives hints—study them carefully and make your next move. But be quick—you only have 7 tries to crack the secret color code!",
+            "image": "shopify://shop_images/Interactive_Hints.png"
           }
         },
         "content_bNXnpp": {
@@ -217,16 +217,27 @@
           "settings": {
             "is_reversal": false,
             "background_color": "#2860b3",
-            "title": "Two Game Modes",
-            "detail": "Challenge yourself to become a deduction master with 600 levels, or break the code set by the Code Setter within a time limit.",
-            "image": "shopify://shop_images/image_9_1.png"
+            "title": "From Codebreaker to Code Setter",
+            "detail": "Flip the game and become the master! Set your own secret code and challenge a friend—can they crack it, or will your code leave them guessing?",
+            "image": "shopify://shop_images/image.png"
+          }
+        },
+        "content_NjbrTD": {
+          "type": "content",
+          "settings": {
+            "is_reversal": false,
+            "background_color": "",
+            "title": "On-the-Go Detective",
+            "detail": "Carry the thrill in your pocket! This tiny handheld console goes wherever you do—no loose pieces, no mess, just nonstop code-breaking fun.",
+            "image": "shopify://shop_images/image_1.png"
           }
         }
       },
       "block_order": [
         "content_BFwkR3",
         "content_iirxpf",
-        "content_bNXnpp"
+        "content_bNXnpp",
+        "content_NjbrTD"
       ],
       "name": "Giiker Product Roller",
       "settings": {}
