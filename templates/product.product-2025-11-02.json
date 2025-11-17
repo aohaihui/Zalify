@@ -152,7 +152,7 @@
           "settings": {
             "is_reversal": false,
             "background_color": "#6cc1d4",
-            "text_color": "",
+            "text_color": "#f0674f",
             "title": "Become a Master Detective",
             "title_color": "",
             "detail": "Can you crack the secret code? You’ve got 7 chances to solve the 4-color puzzle! Every guess brings you closer to the truth—or closer to defeat. Do you have what it takes to solve all 600 codes?",
