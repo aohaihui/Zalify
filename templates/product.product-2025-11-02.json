@@ -165,7 +165,7 @@
           "settings": {
             "is_reversal": true,
             "background_color": "#28b372",
-            "text_color": "",
+            "text_color": "#f0674f",
             "title": "Secret Hints",
             "title_color": "",
             "detail": "The code is tricky, but clues are on your side! After each guess, the device gives hints—study them carefully and make your next move. But be quick—you only have 7 tries to crack the secret color code!",
@@ -178,7 +178,7 @@
           "settings": {
             "is_reversal": false,
             "background_color": "#2860b3",
-            "text_color": "",
+            "text_color": "#f0674f",
             "title": "From Codebreaker to Code Setter",
             "title_color": "",
             "detail": "Flip the game and become the master! Set your own secret code and challenge a friend—can they crack it, or will your code leave them guessing?",
@@ -190,8 +190,8 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "",
-            "text_color": "",
+            "background_color": "#2860b3",
+            "text_color": "#f0674f",
             "title": "On-the-Go Detective",
             "title_color": "",
             "detail": "Carry the thrill in your pocket! This tiny handheld console goes wherever you do—no loose pieces, no mess, just nonstop code-breaking fun.",
