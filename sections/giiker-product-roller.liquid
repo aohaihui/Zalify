@@ -96,19 +96,7 @@
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="{{ 'js_plugins.min.js' | asset_url }}"></script>
 <script src="{{ 'roller.js' | asset_url }}"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const swiperProductFeatures = new Swiper('#shopify-section-{{ section.id }} .swiper', {
-      slidesPerView: 1,
-      spaceBetween: 15,
-      loop: true,
-      pagination: {
-        el: '#shopify-section-{{ section.id }} .swiper-pagination',
-        clickable: true,
-      }
-    });
-  });
-</script>
+
 {% schema %}
 {
 "name": "Giiker Product Roller",
