@@ -197,8 +197,11 @@ body{
           position: absolute;
           bottom: 10%;
           right: -10%;
+          transform: rotate(15deg);
+          // opacity: .06;
           img{
             object-fit: cover;
+            max-height: 421px;
           }
         }
         .giiker-home-text-image-item-title{
