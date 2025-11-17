@@ -320,6 +320,14 @@
       "settings": {
         "background_image": "shopify://shop_images/Sku_2_1.png"
       }
+    },
+    "giiker_product_btn_McxzPp": {
+      "type": "giiker-product-btn",
+      "name": "Giiker Product Btn",
+      "settings": {
+        "btn_label": "Explore the Facebook Group",
+        "btn_url": "shopify://products/battle-pad"
+      }
     }
   },
   "order": [
@@ -334,6 +342,7 @@
     "giiker_product_roller_bdKzfP",
     "giiker_home_phone_image_7bXqQP",
     "giiker_product_recommended_ndfAnB",
-    "giiker_product_icon_yjLqaX"
+    "giiker_product_icon_yjLqaX",
+    "giiker_product_btn_McxzPp"
   ]
 }
