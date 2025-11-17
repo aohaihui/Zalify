@@ -2019,7 +2019,7 @@ ease;
     width: 100%;
     .image-top-tag{
       position: absolute;
-      top: 0;
+      top: -1px;
       left: 0;
       width: 100%;
     }
@@ -2348,7 +2348,7 @@ ease;
   .giiker-product-recommended-background{
     width: 100%;
     position: absolute;
-    top: 0;
+    top: -1px;
     left: 0;
     z-index: 1;
     .image-tag-background{
