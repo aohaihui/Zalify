@@ -195,6 +195,7 @@
         "content_BFwkR3": {
           "type": "content",
           "settings": {
+            "is_reversal": false,
             "background_color": "#6cc1d4",
             "title": "Innovative Code-Breaking Game",
             "detail": "Break the 4 digit color code within 7steps, putting your logical reasoning and problem-solving abilities to the test",
@@ -204,6 +205,7 @@
         "content_iirxpf": {
           "type": "content",
           "settings": {
+            "is_reversal": true,
             "background_color": "#28b372",
             "title": "Immersive Sound Effects",
             "detail": "With each press and turn, the morse code sound effects will indulge the user in an engaging detective setting.",
@@ -213,6 +215,7 @@
         "content_bNXnpp": {
           "type": "content",
           "settings": {
+            "is_reversal": false,
             "background_color": "#2860b3",
             "title": "Two Game Modes",
             "detail": "Challenge yourself to become a deduction master with 600 levels, or break the code set by the Code Setter within a time limit.",
