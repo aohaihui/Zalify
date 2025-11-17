@@ -231,60 +231,6 @@
       "name": "Giiker Product Roller",
       "settings": {}
     },
-    "giiker_product_icon_yjLqaX": {
-      "type": "giiker-product-icon",
-      "blocks": {
-        "list_JkLgDm": {
-          "type": "list",
-          "settings": {
-            "icon": "shopify://shop_images/x0020_1.png",
-            "title": "<p>Fast & Easy Returns</p>",
-            "detail": "<p>Change your mind? Enjoy hassle-freereturns within 30 days.</p>"
-          }
-        },
-        "list_wLCkfw": {
-          "type": "list",
-          "settings": {
-            "icon": "shopify://shop_images/x0020_1_3.png",
-            "title": "<p>100% secure payment.</p>",
-            "detail": "<p>We accept all major credit cards withShop Pay and PayPal. Your credit cardinformation is private.</p>"
-          }
-        },
-        "list_B3cRM9": {
-          "type": "list",
-          "settings": {
-            "icon": "shopify://shop_images/x0020_1.png",
-            "title": "<p>1 Year Warranty</p>",
-            "detail": "<p>Play smarter, worry less—every GiiKER product is backed by our 1-year warranty, a promise of lasting quality and endless fun.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "list_JkLgDm",
-        "list_wLCkfw",
-        "list_B3cRM9"
-      ],
-      "disabled": true,
-      "name": "Giiker Product Icon",
-      "settings": {
-        "background_image": "shopify://shop_images/Sku_2_1.png"
-      }
-    },
-    "giiker_product_recommended_ndfAnB": {
-      "type": "giiker-product-recommended",
-      "name": "Giiker Product Recommended",
-      "settings": {
-        "background_image": "shopify://shop_images/Vector_27.png",
-        "title": "You may also like",
-        "product_list": [
-          "battle-pad",
-          "fidget-cube",
-          "giiker-super-slide-puzzle-games-copy",
-          "giiker-smart-four-board-games",
-          "smart-sudoku"
-        ]
-      }
-    },
     "giiker_home_phone_image_7bXqQP": {
       "type": "giiker-home-phone-image",
       "blocks": {
@@ -336,7 +282,94 @@
       "name": "Giiker Home Phone Image",
       "settings": {
         "title": "Families everywhere are loving it.",
-        "background_color": "rgba(240, 103, 79, 1)"
+        "background_color": "#f0674f"
+      }
+    },
+    "rich_text_TaQaJm": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_xQG7bm": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Talk about your brand"
+          }
+        },
+        "text_RwTbzM": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_xQG7bm",
+        "text_RwTbzM"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "title": "Explore the facebook group",
+        "btn_label": "Join in",
+        "btn_url": "",
+        "desktop_image_positioning": "image-on-left",
+        "bg_overlay": false,
+        "custom_background": "#f0674f",
+        "custom_text": "rgba(0,0,0,0)"
+      }
+    },
+    "giiker_product_recommended_ndfAnB": {
+      "type": "giiker-product-recommended",
+      "name": "Giiker Product Recommended",
+      "settings": {
+        "background_image": "shopify://shop_images/Vector_27.png",
+        "title": "You may also like",
+        "product_list": [
+          "battle-pad",
+          "fidget-cube",
+          "giiker-super-slide-puzzle-games-copy",
+          "giiker-smart-four-board-games",
+          "smart-sudoku"
+        ]
+      }
+    },
+    "giiker_product_icon_yjLqaX": {
+      "type": "giiker-product-icon",
+      "blocks": {
+        "list_JkLgDm": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/x0020_1.png",
+            "title": "<p>Fast & Easy Returns</p>",
+            "detail": "<p>Change your mind? Enjoy hassle-freereturns within 30 days.</p>"
+          }
+        },
+        "list_wLCkfw": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/x0020_1_3.png",
+            "title": "<p>100% secure payment.</p>",
+            "detail": "<p>We accept all major credit cards withShop Pay and PayPal. Your credit cardinformation is private.</p>"
+          }
+        },
+        "list_B3cRM9": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/x0020_1.png",
+            "title": "<p>1 Year Warranty</p>",
+            "detail": "<p>Play smarter, worry less—every GiiKER product is backed by our 1-year warranty, a promise of lasting quality and endless fun.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "list_JkLgDm",
+        "list_wLCkfw",
+        "list_B3cRM9"
+      ],
+      "disabled": true,
+      "name": "Giiker Product Icon",
+      "settings": {
+        "background_image": "shopify://shop_images/Sku_2_1.png"
       }
     }
   },
@@ -352,6 +385,7 @@
     "giiker_product_gsap_inTccQ",
     "giiker_product_roller_bdKzfP",
     "giiker_home_phone_image_7bXqQP",
+    "rich_text_TaQaJm",
     "giiker_product_recommended_ndfAnB",
     "giiker_product_icon_yjLqaX"
   ]
