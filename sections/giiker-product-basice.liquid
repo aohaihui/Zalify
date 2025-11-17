@@ -26,6 +26,7 @@
     {% if section.settings.mobile_background_image != blank %}
       {{ section.settings.mobile_background_image | image_url: width: section.settings.mobile_background_image.width | image_tag: height: section.settings.mobile_background_image.height, fetchpriority: 'high', loading: 'lazy', class: 'image-tag', data-cc-animate: 'fade-in' }}
     {% endif %}
+    <img class="posi" src="https://cdn.shopify.com/s/files/1/0609/5611/5196/files/play_cirlceByBarsrsind_1.png?v=1763394268" alt="">
   </div>
   <div class="mobile-fixed-image" id="mobile-fixed-image-{{ section.id }}">
     {% if section.settings.mobile_video != blank %}
