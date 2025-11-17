@@ -4926,3 +4926,11 @@ ease;
     display: table;
     clear: both;
 }
+.site-box.box__slideshow-split .slideshow-item.reversal  .site-box-background-container{
+  left: unset;
+  top: 0;
+  right: 0;
+}
+#shopify-section-home_slideshow .slideshow-item.reversal .site-box{
+  float: left;
+}
