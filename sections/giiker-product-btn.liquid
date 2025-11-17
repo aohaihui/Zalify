@@ -1,0 +1,59 @@
+{% if section.settings.btn_url != blank %}
+  <div class="giiker-product-btn-container" style="">
+  <div class="giiker-product-btn-content">
+    <div class="btn-btn">
+      <a href="{{ section.settings.btn_url }}" class="btn-btn-link">
+        {{ section.settings.btn_label }}
+      </a>
+    </div>
+  </div>
+</div>
+{% endif %}
+
+<style>
+  .giiker-product-btn-container {
+    width: 100%;
+  }
+  .btn-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn-btn a{
+    width: max-content;
+    border: 1px solid #000;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: Overlock;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+</style>
+{% schema %}
+{
+  "name": "Giiker Product Btn",
+  "settings": [
+    {
+      "type": "text",
+      "id": "btn_label",
+      "label": "Button Label"
+    },
+    {
+      "type": "url",
+      "id": "btn_url",
+      "label": "Button URL"
+    }
+  ],
+
+  "presets": [
+    {
+      "name": "Giiker Product Btn"
+    }
+  ]
+}
+{% endschema %}
