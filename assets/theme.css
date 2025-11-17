@@ -8306,4 +8306,21 @@ li.has-submenu:hover > ul {
   .box--product-media[data-type=video] .video-popup__play{
     top: 50%;
   }
+  .site-footer .footer-top{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .site-footer .footer-top .footer-item{
+    width: calc(50% - 5px);
+  }
+
+}
+.site-footer .site-social{
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+}
+.site-footer .site-social a:not(:last-child){
+  margin-bottom: 0;
 }
