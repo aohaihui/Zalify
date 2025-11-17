@@ -2957,11 +2957,11 @@ ease;
     padding: 0 20px;
     box-sizing: border-box;
     position: relative;
-    padding-bottom: 50px;
+    padding-bottom: 80px;
     &::before{
       content: '';
       position: absolute;
-      bottom: 50px;
+      bottom: 0px;
       left: 50%;
       transform: translateX(-50%);
       width: 842px;
@@ -3375,7 +3375,7 @@ ease;
   }
   .giiker-about-us-text-container{
     .giiker-about-us-text-image{
-      padding-bottom: 50px;
+      padding-bottom:0;
       &::before{
         display: none;
       }
