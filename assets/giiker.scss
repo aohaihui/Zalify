@@ -3009,6 +3009,7 @@ ease;
       overflow: hidden;
       width: max-content;
       position: relative;
+      opacity: .7;
       &::before{
         content: '';
         position: absolute;
@@ -3016,14 +3017,15 @@ ease;
         top: 0;
         width: 100%;
         height: 100%;
-        background: rgba(255, 255, 255, .5);
+        // background: rgba(255, 255, 255, .5);
         transition: background-color .5s ease;
         backdrop-filter: blur(2px);
         z-index: 1;
       }
       &.swiper-slide-active{
+        opacity: 1;
         &::before{
-          background: rgba(255, 255, 255, 0);
+          // background: rgba(255, 255, 255, 0);
           backdrop-filter: blur(0px);
         }
       }
