@@ -75,6 +75,20 @@
             "text": "<p>User Manual： <a href=\"/pages/smart-four-user-manual\" title=\"smart four user manual\"><strong>Click here</strong></a></p>",
             "text_style": "body"
           }
+        },
+        "free_delivery_iPJ7mA": {
+          "type": "Free_Delivery",
+          "settings": {
+            "image_1": "shopify://shop_images/685082392297db95b906f751_nex-web-icon-delivery.svg",
+            "title_1": "",
+            "detail_1": "<p>Free Delivery</p><p>(Limited Time)</p>",
+            "image_2": "shopify://shop_images/68508239b45fd47ed3fc6f3d_nex-web-icon-shipping.svg",
+            "title_2": "30 Days Free Returns",
+            "detail_2": "<p>30 Days</p><p>Free Returns</p>",
+            "image_3": "shopify://shop_images/68508239939e9f0c8d5eca5a_nex-web-icon-warranty.svg",
+            "title_3": "",
+            "detail_3": "<p>1-Year</p><p>Warranty</p>"
+          }
         }
       },
       "block_order": [
@@ -84,7 +98,8 @@
         "description",
         "collapse_HQqnfc",
         "share",
-        "93880648-978b-4d31-9200-dc7244fdc064"
+        "93880648-978b-4d31-9200-dc7244fdc064",
+        "free_delivery_iPJ7mA"
       ],
       "settings": {
         "gallery_style": "slider",
