@@ -8283,8 +8283,19 @@ li.has-submenu:hover > ul {
   padding-top: 0 !important;
   position: unset !important;
 }
+#section-footer{
+  background-image: url('https://cdn.shopify.com/s/files/1/0609/5611/5196/files/GIIKER_2_1.png?v=1763399004');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 @media screen and (max-width: 768px) {
-
+  #section-footer{
+    background-image: url('https://cdn.shopify.com/s/files/1/0609/5611/5196/files/2J2A6639_1_1.png?v=1763399326');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   .box--product-media{
     padding-top: 0 !important;
     position: unset !important;
