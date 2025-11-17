@@ -3,6 +3,7 @@
     <div class="swiper-wrapper">
       {% for block in section.blocks %}
         <div class="giiker-home-banner-item swiper-slide">
+          <a href="{{ block.settings.url }}" target="_blank">
           <img 
             src="{{ block.settings.pc_image | image_url: width: block.settings.pc_image.width }}" 
             alt="" 
@@ -19,6 +20,7 @@
             width="{{ block.settings.mobile_image.width }}"
             height="{{ block.settings.mobile_image.height }}"
           />
+          </a>
         </div>
       {% endfor %}
     </div>
@@ -86,6 +88,11 @@
           "type": "image_picker",
           "id": "mobile_image",
           "label": "Mobile Image 2160*1296 目前是pc端的尺寸  可以单独配置移动端尺寸"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "URL"
         }
       ]
     }
