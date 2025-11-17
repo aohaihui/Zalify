@@ -26,24 +26,23 @@
       "blocks": {
         "banner_6N3TYW": {
           "type": "banner",
-          "disabled": true,
           "settings": {
-            "pc_image": "shopify://shop_images/image_26.png",
-            "mobile_image": "shopify://shop_images/image_26.png"
+            "pc_image": "shopify://shop_images/EARLY_BIRD.png",
+            "mobile_image": "shopify://shop_images/EARLY_BIRD_MOBILE.png"
           }
         },
         "banner_rdkVqq": {
           "type": "banner",
           "settings": {
             "pc_image": "shopify://shop_images/kv2.jpg",
-            "mobile_image": "shopify://shop_images/kv_01_4167x2344_6939e51f-dde8-4f48-972c-943f1fbb245a.jpg"
+            "mobile_image": "shopify://shop_images/app-kv2_01_5da7d80a-11f1-4732-ab5e-2784a00dc25e.jpg"
           }
         },
         "banner_kL4TfF": {
           "type": "banner",
           "settings": {
             "pc_image": "shopify://shop_images/kv1.jpg",
-            "mobile_image": "shopify://shop_images/kv_807b2326-f10c-4ba1-a485-07ba8ad9416e.jpg"
+            "mobile_image": "shopify://shop_images/app_01.jpg"
           }
         }
       },
@@ -103,52 +102,57 @@
         "banner_HaEBAc": {
           "type": "banner",
           "settings": {
-            "product_image": "shopify://shop_images/2_1.png",
-            "product_title": "",
-            "product": "giiker-super-decoder"
+            "product_image": "shopify://shop_images/bd7aed0df074a162d7fba0d39c740a26.png",
+            "product_title": "Super Slide",
+            "product": "giiker-super-slide-puzzle-games"
           }
         },
         "banner_yNkR9g": {
           "type": "banner",
           "settings": {
-            "product_image": "shopify://shop_images/2_5884e794-fafe-4b41-99db-693365300352.png",
-            "product_title": "",
-            "product": "battle-pad"
+            "product_image": "shopify://shop_images/18c4dce920db45da6f1cc05d7a255161.png",
+            "product_title": "Super Blocks",
+            "product": "super-blocks"
           }
         },
         "banner_nqMLnR": {
           "type": "banner",
           "settings": {
-            "product_title": "",
-            "product": "giiker-super-slide-puzzle-games-copy"
+            "product_image": "shopify://shop_images/b14fee4b27b2411dc85ede04be2086e6.png",
+            "product_title": "Tic-Tac-Toe Bolt",
+            "product": "tic-tac-toe-bolt"
           }
         },
         "banner_YHjFbw": {
           "type": "banner",
           "settings": {
-            "product_title": "",
-            "product": "giiker-super-slide-puzzle-games-copy"
+            "product_image": "shopify://shop_images/0ffec1d6b6e7fd4ddcf8d3ed6402775e.png",
+            "product_title": "Super Decoder",
+            "product": "giiker-super-decoder"
           }
         },
         "banner_D43zUE": {
           "type": "banner",
           "settings": {
-            "product_title": "",
-            "product": "giiker-smart-sudoku"
+            "product_image": "shopify://shop_images/08d17e18243ac20f25fd9493ab834efa.png",
+            "product_title": "Smart Sudoku",
+            "product": "smart-sudoku"
           }
         },
         "banner_UHmhcj": {
           "type": "banner",
           "settings": {
-            "product_title": "",
-            "product": "giiker-super-ludo"
+            "product_image": "shopify://shop_images/2_4e5bad98-96d4-49fa-a77f-d9e2ec97fb70.png",
+            "product_title": "Smart Four",
+            "product": "giiker-smart-four-board-games"
           }
         },
         "banner_QrAEJG": {
           "type": "banner",
           "settings": {
-            "product_title": "",
-            "product": "super-slide"
+            "product_image": "shopify://shop_images/2_d4f60041-c97e-4ce3-9740-d1c0053610a4.png",
+            "product_title": "Super Ludo",
+            "product": "giiker-super-ludo"
           }
         }
       },
@@ -252,7 +256,7 @@
           "type": "awards",
           "settings": {
             "image": "shopify://shop_images/family_choice.png",
-            "title": "<p>Family Choice</p><p>Award</p>"
+            "title": "<p>Family Choice Award</p>"
           }
         },
         "awards_99KaDf": {
@@ -314,13 +318,41 @@
           "settings": {
             "video": "shopify://files/videos/banterandboards.mp4"
           }
+        },
+        "phone_ihTLcX": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/montessori_by_june.mp4"
+          }
+        },
+        "phone_hecebC": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/retro-super decoder.mp4"
+          }
+        },
+        "phone_NLyNzn": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/nitpicknate.mp4"
+          }
+        },
+        "phone_dYCUTY": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/tinkeringwithtwo.mp4"
+          }
         }
       },
       "block_order": [
         "phone_c94yVp",
         "phone_TFHGTz",
         "phone_NpRhG7",
-        "phone_k7e9FT"
+        "phone_k7e9FT",
+        "phone_ihTLcX",
+        "phone_hecebC",
+        "phone_NLyNzn",
+        "phone_dYCUTY"
       ],
       "name": "Giiker Home Phone Image",
       "settings": {
@@ -414,7 +446,7 @@
       "settings": {
         "title": "<p>Let’s Play Together</p>",
         "detail": "<p>Our Facebook Group is more than a page — it’s a space to celebrate victories, ask</p><p>questions, and get insider updates. Come join the fun!</p>",
-        "url": "",
+        "url": "https://www.facebook.com/groups/1324836238992700",
         "url_label": "Join our Community",
         "background_color": "#ffffff",
         "background_image": "shopify://shop_images/Vector_25.png",

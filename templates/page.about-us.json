@@ -155,6 +155,7 @@
         "background_color": "#62a7c9",
         "title": "<p>OUR STORY</p>",
         "bottom_image": "shopify://shop_images/20251117102416_1005_911.png",
+        "bottom_image_mobile": "shopify://shop_images/3333222222222.png",
         "title_bottom": "<p>How a GiiKER Toy Comes to Life</p>"
       }
     },
