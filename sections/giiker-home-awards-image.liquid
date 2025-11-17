@@ -82,26 +82,66 @@
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const marqueeElement = document.querySelector('.awards-marquee-content');
-  if (marqueeElement) {
-    // 确保有足够的内容进行无缝循环
-    const items = marqueeElement.querySelectorAll('.awards-marquee-item');
-    if (items.length > 0) {
-      // 如果内容不够多，复制更多内容
-      const originalItems = items.length / 2; // 因为我们已经复制了一份
-      if (originalItems < 4) {
-        const content = marqueeElement.innerHTML;
-        marqueeElement.innerHTML = content + content;
-      }
-    }
-    
-    // 鼠标悬停暂停动画
-    marqueeElement.addEventListener('mouseenter', function() {
-      this.style.animationPlayState = 'paused';
-    });
-    
-    marqueeElement.addEventListener('mouseleave', function() {
-      this.style.animationPlayState = 'running';
-    });
+  if (!marqueeElement) return;
+  
+  const items = marqueeElement.querySelectorAll('.awards-marquee-item');
+  if (items.length === 0) return;
+  
+  // 计算原始内容宽度（第一份）
+  const originalCount = items.length / 2;
+  let originalWidth = 0;
+  
+  // 获取第一个元素的 margin-right
+  const firstItem = items[0];
+  const computedStyle = window.getComputedStyle(firstItem);
+  const marginRight = parseFloat(computedStyle.marginRight) || 30;
+  
+  // 计算第一份内容的宽度
+  for (let i = 0; i < originalCount; i++) {
+    const item = items[i];
+    originalWidth += item.offsetWidth + (i < originalCount - 1 ? marginRight : 0);
   }
+  
+  // 如果内容宽度不够，复制更多份以确保无缝循环
+  const containerWidth = marqueeElement.parentElement.offsetWidth;
+  const neededCopies = Math.ceil((containerWidth * 2) / originalWidth) + 1;
+  
+  // 如果当前只有2份（原始+1份复制），需要添加更多
+  const currentCopies = items.length / originalCount;
+  if (currentCopies < neededCopies) {
+    const originalHTML = Array.from(items).slice(0, originalCount).map(item => item.outerHTML).join('');
+    const additionalCopies = neededCopies - currentCopies;
+    for (let i = 0; i < additionalCopies; i++) {
+      marqueeElement.insertAdjacentHTML('beforeend', originalHTML);
+    }
+  }
+  
+  // 重新计算总宽度
+  const totalWidth = marqueeElement.scrollWidth;
+  const halfWidth = totalWidth / 2;
+  
+  // 设置动画，确保无缝循环
+  marqueeElement.style.setProperty('--marquee-width', `-${halfWidth}px`);
+  marqueeElement.style.willChange = 'transform';
+  
+  // 鼠标悬停暂停动画
+  marqueeElement.addEventListener('mouseenter', function() {
+    this.style.animationPlayState = 'paused';
+  });
+  
+  marqueeElement.addEventListener('mouseleave', function() {
+    this.style.animationPlayState = 'running';
+  });
+  
+  // 窗口大小改变时重新计算
+  let resizeTimer;
+  window.addEventListener('resize', function() {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(function() {
+      const newTotalWidth = marqueeElement.scrollWidth;
+      const newHalfWidth = newTotalWidth / 2;
+      marqueeElement.style.setProperty('--marquee-width', `-${newHalfWidth}px`);
+    }, 250);
+  });
 });
 </script>

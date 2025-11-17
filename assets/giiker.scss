@@ -541,8 +541,11 @@ body{
     
     &-content {
       display: flex;
-      animation: marquee 20s linear infinite;
+      animation: marquee 30s linear infinite;
       white-space: nowrap;
+      will-change: transform;
+      backface-visibility: hidden;
+      transform: translateZ(0);
       
       &:hover {
         animation-play-state: paused;
@@ -622,7 +625,7 @@ body{
     }
     
     .awards-marquee-content {
-      animation-duration: 10s;
+      animation-duration: 20s;
     }
   }
   
@@ -639,7 +642,7 @@ body{
     }
     
     .awards-marquee-content {
-      animation-duration: 10s;
+      animation-duration: 20s;
     }
     
     .giiker-home-awards-image-item-title {
@@ -658,18 +661,18 @@ body{
     }
     
     .awards-marquee-content {
-      animation-duration: 10s;
+      animation-duration: 20s;
     }
   }
 }
 
-// 跑马灯动画
+// 跑马灯动画 - 无缝循环
 @keyframes marquee {
   0% {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-50%);
+    transform: translateX(var(--marquee-width, -50%));
   }
 }
 .giiker-home-phone-image-container {
@@ -2061,6 +2064,8 @@ ease;
       height: 100%;
       object-fit: cover;
       display: block;
+      border-radius: 20px;
+      overflow: hidden;
     }
   }
   .right-content{
@@ -2557,7 +2562,7 @@ ease;
     background: rgba(247, 165, 69, 1);
     padding: 15px;
     *{
-      font-size: 12px;
+      font-size: 16px;
       font-family: Oslla;
       color: #000;
     }
@@ -2634,6 +2639,9 @@ ease;
 }
 
 @media screen and (max-width: 768px) {
+  .giiker-about-us-our-story-content .giiker-about-us-our-story-bottom-image{
+    margin-top: 0;
+  }
   .new-product-11-05 .product-variant__container .product-variant__item--color{
     width: 50px;
     height: 50px;
