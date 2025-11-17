@@ -4486,7 +4486,7 @@ ease;
     margin-top: 90px; }
   .site-box.box__form .site-box-content {
     padding: 100px 0;
-    width: 70%;
+    width: 75%;
     max-width: 500px; }
   .site-box.box__form .caption {
     font-size: 0.8125rem;
@@ -4520,7 +4520,10 @@ ease;
       opacity: 1;
       font-family: Overlock;
       font-size: 2vw;
+      padding: 10px;
+      border-radius: 6px;
       color: #fff;
+      background-color: var(--background-color);
       margin-top: 74px;
       text-align: left; }
     .site-box.box__slideshow-split .slideshow-item .title {
@@ -4529,7 +4532,9 @@ ease;
       font-weight: 400;
       line-height: 1.2;
       margin-bottom: 0;
+      border-radius: 6px;
       color: #fff;
+      background-color: var(--background-color);
       text-align: left; }
     .site-box.box__slideshow-split .slideshow-item .subtitle {
       /*         @include font-quote(); */
