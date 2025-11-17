@@ -264,6 +264,7 @@
         "list_wLCkfw",
         "list_B3cRM9"
       ],
+      "disabled": true,
       "name": "Giiker Product Icon",
       "settings": {
         "background_image": "shopify://shop_images/Sku_2_1.png"
@@ -283,6 +284,60 @@
           "smart-sudoku"
         ]
       }
+    },
+    "giiker_home_phone_image_7bXqQP": {
+      "type": "giiker-home-phone-image",
+      "blocks": {
+        "phone_BRw3AA": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/nitpicknate.mp4"
+          }
+        },
+        "phone_AdeYVn": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/tinkeringwithtwo.mp4"
+          }
+        },
+        "phone_MMYAYp": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/retro-super slide.mp4"
+          }
+        },
+        "phone_VwFerw": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/montessori_by_june.mp4"
+          }
+        },
+        "phone_RWdgwj": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/banterandboards.mp4"
+          }
+        },
+        "phone_eNBjqj": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/never.boardgame.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "phone_BRw3AA",
+        "phone_AdeYVn",
+        "phone_MMYAYp",
+        "phone_VwFerw",
+        "phone_RWdgwj",
+        "phone_eNBjqj"
+      ],
+      "name": "Giiker Home Phone Image",
+      "settings": {
+        "title": "Families everywhere are loving it.",
+        "background_color": "rgba(240, 103, 79, 1)"
+      }
     }
   },
   "order": [
@@ -296,7 +351,8 @@
     "giiker_product_basice_UEt668",
     "giiker_product_gsap_inTccQ",
     "giiker_product_roller_bdKzfP",
-    "giiker_product_icon_yjLqaX",
-    "giiker_product_recommended_ndfAnB"
+    "giiker_home_phone_image_7bXqQP",
+    "giiker_product_recommended_ndfAnB",
+    "giiker_product_icon_yjLqaX"
   ]
 }
