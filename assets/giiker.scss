@@ -119,7 +119,7 @@ body{
     height: 10px;
   }
   .swiper-pagination-bullet-active{
-    background: rgba(255, 223, 87, 1);
+    background: #000;
   }
 }
 .giiker-home-image-video{
@@ -402,7 +402,7 @@ body{
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       .giiker-home-list-image-item-content-icon{
         width: 100%;
         display: flex;
@@ -2547,13 +2547,13 @@ ease;
 }
 .new-product-11-05{
   .product-variant__container .product-variant__item--color{
-    height: 100px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
   }
   .site-box.box__product-content{
     padding: 0 20px;
     .site-box-content{
-      width: 500px;
+      width: 637px;
       max-width: 100%;
       margin: 0 auto;
     }

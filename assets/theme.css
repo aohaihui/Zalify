@@ -3827,6 +3827,7 @@ product-variants[data-style=select][data-has-variants] {
   .box__product-gallery[data-fit=true] .product-gallery-item img {
     object-fit: contain;
     width: 80%;
+    height: 80%;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -8275,10 +8276,15 @@ li.has-submenu:hover > ul {
 .toggle__title:focus-visible {
   outline: auto 5px -webkit-focus-ring-color !important;
 }
+.css-slider-viewport.auto-height .css-slide {
+  padding-top: 100% !important;
+}
+.css-slider-viewport.auto-height .css-slide .box--product-media{
+  padding-top: 0 !important;
+  position: unset !important;
+}
 @media screen and (max-width: 768px) {
-  .css-slider-viewport.auto-height .css-slide {
-    padding-top: 100% !important;
-  }
+
   .box--product-media{
     padding-top: 0 !important;
     position: unset !important;
