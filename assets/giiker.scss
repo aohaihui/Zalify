@@ -165,9 +165,11 @@ body{
         }
         .giiker-home-text-image-item-content .giiker-home-text-image-item-content-background{
           position: absolute;
-          bottom: 10%;
+          bottom: -17%;
           left: -10%;
           img{
+            max-height: 454px;
+            width: 287px;
             object-fit: cover;
           }
         }
@@ -198,10 +200,11 @@ body{
           bottom: 10%;
           right: -10%;
           transform: rotate(15deg);
-          // opacity: .06;
+          opacity: .06;
           img{
             object-fit: cover;
             max-height: 421px;
+            width: 272px;
           }
         }
         .giiker-home-text-image-item-title{
