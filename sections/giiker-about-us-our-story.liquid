@@ -22,7 +22,8 @@
     </div>
     <h2 class="giiker-about-us-our-story-bottom-title">{{ section.settings.title_bottom }}</h2>
     <div class="giiker-about-us-our-story-bottom-image">
-      {{ section.settings.bottom_image | image_url: width: section.settings.bottom_image.width | image_tag: height: section.settings.bottom_image.height, fetchpriority: 'high', loading: 'lazy', class: 'image-tag' }}
+      {{ section.settings.bottom_image | image_url: width: section.settings.bottom_image.width | image_tag: height: section.settings.bottom_image.height, fetchpriority: 'high', loading: 'lazy', class: 'image-tag pc-image' }}
+      {{ section.settings.bottom_image_mobile | image_url: width: section.settings.bottom_image_mobile.width | image_tag: height: section.settings.bottom_image_mobile.height, fetchpriority: 'high', loading: 'lazy', class: 'image-tag mb-image' }}
     </div>
   </div> 
 </div>
@@ -290,6 +291,11 @@
       "type": "image_picker",
       "id": "bottom_image",
       "label": "Bottom Image  1920*420 "
+    },
+    {
+      "type": "image_picker",
+      "id": "bottom_image_mobile",
+      "label": "Bottom Image Mobile 375*180"
     },
     {
       "type": "richtext",
