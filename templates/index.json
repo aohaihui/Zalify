@@ -35,14 +35,14 @@
           "type": "banner",
           "settings": {
             "pc_image": "shopify://shop_images/kv2.jpg",
-            "mobile_image": "shopify://shop_images/app-kv2_01_5da7d80a-11f1-4732-ab5e-2784a00dc25e.jpg"
+            "mobile_image": "shopify://shop_images/app-kv2-_logo_1d16c1b4-1235-43b0-b59d-7de302753b77.jpg"
           }
         },
         "banner_kL4TfF": {
           "type": "banner",
           "settings": {
             "pc_image": "shopify://shop_images/kv1.jpg",
-            "mobile_image": "shopify://shop_images/app_01.jpg"
+            "mobile_image": "shopify://shop_images/app-kv1-_logo.jpg"
           }
         }
       },
