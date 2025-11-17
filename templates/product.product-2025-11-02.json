@@ -267,39 +267,6 @@
         "background_color": "#f0674f"
       }
     },
-    "rich_text_TaQaJm": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_xQG7bm": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Talk about your brand"
-          }
-        },
-        "text_RwTbzM": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_xQG7bm",
-        "text_RwTbzM"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "title": "Explore the facebook group",
-        "btn_label": "Join in",
-        "btn_url": "",
-        "desktop_image_positioning": "image-on-left",
-        "bg_overlay": false,
-        "custom_background": "#f0674f",
-        "custom_text": "rgba(0,0,0,0)"
-      }
-    },
     "giiker_product_recommended_ndfAnB": {
       "type": "giiker-product-recommended",
       "name": "Giiker Product Recommended",
@@ -366,7 +333,6 @@
     "giiker_product_basice_UEt668",
     "giiker_product_roller_bdKzfP",
     "giiker_home_phone_image_7bXqQP",
-    "rich_text_TaQaJm",
     "giiker_product_recommended_ndfAnB",
     "giiker_product_icon_yjLqaX"
   ]
