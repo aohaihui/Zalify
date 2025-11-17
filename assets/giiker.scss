@@ -2929,7 +2929,7 @@ ease;
       line-height: 1.1;
       font-weight: 400;
       font-family: Oslla;
-      color: #000;
+      color: #fff;
     }
   }
   .giiker-about-us-text-detail{
@@ -2946,7 +2946,7 @@ ease;
       line-height: 1.1;
       font-family: Overlock;
       font-weight: 400;
-      color: #000;
+      color: #fff;
     }
   }
   .giiker-about-us-text-image{
@@ -2958,17 +2958,17 @@ ease;
     box-sizing: border-box;
     position: relative;
     padding-bottom: 50px;
-    // &::before{
-    //   content: '';
-    //   position: absolute;
-    //   bottom: 50px;
-    //   left: 50%;
-    //   transform: translateX(-50%);
-    //   width: 842px;
-    //   max-width: 100%;
-    //   height: 4px;
-    //   background: rgba(0, 0, 0, 1);
-    // }
+    &::before{
+      content: '';
+      position: absolute;
+      bottom: 50px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 842px;
+      max-width: 100%;
+      height: 4px;
+      background: rgba(0, 0, 0, 1);
+    }
     img{
       max-width: 100%;
     }
