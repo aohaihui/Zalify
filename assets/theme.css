@@ -6352,7 +6352,7 @@ cart-product-recommendations .css-slider-navigation-container:before {
 .box--product-media[data-type=video] .video-popup__play {
   display: block;
   position: absolute;
-  top: 50%;
+  top: 41%;
   left: 50%;
   width: 48px;
   height: 48px;
@@ -8292,5 +8292,7 @@ li.has-submenu:hover > ul {
   .product-gallery-item img{
     object-fit: none;
   }
-
+  .box--product-media[data-type=video] .video-popup__play{
+    top: 50%;
+  }
 }
