@@ -5,11 +5,11 @@
       style="height: auto;">
       <div class="site-box-content responsive-flickity ">
         {% for block in section.blocks %}
-          <div class="slideshow-item {% if block.settings.is_reversal %} reversal {% endif %}" style="background-color: {{ block.settings.background_color }};">
-            <div class="site-box box--big box--center-align box--column-flow box__slideshow-item active">
+          <div class="slideshow-item {% if block.settings.is_reversal %} reversal {% endif %}">
+            <div class="site-box box--big box--center-align box--column-flow box__slideshow-item active"  style="background-color: {{ block.settings.background_color }};">
               <div class="site-box-content fix-me-with-margin">
-                <h3 class="title custom-underline inline" >{{ block.settings.title }}</h3>
-                <p class="caption" >{{ block.settings.detail }}</p>
+                <h3 class="title custom-underline inline" style="color: {{ block.settings.title_color }}; --background-color: {{ block.settings.text_color }};">{{ block.settings.title }}</h3>
+                <p class="caption" style="color: {{ block.settings.detail_color }}; --background-color: {{ block.settings.text_color }};">{{ block.settings.detail }}</p>
               </div>
               <div class="site-box-background-container">
                 <div class="active" >
@@ -29,7 +29,7 @@
     </div>
 
   </div>
-  <div class="section-home_slideshow-swiper mb-image">
+  {% comment %} <div class="section-home_slideshow-swiper mb-image">
     <div class="swiper">
       <div class="swiper-wrapper">
         {% for block in section.blocks %}
@@ -46,8 +46,21 @@
       </div>
       <div class="swiper-pagination"></div>
     </div>
-  </div>
-  <style type="text/css">
+  </div> {% endcomment %}
+  <div class="section-home_slideshow-swiper-mobile mb-image" style="flex-direction: column;">
+    {% for block in section.blocks %}
+      <div class="section-home_slideshow-swiper-mobile-item" style="background-color: {{ block.settings.background_color }};">
+        <div class="image-tag">
+          {{ block.settings.mobile_image | image_url: width: block.settings.mobile_image.width | image_tag: height: block.settings.mobile_image.height, fetchpriority: 'high', loading: 'lazy', class: 'image-tag' }}
+        </div>
+        <div class="content">
+          <div class="box-title" style="color: {{ block.settings.title_color }}; --background-color: {{ block.settings.text_color }};">{{ block.settings.title }}</div>
+          <div class="box-detail" style="color: {{ block.settings.detail_color }}; --background-color: {{ block.settings.text_color }};">{{ block.settings.detail }}</div>
+        </div>
+      </div>
+    {% endfor %}
+  </div> 
+  <style type="text/css"> 
     @media screen and (min-width: 768px),
     screen and (min-width: 1024px) and (orientation: landscape) {
 
@@ -79,24 +92,11 @@
 
 
 </div>
-<!-- 加载 Flickity �?-->
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 <script src="{{ 'js_plugins.min.js' | asset_url }}"></script>
 <script src="{{ 'roller.js' | asset_url }}"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const swiperProductFeatures = new Swiper('#shopify-section-{{ section.id }} .swiper', {
-      slidesPerView: 1,
-      spaceBetween: 15,
-      loop: true,
-      pagination: {
-        el: '#shopify-section-{{ section.id }} .swiper-pagination',
-        clickable: true,
-      }
-    });
-  });
-</script>
+
 {% schema %}
 {
 "name": "Giiker Product Roller",
@@ -119,9 +119,19 @@
           "label": "Background Color"
         },
         {
+          "type": "color",
+          "id": "text_color",
+          "label": "Text Color"
+        },
+        {
           "type": "text",
           "id": "title",
           "label": "Title"
+        },
+        {
+          "type": "color",
+          "id": "title_color",
+          "label": "Title Color"
         },
         {
           "type": "text",
@@ -129,9 +139,19 @@
           "label": "Detail"
         },
         {
+          "type": "color",
+          "id": "detail_color",
+          "label": "Detail Color"
+        },
+        {
           "type": "image_picker",
           "id": "image",
           "label": "Image"
+        },
+        {
+          "type": "image_picker",
+          "id": "mobile_image",
+          "label": "Mobile Image"
         }
       ]
     }

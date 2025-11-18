@@ -1,13 +1,9 @@
 <div class="giiker-product-recommended-container" style="">
+  {% if section.settings.background_image != blank %}
   <div class="giiker-product-recommended-background">
-    {{
-      section.settings.background_image
-      | image_url: width: section.settings.background_image.width
-      | image_tag: height: section.settings.background_image.height,
-        fetchpriority: 'high', loading: 'lazy', class: 'image-tag-background',
-        data-cc-animate: 'fade-in'
-    }}
+    {{ section.settings.background_image | image_url: width: section.settings.background_image.width | image_tag: height: section.settings.background_image.height, fetchpriority: 'high', loading: 'lazy', class: 'image-tag-background', data-cc-animate: 'fade-in' }}
   </div>
+  {% endif %}
   <h2 class="giiker-product-recommended-title">{{ section.settings.title }}</h2>
   <div class="giiker-product-recommended-list swiper" data-cc-animate="fade-in">
     <div class="swiper-wrapper">  

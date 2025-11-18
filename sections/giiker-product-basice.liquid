@@ -26,6 +26,7 @@
     {% if section.settings.mobile_background_image != blank %}
       {{ section.settings.mobile_background_image | image_url: width: section.settings.mobile_background_image.width | image_tag: height: section.settings.mobile_background_image.height, fetchpriority: 'high', loading: 'lazy', class: 'image-tag', data-cc-animate: 'fade-in' }}
     {% endif %}
+    <img class="posi" src="https://cdn.shopify.com/s/files/1/0609/5611/5196/files/play_cirlceByBarsrsind_1_1.png?v=1763394599" alt="">
   </div>
   <div class="mobile-fixed-image" id="mobile-fixed-image-{{ section.id }}">
     {% if section.settings.mobile_video != blank %}
@@ -75,6 +76,18 @@
     max-height: 90vh;
     object-fit: contain;
     pointer-events: auto;
+  }
+  #shopify-section-{{ section.id }} .mobile-video{
+    position: relative;
+    margin-top: -4px;
+  }
+  #shopify-section-{{ section.id }} .mobile-video .posi{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 34px;
+    height: 34px;
   }
 </style>
 <script>

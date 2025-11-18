@@ -485,7 +485,70 @@
 
             {%- when 'share' -%}
               <div {{ block.shopify_attributes }}>{%- render 'share', title: product.title, url: product.url, image: product.featured_media -%}</div>
-
+              {%- when 'Free_Delivery' -%}
+                <div class="Free_Delivery">
+                  <div class="Free_Delivery_item">
+                    {% if block.settings.image_1 %}
+                      <div class="Free_Delivery_item_image">
+                        {{ block.settings.image_1 | image_url: width: 100 | image_tag }}
+                      </div>
+                    {% endif %}
+                    {% if block.settings.title_1 %}
+                      <div class="Free_Delivery_item_title">
+                        {{ block.settings.title_1 }}
+                      </div>
+                    {% endif %}
+                    {% if block.settings.detail_1 %}
+                      <div class="Free_Delivery_item_detail">
+                        {{ block.settings.detail_1 }}
+                      </div>
+                    {% endif %}
+                  </div>
+                  {% if block.settings.title_2 %}
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="144" viewBox="0 0 12 144" fill="none">
+                    <path d="M0 0L1.92952 48.7597C2.01543 50.9308 3.77817 52.6589 5.95051 52.7017C8.18758 52.7458 10.0479 50.9903 10.1335 48.7544L12 0V144L10.1335 95.2455C10.0479 93.0097 8.18758 91.2542 5.95051 91.2983C3.77818 91.3411 2.01543 93.0692 1.92952 95.2403L0 144V0Z" fill="#F1E8F5"/>
+                    </svg>
+                  {% endif %}
+                  <div class="Free_Delivery_item">
+                    {% if block.settings.image_2 %}
+                      <div class="Free_Delivery_item_image">
+                        {{ block.settings.image_2 | image_url: width: 100 | image_tag }}
+                      </div>
+                    {% endif %}
+                    {% if block.settings.title_2 %}
+                      <div class="Free_Delivery_item_title">
+                        {{ block.settings.title_2 }}
+                      </div>
+                    {% endif %}
+                    {% if block.settings.detail_2 %}
+                      <div class="Free_Delivery_item_detail">
+                        {{ block.settings.detail_2 }}
+                      </div>
+                    {% endif %}
+                  </div>
+                  {% if block.settings.title_3 %}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="144" viewBox="0 0 12 144" fill="none">
+                  <path d="M0 0L1.92952 48.7597C2.01543 50.9308 3.77817 52.6589 5.95051 52.7017C8.18758 52.7458 10.0479 50.9903 10.1335 48.7544L12 0V144L10.1335 95.2455C10.0479 93.0097 8.18758 91.2542 5.95051 91.2983C3.77818 91.3411 2.01543 93.0692 1.92952 95.2403L0 144V0Z" fill="#F1E8F5"/>
+                  </svg>
+                  {% endif %}
+                  <div class="Free_Delivery_item">
+                    {% if block.settings.image_3 %}
+                      <div class="Free_Delivery_item_image">
+                        {{ block.settings.image_3 | image_url: width: 100 | image_tag }}
+                      </div>
+                    {% endif %}
+                    {% if block.settings.title_3 %}
+                      <div class="Free_Delivery_item_title">
+                        {{ block.settings.title_3 }}
+                      </div>
+                    {% endif %}
+                    {% if block.settings.detail_3 %}
+                      <div class="Free_Delivery_item_detail">
+                        {{ block.settings.detail_3 }}
+                      </div>
+                    {% endif %}
+                  </div>
+                </div>
             {%- when 'collapsible_tab' -%}
 
               <toggle-tab class="toggle" {{ block.shopify_attributes }}>
@@ -546,7 +609,6 @@
                     </div>
                   </div>
                 {% endif %}
-              </div>
               <script>
                 // 手风琴功能 - 流畅动画版本
                 document.addEventListener('DOMContentLoaded', function() {
@@ -630,6 +692,7 @@
                   });
                 });
               </script>
+              </div>
         {%- endcase -%}
 
           {%- endfor -%}
@@ -883,6 +946,57 @@
             "type": "page",
             "id": "page",
             "label": "Answer from page"
+          }
+        ]
+      },
+      {
+        "type": "Free_Delivery",
+        "name": "Free Delivery",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image_1",
+            "label": "Image 1"
+          },
+          {
+            "type": "text",
+            "id": "title_1",
+            "label": "Title"
+          },
+          {
+            "type": "richtext",
+            "id": "detail_1",
+            "label": "Detail"
+          },
+          {
+            "type": "image_picker",
+            "id": "image_2",
+            "label": "Image 2"
+          },
+          {
+            "type": "text",
+            "id": "title_2",
+            "label": "Title 2"
+          },
+          {
+            "type": "richtext",
+            "id": "detail_2",
+            "label": "Detail 2"
+          },
+          {
+            "type": "image_picker",
+            "id": "image_3",
+            "label": "Image 3"
+          },
+          {
+            "type": "text",
+            "id": "title_3",
+            "label": "Title 3"
+          },
+          {
+            "type": "richtext",
+            "id": "detail_3",
+            "label": "Detail 3"
           }
         ]
       },

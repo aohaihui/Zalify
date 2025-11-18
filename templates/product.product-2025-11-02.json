@@ -75,6 +75,20 @@
             "text": "<p>User Manual： <a href=\"/pages/smart-four-user-manual\" title=\"smart four user manual\"><strong>Click here</strong></a></p>",
             "text_style": "body"
           }
+        },
+        "free_delivery_iPJ7mA": {
+          "type": "Free_Delivery",
+          "settings": {
+            "image_1": "shopify://shop_images/685082392297db95b906f751_nex-web-icon-delivery.svg",
+            "title_1": "",
+            "detail_1": "<p>Free Delivery</p><p>(Limited Time)</p>",
+            "image_2": "shopify://shop_images/68508239b45fd47ed3fc6f3d_nex-web-icon-shipping.svg",
+            "title_2": "",
+            "detail_2": "<p>30 Days</p><p>Free Returns</p>",
+            "image_3": "shopify://shop_images/68508239939e9f0c8d5eca5a_nex-web-icon-warranty.svg",
+            "title_3": "",
+            "detail_3": "<p>1-Year</p><p>Warranty</p>"
+          }
         }
       },
       "block_order": [
@@ -84,7 +98,8 @@
         "description",
         "collapse_HQqnfc",
         "share",
-        "93880648-978b-4d31-9200-dc7244fdc064"
+        "93880648-978b-4d31-9200-dc7244fdc064",
+        "free_delivery_iPJ7mA"
       ],
       "settings": {
         "gallery_style": "slider",
@@ -126,68 +141,8 @@
         "title": "Learn the basics",
         "detail": "A step-by-step tutorial on how our smart product makes learning a breeze.",
         "mobile_video": "shopify://files/videos/SnapTik.app_7205644755823234309.mp4",
-        "mobile_background_image": "shopify://shop_images/Group_51.png"
+        "mobile_background_image": "shopify://shop_images/slogan.png"
       }
-    },
-    "giiker_product_gsap_inTccQ": {
-      "type": "giiker-product-gsap",
-      "blocks": {
-        "content_top_3MtwXV": {
-          "type": "content_top",
-          "settings": {
-            "background_color": "#6cc1d4",
-            "title": "Innovative Code-Breaking Game",
-            "detail": "Break the 4 digit color code within 7steps, putting your logical reasoning and problem-solving abilities to the test",
-            "image": "shopify://shop_images/image_9.png"
-          }
-        },
-        "content_top_XmH9VP": {
-          "type": "content_top",
-          "settings": {
-            "background_color": "#28b372",
-            "title": "Immersive Sound Effects",
-            "detail": "With each press and turn, the morse code sound effects will indulge the user in an engaging detective setting.",
-            "image": "shopify://shop_images/image_9_1.png"
-          }
-        },
-        "content_top_LUP3hY": {
-          "type": "content_top",
-          "settings": {
-            "background_color": "#2860b3",
-            "title": "Two Game Modes",
-            "detail": "Challenge yourself to become a deduction master with 600 levels, or break the code set by the Code Setter within a time limit.",
-            "image": "shopify://shop_images/image_9_1.png"
-          }
-        },
-        "content_bottom_QzAzha": {
-          "type": "content_bottom",
-          "settings": {
-            "background_color": "#813ebc",
-            "title": "Travel Friendly",
-            "detail": "This compact portable handheld console is perfect for on-the-go use, enjoy brain-teasing challenges at anytime.",
-            "image": "shopify://shop_images/Group_24_1.png"
-          }
-        },
-        "content_bottom_Bg6PRr": {
-          "type": "content_bottom",
-          "settings": {
-            "background_color": "#bc573e",
-            "title": "Interactive Hints",
-            "detail": "Get instant feedback with two types of hints, decipher the hints to break the code.",
-            "image": "shopify://shop_images/Group_24.png"
-          }
-        }
-      },
-      "block_order": [
-        "content_top_3MtwXV",
-        "content_top_XmH9VP",
-        "content_top_LUP3hY",
-        "content_bottom_QzAzha",
-        "content_bottom_Bg6PRr"
-      ],
-      "disabled": true,
-      "name": "Giiker Product Gsap",
-      "settings": {}
     },
     "giiker_product_roller_bdKzfP": {
       "type": "giiker-product-roller",
@@ -197,9 +152,13 @@
           "settings": {
             "is_reversal": false,
             "background_color": "#6cc1d4",
+            "text_color": "#f0674f",
             "title": "Become a Master Detective",
+            "title_color": "",
             "detail": "Can you crack the secret code? You’ve got 7 chances to solve the 4-color puzzle! Every guess brings you closer to the truth—or closer to defeat. Do you have what it takes to solve all 600 codes?",
-            "image": "shopify://shop_images/image_9_1.png"
+            "detail_color": "",
+            "image": "shopify://shop_images/image_9_1.png",
+            "mobile_image": "shopify://shop_images/image_9.png"
           }
         },
         "content_iirxpf": {
@@ -207,9 +166,13 @@
           "settings": {
             "is_reversal": true,
             "background_color": "#28b372",
+            "text_color": "#f0674f",
             "title": "Secret Hints",
+            "title_color": "",
             "detail": "The code is tricky, but clues are on your side! After each guess, the device gives hints—study them carefully and make your next move. But be quick—you only have 7 tries to crack the secret color code!",
-            "image": "shopify://shop_images/Interactive_Hints.png"
+            "detail_color": "",
+            "image": "shopify://shop_images/Interactive_Hints.png",
+            "mobile_image": "shopify://shop_images/Interactive_Hints.png"
           }
         },
         "content_bNXnpp": {
@@ -217,19 +180,27 @@
           "settings": {
             "is_reversal": false,
             "background_color": "#2860b3",
+            "text_color": "#f0674f",
             "title": "From Codebreaker to Code Setter",
+            "title_color": "",
             "detail": "Flip the game and become the master! Set your own secret code and challenge a friend—can they crack it, or will your code leave them guessing?",
-            "image": "shopify://shop_images/image.png"
+            "detail_color": "",
+            "image": "shopify://shop_images/image.png",
+            "mobile_image": "shopify://shop_images/image.png"
           }
         },
         "content_NjbrTD": {
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "",
+            "background_color": "#2860b3",
+            "text_color": "#f0674f",
             "title": "On-the-Go Detective",
+            "title_color": "",
             "detail": "Carry the thrill in your pocket! This tiny handheld console goes wherever you do—no loose pieces, no mess, just nonstop code-breaking fun.",
-            "image": "shopify://shop_images/image_1.png"
+            "detail_color": "",
+            "image": "shopify://shop_images/image_1.png",
+            "mobile_image": "shopify://shop_images/image_1.png"
           }
         }
       },
@@ -296,44 +267,18 @@
         "background_color": "#f0674f"
       }
     },
-    "rich_text_TaQaJm": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_xQG7bm": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Talk about your brand"
-          }
-        },
-        "text_RwTbzM": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_xQG7bm",
-        "text_RwTbzM"
-      ],
-      "name": "t:sections.rich-text.presets.name",
+    "giiker_product_btn_McxzPp": {
+      "type": "giiker-product-btn",
+      "name": "Giiker Product Btn",
       "settings": {
-        "title": "Explore the facebook group",
-        "btn_label": "Join in",
-        "btn_url": "",
-        "desktop_image_positioning": "image-on-left",
-        "bg_overlay": false,
-        "custom_background": "#f0674f",
-        "custom_text": "rgba(0,0,0,0)"
+        "btn_label": "Explore the Facebook Group",
+        "btn_url": "shopify://products/battle-pad"
       }
     },
     "giiker_product_recommended_ndfAnB": {
       "type": "giiker-product-recommended",
       "name": "Giiker Product Recommended",
       "settings": {
-        "background_image": "shopify://shop_images/Vector_27.png",
         "title": "You may also like",
         "product_list": [
           "battle-pad",
@@ -393,10 +338,9 @@
     "shogun-below",
     "giiker_product_banner_tzTcDT",
     "giiker_product_basice_UEt668",
-    "giiker_product_gsap_inTccQ",
     "giiker_product_roller_bdKzfP",
     "giiker_home_phone_image_7bXqQP",
-    "rich_text_TaQaJm",
+    "giiker_product_btn_McxzPp",
     "giiker_product_recommended_ndfAnB",
     "giiker_product_icon_yjLqaX"
   ]

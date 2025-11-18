@@ -1,7 +1,12 @@
 <div class="giiker-about-us-text-container" style="background-color: {{ section.settings.background_color }};">
   <div class="giiker-about-us-text-content">
+    {% if section.settings.title != blank %}
     <h2 class="giiker-about-us-text-title" data-cc-animate="fade-in">{{ section.settings.title }}</h2>
+    {% endif %}
+    {% if section.settings.detail != blank %}
     <div class="giiker-about-us-text-detail" data-cc-animate="fade-in">{{ section.settings.detail }}</div>
+    {% endif %}
+    {% if section.settings.image != blank %}
     <div class="giiker-about-us-text-image" data-cc-animate="fade-in">
       {{
       section.settings.image
@@ -15,9 +20,11 @@
       | image_tag: height: section.settings.image_mobile.height,
         fetchpriority: 'high', loading: 'lazy', class: 'image-tag mb-image'
       }}
-
     </div>
+  {% endif %}
+    {% if section.settings.detail_mobile != blank %}
     <div class="giiker-about-us-text-detail mobile-detail mb-image" data-cc-animate="fade-in">{{ section.settings.detail_mobile }}</div>
+    {% endif %}
   </div>
 </div>
 
