@@ -1153,6 +1153,11 @@ body{
       font-weight: 400;
       font-family: Villain_Comic;
       color: #000;
+      /** 描边 */
+      text-shadow: 2px 2px 0 #fff,
+       -2px -2px 0 #fff,
+        2px -2px 0 #fff,
+        -2px 2px 0 #fff;
     }
   }
   .giiker-contact-us-text-list{
@@ -1189,7 +1194,7 @@ body{
         width: 100%;
         text-align: center;
         margin: 0;
-        font-size: 55px;
+        font-size: 53px;
         line-height: 1;
         height: 100%;
         display: flex;
@@ -1437,7 +1442,7 @@ body{
           }
         }
         .giiker-contact-us-text-item-detail{
-          font-size: 3.6vw;
+          font-size: 3.2vw;
           padding-left: 50px;
           transform: rotate(-2deg);
         }
@@ -2156,6 +2161,7 @@ ease;
     display: flex;
     flex-direction: column;
     flex: 1;
+    min-width: 400px;
     // min-height: 650px;
     .right-content-title{
       width: 100%;
@@ -2585,7 +2591,7 @@ ease;
     height: 72px;
   }
   .giiker-product-recommended-container .giiker-product-recommended-title{
-    font-size: 20px;
+    font-size: 32px;
     margin: 0;
     margin-bottom: 30px;
   }
@@ -2973,13 +2979,13 @@ ease;
     
     .Collapse-faq-item-question-text {
       color: #000;
-      font-weight: 400;
+      font-weight: 700;
       font-size: 15px;
       flex: 1;
       text-transform: uppercase;
       letter-spacing: 0.3px;
       line-height: 1.4;
-      font-family: Villain_Comic;
+      font-family: ComicNeue;
     }
     
     .Collapse-faq-item-question-icon {
@@ -3038,7 +3044,7 @@ ease;
   width: 100%;
   padding-top: 150px;
   .giiker-about-us-text-title{
-    width: 1118px;
+    width: 1018px;
     padding: 0 20px;
     box-sizing: border-box;
     max-width: 100%;
@@ -3047,9 +3053,9 @@ ease;
     *{
       margin: 0;
       font-size: 36px;
-      line-height: 1.1;
-      font-weight: 400;
-      font-family: Villain_Comic;
+      line-height: 1.5;
+      font-weight: 700;
+      font-family: ComicNeue;
       color: #fff;
     }
   }
@@ -3115,6 +3121,11 @@ ease;
       font-family: Villain_Comic;
       margin: 0;
       color: #000;
+      /** 描边 */
+      text-shadow: 2px 2px 0 #fff,
+       -2px -2px 0 #fff,
+        2px -2px 0 #fff,
+        -2px 2px 0 #fff;
     }
   }
   .giiker-about-us-our-story-list{
@@ -3308,18 +3319,19 @@ ease;
       .giiker-about-us-our-story-item-content{
         flex: 1;
         height: 100%;
-        padding: 0 24px;
+        padding: 0 18px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         .giiker-about-us-our-story-item-content-title{
           margin: 0;
+          margin-bottom: 10px;
           *{
             margin: 0;
             font-size: 32px;
             line-height: 1.1;
             font-weight: 700;
-            font-family: ComicNeue;
+            font-family: Villain_Comic;
             color: rgba(0, 149, 255, 1);
           }
         }
@@ -3420,7 +3432,7 @@ ease;
           font-size: 32px;
           line-height: 1.1;
           font-weight: 700;
-          font-family: ComicNeue;
+          font-family: Villain_Comic;
           margin: 0;
         }
       }
