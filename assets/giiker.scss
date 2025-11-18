@@ -316,7 +316,7 @@ body{
   position: relative;
   border-radius: 30px 30px 0 0;
   .favourite-title{
-    font-size: 72px;
+    font-size: 96px;
     line-height: 1;
     font-weight: 400;
     font-family: Villain_Comic;
@@ -324,6 +324,11 @@ body{
     text-align: center;
     padding-top: 80px;
     padding-bottom: 50px;
+    /** 描边 */
+    text-shadow: 2px 2px 0 #000,
+     -2px -2px 0 #000,
+      2px -2px 0 #000,
+      -2px 2px 0 #000;
   }
   .favourite-background{
     width: 100%;
@@ -398,7 +403,12 @@ body{
     text-align: center;
     *{
       margin: 0;
-      font-size: 72px;
+      font-size: 85px;
+      /** 描边 */
+      text-shadow: 2px 2px 0 #fff,
+       -2px -2px 0 #fff,
+        2px -2px 0 #fff,
+        -2px 2px 0 #fff;
       line-height: 1;
       font-weight: 400;
       font-family: Villain_Comic;
@@ -513,6 +523,11 @@ body{
       font-weight: 400;
       font-family: Villain_Comic;
       color: rgba(255, 217, 0, 1);
+      /** 描边 */
+      text-shadow: 2px 2px 0 #000,
+       -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000;
     }
   }
   .giiker-home-how-image-url{
@@ -737,7 +752,7 @@ body{
     border-radius: 30px 30px 0 0;
     
     .giiker-home-phone-image-title {
-      font-size: 72px;
+      font-size: 96px;
       line-height: 1;
       font-weight: 400;
       font-family: Villain_Comic;
@@ -747,6 +762,11 @@ body{
       opacity: 0;
       transform: translateY(30px);
       animation: titleFadeIn 1s ease-out 0.3s forwards;
+      /** 描边 */
+      text-shadow: 2px 2px 0 #fff,
+       -2px -2px 0 #fff,
+        2px -2px 0 #fff,
+        -2px 2px 0 #fff;
     }
     
     .giiker-home-phone-image-list {
@@ -933,6 +953,11 @@ body{
       font-weight: 400;
       font-family: Villain_Comic;
       color: rgba(255, 223, 87, 1);
+      /** 描边 */
+      text-shadow: 2px 2px 0 #000,
+       -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000;
     }
   }
   .giiker-home-evaluate-list-detail{
@@ -1862,7 +1887,7 @@ body{
   //   }
   // }
 }
-@media screen and (min-width: 768px) and (max-width: 1480px) {
+@media screen and (min-width: 768px) and (max-width: 1569px) {
   .giiker-home-list-image-container .giiker-home-list-image .giiker-home-list-image-item{
     max-width: calc(25% - 15px);
   }
@@ -2107,8 +2132,8 @@ ease;
     align-items: center;
     flex-shrink: 0;
     align-self: stretch;
-    aspect-ratio: 16 / 9;
-    flex: 1;
+    // aspect-ratio: 16 / 9;
+    // flex: 1;
     .image-left-tag{
       width: 100%;
       // height: 100%;
@@ -2116,6 +2141,7 @@ ease;
       display: block;
     border-radius: 20px;
     overflow: hidden;
+    height: 663px;
     }
   }
   .right-content{
@@ -2132,32 +2158,38 @@ ease;
     flex: 1;
     // min-height: 650px;
     .right-content-title{
-      width: max-content;
+      width: 100%;
       min-width: 86%;
       // height: 150px;
-      padding: 20px 50px;
+      padding: 20px 0;
       background: rgba(170, 228, 59, 1);
       display: flex;
       align-items: center;
-      justify-content: flex-end;
+      justify-content: center;
       color: #fff;
       font-family: Villain_Comic;
-      font-size: 2.5vw;
+      font-size: 72px;
       border-radius: 50px;
       text-align: center;
       box-sizing: border-box;
       word-break: break-word;
       white-space: normal;
       margin-bottom: 20px;
+      height: 156px;
+      /** 描边 */
+      text-shadow: 2px 2px 0 #000,
+       -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000;
     }
     .right-content-detail{
       background: rgba(170, 228, 59, 1);
-      width: 39%;
+      width: 375px;
       max-width: 100%;
       padding: 0 20px;
       line-height: 1; 
       border-radius: 50px;
-      height: 60%;
+      height: 73%;
       color: #fff;
       font-size: 1.5vw;
       line-height: 1.2;
@@ -2174,7 +2206,7 @@ ease;
     .image-right-tag{
       position: absolute;
       bottom: 0;
-      left: 10%;
+      left: -7%;
       height: 60%;
       object-fit: cover;
     }
@@ -2188,9 +2220,9 @@ ease;
     min-width: 55%;
   }
   .giiker-product-basice .right-content .right-content-detail{
-    height: 80%;
-    width: 36%;
-    font-size: 1.5vw;
+    height: 72%;
+    // width: 36%;
+    // font-size: 1.5vw;
   }
   .giiker-product-basice .right-content .image-right-tag{
     left: 28%;
@@ -2410,11 +2442,16 @@ ease;
   margin-top: -5px;
   .giiker-product-recommended-title{
     text-align: center;
-    font-size: 55px;
+    font-size: 96px;
     font-family: Villain_Comic;
     line-height: 1;
     color: #000;
     margin-bottom: 80px;
+    /** 描边 */
+    text-shadow: 2px 2px 0 #fff,
+     -2px -2px 0 #fff,
+      2px -2px 0 #fff,
+      -2px 2px 0 #fff;
   }
   .giiker-product-recommended-background{
     width: 100%;
@@ -2593,13 +2630,18 @@ ease;
   background-color: inherit !important;
 }
 .new-product-11-05 .product-header .product-title{
-  font-size: 64px;
+  font-size: 54px;
   font-family: Villain_Comic;
   line-height: 1;
   font-weight: 400;
   color: #000;
   padding-right: 0 !important;
   margin: 20px 0;
+  /** 描边 */
+  text-shadow: 2px 2px 0 #fff,
+   -2px -2px 0 #fff,
+    2px -2px 0 #fff,
+    -2px 2px 0 #fff;
 }
 .new-product-11-05 .site-box:after{
   display: none;
@@ -2623,7 +2665,8 @@ ease;
     padding: 15px;
     *{
       font-size: 16px;
-      font-family: Villain_Comic;
+      font-family: ComicNeue;
+      font-weight: 400;
       color: #000;
     }
     p{
@@ -2656,20 +2699,21 @@ ease;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: Villain_Comic;
+      font-family: ComicNeue;
       font-size: 20px;
       line-height: 1.1;
-      font-weight: 400;
+      font-weight: 700;
       color: #000;
       margin-right: 20px;
+      text-transform: uppercase;
     }
     input{
       width: 60px;
       padding: 0 5px;
       flex: unset;
       font-size: 24px;
-      font-family: Villain_Comic;
-      font-weight: 400;
+      font-family: ComicNeue;
+      font-weight: 700;
       line-height: 1.1;
     }
     .add-to-cart-button-text{
@@ -2826,7 +2870,7 @@ ease;
 }
 
 .add-to-cart-button-text {
-  background: #ff0000;
+  background: rgba(255, 94, 94, 1);
   color: #000;
   padding: 15px 30px;
   font-weight: bold;
@@ -2889,6 +2933,9 @@ ease;
   .new-product-11-05 .quantity-selector-holder .qty-button.qty-minus{
     margin-left: 30px;
   }
+
+}
+@media screen and (max-width: 768px){
   .new-product-11-05 .quantity-selector-holder .add-to-cart-button-text{
     height: 42px;
   }
@@ -4562,6 +4609,9 @@ ease;
     .site-box.box__slideshow-split .slideshow-item .site-box-content {
       width: 80%;
       display: flex;
+      background-color: var(--background-color);
+      padding: 20px;
+      border-radius: 50px;
       flex-direction: column; }
     .site-box.box__slideshow-split .slideshow-item .site-box {
       border: none !important; }
@@ -4569,7 +4619,6 @@ ease;
       opacity: 1;
       font-family: ComicNeue;
       font-size: 2vw;
-      padding: 10px;
       border-radius: 20px;
       color: #fff;
       background-color: var(--background-color);
@@ -4580,11 +4629,15 @@ ease;
       font-family: "Villain_Comic";
       font-weight: 400;
       line-height: 1.2;
-      padding: 10px;
       margin-bottom: 0;
       border-radius: 20px;
       color: #fff;
       background-color: var(--background-color);
+      /** 描边 */
+      text-shadow: 2px 2px 0 #000,
+       -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000;
       text-align: left; }
     .site-box.box__slideshow-split .slideshow-item .subtitle {
       /*         @include font-quote(); */
