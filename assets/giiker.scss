@@ -1,34 +1,40 @@
 @font-face {
-  font-family: "Overlock";
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-  src: url('https://cdn.shopify.com/s/files/1/0609/5611/5196/files/Overlock-Regular.ttf?v=1760513454') format('truetype');
-}
-@font-face {
-  font-family: "Overlock";
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-  src: url('https://cdn.shopify.com/s/files/1/0609/5611/5196/files/Overlock-Bold.ttf?v=1760513454') format('truetype');
-}
-@font-face {
-  font-family: "Overlock";
+  font-family: "InriaSans";
   font-weight: 700;
   font-style: normal;
   font-display: swap;
-  src: url('https://cdn.shopify.com/s/files/1/0609/5611/5196/files/Overlock-Black.ttf?v=1760513454') format('truetype');
+  src: url('https://cdn.shopify.com/s/files/1/0609/5611/5196/files/InriaSans-Bold.ttf?v=1763456843') format('truetype');
 }
-
 @font-face {
-  font-family: 'Oslla' ;
-  src: url('https://cdn.shopify.com/s/files/1/0609/5611/5196/files/Oslla.ttf?v=1760510109') format('truetype'),
-       url('https://cdn.shopify.com/s/files/1/0609/5611/5196/files/Oslla.woff2?v=1760510109') format('woff2'),
-       url('https://cdn.shopify.com/s/files/1/0736/4961/9173/files/Oslla.woff?v=1760510109') format('woff');
+  font-family: "InriaSans";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://cdn.shopify.com/s/files/1/0609/5611/5196/files/InriaSans-Bold.ttf?v=1763456843') format('truetype');
+}
+@font-face {
+  font-family: "InriaSans";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://cdn.shopify.com/s/files/1/0609/5611/5196/files/InriaSans-Regular.ttf?v=1763456843') format('truetype');
+}
+@font-face {
+  font-family: "InriaSans";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://cdn.shopify.com/s/files/1/0609/5611/5196/files/InriaSans-Light.ttf?v=1763456843') format('truetype');
+}
+@font-face {
+  font-family: 'Villain_Comic' ;
+  src: url('https://cdn.shopify.com/s/files/1/0609/5611/5196/files/Villain_Comic.ttf?v=1763457318') format('truetype'),
+       url('https://cdn.shopify.com/s/files/1/0609/5611/5196/files/Villain_Comic.otf?v=1763457312') format('otf');
   font-weight: normal;
   font-style: normal;
   font-display: swap;  /* 添加这行改善字体加载性能 */
 }
+
 .pc-image {
   display: flex !important;
 }
@@ -214,7 +220,7 @@ body{
           margin-top: 40px;
           *{
             font-weight: blod;
-            font-family: Oslla;
+            font-family: Villain_Comic;
             font-size: 3.3vw; 
             line-height: 1;
             margin: 0;
@@ -226,7 +232,7 @@ body{
           width: 90%;
           *{
             font-weight: 500;
-            font-family: Overlock;
+            font-family: InriaSans;
             font-size: 1.6vw;
             line-height: 1.3;
             margin: 0;
@@ -247,7 +253,7 @@ body{
           display: flex;
           align-items: center;
           margin-bottom: 20px;
-          font-family: Oslla;
+          font-family: Villain_Comic;
           svg{
             margin-left: 25px;
           }
@@ -273,7 +279,7 @@ body{
     font-size: 72px;
     line-height: 1;
     font-weight: 400;
-    font-family: Oslla;
+    font-family: Villain_Comic;
     color: rgba(255, 223, 87, 1);
     text-align: center;
     padding-top: 80px;
@@ -308,7 +314,7 @@ body{
       .item-title{
         // margin-top: 10px;
         color: #fff;
-        font-family: Overlock;
+        font-family: InriaSans;
         font-size: 20px;
         line-height: 24px;
         text-align: center;
@@ -355,7 +361,7 @@ body{
       font-size: 72px;
       line-height: 1;
       font-weight: 400;
-      font-family: Oslla;
+      font-family: Villain_Comic;
       color: #000;
     }
   }
@@ -366,7 +372,7 @@ body{
       font-size: 36px;
       line-height: 1.5;
       font-weight: 500;
-      font-family: Overlock;
+      font-family: InriaSans;
       color: #000;
       margin: 0;
     }
@@ -427,7 +433,7 @@ body{
           font-size: 24px;
           line-height: 1;
           font-weight: 500;
-          font-family: Oslla;
+          font-family: Villain_Comic;
           color: #000;
           margin: 0;
         }
@@ -437,7 +443,7 @@ body{
         text-align: center;
         *{
           font-size: 18px;
-          font-family: Overlock;
+          font-family: InriaSans;
           line-height: 24px;
           font-weight: 400;
           color: #000;
@@ -464,7 +470,7 @@ body{
       font-size: 72px;
       line-height: 1;
       font-weight: 400;
-      font-family: Oslla;
+      font-family: Villain_Comic;
       color: rgba(255, 217, 0, 1);
     }
   }
@@ -479,7 +485,7 @@ body{
       font-size: 24px;
       line-height: 1;
       font-weight: 500;
-      font-family: Oslla;
+      font-family: Villain_Comic;
       color: #000;
       text-decoration: none;
       background: rgba(255, 223, 87, 1);
@@ -607,7 +613,7 @@ body{
         font-size: 24px;
         line-height: 1.1;
         font-weight: 500;
-        font-family: Overlock;
+        font-family: InriaSans;
         color: #000;
         margin: 0;
       }
@@ -693,7 +699,7 @@ body{
       font-size: 72px;
       line-height: 1;
       font-weight: 400;
-      font-family: Oslla;
+      font-family: Villain_Comic;
       color: #000;
       text-align: center;
       margin-bottom: 100px;
@@ -884,7 +890,7 @@ body{
       font-size: 72px;
       line-height: 1;
       font-weight: 400;
-      font-family: Oslla;
+      font-family: Villain_Comic;
       color: rgba(255, 223, 87, 1);
     }
   }
@@ -896,7 +902,7 @@ body{
       font-size: 24px;
       line-height: 36px;
       font-weight: 400;
-      font-family: Overlock;
+      font-family: InriaSans;
       color: #fff;
     }
   }
@@ -970,7 +976,7 @@ body{
           font-size: 18px;
           line-height: 24px;
           font-weight: 400;
-          font-family: Overlock;
+          font-family: InriaSans;
           color: #000;
         }
       }
@@ -1015,7 +1021,7 @@ body{
         font-size: 48px;
         line-height: 1;
         font-weight: 400;
-        font-family: Oslla;
+        font-family: Villain_Comic;
         color: #000;
         margin: 0;
       }
@@ -1027,7 +1033,7 @@ body{
         font-size: 20px;
         line-height: 1;
         font-weight: 500;
-        font-family: Overlock;
+        font-family: InriaSans;
         color: #000;
         margin: 0;
       }
@@ -1047,7 +1053,7 @@ body{
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: Overlock;
+      font-family: InriaSans;
       text-decoration: none;
       text-align: center;
       margin-top: 40px;
@@ -1078,7 +1084,7 @@ body{
       font-size: 96px;
       line-height: 1.1;
       font-weight: 400;
-      font-family: Oslla;
+      font-family: Villain_Comic;
       color: #000;
     }
   }
@@ -1123,7 +1129,7 @@ body{
         padding-left: 90px;
         align-items: center;
         font-weight: 400;
-        font-family: Overlock;
+        font-family: InriaSans;
         color: #000;
         transform: rotate(-1deg);
         span{
@@ -1209,7 +1215,7 @@ body{
       font-size: 96px;
       line-height: 1.1;
       font-weight: 400;
-      font-family: Oslla;
+      font-family: Villain_Comic;
       color: #000;
     }
   }
@@ -1242,7 +1248,7 @@ body{
             font-size: 32px;
             line-height: 1;
             font-weight: 400;
-            font-family: Oslla;
+            font-family: Villain_Comic;
             color: #000;
           }
         }
@@ -1254,7 +1260,7 @@ body{
             font-size: 20px;
             line-height: 1;
             font-weight: 400;
-            font-family: Overlock;
+            font-family: InriaSans;
             color: #000;
           }
         }
@@ -1740,7 +1746,7 @@ body{
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        font-family: Overlock;
+        font-family: InriaSans;
         gap: 12px;
         border: 3px solid #000;
         font-weight: 700;
@@ -2093,7 +2099,7 @@ ease;
       align-items: center;
       justify-content: flex-end;
       color: #fff;
-      font-family: Oslla;
+      font-family: Villain_Comic;
       font-size: 2.5vw;
       border-radius: 50px;
       text-align: center;
@@ -2113,7 +2119,7 @@ ease;
       color: #fff;
       font-size: 1.5vw;
       line-height: 1.2;
-      font-family: Overlock;
+      font-family: InriaSans;
       text-align: center;
       position: absolute;
       right: 0;
@@ -2232,13 +2238,13 @@ ease;
             width: 550px;
             line-height: 1;
             color: #fff;
-            font-family: Oslla;
+            font-family: Villain_Comic;
           }
           .giiker-product-gsap-content-item-detail{
             font-size: 36px;
             line-height: 1.2;
             color: #fff;
-            font-family: Overlock;
+            font-family: InriaSans;
             width: 548px;
             max-width: 100%;
             margin-top: 50px;
@@ -2330,7 +2336,7 @@ ease;
             padding: 0;
             color: rgba(255, 246, 0, 1);
             font-size: 24px;
-            font-family: Oslla;
+            font-family: Villain_Comic;
             line-height: 1;
             font-weight: 400;
           }
@@ -2345,7 +2351,7 @@ ease;
             padding: 0;
             color: #fff;
             font-size: 24px;
-            font-family: Overlock;
+            font-family: InriaSans;
             line-height: 1.5;
             font-weight: 400;
           }
@@ -2363,7 +2369,7 @@ ease;
   .giiker-product-recommended-title{
     text-align: center;
     font-size: 55px;
-    font-family: Oslla;
+    font-family: Villain_Comic;
     line-height: 1;
     color: #000;
     margin-bottom: 80px;
@@ -2402,7 +2408,7 @@ ease;
           width: 206px;
           max-width: 100%;
           text-align: center;
-          font-family: Overlock;
+          font-family: InriaSans;
           font-size: 16px;
           font-weight: 400;
           color: #000
@@ -2412,7 +2418,7 @@ ease;
           width: 206px;
           max-width: 100%;
           text-align: center;
-          font-family: Overlock;
+          font-family: InriaSans;
           font-size: 16px;
           font-weight: 400;
           color: #000
@@ -2546,7 +2552,7 @@ ease;
 }
 .new-product-11-05 .product-header .product-title{
   font-size: 64px;
-  font-family: Oslla;
+  font-family: Villain_Comic;
   line-height: 1;
   font-weight: 400;
   color: #000;
@@ -2575,7 +2581,7 @@ ease;
     padding: 15px;
     *{
       font-size: 16px;
-      font-family: Oslla;
+      font-family: Villain_Comic;
       color: #000;
     }
     p{
@@ -2608,7 +2614,7 @@ ease;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: Oslla;
+      font-family: Villain_Comic;
       font-size: 20px;
       line-height: 1.1;
       font-weight: 400;
@@ -2620,7 +2626,7 @@ ease;
       padding: 0 5px;
       flex: unset;
       font-size: 24px;
-      font-family: Oslla;
+      font-family: Villain_Comic;
       font-weight: 400;
       line-height: 1.1;
     }
@@ -2637,7 +2643,7 @@ ease;
   }
 }
 .product-variant__name *{
-  font-family: Overlock;
+  font-family: InriaSans;
   font-size: 20px;
   line-height: 1.1;
   font-weight: 700;
@@ -2661,12 +2667,12 @@ ease;
   .new-product-11-05 .product-header .product-title{
     font-size: 24px;
     font-weight: 400;
-    font-family: Oslla;
+    font-family: Villain_Comic;
   }
   .product-header .price .product-price{
     color: rgba(129, 129, 129, 1);
     font-size: 20px;
-    font-family: Oslla;
+    font-family: Villain_Comic;
     line-height: 1.1;
     font-weight: 400;
   }
@@ -2800,7 +2806,7 @@ ease;
     font-size: 20px;
     line-height: 1.1;
     font-weight: 400;
-    font-family: Oslla;
+    font-family: Villain_Comic;
   }
   
   // 购物车图标样式
@@ -2884,7 +2890,7 @@ ease;
       text-transform: uppercase;
       letter-spacing: 0.3px;
       line-height: 1.4;
-      font-family: Oslla;
+      font-family: Villain_Comic;
     }
     
     .Collapse-faq-item-question-icon {
@@ -2921,7 +2927,7 @@ ease;
       color: #000;
       font-size: 13px;
       line-height: 1.2;
-      font-family: Overlock;
+      font-family: InriaSans;
       font-weight: 700;
       padding: 18px 25px;
       p {
@@ -2954,7 +2960,7 @@ ease;
       font-size: 36px;
       line-height: 1.1;
       font-weight: 400;
-      font-family: Oslla;
+      font-family: Villain_Comic;
       color: #fff;
     }
   }
@@ -2970,7 +2976,7 @@ ease;
       margin: 0;
       font-size: 24px;
       line-height: 1.1;
-      font-family: Overlock;
+      font-family: InriaSans;
       font-weight: 400;
       color: #fff;
     }
@@ -3017,7 +3023,7 @@ ease;
       font-size: 64px;
       line-height: 1.1;
       font-weight: 400;
-      font-family: Oslla;
+      font-family: Villain_Comic;
       margin: 0;
       color: #000;
     }
@@ -3081,7 +3087,7 @@ ease;
           font-size: 32px;
           line-height: 1.1;
           font-weight: 400;
-          font-family: Overlock;
+          font-family: InriaSans;
           color: rgba(137, 137, 137, 1);
         }
       }
@@ -3094,7 +3100,7 @@ ease;
           font-size: 32px;
           line-height: 1.5;
           font-weight: 500;
-          font-family: Overlock;
+          font-family: InriaSans;
           color: #000;
         }
       }
@@ -3136,7 +3142,7 @@ ease;
         padding: 0 5px;
         margin: 0;
         font-size: 18px;
-        font-family: Oslla;
+        font-family: Villain_Comic;
         color: #000;
         opacity: 1;
         position: relative;
@@ -3176,7 +3182,7 @@ ease;
       font-size: 72px;
       line-height: 1.1;
       font-weight: 400;
-      font-family: Oslla;
+      font-family: Villain_Comic;
       color: #fff;
     }
   }
@@ -3224,7 +3230,7 @@ ease;
             font-size: 32px;
             line-height: 1.1;
             font-weight: 700;
-            font-family: Overlock;
+            font-family: InriaSans;
             color: rgba(0, 149, 255, 1);
           }
         }
@@ -3237,7 +3243,7 @@ ease;
             font-size: 20px;
             line-height: 1.1;
             font-weight: 500;
-            font-family: Overlock;
+            font-family: InriaSans;
             color: #000;
           }
         }
@@ -3251,7 +3257,7 @@ ease;
             font-size: 18px;
             line-height: 1.3;
             font-weight: 400;
-            font-family: Overlock;
+            font-family: InriaSans;
             color: #000;
           }
         }
@@ -3269,7 +3275,7 @@ ease;
         background-color: transparent;
         color: #fff;
         font-size: 24px;
-        font-family: Overlock;
+        font-family: InriaSans;
         font-weight: 900;
         text-decoration: underline;
         margin-right: 36px;
@@ -3325,7 +3331,7 @@ ease;
           font-size: 32px;
           line-height: 1.1;
           font-weight: 700;
-          font-family: Overlock;
+          font-family: InriaSans;
           margin: 0;
         }
       }
@@ -3338,7 +3344,7 @@ ease;
           font-size: 18px; 
           line-height: 1.5;
           font-weight: 400;
-          font-family: Overlock;
+          font-family: InriaSans;
           color: #000;
           margin: 0;
         }
@@ -3378,7 +3384,7 @@ ease;
           font-size: 24px;
           line-height: 1.2;
           font-weight: 700;
-          font-family: Overlock;
+          font-family: InriaSans;
           color: #fff;
           text-align: center;
           margin: 0;
@@ -3388,7 +3394,7 @@ ease;
           font-size: 16px;
           line-height: 1.5;
           font-weight: 400;
-          font-family: Overlock;
+          font-family: InriaSans;
           color: #fff;
           text-align: center;
           margin: 0;
@@ -4519,7 +4525,7 @@ ease;
       border: none !important; }
     .site-box.box__slideshow-split .slideshow-item .caption {
       opacity: 1;
-      font-family: Overlock;
+      font-family: InriaSans;
       font-size: 2vw;
       padding: 10px;
       border-radius: 20px;
@@ -4529,7 +4535,7 @@ ease;
       text-align: left; }
     .site-box.box__slideshow-split .slideshow-item .title {
       font-size: 4vw;
-      font-family: "Oslla";
+      font-family: "Villain_Comic";
       font-weight: 400;
       line-height: 1.2;
       padding: 10px;
@@ -4995,7 +5001,7 @@ ease;
     .Free_Delivery_item_detail{
       margin-bottom: 10px;
       *{
-        font-family: Overlock;
+        font-family: InriaSans;
         font-size: 16px;
         line-height: 1.3;
         font-weight: 400;
@@ -5023,7 +5029,7 @@ ease;
         font-size: 24px;
         line-height: 1.2;
         font-weight: 700;
-        font-family: Overlock;
+        font-family: InriaSans;
         text-align: center;
         border-radius: 6px;
         padding: 10px;
@@ -5035,7 +5041,7 @@ ease;
         font-size: 16px;
         line-height: 1.5;
         font-weight: 400;
-        font-family: Overlock;
+        font-family: InriaSans;
         text-align: center;
         border-radius: 6px;
         padding: 10px;
