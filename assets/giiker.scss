@@ -27,6 +27,35 @@
   src: url('https://cdn.shopify.com/s/files/1/0609/5611/5196/files/InriaSans-Light.ttf?v=1763456843') format('truetype');
 }
 @font-face {
+  font-family: "ComicNeue";
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://cdn.shopify.com/s/files/1/0609/5611/5196/files/ComicNeue-Bold.ttf?v=1763457992') format('truetype');
+}
+@font-face {
+  font-family: "ComicNeue";
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://cdn.shopify.com/s/files/1/0609/5611/5196/files/ComicNeue-Bold.ttf?v=1763457992') format('truetype');
+}
+@font-face {
+  font-family: "ComicNeue";
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://cdn.shopify.com/s/files/1/0609/5611/5196/files/ComicNeue-Regular.ttf?v=1763457991') format('truetype');
+}
+@font-face {
+  font-family: "ComicNeue";
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+  src: url('https://cdn.shopify.com/s/files/1/0609/5611/5196/files/ComicNeue-Light.ttf?v=1763457991') format('truetype');
+}
+
+@font-face {
   font-family: 'Villain_Comic' ;
   src: url('https://cdn.shopify.com/s/files/1/0609/5611/5196/files/Villain_Comic.ttf?v=1763457318') format('truetype'),
        url('https://cdn.shopify.com/s/files/1/0609/5611/5196/files/Villain_Comic.otf?v=1763457312') format('otf');
@@ -232,7 +261,7 @@ body{
           width: 90%;
           *{
             font-weight: 700;
-            font-family: InriaSans;
+            font-family: ComicNeue;
             font-size: 1.6vw;
             line-height: 1.5;
             margin: 0;
@@ -314,7 +343,7 @@ body{
       .item-title{
         // margin-top: 10px;
         color: #fff;
-        font-family: InriaSans;
+        font-family: ComicNeue;
         font-size: 20px;
         line-height: 24px;
         text-align: center;
@@ -372,7 +401,7 @@ body{
       font-size: 36px;
       line-height: 1.5;
       font-weight: 500;
-      font-family: InriaSans;
+      font-family: ComicNeue;
       color: #000;
       margin: 0;
     }
@@ -432,8 +461,9 @@ body{
         *{
           font-size: 24px;
           line-height: 1;
-          font-weight: 500;
-          font-family: Villain_Comic;
+          font-weight: 700;
+          font-family: ComicNeue;
+          font-style: italic;
           color: #000;
           margin: 0;
         }
@@ -443,7 +473,7 @@ body{
         text-align: center;
         *{
           font-size: 18px;
-          font-family: InriaSans;
+          font-family: ComicNeue;
           line-height: 24px;
           font-weight: 400;
           color: #000;
@@ -613,7 +643,7 @@ body{
         font-size: 24px;
         line-height: 1.1;
         font-weight: 500;
-        font-family: InriaSans;
+        font-family: ComicNeue;
         color: #000;
         margin: 0;
       }
@@ -902,7 +932,7 @@ body{
       font-size: 24px;
       line-height: 36px;
       font-weight: 400;
-      font-family: InriaSans;
+      font-family: ComicNeue;
       color: #fff;
     }
   }
@@ -976,7 +1006,7 @@ body{
           font-size: 18px;
           line-height: 24px;
           font-weight: 400;
-          font-family: InriaSans;
+          font-family: ComicNeue;
           color: #000;
         }
       }
@@ -1033,7 +1063,7 @@ body{
         font-size: 20px;
         line-height: 1;
         font-weight: 500;
-        font-family: InriaSans;
+        font-family: ComicNeue;
         color: #000;
         margin: 0;
       }
@@ -1053,7 +1083,7 @@ body{
       display: flex;
       align-items: center;
       justify-content: center;
-      font-family: InriaSans;
+      font-family: ComicNeue;
       text-decoration: none;
       text-align: center;
       margin-top: 40px;
@@ -1129,7 +1159,7 @@ body{
         padding-left: 90px;
         align-items: center;
         font-weight: 400;
-        font-family: InriaSans;
+        font-family: ComicNeue;
         color: #000;
         transform: rotate(-1deg);
         span{
@@ -1260,7 +1290,7 @@ body{
             font-size: 20px;
             line-height: 1;
             font-weight: 400;
-            font-family: InriaSans;
+            font-family: ComicNeue;
             color: #000;
           }
         }
@@ -1746,7 +1776,7 @@ body{
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        font-family: InriaSans;
+        font-family: ComicNeue;
         gap: 12px;
         border: 3px solid #000;
         font-weight: 700;
@@ -2119,7 +2149,7 @@ ease;
       color: #fff;
       font-size: 1.5vw;
       line-height: 1.2;
-      font-family: InriaSans;
+      font-family: ComicNeue;
       text-align: center;
       position: absolute;
       right: 0;
@@ -2244,7 +2274,7 @@ ease;
             font-size: 36px;
             line-height: 1.2;
             color: #fff;
-            font-family: InriaSans;
+            font-family: ComicNeue;
             width: 548px;
             max-width: 100%;
             margin-top: 50px;
@@ -2351,7 +2381,7 @@ ease;
             padding: 0;
             color: #fff;
             font-size: 24px;
-            font-family: InriaSans;
+            font-family: ComicNeue;
             line-height: 1.5;
             font-weight: 400;
           }
@@ -2408,7 +2438,7 @@ ease;
           width: 206px;
           max-width: 100%;
           text-align: center;
-          font-family: InriaSans;
+          font-family: ComicNeue;
           font-size: 16px;
           font-weight: 400;
           color: #000
@@ -2418,7 +2448,7 @@ ease;
           width: 206px;
           max-width: 100%;
           text-align: center;
-          font-family: InriaSans;
+          font-family: ComicNeue;
           font-size: 16px;
           font-weight: 400;
           color: #000
@@ -2643,7 +2673,7 @@ ease;
   }
 }
 .product-variant__name *{
-  font-family: InriaSans;
+  font-family: ComicNeue;
   font-size: 20px;
   line-height: 1.1;
   font-weight: 700;
@@ -2927,7 +2957,7 @@ ease;
       color: #000;
       font-size: 13px;
       line-height: 1.2;
-      font-family: InriaSans;
+      font-family: ComicNeue;
       font-weight: 700;
       padding: 18px 25px;
       p {
@@ -2976,7 +3006,7 @@ ease;
       margin: 0;
       font-size: 24px;
       line-height: 1.1;
-      font-family: InriaSans;
+      font-family: ComicNeue;
       font-weight: 400;
       color: #fff;
     }
@@ -3087,7 +3117,7 @@ ease;
           font-size: 32px;
           line-height: 1.1;
           font-weight: 400;
-          font-family: InriaSans;
+          font-family: ComicNeue;
           color: rgba(137, 137, 137, 1);
         }
       }
@@ -3100,7 +3130,7 @@ ease;
           font-size: 32px;
           line-height: 1.5;
           font-weight: 500;
-          font-family: InriaSans;
+          font-family: ComicNeue;
           color: #000;
         }
       }
@@ -3230,7 +3260,7 @@ ease;
             font-size: 32px;
             line-height: 1.1;
             font-weight: 700;
-            font-family: InriaSans;
+            font-family: ComicNeue;
             color: rgba(0, 149, 255, 1);
           }
         }
@@ -3243,7 +3273,7 @@ ease;
             font-size: 20px;
             line-height: 1.1;
             font-weight: 500;
-            font-family: InriaSans;
+            font-family: ComicNeue;
             color: #000;
           }
         }
@@ -3257,7 +3287,7 @@ ease;
             font-size: 18px;
             line-height: 1.3;
             font-weight: 400;
-            font-family: InriaSans;
+            font-family: ComicNeue;
             color: #000;
           }
         }
@@ -3275,7 +3305,7 @@ ease;
         background-color: transparent;
         color: #fff;
         font-size: 24px;
-        font-family: InriaSans;
+        font-family: ComicNeue;
         font-weight: 900;
         text-decoration: underline;
         margin-right: 36px;
@@ -3331,7 +3361,7 @@ ease;
           font-size: 32px;
           line-height: 1.1;
           font-weight: 700;
-          font-family: InriaSans;
+          font-family: ComicNeue;
           margin: 0;
         }
       }
@@ -3344,7 +3374,7 @@ ease;
           font-size: 18px; 
           line-height: 1.5;
           font-weight: 400;
-          font-family: InriaSans;
+          font-family: ComicNeue;
           color: #000;
           margin: 0;
         }
@@ -3384,7 +3414,7 @@ ease;
           font-size: 24px;
           line-height: 1.2;
           font-weight: 700;
-          font-family: InriaSans;
+          font-family: ComicNeue;
           color: #fff;
           text-align: center;
           margin: 0;
@@ -3394,7 +3424,7 @@ ease;
           font-size: 16px;
           line-height: 1.5;
           font-weight: 400;
-          font-family: InriaSans;
+          font-family: ComicNeue;
           color: #fff;
           text-align: center;
           margin: 0;
@@ -4525,7 +4555,7 @@ ease;
       border: none !important; }
     .site-box.box__slideshow-split .slideshow-item .caption {
       opacity: 1;
-      font-family: InriaSans;
+      font-family: ComicNeue;
       font-size: 2vw;
       padding: 10px;
       border-radius: 20px;
@@ -5001,7 +5031,7 @@ ease;
     .Free_Delivery_item_detail{
       margin-bottom: 10px;
       *{
-        font-family: InriaSans;
+        font-family: ComicNeue;
         font-size: 16px;
         line-height: 1.3;
         font-weight: 400;
@@ -5029,7 +5059,7 @@ ease;
         font-size: 24px;
         line-height: 1.2;
         font-weight: 700;
-        font-family: InriaSans;
+        font-family: ComicNeue;
         text-align: center;
         border-radius: 6px;
         padding: 10px;
@@ -5041,7 +5071,7 @@ ease;
         font-size: 16px;
         line-height: 1.5;
         font-weight: 400;
-        font-family: InriaSans;
+        font-family: ComicNeue;
         text-align: center;
         border-radius: 6px;
         padding: 10px;
