@@ -4956,3 +4956,12 @@ ease;
 #shopify-section-home_slideshow .slideshow-item.reversal .site-box{
   float: left;
 }
+@media screen and (max-width: 1625px) {
+  .giiker-home-evaluate-list-container .giiker-home-evaluate-list .giiker-home-evaluate-list-item-image, .giiker-home-evaluate-list-container .giiker-home-evaluate-list .giiker-home-evaluate-list-item{
+    width: 24%;
+  }
+  .giiker-home-evaluate-list-container .giiker-home-evaluate-list{
+    gap: 10px;
+    justify-content: space-between;
+  }
+}
