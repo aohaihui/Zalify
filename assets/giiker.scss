@@ -5167,3 +5167,68 @@ ease;
     justify-content: space-between;
   }
 }
+.footer-item{
+  .newsletter-form{
+    width: 408px;
+    max-width: 100%;
+    .form-title{
+      font-size: 72px;
+      line-height: 1.2;
+      font-weight: 700;
+      font-family: Villain_Comic;
+      text-align: left;
+      color: #000;
+      margin: 0;
+      margin-bottom: 20px;
+      /** 描边 */
+      text-shadow: 2px 2px 0 #fff,
+       -2px -2px 0 #fff,
+        2px -2px 0 #fff,
+        -2px 2px 0 #fff;
+    }
+    .input-group{
+      height: 48px;
+      input{
+        border-radius: var(--buttons-radius);
+        height: 100%;
+        border-width: 3px;
+      }
+    }
+    .input-group .button{
+      background: transparent;
+      padding: 0;
+      margin: 0;
+      border: none;
+      border-radius: 0;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: -42px;
+      svg{
+        width: 32px;
+        height: 32px;
+        path{
+          fill: #000;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer-item[data-type="form"]{
+    width: 100% !important;
+    .newsletter-form{
+      width: 100%;
+      margin-bottom: 30px;
+      .form-title{
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+    }
+    .input-group{
+      width: 70%;
+    }
+    
+  }
+}

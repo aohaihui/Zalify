@@ -31,9 +31,9 @@
                     </span>
                   {%- endfor -%}
                 </nav>
-                form
               {%- when 'form' -%}
                 <div class="newsletter-form" {{ block.shopify_attributes }}>
+                  <h4 class="form-title">{{ block.settings.form_title }}</h4>
                   {%- form 'customer', id: 'newsletter-section', class: 'newsletter-form' -%}
                     {%- render 'form-errors', form: form -%}
                     {%- if form.posted_successfully? -%}
@@ -42,7 +42,19 @@
                       <div class="input-group">
                         <input type="email" value="{% if customer %}{{ customer.email }}{% endif %}" placeholder="{{ 'general.newsletter.email_label' | t }}" name="contact[email]" id="Email-{{ section.id }}" aria-label="{{ 'general.newsletter.email_label' | t }}" autocorrect="off" autocapitalize="off" required>
                         <button class="button button--solid" type="submit" name="commit" id="Subscribe-{{ section.id }}">
-                          <span class="button-scroll-in">{{ 'general.newsletter.submit' | t }}</span>
+                          {% comment %} <span class="button-scroll-in">{{ 'general.newsletter.submit' | t }}</span> {% endcomment %}
+                          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                          <g clip-path="url(#clip0_254_57)">
+                          <path d="M4.68571 4.68571C7.80951 1.5619 11.9043 0 15.9991 0C20.0939 0 24.1888 1.5619 27.3126 4.68571C30.4364 7.80951 31.9983 11.9043 31.9983 15.9991C31.9983 20.0939 30.4364 24.1888 27.3126 27.3126C24.1888 30.4364 20.0939 31.9983 15.9991 31.9983C11.9043 31.9983 7.80951 30.4364 4.68571 27.3126C1.5619 24.1888 0 20.0939 0 15.9991C0 11.9043 1.5619 7.80951 4.68571 4.68571ZM15.9991 3.62313C12.8321 3.62313 9.66341 4.83084 7.24799 7.24799C4.83084 9.66514 3.62313 12.8321 3.62313 15.9991C3.62313 19.1661 4.83084 22.3349 7.24799 24.7503C9.66514 27.1674 12.8321 28.3751 15.9991 28.3751C19.1661 28.3751 22.3349 27.1674 24.7503 24.7503C27.1674 22.3331 28.3751 19.1661 28.3751 15.9991C28.3751 12.8321 27.1674 9.66341 24.7503 7.24799C22.3331 4.83084 19.1661 3.62313 15.9991 3.62313Z" fill="black"/>
+                          <path d="M14.788 10.6914C14.0814 9.98474 14.0814 8.8375 14.788 8.12911C15.4947 7.42246 16.6419 7.42246 17.3503 8.12911L23.94 14.7188C24.6467 15.4255 24.6467 16.5727 23.94 17.2811L17.3503 23.8708C16.6437 24.5775 15.4964 24.5775 14.788 23.8708C14.0814 23.1642 14.0814 22.0169 14.788 21.3085L20.0975 16.0008L14.788 10.6931V10.6914Z" fill="black"/>
+                          <path d="M22.6579 14.1885C23.6583 14.1885 24.4703 14.9988 24.4703 16.0009C24.4703 17.0013 23.66 17.8133 22.6579 17.8133H9.34197C8.34159 17.8133 7.52954 17.003 7.52954 16.0009C7.52954 15.0005 8.33986 14.1885 9.34197 14.1885H22.6579Z" fill="black"/>
+                          </g>
+                          <defs>
+                          <clipPath id="clip0_254_57">
+                          <rect width="32" height="32" fill="white"/>
+                          </clipPath>
+                          </defs>
+                          </svg> 
                         </button>
                       </div>
                         <input type="hidden" name="contact[tags]" value="newsletter">
@@ -231,7 +243,7 @@
         "settings": [
           {
             "type": "text",
-            "id": "title",
+            "id": "form_title",
             "label": "Join la Comunidad!",
             "default": "Join la Comunidad!"
           }
