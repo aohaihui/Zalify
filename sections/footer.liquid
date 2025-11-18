@@ -31,7 +31,8 @@
                     </span>
                   {%- endfor -%}
                 </nav>
-              {%- when 'newsletter' -%}
+                form
+              {%- when 'form' -%}
                 <div class="newsletter-form" {{ block.shopify_attributes }}>
                   {%- form 'customer', id: 'newsletter-section', class: 'newsletter-form' -%}
                     {%- render 'form-errors', form: form -%}
@@ -225,8 +226,8 @@
         ]
       },
       {
-        "type": "newsletter",
-        "name": "newsletter",
+        "type": "form",
+        "name": "form",
         "settings": [
           {
             "type": "text",
