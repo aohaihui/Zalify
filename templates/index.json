@@ -28,21 +28,24 @@
           "type": "banner",
           "settings": {
             "pc_image": "shopify://shop_images/EARLY_BIRD.png",
-            "mobile_image": "shopify://shop_images/EARLY_BIRD_MOBILE.png"
+            "mobile_image": "shopify://shop_images/EARLY_BIRD_MOBILE.png",
+            "url": ""
           }
         },
         "banner_rdkVqq": {
           "type": "banner",
           "settings": {
-            "pc_image": "shopify://shop_images/kv2.jpg",
-            "mobile_image": "shopify://shop_images/app-kv2-_logo_1d16c1b4-1235-43b0-b59d-7de302753b77.jpg"
+            "pc_image": "shopify://shop_images/kv2.png",
+            "mobile_image": "shopify://shop_images/app-kv2-_logo.png",
+            "url": ""
           }
         },
         "banner_kL4TfF": {
           "type": "banner",
           "settings": {
-            "pc_image": "shopify://shop_images/kv1.jpg",
-            "mobile_image": "shopify://shop_images/app-kv1-_logo.jpg"
+            "pc_image": "shopify://shop_images/kv1.png",
+            "mobile_image": "shopify://shop_images/app-kv1-_logo.png",
+            "url": ""
           }
         }
       },
@@ -102,7 +105,7 @@
         "banner_HaEBAc": {
           "type": "banner",
           "settings": {
-            "product_image": "shopify://shop_images/bd7aed0df074a162d7fba0d39c740a26.png",
+            "product_image": "shopify://shop_images/8ea09953c14386df435e4ef3a85fde6e.png",
             "product_title": "Super Slide",
             "product": "giiker-super-slide-puzzle-games"
           }
@@ -110,7 +113,7 @@
         "banner_yNkR9g": {
           "type": "banner",
           "settings": {
-            "product_image": "shopify://shop_images/18c4dce920db45da6f1cc05d7a255161.png",
+            "product_image": "shopify://shop_images/18c4dce920db45da6f1cc05d7a255161_0d6c55c2-037a-4ec6-b0fd-0ff63e089850.png",
             "product_title": "Super Blocks",
             "product": "super-blocks"
           }
@@ -118,7 +121,7 @@
         "banner_nqMLnR": {
           "type": "banner",
           "settings": {
-            "product_image": "shopify://shop_images/b14fee4b27b2411dc85ede04be2086e6.png",
+            "product_image": "shopify://shop_images/b14fee4b27b2411dc85ede04be2086e6_741a494c-45c5-4c46-be66-e65e5dc166cd.png",
             "product_title": "Tic-Tac-Toe Bolt",
             "product": "tic-tac-toe-bolt"
           }
@@ -126,7 +129,7 @@
         "banner_YHjFbw": {
           "type": "banner",
           "settings": {
-            "product_image": "shopify://shop_images/0ffec1d6b6e7fd4ddcf8d3ed6402775e.png",
+            "product_image": "shopify://shop_images/0ffec1d6b6e7fd4ddcf8d3ed6402775e_8a6c5914-bfcd-451f-9ac6-015c89a19e94.png",
             "product_title": "Super Decoder",
             "product": "giiker-super-decoder"
           }
@@ -134,7 +137,7 @@
         "banner_D43zUE": {
           "type": "banner",
           "settings": {
-            "product_image": "shopify://shop_images/08d17e18243ac20f25fd9493ab834efa.png",
+            "product_image": "shopify://shop_images/08d17e18243ac20f25fd9493ab834efa_6debd986-03bc-4508-af8f-3c26ed93e070.png",
             "product_title": "Smart Sudoku",
             "product": "smart-sudoku"
           }
@@ -142,7 +145,7 @@
         "banner_UHmhcj": {
           "type": "banner",
           "settings": {
-            "product_image": "shopify://shop_images/2_4e5bad98-96d4-49fa-a77f-d9e2ec97fb70.png",
+            "product_image": "shopify://shop_images/adbcd1c67f63fb59ea16efcf249e3537_9acdb35a-dab7-4ad7-9771-8f781bce9605.png",
             "product_title": "Smart Four",
             "product": "giiker-smart-four-board-games"
           }
@@ -150,7 +153,7 @@
         "banner_QrAEJG": {
           "type": "banner",
           "settings": {
-            "product_image": "shopify://shop_images/2_d4f60041-c97e-4ce3-9740-d1c0053610a4.png",
+            "product_image": "shopify://shop_images/2_9744cc03-1a41-4489-9194-02510c03f137.png",
             "product_title": "Super Ludo",
             "product": "giiker-super-ludo"
           }
