@@ -2253,7 +2253,7 @@ css-slider:not(.enabled) > * {
   }
 }
 .site-footer .footer-top + .footer-bottom {
-  border-top: 1px solid var(--main-borders);
+  /* border-top: 1px solid var(--main-borders); */
   padding-top: 50px;
   padding-bottom: var(--box-auto-top);
 }
@@ -3935,7 +3935,7 @@ shopify-payment-terms {
     position: absolute;
     width: 100%;
     height: 100%;
-    bottom: 0;
+    bottom: 20%;
     left: 0;
     z-index: 9;
     pointer-events: none;
