@@ -8295,6 +8295,7 @@ li.has-submenu:hover > ul {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-color: #FFDF57;
   }
   .box--product-media{
     padding-top: 0 !important;
