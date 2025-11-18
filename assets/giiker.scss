@@ -197,6 +197,11 @@ body{
         flex-direction: row-reverse;
         .giiker-home-text-image-item-content{
           padding-left: 5%;
+          .giiker-home-text-image-item-title{
+            *{
+              color: rgba(29, 75, 255, 1);
+            }
+          }
         }
         .giiker-home-text-image-item-content .giiker-home-text-image-item-content-background{
           position: absolute;
@@ -253,7 +258,11 @@ body{
             font-size: 3.3vw; 
             line-height: 1;
             margin: 0;
-            color: #000;
+            color: rgba(255, 225, 0, 1);
+            text-shadow: 2px 2px 0 #000,
+             -2px -2px 0 #000,
+              2px -2px 0 #000,
+              -2px 2px 0 #000;
           }
         }
         .giiker-home-text-image-item-detail{
@@ -272,7 +281,7 @@ body{
           margin-top: 130px;
           width: max-content;
           background: #fff;
-          border-radius: 20px;
+          border-radius: 40px;
           overflow: hidden;
           padding: 12px 32px;
           color: #000;
@@ -283,6 +292,8 @@ body{
           align-items: center;
           margin-bottom: 20px;
           font-family: Villain_Comic;
+          z-index: 11;
+          position: relative;
           svg{
             margin-left: 25px;
           }
@@ -1484,7 +1495,7 @@ body{
       margin: 0 auto; 
       margin-top: 15px;
       padding: 7px;
-      border-radius: 10px;
+      border-radius: 20px;
       margin-bottom: 20px;
       max-width: 100%;
       font-size: 14px;
