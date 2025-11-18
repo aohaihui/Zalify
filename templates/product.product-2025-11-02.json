@@ -279,6 +279,7 @@
       "type": "giiker-product-recommended",
       "name": "Giiker Product Recommended",
       "settings": {
+        "background_image": "shopify://shop_images/Vector_27.png",
         "title": "You may also like",
         "product_list": [
           "battle-pad",
