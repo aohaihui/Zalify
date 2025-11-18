@@ -31,7 +31,24 @@
                     </span>
                   {%- endfor -%}
                 </nav>
-
+                form
+              {%- when 'menu' -%}
+                <div class="newsletter-form" {{ block.shopify_attributes }}>
+                  {%- form 'customer', id: 'newsletter-section', class: 'newsletter-form' -%}
+                    {%- render 'form-errors', form: form -%}
+                    {%- if form.posted_successfully? -%}
+                      <div class="alert alert--success">{{ 'general.newsletter.confirmation' | t }}</div>
+                    {%- else -%}
+                      <div class="input-group">
+                        <input type="email" value="{% if customer %}{{ customer.email }}{% endif %}" placeholder="{{ 'general.newsletter.email_label' | t }}" name="contact[email]" id="Email-{{ section.id }}" aria-label="{{ 'general.newsletter.email_label' | t }}" autocorrect="off" autocapitalize="off" required>
+                        <button class="button button--solid" type="submit" name="commit" id="Subscribe-{{ section.id }}">
+                          <span class="button-scroll-in">{{ 'general.newsletter.submit' | t }}</span>
+                        </button>
+                      </div>
+                        <input type="hidden" name="contact[tags]" value="newsletter">
+                    {%- endif -%}
+                  {%- endform -%}
+                </div>
               {%- when 'social' -%}
                 <nav class="text-size--smaller">
                   {%- render 'social-icons', type: 'footer' -%}
@@ -206,6 +223,12 @@
             "default": "footer",
             "info": "t:sections.footer.blocks.menus.settings.menu_1.info"
           }
+        ]
+      },
+      {
+        "type": "form",
+        "name": "form",
+        "settings": [
         ]
       },
       {
