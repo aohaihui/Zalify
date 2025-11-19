@@ -3826,8 +3826,8 @@ product-variants[data-style=select][data-has-variants] {
 @media screen and (min-width: 1025px), screen and (min-width: 769px) and (orientation: landscape) {
   .box__product-gallery[data-fit=true] .product-gallery-item img {
     object-fit: contain;
-    width: 80%;
-    height: 80%;
+    width: 70%;
+    height: 70%;
     left: 50%;
     transform: translateX(-50%);
   }
