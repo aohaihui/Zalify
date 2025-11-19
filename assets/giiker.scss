@@ -258,10 +258,8 @@ body{
             line-height: 1;
             margin: 0;
             color: rgba(255, 225, 0, 1);
-            text-shadow: 2px 2px 0 #000,
-             -2px -2px 0 #000,
-              2px -2px 0 #000,
-              -2px 2px 0 #000;
+            -webkit-text-stroke: 2px #000;
+            text-shadow: 0 0 2px #000;
               font-weight: 100;
           }
         }
@@ -325,10 +323,8 @@ body{
     padding-top: 80px;
     padding-bottom: 50px;
     /** 描边 */
-    text-shadow: 2px 2px 0 #000,
-     -2px -2px 0 #000,
-      2px -2px 0 #000,
-      -2px 2px 0 #000;
+      -webkit-text-stroke: 2px #000;
+      text-shadow: 0 0 2px #000;
   }
   .favourite-background{
     width: 100%;
@@ -405,10 +401,8 @@ body{
       margin: 0;
       font-size: 85px;
       /** 描边 */
-      text-shadow: 2px 2px 0 #fff,
-       -2px -2px 0 #fff,
-        2px -2px 0 #fff,
-        -2px 2px 0 #fff;
+      -webkit-text-stroke: 2px #fff;
+      text-shadow: 0 0 2px #fff;
       line-height: 1;
       font-weight: 100;
       font-family: Villain_Comic;
@@ -524,10 +518,8 @@ body{
       font-family: Villain_Comic;
       color: rgba(255, 217, 0, 1);
       /** 描边 */
-      text-shadow: 2px 2px 0 #000,
-       -2px -2px 0 #000,
-        2px -2px 0 #000,
-        -2px 2px 0 #000;
+      -webkit-text-stroke: 2px #000;
+      text-shadow: 0 0 2px #000;
     }
   }
   .giiker-home-how-image-url{
@@ -763,10 +755,8 @@ body{
       transform: translateY(30px);
       animation: titleFadeIn 1s ease-out 0.3s forwards;
       /** 描边 */
-      text-shadow: 2px 2px 0 #fff,
-       -2px -2px 0 #fff,
-        2px -2px 0 #fff,
-        -2px 2px 0 #fff;
+      -webkit-text-stroke: 2px #fff;
+      text-shadow: 0 0 2px #fff;
     }
     
     .giiker-home-phone-image-list {
@@ -954,10 +944,8 @@ body{
       font-family: Villain_Comic;
       color: rgba(255, 223, 87, 1);
       /** 描边 */
-      text-shadow: 2px 2px 0 #000,
-       -2px -2px 0 #000,
-        2px -2px 0 #000,
-        -2px 2px 0 #000;
+      -webkit-text-stroke: 2px #000;
+      text-shadow: 0 0 2px #000;
     }
   }
   .giiker-home-evaluate-list-detail{
@@ -1154,10 +1142,8 @@ body{
       font-family: Villain_Comic;
       color: #000;
       /** 描边 */
-      text-shadow: 2px 2px 0 #fff,
-       -2px -2px 0 #fff,
-        2px -2px 0 #fff,
-        -2px 2px 0 #fff;
+      -webkit-text-stroke: 2px #fff;
+      text-shadow: 0 0 2px #fff;
     }
   }
   .giiker-contact-us-text-list{
@@ -2184,10 +2170,8 @@ ease;
       height: 156px;
       font-weight: 100;
       /** 描边 */
-      text-shadow: 2px 2px 0 #000,
-       -2px -2px 0 #000,
-        2px -2px 0 #000,
-        -2px 2px 0 #000;
+      -webkit-text-stroke: 2px #fff;
+      text-shadow: 0 0 2px #fff;
     }
     .right-content-detail{
       background: rgba(170, 228, 59, 1);
@@ -2457,10 +2441,8 @@ ease;
     color: #000;
     margin-bottom: 80px;
     /** 描边 */
-    text-shadow: 2px 2px 0 #fff,
-     -2px -2px 0 #fff,
-      2px -2px 0 #fff,
-      -2px 2px 0 #fff;
+    -webkit-text-stroke: 2px #fff;
+    text-shadow: 0 0 2px #fff;
   }
   .giiker-product-recommended-background{
     width: 100%;
@@ -2647,10 +2629,8 @@ ease;
   padding-right: 0 !important;
   margin: 20px 0;
   /** 描边 */
-  text-shadow: 2px 2px 0 #fff,
-   -2px -2px 0 #fff,
-    2px -2px 0 #fff,
-    -2px 2px 0 #fff;
+  -webkit-text-stroke: 2px #fff;
+  text-shadow: 0 0 2px #fff;
 }
 .new-product-11-05 .site-box:after{
   display: none;
@@ -3125,10 +3105,8 @@ ease;
       margin: 0;
       color: #000;
       /** 描边 */
-      text-shadow: 2px 2px 0 #fff,
-       -2px -2px 0 #fff,
-        2px -2px 0 #fff,
-        -2px 2px 0 #fff;
+      -webkit-text-stroke: 2px #fff;
+      text-shadow: 0 0 2px #fff;
     }
   }
   .giiker-about-us-our-story-list{
@@ -4650,10 +4628,8 @@ ease;
       color: #fff;
       background-color: var(--background-color);
       /** 描边 */
-      text-shadow: 2px 2px 0 #000,
-       -2px -2px 0 #000,
-        2px -2px 0 #000,
-        -2px 2px 0 #000;
+      -webkit-text-stroke: 2px #000;
+      text-shadow: 0 0 2px #000;
       text-align: left; }
     .site-box.box__slideshow-split .slideshow-item .subtitle {
       /*         @include font-quote(); */
@@ -5185,10 +5161,8 @@ ease;
       margin: 0;
       margin-bottom: 20px;
       /** 描边 */
-      text-shadow: 2px 2px 0 #fff,
-       -2px -2px 0 #fff,
-        2px -2px 0 #fff,
-        -2px 2px 0 #fff;
+        -webkit-text-stroke: 2px #fff;
+        text-shadow: 0 0 2px #fff;
     }
     .input-group{
       height: 48px;
