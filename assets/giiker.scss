@@ -5251,6 +5251,10 @@ ease;
       flex-direction: row;
       align-items: center;
       height: 42px;
+      .button{
+        margin: 0px 0 0 -42px;
+        margin-bottom: 9px;
+      }
     }
     
   }
