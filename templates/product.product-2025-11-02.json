@@ -165,7 +165,7 @@
           "type": "content",
           "settings": {
             "is_reversal": true,
-            "background_color": "#28b372",
+            "background_color": "#153229",
             "text_color": "#f0674f",
             "title": "Secret Hints",
             "title_color": "",

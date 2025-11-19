@@ -229,13 +229,13 @@
       "type": "giiker-home-how-image",
       "name": "Giiker Home How Image",
       "settings": {
-        "title": "",
+        "title": "<p>How A </p><p>GiiKER Toy </p><p>Comes to Life</p>",
         "background_image": "shopify://shop_images/1_5b762347-d913-41fb-a38a-237c32e6c724.png",
         "background_mobile_image": "shopify://shop_images/20251118-165304.png",
         "background_flower_image": "shopify://shop_images/Mask_group_1_5736e227-1f09-4330-a300-e5f867b6815c.png",
         "background_top_image": "shopify://shop_images/Vector_23.png",
         "url": "shopify://pages/about-us",
-        "url_label": ""
+        "url_label": "Discover more"
       }
     },
     "giiker_home_awards_image_j9RtQ8": {
