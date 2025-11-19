@@ -253,7 +253,6 @@ body{
           margin: 0;
           margin-top: 40px;
           *{
-            font-weight: blod;
             font-family: Villain_Comic;
             font-size: 3.3vw; 
             line-height: 1;
@@ -263,6 +262,7 @@ body{
              -2px -2px 0 #000,
               2px -2px 0 #000,
               -2px 2px 0 #000;
+              font-weight: 100;
           }
         }
         .giiker-home-text-image-item-detail{
