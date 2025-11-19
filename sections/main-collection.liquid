@@ -500,13 +500,18 @@
 {%- endif -%}
 <style>
   .collection-title h1{
-    font-size: 48px;
+    font-size: 96px;
     line-height: 1;
     font-weight: 400;
     font-family: ComicNeue;
     color: #000;
     margin: 0;
     text-align: center;
+  }
+  @media screen and (max-width: 768px) {
+    .collection-title h1{
+      font-size: 48px;
+    }
   }
 </style>
 {% schema %}

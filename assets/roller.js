@@ -30,206 +30,6 @@ console.log('function 进来');
     //     e.keyCode === 27 && $2(".site-close-handle").trigger("click")
     // }),
     window.CUBER = {
-        Nav: {
-            $siteHeader: null,
-            $siteNav: null,
-            $siteOverlay: null,
-            mount: function() {
-                this.$siteHeader = $2("#site-header"),
-                this.$siteNav = $2("#site-nav--mobile"),
-                this.$siteOverlay = $2("#site-overlay"),
-                $2("#site-menu-handle").on("click focusin", function() {
-                    this.$siteNav.hasClass("active") || (this.$siteNav.addClass("active"),
-                    this.$siteNav.removeClass("show-filters").removeClass("show-cart").removeClass("show-search"),
-                    this.$siteOverlay.addClass("active"),
-                    $2(".fixing-scroll-now .site-box-background").addClass("sidebar-move"),
-                    $2("body").addClass("sidebar-move"))
-                }
-                .bind(this)),
-                $2("#site-filter-handle").length > 0 && $2("#site-filter-handle").on("click", function() {
-                    this.$siteNav.hasClass("active") || (this.$siteNav.addClass("active"),
-                    this.$siteNav.removeClass("show-cart").removeClass("show-search").addClass("show-filters"),
-                    this.$siteOverlay.addClass("active"),
-                    $2(".fixing-scroll-now .site-box-background").addClass("sidebar-move"),
-                    $2("body").addClass("sidebar-move"))
-                }
-                .bind(this)),
-                $2("#site-cart-handle").length > 0 && !$2("html").hasClass("ie9") && ($2.themeCartSettings == "overlay" && ($2("#site-cart-handle a").addClass("block-fade"),
-                $2("#site-cart-handle a").on("click", function(e) {
-                    e.preventDefault(),
-                    this.$siteNav.hasClass("active") || (this.$siteNav.addClass("active"),
-                    this.$siteNav.removeClass("show-filters").removeClass("show-search").addClass("show-cart"),
-                    this.$siteOverlay.addClass("active"),
-                    $2(".fixing-scroll-now .site-box-background").addClass("sidebar-move"),
-                    $2("body").addClass("sidebar-move"))
-                }
-                .bind(this))),
-                $2("#site-cart-handle").on("mouseenter focusis", function() {
-                    $2(this).addClass("hover-in").removeClass("hover-out")
-                }).on("mouseleave focusout", function() {
-                    $2(this).addClass("hover-out").removeClass("hover-in")
-                })),
-                $2("#site-search-handle").length > 0 && ($2("#site-search-handle a").addClass("block-fade"),
-                $2("#site-search-handle a").on("click", function(e) {
-                    e.preventDefault(),
-                    this.$siteNav.hasClass("active") || ($2("html").hasClass("ie9") ? document.location.href = "/search" : (this.$siteNav.addClass("active"),
-                    this.$siteNav.removeClass("show-filters").removeClass("show-cart").addClass("show-search"),
-                    this.$siteOverlay.addClass("active"),
-                    $2(".fixing-scroll-now .site-box-background").addClass("sidebar-move"),
-                    $2("body").addClass("sidebar-move"),
-                    $2('form.search-bar input[type="search"]').focus()))
-                }
-                .bind(this)),
-                $2("#site-search-handle").on("mouseenter", function() {
-                    $2(this).addClass("hover-in").removeClass("hover-out")
-                }).on("mouseleave focusout", function() {
-                    $2(this).addClass("hover-out").removeClass("hover-in")
-                }),
-                $2('a[href="#search"]').on("click", function(e) {
-                    e.preventDefault(),
-                    $2("#site-search-handle a").trigger("click")
-                })),
-                $2(".site-close-handle, #site-overlay").on("click", function() {
-                    this.$siteNav.hasClass("active") && (this.$siteNav.removeClass("active"),
-                    this.$siteOverlay.removeClass("active"),
-                    $2(".fixing-scroll-now .site-box-background").removeClass("sidebar-move"),
-                    $2("body").removeClass("sidebar-move"))
-                }
-                .bind(this)),
-                $2(".site-nav.style--classic .has-submenu").each(function() {
-                    $2(this).on("mouseenter focusin", function() {
-                        $2(this).find(".submenu").stop().slideDown(200),
-                        $2("body").addClass("opened-submenu"),
-                        $2("body").addClass("opened-submenu-flag"),
-                        $2(".site-overlay").addClass("active"),
-                        $2(this).find(".submenu").attr("aria-expanded", "true")
-                    }).on("mouseleave focusout", function() {
-                        $2(this).find(".submenu").attr("aria-expanded", "false"),
-                        $2(this).find(".submenu").stop().slideUp(200, function() {
-                            $2("body").hasClass("opened-submenu-flag") || $2("body").removeClass("opened-submenu")
-                        }),
-                        $2(".site-overlay").removeClass("active"),
-                        $2("body").removeClass("opened-submenu-flag")
-                    })
-                }),
-                $2(".site-nav.style--sidebar .has-submenu:not(.collections-menu)").each(function() {
-                    $2(this).children("a").addClass("block-fade"),
-                    $2(this).children("a").on("click touchstart", function(e) {
-                        e.preventDefault()
-                    }),
-                    $2(this).children("a").on("click touchstart", function(e) {
-                        e.preventDefault();
-                        var $parent = $2(this).parent();
-                        $parent.hasClass("active") ? ($parent.find(".submenu").stop().slideUp(200),
-                        $parent.removeClass("active"),
-                        $parent.find(".submenu").attr("aria-expanded", "false")) : ($parent.addClass("active"),
-                        $parent.find(".submenu").stop().slideDown(200),
-                        $parent.find(".submenu").attr("aria-expanded", "true")),
-                        $2(this).removeClass("hover")
-                    })
-                }),
-                $2(".site-nav.style--sidebar .has-babymenu:not(.collections-menu)").each(function() {
-                    $2(this).children("a").addClass("block-fade"),
-                    $2(this).children("a").on("click touchstart", function(e) {
-                        e.preventDefault()
-                    }),
-                    $2(this).children("a").on("click touchstart", function(e) {
-                        e.preventDefault();
-                        var $parent = $2(this).parent();
-                        if ($parent.hasClass("active")) {
-                            var tempBoNo = !1
-                              , tempBoHref = $2(this).attr("href");
-                            tempBoHref != "" ? tempBoHref.indexOf("#") >= 0 ? (tempBoNo = !0,
-                            tempBoHref.indexOf("#") == tempBoHref.length - 1 || ($2(".site-close-handle").trigger("click"),
-                            document.location.href = tempBoHref)) : $2(this).attr("target") == "_blank" ? window.open(tempBoHref, "_blank") : ($2("body").fadeOut(200),
-                            setTimeout(function() {
-                                document.location.href = tempBoHref
-                            }
-                            .bind(this), 200),
-                            e.preventDefault()) : TempBoNo = !0,
-                            tempBoNo && ($parent.removeClass("active"),
-                            $parent.find(".babymenu").stop().slideUp(200),
-                            $parent.find(".babymenu").attr("aria-expanded", "false"))
-                        } else
-                            $parent.addClass("active"),
-                            $parent.find(".babymenu").stop().slideDown(200),
-                            $parent.find(".babymenu").attr("aria-expanded", "true")
-                    })
-                }),
-                $2(".style--classic .babymenu").each(function() {
-                    var bestWidth = 0;
-                    $2(this).parent().parent().css("display", "block"),
-                    $2(this).find("a").each(function() {
-                        $2(this).css("position", "fixed"),
-                        $2(this).attr("data-width", $2(this).outerWidth(!0)),
-                        $2(this).outerWidth() > bestWidth && (bestWidth = $2(this).outerWidth(!0)),
-                        $2(this).css({
-                            position: "static",
-                            width: "100%"
-                        })
-                    }),
-                    bestWidth += 30,
-                    $2(this).css("width", bestWidth),
-                    $2(this).css("transform", "translateX(-45%)"),
-                    $2(this).parent().parent().css("display", "none"),
-                    $2(this).css("display", "none")
-                }),
-                $2(".style--classic .has-babymenu").each(function() {
-                    $2(this).on("mouseenter focusin", function() {
-                        $2(this).find(".babymenu").stop().slideDown(200),
-                        $2(this).find(".babymenu ul").attr("aria-expanded", "true"),
-                        $2(this).css("zIndex", 9)
-                    }).on("mouseleave focusout", function() {
-                        $2(this).find(".babymenu").stop().slideUp(200),
-                        $2(this).find(".babymenu ul").attr("aria-expanded", "false"),
-                        $2(this).css("zIndex", 1)
-                    })
-                }),
-                $2("body").addClass("desktop--add-some-padding"),
-                $2(".style--classic li.has-submenu[data-size]").each(function() {
-                    var menuSize = parseInt($2(this).data("size"));
-                    menuSize > 15 ? $2(this).addClass("text-smallest") : menuSize > 10 ? $2(this).addClass("text-smaller") : menuSize > 5 && $2(this).addClass("text-small")
-                }),
-                $2("#site-header").hasClass("header-scroll") && ($2("body").hasClass("template-index") && $2("body").addClass("index-margin-fix"),
-                window.lst = $2(window).scrollTop(),
-                $2(".site-nav.style--classic .submenu").css("top", $2(".site-header").outerHeight()),
-                $2(window).on("scroll.sticky-header", function() {
-                    if (!window.blockStickyHeader) {
-                        var st = $2(window).scrollTop();
-                        if (st < 0 || Math.abs(lst - st) <= 5)
-                            return;
-                        st == 0 ? (this.$siteHeader.removeClass("animate"),
-                        this.$siteHeader.removeClass("fix"),
-                        this.$siteHeader.removeClass("ready")) : st <= lst && !this.$siteHeader.hasClass("fix") ? (this.$siteHeader.addClass("fix"),
-                        setTimeout(function() {
-                            this.$siteHeader.addClass("ready")
-                        }
-                        .bind(this), 5),
-                        setTimeout(function() {
-                            this.$siteHeader.addClass("animate")
-                        }
-                        .bind(this), 25)) : st > lst && this.$siteHeader.hasClass("animate") && (this.$siteHeader.removeClass("animate"),
-                        setTimeout(function() {
-                            this.$siteHeader.removeClass("fix"),
-                            this.$siteHeader.removeClass("ready")
-                        }
-                        .bind(this), 105)),
-                        window.lst = st
-                    }
-                }
-                .bind(this)))
-            },
-            unmount: function() {
-                $2("#site-menu-handle").off("click"),
-                $2("#site-cart-handle a").off("click"),
-                $2("#site-filter-handle").off("click"),
-                this.$siteNav.removeClass("active"),
-                this.$siteOverlay.removeClass("active"),
-                $2(".fixing-scroll-now .site-box-background").removeClass("sidebar-move"),
-                $2("body").removeClass("sidebar-move"),
-                $2(window).off("scroll.sticky-header")
-            }
-        },
         Collection: {
             $collectionGrid: null,
             $collectionNext: null,
@@ -735,7 +535,7 @@ console.log('function 进来');
                     $2(elm).find(".site-box.box__product-gallery").css("content") != '"fix-me-also"' && $2(elm).find(".site-box.box__product-gallery").height() < $2(elm).find(".site-box.box__product-content").height() && $2(elm).find(".product--section").addClass("sticky-because")
                 }
                 .bind(this)),
-                $2(".site-header.desktop-view--classic .submenu").css("top", $2(".site-header").outerHeight()),
+                // $2(".site-header.desktop-view--classic .submenu").css("top", $2(".site-header").outerHeight()),
                 $2("#site-menu-handle").css("opacity") == "1" ? $2(".site-nav.style--sidebar a, #site-menu-handle").attr("tabIndex", 0) : $2(".site-nav.style--sidebar a, #site-menu-handle").attr("tabIndex", -1)
             },
             _animateEverything: function(firstAnimation) {
@@ -1427,7 +1227,7 @@ console.log('function 进来');
     },
     $2(document).ready(function() {
         console.log('ready 进来');
-        window.CUBER.Nav.mount(),
+        // window.CUBER.Nav.mount(),
         window.CUBER.Main.mount(),
         window.CUBER.Scroll.mount(),
         $2(".mount-social").length > 0 && $2(".mount-social").each(function() {

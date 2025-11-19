@@ -75,7 +75,17 @@
       pagination: {
         el: '#shopify-section-{{ section.id }} .swiper-pagination',
         clickable: true,
-      }
+      },
+      breakpoints: {
+        0: {
+          slidesPerView: 2,
+          spaceBetween: 16,
+        },
+        768: {
+          slidesPerView: 'auto',
+          spaceBetween: 30,
+        },
+      },
     });
   });
 </script>
