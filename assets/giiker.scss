@@ -2662,24 +2662,29 @@ ease;
   .product-variant__container .product-variant__item--color{
     height: 100px;
     width: 100px;
+    background: #fff;
   }
   .site-box.box__product-content{
     padding: 0 20px;
     .site-box-content{
-      width: 637px;
+      width: 800px;
       max-width: 100%;
       margin: 0 auto;
     }
+  }
+  .rte{
+    margin-top: 3em;
   }
   .shogun-root{
     border-radius: 20px;
     background: rgba(247, 165, 69, 1);
     padding: 15px;
     *{
-      font-size: 16px;
+      font-size: 22px;
       font-family: ComicNeue;
       font-weight: 400;
       color: #000;
+      line-height: 1.5;
     }
     p{
       margin: 8px 0;
@@ -2950,6 +2955,10 @@ ease;
 @media screen and (max-width: 768px){
   .new-product-11-05 .quantity-selector-holder .add-to-cart-button-text{
     height: 42px;
+    padding: 15px 25px;
+  }
+  .add-to-cart-button-text .add-to-cart-button-text-label{
+    font-size: 16px;
   }
 }
 
@@ -2986,7 +2995,7 @@ ease;
     .Collapse-faq-item-question-text {
       color: #000;
       font-weight: 700;
-      font-size: 15px;
+      font-size: 22px;
       flex: 1;
       text-transform: uppercase;
       letter-spacing: 0.3px;
@@ -3026,8 +3035,8 @@ ease;
     
     .Collapse-faq-item-answer-content {
       color: #000;
-      font-size: 13px;
-      line-height: 1.2;
+      font-size: 15px;
+      line-height: 1.5;
       font-family: ComicNeue;
       font-weight: 700;
       padding: 18px 25px;
@@ -5231,5 +5240,14 @@ ease;
       width: 70%;
     }
     
+  }
+  .Free_Delivery .Free_Delivery_item{
+    justify-content: start;
+  }
+  .Free_Delivery .Free_Delivery_item .Free_Delivery_item_detail{
+    margin-top: 10px;
+  }
+  .section-home_slideshow-swiper-mobile .section-home_slideshow-swiper-mobile-item .content{
+    background-color: var(--background-color);
   }
 }
