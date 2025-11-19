@@ -19,7 +19,7 @@
       </a>
     </div>
   </div>
-  <div class="giiker-home-how-image-background">
+  <div class="giiker-home-how-image-background pc-image">
     <img src="{{ section.settings.background_image | image_url: width: section.settings.background_image.width }}" 
          alt=""
          class="image-tag pc-image"
@@ -48,6 +48,39 @@
          loading="lazy"
          width="{{ section.settings.background_top_image.width }}"
          height="{{ section.settings.background_top_image.height }}">
+  </div>
+  <div class="giiker-home-how-image-background mb-image">
+    <a href="{{ section.settings.url }}" target="_blank">
+    <img src="{{ section.settings.background_image | image_url: width: section.settings.background_image.width }}" 
+         alt=""
+         class="image-tag pc-image"
+         data-cc-animate="fade-in"
+         loading="lazy"
+         width="{{ section.settings.background_image.width }}"
+         height="{{ section.settings.background_image.height }}">
+    <img src="{{ section.settings.background_mobile_image | image_url: width: section.settings.background_mobile_image.width }}" 
+         alt=""
+         class="image-mobile-tag mb-image"
+         data-cc-animate="fade-in"
+         loading="lazy"
+         width="{{ section.settings.background_mobile_image.width }}"
+         height="{{ section.settings.background_mobile_image.height }}">
+    <img src="{{ section.settings.background_flower_image | image_url: width: section.settings.background_flower_image.width }}" 
+         alt=""
+         class="image-flower-tag"
+         data-cc-animate="fade-in"
+         loading="lazy"
+         width="{{ section.settings.background_flower_image.width }}"
+         height="{{ section.settings.background_flower_image.height }}">
+    <img src="{{ section.settings.background_top_image | image_url: width: section.settings.background_top_image.width }}" 
+         alt=""
+         class="image-top-tag"
+         data-cc-animate="fade-in"
+         loading="lazy"
+         width="{{ section.settings.background_top_image.width }}"
+         height="{{ section.settings.background_top_image.height }}">
+    </a>
+
   </div>
 </div>
 

@@ -132,11 +132,13 @@
 
     /* Font variables */
 
-    --font-stack-headings: {{ headings_font.family }}, {{ headings_font.fallback_families }};
+    --font-stack-headings: ComicNeue, {{ headings_font.fallback_families }};
+    /* --font-stack-headings: {{ headings_font.family }}, {{ headings_font.fallback_families }}; */
     --font-weight-headings: {{ headings_font.weight }};
     --font-style-headings: {{ headings_font.style }};
 
-    --font-stack-body: {{ body_font.family }}, {{ body_font.fallback_families }};
+    /* --font-stack-body: {{ body_font.family }}, {{ body_font.fallback_families }}; */
+    --font-stack-body: ComicNeue, {{ body_font.fallback_families }};
     --font-weight-body: {{ body_font.weight }};
     {%- if body_font_bold -%}
       --font-weight-body-bold: {{ body_font_bold.weight }}; 
