@@ -5133,18 +5133,28 @@ ease;
 }
 .section-home_slideshow-swiper-mobile{
   width: 100%;
+  padding: 50px 20px;
+  box-sizing: border-box;
+  background: #fff;
+  margin-bottom: 40px;
   .section-home_slideshow-swiper-mobile-item{
     width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
     .image-tag{
       width: 100%;
       overflow: hidden;
     }
     .content{
-      padding: 20px;
+      padding: 40px 20px;
       width: 100%;
       box-sizing: border-box;
-      .box-title{
+      .content-background{
         background-color: var(--background-color);
+        border-radius: 20px;
+        min-height: 330px;
+      }
+      .box-title{
         font-size: 24px;
         line-height: 1.2;
         font-weight: 700;
@@ -5156,7 +5166,6 @@ ease;
       }
       .box-detail{
         margin-top: 10px;
-        background-color: var(--background-color);
         font-size: 16px;
         line-height: 1.5;
         font-weight: 400;
@@ -5237,7 +5246,11 @@ ease;
       }
     }
     .input-group{
-      width: 70%;
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 42px;
     }
     
   }
