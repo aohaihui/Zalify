@@ -1200,7 +1200,7 @@ body{
         color: #000;
         transform: rotate(-1deg);
         span{
-          margin: 0 5px;
+          margin: 0 10px;
           display: inline-flex;
         }
         i{
@@ -1209,7 +1209,7 @@ body{
         }
         img{
           width:50px;
-          margin-left: 5px;
+          margin:0 5px;
         }
       }
     }
@@ -1295,7 +1295,9 @@ body{
       line-height: 1.1;
       font-weight: 400;
       font-family: Villain_Comic;
-      color: #000;
+      color: #fff;
+      -webkit-text-stroke: 2px #000;
+      text-shadow: 0 0 2px #000;
     }
   }
   .giiker-help-text-list{
@@ -1396,8 +1398,10 @@ body{
     padding-right: 20px;
     .giiker-help-text-title{
       *{
-        font-size: 24px;
+        font-size: 48px;
         line-height: 1;
+        -webkit-text-stroke: 1px #000;
+        text-shadow: 0 0 1px #000;
       }
     }
     .giiker-help-text-background{
@@ -1420,6 +1424,8 @@ body{
         *{
           font-size: 24px !important;
           line-height: 1;
+          -webkit-text-stroke: 1px #000 !important;
+          text-shadow: 0 0 1px #000 !important;
         }
       }
       .giiker-help-text-item-content-icon{
@@ -1468,6 +1474,7 @@ body{
     }
     .giiker-contact-us-text-list{
       max-width: 100%;
+      min-width: 400px;
       .giiker-contact-us-text-item{
         padding: 0;
         width: 90%;
@@ -1480,7 +1487,9 @@ body{
           }
         }
         .giiker-contact-us-text-item-detail{
-          font-size: 3.6vw;
+          font-size: 3.4vw;
+          // 最小字体为24px
+          min-font-size: 24px;
           padding-left: 27px;
           transform: rotate(-2deg);
         }
@@ -1493,12 +1502,23 @@ body{
       }
       .contact-us-text-item-2{
         width: 70%;
+        .giiker-contact-us-text-item-content-background{
+          width: 76%;
+        }
+        .giiker-contact-us-text-item-detail{
+          top: -2px;
+        }
       }
       .contact-us-text-item-3{
         width: 92%;
         .giiker-contact-us-text-item-content-icon{
           top: -24px;
           left: -16px;
+        }
+        .giiker-contact-us-text-item-content-background{
+          img{
+            height: 60px;
+          }
         }
         .giiker-contact-us-text-item-detail{
           padding-left: 10px;
@@ -1512,7 +1532,7 @@ body{
         }
       }
       .contact-us-text-item-4{
-        width: 92%;
+        width: 87%;
         .giiker-contact-us-text-item-content-icon{
           top: -12px;
         }
@@ -1522,10 +1542,10 @@ body{
         }
       }
       .contact-us-text-item-5{
-        width: 85%;
+        width: 78%;
         .giiker-contact-us-text-item-content-icon{
           top: -20px;
-          left: -35px;
+          left: -12px;
         }
         .giiker-contact-us-text-item-detail{
           padding-left: 40px;
@@ -2982,14 +3002,15 @@ ease;
   margin-left: -20px;
   position: relative;
   z-index: 1;
-  transition: background-color 0.2s;
+  transition: background-color 0.2s; 
+  height: 49px;
   
   .add-to-cart-button-text-label {
     color: #000;
-    font-size: 20px;
+    font-size: 24px;
     line-height: 1.1;
-    font-weight: 400;
-    font-family: Villain_Comic;
+    font-weight: 700;
+    font-family: ComicNeue;
   }
   
   // 购物车图标样式
@@ -3647,6 +3668,8 @@ ease;
       *{
         font-size: 32px;
         line-height: 1.2;
+        -webkit-text-stroke: 1px #fff;
+        text-shadow: 0 0 1px #fff;
       }
     }
     .giiker-about-us-our-story-list{
@@ -3747,6 +3770,8 @@ ease;
             *{
               font-size: 24px;
               line-height: 1.2;
+              -webkit-text-stroke: 1px #000;
+              text-shadow: 0 0 1px #000;
             }
           }
           .giiker-about-us-our-story-item-content-next-title{
@@ -3800,6 +3825,8 @@ ease;
           *{
             font-size: 24px;
             line-height: 1.2;
+            -webkit-text-stroke: 1px #000;
+            text-shadow: 0 0 1px #000;
           }
         }
         .giiker-about-us-our-story-item-content-detail{
