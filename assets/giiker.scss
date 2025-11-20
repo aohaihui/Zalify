@@ -2160,7 +2160,7 @@ ease;
     }
     .image-bottom-tag{
       position: absolute;
-      bottom: 3px;
+      bottom: 4px;
       left: 0;
       width: 100%;
     }
@@ -2804,6 +2804,9 @@ ease;
   .new-product-11-05 .shogun-root *{
     font-size: 16px;
   }
+  .new-product-11-05 .product-header .price .product-price{
+    font-size: 28px;
+  }
   .giiker-about-us-our-story-content .giiker-about-us-our-story-bottom-image{
     margin-top: 0;
   }
@@ -2813,7 +2816,7 @@ ease;
     height: 50px;
   }
   .new-product-11-05 .product-header .product-title{
-    font-size: 28px;
+    font-size: 36px;
     font-weight: 400;
     font-family: Villain_Comic;
   }
@@ -5309,7 +5312,10 @@ ease;
 }
 @media screen and (max-width: 768px) {
   .giiker-product-banner .giiker-product-banner-background .image-bottom-tag{
-    bottom: 4px;
+    bottom: 3px;
+  }
+  .giiker-product-banner{
+    margin-top: -1px;
   }
   .footer-item[data-type="form"]{
     width: 100% !important;
