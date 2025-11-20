@@ -2648,6 +2648,8 @@ ease;
     font-size: 32px;
     margin: 0;
     margin-bottom: 30px;
+    -webkit-text-stroke: 1px #fff;
+    text-shadow: 0 0 1px #fff;
   }
   .giiker-product-recommended-container{
     padding: 50px 0;
@@ -5319,6 +5321,10 @@ ease;
   font-size: 16px;
 }
 @media screen and (max-width: 768px) {
+  .section-home_slideshow-swiper-mobile .section-home_slideshow-swiper-mobile-item .content .box-title{
+    -webkit-text-stroke: 1px #000;
+    text-shadow: 0 0 1px #000;
+  }
   .giiker-product-banner .giiker-product-banner-background .image-bottom-tag{
     bottom: 3px;
   }
