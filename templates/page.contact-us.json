@@ -65,7 +65,7 @@
           "settings": {
             "icon": "shopify://shop_images/contact_us_2.png",
             "background_image": "shopify://shop_images/2_25.png",
-            "detail": "Contact our team by <span style=\"color:rgba(0, 200, 255, 1)\"> emai</span>"
+            "detail": "Contact our team by <span style=\"color:rgba(0, 200, 255, 1)\"> emai\n<a href=\"shop@giiker.com\" target=\"_blank\" title=\"shop@giiker.com\">\n<img src=\"https://cdn.shopify.com/s/files/1/0609/5611/5196/files/send-email-message-communication_1.png?v=1763660232\" />\n</a>\n</span>"
           }
         },
         "list_ape8VK": {
