@@ -2229,7 +2229,7 @@ css-slider:not(.enabled) > * {
   padding-bottom: var(--box-auto-top);
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: min(100px, var(--box-auto-top));
+  grid-gap: min(50px, var(--box-auto-top));
 }
 .site-footer .footer-top[data-size="3"] {
   grid-template-columns: 1fr 1fr 1fr;
