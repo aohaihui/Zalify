@@ -6759,7 +6759,7 @@ search-form input[type=search] {
   position: relative;
   padding: 15px 20px;
   z-index: 9;
-  font-size: calc(14px / 16 * var(--base-body-size) + 0px);
+  font-size: calc(16px / 16 * var(--base-body-size) + 0px);
 }
 .site-nav.style--classic .submenu {
   background: transparent;
