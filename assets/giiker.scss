@@ -2693,6 +2693,7 @@ ease;
       width: 800px;
       max-width: 100%;
       margin: 0 auto;
+    padding-top: 30px;
     }
   }
   .rte{
@@ -2746,11 +2747,11 @@ ease;
       line-height: 1.1;
       font-weight: 700;
       color: #000;
-      margin-right: 20px;
+      margin-right: 40px;
       text-transform: uppercase;
     }
     input{
-      width: 60px;
+      width: 100px;
       padding: 0 5px;
       flex: unset;
       font-size: 24px;
@@ -2785,15 +2786,19 @@ ease;
 }
 
 @media screen and (max-width: 768px) {
+  .new-product-11-05 .shogun-root *{
+    font-size: 16px;
+  }
   .giiker-about-us-our-story-content .giiker-about-us-our-story-bottom-image{
     margin-top: 0;
   }
+
   .new-product-11-05 .product-variant__container .product-variant__item--color{
     width: 50px;
     height: 50px;
   }
   .new-product-11-05 .product-header .product-title{
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 400;
     font-family: Villain_Comic;
   }
@@ -3507,6 +3512,9 @@ ease;
   }
   .giiker-home-text-image-container .giiker-home-text-image .giiker-home-text-image-item.reversal .giiker-home-text-image-item-content .giiker-home-text-image-item-content-background img{
     width: 74px;
+  }
+  .Collapse-faq .Collapse-faq-item-question .Collapse-faq-item-question-text{
+    font-size: 16px !important;
   }
   .new-product-11-05 .quantity-selector-holder{
     height: 42px;
@@ -5213,7 +5221,7 @@ ease;
         font-family: ComicNeue;
         text-align: center;
         border-radius: 6px;
-        padding: 10px;
+        padding: 20px;
         color: #fff;
       }
     }
@@ -5228,6 +5236,7 @@ ease;
     gap: 10px;
     justify-content: space-between;
   }
+
 }
 .footer-item{
   .newsletter-form{
@@ -5275,7 +5284,13 @@ ease;
     }
   }
 }
+.site-footer .footer-container .footer-item .title {
+  font-size: 16px;
+}
 @media screen and (max-width: 768px) {
+  .giiker-product-banner .giiker-product-banner-background .image-bottom-tag{
+    bottom: 4px;
+  }
   .footer-item[data-type="form"]{
     width: 100% !important;
     .newsletter-form{
