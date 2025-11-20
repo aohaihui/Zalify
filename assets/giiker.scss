@@ -1478,9 +1478,13 @@ body{
           }
         }
         .giiker-contact-us-text-item-detail{
-          font-size: 3.4vw;
+          font-size: 3.2vw;
           padding-left: 27px;
           transform: rotate(-2deg);
+          span{
+            display: inline-flex;
+            align-items: center;
+          }
         }
         .giiker-contact-us-text-item-content-background{
           width: 100%;
