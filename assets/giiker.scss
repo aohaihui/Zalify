@@ -1308,6 +1308,9 @@ body{
         .giiker-help-text-item-content-icon{
           height: 160px;
           width: 160px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
           img{
             max-height: 100%;
             max-width: 100%;
