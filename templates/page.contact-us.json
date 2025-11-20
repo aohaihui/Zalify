@@ -73,7 +73,7 @@
           "settings": {
             "icon": "shopify://shop_images/contact_us_3.png",
             "background_image": "shopify://shop_images/3_2.png",
-            "detail": "Catch our daily moments on TikTok \n<a herf=\"https://www.instagram.com/\" target=\"_blank\" title=\"@giiker_official\"\n>\n<span style=\"color:rgba(0, 51, 255, 1)\"> @giiker_official\n<img src=\"https://cdn.shopify.com/s/files/1/0609/5611/5196/files/256px-Instagram_icon_1.jpg?v=1763621689\" />\n</span>\n</a>"
+            "detail": "Catch our daily moments on TikTok \n<a href=\"https://www.instagram.com/\" target=\"_blank\" title=\"@giiker_official\"\n>\n<span style=\"color:rgba(0, 51, 255, 1)\"> @giiker_official\n<img src=\"https://cdn.shopify.com/s/files/1/0609/5611/5196/files/256px-Instagram_icon_1.jpg?v=1763621689\" />\n</span>\n</a>"
           }
         },
         "list_PWRMqT": {
