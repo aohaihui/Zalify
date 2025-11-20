@@ -1439,9 +1439,13 @@ body{
     padding-left: 20px;
     padding-right: 20px;
     .giiker-contact-us-text-title{
+      position: relative;
+      z-index: 11;
       *{
-        font-size: 24px;
+        font-size: 36px;
         line-height: 1;
+        -webkit-text-stroke: 1px #fff;
+        text-shadow: 0 0 1px #fff;
       }
     }
     .giiker-contact-us-text-background{
