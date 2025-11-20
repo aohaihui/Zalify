@@ -26,9 +26,17 @@
               {%- when 'menu' -%}
                 <nav class="footer-menu text-size--smaller">
                   {%- for link in linklists[block.settings.menu].links -%}
-                    <span>
+                    {% if forloop.first %}
+                      <p class="first-link">
+                    {% else %}
+                      <p class="other-link">
+                    {% endif %}
                       <a href="{{ link.url | escape }}"><span class="underline-animation">{{ link.title | escape }}</span></a>
-                    </span>
+                    {% if forloop.first %}
+                      </p>
+                    {% else %}
+                      </p>
+                    {% endif %}
                   {%- endfor -%}
                 </nav>
               {%- when 'form' -%}

@@ -2293,6 +2293,17 @@ css-slider:not(.enabled) > * {
   .site-footer .footer-bottom .site-payment {
     max-width: 100%;
   }
+  .site-footer .footer-menu .first-link{
+    height: 26.78px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+  }
+  .site-footer .footer-menu .other-link{
+    height: 44.78px;
+    line-height: 22px;
+  
+  }
 }
 .site-footer .footer-copyright {
   text-align: right;
@@ -2315,8 +2326,11 @@ css-slider:not(.enabled) > * {
 .site-footer .footer-menu > span {
   line-height: 1;
   display: block;
-  min-height: 16px;
+  min-height: 44px;
+  margin-bottom: 24px !important;
+  margin-top: 16px !important;
 }
+
 .site-footer .footer-menu > span:not(:last-child) {
   margin-bottom: 1.25em;
 }
