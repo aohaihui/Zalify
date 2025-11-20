@@ -2200,8 +2200,8 @@ ease;
       height: 156px;
       font-weight: 100;
       /** 描边 */
-      -webkit-text-stroke: 2px #fff;
-      text-shadow: 0 0 2px #fff;
+      -webkit-text-stroke: 2px #000;
+      text-shadow: 0 0 2px #000;
     }
     .right-content-detail{
       background: rgba(170, 228, 59, 1);
@@ -4656,7 +4656,7 @@ ease;
       width: 80%;
       display: flex;
       background-color: var(--background-color);
-      padding: 20px;
+      padding: 20px 40px;
       border-radius: 50px;
       flex-direction: column; }
     .site-box.box__slideshow-split .slideshow-item .site-box {
