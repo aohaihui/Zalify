@@ -1189,7 +1189,7 @@ body{
         width: 100%;
         text-align: center;
         margin: 0;
-        font-size: 52px;
+        font-size: 50px;
         line-height: 1;
         height: 100%;
         display: flex;
@@ -1215,9 +1215,6 @@ body{
     }
     .contact-us-text-item-2{
       transform: translateX(-41%);
-      .giiker-contact-us-text-item-detail{
-        padding-left: 119px;
-      }
     }
     .contact-us-text-item-3{
       transform: translateX(10%);
@@ -1383,10 +1380,7 @@ body{
 
 @media (max-width: 768px) {
   .giiker-contact-us-text-container .giiker-contact-us-text-list .giiker-contact-us-text-item .giiker-contact-us-text-item-detail img{
-    width: 18px;
-    margin-left: 5px;
-    border-radius: 5px;
-    overflow: hidden;
+    width: 30px;
   }
   .product-tracker-elevate-connection .slide-button-cover .phone-video{
     width: 200px;
@@ -1448,8 +1442,8 @@ body{
   .giiker-contact-us-text-container{
     padding-top: 150px;
     padding-bottom: 60px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 20px;
+    padding-right: 20px;
     .giiker-contact-us-text-title{
       position: relative;
       z-index: 11;
@@ -1479,11 +1473,9 @@ body{
         padding: 0;
         width: 90%;
         .giiker-contact-us-text-item-content-icon{
-          position: absolute;
-          left: -20px;
-          top: 0px;
+
           img{
-            width: 40px;
+            width: 70px;
           }
         }
         .giiker-contact-us-text-item-detail{
@@ -1496,7 +1488,7 @@ body{
         .giiker-contact-us-text-item-content-background{
           width: 100%;
           img{
-            height: 45px;
+            height: 70px;
           }
         }
       }
@@ -1510,7 +1502,7 @@ body{
         }
       }
       .contact-us-text-item-3{
-        width: 92%;
+        width: 95%;
         .giiker-contact-us-text-item-content-icon{
           top: -24px;
           left: -16px;
@@ -1523,21 +1515,15 @@ body{
         .giiker-contact-us-text-item-detail{
           padding-left: 10px;
           transform: rotate(3deg);
-          top: -2px;
-          span{
-            margin-bottom: 2px;
-            display: flex;
-            align-items: center;
-          }
         }
       }
       .contact-us-text-item-4{
         width: 87%;
         .giiker-contact-us-text-item-content-icon{
-          top: -12px;
+          top: -20px;
         }
         .giiker-contact-us-text-item-detail{
-          padding-left: 27px;
+          padding-left: 30px;
           transform: rotate(-1deg);
         }
       }
@@ -1550,7 +1536,6 @@ body{
         .giiker-contact-us-text-item-detail{
           padding-left: 40px;
           transform: rotate(2deg);
-          top: -3px;
         } 
       }
       .contact-us-text-item-6{
