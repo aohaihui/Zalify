@@ -1380,7 +1380,7 @@ body{
 
 @media (max-width: 768px) {
   .giiker-contact-us-text-container .giiker-contact-us-text-list .giiker-contact-us-text-item .giiker-contact-us-text-item-detail img{
-    width: 30px;
+    width: 20px;
   }
   .product-tracker-elevate-connection .slide-button-cover .phone-video{
     width: 200px;
@@ -1475,34 +1475,33 @@ body{
         .giiker-contact-us-text-item-content-icon{
 
           img{
-            width: 70px;
+            width: 40px;
           }
         }
         .giiker-contact-us-text-item-detail{
           font-size: 3.4vw;
-          // 最小字体为24px
-          min-font-size: 24px;
           padding-left: 27px;
           transform: rotate(-2deg);
         }
         .giiker-contact-us-text-item-content-background{
           width: 100%;
           img{
-            height: 70px;
+            height: 60px;
           }
         }
       }
       .contact-us-text-item-2{
-        width: 70%;
+        width: 76%;
         .giiker-contact-us-text-item-content-background{
           width: 76%;
         }
         .giiker-contact-us-text-item-detail{
           top: -2px;
+          padding-left: 19px;
         }
       }
       .contact-us-text-item-3{
-        width: 95%;
+        width: 97%;
         .giiker-contact-us-text-item-content-icon{
           top: -24px;
           left: -16px;
@@ -1514,16 +1513,19 @@ body{
         }
         .giiker-contact-us-text-item-detail{
           padding-left: 10px;
+          top: -2px;
           transform: rotate(3deg);
         }
       }
       .contact-us-text-item-4{
-        width: 87%;
+        width: 91%;
         .giiker-contact-us-text-item-content-icon{
-          top: -20px;
-        }
+          top: 2px;
+          left: -18px;
+          transform: rotate(343deg);
+        } 
         .giiker-contact-us-text-item-detail{
-          padding-left: 30px;
+          padding-left: 18px;
           transform: rotate(-1deg);
         }
       }
@@ -1534,7 +1536,8 @@ body{
           left: -12px;
         }
         .giiker-contact-us-text-item-detail{
-          padding-left: 40px;
+          padding-left: 20px;
+          top: -2px;
           transform: rotate(2deg);
         } 
       }
