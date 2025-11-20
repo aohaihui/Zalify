@@ -1305,6 +1305,15 @@ body{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        .giiker-help-text-item-content-icon{
+          height: 160px;
+          width: 160px;
+          img{
+            max-height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+          }
+        }
         .giiker-help-text-item-title{
           margin-top: 20px;
           text-align: center;
@@ -1315,15 +1324,18 @@ body{
             font-weight: 400;
             font-family: Villain_Comic;
             color: #000;
+            -webkit-text-stroke: 2px #fff;
+            text-shadow: 0 0 2px #fff;
           }
         }
         .giiker-help-text-item-detail{
           margin-top: 20px;
           text-align: center;
+          min-height: 60px;
           *{
             margin: 0;
             font-size: 20px;
-            line-height: 1;
+            line-height: 1.5;
             font-weight: 400;
             font-family: ComicNeue;
             color: #000;
@@ -1380,7 +1392,7 @@ body{
       padding: 0;
       .giiker-help-text-item-title{
         *{
-          font-size: 14px !important;
+          font-size: 24px !important;
           line-height: 1;
         }
       }
@@ -1395,7 +1407,7 @@ body{
       .giiker-help-text-item-detail{
         *{
           font-size: 12px !important;
-          line-height: 1;
+          line-height: 1.5;
         }
       }
     }
@@ -2717,6 +2729,8 @@ ease;
     align-items: center;
     justify-content: flex-start;
     position: relative;
+    width: 540px;
+    max-width: 100%;
     .quantity-selector-holder-text{
       height: 100%;
       padding: 0 20px;
