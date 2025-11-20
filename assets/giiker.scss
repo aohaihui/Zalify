@@ -1965,6 +1965,11 @@ body{
   //   }
   // }
 }
+@media screen and (max-width: 375px) {
+  .giiker-contact-us-text-container .giiker-contact-us-text-list .giiker-contact-us-text-item .giiker-contact-us-text-item-detail span{
+    font-size: 3vw;
+  }
+}
 @media screen and (min-width: 768px) and (max-width: 1569px) {
   .giiker-home-list-image-container .giiker-home-list-image .giiker-home-list-image-item{
     max-width: calc(25% - 15px);
