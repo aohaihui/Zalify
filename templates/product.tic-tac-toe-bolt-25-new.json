@@ -148,8 +148,8 @@
         "background_right_image": "shopify://shop_images/3_c9098b24-994a-44a6-903a-deced61e2e6d.png",
         "title": "Learn the basics",
         "detail": "A step-by-step tutorial on how our smart product makes learning a breeze.",
-        "mobile_video": "shopify://files/videos/SnapTik.app_7205644755823234309.mp4",
-        "mobile_background_image": "shopify://shop_images/slogan.png"
+        "mobile_video": "shopify://files/videos/井字棋使用动画 改.mp4",
+        "mobile_background_image": "shopify://shop_images/tic-tac-toe.png"
       }
     },
     "giiker_product_roller_bdKzfP": {
@@ -263,34 +263,46 @@
     "giiker_home_phone_image_7bXqQP": {
       "type": "giiker-home-phone-image",
       "blocks": {
+        "phone_NVyRDY": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/井字棋-Ali.mp4"
+          }
+        },
+        "phone_bGEYeK": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/tiktokboardgames.mp4"
+          }
+        },
         "phone_BRw3AA": {
           "type": "phone",
           "settings": {
-            "video": "shopify://files/videos/nitpicknate.mp4"
+            "video": "shopify://files/videos/mumppaofficial.mp4"
           }
         },
         "phone_AdeYVn": {
           "type": "phone",
           "settings": {
-            "video": "shopify://files/videos/tinkeringwithtwo.mp4"
+            "video": "shopify://files/videos/justanothernurse.mp4"
           }
         },
         "phone_MMYAYp": {
           "type": "phone",
           "settings": {
-            "video": "shopify://files/videos/retro-super slide.mp4"
+            "video": "shopify://files/videos/playy.n.slayy.mp4"
           }
         },
         "phone_VwFerw": {
           "type": "phone",
           "settings": {
-            "video": "shopify://files/videos/montessori_by_june.mp4"
+            "video": "shopify://files/videos/justanothernurse2 (2).mp4"
           }
         },
         "phone_RWdgwj": {
           "type": "phone",
           "settings": {
-            "video": "shopify://files/videos/banterandboards.mp4"
+            "video": "shopify://files/videos/stampoilsmama.mp4"
           }
         },
         "phone_eNBjqj": {
@@ -301,6 +313,8 @@
         }
       },
       "block_order": [
+        "phone_NVyRDY",
+        "phone_bGEYeK",
         "phone_BRw3AA",
         "phone_AdeYVn",
         "phone_MMYAYp",
