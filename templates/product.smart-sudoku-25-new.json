@@ -159,13 +159,13 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#ae4f2a",
+            "background_color": "#c16f4f",
             "text_color": "#f0674f",
             "title": "1v1 Battle",
             "title_color": "",
             "detail": "Equipped with a head to head battle mode where you can challenge local players through bluetooth.",
             "detail_color": "",
-            "image": "shopify://shop_images/ae4f2a.jpg",
+            "image": "shopify://shop_images/c16f4f.jpg",
             "mobile_image": "shopify://shop_images/image_9.png"
           }
         },
@@ -179,22 +179,8 @@
             "title_color": "",
             "detail": "Simply set up the game by following theinstructions on the puzzle screen,no more pencil and paper annoyance.",
             "detail_color": "",
-            "image": "shopify://shop_images/5182ba.jpg",
+            "image": "shopify://shop_images/5182ba_befcb582-ff70-4abe-b972-ec16e72dd335.jpg",
             "mobile_image": "shopify://shop_images/Interactive_Hints.png"
-          }
-        },
-        "content_bNXnpp": {
-          "type": "content",
-          "settings": {
-            "is_reversal": false,
-            "background_color": "#979799",
-            "text_color": "#f0674f",
-            "title": "Hint Mode",
-            "title_color": "",
-            "detail": "Includes a hint mode that can guide players of all skill level and makes the game easily approachable.",
-            "detail_color": "",
-            "image": "shopify://shop_images/3_985c8523-5de7-4974-aa1f-902a25e4d981.jpg",
-            "mobile_image": "shopify://shop_images/image.png"
           }
         },
         "content_NjbrTD": {
@@ -207,21 +193,7 @@
             "title_color": "",
             "detail": "Boasting 2500 levels with 5 differentdifficulties for 6X6 sudoku or 3 difficulties with 4X4 sudoku.",
             "detail_color": "",
-            "image": "shopify://shop_images/ffffff_f8ea7c5e-c030-42cc-82ea-2f3453cac03d.jpg",
-            "mobile_image": "shopify://shop_images/image_1.png"
-          }
-        },
-        "content_cUNfD7": {
-          "type": "content",
-          "settings": {
-            "is_reversal": false,
-            "background_color": "#ffffff",
-            "text_color": "#f0674f",
-            "title": "Auto Timer",
-            "title_color": "",
-            "detail": "Features an in-game timer that records your finish time and to see who can finish the puzzle faster in head to head mode.",
-            "detail_color": "",
-            "image": "shopify://shop_images/ffffff_f8ea7c5e-c030-42cc-82ea-2f3453cac03d.jpg",
+            "image": "shopify://shop_images/ffffff_847e3999-7c53-4b50-98f1-0bf40561781d.jpg",
             "mobile_image": "shopify://shop_images/image_1.png"
           }
         },
@@ -235,7 +207,7 @@
             "title_color": "",
             "detail": "Upon submitting an answer, the gameimmediately verifies its accuracy.",
             "detail_color": "",
-            "image": "shopify://shop_images/bb7f60.jpg",
+            "image": "shopify://shop_images/bb7f60_4ad8b215-b1d4-4fd8-8637-86c76d210b95.jpg",
             "mobile_image": "shopify://shop_images/image_1.png"
           }
         }
@@ -243,9 +215,7 @@
       "block_order": [
         "content_BFwkR3",
         "content_iirxpf",
-        "content_bNXnpp",
         "content_NjbrTD",
-        "content_cUNfD7",
         "content_BXdHPG"
       ],
       "name": "Giiker Product Roller",
