@@ -221,6 +221,45 @@
       "name": "Giiker Product Roller",
       "settings": {}
     },
+    "giiker_product_roller_mobile_8NzpJz": {
+      "type": "giiker-product-roller-mobile",
+      "blocks": {
+        "content_C3DrFR": {
+          "type": "content",
+          "settings": {
+            "is_reversal": false,
+            "background_color": "#ffd700",
+            "text_color": "#ffffff",
+            "title": "123213213213",
+            "title_color": "#ffd700",
+            "detail": "23213213123",
+            "detail_color": "#ffffff",
+            "image": "shopify://shop_images/20251121-110444.png",
+            "mobile_image": "shopify://shop_images/20251121-110444.png"
+          }
+        },
+        "content_tXgPLa": {
+          "type": "content",
+          "settings": {
+            "is_reversal": false,
+            "background_color": "#ffd700",
+            "text_color": "",
+            "title": "123213213213213",
+            "title_color": "#faf9f7",
+            "detail": "132133",
+            "detail_color": "",
+            "image": "shopify://shop_images/20251121-110444.png",
+            "mobile_image": "shopify://shop_images/20251121-110444.png"
+          }
+        }
+      },
+      "block_order": [
+        "content_C3DrFR",
+        "content_tXgPLa"
+      ],
+      "name": "Giiker Roller Mobile",
+      "settings": {}
+    },
     "giiker_home_phone_image_7bXqQP": {
       "type": "giiker-home-phone-image",
       "blocks": {
@@ -349,6 +388,7 @@
     "giiker_product_banner_tzTcDT",
     "giiker_product_basice_UEt668",
     "giiker_product_roller_bdKzfP",
+    "giiker_product_roller_mobile_8NzpJz",
     "giiker_home_phone_image_7bXqQP",
     "giiker_product_btn_McxzPp",
     "giiker_product_recommended_ndfAnB",
