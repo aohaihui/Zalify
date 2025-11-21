@@ -312,12 +312,12 @@ body {
 }
 @media screen and (min-width: 1024px) {
   body {
-    font-size: calc(16px / 16 * var(--base-body-size) + 0px);
+    font-size: calc(20px / 16 * var(--base-body-size) + 0px);
   }
 }
 @media screen and (min-width: 480px) and (max-width: 1024px) {
   body {
-    font-size: calc(15px / 16 * var(--base-body-size) + 0px);
+    font-size: calc(20px / 16 * var(--base-body-size) + 0px);
   }
 }
 @media screen and (max-width: 480px) {
@@ -328,12 +328,12 @@ body {
 
 @media screen and (min-width: 1024px) {
   .text-size--smallest {
-    font-size: calc(12px / 16 * var(--base-body-size) + 0px);
+    font-size: calc(20px / 16 * var(--base-body-size) + 0px);
   }
 }
 @media screen and (min-width: 480px) and (max-width: 1024px) {
   .text-size--smallest {
-    font-size: calc(12px / 16 * var(--base-body-size) + 0px);
+    font-size: calc(18px / 16 * var(--base-body-size) + 0px);
   }
 }
 @media screen and (max-width: 480px) {
@@ -344,17 +344,17 @@ body {
 
 @media screen and (min-width: 1024px) {
   .text-size--smaller {
-    font-size: calc(16px / 16 * var(--base-body-size) + 0px);
+    font-size: calc(20px / 16 * var(--base-body-size) + 0px);
   }
 }
 @media screen and (min-width: 480px) and (max-width: 1024px) {
   .text-size--smaller {
-    font-size: calc(16px / 16 * var(--base-body-size) + 0px);
+    font-size: calc(20px / 16 * var(--base-body-size) + 0px);
   }
 }
 @media screen and (max-width: 480px) {
   .text-size--smaller {
-    font-size: calc(16px / 16 * var(--base-body-size) + 0px);
+    font-size: calc(20px / 16 * var(--base-body-size) + 0px);
   }
 }
 
