@@ -3841,7 +3841,8 @@ product-variants[data-style=select][data-has-variants] {
     width: 60%;
     height: 60%;
     left: 50%;
-    transform: translateX(-50%);
+    top: 37%;
+    transform: translate(-50%, -50%);
   }
   .box__product-gallery[data-fit=false] .product-gallery-item img {
     object-fit: cover;
