@@ -221,6 +221,30 @@
       "name": "Giiker Product Roller",
       "settings": {}
     },
+    "giiker_product_roller_hnxen6": {
+      "type": "giiker-product-roller",
+      "blocks": {
+        "content_LanxUw": {
+          "type": "content",
+          "settings": {
+            "is_reversal": false,
+            "background_color": "#f0674f",
+            "text_color": "#f0674f",
+            "title": "123123213123",
+            "title_color": "#333333",
+            "detail": "3213213213213",
+            "detail_color": "#ffffff",
+            "image": "shopify://shop_images/Innovative_hints.jpg",
+            "mobile_image": "shopify://shop_images/20251121-110444.png"
+          }
+        }
+      },
+      "block_order": [
+        "content_LanxUw"
+      ],
+      "name": "Giiker Product Roller",
+      "settings": {}
+    },
     "giiker_home_phone_image_7bXqQP": {
       "type": "giiker-home-phone-image",
       "blocks": {
@@ -349,6 +373,7 @@
     "giiker_product_banner_tzTcDT",
     "giiker_product_basice_UEt668",
     "giiker_product_roller_bdKzfP",
+    "giiker_product_roller_hnxen6",
     "giiker_home_phone_image_7bXqQP",
     "giiker_product_btn_McxzPp",
     "giiker_product_recommended_ndfAnB",
