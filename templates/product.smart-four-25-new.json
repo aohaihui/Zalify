@@ -165,7 +165,7 @@
             "title_color": "",
             "detail": "Extends the traditional connection games from flat surfaces to 3-dimensional.",
             "detail_color": "",
-            "image": "shopify://shop_images/ffffff.jpg",
+            "image": "shopify://shop_images/ffffff_c699f3c8-420e-442a-8d30-59f6e84d6019.jpg",
             "mobile_image": "shopify://shop_images/image_9.png"
           }
         },
@@ -179,7 +179,7 @@
             "title_color": "",
             "detail": "Equipped with a smart Al robot that has 3 difficulties for single player practice.",
             "detail_color": "",
-            "image": "shopify://shop_images/dc9071.jpg",
+            "image": "shopify://shop_images/dc9071_cdbb444e-a365-46d3-a491-61a3f24ea411.jpg",
             "mobile_image": "shopify://shop_images/Interactive_Hints.png"
           }
         },
@@ -193,22 +193,8 @@
             "title_color": "",
             "detail": "The game board is able to record allmovements and immediately indicate the winning move.",
             "detail_color": "",
-            "image": "shopify://shop_images/000000.jpg",
+            "image": "shopify://shop_images/000000_cedd1c9c-add1-473a-a2d3-7bb01bf73403.jpg",
             "mobile_image": "shopify://shop_images/image.png"
-          }
-        },
-        "content_NjbrTD": {
-          "type": "content",
-          "settings": {
-            "is_reversal": false,
-            "background_color": "#faf9f7",
-            "text_color": "#f0674f",
-            "title": "Rainbow Interaction System",
-            "title_color": "",
-            "detail": "The colourful indicators will assist players in learning about the robot movement, winning move, and turn order.",
-            "detail_color": "",
-            "image": "shopify://shop_images/4_2e053ffe-d1d9-42e4-9b26-6de6ab7f5716.jpg",
-            "mobile_image": "shopify://shop_images/image_1.png"
           }
         },
         "content_dB7aty": {
@@ -221,19 +207,7 @@
             "title_color": "",
             "detail": "The game can be played with another player, allowing for competitive in-person battles.",
             "detail_color": "",
-            "image": "shopify://shop_images/bdbdbf.jpg"
-          }
-        },
-        "content_4B6xXf": {
-          "type": "content",
-          "settings": {
-            "is_reversal": false,
-            "background_color": "",
-            "text_color": "#f0674f",
-            "title": "Mellow Design",
-            "title_color": "",
-            "detail": "The cupped pieces with rounded edges make finger movements friendly and stacking easy.",
-            "detail_color": ""
+            "image": "shopify://shop_images/bdbdbf_1a354d3d-3286-4aa5-8771-22475324a2d8.jpg"
           }
         }
       },
@@ -241,9 +215,7 @@
         "content_BFwkR3",
         "content_iirxpf",
         "content_bNXnpp",
-        "content_NjbrTD",
-        "content_dB7aty",
-        "content_4B6xXf"
+        "content_dB7aty"
       ],
       "name": "Giiker Product Roller",
       "settings": {}
