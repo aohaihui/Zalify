@@ -159,56 +159,60 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#153229",
+            "is_mobile_visible": true,
+            "background_color": "#edc9a0",
             "text_color": "#f0674f",
-            "title": "Become a Master Detective",
+            "title": "Space-Themed Board Game",
             "title_color": "",
-            "detail": "Can you crack the secret code? You’ve got 7 chances to solve the 4-color puzzle! Every guess brings you closer to the truth—or closer to defeat. Do you have what it takes to solve all 600 codes?",
+            "detail": "Experience classic Ludo reimagined for the modern age! In this exciting adventure, be the first to navigate all 3 crafts to the finish zone.",
             "detail_color": "",
-            "image": "shopify://shop_images/Innovative_Code-Breaking_Game.jpg",
-            "mobile_image": "shopify://shop_images/image_9.png"
+            "image": "shopify://shop_images/edc9a0.jpg",
+            "mobile_image": "shopify://shop_images/1_6a58ca6e-cf3c-43d2-acc2-162ab6f590fa.jpg"
           }
         },
         "content_iirxpf": {
           "type": "content",
           "settings": {
             "is_reversal": true,
-            "background_color": "#153229",
+            "is_mobile_visible": true,
+            "background_color": "#ffffff",
             "text_color": "#f0674f",
-            "title": "Secret Hints",
+            "title": "Free Way or Team Up",
             "title_color": "",
-            "detail": "The code is tricky, but clues are on your side! After each guess, the device gives hints—study them carefully and make your next move. But be quick—you only have 7 tries to crack the secret color code!",
+            "detail": "Partner up with a friend to challenge another team or engage in free-for all and race to the finish zone！",
             "detail_color": "",
-            "image": "shopify://shop_images/Innovative_hints.jpg",
-            "mobile_image": "shopify://shop_images/Interactive_Hints.png"
+            "image": "shopify://shop_images/ffffff_2f76bde0-5bb0-4f05-8f3b-0bbc44dbf96a.jpg",
+            "mobile_image": "shopify://shop_images/2_9d23ca4b-ae66-48d4-b49a-ee5f0c213b5a.jpg"
           }
         },
         "content_bNXnpp": {
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#979799",
+            "is_mobile_visible": true,
+            "background_color": "#070709",
             "text_color": "#f0674f",
-            "title": "From Codebreaker to Code Setter",
+            "title": "6 Universe Events",
             "title_color": "",
-            "detail": "Flip the game and become the master! Set your own secret code and challenge a friend—can they crack it, or will your code leave them guessing?",
+            "detail": "Experience 6 thrilling cosmic surprises that randomly trigger with every roll！",
             "detail_color": "",
-            "image": "shopify://shop_images/3_985c8523-5de7-4974-aa1f-902a25e4d981.jpg",
-            "mobile_image": "shopify://shop_images/image.png"
+            "image": "shopify://shop_images/070709.jpg",
+            "mobile_image": "shopify://shop_images/3_7a891609-69ff-43fe-b333-45f5a480042e.jpg"
           }
         },
         "content_NjbrTD": {
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#faf9f7",
+            "is_mobile_visible": true,
+            "background_color": "#a55f45",
             "text_color": "#f0674f",
-            "title": "On-the-Go Detective",
+            "title": "Party Game Nights",
             "title_color": "",
-            "detail": "Carry the thrill in your pocket! This tiny handheld console goes wherever you do—no loose pieces, no mess, just nonstop code-breaking fun.",
+            "detail": "Turn game night into family magic withthis engaging 2-4 player adventure, where everyone shares in the fun and excitement.",
             "detail_color": "",
-            "image": "shopify://shop_images/4_2e053ffe-d1d9-42e4-9b26-6de6ab7f5716.jpg",
-            "mobile_image": "shopify://shop_images/image_1.png"
+            "image": "shopify://shop_images/a55f45.jpg",
+            "mobile_image": "shopify://shop_images/4_75945a2a-1da6-4de2-808c-10c7dea7e4b9.jpg"
           }
         }
       },
