@@ -134,7 +134,7 @@
       "type": "giiker-product-banner",
       "name": "Giiker Product Banner",
       "settings": {
-        "video_picker": "shopify://files/videos/Tic-tac-toeBoltIntroductionvideo.mp4",
+        "video_picker": "shopify://files/videos/密码机.mp4",
         "background_top_image": "shopify://shop_images/Vector_26.png",
         "background_bottom_image": "shopify://shop_images/Vector_25_1.png"
       }
@@ -144,12 +144,12 @@
       "name": "Giiker Product Basice",
       "settings": {
         "background_left_image": "shopify://shop_images/0037_1.png",
-        "background_left_video": "shopify://files/videos/508d182898ff6268b6ed552e807e4bd0.mp4",
+        "background_left_video": "shopify://files/videos/密码机使用动画 改.mp4",
         "background_right_image": "shopify://shop_images/2_1_18f89e96-ae22-4f37-b195-e3fe27077c2b.png",
         "title": "Learn the basics",
         "detail": "A step-by-step tutorial on how our smart product makes learning a breeze.",
-        "mobile_video": "shopify://files/videos/SnapTik.app_7205644755823234309.mp4",
-        "mobile_background_image": "shopify://shop_images/slogan.png"
+        "mobile_video": "shopify://files/videos/密码机使用动画 改.mp4",
+        "mobile_background_image": "shopify://shop_images/super_decoder.png"
       }
     },
     "giiker_product_roller_bdKzfP": {
@@ -263,44 +263,58 @@
     "giiker_home_phone_image_7bXqQP": {
       "type": "giiker-home-phone-image",
       "blocks": {
+        "phone_a4hwMb": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/vetro.gaming-super decoder.mp4"
+          }
+        },
+        "phone_dKG6AF": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/mommy_craftsandlaughs.mp4"
+          }
+        },
         "phone_BRw3AA": {
           "type": "phone",
           "settings": {
-            "video": "shopify://files/videos/nitpicknate.mp4"
+            "video": "shopify://files/videos/_gigglesandjiggles (3).mp4"
           }
         },
         "phone_AdeYVn": {
           "type": "phone",
           "settings": {
-            "video": "shopify://files/videos/tinkeringwithtwo.mp4"
+            "video": "shopify://files/videos/disobeynormalreviews (2).mp4"
           }
         },
         "phone_MMYAYp": {
           "type": "phone",
           "settings": {
-            "video": "shopify://files/videos/retro-super slide.mp4"
+            "video": "shopify://files/videos/retro-super decoder_159b49e4-5ec9-4cdd-964c-86811a7820be.mp4"
           }
         },
         "phone_VwFerw": {
           "type": "phone",
           "settings": {
-            "video": "shopify://files/videos/montessori_by_june.mp4"
+            "video": "shopify://files/videos/banterandboards_7d84dc01-a818-49a5-85d2-dc22f3a2aa4f.mp4"
           }
         },
         "phone_RWdgwj": {
           "type": "phone",
           "settings": {
-            "video": "shopify://files/videos/banterandboards.mp4"
+            "video": "shopify://files/videos/abalancedchildhood.mp4"
           }
         },
         "phone_eNBjqj": {
           "type": "phone",
           "settings": {
-            "video": "shopify://files/videos/never.boardgame.mp4"
+            "video": "shopify://files/videos/boardgamingcrew (4).mp4"
           }
         }
       },
       "block_order": [
+        "phone_a4hwMb",
+        "phone_dKG6AF",
         "phone_BRw3AA",
         "phone_AdeYVn",
         "phone_MMYAYp",

@@ -85,8 +85,8 @@
             "detail": "<p>We combine logic, fine-motor, and real-time feedback to create toys that challenge the brain and learn through play.</p>",
             "background_color": "#85ba20",
             "background_image": "shopify://shop_images/20251117100010_919_911.png",
-            "pc_image": "shopify://shop_images/4_1.png",
-            "mobile_image": "shopify://shop_images/4_1_e760ac38-2bf8-4b58-8443-68b05fc0889e.png",
+            "pc_image": "shopify://shop_images/PC_88644bf2-6971-48bb-9664-2236ef25db5c.jpg",
+            "mobile_image": "shopify://shop_images/4ab06d5d0fae9e3779190a5378aa9b02.jpg",
             "url": "shopify://collections/learning-educational-toys",
             "url_label": "explore all games"
           }
@@ -244,14 +244,14 @@
         "awards_UD7Wwn": {
           "type": "awards",
           "settings": {
-            "image": "shopify://shop_images/1_f48c4c04-c760-4b2a-b63d-34408c2e2133.png",
+            "image": "shopify://shop_images/402ec0391b1b48f5895f00ea977aefb1.png",
             "title": "<p>Reddot Award</p>"
           }
         },
         "awards_7UXCHk": {
           "type": "awards",
           "settings": {
-            "image": "shopify://shop_images/1_0819e68a-c61b-4e7c-9620-0dc5691e4bed.png",
+            "image": "shopify://shop_images/toy_inside.png",
             "title": "<p>Top Holiday Toy Winner</p>"
           }
         },
