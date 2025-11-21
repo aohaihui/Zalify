@@ -1,0 +1,397 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "shogun-helper": {
+      "type": "shogun-helper",
+      "settings": {}
+    },
+    "shogun-above": {
+      "type": "shogun-above",
+      "settings": {}
+    },
+    "23897632015cc15783": {
+      "type": "apps",
+      "settings": {}
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "show_vendor": false,
+            "show_badge": true,
+            "show_reviews": false,
+            "show_tax_info": false,
+            "show_sku": false,
+            "show_barcode": false,
+            "stick_product_header_on_mobile": true
+          }
+        },
+        "text_i9YCcg": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Use the code: BFCM20 to get 20% off</h3>",
+            "text_style": "body"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variants_style": "radio",
+            "show_color_swatches": true,
+            "show_quantities": "no"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_quantity_selector": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "collapse_HQqnfc": {
+          "type": "Collapse",
+          "settings": {
+            "heading": "FAQ Question",
+            "content": "",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {}
+        },
+        "93880648-978b-4d31-9200-dc7244fdc064": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>User Manual： <a href=\"/pages/smart-four-user-manual\" title=\"smart four user manual\"><strong>Click here</strong></a></p>",
+            "text_style": "body"
+          }
+        },
+        "free_delivery_iPJ7mA": {
+          "type": "Free_Delivery",
+          "settings": {
+            "image_1": "shopify://shop_images/685082392297db95b906f751_nex-web-icon-delivery.svg",
+            "title_1": "",
+            "detail_1": "<p>Free Shipping</p><p>(US, CA, UK)</p>",
+            "image_2": "shopify://shop_images/68508239b45fd47ed3fc6f3d_nex-web-icon-shipping.svg",
+            "title_2": "",
+            "detail_2": "<p>30 Days</p><p>Free Returns</p>",
+            "image_3": "shopify://shop_images/68508239939e9f0c8d5eca5a_nex-web-icon-warranty.svg",
+            "title_3": "",
+            "detail_3": "<p>1-Year</p><p>Warranty</p>"
+          }
+        }
+      },
+      "block_order": [
+        "header",
+        "text_i9YCcg",
+        "variant_picker",
+        "buy_buttons",
+        "description",
+        "collapse_HQqnfc",
+        "share",
+        "93880648-978b-4d31-9200-dc7244fdc064",
+        "free_delivery_iPJ7mA"
+      ],
+      "settings": {
+        "gallery_style": "slider",
+        "gallery_aspect": true,
+        "gallery_pagination": "thumbnails",
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "new_product_11_05": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like"
+      }
+    },
+    "shogun-below": {
+      "type": "shogun-below",
+      "disabled": true,
+      "settings": {}
+    },
+    "giiker_product_banner_tzTcDT": {
+      "type": "giiker-product-banner",
+      "name": "Giiker Product Banner",
+      "settings": {
+        "video_picker": "shopify://files/videos/Tic-tac-toeBoltIntroductionvideo.mp4",
+        "background_top_image": "shopify://shop_images/Vector_26.png",
+        "background_bottom_image": "shopify://shop_images/Vector_25_1.png"
+      }
+    },
+    "giiker_product_basice_UEt668": {
+      "type": "giiker-product-basice",
+      "name": "Giiker Product Basice",
+      "settings": {
+        "background_left_image": "shopify://shop_images/0037_1.png",
+        "background_left_video": "shopify://files/videos/508d182898ff6268b6ed552e807e4bd0.mp4",
+        "background_right_image": "shopify://shop_images/2_1_18f89e96-ae22-4f37-b195-e3fe27077c2b.png",
+        "title": "Learn the basics",
+        "detail": "A step-by-step tutorial on how our smart product makes learning a breeze.",
+        "mobile_video": "shopify://files/videos/SnapTik.app_7205644755823234309.mp4",
+        "mobile_background_image": "shopify://shop_images/slogan.png"
+      }
+    },
+    "giiker_product_roller_bdKzfP": {
+      "type": "giiker-product-roller",
+      "blocks": {
+        "content_BFwkR3": {
+          "type": "content",
+          "settings": {
+            "is_reversal": false,
+            "background_color": "#153229",
+            "text_color": "#f0674f",
+            "title": "Become a Master Detective",
+            "title_color": "",
+            "detail": "Can you crack the secret code? You’ve got 7 chances to solve the 4-color puzzle! Every guess brings you closer to the truth—or closer to defeat. Do you have what it takes to solve all 600 codes?",
+            "detail_color": "",
+            "image": "shopify://shop_images/Innovative_Code-Breaking_Game.jpg",
+            "mobile_image": "shopify://shop_images/image_9.png"
+          }
+        },
+        "content_iirxpf": {
+          "type": "content",
+          "settings": {
+            "is_reversal": true,
+            "background_color": "#153229",
+            "text_color": "#f0674f",
+            "title": "Secret Hints",
+            "title_color": "",
+            "detail": "The code is tricky, but clues are on your side! After each guess, the device gives hints—study them carefully and make your next move. But be quick—you only have 7 tries to crack the secret color code!",
+            "detail_color": "",
+            "image": "shopify://shop_images/Innovative_hints.jpg",
+            "mobile_image": "shopify://shop_images/Interactive_Hints.png"
+          }
+        },
+        "content_bNXnpp": {
+          "type": "content",
+          "settings": {
+            "is_reversal": false,
+            "background_color": "#979799",
+            "text_color": "#f0674f",
+            "title": "From Codebreaker to Code Setter",
+            "title_color": "",
+            "detail": "Flip the game and become the master! Set your own secret code and challenge a friend—can they crack it, or will your code leave them guessing?",
+            "detail_color": "",
+            "image": "shopify://shop_images/3_985c8523-5de7-4974-aa1f-902a25e4d981.jpg",
+            "mobile_image": "shopify://shop_images/image.png"
+          }
+        },
+        "content_NjbrTD": {
+          "type": "content",
+          "settings": {
+            "is_reversal": false,
+            "background_color": "#faf9f7",
+            "text_color": "#f0674f",
+            "title": "On-the-Go Detective",
+            "title_color": "",
+            "detail": "Carry the thrill in your pocket! This tiny handheld console goes wherever you do—no loose pieces, no mess, just nonstop code-breaking fun.",
+            "detail_color": "",
+            "image": "shopify://shop_images/4_2e053ffe-d1d9-42e4-9b26-6de6ab7f5716.jpg",
+            "mobile_image": "shopify://shop_images/image_1.png"
+          }
+        }
+      },
+      "block_order": [
+        "content_BFwkR3",
+        "content_iirxpf",
+        "content_bNXnpp",
+        "content_NjbrTD"
+      ],
+      "name": "Giiker Product Roller",
+      "settings": {}
+    },
+    "giiker_product_roller_mobile_8NzpJz": {
+      "type": "giiker-product-roller-mobile",
+      "blocks": {
+        "content_C3DrFR": {
+          "type": "content",
+          "settings": {
+            "is_reversal": false,
+            "background_color": "#ffd700",
+            "text_color": "#ffffff",
+            "title": "123213213213",
+            "title_color": "#ffd700",
+            "detail": "23213213123",
+            "detail_color": "#ffffff",
+            "image": "shopify://shop_images/20251121-110444.png",
+            "mobile_image": "shopify://shop_images/20251121-110444.png"
+          }
+        },
+        "content_tXgPLa": {
+          "type": "content",
+          "settings": {
+            "is_reversal": false,
+            "background_color": "#ffd700",
+            "text_color": "",
+            "title": "123213213213213",
+            "title_color": "#faf9f7",
+            "detail": "132133",
+            "detail_color": "",
+            "image": "shopify://shop_images/20251121-110444.png",
+            "mobile_image": "shopify://shop_images/20251121-110444.png"
+          }
+        }
+      },
+      "block_order": [
+        "content_C3DrFR",
+        "content_tXgPLa"
+      ],
+      "name": "Giiker Roller Mobile",
+      "settings": {}
+    },
+    "giiker_home_phone_image_7bXqQP": {
+      "type": "giiker-home-phone-image",
+      "blocks": {
+        "phone_BRw3AA": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/nitpicknate.mp4"
+          }
+        },
+        "phone_AdeYVn": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/tinkeringwithtwo.mp4"
+          }
+        },
+        "phone_MMYAYp": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/retro-super slide.mp4"
+          }
+        },
+        "phone_VwFerw": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/montessori_by_june.mp4"
+          }
+        },
+        "phone_RWdgwj": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/banterandboards.mp4"
+          }
+        },
+        "phone_eNBjqj": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/never.boardgame.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "phone_BRw3AA",
+        "phone_AdeYVn",
+        "phone_MMYAYp",
+        "phone_VwFerw",
+        "phone_RWdgwj",
+        "phone_eNBjqj"
+      ],
+      "name": "Giiker Home Phone Image",
+      "settings": {
+        "title": "Families everywhere are loving it.",
+        "background_color": "#ffffff",
+        "arrows_color": true
+      }
+    },
+    "giiker_product_btn_McxzPp": {
+      "type": "giiker-product-btn",
+      "name": "Giiker Product Btn",
+      "settings": {
+        "btn_label": "Explore the Facebook Group",
+        "btn_url": "https://www.facebook.com/groups/1324836238992700"
+      }
+    },
+    "giiker_product_recommended_ndfAnB": {
+      "type": "giiker-product-recommended",
+      "name": "Giiker Product Recommended",
+      "settings": {
+        "background_image": "shopify://shop_images/20251118180441_687_99.png",
+        "title": "You may also like",
+        "product_list": [
+          "battle-pad",
+          "fidget-cube",
+          "giiker-super-slide-puzzle-games-copy",
+          "giiker-smart-four-board-games",
+          "smart-sudoku"
+        ]
+      }
+    },
+    "giiker_product_icon_yjLqaX": {
+      "type": "giiker-product-icon",
+      "blocks": {
+        "list_JkLgDm": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/x0020_1.png",
+            "title": "<p>Fast & Easy Returns</p>",
+            "detail": "<p>Change your mind? Enjoy hassle-freereturns within 30 days.</p>"
+          }
+        },
+        "list_wLCkfw": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/x0020_1_3.png",
+            "title": "<p>100% secure payment.</p>",
+            "detail": "<p>We accept all major credit cards withShop Pay and PayPal. Your credit cardinformation is private.</p>"
+          }
+        },
+        "list_B3cRM9": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/x0020_1.png",
+            "title": "<p>1 Year Warranty</p>",
+            "detail": "<p>Play smarter, worry less—every GiiKER product is backed by our 1-year warranty, a promise of lasting quality and endless fun.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "list_JkLgDm",
+        "list_wLCkfw",
+        "list_B3cRM9"
+      ],
+      "disabled": true,
+      "name": "Giiker Product Icon",
+      "settings": {
+        "background_image": "shopify://shop_images/Sku_2_1.png"
+      }
+    }
+  },
+  "order": [
+    "shogun-helper",
+    "shogun-above",
+    "23897632015cc15783",
+    "main",
+    "product-recommendations",
+    "shogun-below",
+    "giiker_product_banner_tzTcDT",
+    "giiker_product_basice_UEt668",
+    "giiker_product_roller_bdKzfP",
+    "giiker_product_roller_mobile_8NzpJz",
+    "giiker_home_phone_image_7bXqQP",
+    "giiker_product_btn_McxzPp",
+    "giiker_product_recommended_ndfAnB",
+    "giiker_product_icon_yjLqaX"
+  ]
+}
