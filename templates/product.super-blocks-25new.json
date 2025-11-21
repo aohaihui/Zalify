@@ -134,7 +134,7 @@
       "type": "giiker-product-banner",
       "name": "Giiker Product Banner",
       "settings": {
-        "video_picker": "shopify://files/videos/Tic-tac-toeBoltIntroductionvideo.mp4",
+        "video_picker": "shopify://files/videos/超级积木.mp4",
         "background_top_image": "shopify://shop_images/Vector_26.png",
         "background_bottom_image": "shopify://shop_images/Vector_25_1.png"
       }
@@ -145,7 +145,7 @@
       "settings": {
         "background_left_image": "shopify://shop_images/0037_1.png",
         "background_left_video": "shopify://files/videos/超级积木使用动画 改.mp4",
-        "background_right_image": "shopify://shop_images/1_490096e5-57e4-4497-9413-c51993db327c.png",
+        "background_right_image": "shopify://shop_images/18c4dce920db45da6f1cc05d7a255161_efd43267-9a7f-4a4f-b9d7-65cfecea1f6a.png",
         "title": "Learn the basics",
         "detail": "A step-by-step tutorial on how our smart product makes learning a breeze.",
         "mobile_video": "shopify://files/videos/超级积木使用动画 改.mp4",
