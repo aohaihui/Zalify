@@ -231,7 +231,7 @@
       "settings": {
         "title": "<p>How A </p><p>GiiKER Toy </p><p>Comes to Life</p>",
         "background_image": "shopify://shop_images/1_5b762347-d913-41fb-a38a-237c32e6c724.png",
-        "background_mobile_image": "shopify://shop_images/20251118-165304.png",
+        "background_mobile_image": "shopify://shop_images/20251121093143_1810_911.png",
         "background_flower_image": "shopify://shop_images/Mask_group_1_5736e227-1f09-4330-a300-e5f867b6815c.png",
         "background_top_image": "shopify://shop_images/Vector_23.png",
         "url": "shopify://pages/about-us",
@@ -361,7 +361,8 @@
       "settings": {
         "title": "Fun for All Ages !!!",
         "background_top_image": "shopify://shop_images/1_4df1601f-6672-4e15-8fcb-33670e9b19dc.png",
-        "background_color": "#f0674f"
+        "background_color": "#f0674f",
+        "arrows_color": false
       }
     },
     "giiker_home_evaluate_list_n4gEEV": {
@@ -400,7 +401,7 @@
           "settings": {
             "icon": "shopify://shop_images/52532039b3cfb76850b2a8c945361cb3.png",
             "background_color": "#f0674f",
-            "title": "<p>It's a blast. We play with our 6-year-old daughter, and the game is both chal-lenging and enjoyable. It is exceptional-ly well-designed and visually beautiful. We highly recommend it.</p>"
+            "title": "<p>It's a blast. We play with our 6-year-old daughter, and the game is both chal-lenging and enjoyable. It is exceptional-ly well-designed and visually beautiful. </p>"
           }
         },
         "image_bTPcQy": {

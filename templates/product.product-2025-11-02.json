@@ -36,6 +36,13 @@
             "stick_product_header_on_mobile": true
           }
         },
+        "text_i9YCcg": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Use the code: BFCM20 to get 20% off</h3>",
+            "text_style": "body"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -81,7 +88,7 @@
           "settings": {
             "image_1": "shopify://shop_images/685082392297db95b906f751_nex-web-icon-delivery.svg",
             "title_1": "",
-            "detail_1": "<p>Free Delivery</p><p>(Limited Time)</p>",
+            "detail_1": "<p>Free Shipping</p><p>(US, CA, UK)</p>",
             "image_2": "shopify://shop_images/68508239b45fd47ed3fc6f3d_nex-web-icon-shipping.svg",
             "title_2": "",
             "detail_2": "<p>30 Days</p><p>Free Returns</p>",
@@ -93,6 +100,7 @@
       },
       "block_order": [
         "header",
+        "text_i9YCcg",
         "variant_picker",
         "buy_buttons",
         "description",
@@ -151,13 +159,13 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#6cc1d4",
+            "background_color": "#153229",
             "text_color": "#f0674f",
             "title": "Become a Master Detective",
             "title_color": "",
             "detail": "Can you crack the secret code? You’ve got 7 chances to solve the 4-color puzzle! Every guess brings you closer to the truth—or closer to defeat. Do you have what it takes to solve all 600 codes?",
             "detail_color": "",
-            "image": "shopify://shop_images/Innovative_Code-Breaking_Game.png",
+            "image": "shopify://shop_images/Innovative_Code-Breaking_Game.jpg",
             "mobile_image": "shopify://shop_images/image_9.png"
           }
         },
@@ -171,7 +179,7 @@
             "title_color": "",
             "detail": "The code is tricky, but clues are on your side! After each guess, the device gives hints—study them carefully and make your next move. But be quick—you only have 7 tries to crack the secret color code!",
             "detail_color": "",
-            "image": "shopify://shop_images/Innovative_hints.png",
+            "image": "shopify://shop_images/Innovative_hints.jpg",
             "mobile_image": "shopify://shop_images/Interactive_Hints.png"
           }
         },
@@ -179,13 +187,13 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#2860b3",
+            "background_color": "#979799",
             "text_color": "#f0674f",
             "title": "From Codebreaker to Code Setter",
             "title_color": "",
             "detail": "Flip the game and become the master! Set your own secret code and challenge a friend—can they crack it, or will your code leave them guessing?",
             "detail_color": "",
-            "image": "shopify://shop_images/3_c63774d0-6954-4461-b0e4-5fbf05e909f3.png",
+            "image": "shopify://shop_images/3_985c8523-5de7-4974-aa1f-902a25e4d981.jpg",
             "mobile_image": "shopify://shop_images/image.png"
           }
         },
@@ -193,13 +201,13 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#2860b3",
+            "background_color": "#faf9f7",
             "text_color": "#f0674f",
             "title": "On-the-Go Detective",
             "title_color": "",
             "detail": "Carry the thrill in your pocket! This tiny handheld console goes wherever you do—no loose pieces, no mess, just nonstop code-breaking fun.",
             "detail_color": "",
-            "image": "shopify://shop_images/4_22a9ca26-b17f-40ef-8f34-94316658471c.png",
+            "image": "shopify://shop_images/4_2e053ffe-d1d9-42e4-9b26-6de6ab7f5716.jpg",
             "mobile_image": "shopify://shop_images/image_1.png"
           }
         }
@@ -273,7 +281,7 @@
       "name": "Giiker Product Btn",
       "settings": {
         "btn_label": "Explore the Facebook Group",
-        "btn_url": "shopify://products/battle-pad"
+        "btn_url": "https://www.facebook.com/groups/1324836238992700"
       }
     },
     "giiker_product_recommended_ndfAnB": {
