@@ -159,13 +159,13 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#153229",
+            "background_color": "#ae4f2a",
             "text_color": "#f0674f",
-            "title": "Become a Master Detective",
+            "title": "1v1 Battle",
             "title_color": "",
-            "detail": "Can you crack the secret code? You’ve got 7 chances to solve the 4-color puzzle! Every guess brings you closer to the truth—or closer to defeat. Do you have what it takes to solve all 600 codes?",
+            "detail": "Equipped with a head to head battle mode where you can challenge local players through bluetooth.",
             "detail_color": "",
-            "image": "shopify://shop_images/Innovative_Code-Breaking_Game.jpg",
+            "image": "shopify://shop_images/ae4f2a.jpg",
             "mobile_image": "shopify://shop_images/image_9.png"
           }
         },
@@ -173,13 +173,13 @@
           "type": "content",
           "settings": {
             "is_reversal": true,
-            "background_color": "#153229",
+            "background_color": "#5182ba",
             "text_color": "#f0674f",
-            "title": "Secret Hints",
+            "title": "Paper-free",
             "title_color": "",
-            "detail": "The code is tricky, but clues are on your side! After each guess, the device gives hints—study them carefully and make your next move. But be quick—you only have 7 tries to crack the secret color code!",
+            "detail": "Simply set up the game by following theinstructions on the puzzle screen,no more pencil and paper annoyance.",
             "detail_color": "",
-            "image": "shopify://shop_images/Innovative_hints.jpg",
+            "image": "shopify://shop_images/5182ba.jpg",
             "mobile_image": "shopify://shop_images/Interactive_Hints.png"
           }
         },
@@ -189,9 +189,9 @@
             "is_reversal": false,
             "background_color": "#979799",
             "text_color": "#f0674f",
-            "title": "From Codebreaker to Code Setter",
+            "title": "Hint Mode",
             "title_color": "",
-            "detail": "Flip the game and become the master! Set your own secret code and challenge a friend—can they crack it, or will your code leave them guessing?",
+            "detail": "Includes a hint mode that can guide players of all skill level and makes the game easily approachable.",
             "detail_color": "",
             "image": "shopify://shop_images/3_985c8523-5de7-4974-aa1f-902a25e4d981.jpg",
             "mobile_image": "shopify://shop_images/image.png"
@@ -201,13 +201,41 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#faf9f7",
+            "background_color": "#ffffff",
             "text_color": "#f0674f",
-            "title": "On-the-Go Detective",
+            "title": "Endless Fun",
             "title_color": "",
-            "detail": "Carry the thrill in your pocket! This tiny handheld console goes wherever you do—no loose pieces, no mess, just nonstop code-breaking fun.",
+            "detail": "Boasting 2500 levels with 5 differentdifficulties for 6X6 sudoku or 3 difficulties with 4X4 sudoku.",
             "detail_color": "",
-            "image": "shopify://shop_images/4_2e053ffe-d1d9-42e4-9b26-6de6ab7f5716.jpg",
+            "image": "shopify://shop_images/ffffff_f8ea7c5e-c030-42cc-82ea-2f3453cac03d.jpg",
+            "mobile_image": "shopify://shop_images/image_1.png"
+          }
+        },
+        "content_cUNfD7": {
+          "type": "content",
+          "settings": {
+            "is_reversal": false,
+            "background_color": "#ffffff",
+            "text_color": "#f0674f",
+            "title": "Auto Timer",
+            "title_color": "",
+            "detail": "Features an in-game timer that records your finish time and to see who can finish the puzzle faster in head to head mode.",
+            "detail_color": "",
+            "image": "shopify://shop_images/ffffff_f8ea7c5e-c030-42cc-82ea-2f3453cac03d.jpg",
+            "mobile_image": "shopify://shop_images/image_1.png"
+          }
+        },
+        "content_BXdHPG": {
+          "type": "content",
+          "settings": {
+            "is_reversal": false,
+            "background_color": "#bb7f60",
+            "text_color": "#f0674f",
+            "title": "Instant Referee",
+            "title_color": "",
+            "detail": "Upon submitting an answer, the gameimmediately verifies its accuracy.",
+            "detail_color": "",
+            "image": "shopify://shop_images/bb7f60.jpg",
             "mobile_image": "shopify://shop_images/image_1.png"
           }
         }
@@ -216,7 +244,9 @@
         "content_BFwkR3",
         "content_iirxpf",
         "content_bNXnpp",
-        "content_NjbrTD"
+        "content_NjbrTD",
+        "content_cUNfD7",
+        "content_BXdHPG"
       ],
       "name": "Giiker Product Roller",
       "settings": {}
