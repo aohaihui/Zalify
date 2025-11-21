@@ -233,7 +233,7 @@
           "settings": {
             "is_reversal": false,
             "background_color": "#070709",
-            "text_color": "#ffffff",
+            "text_color": "#f0674f",
             "title": "6 Universe Events",
             "title_color": "#ffffff",
             "detail": "Experience 6 thrilling cosmic surprises that randomly trigger with every roll！",
@@ -246,14 +246,14 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#ffd700",
-            "text_color": "",
-            "title": "123213213213213",
+            "background_color": "#a55f45",
+            "text_color": "#f0674f",
+            "title": "Party Game Nights",
             "title_color": "#faf9f7",
-            "detail": "132133",
+            "detail": "Turn game night into family magic withthis engaging 2-4 player adventure, where everyone shares in the fun and excitement.",
             "detail_color": "",
-            "image": "shopify://shop_images/20251121-110444.png",
-            "mobile_image": "shopify://shop_images/20251121-110444.png"
+            "image": "shopify://shop_images/a55f45.jpg",
+            "mobile_image": "shopify://shop_images/4_75945a2a-1da6-4de2-808c-10c7dea7e4b9.jpg"
           }
         }
       },
