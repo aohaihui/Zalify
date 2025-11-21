@@ -8331,6 +8331,7 @@ li.has-submenu:hover > ul {
   }
   .box__banner.style--bar .content.with-dismiss {
     font-size: 16px;
+    padding: 0;
   }
 }
 .site-footer .site-social{
