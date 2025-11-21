@@ -193,7 +193,7 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#2860b3",
+            "background_color": "#faf9f7",
             "text_color": "#f0674f",
             "title": "On-the-Go Detective",
             "title_color": "",
@@ -273,7 +273,7 @@
       "name": "Giiker Product Btn",
       "settings": {
         "btn_label": "Explore the Facebook Group",
-        "btn_url": "shopify://products/battle-pad"
+        "btn_url": "https://www.facebook.com/groups/1324836238992700"
       }
     },
     "giiker_product_recommended_ndfAnB": {
