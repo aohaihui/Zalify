@@ -159,6 +159,7 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
+            "is_mobile_visible": true,
             "background_color": "#c16f4f",
             "text_color": "#f0674f",
             "title": "1v1 Battle",
@@ -173,6 +174,7 @@
           "type": "content",
           "settings": {
             "is_reversal": true,
+            "is_mobile_visible": true,
             "background_color": "#5182ba",
             "text_color": "#f0674f",
             "title": "Paper-free",
@@ -187,6 +189,7 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
+            "is_mobile_visible": false,
             "background_color": "#ffffff",
             "text_color": "#f0674f",
             "title": "Endless Fun",
@@ -201,6 +204,7 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
+            "is_mobile_visible": false,
             "background_color": "#bb7f60",
             "text_color": "#f0674f",
             "title": "Instant Referee",
@@ -228,28 +232,28 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#ffd700",
-            "text_color": "#ffffff",
-            "title": "123213213213",
-            "title_color": "#ffd700",
-            "detail": "23213213123",
+            "background_color": "#ffffff",
+            "text_color": "#f0674f",
+            "title": "Endless Fun",
+            "title_color": "#ffffff",
+            "detail": "Boasting 2500 levels with 5 differentdifficulties for 6X6 sudoku or 3 difficulties with 4X4 sudoku.",
             "detail_color": "#ffffff",
-            "image": "shopify://shop_images/20251121-110444.png",
-            "mobile_image": "shopify://shop_images/20251121-110444.png"
+            "image": "shopify://shop_images/ffffff_847e3999-7c53-4b50-98f1-0bf40561781d.jpg",
+            "mobile_image": "shopify://shop_images/3_7e18278d-2d9a-4909-8ba9-3013a4aae739.jpg"
           }
         },
         "content_tXgPLa": {
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#ffd700",
-            "text_color": "",
-            "title": "123213213213213",
+            "background_color": "#bb7f60",
+            "text_color": "#f0674f",
+            "title": "Instant Referee",
             "title_color": "#faf9f7",
-            "detail": "132133",
+            "detail": "Upon submitting an answer, the gameimmediately verifies its accuracy.",
             "detail_color": "",
-            "image": "shopify://shop_images/20251121-110444.png",
-            "mobile_image": "shopify://shop_images/20251121-110444.png"
+            "image": "shopify://shop_images/bb7f60_4ad8b215-b1d4-4fd8-8637-86c76d210b95.jpg",
+            "mobile_image": "shopify://shop_images/4_8b206ed7-6d81-4262-a8c3-94a9ef5a9adf.jpg"
           }
         }
       },

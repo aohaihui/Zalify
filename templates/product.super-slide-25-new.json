@@ -159,13 +159,14 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#153229",
+            "is_mobile_visible": true,
+            "background_color": "#af6b35",
             "text_color": "#f0674f",
-            "title": "Become a Master Detective",
+            "title": "500+ Puzzle Adventures",
             "title_color": "",
-            "detail": "Can you crack the secret code? You’ve got 7 chances to solve the 4-color puzzle! Every guess brings you closer to the truth—or closer to defeat. Do you have what it takes to solve all 600 codes?",
+            "detail": "So many puzzles, so much fun! Start with easy wins, then take on trickier challenges that put your puzzle skills to the test.",
             "detail_color": "",
-            "image": "shopify://shop_images/Innovative_Code-Breaking_Game.jpg",
+            "image": "shopify://shop_images/b16b35.jpg",
             "mobile_image": "shopify://shop_images/image_9.png"
           }
         },
@@ -173,13 +174,14 @@
           "type": "content",
           "settings": {
             "is_reversal": true,
-            "background_color": "#153229",
+            "is_mobile_visible": true,
+            "background_color": "#c2886f",
             "text_color": "#f0674f",
-            "title": "Secret Hints",
+            "title": "Slide & Satisfy",
             "title_color": "",
-            "detail": "The code is tricky, but clues are on your side! After each guess, the device gives hints—study them carefully and make your next move. But be quick—you only have 7 tries to crack the secret color code!",
+            "detail": "Feel the click and hear the soothing sliding sound with every move — solving puzzles has never felt this good!",
             "detail_color": "",
-            "image": "shopify://shop_images/Innovative_hints.jpg",
+            "image": "shopify://shop_images/c2886f.jpg",
             "mobile_image": "shopify://shop_images/Interactive_Hints.png"
           }
         },
@@ -187,13 +189,14 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#979799",
+            "is_mobile_visible": true,
+            "background_color": "#516c55",
             "text_color": "#f0674f",
-            "title": "From Codebreaker to Code Setter",
+            "title": "Choose Your Challenge",
             "title_color": "",
-            "detail": "Flip the game and become the master! Set your own secret code and challenge a friend—can they crack it, or will your code leave them guessing?",
+            "detail": "Need a hand? Learn Mode walks you through step by step. Feeling bold? Race the clock in Challenge Mode and see if you can beat the ultimate puzzle race!",
             "detail_color": "",
-            "image": "shopify://shop_images/3_985c8523-5de7-4974-aa1f-902a25e4d981.jpg",
+            "image": "shopify://shop_images/516c55.jpg",
             "mobile_image": "shopify://shop_images/image.png"
           }
         },
@@ -201,13 +204,14 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#faf9f7",
+            "is_mobile_visible": true,
+            "background_color": "#1a1a1a",
             "text_color": "#f0674f",
-            "title": "On-the-Go Detective",
+            "title": "Smart Detection Zone",
             "title_color": "",
-            "detail": "Carry the thrill in your pocket! This tiny handheld console goes wherever you do—no loose pieces, no mess, just nonstop code-breaking fun.",
+            "detail": "Slide and solve! The game knows when you’ve completed a puzzle and instantly jumps to the next challenge, keeping the fun flowing with every move.",
             "detail_color": "",
-            "image": "shopify://shop_images/4_2e053ffe-d1d9-42e4-9b26-6de6ab7f5716.jpg",
+            "image": "shopify://shop_images/1a1a1a.jpg",
             "mobile_image": "shopify://shop_images/image_1.png"
           }
         }
