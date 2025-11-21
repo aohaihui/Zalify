@@ -144,12 +144,12 @@
       "name": "Giiker Product Basice",
       "settings": {
         "background_left_image": "shopify://shop_images/0037_1.png",
-        "background_left_video": "shopify://files/videos/508d182898ff6268b6ed552e807e4bd0.mp4",
-        "background_right_image": "shopify://shop_images/2_1_18f89e96-ae22-4f37-b195-e3fe27077c2b.png",
+        "background_left_video": "shopify://files/videos/飞行棋使用动画 改.mp4",
+        "background_right_image": "shopify://shop_images/2_6ce5d4e3-e181-4810-9dc9-5fb5c5d866f0.png",
         "title": "Learn the basics",
         "detail": "A step-by-step tutorial on how our smart product makes learning a breeze.",
-        "mobile_video": "shopify://files/videos/SnapTik.app_7205644755823234309.mp4",
-        "mobile_background_image": "shopify://shop_images/slogan.png"
+        "mobile_video": "shopify://files/videos/飞行棋使用动画 改.mp4",
+        "mobile_background_image": "shopify://shop_images/super_ludo.png"
       }
     },
     "giiker_product_roller_bdKzfP": {
