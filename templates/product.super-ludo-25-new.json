@@ -189,7 +189,7 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "is_mobile_visible": true,
+            "is_mobile_visible": false,
             "background_color": "#070709",
             "text_color": "#f0674f",
             "title": "6 Universe Events",
@@ -204,7 +204,7 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "is_mobile_visible": true,
+            "is_mobile_visible": false,
             "background_color": "#a55f45",
             "text_color": "#f0674f",
             "title": "Party Game Nights",
@@ -232,14 +232,14 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#ffd700",
+            "background_color": "#070709",
             "text_color": "#ffffff",
-            "title": "123213213213",
-            "title_color": "#ffd700",
-            "detail": "23213213123",
+            "title": "6 Universe Events",
+            "title_color": "#ffffff",
+            "detail": "Experience 6 thrilling cosmic surprises that randomly trigger with every roll！",
             "detail_color": "#ffffff",
-            "image": "shopify://shop_images/20251121-110444.png",
-            "mobile_image": "shopify://shop_images/20251121-110444.png"
+            "image": "shopify://shop_images/070709.jpg",
+            "mobile_image": "shopify://shop_images/3_7a891609-69ff-43fe-b333-45f5a480042e.jpg"
           }
         },
         "content_tXgPLa": {
