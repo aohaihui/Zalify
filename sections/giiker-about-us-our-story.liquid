@@ -147,6 +147,7 @@
     ourStorySwiper = new Swiper('#shopify-section-{{ section.id }} .our-story-swiper', {
       slidesPerView: 'auto',
       spaceBetween: 40,
+      slidesOffsetAfter: window.innerWidth > 767 ? window.innerWidth * 0.4 : window.innerWidth * 0.2,
       pagination: {
         el: '#shopify-section-{{ section.id }} .swiper-pagination',
         clickable: true,
@@ -265,9 +266,16 @@
       clearTimeout(resizeTimer);
       resizeTimer = setTimeout(function() {
         ensureAllBullets();
-        if (ourStorySwiper && ourStorySwiper.pagination) {
-          ourStorySwiper.pagination.render();
-          ourStorySwiper.pagination.update();
+        if (ourStorySwiper) {
+          // 更新 slidesOffsetAfter
+          const newOffset = window.innerWidth > 767 ? window.innerWidth * 0.4 : window.innerWidth * 0.2;
+          ourStorySwiper.params.slidesOffsetAfter = newOffset;
+          ourStorySwiper.update();
+          
+          if (ourStorySwiper.pagination) {
+            ourStorySwiper.pagination.render();
+            ourStorySwiper.pagination.update();
+          }
         }
       }, 250);
     });

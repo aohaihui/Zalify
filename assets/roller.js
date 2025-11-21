@@ -77,7 +77,7 @@ console.log('function 进来');
             _resizeCollection: function() {
                 if ($2("#fix-me-header").css("display") == "block" && $2("#fix-me-collection").css("display") == "block") {
                     var wh = $2(window).height()
-                      , h = wh - $2(".site-header").outerHeight();
+                      , h = wh ;
                     $2(".mount-products .site-box.box__collection, .mount-products .site-box.box__heading").attr("style", "")
                 }
             },
