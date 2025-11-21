@@ -42,6 +42,9 @@
               {%- when 'form' -%}
                 <div class="newsletter-form" {{ block.shopify_attributes }}>
                   <h4 class="form-title">{{ block.settings.form_title }}</h4>
+                  {% if block.settings.form_description != blank %}
+                    <p class="form-description">{{ block.settings.form_description }}</p>
+                  {% endif %}
                   {%- form 'customer', id: 'newsletter-section', class: 'newsletter-form' -%}
                     {%- render 'form-errors', form: form -%}
                     {%- if form.posted_successfully? -%}
@@ -254,6 +257,12 @@
             "id": "form_title",
             "label": "Join la Comunidad!",
             "default": "Join la Comunidad!"
+          },
+          {
+            "type": "text",
+            "id": "form_description",
+            "label": "Form Description",
+            "default": "Enter your email to join the community and receive updates on new products and promotions."
           }
         ]
       },
