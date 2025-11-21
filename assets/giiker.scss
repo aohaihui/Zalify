@@ -5386,6 +5386,9 @@ ease;
   font-size: 20px;
 }
 @media screen and (max-width: 768px) {
+  .site-footer .footer-container .footer-item .title {
+    font-size: 30px;
+  }
   .section-home_slideshow-swiper-mobile .section-home_slideshow-swiper-mobile-item .content .box-title{
     -webkit-text-stroke: 1px #000;
     text-shadow: 0 0 1px #000;
