@@ -263,48 +263,62 @@
     "giiker_home_phone_image_7bXqQP": {
       "type": "giiker-home-phone-image",
       "blocks": {
+        "phone_QyJzW8": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/vancity.kids.mp4"
+          }
+        },
+        "phone_FTb9tz": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/silent_math_.mp4"
+          }
+        },
         "phone_BRw3AA": {
           "type": "phone",
           "settings": {
-            "video": "shopify://files/videos/nitpicknate.mp4"
+            "video": "shopify://files/videos/thegamebard.mp4"
           }
         },
         "phone_AdeYVn": {
           "type": "phone",
           "settings": {
-            "video": "shopify://files/videos/tinkeringwithtwo.mp4"
+            "video": "shopify://files/videos/tanjastoysreview.mp4"
           }
         },
         "phone_MMYAYp": {
           "type": "phone",
           "settings": {
-            "video": "shopify://files/videos/retro-super slide.mp4"
+            "video": "shopify://files/videos/chefnickclare.mp4"
           }
         },
-        "phone_VwFerw": {
+        "phone_HmcPRa": {
           "type": "phone",
           "settings": {
-            "video": "shopify://files/videos/montessori_by_june.mp4"
+            "video": "shopify://files/videos/teachertrickstimestwo.mp4"
           }
         },
         "phone_RWdgwj": {
           "type": "phone",
           "settings": {
-            "video": "shopify://files/videos/banterandboards.mp4"
+            "video": "shopify://files/videos/emilyaharrah.mp4"
           }
         },
         "phone_eNBjqj": {
           "type": "phone",
           "settings": {
-            "video": "shopify://files/videos/never.boardgame.mp4"
+            "video": "shopify://files/videos/houseofhongs (2).mp4"
           }
         }
       },
       "block_order": [
+        "phone_QyJzW8",
+        "phone_FTb9tz",
         "phone_BRw3AA",
         "phone_AdeYVn",
         "phone_MMYAYp",
-        "phone_VwFerw",
+        "phone_HmcPRa",
         "phone_RWdgwj",
         "phone_eNBjqj"
       ],
