@@ -189,7 +189,7 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "is_mobile_visible": true,
+            "is_mobile_visible": false,
             "background_color": "#979799",
             "text_color": "#f0674f",
             "title": "From Codebreaker to Code Setter",
@@ -204,7 +204,7 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "is_mobile_visible": true,
+            "is_mobile_visible": false,
             "background_color": "#faf9f7",
             "text_color": "#f0674f",
             "title": "On-the-Go Detective",
@@ -232,28 +232,28 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#ffd700",
-            "text_color": "#ffffff",
-            "title": "123213213213",
-            "title_color": "#ffd700",
-            "detail": "23213213123",
+            "background_color": "#979799",
+            "text_color": "#f0674f",
+            "title": "From Codebreaker to Code Setter",
+            "title_color": "#ffffff",
+            "detail": "Flip the game and become the master! Set your own secret code and challenge a friend—can they crack it, or will your code leave them guessing?",
             "detail_color": "#ffffff",
-            "image": "shopify://shop_images/20251121-110444.png",
-            "mobile_image": "shopify://shop_images/20251121-110444.png"
+            "image": "shopify://shop_images/2_9255513b-e69c-4b42-a29c-7ab0fefce19d.jpg",
+            "mobile_image": "shopify://shop_images/2_40788e56-5c96-4457-bb30-41db7dcfe690.jpg"
           }
         },
         "content_tXgPLa": {
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#ffd700",
-            "text_color": "",
-            "title": "123213213213213",
-            "title_color": "#faf9f7",
-            "detail": "132133",
+            "background_color": "#faf9f7",
+            "text_color": "#f0674f",
+            "title": "On-the-Go Detective",
+            "title_color": "#ffffff",
+            "detail": "Carry the thrill in your pocket! This tiny handheld console goes wherever you do—no loose pieces, no mess, just nonstop code-breaking fun.",
             "detail_color": "",
-            "image": "shopify://shop_images/20251121-110444.png",
-            "mobile_image": "shopify://shop_images/20251121-110444.png"
+            "image": "shopify://shop_images/3_eba481f8-2727-46c0-a766-9589327e8a69.jpg",
+            "mobile_image": "shopify://shop_images/3_8c92a803-3a12-4896-8e42-c230b64a167d.jpg"
           }
         }
       },
