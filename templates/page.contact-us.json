@@ -57,7 +57,7 @@
           "settings": {
             "icon": "shopify://shop_images/contact_us_1.png",
             "background_image": "shopify://shop_images/1_3.png",
-            "detail": "Got something urgent? <span style=\"color:rgba(255, 0, 0, 1)\">Chat with us now! <span> 💬"
+            "detail": "Got something urgent? <a href=\"www.baidu.com\" target=\"_blank\" title=\"mailto:shop@giiker.com\">\n<span style=\"color:rgba(0, 200, 255, 1)\"> \n<span style=\"color:rgba(255, 0, 0, 1)\">Chat with us now! <span> 💬\n</a>"
           }
         },
         "list_RndYcq": {
