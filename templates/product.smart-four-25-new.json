@@ -144,12 +144,12 @@
       "name": "Giiker Product Basice",
       "settings": {
         "background_left_image": "shopify://shop_images/0037_1.png",
-        "background_left_video": "shopify://files/videos/508d182898ff6268b6ed552e807e4bd0.mp4",
+        "background_left_video": "shopify://files/videos/四子棋使用动画 改.mp4",
         "background_right_image": "shopify://shop_images/2_1_18f89e96-ae22-4f37-b195-e3fe27077c2b.png",
         "title": "Learn the basics",
         "detail": "A step-by-step tutorial on how our smart product makes learning a breeze.",
-        "mobile_video": "shopify://files/videos/SnapTik.app_7205644755823234309.mp4",
-        "mobile_background_image": "shopify://shop_images/slogan.png"
+        "mobile_video": "shopify://files/videos/四子棋使用动画 改.mp4",
+        "mobile_background_image": "shopify://shop_images/smart_four.png"
       }
     },
     "giiker_product_roller_bdKzfP": {
@@ -263,44 +263,58 @@
     "giiker_home_phone_image_7bXqQP": {
       "type": "giiker-home-phone-image",
       "blocks": {
+        "phone_4UadpA": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/anonimostory.com_Instagram_houseofhongs_3699535042833988428_40644270589.mp4"
+          }
+        },
+        "phone_wTdJz7": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/anonimostory.com_Instagram_jendersgaming_3402621882782323025_46488766555.mp4"
+          }
+        },
         "phone_BRw3AA": {
           "type": "phone",
           "settings": {
-            "video": "shopify://files/videos/nitpicknate.mp4"
+            "video": "shopify://files/videos/anonimostory.com_Instagram_playwithianis_3635344650675629063_12984200695.mp4"
           }
         },
         "phone_AdeYVn": {
           "type": "phone",
           "settings": {
-            "video": "shopify://files/videos/tinkeringwithtwo.mp4"
+            "video": "shopify://files/videos/anonimostory.com_Instagram_ravennkramer_3606928501492535592_50492342.mp4"
           }
         },
         "phone_MMYAYp": {
           "type": "phone",
           "settings": {
-            "video": "shopify://files/videos/retro-super slide.mp4"
+            "video": "shopify://files/videos/anonimostory.com_Instagram_playful.childhood_3586536853912603216_33644998999.mp4"
           }
         },
         "phone_VwFerw": {
           "type": "phone",
           "settings": {
-            "video": "shopify://files/videos/montessori_by_june.mp4"
+            "video": "shopify://files/videos/anonimostory.com_Instagram_mommy_craftsandlaughs_3539626799954572760_45011267659.mp4"
           }
         },
         "phone_RWdgwj": {
           "type": "phone",
           "settings": {
-            "video": "shopify://files/videos/banterandboards.mp4"
+            "video": "shopify://files/videos/anonimostory.com_Instagram_moments.by.theqmom_3562090448727739000_37959290432.mp4"
           }
         },
         "phone_eNBjqj": {
           "type": "phone",
           "settings": {
-            "video": "shopify://files/videos/never.boardgame.mp4"
+            "video": "shopify://files/videos/anonimostory.com_Instagram_kristinaandco__3514921177596795337_22377403.mp4"
           }
         }
       },
       "block_order": [
+        "phone_4UadpA",
+        "phone_wTdJz7",
         "phone_BRw3AA",
         "phone_AdeYVn",
         "phone_MMYAYp",
