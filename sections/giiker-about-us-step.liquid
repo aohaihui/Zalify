@@ -11,7 +11,7 @@
                 {{ block.settings.image_top_mobile | image_url: width: block.settings.image_top_mobile.width | image_tag: height: block.settings.image_top_mobile.height, fetchpriority: 'high', loading: 'lazy', class: 'image-tag mb-image' }}
               </div>
               <div class="giiker-about-us-our-story-item-content">
-                <h3 class="giiker-about-us-our-story-item-content-title">{{ block.settings.title_top }}</h3>
+                <h3 class="giiker-about-us-our-story-item-content-title" style="color: {{ block.settings.Title_Color }};">{{ block.settings.title_top }}</h3>
                 <h3 class="giiker-about-us-our-story-item-content-next-title">{{ block.settings.next_title_top }}</h3>
                 <div class="giiker-about-us-our-story-item-content-detail">{{ block.settings.detail_top }}</div>
               </div>
@@ -73,7 +73,7 @@
     {
       "type": "color",
       "id": "background_color",
-      "label": "Background Color",
+      "label": "Background Color"
     },
     {
       "type": "image_picker",
@@ -115,6 +115,11 @@
           "type": "image_picker",
           "id": "image_top_mobile",
           "label": "Image Top Mobile 218*122"
+        },
+        {
+          "type": "color",
+          "id": "Title_Color",
+          "label": "Title Color"
         },
         {
           "type": "richtext",
