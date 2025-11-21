@@ -159,13 +159,13 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#153229",
+            "background_color": "#fefefe",
             "text_color": "#f0674f",
-            "title": "Become a Master Detective",
+            "title": "Light Up the Fun",
             "title_color": "",
-            "detail": "Can you crack the secret code? You’ve got 7 chances to solve the 4-color puzzle! Every guess brings you closer to the truth—or closer to defeat. Do you have what it takes to solve all 600 codes?",
+            "detail": "64 shining dots guide you through puzzle after puzzle. Just pick a piece, place it, and watch the puzzle take shape—no setup, just instant play!",
             "detail_color": "",
-            "image": "shopify://shop_images/4_bfbc03e7-d1c8-4af7-b71a-87f4b2edd4e1.jpg",
+            "image": "shopify://shop_images/fefefe.jpg",
             "mobile_image": "shopify://shop_images/image_9.png"
           }
         },
@@ -175,11 +175,11 @@
             "is_reversal": true,
             "background_color": "#153229",
             "text_color": "#f0674f",
-            "title": "Secret Hints",
+            "title": "Made for Little Hands",
             "title_color": "",
-            "detail": "The code is tricky, but clues are on your side! After each guess, the device gives hints—study them carefully and make your next move. But be quick—you only have 7 tries to crack the secret color code!",
+            "detail": "The hollow-out pieces are light, colorful, and perfectly sized for kids. Easy to grab, move, and place, they make puzzle-solving simple while helping tiny hands build control and coordination.",
             "detail_color": "",
-            "image": "shopify://shop_images/Innovative_hints.jpg",
+            "image": "shopify://shop_images/bdb5ac.jpg",
             "mobile_image": "shopify://shop_images/Interactive_Hints.png"
           }
         },
@@ -187,13 +187,13 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#979799",
+            "background_color": "#ffffff",
             "text_color": "#f0674f",
-            "title": "From Codebreaker to Code Setter",
+            "title": "Puzzle Paradise",
             "title_color": "",
-            "detail": "Flip the game and become the master! Set your own secret code and challenge a friend—can they crack it, or will your code leave them guessing?",
+            "detail": "So many puzzles, so much fun! Mix and match 4 colors and 16 shapes to tackle over 1000 brain-teasing challenges that spark creativity and sharpen thinking.",
             "detail_color": "",
-            "image": "shopify://shop_images/3_985c8523-5de7-4974-aa1f-902a25e4d981.jpg",
+            "image": "shopify://shop_images/ffffff_4aeaf929-155e-4d12-b621-de019827b990.jpg",
             "mobile_image": "shopify://shop_images/image.png"
           }
         },
@@ -201,13 +201,13 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#faf9f7",
+            "background_color": "#e0d5c4",
             "text_color": "#f0674f",
-            "title": "On-the-Go Detective",
+            "title": "Smart Playtime",
             "title_color": "",
-            "detail": "Carry the thrill in your pocket! This tiny handheld console goes wherever you do—no loose pieces, no mess, just nonstop code-breaking fun.",
+            "detail": "Learning can now be fun! Each puzzle trains little brains to think creatively, spot patterns, and explore colors while keeping kids engaged and entertained.",
             "detail_color": "",
-            "image": "shopify://shop_images/4_2e053ffe-d1d9-42e4-9b26-6de6ab7f5716.jpg",
+            "image": "shopify://shop_images/e0d5c4.jpg",
             "mobile_image": "shopify://shop_images/image_1.png"
           }
         }
