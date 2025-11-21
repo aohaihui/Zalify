@@ -204,7 +204,7 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "is_mobile_visible": true,
+            "is_mobile_visible": false,
             "background_color": "#e48237",
             "text_color": "#f0674f",
             "title": "Memory Flash",
@@ -219,7 +219,7 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "is_mobile_visible": true,
+            "is_mobile_visible": false,
             "background_color": "#fefefe",
             "text_color": "#f0674f",
             "title": "Cover-up Tic-Tac-Toe",
@@ -234,7 +234,7 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "is_mobile_visible": true,
+            "is_mobile_visible": false,
             "background_color": "#caa368",
             "text_color": "#f0674f",
             "title": "Pocket Sized",
@@ -264,34 +264,49 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#ffd700",
-            "text_color": "#ffffff",
-            "title": "123213213213",
-            "title_color": "#ffd700",
-            "detail": "23213213123",
+            "background_color": "#e48237",
+            "text_color": "#f0674f",
+            "title": "Memory Flash",
+            "title_color": "#ffffff",
+            "detail": "Unlock a whole new way to play! Train your memory across 9 difficulty levels and discover new ways to think ahead. The better you remember, the smarter you play.",
             "detail_color": "#ffffff",
-            "image": "shopify://shop_images/20251121-110444.png",
-            "mobile_image": "shopify://shop_images/20251121-110444.png"
+            "image": "shopify://shop_images/e48237.jpg",
+            "mobile_image": "shopify://shop_images/4_74fcdbc5-b659-4a96-b538-1cefcde63f47.jpg"
           }
         },
         "content_tXgPLa": {
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#ffd700",
-            "text_color": "",
-            "title": "123213213213213",
+            "background_color": "#fefefe",
+            "text_color": "#f0674f",
+            "title": "Cover-up Tic-Tac-Toe",
             "title_color": "#faf9f7",
-            "detail": "132133",
+            "detail": "Get ready for hands-on fun! The bottom half of the toy features a physical tic-tac-toe board for a fully tactile, interactive experience.",
             "detail_color": "",
-            "image": "shopify://shop_images/20251121-110444.png",
-            "mobile_image": "shopify://shop_images/20251121-110444.png"
+            "image": "shopify://shop_images/fefefe_0310f8a9-4314-4f2a-9bae-85b36f8ebbab.jpg",
+            "mobile_image": "shopify://shop_images/5_b5b7aab1-913d-4090-bc79-f6dcf700456a.jpg"
+          }
+        },
+        "content_RfhtzL": {
+          "type": "content",
+          "settings": {
+            "is_reversal": false,
+            "background_color": "#caa368",
+            "text_color": "#f0674f",
+            "title": "Pocket Sized",
+            "title_color": "",
+            "detail": "Fits right in the palm of your hand—no more paper, no more hassle! Just flick a button and play Tic-Tac-Toe anytime, anywhere.",
+            "detail_color": "",
+            "image": "shopify://shop_images/caa368.jpg",
+            "mobile_image": "shopify://shop_images/6_6713b70b-be8c-42a8-8056-d493c1b444fd.jpg"
           }
         }
       },
       "block_order": [
         "content_C3DrFR",
-        "content_tXgPLa"
+        "content_tXgPLa",
+        "content_RfhtzL"
       ],
       "name": "Giiker Roller Mobile",
       "settings": {}
