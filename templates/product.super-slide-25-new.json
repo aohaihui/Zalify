@@ -265,7 +265,9 @@
       "blocks": {
         "phone_iLGwFf": {
           "type": "phone",
-          "settings": {}
+          "settings": {
+            "video": "shopify://files/videos/cyriltoy.mp4"
+          }
         },
         "phone_hby4fB": {
           "type": "phone",
