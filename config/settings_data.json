@@ -784,7 +784,10 @@
         "blocks": {
           "form_WQY3PL": {
             "type": "form",
-            "settings": {}
+            "settings": {
+              "form_title": "Join the GiiKER Family",
+              "form_description": "Enter your email to join the community and receive updates on new products and promotions."
+            }
           },
           "98d0a8b1-4275-47db-9659-9ff75b0b4f2a": {
             "type": "text",
