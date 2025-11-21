@@ -2874,6 +2874,7 @@ body.sidebar-move .site-menu-handle {
 }
 .box__banner.style--bar .content.with-dismiss {
   padding-right: 30px;
+  font-size: 20px;
 }
 
 .switch-menus .site-nav.style--classic .site-nav-container {
