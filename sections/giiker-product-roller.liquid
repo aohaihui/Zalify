@@ -99,46 +99,49 @@ screen and (min-width: 1024px) and (orientation: landscape) {
 }
 </style>
 <script>
-  let swiperProductRollerInstance = null;
-  
-  function initSwiperProductRoller() {
-    // 检查 Swiper 库是否已加载
-    if (typeof Swiper === 'undefined') {
-      setTimeout(initSwiperProductRoller, 100);
-      return;
+  (function() {
+    // 为每个 section 实例创建独立作用域
+    let swiperProductRollerInstance = null;
+    
+    function initSwiperProductRoller() {
+      // 检查 Swiper 库是否已加载
+      if (typeof Swiper === 'undefined') {
+        setTimeout(initSwiperProductRoller, 100);
+        return;
+      }
+      
+      // 只在移动端（屏幕宽度小于 768px）初始化
+      if (window.innerWidth < 768) {
+        if (!swiperProductRollerInstance) {
+          swiperProductRollerInstance = new Swiper('#shopify-section-{{ section.id }} .swiper', {
+            slidesPerView: 1,
+            spaceBetween: 20,
+            pagination: {
+              el: '#shopify-section-{{ section.id }} .swiper-pagination',
+              clickable: true,
+            },
+          });
+        }
+      } else {
+        // 桌面端销毁 Swiper 实例（如果存在）
+        if (swiperProductRollerInstance) {
+          swiperProductRollerInstance.destroy(true, true);
+          swiperProductRollerInstance = null;
+        }
+      }
     }
     
-    // 只在移动端（屏幕宽度小于 768px）初始化
-    if (window.innerWidth < 768) {
-      if (!swiperProductRollerInstance) {
-        swiperProductRollerInstance = new Swiper('#shopify-section-{{ section.id }} .swiper', {
-          slidesPerView: 1,
-          spaceBetween: 20,
-          pagination: {
-            el: '#shopify-section-{{ section.id }} .swiper-pagination',
-            clickable: true,
-          },
-        });
-      }
+    // 监听窗口大小变化
+    window.addEventListener('resize', function() {
+      initSwiperProductRoller();
+    });
+    
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initSwiperProductRoller);
     } else {
-      // 桌面端销毁 Swiper 实例（如果存在）
-      if (swiperProductRollerInstance) {
-        swiperProductRollerInstance.destroy(true, true);
-        swiperProductRollerInstance = null;
-      }
+      initSwiperProductRoller();
     }
-  }
-  
-  // 监听窗口大小变化
-  window.addEventListener('resize', function() {
-    initSwiperProductRoller();
-  });
-  
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initSwiperProductRoller);
-  } else {
-    initSwiperProductRoller();
-  }
+  })();
 </script>
 <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
