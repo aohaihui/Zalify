@@ -229,6 +229,21 @@
             "image": "shopify://shop_images/fefefe_0310f8a9-4314-4f2a-9bae-85b36f8ebbab.jpg",
             "mobile_image": "shopify://shop_images/image_1.png"
           }
+        },
+        "content_zDaLNJ": {
+          "type": "content",
+          "settings": {
+            "is_reversal": false,
+            "is_mobile_visible": true,
+            "background_color": "#caa368",
+            "text_color": "#f0674f",
+            "title": "Pocket Sized",
+            "title_color": "",
+            "detail": "Fits right in the palm of your hand—no more paper, no more hassle! Just flick a button and play Tic-Tac-Toe anytime, anywhere.",
+            "detail_color": "",
+            "image": "shopify://shop_images/caa368.jpg",
+            "mobile_image": "shopify://shop_images/image_1.png"
+          }
         }
       },
       "block_order": [
@@ -236,7 +251,8 @@
         "content_iirxpf",
         "content_bNXnpp",
         "content_NjbrTD",
-        "content_Xht7Xt"
+        "content_Xht7Xt",
+        "content_zDaLNJ"
       ],
       "name": "Giiker Product Roller",
       "settings": {}
