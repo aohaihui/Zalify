@@ -167,7 +167,7 @@
             "detail": "So many puzzles, so much fun! Start with easy wins, then take on trickier challenges that put your puzzle skills to the test.",
             "detail_color": "",
             "image": "shopify://shop_images/b16b35.jpg",
-            "mobile_image": "shopify://shop_images/image_9.png"
+            "mobile_image": "shopify://shop_images/1_c0f20578-14ff-4693-b0e7-8f1f91b7e869.jpg"
           }
         },
         "content_iirxpf": {
@@ -182,14 +182,14 @@
             "detail": "Feel the click and hear the soothing sliding sound with every move — solving puzzles has never felt this good!",
             "detail_color": "",
             "image": "shopify://shop_images/c2886f.jpg",
-            "mobile_image": "shopify://shop_images/Interactive_Hints.png"
+            "mobile_image": "shopify://shop_images/2_fb36133c-87ef-4b1a-95f4-887884ed5c6a.jpg"
           }
         },
         "content_bNXnpp": {
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "is_mobile_visible": true,
+            "is_mobile_visible": false,
             "background_color": "#516c55",
             "text_color": "#f0674f",
             "title": "Choose Your Challenge",
@@ -197,14 +197,14 @@
             "detail": "Need a hand? Learn Mode walks you through step by step. Feeling bold? Race the clock in Challenge Mode and see if you can beat the ultimate puzzle race!",
             "detail_color": "",
             "image": "shopify://shop_images/516c55.jpg",
-            "mobile_image": "shopify://shop_images/image.png"
+            "mobile_image": "shopify://shop_images/3_e3616a3b-f32b-434f-a137-8a59e3a1c495.jpg"
           }
         },
         "content_NjbrTD": {
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "is_mobile_visible": true,
+            "is_mobile_visible": false,
             "background_color": "#1a1a1a",
             "text_color": "#f0674f",
             "title": "Smart Detection Zone",
@@ -212,7 +212,7 @@
             "detail": "Slide and solve! The game knows when you’ve completed a puzzle and instantly jumps to the next challenge, keeping the fun flowing with every move.",
             "detail_color": "",
             "image": "shopify://shop_images/1a1a1a.jpg",
-            "mobile_image": "shopify://shop_images/image_1.png"
+            "mobile_image": "shopify://shop_images/4_4c6be281-19f1-4fda-a7f0-2c1f3f31ac77.jpg"
           }
         }
       },
@@ -232,28 +232,28 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#ffd700",
-            "text_color": "#ffffff",
-            "title": "123213213213",
-            "title_color": "#ffd700",
-            "detail": "23213213123",
+            "background_color": "#516c55",
+            "text_color": "#f0674f",
+            "title": "Choose Your Challenge",
+            "title_color": "#ffffff",
+            "detail": "Need a hand? Learn Mode walks you through step by step. Feeling bold? Race the clock in Challenge Mode and see if you can beat the ultimate puzzle race!",
             "detail_color": "#ffffff",
-            "image": "shopify://shop_images/20251121-110444.png",
-            "mobile_image": "shopify://shop_images/20251121-110444.png"
+            "image": "shopify://shop_images/516c55.jpg",
+            "mobile_image": "shopify://shop_images/3_e3616a3b-f32b-434f-a137-8a59e3a1c495.jpg"
           }
         },
         "content_tXgPLa": {
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#ffd700",
-            "text_color": "",
-            "title": "123213213213213",
-            "title_color": "#faf9f7",
-            "detail": "132133",
-            "detail_color": "",
-            "image": "shopify://shop_images/20251121-110444.png",
-            "mobile_image": "shopify://shop_images/20251121-110444.png"
+            "background_color": "#1a1a1a",
+            "text_color": "#f0674f",
+            "title": "Smart Detection Zone",
+            "title_color": "#ffffff",
+            "detail": "Slide and solve! The game knows when you’ve completed a puzzle and instantly jumps to the next challenge, keeping the fun flowing with every move.",
+            "detail_color": "#ffffff",
+            "image": "shopify://shop_images/1a1a1a.jpg",
+            "mobile_image": "shopify://shop_images/4_4c6be281-19f1-4fda-a7f0-2c1f3f31ac77.jpg"
           }
         }
       },
