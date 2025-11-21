@@ -159,13 +159,13 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#153229",
+            "background_color": "#ffffff",
             "text_color": "#f0674f",
-            "title": "Become a Master Detective",
+            "title": "Reimagined Gameplay",
             "title_color": "",
-            "detail": "Can you crack the secret code? You’ve got 7 chances to solve the 4-color puzzle! Every guess brings you closer to the truth—or closer to defeat. Do you have what it takes to solve all 600 codes?",
+            "detail": "Extends the traditional connection games from flat surfaces to 3-dimensional.",
             "detail_color": "",
-            "image": "shopify://shop_images/Innovative_Code-Breaking_Game.jpg",
+            "image": "shopify://shop_images/ffffff.jpg",
             "mobile_image": "shopify://shop_images/image_9.png"
           }
         },
@@ -173,13 +173,13 @@
           "type": "content",
           "settings": {
             "is_reversal": true,
-            "background_color": "#153229",
+            "background_color": "#dc9071",
             "text_color": "#f0674f",
-            "title": "Secret Hints",
+            "title": "Al Challenger",
             "title_color": "",
-            "detail": "The code is tricky, but clues are on your side! After each guess, the device gives hints—study them carefully and make your next move. But be quick—you only have 7 tries to crack the secret color code!",
+            "detail": "Equipped with a smart Al robot that has 3 difficulties for single player practice.",
             "detail_color": "",
-            "image": "shopify://shop_images/Innovative_hints.jpg",
+            "image": "shopify://shop_images/dc9071.jpg",
             "mobile_image": "shopify://shop_images/Interactive_Hints.png"
           }
         },
