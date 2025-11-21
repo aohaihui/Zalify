@@ -165,7 +165,7 @@
             "title_color": "",
             "detail": "Can you crack the secret code? You’ve got 7 chances to solve the 4-color puzzle! Every guess brings you closer to the truth—or closer to defeat. Do you have what it takes to solve all 600 codes?",
             "detail_color": "",
-            "image": "shopify://shop_images/20251121-181728.png",
+            "image": "shopify://shop_images/4_2e3d3e1e-7b79-4479-abb9-c9e15738122a.jpg",
             "mobile_image": "shopify://shop_images/image_9.png"
           }
         },
@@ -179,7 +179,7 @@
             "title_color": "",
             "detail": "The code is tricky, but clues are on your side! After each guess, the device gives hints—study them carefully and make your next move. But be quick—you only have 7 tries to crack the secret color code!",
             "detail_color": "",
-            "image": "shopify://shop_images/Innovative_hints.jpg",
+            "image": "shopify://shop_images/1_13722575-69af-41a4-a46c-4e7d282836d3.jpg",
             "mobile_image": "shopify://shop_images/Interactive_Hints.png"
           }
         },
@@ -193,11 +193,11 @@
             "title_color": "",
             "detail": "Flip the game and become the master! Set your own secret code and challenge a friend—can they crack it, or will your code leave them guessing?",
             "detail_color": "",
-            "image": "shopify://shop_images/3_985c8523-5de7-4974-aa1f-902a25e4d981.jpg",
+            "image": "shopify://shop_images/2_75f0494b-535d-4015-a8a5-5b68717f27a8.jpg",
             "mobile_image": "shopify://shop_images/image.png"
           }
         },
-        "content_NjbrTD": {
+        "content_ndpfDY": {
           "type": "content",
           "settings": {
             "is_reversal": false,
@@ -216,7 +216,7 @@
         "content_BFwkR3",
         "content_iirxpf",
         "content_bNXnpp",
-        "content_NjbrTD"
+        "content_ndpfDY"
       ],
       "name": "Giiker Product Roller",
       "settings": {}
