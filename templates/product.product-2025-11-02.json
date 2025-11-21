@@ -36,6 +36,13 @@
             "stick_product_header_on_mobile": true
           }
         },
+        "text_i9YCcg": {
+          "type": "text",
+          "settings": {
+            "text": "<h3>Use the code: BFCM20 to get 20% off</h3>",
+            "text_style": "body"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -93,6 +100,7 @@
       },
       "block_order": [
         "header",
+        "text_i9YCcg",
         "variant_picker",
         "buy_buttons",
         "description",
