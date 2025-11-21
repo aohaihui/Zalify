@@ -144,12 +144,12 @@
       "name": "Giiker Product Basice",
       "settings": {
         "background_left_image": "shopify://shop_images/0037_1.png",
-        "background_left_video": "shopify://files/videos/508d182898ff6268b6ed552e807e4bd0.mp4",
+        "background_left_video": "shopify://files/videos/超级积木使用动画 改.mp4",
         "background_right_image": "shopify://shop_images/2_1_18f89e96-ae22-4f37-b195-e3fe27077c2b.png",
         "title": "Learn the basics",
         "detail": "A step-by-step tutorial on how our smart product makes learning a breeze.",
-        "mobile_video": "shopify://files/videos/SnapTik.app_7205644755823234309.mp4",
-        "mobile_background_image": "shopify://shop_images/slogan.png"
+        "mobile_video": "shopify://files/videos/超级积木使用动画 改.mp4",
+        "mobile_background_image": "shopify://shop_images/super_blocks.png"
       }
     },
     "giiker_product_roller_bdKzfP": {
@@ -263,10 +263,22 @@
     "giiker_home_phone_image_7bXqQP": {
       "type": "giiker-home-phone-image",
       "blocks": {
+        "phone_VwFerw": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/montessori_by_june.mp4"
+          }
+        },
         "phone_BRw3AA": {
           "type": "phone",
           "settings": {
-            "video": "shopify://files/videos/nitpicknate.mp4"
+            "video": "shopify://files/videos/plants_proseccoandparenting.mp4"
+          }
+        },
+        "phone_qyetmr": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/sunnyseedco.mp4"
           }
         },
         "phone_AdeYVn": {
@@ -275,16 +287,16 @@
             "video": "shopify://files/videos/tinkeringwithtwo.mp4"
           }
         },
+        "phone_xVpywE": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/stephrevans.mp4"
+          }
+        },
         "phone_MMYAYp": {
           "type": "phone",
           "settings": {
-            "video": "shopify://files/videos/retro-super slide.mp4"
-          }
-        },
-        "phone_VwFerw": {
-          "type": "phone",
-          "settings": {
-            "video": "shopify://files/videos/montessori_by_june.mp4"
+            "video": "shopify://files/videos/chanwiththeboys.mp4"
           }
         },
         "phone_RWdgwj": {
@@ -301,10 +313,12 @@
         }
       },
       "block_order": [
-        "phone_BRw3AA",
-        "phone_AdeYVn",
-        "phone_MMYAYp",
         "phone_VwFerw",
+        "phone_BRw3AA",
+        "phone_qyetmr",
+        "phone_AdeYVn",
+        "phone_xVpywE",
+        "phone_MMYAYp",
         "phone_RWdgwj",
         "phone_eNBjqj"
       ],
