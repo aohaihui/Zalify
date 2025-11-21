@@ -8329,7 +8329,9 @@ li.has-submenu:hover > ul {
   .site-footer .footer-top .footer-item{
     width: 100%;
   }
-  
+  .box__banner.style--bar .content.with-dismiss {
+    font-size: 16px;
+  }
 }
 .site-footer .site-social{
   display: flex;
