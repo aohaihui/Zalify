@@ -9,7 +9,98 @@
   "market": [],
   "order": [],
   "page": [],
-  "product": [],
+  "product": [
+    {
+      "key": "rating",
+      "namespace": "reviews",
+      "name": "产品评分",
+      "description": "客户的平均评分",
+      "type": {
+        "name": "rating",
+        "category": "RATING"
+      }
+    },
+    {
+      "key": "rating_count",
+      "namespace": "reviews",
+      "name": "产品评分数量",
+      "description": "客户评分总数",
+      "type": {
+        "name": "number_integer",
+        "category": "NUMBER"
+      }
+    },
+    {
+      "key": "custom_product",
+      "namespace": "mm-google-shopping",
+      "name": "Google: Custom Product",
+      "description": "Use to indicate whether or not the unique product identifiers (UPIs) GTIN, MPN, and brand are available for your product.",
+      "type": {
+        "name": "boolean",
+        "category": "TRUE_FALSE"
+      }
+    },
+    {
+      "key": "color-pattern",
+      "namespace": "shopify",
+      "name": "颜色",
+      "description": "定义主要颜色或图案，例如蓝色或带条纹",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "recommended-age-group",
+      "namespace": "shopify",
+      "name": "推荐年龄段",
+      "description": "标识产品（通常是玩具和游戏）的适用年龄范围，例如婴儿、青少年",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "toy-game-material",
+      "namespace": "shopify",
+      "name": "玩具/游戏材料",
+      "description": "标识玩具或游戏中使用的主要材质，例如塑料或木材",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "board-game-mechanics",
+      "namespace": "shopify",
+      "name": "棋盘游戏机制",
+      "description": "描述棋盘游戏/桌面游戏的游戏结构，例如策略型或合作型",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "recommended_products",
+      "namespace": "custom",
+      "name": "recommended_products",
+      "description": "",
+      "type": {
+        "name": "list.product_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "product_faq",
+      "namespace": "custom",
+      "name": "product_faq",
+      "description": "",
+      "type": {
+        "name": "list.metaobject_reference",
+        "category": "REFERENCE"
+      }
+    }
+  ],
   "variant": [
     {
       "key": "custom_label_4",
