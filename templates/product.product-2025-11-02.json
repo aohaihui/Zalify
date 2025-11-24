@@ -62,11 +62,6 @@
           "type": "description",
           "settings": {}
         },
-        "fbp_fast_bundle_product_bundles_AFPjAF": {
-          "type": "shopify://apps/fbp-fast-bundle/blocks/product_bundles/9e87fbe2-9041-4c23-acf5-322413994cef",
-          "disabled": true,
-          "settings": {}
-        },
         "collapse_HQqnfc": {
           "type": "Collapse",
           "settings": {
@@ -109,7 +104,6 @@
         "variant_picker",
         "buy_buttons",
         "description",
-        "fbp_fast_bundle_product_bundles_AFPjAF",
         "collapse_HQqnfc",
         "share",
         "93880648-978b-4d31-9200-dc7244fdc064",
