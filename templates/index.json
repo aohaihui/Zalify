@@ -29,7 +29,7 @@
           "settings": {
             "pc_image": "shopify://shop_images/20251120-195625.png",
             "mobile_image": "shopify://shop_images/20251120-195632_8aea00b8-f548-4f63-a137-dfc69e317edc.png",
-            "url": ""
+            "url": "shopify://collections/learning-educational-toys"
           }
         },
         "banner_rdkVqq": {
@@ -37,7 +37,7 @@
           "settings": {
             "pc_image": "shopify://shop_images/kv2.png",
             "mobile_image": "shopify://shop_images/app-kv2-_logo.png",
-            "url": ""
+            "url": "shopify://collections/learning-educational-toys"
           }
         },
         "banner_kL4TfF": {
@@ -45,7 +45,7 @@
           "settings": {
             "pc_image": "shopify://shop_images/kv1.png",
             "mobile_image": "shopify://shop_images/app-kv1-_logo.png",
-            "url": ""
+            "url": "shopify://collections/learning-educational-toys"
           }
         }
       },
