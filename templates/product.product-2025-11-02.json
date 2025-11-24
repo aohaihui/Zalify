@@ -64,6 +64,7 @@
         },
         "fbp_fast_bundle_product_bundles_AFPjAF": {
           "type": "shopify://apps/fbp-fast-bundle/blocks/product_bundles/9e87fbe2-9041-4c23-acf5-322413994cef",
+          "disabled": true,
           "settings": {}
         },
         "collapse_HQqnfc": {
