@@ -3889,7 +3889,7 @@ shopify-payment-terms {
 .shopify-payment-button__more-options {
   line-height: 1;
   text-transform: uppercase;
-  font-size: calc(10px / 16 * var(--base-body-size) + 0px) !important;
+  font-size: calc(18px / 16 * var(--base-body-size) + 0px) !important;
   position: absolute;
   margin-top: 10px !important;
 }
