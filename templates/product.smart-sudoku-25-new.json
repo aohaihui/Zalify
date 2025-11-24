@@ -279,22 +279,10 @@
             "video": "shopify://files/videos/silent_math_.mp4"
           }
         },
-        "phone_BRw3AA": {
-          "type": "phone",
-          "settings": {
-            "video": "shopify://files/videos/thegamebard.mp4"
-          }
-        },
-        "phone_AdeYVn": {
-          "type": "phone",
-          "settings": {
-            "video": "shopify://files/videos/tanjastoysreview.mp4"
-          }
-        },
         "phone_MMYAYp": {
           "type": "phone",
           "settings": {
-            "video": "shopify://files/videos/chefnickclare.mp4"
+            "video": "shopify://files/videos/chefnickclare (1).mp4"
           }
         },
         "phone_HmcPRa": {
@@ -319,8 +307,6 @@
       "block_order": [
         "phone_QyJzW8",
         "phone_FTb9tz",
-        "phone_BRw3AA",
-        "phone_AdeYVn",
         "phone_MMYAYp",
         "phone_HmcPRa",
         "phone_RWdgwj",
