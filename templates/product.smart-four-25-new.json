@@ -348,11 +348,10 @@
         "background_image": "shopify://shop_images/20251118180441_687_99.png",
         "title": "You may also like",
         "product_list": [
-          "battle-pad",
-          "fidget-cube",
-          "giiker-super-slide-puzzle-games-copy",
-          "giiker-smart-four-board-games",
-          "smart-sudoku"
+          "giiker-super-ludo",
+          "super-decoder",
+          "super-slide",
+          "tic-tac-toe-bolt"
         ]
       }
     },
@@ -394,6 +393,26 @@
       "settings": {
         "background_image": "shopify://shop_images/Sku_2_1.png"
       }
+    },
+    "17639706434be23897": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_dynamic_section_DHXtLn": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080,
+            "is_sample": false
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_dynamic_section_DHXtLn"
+      ],
+      "settings": {}
     }
   },
   "order": [
@@ -410,6 +429,7 @@
     "giiker_home_phone_image_7bXqQP",
     "giiker_product_btn_McxzPp",
     "giiker_product_recommended_ndfAnB",
-    "giiker_product_icon_yjLqaX"
+    "giiker_product_icon_yjLqaX",
+    "17639706434be23897"
   ]
 }
