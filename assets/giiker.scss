@@ -2762,6 +2762,9 @@ ease;
     width: 92px !important;
     height: auto;
   }
+  [id*="rbr-bundle-"] {
+    width: 100% !important;
+  }
   .site-box.box__product-content{
     padding: 0 20px;
     .site-box-content{
