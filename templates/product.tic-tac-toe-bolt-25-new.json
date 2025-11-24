@@ -326,18 +326,6 @@
             "video": "shopify://files/videos/tiktokboardgames.mp4"
           }
         },
-        "phone_BRw3AA": {
-          "type": "phone",
-          "settings": {
-            "video": "shopify://files/videos/mumppaofficial.mp4"
-          }
-        },
-        "phone_AdeYVn": {
-          "type": "phone",
-          "settings": {
-            "video": "shopify://files/videos/justanothernurse.mp4"
-          }
-        },
         "phone_MMYAYp": {
           "type": "phone",
           "settings": {
@@ -366,8 +354,6 @@
       "block_order": [
         "phone_NVyRDY",
         "phone_bGEYeK",
-        "phone_BRw3AA",
-        "phone_AdeYVn",
         "phone_MMYAYp",
         "phone_VwFerw",
         "phone_RWdgwj",
