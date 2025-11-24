@@ -272,22 +272,10 @@
     "giiker_home_phone_image_7bXqQP": {
       "type": "giiker-home-phone-image",
       "blocks": {
-        "phone_iLGwFf": {
-          "type": "phone",
-          "settings": {
-            "video": "shopify://files/videos/cyriltoy.mp4"
-          }
-        },
         "phone_hby4fB": {
           "type": "phone",
           "settings": {
             "video": "shopify://files/videos/vetro.gaming-super slide.mp4"
-          }
-        },
-        "phone_BRw3AA": {
-          "type": "phone",
-          "settings": {
-            "video": "shopify://files/videos/nitpicknate.mp4"
           }
         },
         "phone_AdeYVn": {
@@ -322,9 +310,7 @@
         }
       },
       "block_order": [
-        "phone_iLGwFf",
         "phone_hby4fB",
-        "phone_BRw3AA",
         "phone_AdeYVn",
         "phone_MMYAYp",
         "phone_VwFerw",
