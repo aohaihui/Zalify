@@ -27,9 +27,9 @@
         "banner_6N3TYW": {
           "type": "banner",
           "settings": {
-            "pc_image": "shopify://shop_images/EARLY_BIRD.png",
-            "mobile_image": "shopify://shop_images/EARLY_BIRD_MOBILE.png",
-            "url": ""
+            "pc_image": "shopify://shop_images/20251120-195625.png",
+            "mobile_image": "shopify://shop_images/20251120-195632_8aea00b8-f548-4f63-a137-dfc69e317edc.png",
+            "url": "shopify://collections/learning-educational-toys"
           }
         },
         "banner_rdkVqq": {
@@ -37,7 +37,7 @@
           "settings": {
             "pc_image": "shopify://shop_images/kv2.png",
             "mobile_image": "shopify://shop_images/app-kv2-_logo.png",
-            "url": ""
+            "url": "shopify://collections/learning-educational-toys"
           }
         },
         "banner_kL4TfF": {
@@ -45,7 +45,7 @@
           "settings": {
             "pc_image": "shopify://shop_images/kv1.png",
             "mobile_image": "shopify://shop_images/app-kv1-_logo.png",
-            "url": ""
+            "url": "shopify://collections/learning-educational-toys"
           }
         }
       },
@@ -107,7 +107,7 @@
           "settings": {
             "product_image": "shopify://shop_images/8ea09953c14386df435e4ef3a85fde6e.png",
             "product_title": "Super Slide",
-            "product": "giiker-super-slide-puzzle-games"
+            "product": "super-slide"
           }
         },
         "banner_yNkR9g": {
@@ -131,7 +131,7 @@
           "settings": {
             "product_image": "shopify://shop_images/0ffec1d6b6e7fd4ddcf8d3ed6402775e_8a6c5914-bfcd-451f-9ac6-015c89a19e94.png",
             "product_title": "Super Decoder",
-            "product": "giiker-super-decoder"
+            "product": "super-decoder"
           }
         },
         "banner_D43zUE": {
