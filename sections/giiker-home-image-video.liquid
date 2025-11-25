@@ -5,7 +5,6 @@
       <img src="{{ section.settings.pc_image | image_url: width: section.settings.pc_image.width }}" 
            alt=""
            class="image-tag"
-           data-cc-animate="fade-in"
            loading="eager"
            width="{{ section.settings.pc_image.width }}"
            height="{{ section.settings.pc_image.height }}">
@@ -19,6 +18,68 @@
     </div>
   </div>
 </section>
+
+<style>
+  .giiker-home-image-video .video-tag {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .giiker-home-image-video .video-tag.video-loaded {
+    opacity: 1;
+  }
+  
+  .giiker-home-image-video .image-tag {
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .giiker-home-image-video .image-tag.image-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+</style>
+
+<script>
+  (function() {
+    const section = document.querySelector('#{{ section.id }}');
+    if (!section) return;
+    
+    const videoTag = section.querySelector('.video-tag');
+    const imageTag = section.querySelector('.image-tag');
+    
+    if (!videoTag) return;
+    
+    // 检查视频是否已经加载完成
+    function handleVideoReady() {
+      if (videoTag.readyState >= 3) { // HAVE_FUTURE_DATA or HAVE_ENOUGH_DATA
+        showVideo();
+      } else {
+        // 监听视频加载完成事件
+        videoTag.addEventListener('canplaythrough', showVideo, { once: true });
+        videoTag.addEventListener('loadeddata', showVideo, { once: true });
+        
+        // 如果视频加载失败，保持显示图片
+        videoTag.addEventListener('error', function() {
+          console.warn('Video failed to load, keeping image visible');
+        }, { once: true });
+      }
+    }
+    
+    function showVideo() {
+      videoTag.classList.add('video-loaded');
+      if (imageTag) {
+        imageTag.classList.add('image-hidden');
+      }
+    }
+    
+    // 等待DOM加载完成
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', handleVideoReady);
+    } else {
+      handleVideoReady();
+    }
+  })();
+</script>
 
 {% schema %}
 {
