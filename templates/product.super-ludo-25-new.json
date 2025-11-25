@@ -62,6 +62,10 @@
           "type": "description",
           "settings": {}
         },
+        "fbp_fast_bundle_product_bundles_yTPBmc": {
+          "type": "shopify://apps/fbp-fast-bundle/blocks/product_bundles/9e87fbe2-9041-4c23-acf5-322413994cef",
+          "settings": {}
+        },
         "collapse_HQqnfc": {
           "type": "Collapse",
           "settings": {
@@ -104,6 +108,7 @@
         "variant_picker",
         "buy_buttons",
         "description",
+        "fbp_fast_bundle_product_bundles_yTPBmc",
         "collapse_HQqnfc",
         "share",
         "93880648-978b-4d31-9200-dc7244fdc064",
@@ -285,18 +290,6 @@
             "video": "shopify://files/videos/anonimostory.com_Instagram_beachseakersgirls_3628850245695005892_10373869512.mp4"
           }
         },
-        "phone_AdeYVn": {
-          "type": "phone",
-          "settings": {
-            "video": "shopify://files/videos/anonimostory.com_Instagram_kumaarfamily_3648363203367196151_37139593416.mp4"
-          }
-        },
-        "phone_MMYAYp": {
-          "type": "phone",
-          "settings": {
-            "video": "shopify://files/videos/anonimostory.com_Instagram_playboardgameswithus_3643343279194614159_71289604164.mp4"
-          }
-        },
         "phone_VwFerw": {
           "type": "phone",
           "settings": {
@@ -320,8 +313,6 @@
         "phone_GPibbR",
         "phone_PpFExW",
         "phone_BRw3AA",
-        "phone_AdeYVn",
-        "phone_MMYAYp",
         "phone_VwFerw",
         "phone_RWdgwj",
         "phone_eNBjqj"

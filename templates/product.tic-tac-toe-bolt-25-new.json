@@ -62,6 +62,10 @@
           "type": "description",
           "settings": {}
         },
+        "fbp_fast_bundle_product_bundles_eQNrUX": {
+          "type": "shopify://apps/fbp-fast-bundle/blocks/product_bundles/9e87fbe2-9041-4c23-acf5-322413994cef",
+          "settings": {}
+        },
         "collapse_HQqnfc": {
           "type": "Collapse",
           "settings": {
@@ -104,6 +108,7 @@
         "variant_picker",
         "buy_buttons",
         "description",
+        "fbp_fast_bundle_product_bundles_eQNrUX",
         "collapse_HQqnfc",
         "share",
         "93880648-978b-4d31-9200-dc7244fdc064",
@@ -326,18 +331,6 @@
             "video": "shopify://files/videos/tiktokboardgames.mp4"
           }
         },
-        "phone_BRw3AA": {
-          "type": "phone",
-          "settings": {
-            "video": "shopify://files/videos/mumppaofficial.mp4"
-          }
-        },
-        "phone_AdeYVn": {
-          "type": "phone",
-          "settings": {
-            "video": "shopify://files/videos/justanothernurse.mp4"
-          }
-        },
         "phone_MMYAYp": {
           "type": "phone",
           "settings": {
@@ -366,8 +359,6 @@
       "block_order": [
         "phone_NVyRDY",
         "phone_bGEYeK",
-        "phone_BRw3AA",
-        "phone_AdeYVn",
         "phone_MMYAYp",
         "phone_VwFerw",
         "phone_RWdgwj",

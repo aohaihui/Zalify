@@ -62,6 +62,10 @@
           "type": "description",
           "settings": {}
         },
+        "fbp_fast_bundle_product_bundles_PReXdq": {
+          "type": "shopify://apps/fbp-fast-bundle/blocks/product_bundles/9e87fbe2-9041-4c23-acf5-322413994cef",
+          "settings": {}
+        },
         "collapse_HQqnfc": {
           "type": "Collapse",
           "settings": {
@@ -104,6 +108,7 @@
         "variant_picker",
         "buy_buttons",
         "description",
+        "fbp_fast_bundle_product_bundles_PReXdq",
         "collapse_HQqnfc",
         "share",
         "93880648-978b-4d31-9200-dc7244fdc064",
@@ -273,12 +278,6 @@
             "video": "shopify://files/videos/anonimostory.com_Instagram_houseofhongs_3699535042833988428_40644270589.mp4"
           }
         },
-        "phone_wTdJz7": {
-          "type": "phone",
-          "settings": {
-            "video": "shopify://files/videos/anonimostory.com_Instagram_jendersgaming_3402621882782323025_46488766555.mp4"
-          }
-        },
         "phone_BRw3AA": {
           "type": "phone",
           "settings": {
@@ -308,23 +307,15 @@
           "settings": {
             "video": "shopify://files/videos/anonimostory.com_Instagram_moments.by.theqmom_3562090448727739000_37959290432.mp4"
           }
-        },
-        "phone_eNBjqj": {
-          "type": "phone",
-          "settings": {
-            "video": "shopify://files/videos/anonimostory.com_Instagram_kristinaandco__3514921177596795337_22377403.mp4"
-          }
         }
       },
       "block_order": [
         "phone_4UadpA",
-        "phone_wTdJz7",
         "phone_BRw3AA",
         "phone_AdeYVn",
         "phone_MMYAYp",
         "phone_VwFerw",
-        "phone_RWdgwj",
-        "phone_eNBjqj"
+        "phone_RWdgwj"
       ],
       "name": "Giiker Home Phone Image",
       "settings": {

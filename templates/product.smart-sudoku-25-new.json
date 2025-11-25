@@ -62,6 +62,10 @@
           "type": "description",
           "settings": {}
         },
+        "fbp_fast_bundle_product_bundles_MFAWJy": {
+          "type": "shopify://apps/fbp-fast-bundle/blocks/product_bundles/9e87fbe2-9041-4c23-acf5-322413994cef",
+          "settings": {}
+        },
         "collapse_HQqnfc": {
           "type": "Collapse",
           "settings": {
@@ -104,6 +108,7 @@
         "variant_picker",
         "buy_buttons",
         "description",
+        "fbp_fast_bundle_product_bundles_MFAWJy",
         "collapse_HQqnfc",
         "share",
         "93880648-978b-4d31-9200-dc7244fdc064",
@@ -279,22 +284,10 @@
             "video": "shopify://files/videos/silent_math_.mp4"
           }
         },
-        "phone_BRw3AA": {
-          "type": "phone",
-          "settings": {
-            "video": "shopify://files/videos/thegamebard.mp4"
-          }
-        },
-        "phone_AdeYVn": {
-          "type": "phone",
-          "settings": {
-            "video": "shopify://files/videos/tanjastoysreview.mp4"
-          }
-        },
         "phone_MMYAYp": {
           "type": "phone",
           "settings": {
-            "video": "shopify://files/videos/chefnickclare.mp4"
+            "video": "shopify://files/videos/chefnickclare (1).mp4"
           }
         },
         "phone_HmcPRa": {
@@ -319,8 +312,6 @@
       "block_order": [
         "phone_QyJzW8",
         "phone_FTb9tz",
-        "phone_BRw3AA",
-        "phone_AdeYVn",
         "phone_MMYAYp",
         "phone_HmcPRa",
         "phone_RWdgwj",

@@ -62,6 +62,10 @@
           "type": "description",
           "settings": {}
         },
+        "fbp_fast_bundle_product_bundles_DBTLrm": {
+          "type": "shopify://apps/fbp-fast-bundle/blocks/product_bundles/9e87fbe2-9041-4c23-acf5-322413994cef",
+          "settings": {}
+        },
         "collapse_HQqnfc": {
           "type": "Collapse",
           "settings": {
@@ -104,6 +108,7 @@
         "variant_picker",
         "buy_buttons",
         "description",
+        "fbp_fast_bundle_product_bundles_DBTLrm",
         "collapse_HQqnfc",
         "share",
         "93880648-978b-4d31-9200-dc7244fdc064",
@@ -267,12 +272,6 @@
     "giiker_home_phone_image_7bXqQP": {
       "type": "giiker-home-phone-image",
       "blocks": {
-        "phone_a4hwMb": {
-          "type": "phone",
-          "settings": {
-            "video": "shopify://files/videos/vetro.gaming-super decoder.mp4"
-          }
-        },
         "phone_dKG6AF": {
           "type": "phone",
           "settings": {
@@ -283,12 +282,6 @@
           "type": "phone",
           "settings": {
             "video": "shopify://files/videos/_gigglesandjiggles (3).mp4"
-          }
-        },
-        "phone_AdeYVn": {
-          "type": "phone",
-          "settings": {
-            "video": "shopify://files/videos/disobeynormalreviews (2).mp4"
           }
         },
         "phone_MMYAYp": {
@@ -317,10 +310,8 @@
         }
       },
       "block_order": [
-        "phone_a4hwMb",
         "phone_dKG6AF",
         "phone_BRw3AA",
-        "phone_AdeYVn",
         "phone_MMYAYp",
         "phone_VwFerw",
         "phone_RWdgwj",
