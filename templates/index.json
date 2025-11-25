@@ -21,6 +21,7 @@
       ],
       "name": "Giiker Home Image Video",
       "settings": {
+        "pc_image": "shopify://shop_images/20251125180035_1268_99.jpg",
         "video_picker": "shopify://files/videos/giiker banner video.mp4"
       }
     },
