@@ -1129,7 +1129,7 @@ console.log('function 进来');
                 sliderI = Math.min(Math.ceil(relativeScroll / $2(window).height()), $slides.length - 1),
                 sliderJ = sliderI - 1,
                 sliderT = $slides.length,
-                // flick && console.log('Flickity 初始化已跳过'),
+                // flick && this._mountFlickity(),
                 $2(".responsive-flickity").hasClass("flickity-enabled") ? ($slider.height($2(window).height() - $2("#site-header").outerHeight()),
                 $slider.addClass("remove-min-height")) : ($slider.css("height", "auto"),
                 $slider.removeClass("remove-min-height")),
@@ -1241,8 +1241,8 @@ console.log('function 进来');
         ($2("body").hasClass("template-page-contact") || $2("body").hasClass("template-index") && $2(".mount-map").length > 0) && $2(".mount-map").each(function() {
             window.CUBER.Contact.mount($2(this))
         }),
-        window.CUBER.Video.mount(),
-        window.CUBER.Popup.mount(),
+        // window.CUBER.Video.mount(),
+        // window.CUBER.Popup.mount(),
         $2(document).on("shopify:section:select", function(e) {
             var $section = $2(e.target);
             $section.hasClass("mount-header") && ($section.find("#site-header").hasClass("style--sidebar") || $section.find("#site-header").hasClass("style--fullscreen")) && ($section.find("#site-nav").hasClass("active") || $2("#site-menu-handle a").trigger("click")),
