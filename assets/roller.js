@@ -1129,7 +1129,7 @@ console.log('function 进来');
                 sliderI = Math.min(Math.ceil(relativeScroll / $2(window).height()), $slides.length - 1),
                 sliderJ = sliderI - 1,
                 sliderT = $slides.length,
-                flick && this._mountFlickity(),
+                // flick && console.log('Flickity 初始化已跳过'),
                 $2(".responsive-flickity").hasClass("flickity-enabled") ? ($slider.height($2(window).height() - $2("#site-header").outerHeight()),
                 $slider.addClass("remove-min-height")) : ($slider.css("height", "auto"),
                 $slider.removeClass("remove-min-height")),
