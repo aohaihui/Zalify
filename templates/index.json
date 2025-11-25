@@ -16,6 +16,9 @@
     },
     "giiker_home_image_video_XEiWJf": {
       "type": "giiker-home-image-video",
+      "custom_css": [
+        ".giiker-home-image-video video {object-fit: cover;}"
+      ],
       "name": "Giiker Home Image Video",
       "settings": {
         "video_picker": "shopify://files/videos/giiker banner video.mp4"
