@@ -3323,6 +3323,7 @@ ease;
           font-weight: 400;
           font-family: ComicNeue;
           color: rgba(137, 137, 137, 1);
+          color: inherit;
           /** 描边 */
           -webkit-text-stroke: 2px #000;
           text-shadow: 0 0 2px #000;
@@ -3470,7 +3471,7 @@ ease;
             line-height: 1.1;
             font-weight: 100;
             font-family: Villain_Comic;
-            color: rgba(0, 149, 255, 1);
+            color: inherit;
             /** 描边 */
             -webkit-text-stroke: 2px #000;
             text-shadow: 0 0 2px #000;
