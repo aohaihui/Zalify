@@ -1174,6 +1174,7 @@ function($2) {
                     var currentWindowScroll = $2(window).scrollTop();
                     var relativeCurrentScroll = Math.max(0, currentScroll - currentSectionTop);
                     var relativeNewScroll = Math.max(0, currentWindowScroll - currentSectionTop);
+                    console.log('进来');
                     
                     // 只有当滚动到模块位置时才触发动画
                     if (currentWindowScroll < currentSectionTop) {
