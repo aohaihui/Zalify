@@ -640,6 +640,7 @@
     "favicon": "shopify://shop_images/giiker-logo.png",
     "cart_action": "overlay",
     "cart_notes_enable": true,
+    "cart_recommendations": false,
     "show_preloader": true,
     "show_breadcrumb": false,
     "social_facebook": "https://www.facebook.com/GiikerGlobal",
