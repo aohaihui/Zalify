@@ -4,10 +4,8 @@ $(window).bind("pageshow", function(event) {
 $.ajaxSetup({
     cache: !1
 }),
-console.log('roller.js 加载');
 window.blockStickyHeader = !1,
 function($2) {
-console.log('function 进来');
 
     // $2("#site-filters select:not(.styled)").each(function() {
     //     $2(this).styledSelect({
@@ -780,7 +778,6 @@ console.log('function 进来');
                     this.$footer = $2("#shopify-section-footer");
                     var scrollFixArray = [];
                     $2(window).width() > 768 && $2(".site-box-container.container--fullscreen.box--can-stick").each(function() {
-                        console.log('11111');
                         
                         var $boxChildren = $2(this).children(".site-box");
                         if ($boxChildren.length == 2) {
@@ -1104,7 +1101,6 @@ console.log('function 进来');
                 }, 1e3))
             },
             mount: function(flick) {
-                console.log('mount 进来 这个方法');
                 var $slider = $2(".box__slideshow-split")
                   , $slides = $slider.find(".slideshow-item")
                   , $slidesMedia = $slider.find(".site-box-background-container").children("div")
@@ -1112,13 +1108,23 @@ console.log('function 进来');
                 
                 // 检查滑块是否存在
                 if ($slider.length === 0) {
-                    console.log('未找到 .box__slideshow-split 元素');
                     return;
                 }
                 
-                // 获取模块的位置
+                // 获取模块的位置 - 使用更准确的方法计算
                 var $section = $2("#shopify-section-home_slideshow");
-                var sectionTop = $section.length > 0 ? $section.offset().top : 0;
+                var sectionTop = 0;
+                if ($section.length > 0) {
+                    // 方法1: 使用 getBoundingClientRect (更准确，考虑滚动位置)
+                    var rect = $section[0].getBoundingClientRect();
+                    sectionTop = rect.top + $2(window).scrollTop();
+                    
+                    // 方法2: 如果方法1失败，使用 offset().top 作为备用
+                    if (!sectionTop || isNaN(sectionTop)) {
+                        sectionTop = $section.offset().top;
+                    }
+                    
+                }
                 
                 
                 // 计算相对于模块的滚动位置
@@ -1155,13 +1161,22 @@ console.log('function 进来');
                     slidesBlackArray.push($2(this).find(".site-box-black-overlay"))
                 }),
                 $2(window).on("scroll.split-slider", function(e) {
-                    var currentWindowScroll = $2(window).scrollTop();
-                    var relativeCurrentScroll = Math.max(0, currentScroll - sectionTop);
-                    var relativeNewScroll = Math.max(0, currentWindowScroll - sectionTop);
+                    // 每次滚动时重新计算 sectionTop，因为页面布局可能变化
+                    var currentSectionTop = sectionTop;
+                    if ($section.length > 0) {
+                        var rect = $section[0].getBoundingClientRect();
+                        currentSectionTop = rect.top + $2(window).scrollTop();
+                        if (!currentSectionTop || isNaN(currentSectionTop)) {
+                            currentSectionTop = $section.offset().top;
+                        }
+                    }
                     
+                    var currentWindowScroll = $2(window).scrollTop();
+                    var relativeCurrentScroll = Math.max(0, currentScroll - currentSectionTop);
+                    var relativeNewScroll = Math.max(0, currentWindowScroll - currentSectionTop);
                     
                     // 只有当滚动到模块位置时才触发动画
-                    if (currentWindowScroll < sectionTop) {
+                    if (currentWindowScroll < currentSectionTop) {
                         $slider.addClass("back-to-normal")
                         return;
                     }
@@ -1169,7 +1184,6 @@ console.log('function 进来');
                     if (relativeCurrentScroll < relativeNewScroll) {
                         
                         if ($slides.eq(sliderI + 1).length > 0 && currentWindowScroll + $2(window).height() >= $slides.eq(sliderI + 1).offset().top) {
-                            console.log('切换到下一个 slide:', sliderI + 1);
                             if (sliderI != 0) {
                                 $slidesMedia.eq(sliderI).css("clip", "rect(0 " + Math.ceil($2(window).width() / 2) + "px " + $2(window).height() + "px 0)");
                                 slidesBlackArray[sliderJ] && slidesBlackArray[sliderJ].css("opacity", .5);
@@ -1226,7 +1240,6 @@ console.log('function 进来');
         }
     },
     $2(document).ready(function() {
-        console.log('ready 进来');
         // window.CUBER.Nav.mount(),
         window.CUBER.Main.mount(),
         window.CUBER.Scroll.mount(),
@@ -1331,7 +1344,6 @@ console.log('function 进来');
     // })
 }(jQuery);
 function response(data) {
-    console.log(data)
 }
 window._getLuminance = function(hexy) {
     var rgb = this._toRgb(hexy);
