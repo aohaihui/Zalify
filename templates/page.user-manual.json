@@ -155,12 +155,80 @@
         "image_height": "half",
         "text_alignment": "horizontal-center vertical-middle"
       }
+    },
+    "image_with_text_yLGHWb": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_UjKd8C": {
+          "type": "image",
+          "settings": {
+            "subtitle": "",
+            "title": "",
+            "button_label": "",
+            "url": "shopify://pages/smart-four-rainbow-user-manual",
+            "image": "shopify://shop_images/0f5477928e047fcf3f06c6c08c4aeddf.png",
+            "image_alignment": "50% 50%",
+            "custom_text": "rgba(0,0,0,0)",
+            "custom_overlay": "rgba(0,0,0,0)"
+          }
+        },
+        "image_BRAJAG": {
+          "type": "image",
+          "settings": {
+            "subtitle": "",
+            "title": "",
+            "button_label": "",
+            "url": "shopify://pages/super-blocks-user-manual",
+            "image": "shopify://shop_images/800_08a4d860-1a27-488f-8645-6ea9424adf63.jpg",
+            "image_alignment": "50% 50%",
+            "custom_text": "rgba(0,0,0,0)",
+            "custom_overlay": "rgba(0,0,0,0)"
+          }
+        },
+        "image_AiKecE": {
+          "type": "image",
+          "settings": {
+            "subtitle": "",
+            "title": "",
+            "button_label": "",
+            "url": "shopify://pages/tic-tac-toe-bolt-user-manual",
+            "image": "shopify://shop_images/4_c977b3f7-6663-4e44-a9ff-4fe04dc2b2df.jpg",
+            "image_alignment": "50% 50%",
+            "custom_text": "rgba(0,0,0,0)",
+            "custom_overlay": "rgba(0,0,0,0)"
+          }
+        },
+        "image_YkCnCV": {
+          "type": "image",
+          "settings": {
+            "subtitle": "",
+            "title": "",
+            "button_label": "",
+            "url": "shopify://pages/super-decoder-user-manual",
+            "image": "shopify://shop_images/01.png",
+            "image_alignment": "50% 50%",
+            "custom_text": "rgba(0,0,0,0)",
+            "custom_overlay": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "image_UjKd8C",
+        "image_BRAJAG",
+        "image_AiKecE",
+        "image_YkCnCV"
+      ],
+      "settings": {
+        "image_height": "half",
+        "text_alignment": "horizontal-center vertical-middle"
+      }
     }
   },
   "order": [
     "main",
     "166098719235439c52",
     "4836e294-e33c-4e67-871e-9206a942f398",
-    "999d3ff2-8c25-4228-be75-e6968f6ad9b9"
+    "999d3ff2-8c25-4228-be75-e6968f6ad9b9",
+    "image_with_text_yLGHWb"
   ]
 }
