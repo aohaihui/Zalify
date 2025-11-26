@@ -2332,14 +2332,24 @@ ease;
     padding: 10px 30px;
     margin-bottom: 20px;
     min-width: 55%;
+    height: 20%;
+  }
+  .giiker-product-basice .left-content{
+    width: 56%;
+  }
+  .giiker-product-basice .left-content .image-left-tag{
+    height: auto;
   }
   .giiker-product-basice .right-content .right-content-detail{
     height: 72%;
+    font-size: 2.1vw;
+    line-height: 1.3;
+    width: 59%;
     // width: 36%;
     // font-size: 1.5vw;
   }
   .giiker-product-basice .right-content .image-right-tag{
-    left: 28%;
+    left: -10%;
   }
 }
 // @media screen and (max-width: 1250px) {
