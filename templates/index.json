@@ -61,7 +61,7 @@
       "name": "Giiker Home Banner",
       "settings": {
         "autoplay": true,
-        "autoplay_delay": 3000
+        "autoplay_delay": 5000
       }
     },
     "giiker_home_image_text_CExhrn": {
