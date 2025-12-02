@@ -61,6 +61,7 @@
         },
         "93880648-978b-4d31-9200-dc7244fdc064": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>User Manual： <a href=\"/pages/smart-four-user-manual\" title=\"smart four user manual\"><strong>Click here</strong></a></p>",
             "text_style": "body"
