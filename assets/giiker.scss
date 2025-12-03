@@ -3945,7 +3945,7 @@ ease;
     .site-box .site-box-background img {
       height: 100%;
       width: 100%;
-      object-fit: cover;
+      object-fit: contain;
       font-family: "object-fit: cover";
       transition: opacity 150ms linear;
       opacity: 0;
