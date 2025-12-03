@@ -2280,10 +2280,12 @@ css-slider:not(.enabled) > * {
   height: auto;
   line-height: 28px;
   display: flex;
+  margin: 20px 0 30px;
 }
 .site-footer .footer-menu .other-link{
   height: auto;
   line-height: 28px;
+  margin: 20px 0 30px;
 }
 @media screen and (max-width: 726px) {
   .site-footer .footer-bottom {
