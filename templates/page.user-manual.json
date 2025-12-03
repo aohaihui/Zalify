@@ -83,6 +83,10 @@
         "template--16687346974972__4836e294-e33c-4e67-871e-9206a942f398-16786781866625dde2-1",
         "template--16687346974972__4836e294-e33c-4e67-871e-9206a942f398-16786781866625dde2-2"
       ],
+      "custom_css": [
+        ".h1 {font-size: 96px; line-height: 1; font-weight: 400; font-family: Villain_Comic; color: #fff; -webkit-text-stroke: 2px #000; text-shadow: 0 0 2px #000; margin: 0; text-align: center;}",
+        "@media screen and (max-width: 768px) {.h1 {font-size: 48px; -webkit-text-stroke: 1px #000; text-shadow: 0 0 1px #000; }}"
+      ],
       "settings": {
         "text_alignment": "center",
         "custom_background": "rgba(0,0,0,0)",
@@ -151,6 +155,9 @@
         "e5a54298-1e2e-4c51-8645-a1278eb821e5",
         "image_kNUT7X"
       ],
+      "custom_css": [
+        ".site-box-container {padding: var(--header-padding) var(--site-horizontal-padding); box-sizing: border-box;}"
+      ],
       "settings": {
         "image_height": "half",
         "text_alignment": "horizontal-center vertical-middle"
@@ -217,6 +224,9 @@
         "image_BRAJAG",
         "image_AiKecE",
         "image_YkCnCV"
+      ],
+      "custom_css": [
+        ".site-box-container {padding: var(--header-padding) var(--site-horizontal-padding); box-sizing: border-box;}"
       ],
       "settings": {
         "image_height": "half",
