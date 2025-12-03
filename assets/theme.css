@@ -2276,6 +2276,15 @@ css-slider:not(.enabled) > * {
 .site-footer .footer-bottom > div:first-child {
   margin-right: 50px;
 }
+.site-footer .footer-menu .first-link{
+  height: auto;
+  line-height: 28px;
+  display: flex;
+}
+.site-footer .footer-menu .other-link{
+  height: auto;
+  line-height: 28px;
+}
 @media screen and (max-width: 726px) {
   .site-footer .footer-bottom {
     flex-direction: column;
