@@ -8357,9 +8357,22 @@ li.has-submenu:hover > ul {
   .giiker-home-community-container .giiker-home-community-image{
     width: 60%;
   }
+  .giiker-home-how-image-container .giiker-home-how-image-background .image-flower-tag{
+    width: 180px;
+  }
+  .giiker-home-list-image-background-box img{
+    width: 150px;
+  }
+  .giiker-home-favourite .favourite-title, .giiker-home-phone-image-container .giiker-home-phone-image-content .giiker-home-phone-image-title{
+    font-size: 80px;
+  }
+  .giiker-home-list-image-container .giiker-home-list-image-title *{
+    font-size: 72px;
+  }
 }
 @media screen and (min-width: 1024px) and (max-width: 1700px) {
   .giiker-home-community-container .giiker-home-community-content .giiker-home-community-detail *{
     display: inline;
   }
+
 }
