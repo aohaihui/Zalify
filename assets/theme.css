@@ -8366,7 +8366,7 @@ li.has-submenu:hover > ul {
   .giiker-home-favourite .favourite-title, .giiker-home-phone-image-container .giiker-home-phone-image-content .giiker-home-phone-image-title{
     font-size: 80px;
   }
-  .giiker-home-list-image-container .giiker-home-list-image-title *{
+  .giiker-home-list-image-container .giiker-home-list-image-title *, .giiker-home-list-image-container .giiker-home-list-image-title *{
     font-size: 72px;
   }
 }
