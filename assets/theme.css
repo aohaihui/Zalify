@@ -8353,26 +8353,26 @@ li.has-submenu:hover > ul {
 .site-footer .site-social a:not(:last-child){
   margin-bottom: 0;
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) and (max-width: 1224px) {
   .giiker-home-community-container .giiker-home-community-image{
     width: 60%;
   }
   .giiker-home-how-image-container .giiker-home-how-image-background .image-flower-tag{
-    width: 180px;
+    width: 180px !important;
   }
   .giiker-home-list-image-background-box img{
-    width: 150px;
+    width: 150px !important;
   }
   .giiker-home-favourite .favourite-title, .giiker-home-phone-image-container .giiker-home-phone-image-content .giiker-home-phone-image-title{
-    font-size: 80px;
+    font-size: 80px !important;
   }
   .giiker-home-list-image-container .giiker-home-list-image-title *, .giiker-home-list-image-container .giiker-home-list-image-title *{
-    font-size: 72px;
+    font-size: 72px !important;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1700px) {
   .giiker-home-community-container .giiker-home-community-content .giiker-home-community-detail *{
-    display: inline;
+    display: inline !important;
   }
 
 }
