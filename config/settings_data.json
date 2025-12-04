@@ -673,7 +673,7 @@
       "header": {
         "type": "header",
         "settings": {
-          "logo_src": "shopify://shop_images/Vector_2.png",
+          "logo_src": "shopify://shop_images/giiker-new_logo.png",
           "logo_height": 34,
           "main_linklist": "main-menu",
           "menu_style": "classic",
@@ -874,11 +874,6 @@
       },
       "855628211100114053": {
         "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
-        "disabled": false,
-        "settings": {}
-      },
-      "11531005611096603357": {
-        "type": "shopify://apps/zalify-pixels-email-marketing/blocks/popup-embed/0f5e9b69-424e-42a3-8bd7-8d5b75dd8130",
         "disabled": false,
         "settings": {}
       },
