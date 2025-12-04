@@ -8353,3 +8353,13 @@ li.has-submenu:hover > ul {
 .site-footer .site-social a:not(:last-child){
   margin-bottom: 0;
 }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .giiker-home-community-container .giiker-home-community-image{
+    width: 60%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1700px) {
+  .giiker-home-community-container .giiker-home-community-content .giiker-home-community-detail *{
+    display: inline;
+  }
+}
