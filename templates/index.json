@@ -22,7 +22,7 @@
       "name": "Giiker Home Image Video",
       "settings": {
         "pc_image": "shopify://shop_images/20251125180035_1268_99.jpg",
-        "video_picker": "shopify://files/videos/giiker banner video.mp4"
+        "video_picker": "shopify://files/videos/Christmas Video.mp4"
       }
     },
     "giiker_home_banner_MFAcbG": {
@@ -31,8 +31,8 @@
         "banner_6N3TYW": {
           "type": "banner",
           "settings": {
-            "pc_image": "shopify://shop_images/20251201-155934.png",
-            "mobile_image": "shopify://shop_images/20251201-155941.png",
+            "pc_image": "shopify://shop_images/Christmas_Banner_PC.jpg",
+            "mobile_image": "shopify://shop_images/Christmas_Banner_Mobile.jpg",
             "url": "shopify://collections/learning-educational-toys"
           }
         },
