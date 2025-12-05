@@ -62,10 +62,6 @@
           "type": "description",
           "settings": {}
         },
-        "fbp_fast_bundle_product_bundles_w6dTVR": {
-          "type": "shopify://apps/fbp-fast-bundle/blocks/product_bundles/9e87fbe2-9041-4c23-acf5-322413994cef",
-          "settings": {}
-        },
         "collapse_HQqnfc": {
           "type": "Collapse",
           "settings": {
@@ -108,7 +104,6 @@
         "variant_picker",
         "buy_buttons",
         "description",
-        "fbp_fast_bundle_product_bundles_w6dTVR",
         "collapse_HQqnfc",
         "share",
         "93880648-978b-4d31-9200-dc7244fdc064",
@@ -164,7 +159,6 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "is_mobile_visible": true,
             "background_color": "#153229",
             "text_color": "#f0674f",
             "title": "Become a Master Detective",
@@ -179,7 +173,6 @@
           "type": "content",
           "settings": {
             "is_reversal": true,
-            "is_mobile_visible": true,
             "background_color": "#153229",
             "text_color": "#f0674f",
             "title": "Secret Hints",
@@ -194,7 +187,6 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "is_mobile_visible": true,
             "background_color": "#979799",
             "text_color": "#f0674f",
             "title": "From Codebreaker to Code Setter",
@@ -209,7 +201,6 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "is_mobile_visible": true,
             "background_color": "#faf9f7",
             "text_color": "#f0674f",
             "title": "On-the-Go Detective",
@@ -228,45 +219,6 @@
         "content_NjbrTD"
       ],
       "name": "Giiker Product Roller",
-      "settings": {}
-    },
-    "giiker_product_roller_mobile_8NzpJz": {
-      "type": "giiker-product-roller-mobile",
-      "blocks": {
-        "content_C3DrFR": {
-          "type": "content",
-          "settings": {
-            "is_reversal": false,
-            "background_color": "#ffd700",
-            "text_color": "#ffffff",
-            "title": "123213213213",
-            "title_color": "#ffd700",
-            "detail": "23213213123",
-            "detail_color": "#ffffff",
-            "image": "shopify://shop_images/20251121-110444.png",
-            "mobile_image": "shopify://shop_images/20251121-110444.png"
-          }
-        },
-        "content_tXgPLa": {
-          "type": "content",
-          "settings": {
-            "is_reversal": false,
-            "background_color": "#ffd700",
-            "text_color": "",
-            "title": "123213213213213",
-            "title_color": "#faf9f7",
-            "detail": "132133",
-            "detail_color": "",
-            "image": "shopify://shop_images/20251121-110444.png",
-            "mobile_image": "shopify://shop_images/20251121-110444.png"
-          }
-        }
-      },
-      "block_order": [
-        "content_C3DrFR",
-        "content_tXgPLa"
-      ],
-      "name": "Giiker Roller Mobile",
       "settings": {}
     },
     "giiker_home_phone_image_7bXqQP": {
@@ -385,26 +337,6 @@
       "settings": {
         "background_image": "shopify://shop_images/Sku_2_1.png"
       }
-    },
-    "1763963307a90dc551": {
-      "type": "apps",
-      "blocks": {
-        "loox_reviews_loox_dynamic_section_eDeFr6": {
-          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
-          "settings": {
-            "only_photos": false,
-            "aggregated": false,
-            "limit": 20,
-            "hide_thumbnails": false,
-            "maxwidth": 1080,
-            "is_sample": false
-          }
-        }
-      },
-      "block_order": [
-        "loox_reviews_loox_dynamic_section_eDeFr6"
-      ],
-      "settings": {}
     }
   },
   "order": [
@@ -417,11 +349,9 @@
     "giiker_product_banner_tzTcDT",
     "giiker_product_basice_UEt668",
     "giiker_product_roller_bdKzfP",
-    "giiker_product_roller_mobile_8NzpJz",
     "giiker_home_phone_image_7bXqQP",
     "giiker_product_btn_McxzPp",
     "giiker_product_recommended_ndfAnB",
-    "giiker_product_icon_yjLqaX",
-    "1763963307a90dc551"
+    "giiker_product_icon_yjLqaX"
   ]
 }
