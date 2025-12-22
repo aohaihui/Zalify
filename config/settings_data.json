@@ -686,7 +686,7 @@
           "promotion_button_link": "",
           "promotion_color_txt": "#111111",
           "promotion_color_bg": "#f3f3f3",
-          "bar_enable": true,
+          "bar_enable": false,
           "bar_home_only": true,
           "bar_show_dismiss": true,
           "bar_content": "Last Chance to Save! Get 15% off now!",
