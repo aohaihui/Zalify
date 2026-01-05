@@ -22,17 +22,17 @@
       "name": "Giiker Home Image Video",
       "settings": {
         "pc_image": "shopify://shop_images/20251125180035_1268_99.jpg",
-        "video_picker": "shopify://files/videos/Christmas Video.mp4"
+        "video_picker": "shopify://files/videos/giiker banner video.mp4"
       }
     },
     "giiker_home_banner_MFAcbG": {
       "type": "giiker-home-banner",
       "blocks": {
-        "banner_6N3TYW": {
+        "banner_kL4TfF": {
           "type": "banner",
           "settings": {
-            "pc_image": "shopify://shop_images/Christmas_Banner_PC.jpg",
-            "mobile_image": "shopify://shop_images/Christmas_Banner_Mobile.jpg",
+            "pc_image": "shopify://shop_images/kv1.png",
+            "mobile_image": "shopify://shop_images/app-kv1-_logo.png",
             "url": "shopify://collections/learning-educational-toys"
           }
         },
@@ -44,19 +44,19 @@
             "url": "shopify://collections/learning-educational-toys"
           }
         },
-        "banner_kL4TfF": {
+        "banner_6N3TYW": {
           "type": "banner",
           "settings": {
-            "pc_image": "shopify://shop_images/kv1.png",
-            "mobile_image": "shopify://shop_images/app-kv1-_logo.png",
+            "pc_image": "shopify://shop_images/4167x2344_82210ce4-1161-4588-baf8-84ca37544795.jpg",
+            "mobile_image": "shopify://shop_images/kv-1200x1550_e1c92363-1bfd-4a70-82b8-ec35e72c76c5.jpg",
             "url": "shopify://collections/learning-educational-toys"
           }
         }
       },
       "block_order": [
-        "banner_6N3TYW",
+        "banner_kL4TfF",
         "banner_rdkVqq",
-        "banner_kL4TfF"
+        "banner_6N3TYW"
       ],
       "name": "Giiker Home Banner",
       "settings": {
