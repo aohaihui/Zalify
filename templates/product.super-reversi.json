@@ -140,7 +140,7 @@
       "type": "giiker-product-banner",
       "name": "Giiker Product Banner",
       "settings": {
-        "video_picker": "shopify://files/videos/井字棋缩.mp4",
+        "video_picker": "shopify://files/videos/翻转棋TVC剪辑.mp4",
         "background_top_image": "shopify://shop_images/Vector_26.png",
         "background_bottom_image": "shopify://shop_images/Vector_25_1.png"
       }
