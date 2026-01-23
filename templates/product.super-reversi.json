@@ -1,0 +1,474 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "shogun-helper": {
+      "type": "shogun-helper",
+      "settings": {}
+    },
+    "shogun-above": {
+      "type": "shogun-above",
+      "settings": {}
+    },
+    "23897632015cc15783": {
+      "type": "apps",
+      "settings": {}
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "show_vendor": false,
+            "show_badge": true,
+            "show_reviews": false,
+            "show_tax_info": false,
+            "show_sku": false,
+            "show_barcode": false,
+            "stick_product_header_on_mobile": true
+          }
+        },
+        "text_i9YCcg": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h3>Use the code: XMAS15 to get 15% off</h3>",
+            "text_style": "body"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variants_style": "radio",
+            "show_color_swatches": true,
+            "show_quantities": "no"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_quantity_selector": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "fbp_fast_bundle_product_bundles_eQNrUX": {
+          "type": "shopify://apps/fbp-fast-bundle/blocks/product_bundles/9e87fbe2-9041-4c23-acf5-322413994cef",
+          "settings": {}
+        },
+        "collapse_HQqnfc": {
+          "type": "Collapse",
+          "settings": {
+            "heading": "FAQ Question",
+            "content": "",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {}
+        },
+        "93880648-978b-4d31-9200-dc7244fdc064": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>User Manual： <a href=\"/pages/smart-four-user-manual\" title=\"smart four user manual\"><strong>Click here</strong></a></p>",
+            "text_style": "body"
+          }
+        },
+        "free_delivery_iPJ7mA": {
+          "type": "Free_Delivery",
+          "settings": {
+            "image_1": "shopify://shop_images/685082392297db95b906f751_nex-web-icon-delivery.svg",
+            "title_1": "",
+            "detail_1": "<p>Free Shipping</p><p>(US, CA, UK)</p>",
+            "image_2": "shopify://shop_images/68508239b45fd47ed3fc6f3d_nex-web-icon-shipping.svg",
+            "title_2": "",
+            "detail_2": "<p>30 Days</p><p>Free Returns</p>",
+            "image_3": "shopify://shop_images/68508239939e9f0c8d5eca5a_nex-web-icon-warranty.svg",
+            "title_3": "",
+            "detail_3": "<p>1-Year</p><p>Warranty</p>"
+          }
+        }
+      },
+      "block_order": [
+        "header",
+        "text_i9YCcg",
+        "variant_picker",
+        "buy_buttons",
+        "description",
+        "fbp_fast_bundle_product_bundles_eQNrUX",
+        "collapse_HQqnfc",
+        "share",
+        "93880648-978b-4d31-9200-dc7244fdc064",
+        "free_delivery_iPJ7mA"
+      ],
+      "settings": {
+        "gallery_style": "slider",
+        "gallery_aspect": true,
+        "gallery_pagination": "thumbnails",
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "new_product_11_05": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like"
+      }
+    },
+    "shogun-below": {
+      "type": "shogun-below",
+      "disabled": true,
+      "settings": {}
+    },
+    "giiker_product_banner_tzTcDT": {
+      "type": "giiker-product-banner",
+      "name": "Giiker Product Banner",
+      "settings": {
+        "video_picker": "shopify://files/videos/井字棋缩.mp4",
+        "background_top_image": "shopify://shop_images/Vector_26.png",
+        "background_bottom_image": "shopify://shop_images/Vector_25_1.png"
+      }
+    },
+    "giiker_product_basice_UEt668": {
+      "type": "giiker-product-basice",
+      "name": "Giiker Product Basice",
+      "settings": {
+        "background_left_image": "shopify://shop_images/0037_1.png",
+        "background_left_video": "shopify://files/videos/井字棋使用动画 改.mp4",
+        "background_right_image": "shopify://shop_images/b14fee4b27b2411dc85ede04be2086e6_bf1d99f6-1946-4d7a-b76f-9f4b8056133c.png",
+        "title": "Learn the basics",
+        "detail": "A step-by-step tutorial on how our smart product makes learning a breeze.",
+        "mobile_video": "shopify://files/videos/井字棋使用动画 改.mp4",
+        "mobile_background_image": "shopify://shop_images/tic-tac-toe.png"
+      }
+    },
+    "giiker_product_roller_bdKzfP": {
+      "type": "giiker-product-roller",
+      "blocks": {
+        "content_BFwkR3": {
+          "type": "content",
+          "settings": {
+            "is_reversal": false,
+            "is_mobile_visible": true,
+            "background_color": "#ffffff",
+            "text_color": "#f0674f",
+            "title": "Infinite Tic-Tac-Toe",
+            "title_color": "",
+            "detail": "Tic-tac-toe with a disappearing act! No more ties—each player only gets three marks at a time. Place a new one, and your oldest mark disappears. The board keeps changing until someone connects three in a row!",
+            "detail_color": "",
+            "image": "shopify://shop_images/ffffff_678b798f-36f8-400c-9313-a90d08f2f70c.jpg",
+            "mobile_image": "shopify://shop_images/1_51e566de-8441-4d43-91ee-50fe003b3647.jpg"
+          }
+        },
+        "content_iirxpf": {
+          "type": "content",
+          "settings": {
+            "is_reversal": true,
+            "is_mobile_visible": true,
+            "background_color": "#eed6ba",
+            "text_color": "#f0674f",
+            "title": "Adaptive AI",
+            "title_color": "",
+            "detail": "Take on a clever robot that never stops learning! The smarter you play, the tougher it gets—adapting to your skills and keeping every match fresh, exciting, and unpredictable.",
+            "detail_color": "",
+            "image": "shopify://shop_images/eed6ba.jpg",
+            "mobile_image": "shopify://shop_images/2_1efc0320-e1f0-4f2e-961e-b58251a2b8cd.jpg"
+          }
+        },
+        "content_bNXnpp": {
+          "type": "content",
+          "settings": {
+            "is_reversal": false,
+            "is_mobile_visible": true,
+            "background_color": "#c2cdc6",
+            "text_color": "#f0674f",
+            "title": "Duo Mode",
+            "title_color": "",
+            "detail": "Ready to put your skills to the test? Go head-to-head with a friend. Every move counts, every mark can vanish, and every game is a chance to prove who’s the real tic-tac-toe champ.",
+            "detail_color": "",
+            "image": "shopify://shop_images/c2cdc6.jpg",
+            "mobile_image": "shopify://shop_images/3_4488d4b4-ef66-44e2-91d8-bf4f9f923378.jpg"
+          }
+        },
+        "content_NjbrTD": {
+          "type": "content",
+          "settings": {
+            "is_reversal": false,
+            "is_mobile_visible": false,
+            "background_color": "#e48237",
+            "text_color": "#f0674f",
+            "title": "Memory Flash",
+            "title_color": "",
+            "detail": "Unlock a whole new way to play! Train your memory across 9 difficulty levels and discover new ways to think ahead. The better you remember, the smarter you play.",
+            "detail_color": "",
+            "image": "shopify://shop_images/e48237.jpg",
+            "mobile_image": "shopify://shop_images/4_74fcdbc5-b659-4a96-b538-1cefcde63f47.jpg"
+          }
+        },
+        "content_Xht7Xt": {
+          "type": "content",
+          "settings": {
+            "is_reversal": false,
+            "is_mobile_visible": false,
+            "background_color": "#fefefe",
+            "text_color": "#f0674f",
+            "title": "Cover-up Tic-Tac-Toe",
+            "title_color": "",
+            "detail": "Get ready for hands-on fun! The bottom half of the toy features a physical tic-tac-toe board for a fully tactile, interactive experience.",
+            "detail_color": "",
+            "image": "shopify://shop_images/fefefe_0310f8a9-4314-4f2a-9bae-85b36f8ebbab.jpg",
+            "mobile_image": "shopify://shop_images/5_b5b7aab1-913d-4090-bc79-f6dcf700456a.jpg"
+          }
+        },
+        "content_zDaLNJ": {
+          "type": "content",
+          "settings": {
+            "is_reversal": false,
+            "is_mobile_visible": false,
+            "background_color": "#caa368",
+            "text_color": "#f0674f",
+            "title": "Pocket Sized",
+            "title_color": "",
+            "detail": "Fits right in the palm of your hand—no more paper, no more hassle! Just flick a button and play Tic-Tac-Toe anytime, anywhere.",
+            "detail_color": "",
+            "image": "shopify://shop_images/caa368.jpg",
+            "mobile_image": "shopify://shop_images/6_6713b70b-be8c-42a8-8056-d493c1b444fd.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "content_BFwkR3",
+        "content_iirxpf",
+        "content_bNXnpp",
+        "content_NjbrTD",
+        "content_Xht7Xt",
+        "content_zDaLNJ"
+      ],
+      "name": "Giiker Product Roller",
+      "settings": {}
+    },
+    "giiker_product_roller_mobile_8NzpJz": {
+      "type": "giiker-product-roller-mobile",
+      "blocks": {
+        "content_C3DrFR": {
+          "type": "content",
+          "settings": {
+            "is_reversal": false,
+            "background_color": "#e48237",
+            "text_color": "#f0674f",
+            "title": "Memory Flash",
+            "title_color": "#ffffff",
+            "detail": "Unlock a whole new way to play! Train your memory across 9 difficulty levels and discover new ways to think ahead. The better you remember, the smarter you play.",
+            "detail_color": "#ffffff",
+            "image": "shopify://shop_images/e48237.jpg",
+            "mobile_image": "shopify://shop_images/4_74fcdbc5-b659-4a96-b538-1cefcde63f47.jpg"
+          }
+        },
+        "content_tXgPLa": {
+          "type": "content",
+          "settings": {
+            "is_reversal": false,
+            "background_color": "#fefefe",
+            "text_color": "#f0674f",
+            "title": "Cover-up Tic-Tac-Toe",
+            "title_color": "#faf9f7",
+            "detail": "Get ready for hands-on fun! The bottom half of the toy features a physical tic-tac-toe board for a fully tactile, interactive experience.",
+            "detail_color": "",
+            "image": "shopify://shop_images/fefefe_0310f8a9-4314-4f2a-9bae-85b36f8ebbab.jpg",
+            "mobile_image": "shopify://shop_images/5_b5b7aab1-913d-4090-bc79-f6dcf700456a.jpg"
+          }
+        },
+        "content_RfhtzL": {
+          "type": "content",
+          "settings": {
+            "is_reversal": false,
+            "background_color": "#caa368",
+            "text_color": "#f0674f",
+            "title": "Pocket Sized",
+            "title_color": "",
+            "detail": "Fits right in the palm of your hand—no more paper, no more hassle! Just flick a button and play Tic-Tac-Toe anytime, anywhere.",
+            "detail_color": "",
+            "image": "shopify://shop_images/caa368.jpg",
+            "mobile_image": "shopify://shop_images/6_6713b70b-be8c-42a8-8056-d493c1b444fd.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "content_C3DrFR",
+        "content_tXgPLa",
+        "content_RfhtzL"
+      ],
+      "name": "Giiker Roller Mobile",
+      "settings": {}
+    },
+    "giiker_home_phone_image_7bXqQP": {
+      "type": "giiker-home-phone-image",
+      "blocks": {
+        "phone_NVyRDY": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/井字棋-Ali.mp4"
+          }
+        },
+        "phone_bGEYeK": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/tiktokboardgames.mp4"
+          }
+        },
+        "phone_MMYAYp": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/playy.n.slayy.mp4"
+          }
+        },
+        "phone_VwFerw": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/justanothernurse2 (2).mp4"
+          }
+        },
+        "phone_RWdgwj": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/stampoilsmama.mp4"
+          }
+        },
+        "phone_eNBjqj": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/never.boardgame.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "phone_NVyRDY",
+        "phone_bGEYeK",
+        "phone_MMYAYp",
+        "phone_VwFerw",
+        "phone_RWdgwj",
+        "phone_eNBjqj"
+      ],
+      "name": "Giiker Home Phone Image",
+      "settings": {
+        "title": "Families everywhere are loving it.",
+        "background_color": "#ffffff",
+        "arrows_color": true
+      }
+    },
+    "giiker_product_btn_McxzPp": {
+      "type": "giiker-product-btn",
+      "name": "Giiker Product Btn",
+      "settings": {
+        "btn_label": "Explore the Facebook Group",
+        "btn_url": "https://www.facebook.com/groups/1324836238992700"
+      }
+    },
+    "giiker_product_recommended_ndfAnB": {
+      "type": "giiker-product-recommended",
+      "name": "Giiker Product Recommended",
+      "settings": {
+        "background_image": "shopify://shop_images/20251118180441_687_99.png",
+        "title": "You may also like",
+        "product_list": [
+          "super-decoder",
+          "giiker-super-ludo",
+          "super-slide",
+          "super-blocks"
+        ]
+      }
+    },
+    "giiker_product_icon_yjLqaX": {
+      "type": "giiker-product-icon",
+      "blocks": {
+        "list_JkLgDm": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/x0020_1.png",
+            "title": "<p>Fast & Easy Returns</p>",
+            "detail": "<p>Change your mind? Enjoy hassle-freereturns within 30 days.</p>"
+          }
+        },
+        "list_wLCkfw": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/x0020_1_3.png",
+            "title": "<p>100% secure payment.</p>",
+            "detail": "<p>We accept all major credit cards withShop Pay and PayPal. Your credit cardinformation is private.</p>"
+          }
+        },
+        "list_B3cRM9": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/x0020_1.png",
+            "title": "<p>1 Year Warranty</p>",
+            "detail": "<p>Play smarter, worry less—every GiiKER product is backed by our 1-year warranty, a promise of lasting quality and endless fun.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "list_JkLgDm",
+        "list_wLCkfw",
+        "list_B3cRM9"
+      ],
+      "disabled": true,
+      "name": "Giiker Product Icon",
+      "settings": {
+        "background_image": "shopify://shop_images/Sku_2_1.png"
+      }
+    },
+    "1763971518166ea402": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_dynamic_section_7cDMXb": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080,
+            "is_sample": false
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_dynamic_section_7cDMXb"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "shogun-helper",
+    "shogun-above",
+    "23897632015cc15783",
+    "main",
+    "product-recommendations",
+    "shogun-below",
+    "giiker_product_banner_tzTcDT",
+    "giiker_product_basice_UEt668",
+    "giiker_product_roller_bdKzfP",
+    "giiker_product_roller_mobile_8NzpJz",
+    "giiker_home_phone_image_7bXqQP",
+    "giiker_product_btn_McxzPp",
+    "giiker_product_recommended_ndfAnB",
+    "giiker_product_icon_yjLqaX",
+    "1763971518166ea402"
+  ]
+}
