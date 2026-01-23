@@ -28,6 +28,15 @@
     "giiker_home_banner_MFAcbG": {
       "type": "giiker-home-banner",
       "blocks": {
+        "banner_6b8AKa": {
+          "type": "banner",
+          "disabled": true,
+          "settings": {
+            "pc_image": "shopify://shop_images/f4806f1617d37edc453d6ad7ed681403.jpg",
+            "mobile_image": "shopify://shop_images/05d80934f94e2dcf42a1d4e777497de3.jpg",
+            "url": ""
+          }
+        },
         "banner_kL4TfF": {
           "type": "banner",
           "settings": {
@@ -54,6 +63,7 @@
         }
       },
       "block_order": [
+        "banner_6b8AKa",
         "banner_kL4TfF",
         "banner_rdkVqq",
         "banner_6N3TYW"
@@ -106,6 +116,15 @@
     "giiker_home_favourite_wyCJKc": {
       "type": "giiker-home-favourite",
       "blocks": {
+        "banner_kdtb3z": {
+          "type": "banner",
+          "disabled": true,
+          "settings": {
+            "product_image": "shopify://shop_images/7a2565abef4e4a4174b25c9546a82b5f.png",
+            "product_title": "Super Reversi",
+            "product": "giiker-super-reversi"
+          }
+        },
         "banner_HaEBAc": {
           "type": "banner",
           "settings": {
@@ -164,6 +183,7 @@
         }
       },
       "block_order": [
+        "banner_kdtb3z",
         "banner_HaEBAc",
         "banner_yNkR9g",
         "banner_nqMLnR",
