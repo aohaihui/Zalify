@@ -272,32 +272,33 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#e48237",
+            "background_color": "#156444",
             "text_color": "#f0674f",
-            "title": "Memory Flash",
+            "title": "Practice Planning Ahead",
             "title_color": "#ffffff",
-            "detail": "Unlock a whole new way to play! Train your memory across 9 difficulty levels and discover new ways to think ahead. The better you remember, the smarter you play.",
+            "detail": "Think hard before you place. One wrong move is all it takes for your opponent to capture multiple rows and steal the advantage. Can you hold the lead until the final piece is played?",
             "detail_color": "#ffffff",
-            "image": "shopify://shop_images/e48237.jpg",
-            "mobile_image": "shopify://shop_images/4_74fcdbc5-b659-4a96-b538-1cefcde63f47.jpg"
+            "image": "shopify://shop_images/3_23704543-db8c-46e9-b50e-ba665eb70bc8.jpg",
+            "mobile_image": "shopify://shop_images/3_23704543-db8c-46e9-b50e-ba665eb70bc8.jpg"
           }
         },
         "content_tXgPLa": {
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#fefefe",
+            "background_color": "#156444",
             "text_color": "#f0674f",
-            "title": "Cover-up Tic-Tac-Toe",
+            "title": "Fun on the Run",
             "title_color": "#faf9f7",
-            "detail": "Get ready for hands-on fun! The bottom half of the toy features a physical tic-tac-toe board for a fully tactile, interactive experience.",
+            "detail": "No loose pieces. No hassle. Just a pocket sized console that can be taken anywhere for instant play. It's the ultimate portable strategy game.",
             "detail_color": "",
-            "image": "shopify://shop_images/fefefe_0310f8a9-4314-4f2a-9bae-85b36f8ebbab.jpg",
-            "mobile_image": "shopify://shop_images/5_b5b7aab1-913d-4090-bc79-f6dcf700456a.jpg"
+            "image": "shopify://shop_images/4_78657871-06be-4760-a879-39d9a8f0eebe.jpg",
+            "mobile_image": "shopify://shop_images/4_78657871-06be-4760-a879-39d9a8f0eebe.jpg"
           }
         },
         "content_RfhtzL": {
           "type": "content",
+          "disabled": true,
           "settings": {
             "is_reversal": false,
             "background_color": "#caa368",
