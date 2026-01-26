@@ -195,7 +195,7 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "is_mobile_visible": true,
+            "is_mobile_visible": false,
             "background_color": "#156444",
             "text_color": "#f0674f",
             "title": "Practice Planning Ahead",
