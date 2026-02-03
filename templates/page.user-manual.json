@@ -211,8 +211,8 @@
             "subtitle": "",
             "title": "",
             "button_label": "",
-            "url": "shopify://pages/compliance",
-            "image": "shopify://shop_images/Compliance.jpg",
+            "url": "shopify://pages/super-reversi-user-manual",
+            "image": "shopify://shop_images/3_1b762150-8c85-441a-86c4-7bce5c0d6265.jpg",
             "image_alignment": "50% 50%",
             "custom_text": "rgba(0,0,0,0)",
             "custom_overlay": "rgba(0,0,0,0)"
@@ -232,6 +232,76 @@
         "image_height": "half",
         "text_alignment": "horizontal-center vertical-middle"
       }
+    },
+    "image_with_text_ULcLHd": {
+      "type": "image-with-text",
+      "blocks": {
+        "image_mLAjCk": {
+          "type": "image",
+          "settings": {
+            "subtitle": "",
+            "title": "",
+            "button_label": "",
+            "url": "shopify://pages/compliance",
+            "image": "shopify://shop_images/Compliance.jpg",
+            "image_alignment": "50% 50%",
+            "custom_text": "rgba(0,0,0,0)",
+            "custom_overlay": "rgba(0,0,0,0)"
+          }
+        },
+        "image_jnmwyR": {
+          "type": "image",
+          "settings": {
+            "subtitle": "",
+            "title": "",
+            "button_label": "",
+            "url": "",
+            "image": "shopify://shop_images/e352745a395e7a42b730516424072a53.png",
+            "image_alignment": "50% 50%",
+            "custom_text": "rgba(0,0,0,0)",
+            "custom_overlay": "rgba(0,0,0,0)"
+          }
+        },
+        "image_jdK9EX": {
+          "type": "image",
+          "settings": {
+            "subtitle": "",
+            "title": "",
+            "button_label": "",
+            "url": "",
+            "image": "shopify://shop_images/e352745a395e7a42b730516424072a53_9bc6f578-d809-44f6-b334-838f107499a1.png",
+            "image_alignment": "50% 50%",
+            "custom_text": "rgba(0,0,0,0)",
+            "custom_overlay": "rgba(0,0,0,0)"
+          }
+        },
+        "image_ytTyqz": {
+          "type": "image",
+          "settings": {
+            "subtitle": "",
+            "title": "",
+            "button_label": "",
+            "url": "",
+            "image": "shopify://shop_images/e352745a395e7a42b730516424072a53_9bc6f578-d809-44f6-b334-838f107499a1.png",
+            "image_alignment": "50% 50%",
+            "custom_text": "rgba(0,0,0,0)",
+            "custom_overlay": "rgba(0,0,0,0)"
+          }
+        }
+      },
+      "block_order": [
+        "image_mLAjCk",
+        "image_jnmwyR",
+        "image_jdK9EX",
+        "image_ytTyqz"
+      ],
+      "custom_css": [
+        ".site-box-container {padding: var(--header-padding) var(--site-horizontal-padding); box-sizing: border-box;}"
+      ],
+      "settings": {
+        "image_height": "half",
+        "text_alignment": "horizontal-center vertical-middle"
+      }
     }
   },
   "order": [
@@ -239,6 +309,7 @@
     "166098719235439c52",
     "4836e294-e33c-4e67-871e-9206a942f398",
     "999d3ff2-8c25-4228-be75-e6968f6ad9b9",
-    "image_with_text_yLGHWb"
+    "image_with_text_yLGHWb",
+    "image_with_text_ULcLHd"
   ]
 }
