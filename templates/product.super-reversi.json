@@ -188,7 +188,7 @@
             "detail": "Simply place your piece to flank the opposition and claim their spot. But watch out—every move changes the board instantly. The player who controls the most pieces at the end wins!",
             "detail_color": "",
             "image": "shopify://shop_images/2_1d69a32a-fd3b-427e-93a7-ba0df9e8cbf6.jpg",
-            "mobile_image": "shopify://shop_images/2_0706c253-c1dd-43dc-8a8b-55c5d790d08c.jpg"
+            "mobile_image": "shopify://shop_images/20260203-161158.jpg"
           }
         },
         "content_bNXnpp": {
@@ -278,8 +278,8 @@
             "title_color": "#ffffff",
             "detail": "Think hard before you place. One wrong move is all it takes for your opponent to capture multiple rows and steal the advantage. Can you hold the lead until the final piece is played?",
             "detail_color": "#ffffff",
-            "image": "shopify://shop_images/3_23704543-db8c-46e9-b50e-ba665eb70bc8.jpg",
-            "mobile_image": "shopify://shop_images/3_23704543-db8c-46e9-b50e-ba665eb70bc8.jpg"
+            "image": "shopify://shop_images/20260203-161137.jpg",
+            "mobile_image": "shopify://shop_images/20260203-161137.jpg"
           }
         },
         "content_tXgPLa": {
@@ -295,27 +295,11 @@
             "image": "shopify://shop_images/4_78657871-06be-4760-a879-39d9a8f0eebe.jpg",
             "mobile_image": "shopify://shop_images/4_78657871-06be-4760-a879-39d9a8f0eebe.jpg"
           }
-        },
-        "content_RfhtzL": {
-          "type": "content",
-          "disabled": true,
-          "settings": {
-            "is_reversal": false,
-            "background_color": "#caa368",
-            "text_color": "#f0674f",
-            "title": "Pocket Sized",
-            "title_color": "",
-            "detail": "Fits right in the palm of your hand—no more paper, no more hassle! Just flick a button and play Tic-Tac-Toe anytime, anywhere.",
-            "detail_color": "",
-            "image": "shopify://shop_images/caa368.jpg",
-            "mobile_image": "shopify://shop_images/6_6713b70b-be8c-42a8-8056-d493c1b444fd.jpg"
-          }
         }
       },
       "block_order": [
         "content_C3DrFR",
-        "content_tXgPLa",
-        "content_RfhtzL"
+        "content_tXgPLa"
       ],
       "name": "Giiker Roller Mobile",
       "settings": {}
