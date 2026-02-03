@@ -30,7 +30,6 @@
       "blocks": {
         "banner_6b8AKa": {
           "type": "banner",
-          "disabled": true,
           "settings": {
             "pc_image": "shopify://shop_images/f4806f1617d37edc453d6ad7ed681403.jpg",
             "mobile_image": "shopify://shop_images/05d80934f94e2dcf42a1d4e777497de3.jpg",
@@ -55,6 +54,7 @@
         },
         "banner_6N3TYW": {
           "type": "banner",
+          "disabled": true,
           "settings": {
             "pc_image": "shopify://shop_images/4167x2344_82210ce4-1161-4588-baf8-84ca37544795.jpg",
             "mobile_image": "shopify://shop_images/20260119-162932.jpg",
