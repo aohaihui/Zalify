@@ -118,7 +118,6 @@
       "blocks": {
         "banner_kdtb3z": {
           "type": "banner",
-          "disabled": true,
           "settings": {
             "product_image": "shopify://shop_images/7a2565abef4e4a4174b25c9546a82b5f.png",
             "product_title": "Super Reversi",
