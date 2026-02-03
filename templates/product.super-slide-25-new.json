@@ -340,9 +340,9 @@
         "background_image": "shopify://shop_images/20251118180441_687_99.png",
         "title": "You may also like",
         "product_list": [
+          "giiker-super-reversi",
           "super-blocks",
           "super-decoder",
-          "smart-sudoku",
           "tic-tac-toe-bolt"
         ]
       }
