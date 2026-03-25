@@ -38,9 +38,8 @@
         },
         "text_i9YCcg": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "<h3>Use the code: XMAS15 to get 15% off</h3>",
+            "text": "<h3>Get 20% off with code EASTER20</h3>",
             "text_style": "body"
           }
         },
@@ -61,10 +60,6 @@
         },
         "description": {
           "type": "description",
-          "settings": {}
-        },
-        "fbp_fast_bundle_product_bundles_MFAWJy": {
-          "type": "shopify://apps/fbp-fast-bundle/blocks/product_bundles/9e87fbe2-9041-4c23-acf5-322413994cef",
           "settings": {}
         },
         "collapse_HQqnfc": {
@@ -109,7 +104,6 @@
         "variant_picker",
         "buy_buttons",
         "description",
-        "fbp_fast_bundle_product_bundles_MFAWJy",
         "collapse_HQqnfc",
         "share",
         "93880648-978b-4d31-9200-dc7244fdc064",
@@ -392,6 +386,8 @@
         "loox_reviews_loox_dynamic_section_Eiaarg": {
           "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
           "settings": {
+            "reviews_to_display": "",
+            "default_tab": "automatic",
             "only_photos": false,
             "aggregated": false,
             "limit": 20,

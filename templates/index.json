@@ -30,7 +30,6 @@
       "blocks": {
         "banner_6N3TYW": {
           "type": "banner",
-          "disabled": true,
           "settings": {
             "pc_image": "shopify://shop_images/banner_10a0f480-f23d-4a3a-8b1b-7319336643d8.jpg",
             "mobile_image": "shopify://shop_images/banner_2f40aa6c-b5ea-42cb-9f50-87776d399380.jpg",
