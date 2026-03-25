@@ -28,6 +28,15 @@
     "giiker_home_banner_MFAcbG": {
       "type": "giiker-home-banner",
       "blocks": {
+        "banner_6N3TYW": {
+          "type": "banner",
+          "disabled": true,
+          "settings": {
+            "pc_image": "shopify://shop_images/banner_10a0f480-f23d-4a3a-8b1b-7319336643d8.jpg",
+            "mobile_image": "shopify://shop_images/banner_2f40aa6c-b5ea-42cb-9f50-87776d399380.jpg",
+            "url": "shopify://collections/learning-educational-toys"
+          }
+        },
         "banner_6b8AKa": {
           "type": "banner",
           "settings": {
@@ -51,22 +60,13 @@
             "mobile_image": "shopify://shop_images/app-kv2-_logo.png",
             "url": "shopify://collections/learning-educational-toys"
           }
-        },
-        "banner_6N3TYW": {
-          "type": "banner",
-          "disabled": true,
-          "settings": {
-            "pc_image": "shopify://shop_images/4167x2344_82210ce4-1161-4588-baf8-84ca37544795.jpg",
-            "mobile_image": "shopify://shop_images/20260119-162932.jpg",
-            "url": "shopify://collections/learning-educational-toys"
-          }
         }
       },
       "block_order": [
+        "banner_6N3TYW",
         "banner_6b8AKa",
         "banner_kL4TfF",
-        "banner_rdkVqq",
-        "banner_6N3TYW"
+        "banner_rdkVqq"
       ],
       "name": "Giiker Home Banner",
       "settings": {
@@ -81,7 +81,7 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "title": "<p>Play smarter. </p><p>Stay connected. </p>",
+            "title": "<p>Play smarter</p><p>Stay connected</p>",
             "detail": "<p>GiiKER turns everyday play into meaningful moments—with classic games reimagined through smart tech and family-friendly fun. </p>",
             "background_color": "#f0674f",
             "background_image": "shopify://shop_images/20251117100011_920_911.png",
