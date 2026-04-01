@@ -38,6 +38,7 @@
         },
         "text_i9YCcg": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<h3>Get 20% off with code EASTER20</h3>",
             "text_style": "body"
