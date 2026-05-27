@@ -38,9 +38,8 @@
         },
         "text_i9YCcg": {
           "type": "text",
-          "disabled": true,
           "settings": {
-            "text": "<h3>Get 20% off with code EASTER20</h3>",
+            "text": "<h3><strong>Get 15% off with code GIIFUN15 — offer ends in 3 days</strong></h3>",
             "text_style": "body"
           }
         },
