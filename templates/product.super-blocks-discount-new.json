@@ -1,0 +1,424 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "shogun-helper": {
+      "type": "shogun-helper",
+      "settings": {}
+    },
+    "shogun-above": {
+      "type": "shogun-above",
+      "settings": {}
+    },
+    "23897632015cc15783": {
+      "type": "apps",
+      "settings": {}
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "header": {
+          "type": "header",
+          "settings": {
+            "show_vendor": false,
+            "show_badge": true,
+            "show_reviews": false,
+            "show_tax_info": false,
+            "show_sku": false,
+            "show_barcode": false,
+            "stick_product_header_on_mobile": true
+          }
+        },
+        "text_i9YCcg": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<h3>Get 20% off with code EASTER20</h3>",
+            "text_style": "body"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "variants_style": "radio",
+            "show_color_swatches": true,
+            "show_quantities": "no"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_quantity_selector": true
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {}
+        },
+        "collapse_HQqnfc": {
+          "type": "Collapse",
+          "settings": {
+            "heading": "FAQ Question",
+            "content": "",
+            "page": ""
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {}
+        },
+        "93880648-978b-4d31-9200-dc7244fdc064": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "<p>User Manual： <a href=\"/pages/smart-four-user-manual\" title=\"smart four user manual\"><strong>Click here</strong></a></p>",
+            "text_style": "body"
+          }
+        },
+        "free_delivery_iPJ7mA": {
+          "type": "Free_Delivery",
+          "settings": {
+            "image_1": "shopify://shop_images/685082392297db95b906f751_nex-web-icon-delivery.svg",
+            "title_1": "",
+            "detail_1": "<p>Free Shipping</p><p>(US, CA, UK)</p>",
+            "image_2": "shopify://shop_images/68508239b45fd47ed3fc6f3d_nex-web-icon-shipping.svg",
+            "title_2": "",
+            "detail_2": "<p>30 Days</p><p>Free Returns</p>",
+            "image_3": "shopify://shop_images/68508239939e9f0c8d5eca5a_nex-web-icon-warranty.svg",
+            "title_3": "",
+            "detail_3": "<p>1-Year</p><p>Warranty</p>"
+          }
+        }
+      },
+      "block_order": [
+        "header",
+        "text_i9YCcg",
+        "variant_picker",
+        "buy_buttons",
+        "description",
+        "collapse_HQqnfc",
+        "share",
+        "93880648-978b-4d31-9200-dc7244fdc064",
+        "free_delivery_iPJ7mA"
+      ],
+      "settings": {
+        "gallery_style": "slider",
+        "gallery_aspect": true,
+        "gallery_pagination": "thumbnails",
+        "enable_zoom": true,
+        "enable_video_looping": false,
+        "new_product_11_05": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "disabled": true,
+      "settings": {
+        "heading": "You may also like"
+      }
+    },
+    "shogun-below": {
+      "type": "shogun-below",
+      "disabled": true,
+      "settings": {}
+    },
+    "giiker_product_banner_tzTcDT": {
+      "type": "giiker-product-banner",
+      "name": "Giiker Product Banner",
+      "settings": {
+        "video_picker": "shopify://files/videos/超级积木.mp4",
+        "background_top_image": "shopify://shop_images/Vector_26.png",
+        "background_bottom_image": "shopify://shop_images/Vector_25_1.png"
+      }
+    },
+    "giiker_product_basice_UEt668": {
+      "type": "giiker-product-basice",
+      "name": "Giiker Product Basice",
+      "settings": {
+        "background_left_image": "shopify://shop_images/0037_1.png",
+        "background_left_video": "shopify://files/videos/超级积木使用动画 改.mp4",
+        "background_right_image": "shopify://shop_images/18c4dce920db45da6f1cc05d7a255161_efd43267-9a7f-4a4f-b9d7-65cfecea1f6a.png",
+        "title": "Learn the basics",
+        "detail": "A step-by-step tutorial on how our smart product makes learning a breeze.",
+        "mobile_video": "shopify://files/videos/超级积木使用动画 改.mp4",
+        "mobile_background_image": "shopify://shop_images/super_blocks.png"
+      }
+    },
+    "giiker_product_roller_bdKzfP": {
+      "type": "giiker-product-roller",
+      "blocks": {
+        "content_BFwkR3": {
+          "type": "content",
+          "settings": {
+            "is_reversal": false,
+            "is_mobile_visible": true,
+            "background_color": "#fefefe",
+            "text_color": "#f0674f",
+            "title": "Light Up the Fun",
+            "title_color": "",
+            "detail": "64 shining dots guide you through puzzle after puzzle. Just pick a piece, place it, and watch the puzzle take shape—no setup, just instant play!",
+            "detail_color": "",
+            "image": "shopify://shop_images/fefefe.jpg",
+            "mobile_image": "shopify://shop_images/1_25c272e4-d6cd-4c68-90aa-6f4e7a0049ed.jpg"
+          }
+        },
+        "content_iirxpf": {
+          "type": "content",
+          "settings": {
+            "is_reversal": true,
+            "is_mobile_visible": true,
+            "background_color": "#bdb5ac",
+            "text_color": "#f0674f",
+            "title": "Made for Little Hands",
+            "title_color": "",
+            "detail": "The hollow-out pieces are light, colorful, and perfectly sized for kids. Easy to grab, move, and place, they make puzzle-solving simple while helping tiny hands build control and coordination.",
+            "detail_color": "",
+            "image": "shopify://shop_images/bdb5ac.jpg",
+            "mobile_image": "shopify://shop_images/2_9771d735-4b96-43ad-9b6c-4d85204b4d13.jpg"
+          }
+        },
+        "content_bNXnpp": {
+          "type": "content",
+          "settings": {
+            "is_reversal": false,
+            "is_mobile_visible": false,
+            "background_color": "#ffffff",
+            "text_color": "#f0674f",
+            "title": "Puzzle Paradise",
+            "title_color": "",
+            "detail": "So many puzzles, so much fun! Mix and match 4 colors and 16 shapes to tackle over 1000 brain-teasing challenges that spark creativity and sharpen thinking.",
+            "detail_color": "",
+            "image": "shopify://shop_images/ffffff_4aeaf929-155e-4d12-b621-de019827b990.jpg",
+            "mobile_image": "shopify://shop_images/3_b0b03aff-3032-4443-8cce-e3ae4e789a84.jpg"
+          }
+        },
+        "content_NjbrTD": {
+          "type": "content",
+          "settings": {
+            "is_reversal": false,
+            "is_mobile_visible": false,
+            "background_color": "#e0d5c4",
+            "text_color": "#f0674f",
+            "title": "Smart Playtime",
+            "title_color": "",
+            "detail": "Learning can now be fun! Each puzzle trains little brains to think creatively, spot patterns, and explore colors while keeping kids engaged and entertained.",
+            "detail_color": "",
+            "image": "shopify://shop_images/e0d5c4.jpg",
+            "mobile_image": "shopify://shop_images/4_1c692a47-e3dd-45b8-b5b6-6b10214c770e.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "content_BFwkR3",
+        "content_iirxpf",
+        "content_bNXnpp",
+        "content_NjbrTD"
+      ],
+      "name": "Giiker Product Roller",
+      "settings": {}
+    },
+    "giiker_product_roller_mobile_8NzpJz": {
+      "type": "giiker-product-roller-mobile",
+      "blocks": {
+        "content_C3DrFR": {
+          "type": "content",
+          "settings": {
+            "is_reversal": false,
+            "background_color": "#ffffff",
+            "text_color": "#f0674f",
+            "title": "Puzzle Paradise",
+            "title_color": "#ffffff",
+            "detail": "So many puzzles, so much fun! Mix and match 4 colors and 16 shapes to tackle over 1000 brain-teasing challenges that spark creativity and sharpen thinking.",
+            "detail_color": "#ffffff",
+            "image": "shopify://shop_images/ffffff_4aeaf929-155e-4d12-b621-de019827b990.jpg",
+            "mobile_image": "shopify://shop_images/3_b0b03aff-3032-4443-8cce-e3ae4e789a84.jpg"
+          }
+        },
+        "content_tXgPLa": {
+          "type": "content",
+          "settings": {
+            "is_reversal": false,
+            "background_color": "#e0d5c4",
+            "text_color": "#f0674f",
+            "title": "Smart Playtime",
+            "title_color": "#ffffff",
+            "detail": "Learning can now be fun! Each puzzle trains little brains to think creatively, spot patterns, and explore colors while keeping kids engaged and entertained.",
+            "detail_color": "",
+            "image": "shopify://shop_images/e0d5c4.jpg",
+            "mobile_image": "shopify://shop_images/4_1c692a47-e3dd-45b8-b5b6-6b10214c770e.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "content_C3DrFR",
+        "content_tXgPLa"
+      ],
+      "name": "Giiker Roller Mobile",
+      "settings": {}
+    },
+    "giiker_home_phone_image_7bXqQP": {
+      "type": "giiker-home-phone-image",
+      "blocks": {
+        "phone_VwFerw": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/montessori_by_june (1)_0842cce0-1320-4520-8c9a-d5ae2076022c.mp4"
+          }
+        },
+        "phone_BRw3AA": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/plants_proseccoandparenting.mp4"
+          }
+        },
+        "phone_qyetmr": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/sunnyseedco.mp4"
+          }
+        },
+        "phone_AdeYVn": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/tinkeringwithtwo.mp4"
+          }
+        },
+        "phone_RWdgwj": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/aliceariley.mp4"
+          }
+        },
+        "phone_eNBjqj": {
+          "type": "phone",
+          "settings": {
+            "video": "shopify://files/videos/littlebellafif.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "phone_VwFerw",
+        "phone_BRw3AA",
+        "phone_qyetmr",
+        "phone_AdeYVn",
+        "phone_RWdgwj",
+        "phone_eNBjqj"
+      ],
+      "name": "Giiker Home Phone Image",
+      "settings": {
+        "title": "Families everywhere are loving it.",
+        "background_color": "#ffffff",
+        "arrows_color": true
+      }
+    },
+    "giiker_product_btn_McxzPp": {
+      "type": "giiker-product-btn",
+      "name": "Giiker Product Btn",
+      "settings": {
+        "btn_label": "Explore the Facebook Group",
+        "btn_url": "https://www.facebook.com/groups/1324836238992700"
+      }
+    },
+    "giiker_product_recommended_ndfAnB": {
+      "type": "giiker-product-recommended",
+      "name": "Giiker Product Recommended",
+      "settings": {
+        "background_image": "shopify://shop_images/20251118180441_687_99.png",
+        "title": "You may also like",
+        "product_list": [
+          "giiker-super-reversi",
+          "tic-tac-toe-bolt",
+          "super-decoder",
+          "smart-sudoku"
+        ]
+      }
+    },
+    "giiker_product_icon_yjLqaX": {
+      "type": "giiker-product-icon",
+      "blocks": {
+        "list_JkLgDm": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/x0020_1.png",
+            "title": "<p>Fast & Easy Returns</p>",
+            "detail": "<p>Change your mind? Enjoy hassle-freereturns within 30 days.</p>"
+          }
+        },
+        "list_wLCkfw": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/x0020_1_3.png",
+            "title": "<p>100% secure payment.</p>",
+            "detail": "<p>We accept all major credit cards withShop Pay and PayPal. Your credit cardinformation is private.</p>"
+          }
+        },
+        "list_B3cRM9": {
+          "type": "list",
+          "settings": {
+            "icon": "shopify://shop_images/x0020_1.png",
+            "title": "<p>1 Year Warranty</p>",
+            "detail": "<p>Play smarter, worry less—every GiiKER product is backed by our 1-year warranty, a promise of lasting quality and endless fun.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "list_JkLgDm",
+        "list_wLCkfw",
+        "list_B3cRM9"
+      ],
+      "disabled": true,
+      "name": "Giiker Product Icon",
+      "settings": {
+        "background_image": "shopify://shop_images/Sku_2_1.png"
+      }
+    },
+    "176397094833157073": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_dynamic_section_EN8kTM": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "reviews_to_display": "",
+            "default_tab": "automatic",
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080,
+            "is_sample": false
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_dynamic_section_EN8kTM"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "shogun-helper",
+    "shogun-above",
+    "23897632015cc15783",
+    "main",
+    "product-recommendations",
+    "shogun-below",
+    "giiker_product_banner_tzTcDT",
+    "giiker_product_basice_UEt668",
+    "giiker_product_roller_bdKzfP",
+    "giiker_product_roller_mobile_8NzpJz",
+    "giiker_home_phone_image_7bXqQP",
+    "giiker_product_btn_McxzPp",
+    "giiker_product_recommended_ndfAnB",
+    "giiker_product_icon_yjLqaX",
+    "176397094833157073"
+  ]
+}
