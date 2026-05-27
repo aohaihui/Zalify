@@ -39,7 +39,7 @@
         "text_i9YCcg": {
           "type": "text",
           "settings": {
-            "text": "<h3><strong>Get 15% off with code GIIFUN15 — offer ends in 3 days</strong></h3>",
+            "text": "<h2><strong>Get 15% off with code GIIFUN15 </strong></h2>",
             "text_style": "body"
           }
         },
@@ -49,6 +49,12 @@
             "variants_style": "radio",
             "show_color_swatches": true,
             "show_quantities": "no"
+          }
+        },
+        "essential_countdown_timer_app_block_RHwjmE": {
+          "type": "shopify://apps/essential-countdown-timer/blocks/app-block/722378e8-5a70-4eae-aa89-9e44e8e9f6de",
+          "settings": {
+            "id": "cmpnwmo300025kprw0qcg0888"
           }
         },
         "buy_buttons": {
@@ -102,6 +108,7 @@
         "header",
         "text_i9YCcg",
         "variant_picker",
+        "essential_countdown_timer_app_block_RHwjmE",
         "buy_buttons",
         "description",
         "collapse_HQqnfc",
