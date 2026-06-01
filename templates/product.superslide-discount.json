@@ -44,6 +44,13 @@
             "text_style": "body"
           }
         },
+        "text_fQYhUg": {
+          "type": "text",
+          "settings": {
+            "text": "<h2><strong>Get 15% off with code GIIFUN15 </strong></h2>",
+            "text_style": "body"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -102,6 +109,7 @@
       "block_order": [
         "header",
         "text_i9YCcg",
+        "text_fQYhUg",
         "variant_picker",
         "buy_buttons",
         "description",
