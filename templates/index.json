@@ -38,6 +38,7 @@
         },
         "banner_6b8AKa": {
           "type": "banner",
+          "disabled": true,
           "settings": {
             "pc_image": "shopify://shop_images/20260204-113036.jpg",
             "mobile_image": "shopify://shop_images/05d80934f94e2dcf42a1d4e777497de3.jpg",
