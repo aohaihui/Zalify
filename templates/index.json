@@ -47,7 +47,6 @@
         },
         "banner_kL4TfF": {
           "type": "banner",
-          "disabled": true,
           "settings": {
             "pc_image": "shopify://shop_images/kv1.png",
             "mobile_image": "shopify://shop_images/app-kv1-_logo.png",
@@ -79,6 +78,18 @@
     "giiker_home_image_text_CExhrn": {
       "type": "giiker-home-image-text",
       "blocks": {
+        "content_iFA3pn": {
+          "type": "content",
+          "disabled": true,
+          "settings": {
+            "is_reversal": false,
+            "title": "",
+            "detail": "",
+            "background_color": "",
+            "url": "",
+            "url_label": "Discover More"
+          }
+        },
         "content_tLBKrC": {
           "type": "content",
           "settings": {
@@ -109,6 +120,7 @@
         }
       },
       "block_order": [
+        "content_iFA3pn",
         "content_tLBKrC",
         "content_zr8T3j"
       ],
