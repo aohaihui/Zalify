@@ -28,6 +28,12 @@
     "giiker_home_banner_MFAcbG": {
       "type": "giiker-home-banner",
       "blocks": {
+        "banner_xkMw4a": {
+          "type": "banner",
+          "settings": {
+            "url": ""
+          }
+        },
         "banner_6N3TYW": {
           "type": "banner",
           "settings": {
@@ -62,6 +68,7 @@
         }
       },
       "block_order": [
+        "banner_xkMw4a",
         "banner_6N3TYW",
         "banner_6b8AKa",
         "banner_kL4TfF",
