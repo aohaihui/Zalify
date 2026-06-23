@@ -46,7 +46,6 @@
         },
         "banner_kL4TfF": {
           "type": "banner",
-          "disabled": true,
           "settings": {
             "pc_image": "shopify://shop_images/kv1.png",
             "mobile_image": "shopify://shop_images/app-kv1-_logo.png",
