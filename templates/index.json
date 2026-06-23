@@ -38,6 +38,7 @@
         },
         "banner_6b8AKa": {
           "type": "banner",
+          "disabled": true,
           "settings": {
             "pc_image": "shopify://shop_images/20260204-113036.jpg",
             "mobile_image": "shopify://shop_images/05d80934f94e2dcf42a1d4e777497de3.jpg",
@@ -46,6 +47,7 @@
         },
         "banner_kL4TfF": {
           "type": "banner",
+          "disabled": true,
           "settings": {
             "pc_image": "shopify://shop_images/kv1.png",
             "mobile_image": "shopify://shop_images/app-kv1-_logo.png",
@@ -54,6 +56,7 @@
         },
         "banner_rdkVqq": {
           "type": "banner",
+          "disabled": true,
           "settings": {
             "pc_image": "shopify://shop_images/kv2.png",
             "mobile_image": "shopify://shop_images/app-kv2-_logo.png",
