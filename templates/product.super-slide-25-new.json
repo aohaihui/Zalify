@@ -401,6 +401,10 @@
         "loox_reviews_loox_dynamic_section_H8HmBz"
       ],
       "settings": {}
+    },
+    "shogun-optimizer": {
+      "type": "shogun-optimizer",
+      "settings": {}
     }
   },
   "order": [
@@ -418,6 +422,7 @@
     "giiker_product_btn_McxzPp",
     "giiker_product_recommended_ndfAnB",
     "giiker_product_icon_yjLqaX",
-    "176397134491c0555c"
+    "176397134491c0555c",
+    "shogun-optimizer"
   ]
 }
