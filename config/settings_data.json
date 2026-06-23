@@ -672,6 +672,7 @@
     "sections": {
       "header": {
         "type": "header",
+        "custom_css": [],
         "settings": {
           "logo_src": "shopify://shop_images/giiker-new_logo.png",
           "logo_height": 34,
@@ -680,18 +681,18 @@
           "collection_linklist": "",
           "show_collection_image": true,
           "show_promotion_block": false,
-          "promotion_header": "test",
+          "promotion_header": "deeeee",
           "promotion_content": "<p>666</p>",
           "promotion_button_label": "",
           "promotion_button_link": "",
           "promotion_color_txt": "#111111",
           "promotion_color_bg": "#f3f3f3",
-          "bar_enable": false,
-          "bar_home_only": true,
-          "bar_show_dismiss": true,
-          "bar_content": "Easter Sale: Get 20% off with code EASTER20",
+          "bar_enable": true,
+          "bar_home_only": false,
+          "bar_show_dismiss": false,
+          "bar_content": "Prime Day Deal: 20% OFF with code PRIME20 · Jun. 23–26",
           "bar_link": "",
-          "bar_bgcolor": "#ffd700",
+          "bar_bgcolor": "#FFF701",
           "bar_txtcolor": "#333333"
         }
       },

@@ -30,10 +30,9 @@
       "blocks": {
         "banner_6N3TYW": {
           "type": "banner",
-          "disabled": true,
           "settings": {
-            "pc_image": "shopify://shop_images/banner_10a0f480-f23d-4a3a-8b1b-7319336643d8.jpg",
-            "mobile_image": "shopify://shop_images/banner_2f40aa6c-b5ea-42cb-9f50-87776d399380.jpg",
+            "pc_image": "shopify://shop_images/banner_80956dd5-bac7-4da3-8a88-63f6b320fc88.jpg",
+            "mobile_image": "shopify://shop_images/ChatGPT_Image_2026_6_23_09_42_46.png",
             "url": "shopify://collections/learning-educational-toys"
           }
         },
