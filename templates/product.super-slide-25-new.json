@@ -38,6 +38,7 @@
         },
         "text_i9YCcg": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<h2><strong>Get 20% off with code PRIME20</strong><br/> — Ends June 26<br/></h2>",
             "text_style": "body"

@@ -687,7 +687,7 @@
           "promotion_button_link": "",
           "promotion_color_txt": "#111111",
           "promotion_color_bg": "#f3f3f3",
-          "bar_enable": true,
+          "bar_enable": false,
           "bar_home_only": false,
           "bar_show_dismiss": false,
           "bar_content": "Prime Day Deal: 20% OFF with code PRIME20 · Jun. 23–26",
@@ -887,14 +887,14 @@
         "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
         "disabled": false,
         "settings": {
+          "greeting_message": "",
           "button_color": "#000000",
           "secondary_color": "#ffffff",
           "ternary_color": "#6a6a6a",
           "button_icon": "chat_bubble",
           "button_text": "chat_with_us",
           "button_horizontal_position": "bottom_right",
-          "button_vertical_position": "higher",
-          "greeting_message": ""
+          "button_vertical_position": "higher"
         }
       },
       "12657775114333427046": {

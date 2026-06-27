@@ -30,6 +30,7 @@
       "blocks": {
         "banner_6N3TYW": {
           "type": "banner",
+          "disabled": true,
           "settings": {
             "pc_image": "shopify://shop_images/banner_80956dd5-bac7-4da3-8a88-63f6b320fc88.jpg",
             "mobile_image": "shopify://shop_images/ChatGPT_Image_2026_6_23_11_47_29.png",
