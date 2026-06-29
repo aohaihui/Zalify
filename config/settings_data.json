@@ -820,10 +820,10 @@
           "f4f7fc40-7848-4e76-babc-d464d70230ee"
         ],
         "settings": {
-          "show_payment_icons": false,
-          "show_locale_selector": false,
-          "show_country_selector": false,
-          "custom_background": "#ffffff",
+          "show_payment_icons": true,
+          "show_locale_selector": true,
+          "show_country_selector": true,
+          "custom_background": "#FFFFFF",
           "custom_text": "#000000"
         }
       },
