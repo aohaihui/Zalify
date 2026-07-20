@@ -428,5 +428,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
  {{ '//cdn.shopify.com/s/files/1/0194/1736/6592/t/1/assets/booster-page-speed-optimizer.js?23' | script_tag }}
 
 	{{ shop.metafields.loox["global_html_body"] }}
+  <script>
+  document.addEventListener('click', function (event) {
+    const link = event.target.closest('.js-open-shopify-chat');
+    if (!link) return;
+
+    event.preventDefault();
+
+    const openChat = () => {
+      const chat = document.querySelector('shopify-chat');
+      if (!chat) return false;
+
+      const button = chat.shadowRoot?.querySelector('button');
+      if (button) {
+        button.click();
+        return true;
+      }
+
+      return false;
+    };
+
+    if (!openChat()) {
+      const observer = new MutationObserver(() => {
+        if (openChat()) observer.disconnect();
+      });
+      observer.observe(document.documentElement, {
+        childList: true,
+        subtree: true
+      });
+      setTimeout(() => observer.disconnect(), 8000);
+    }
+  });
+</script>
 </body>
 </html>
