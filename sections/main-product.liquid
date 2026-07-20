@@ -180,7 +180,19 @@
               </span>
 
             {%- when 'description' -%}
-              <div class="rte">{{ product.description }}</div>
+  <div class="rte">
+    {%- if section.settings.new_product_11_05 -%}
+      {%- unless product.description contains 'description-root' -%}
+        <div class="description-root">
+          {{ product.description }}
+        </div>
+      {%- else -%}
+        {{ product.description }}
+      {%- endunless -%}
+    {%- else -%}
+      {{ product.description }}
+    {%- endif -%}
+  </div>
 
             {%- when 'variant_picker' -%}
               <product-variants 
