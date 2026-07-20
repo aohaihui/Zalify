@@ -57,7 +57,7 @@
           "settings": {
             "icon": "shopify://shop_images/contact_us_1.png",
             "background_image": "shopify://shop_images/1_3.png",
-            "detail": "Got something urgent?\n<a href=\"/pages/contact?view=contact-us&show_chat\" title=\"Open chat\">\n  <span style=\"color: rgba(255, 0, 0, 1);\">Chat with us now! 💬</span>\n</a>"
+            "detail": "Got something urgent?\n<a href=\"#\" class=\"js-open-shopify-chat\">\n  <span style=\"color: rgba(255, 0, 0, 1);\">Chat with us now! 💬</span>\n</a>"
           }
         },
         "list_RndYcq": {
