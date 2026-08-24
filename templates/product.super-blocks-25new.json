@@ -38,6 +38,7 @@
         },
         "text_i9YCcg": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<h2><strong>Get 15% off with code </strong>SUBLK15<br/> — Ends August 23</h2>",
             "text_style": "body"
