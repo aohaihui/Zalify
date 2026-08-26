@@ -38,6 +38,7 @@
         },
         "text_i9YCcg": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<h2><strong>Get 15% off with code SUSLD15</strong><br/> — Ends August 30<br/></h2>",
             "text_style": "body"
@@ -153,7 +154,7 @@
       "settings": {
         "background_left_image": "shopify://shop_images/0037_1.png",
         "background_left_video": "shopify://files/videos/华容道使用动画 改.mp4",
-        "background_right_image": "shopify://shop_images/2_737d69eb-98af-4623-a146-d8386aa263c9.png",
+        "background_right_image": "shopify://shop_images/20260826-145811.png",
         "title": "Learn the basics",
         "detail": "A step-by-step tutorial on how our smart product makes learning a breeze.",
         "mobile_video": "shopify://files/videos/华容道使用动画 改.mp4",
@@ -170,12 +171,12 @@
             "is_mobile_visible": true,
             "background_color": "#af6b35",
             "text_color": "#f0674f",
-            "title": "500+ Puzzle Adventures",
+            "title": "Grow With Every Challenge",
             "title_color": "",
-            "detail": "So many puzzles, so much fun! Start with easy wins, then take on trickier challenges that put your puzzle skills to the test.",
+            "detail": "600 puzzles progress from simple to advanced, keeping every level fresh, rewarding, and fun to solve.",
             "detail_color": "",
-            "image": "shopify://shop_images/b16b35.jpg",
-            "mobile_image": "shopify://shop_images/1_c0f20578-14ff-4693-b0e7-8f1f91b7e869.jpg"
+            "image": "shopify://shop_images/CampGuru_2450x4916_AF6B35.png",
+            "mobile_image": "shopify://shop_images/4_d25da62d-bef1-480d-adf0-49737b2ea9f9.jpg"
           }
         },
         "content_iirxpf": {
@@ -183,14 +184,14 @@
           "settings": {
             "is_reversal": true,
             "is_mobile_visible": true,
-            "background_color": "#c2886f",
-            "text_color": "#f0674f",
-            "title": "Slide & Satisfy",
+            "background_color": "#516C55",
+            "text_color": "#F0674F",
+            "title": "Build Smarter Through Play",
             "title_color": "",
-            "detail": "Feel the click and hear the soothing sliding sound with every move — solving puzzles has never felt this good!",
+            "detail": "Practice logic, focus, problem-solving, and spatial reasoning with every challenge you complete.",
             "detail_color": "",
-            "image": "shopify://shop_images/c2886f.jpg",
-            "mobile_image": "shopify://shop_images/2_fb36133c-87ef-4b1a-95f4-887884ed5c6a.jpg"
+            "image": "shopify://shop_images/CampGuru_Image5_2450x4916_667A63_Padded.png",
+            "mobile_image": "shopify://shop_images/5_c18fdfa4-5067-472d-a4c9-3d111fd75803.jpg"
           }
         },
         "content_bNXnpp": {
@@ -198,14 +199,14 @@
           "settings": {
             "is_reversal": false,
             "is_mobile_visible": false,
-            "background_color": "#516c55",
+            "background_color": "#AF6B35",
             "text_color": "#f0674f",
-            "title": "Choose Your Challenge",
+            "title": "Fun Wherever You Go",
             "title_color": "",
-            "detail": "Need a hand? Learn Mode walks you through step by step. Feeling bold? Race the clock in Challenge Mode and see if you can beat the ultimate puzzle race!",
+            "detail": "Perfect for road trips, restaurants, and travel, with screen-free play ready anytime.",
             "detail_color": "",
-            "image": "shopify://shop_images/516c55.jpg",
-            "mobile_image": "shopify://shop_images/3_e3616a3b-f32b-434f-a137-8a59e3a1c495.jpg"
+            "image": "shopify://shop_images/CampGuru_Image6_2450x4916_AF6B35_Corrected.png",
+            "mobile_image": "shopify://shop_images/6_189237df-8235-49a3-b27f-8346789b5c75.jpg"
           }
         },
         "content_NjbrTD": {
@@ -213,14 +214,14 @@
           "settings": {
             "is_reversal": false,
             "is_mobile_visible": false,
-            "background_color": "#1a1a1a",
+            "background_color": "#516C55",
             "text_color": "#f0674f",
-            "title": "Smart Detection Zone",
+            "title": "A Smarter Gift",
             "title_color": "",
-            "detail": "Slide and solve! The game knows when you’ve completed a puzzle and instantly jumps to the next challenge, keeping the fun flowing with every move.",
+            "detail": "A fun, screen-free gift for birthdays, Christmas, holidays, and everyday family moments.",
             "detail_color": "",
-            "image": "shopify://shop_images/1a1a1a.jpg",
-            "mobile_image": "shopify://shop_images/4_4c6be281-19f1-4fda-a7f0-2c1f3f31ac77.jpg"
+            "image": "shopify://shop_images/CampGuru_Image7_2450x4916_516C55_Corrected.png",
+            "mobile_image": "shopify://shop_images/7_2f7180ba-fd86-418f-ae80-fe36d868ad11.jpg"
           }
         }
       },
@@ -240,28 +241,28 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#516c55",
+            "background_color": "#AF6B35",
             "text_color": "#f0674f",
-            "title": "Choose Your Challenge",
+            "title": "Fun Wherever You Go",
             "title_color": "#ffffff",
-            "detail": "Need a hand? Learn Mode walks you through step by step. Feeling bold? Race the clock in Challenge Mode and see if you can beat the ultimate puzzle race!",
+            "detail": "Perfect for road trips, restaurants, and travel, with screen-free play ready anytime.",
             "detail_color": "#ffffff",
-            "image": "shopify://shop_images/516c55.jpg",
-            "mobile_image": "shopify://shop_images/3_e3616a3b-f32b-434f-a137-8a59e3a1c495.jpg"
+            "image": "shopify://shop_images/CampGuru_Image6_2450x4916_AF6B35_Corrected_d2bd5ee4-61cf-41b3-879d-38cf076e9f35.png",
+            "mobile_image": "shopify://shop_images/6_b9430f76-9ed7-4543-ac11-a0d91b8b6d88.jpg"
           }
         },
         "content_tXgPLa": {
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#1a1a1a",
+            "background_color": "#516C55",
             "text_color": "#f0674f",
-            "title": "Smart Detection Zone",
+            "title": "A Smarter Gift",
             "title_color": "#ffffff",
-            "detail": "Slide and solve! The game knows when you’ve completed a puzzle and instantly jumps to the next challenge, keeping the fun flowing with every move.",
+            "detail": "A fun, screen-free gift for birthdays, Christmas, holidays, and everyday family moments.",
             "detail_color": "#ffffff",
-            "image": "shopify://shop_images/1a1a1a.jpg",
-            "mobile_image": "shopify://shop_images/4_4c6be281-19f1-4fda-a7f0-2c1f3f31ac77.jpg"
+            "image": "shopify://shop_images/CampGuru_Image7_2450x4916_516C55_Corrected_60181688-d163-4e38-a317-805140203d63.png",
+            "mobile_image": "shopify://shop_images/7_cb96296c-36e7-4d93-8d0b-b3706a98f048.jpg"
           }
         }
       },
