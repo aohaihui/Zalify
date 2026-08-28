@@ -141,6 +141,7 @@
     },
     "giiker_product_banner_tzTcDT": {
       "type": "giiker-product-banner",
+      "disabled": true,
       "name": "Giiker Product Banner",
       "settings": {
         "video_picker": "shopify://files/videos/华容道.mp4",
@@ -153,12 +154,12 @@
       "name": "Giiker Product Basice",
       "settings": {
         "background_left_image": "shopify://shop_images/0037_1.png",
-        "background_left_video": "shopify://files/videos/华容道使用动画 改.mp4",
+        "background_left_video": "shopify://files/videos/露营达人使用动画.mp4",
         "background_right_image": "shopify://shop_images/20260826-145811.png",
         "title": "Learn the basics",
         "detail": "A step-by-step tutorial on how our smart product makes learning a breeze.",
-        "mobile_video": "shopify://files/videos/华容道使用动画 改.mp4",
-        "mobile_background_image": "shopify://shop_images/super_slide.png"
+        "mobile_video": "shopify://files/videos/露营达人使用动画.mp4",
+        "mobile_background_image": "shopify://shop_images/super_slide_target_680x444_dab23316-ab75-4c50-91ed-d9be187b5a3a.png"
       }
     },
     "giiker_product_roller_bdKzfP": {
@@ -184,14 +185,14 @@
           "settings": {
             "is_reversal": true,
             "is_mobile_visible": true,
-            "background_color": "#516C55",
-            "text_color": "#F0674F",
+            "background_color": "#516c55",
+            "text_color": "#f0674f",
             "title": "Build Smarter Through Play",
             "title_color": "",
             "detail": "Practice logic, focus, problem-solving, and spatial reasoning with every challenge you complete.",
             "detail_color": "",
-            "image": "shopify://shop_images/CampGuru_Image5_2450x4916_667A63_Padded.png",
-            "mobile_image": "shopify://shop_images/5_c18fdfa4-5067-472d-a4c9-3d111fd75803.jpg"
+            "image": "shopify://shop_images/CampGuru_Image5_2450x4916_516C55_Padded.png",
+            "mobile_image": "shopify://shop_images/CampGuru_Image5_2450x4916_516C55_Padded_02272d5e-6d75-4ea8-bbaf-33faedc81417.png"
           }
         },
         "content_bNXnpp": {
@@ -199,7 +200,7 @@
           "settings": {
             "is_reversal": false,
             "is_mobile_visible": false,
-            "background_color": "#AF6B35",
+            "background_color": "#af6b35",
             "text_color": "#f0674f",
             "title": "Fun Wherever You Go",
             "title_color": "",
@@ -214,7 +215,7 @@
           "settings": {
             "is_reversal": false,
             "is_mobile_visible": false,
-            "background_color": "#516C55",
+            "background_color": "#516c55",
             "text_color": "#f0674f",
             "title": "A Smarter Gift",
             "title_color": "",
@@ -241,7 +242,7 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#AF6B35",
+            "background_color": "#af6b35",
             "text_color": "#f0674f",
             "title": "Fun Wherever You Go",
             "title_color": "#ffffff",
@@ -255,7 +256,7 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#516C55",
+            "background_color": "#516c55",
             "text_color": "#f0674f",
             "title": "A Smarter Gift",
             "title_color": "#ffffff",
@@ -284,6 +285,7 @@
         },
         "phone_AdeYVn": {
           "type": "phone",
+          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/a.calm.mom (3).mp4"
           }
@@ -308,6 +310,7 @@
         },
         "phone_eNBjqj": {
           "type": "phone",
+          "disabled": true,
           "settings": {
             "video": "shopify://files/videos/everydayreading (2).mp4"
           }
@@ -321,6 +324,7 @@
         "phone_RWdgwj",
         "phone_eNBjqj"
       ],
+      "disabled": true,
       "name": "Giiker Home Phone Image",
       "settings": {
         "title": "Families everywhere are loving it.",
@@ -330,6 +334,7 @@
     },
     "giiker_product_btn_McxzPp": {
       "type": "giiker-product-btn",
+      "disabled": true,
       "name": "Giiker Product Btn",
       "settings": {
         "btn_label": "Explore the Facebook Group",
@@ -394,6 +399,7 @@
       "blocks": {
         "loox_reviews_loox_dynamic_section_H8HmBz": {
           "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "disabled": true,
           "settings": {
             "reviews_to_display": "",
             "default_tab": "automatic",
