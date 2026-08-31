@@ -38,6 +38,7 @@
         },
         "text_i9YCcg": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<h2><strong>Get 15% off with code SUSLD15</strong><br/> — Ends August 30<br/></h2>",
             "text_style": "body"
