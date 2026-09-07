@@ -37,17 +37,24 @@
             "url": "shopify://collections/learning-educational-toys"
           }
         },
-        "banner_6b8AKa": {
+        "banner_76UJQ8": {
           "type": "banner",
           "disabled": true,
           "settings": {
-            "pc_image": "shopify://shop_images/20260204-113036.jpg",
-            "mobile_image": "shopify://shop_images/05d80934f94e2dcf42a1d4e777497de3.jpg",
+            "url": ""
+          }
+        },
+        "banner_6b8AKa": {
+          "type": "banner",
+          "settings": {
+            "pc_image": "shopify://shop_images/camp-guru-new-arrival-v2.png",
+            "mobile_image": "shopify://shop_images/camp-guru-new-arrival-mobile_484443c6-f636-40b0-8483-6775e4e07235.png",
             "url": "shopify://products/giiker-super-reversi"
           }
         },
         "banner_kL4TfF": {
           "type": "banner",
+          "disabled": true,
           "settings": {
             "pc_image": "shopify://shop_images/kv1.png",
             "mobile_image": "shopify://shop_images/app-kv1-_logo.png",
@@ -65,6 +72,7 @@
       },
       "block_order": [
         "banner_6N3TYW",
+        "banner_76UJQ8",
         "banner_6b8AKa",
         "banner_kL4TfF",
         "banner_rdkVqq"
