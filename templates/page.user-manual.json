@@ -236,6 +236,19 @@
     "image_with_text_ULcLHd": {
       "type": "image-with-text",
       "blocks": {
+        "image_jnmwyR": {
+          "type": "image",
+          "settings": {
+            "subtitle": "",
+            "title": "",
+            "button_label": "",
+            "url": "shopify://pages/camp-guru-user-manual",
+            "image": "shopify://shop_images/exec-c75b6919-3a14-4754-98be-7448e5aeda34.png",
+            "image_alignment": "50% 50%",
+            "custom_text": "rgba(0,0,0,0)",
+            "custom_overlay": "rgba(0,0,0,0)"
+          }
+        },
         "image_mLAjCk": {
           "type": "image",
           "settings": {
@@ -244,19 +257,6 @@
             "button_label": "",
             "url": "shopify://pages/compliance",
             "image": "shopify://shop_images/Compliance.jpg",
-            "image_alignment": "50% 50%",
-            "custom_text": "rgba(0,0,0,0)",
-            "custom_overlay": "rgba(0,0,0,0)"
-          }
-        },
-        "image_jnmwyR": {
-          "type": "image",
-          "settings": {
-            "subtitle": "",
-            "title": "",
-            "button_label": "",
-            "url": "",
-            "image": "shopify://shop_images/e352745a395e7a42b730516424072a53.png",
             "image_alignment": "50% 50%",
             "custom_text": "rgba(0,0,0,0)",
             "custom_overlay": "rgba(0,0,0,0)"
@@ -290,8 +290,8 @@
         }
       },
       "block_order": [
-        "image_mLAjCk",
         "image_jnmwyR",
+        "image_mLAjCk",
         "image_jdK9EX",
         "image_ytTyqz"
       ],
