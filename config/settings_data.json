@@ -823,7 +823,7 @@
           "show_payment_icons": true,
           "show_locale_selector": true,
           "show_country_selector": true,
-          "custom_background": "#FFFFFF",
+          "custom_background": "#ffffff",
           "custom_text": "#000000"
         }
       },
@@ -889,8 +889,6 @@
         "settings": {
           "greeting_message": "",
           "button_color": "#000000",
-          "secondary_color": "#ffffff",
-          "ternary_color": "#6a6a6a",
           "button_icon": "chat_bubble",
           "button_text": "chat_with_us",
           "button_horizontal_position": "bottom_right",
@@ -914,6 +912,11 @@
       },
       "4143866229958350875": {
         "type": "shopify://apps/upsell-koala-bundles/blocks/deals-embed/2b951f75-113f-4fca-bdf3-c92703235716",
+        "disabled": false,
+        "settings": {}
+      },
+      "14364600057676515291": {
+        "type": "shopify://apps/attribuly/blocks/app-embed/cf8e8f22-4c4c-4d92-a8ed-8b49c1c9a9f7",
         "disabled": false,
         "settings": {}
       }
