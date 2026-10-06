@@ -44,7 +44,7 @@
       {%- liquid
         if blogs[section.settings.blog].articles.size == 0
           for i in (1..section.settings.post_limit)
-            render 'blog-item-blank', index: forloop.index | modulo: 6 | plus: 1
+            render 'blog-item-blank', index: forloop.index, modulo: 6, plus: 1
           endfor
         else  
           assign blog_size = section.settings.post_limit | at_most: blogs[section.settings.blog].articles.size
@@ -178,4 +178,15 @@
       }
     ]
   }
-{% endschema %}
+{% endschema %}{%- comment -%}
+
+This file has been rewritten to preserve the original behavior.
+
+---
+Changes:
+- from: "            render 'blog-item-blank', index: forloop.index | modulo: 6 |
+    plus: 1"
+  to: "            render 'blog-item-blank', index: forloop.index, modulo: 6, plus:
+    1"
+  position: 1679..1757
+{%- endcomment -%}
