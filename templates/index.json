@@ -54,7 +54,6 @@
         },
         "banner_kL4TfF": {
           "type": "banner",
-          "disabled": true,
           "settings": {
             "pc_image": "shopify://shop_images/kv1.png",
             "mobile_image": "shopify://shop_images/app-kv1-_logo.png",
@@ -63,6 +62,7 @@
         },
         "banner_rdkVqq": {
           "type": "banner",
+          "disabled": true,
           "settings": {
             "pc_image": "shopify://shop_images/ChatGPT_2026_9_29_17_19_44.png",
             "mobile_image": "shopify://shop_images/b78826247af0e3dceebeb2678fdee525.png",
