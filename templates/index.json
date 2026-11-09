@@ -30,10 +30,9 @@
       "blocks": {
         "banner_6N3TYW": {
           "type": "banner",
-          "disabled": true,
           "settings": {
-            "pc_image": "shopify://shop_images/banner_80956dd5-bac7-4da3-8a88-63f6b320fc88.jpg",
-            "mobile_image": "shopify://shop_images/ChatGPT_Image_2026_6_23_11_47_29.png",
+            "pc_image": "shopify://shop_images/giiker-coupon-code-2880x1620.png",
+            "mobile_image": "shopify://shop_images/giiker-original-hero-coupon-code-3000x4000.png",
             "url": "shopify://collections/learning-educational-toys"
           }
         },
@@ -54,6 +53,7 @@
         },
         "banner_kL4TfF": {
           "type": "banner",
+          "disabled": true,
           "settings": {
             "pc_image": "shopify://shop_images/kv1.png",
             "mobile_image": "shopify://shop_images/app-kv1-_logo.png",
