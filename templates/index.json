@@ -357,6 +357,7 @@
         },
         "phone_nhhnrB": {
           "type": "phone",
+          "disabled": true,
           "settings": {}
         },
         "phone_NpRhG7": {
