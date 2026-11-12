@@ -919,6 +919,11 @@
         "type": "shopify://apps/attribuly/blocks/app-embed/cf8e8f22-4c4c-4d92-a8ed-8b49c1c9a9f7",
         "disabled": false,
         "settings": {}
+      },
+      "5650389829382031567": {
+        "type": "shopify://apps/mixpanel/blocks/app-embed/01a0f81f-2d72-7fa6-b105-9034f106fcc1",
+        "disabled": false,
+        "settings": {}
       }
     }
   }
