@@ -165,19 +165,19 @@
     "giiker_product_roller_bdKzfP": {
       "type": "giiker-product-roller",
       "blocks": {
-        "content_BFwkR3": {
+        "content_bNXnpp": {
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "is_mobile_visible": true,
+            "is_mobile_visible": false,
             "background_color": "#FBF5EA",
             "text_color": "#f0674f",
-            "title": "STUCK? KEEP GOING.",
+            "title": "NEW TWISTS. MORE FUN.",
             "title_color": "",
-            "detail": "Get step-by-step help or watch the full solution.",
+            "detail": "An upgraded Super Slide with two modes and 1,000 puzzles.",
             "detail_color": "",
-            "image": "shopify://shop_images/03.png",
-            "mobile_image": "shopify://shop_images/03_eeb08e06-f9c8-480d-9c73-9c4835176380.png"
+            "image": "shopify://shop_images/01_93365167-504c-4512-8bb7-da80ade1bcbc.png",
+            "mobile_image": "shopify://shop_images/01_8272de32-4bf5-4bd4-a937-1e7b9ae6648f.png"
           }
         },
         "content_iirxpf": {
@@ -195,19 +195,19 @@
             "mobile_image": "shopify://shop_images/02_42449887-bf43-4dd5-8e59-553914d71e6b.png"
           }
         },
-        "content_bNXnpp": {
+        "content_BFwkR3": {
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "is_mobile_visible": false,
+            "is_mobile_visible": true,
             "background_color": "#FBF5EA",
             "text_color": "#f0674f",
-            "title": "Choose Your Challenge",
+            "title": "STUCK? KEEP GOING.",
             "title_color": "",
-            "detail": "Need a hand? Learn Mode walks you through step by step. Feeling bold? Race the clock in Challenge Mode and see if you can beat the ultimate puzzle race!",
+            "detail": "Get step-by-step help or watch the full solution.",
             "detail_color": "",
-            "image": "shopify://shop_images/516c55.jpg",
-            "mobile_image": "shopify://shop_images/3_e3616a3b-f32b-434f-a137-8a59e3a1c495.jpg"
+            "image": "shopify://shop_images/03.png",
+            "mobile_image": "shopify://shop_images/03_eeb08e06-f9c8-480d-9c73-9c4835176380.png"
           }
         },
         "content_NjbrTD": {
@@ -227,9 +227,9 @@
         }
       },
       "block_order": [
-        "content_BFwkR3",
-        "content_iirxpf",
         "content_bNXnpp",
+        "content_iirxpf",
+        "content_BFwkR3",
         "content_NjbrTD"
       ],
       "name": "Giiker Product Roller",
