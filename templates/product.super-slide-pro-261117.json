@@ -140,6 +140,7 @@
     },
     "giiker_product_banner_tzTcDT": {
       "type": "giiker-product-banner",
+      "disabled": true,
       "name": "Giiker Product Banner",
       "settings": {
         "video_picker": "shopify://files/videos/华容道.mp4",
@@ -149,6 +150,7 @@
     },
     "giiker_product_basice_UEt668": {
       "type": "giiker-product-basice",
+      "disabled": true,
       "name": "Giiker Product Basice",
       "settings": {
         "background_left_image": "shopify://shop_images/0037_1.png",
@@ -168,14 +170,14 @@
           "settings": {
             "is_reversal": false,
             "is_mobile_visible": true,
-            "background_color": "#af6b35",
+            "background_color": "#FBF5EA",
             "text_color": "#f0674f",
-            "title": "500+ Puzzle Adventures",
+            "title": "STUCK? KEEP GOING.",
             "title_color": "",
-            "detail": "So many puzzles, so much fun! Start with easy wins, then take on trickier challenges that put your puzzle skills to the test.",
+            "detail": "Get step-by-step help or watch the full solution.",
             "detail_color": "",
-            "image": "shopify://shop_images/b16b35.jpg",
-            "mobile_image": "shopify://shop_images/1_c0f20578-14ff-4693-b0e7-8f1f91b7e869.jpg"
+            "image": "shopify://shop_images/03.png",
+            "mobile_image": "shopify://shop_images/03_eeb08e06-f9c8-480d-9c73-9c4835176380.png"
           }
         },
         "content_iirxpf": {
@@ -185,12 +187,12 @@
             "is_mobile_visible": true,
             "background_color": "#c2886f",
             "text_color": "#f0674f",
-            "title": "Slide & Satisfy",
+            "title": "1,000 PUZZLES.",
             "title_color": "",
-            "detail": "Feel the click and hear the soothing sliding sound with every move — solving puzzles has never felt this good!",
+            "detail": "560 Classic puzzles. 440 Pro puzzles. Start easy, then level up.",
             "detail_color": "",
-            "image": "shopify://shop_images/c2886f.jpg",
-            "mobile_image": "shopify://shop_images/2_fb36133c-87ef-4b1a-95f4-887884ed5c6a.jpg"
+            "image": "shopify://shop_images/02.png",
+            "mobile_image": "shopify://shop_images/02_42449887-bf43-4dd5-8e59-553914d71e6b.png"
           }
         },
         "content_bNXnpp": {
@@ -320,6 +322,7 @@
         "phone_RWdgwj",
         "phone_eNBjqj"
       ],
+      "disabled": true,
       "name": "Giiker Home Phone Image",
       "settings": {
         "title": "Families everywhere are loving it.",
@@ -329,6 +332,7 @@
     },
     "giiker_product_btn_McxzPp": {
       "type": "giiker-product-btn",
+      "disabled": true,
       "name": "Giiker Product Btn",
       "settings": {
         "btn_label": "Explore the Facebook Group",
@@ -393,6 +397,7 @@
       "blocks": {
         "loox_reviews_loox_dynamic_section_H8HmBz": {
           "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "disabled": true,
           "settings": {
             "reviews_to_display": "",
             "default_tab": "automatic",
