@@ -165,12 +165,12 @@
     "giiker_product_roller_bdKzfP": {
       "type": "giiker-product-roller",
       "blocks": {
-        "content_bNXnpp": {
+        "content_iirxpf": {
           "type": "content",
           "settings": {
-            "is_reversal": false,
-            "is_mobile_visible": false,
-            "background_color": "#fbf5ea",
+            "is_reversal": true,
+            "is_mobile_visible": true,
+            "background_color": "#FBF5EA",
             "text_color": "#f0674f",
             "title": "NEW TWISTS. MORE FUN.",
             "title_color": "",
@@ -180,14 +180,14 @@
             "mobile_image": "shopify://shop_images/01_8272de32-4bf5-4bd4-a937-1e7b9ae6648f.png"
           }
         },
-        "content_iirxpf": {
+        "content_bNXnpp": {
           "type": "content",
           "settings": {
-            "is_reversal": true,
-            "is_mobile_visible": true,
-            "background_color": "#e8dff3",
+            "is_reversal": false,
+            "is_mobile_visible": false,
+            "background_color": "#E8DFF3",
             "text_color": "#f0674f",
-            "title": "1,000 PUZZLES.",
+            "title": "1,000 PUZZLES. KEEP EXPLORING.",
             "title_color": "",
             "detail": "Start with easy wins, then take on trickier challenges. With 560 Classic puzzles and 440 Pro puzzles, there’s always another route to discover.",
             "detail_color": "",
@@ -227,8 +227,8 @@
         }
       },
       "block_order": [
-        "content_bNXnpp",
         "content_iirxpf",
+        "content_bNXnpp",
         "content_BFwkR3",
         "content_NjbrTD"
       ],
