@@ -185,7 +185,7 @@
           "settings": {
             "is_reversal": true,
             "is_mobile_visible": true,
-            "background_color": "#c2886f",
+            "background_color": "#E8DFF3",
             "text_color": "#f0674f",
             "title": "1,000 PUZZLES.",
             "title_color": "",
@@ -200,7 +200,7 @@
           "settings": {
             "is_reversal": false,
             "is_mobile_visible": false,
-            "background_color": "#516c55",
+            "background_color": "#FBF5EA",
             "text_color": "#f0674f",
             "title": "Choose Your Challenge",
             "title_color": "",
@@ -215,14 +215,14 @@
           "settings": {
             "is_reversal": false,
             "is_mobile_visible": false,
-            "background_color": "#1a1a1a",
+            "background_color": "#E8DFF3",
             "text_color": "#f0674f",
-            "title": "Smart Detection Zone",
+            "title": "PACK UP. PLAY ON.",
             "title_color": "",
-            "detail": "Slide and solve! The game knows when you’ve completed a puzzle and instantly jumps to the next challenge, keeping the fun flowing with every move.",
+            "detail": "Store the pieces and take the fun along.",
             "detail_color": "",
-            "image": "shopify://shop_images/1a1a1a.jpg",
-            "mobile_image": "shopify://shop_images/4_4c6be281-19f1-4fda-a7f0-2c1f3f31ac77.jpg"
+            "image": "shopify://shop_images/04.png",
+            "mobile_image": "shopify://shop_images/04_3cb3d4bf-80ee-4601-9343-9a711e12845f.png"
           }
         }
       },
