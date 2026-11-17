@@ -170,11 +170,11 @@
           "settings": {
             "is_reversal": false,
             "is_mobile_visible": false,
-            "background_color": "#FBF5EA",
+            "background_color": "#fbf5ea",
             "text_color": "#f0674f",
             "title": "NEW TWISTS. MORE FUN.",
             "title_color": "",
-            "detail": "An upgraded Super Slide with two modes and 1,000 puzzles.",
+            "detail": "An upgraded Super Slide with two ways to play. Clear a path for one big orange target in Classic Mode, or guide two smaller targets to the exit in Pro Mode.",
             "detail_color": "",
             "image": "shopify://shop_images/01_93365167-504c-4512-8bb7-da80ade1bcbc.png",
             "mobile_image": "shopify://shop_images/01_8272de32-4bf5-4bd4-a937-1e7b9ae6648f.png"
@@ -185,11 +185,11 @@
           "settings": {
             "is_reversal": true,
             "is_mobile_visible": true,
-            "background_color": "#E8DFF3",
+            "background_color": "#e8dff3",
             "text_color": "#f0674f",
             "title": "1,000 PUZZLES.",
             "title_color": "",
-            "detail": "560 Classic puzzles. 440 Pro puzzles. Start easy, then level up.",
+            "detail": "Start with easy wins, then take on trickier challenges. With 560 Classic puzzles and 440 Pro puzzles, there’s always another route to discover.",
             "detail_color": "",
             "image": "shopify://shop_images/02.png",
             "mobile_image": "shopify://shop_images/02_42449887-bf43-4dd5-8e59-553914d71e6b.png"
@@ -200,11 +200,11 @@
           "settings": {
             "is_reversal": false,
             "is_mobile_visible": true,
-            "background_color": "#FBF5EA",
+            "background_color": "#fbf5ea",
             "text_color": "#f0674f",
             "title": "STUCK? KEEP GOING.",
             "title_color": "",
-            "detail": "Get step-by-step help or watch the full solution.",
+            "detail": "Need a little help? Follow the solution step by step, watch a full playthrough, or preview the final layout before giving it another go.",
             "detail_color": "",
             "image": "shopify://shop_images/03.png",
             "mobile_image": "shopify://shop_images/03_eeb08e06-f9c8-480d-9c73-9c4835176380.png"
@@ -215,11 +215,11 @@
           "settings": {
             "is_reversal": false,
             "is_mobile_visible": false,
-            "background_color": "#E8DFF3",
+            "background_color": "#e8dff3",
             "text_color": "#f0674f",
             "title": "PACK UP. PLAY ON.",
             "title_color": "",
-            "detail": "Store the pieces and take the fun along.",
+            "detail": "Keep the extra pieces in the dedicated storage case and take the fun along. Perfect for road trips, travel breaks, and quiet moments at home.",
             "detail_color": "",
             "image": "shopify://shop_images/04.png",
             "mobile_image": "shopify://shop_images/04_3cb3d4bf-80ee-4601-9343-9a711e12845f.png"
@@ -242,28 +242,28 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#516c55",
+            "background_color": "#FBF5EA",
             "text_color": "#f0674f",
-            "title": "Choose Your Challenge",
+            "title": "STUCK? KEEP GOING.",
             "title_color": "#ffffff",
-            "detail": "Need a hand? Learn Mode walks you through step by step. Feeling bold? Race the clock in Challenge Mode and see if you can beat the ultimate puzzle race!",
+            "detail": "Need a little help? Follow the solution step by step, watch a full playthrough, or preview the final layout before giving it another go.",
             "detail_color": "#ffffff",
-            "image": "shopify://shop_images/516c55.jpg",
-            "mobile_image": "shopify://shop_images/3_e3616a3b-f32b-434f-a137-8a59e3a1c495.jpg"
+            "image": "shopify://shop_images/03.png",
+            "mobile_image": "shopify://shop_images/03_eeb08e06-f9c8-480d-9c73-9c4835176380.png"
           }
         },
         "content_tXgPLa": {
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#1a1a1a",
+            "background_color": "#E8DFF3",
             "text_color": "#f0674f",
-            "title": "Smart Detection Zone",
+            "title": "PACK UP. PLAY ON.",
             "title_color": "#ffffff",
-            "detail": "Slide and solve! The game knows when you’ve completed a puzzle and instantly jumps to the next challenge, keeping the fun flowing with every move.",
+            "detail": "Keep the extra pieces in the dedicated storage case and take the fun along. Perfect for road trips, travel breaks, and quiet moments at home.",
             "detail_color": "#ffffff",
-            "image": "shopify://shop_images/1a1a1a.jpg",
-            "mobile_image": "shopify://shop_images/4_4c6be281-19f1-4fda-a7f0-2c1f3f31ac77.jpg"
+            "image": "shopify://shop_images/04.png",
+            "mobile_image": "shopify://shop_images/04_3cb3d4bf-80ee-4601-9343-9a711e12845f.png"
           }
         }
       },
