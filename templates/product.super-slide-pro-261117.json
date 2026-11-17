@@ -170,7 +170,7 @@
           "settings": {
             "is_reversal": true,
             "is_mobile_visible": true,
-            "background_color": "#FBF5EA",
+            "background_color": "#fbf5ea",
             "text_color": "#f0674f",
             "title": "NEW TWISTS. MORE FUN.",
             "title_color": "",
@@ -180,11 +180,11 @@
             "mobile_image": "shopify://shop_images/01_8272de32-4bf5-4bd4-a937-1e7b9ae6648f.png"
           }
         },
-        "content_bNXnpp": {
+        "content_BFwkR3": {
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "is_mobile_visible": false,
+            "is_mobile_visible": true,
             "background_color": "#E8DFF3",
             "text_color": "#f0674f",
             "title": "1,000 PUZZLES. KEEP EXPLORING.",
@@ -195,12 +195,12 @@
             "mobile_image": "shopify://shop_images/02_42449887-bf43-4dd5-8e59-553914d71e6b.png"
           }
         },
-        "content_BFwkR3": {
+        "content_bNXnpp": {
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "is_mobile_visible": true,
-            "background_color": "#fbf5ea",
+            "is_mobile_visible": false,
+            "background_color": "#FBF5EA",
             "text_color": "#f0674f",
             "title": "STUCK? KEEP GOING.",
             "title_color": "",
@@ -228,8 +228,8 @@
       },
       "block_order": [
         "content_iirxpf",
-        "content_bNXnpp",
         "content_BFwkR3",
+        "content_bNXnpp",
         "content_NjbrTD"
       ],
       "name": "Giiker Product Roller",
@@ -242,7 +242,7 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#FBF5EA",
+            "background_color": "#fbf5ea",
             "text_color": "#f0674f",
             "title": "STUCK? KEEP GOING.",
             "title_color": "#ffffff",
@@ -256,7 +256,7 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#E8DFF3",
+            "background_color": "#e8dff3",
             "text_color": "#f0674f",
             "title": "PACK UP. PLAY ON.",
             "title_color": "#ffffff",
