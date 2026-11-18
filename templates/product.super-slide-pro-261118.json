@@ -187,9 +187,9 @@
             "is_mobile_visible": true,
             "background_color": "#E8DFF3",
             "text_color": "#f0674f",
-            "title": "1,000 PUZZLES.",
+            "title": "1,000 PUZZLES. KEEP EXPLORING.",
             "title_color": "",
-            "detail": "560 Classic puzzles. 440 Pro puzzles. Start easy, then level up.",
+            "detail": "Start with easy wins, then take on trickier challenges. With 560 Classic puzzles and 440 Pro puzzles, there’s always another route to discover.",
             "detail_color": "",
             "image": "shopify://shop_images/02.png",
             "mobile_image": "shopify://shop_images/02_42449887-bf43-4dd5-8e59-553914d71e6b.png"
@@ -200,14 +200,14 @@
           "settings": {
             "is_reversal": false,
             "is_mobile_visible": false,
-            "background_color": "#af6b35",
+            "background_color": "#FBF5EA",
             "text_color": "#f0674f",
-            "title": "Fun Wherever You Go",
+            "title": "STUCK? KEEP GOING.",
             "title_color": "",
-            "detail": "Perfect for road trips, restaurants, and travel, with screen-free play ready anytime.",
+            "detail": "Need a little help? Follow the solution step by step, watch a full playthrough, or preview the final layout before giving it another go.",
             "detail_color": "",
-            "image": "shopify://shop_images/CampGuru_Image6_2450x4916_AF6B35_Corrected.png",
-            "mobile_image": "shopify://shop_images/6_189237df-8235-49a3-b27f-8346789b5c75.jpg"
+            "image": "shopify://shop_images/03.png",
+            "mobile_image": "shopify://shop_images/03_eeb08e06-f9c8-480d-9c73-9c4835176380.png"
           }
         },
         "content_NjbrTD": {
@@ -217,12 +217,12 @@
             "is_mobile_visible": false,
             "background_color": "#516c55",
             "text_color": "#f0674f",
-            "title": "A Smarter Gift",
+            "title": "PACK UP. PLAY ON.",
             "title_color": "",
-            "detail": "A fun, screen-free gift for birthdays, Christmas, holidays, and everyday family moments.",
+            "detail": "Keep the extra pieces in the dedicated storage case and take the fun along. Perfect for road trips, travel breaks, and quiet moments at home.",
             "detail_color": "",
-            "image": "shopify://shop_images/CampGuru_Image7_2450x4916_516C55_Corrected.png",
-            "mobile_image": "shopify://shop_images/7_2f7180ba-fd86-418f-ae80-fe36d868ad11.jpg"
+            "image": "shopify://shop_images/04.png",
+            "mobile_image": "shopify://shop_images/04_3cb3d4bf-80ee-4601-9343-9a711e12845f.png"
           }
         }
       },
