@@ -242,28 +242,28 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#af6b35",
+            "background_color": "#FBF5EA",
             "text_color": "#f0674f",
-            "title": "Fun Wherever You Go",
+            "title": "STUCK? KEEP GOING.",
             "title_color": "#ffffff",
-            "detail": "Perfect for road trips, restaurants, and travel, with screen-free play ready anytime.",
+            "detail": "Need a little help? Follow the solution step by step, watch a full playthrough, or preview the final layout before giving it another go.",
             "detail_color": "#ffffff",
-            "image": "shopify://shop_images/CampGuru_Image6_2450x4916_AF6B35_Corrected_d2bd5ee4-61cf-41b3-879d-38cf076e9f35.png",
-            "mobile_image": "shopify://shop_images/6_b9430f76-9ed7-4543-ac11-a0d91b8b6d88.jpg"
+            "image": "shopify://shop_images/03.png",
+            "mobile_image": "shopify://shop_images/03_eeb08e06-f9c8-480d-9c73-9c4835176380.png"
           }
         },
         "content_tXgPLa": {
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#516c55",
+            "background_color": "#E8DFF3",
             "text_color": "#f0674f",
-            "title": "A Smarter Gift",
+            "title": "PACK UP. PLAY ON.",
             "title_color": "#ffffff",
-            "detail": "A fun, screen-free gift for birthdays, Christmas, holidays, and everyday family moments.",
+            "detail": "Keep the extra pieces in the dedicated storage case and take the fun along. Perfect for road trips, travel breaks, and quiet moments at home.",
             "detail_color": "#ffffff",
-            "image": "shopify://shop_images/CampGuru_Image7_2450x4916_516C55_Corrected_60181688-d163-4e38-a317-805140203d63.png",
-            "mobile_image": "shopify://shop_images/7_cb96296c-36e7-4d93-8d0b-b3706a98f048.jpg"
+            "image": "shopify://shop_images/04.png",
+            "mobile_image": "shopify://shop_images/04_3cb3d4bf-80ee-4601-9343-9a711e12845f.png"
           }
         }
       },
