@@ -140,6 +140,7 @@
     },
     "giiker_product_banner_tzTcDT": {
       "type": "giiker-product-banner",
+      "disabled": true,
       "name": "Giiker Product Banner",
       "settings": {
         "video_picker": "shopify://files/videos/露营达人 9.7英文版.mp4",
@@ -149,6 +150,7 @@
     },
     "giiker_product_basice_UEt668": {
       "type": "giiker-product-basice",
+      "disabled": true,
       "name": "Giiker Product Basice",
       "settings": {
         "background_left_image": "shopify://shop_images/0037_1.png",
@@ -168,14 +170,14 @@
           "settings": {
             "is_reversal": false,
             "is_mobile_visible": true,
-            "background_color": "#af6b35",
+            "background_color": "#FBF5EA",
             "text_color": "#f0674f",
-            "title": "Grow With Every Challenge",
+            "title": "NEW TWISTS. MORE FUN.",
             "title_color": "",
-            "detail": "600 puzzles progress from simple to advanced, keeping every level fresh, rewarding, and fun to solve.",
+            "detail": "An upgraded Super Slide with two ways to play. Clear a path for one big orange target in Classic Mode, or guide two smaller targets to the exit in Pro Mode.",
             "detail_color": "",
-            "image": "shopify://shop_images/CampGuru_2450x4916_AF6B35.png",
-            "mobile_image": "shopify://shop_images/4_d25da62d-bef1-480d-adf0-49737b2ea9f9.jpg"
+            "image": "shopify://shop_images/01_93365167-504c-4512-8bb7-da80ade1bcbc.png",
+            "mobile_image": "shopify://shop_images/01_8272de32-4bf5-4bd4-a937-1e7b9ae6648f.png"
           }
         },
         "content_iirxpf": {
@@ -183,14 +185,14 @@
           "settings": {
             "is_reversal": true,
             "is_mobile_visible": true,
-            "background_color": "#516c55",
+            "background_color": "#E8DFF3",
             "text_color": "#f0674f",
-            "title": "Build Smarter Through Play",
+            "title": "1,000 PUZZLES.",
             "title_color": "",
-            "detail": "Practice logic, focus, problem-solving, and spatial reasoning with every challenge you complete.",
+            "detail": "560 Classic puzzles. 440 Pro puzzles. Start easy, then level up.",
             "detail_color": "",
-            "image": "shopify://shop_images/CampGuru_Image5_2450x4916_516C55_Padded.png",
-            "mobile_image": "shopify://shop_images/5_c18fdfa4-5067-472d-a4c9-3d111fd75803.jpg"
+            "image": "shopify://shop_images/02.png",
+            "mobile_image": "shopify://shop_images/02_42449887-bf43-4dd5-8e59-553914d71e6b.png"
           }
         },
         "content_bNXnpp": {
