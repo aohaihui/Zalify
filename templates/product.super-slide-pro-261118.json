@@ -39,7 +39,7 @@
         "text_i9YCcg": {
           "type": "text",
           "settings": {
-            "text": "<h2><strong>Get 15% off with code EARLYBIRD15</strong><br/></h2>",
+            "text": "<h2><strong>Get 20% off with code BFCM20</strong><br/></h2>",
             "text_style": "body"
           }
         },
@@ -170,7 +170,7 @@
           "settings": {
             "is_reversal": false,
             "is_mobile_visible": true,
-            "background_color": "#FBF5EA",
+            "background_color": "#fbf5ea",
             "text_color": "#f0674f",
             "title": "NEW TWISTS. MORE FUN.",
             "title_color": "",
@@ -185,7 +185,7 @@
           "settings": {
             "is_reversal": true,
             "is_mobile_visible": true,
-            "background_color": "#E8DFF3",
+            "background_color": "#e8dff3",
             "text_color": "#f0674f",
             "title": "1,000 PUZZLES. KEEP EXPLORING.",
             "title_color": "",
@@ -200,7 +200,7 @@
           "settings": {
             "is_reversal": false,
             "is_mobile_visible": false,
-            "background_color": "#FBF5EA",
+            "background_color": "#fbf5ea",
             "text_color": "#f0674f",
             "title": "STUCK? KEEP GOING.",
             "title_color": "",
@@ -215,7 +215,7 @@
           "settings": {
             "is_reversal": false,
             "is_mobile_visible": false,
-            "background_color": "#E8DFF3",
+            "background_color": "#e8dff3",
             "text_color": "#f0674f",
             "title": "PACK UP. PLAY ON.",
             "title_color": "",
@@ -242,7 +242,7 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#FBF5EA",
+            "background_color": "#fbf5ea",
             "text_color": "#f0674f",
             "title": "STUCK? KEEP GOING.",
             "title_color": "#ffffff",
@@ -256,7 +256,7 @@
           "type": "content",
           "settings": {
             "is_reversal": false,
-            "background_color": "#E8DFF3",
+            "background_color": "#e8dff3",
             "text_color": "#f0674f",
             "title": "PACK UP. PLAY ON.",
             "title_color": "#ffffff",
