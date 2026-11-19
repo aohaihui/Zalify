@@ -38,6 +38,7 @@
         },
         "text_i9YCcg": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<h2><strong>Get 20% off with code BFCM20</strong></h2>",
             "text_style": "body"
@@ -56,6 +57,12 @@
           "settings": {
             "show_dynamic_checkout": true,
             "show_quantity_selector": true
+          }
+        },
+        "custom_liquid_JPakEW": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div style=\"background:#FFE6A4; border:2px solid #242424; border-radius:14px; padding:15px; margin:14px 0; color:#242424;\">\n\n  <div style=\"font-size:12px; font-weight:700; margin-bottom:12px;\">\n    🎁 MORE GAMES, MORE SAVINGS\n  </div>\n\n  <div style=\"display:flex; align-items:center; gap:14px; margin-bottom:14px;\">\n\n    <img\n      src=\"https://cdn.shopify.com/s/files/1/0609/5611/5196/files/02-best-sellers-trio-yellow_c7aaa55c-efb9-4f2a-8721-77f2ce54c859.png?v=1795081996\"\n      alt=\"GiiKER Best Sellers Bundle\"\n      loading=\"lazy\"\n      style=\"width:38%; max-width:160px; height:auto; object-fit:contain; border-radius:8px; background:#fff;\"\n    >\n\n    <div style=\"flex:1; min-width:0;\">\n      <div style=\"font-size:20px; font-weight:800; line-height:1.25; margin-bottom:8px;\">\n        Bundle & Save Up to 30%\n      </div>\n      <div style=\"font-size:13px; line-height:1.5;\">\n        More games, more fun, bigger savings! Explore our exclusive game bundles.\n      </div>\n    </div>\n\n  </div>\n\n  <a href=\"/collections/gift-bundles\"\n     style=\"display:block; background:#171717; color:#fff; text-align:center; text-decoration:none; border-radius:8px; padding:12px; font-size:14px; font-weight:700;\">\n    Shop Bundles & Save →\n  </a>\n\n</div>"
           }
         },
         "upsell_koala_bundles_deals_block_6nW3yN": {
@@ -109,6 +116,7 @@
         "text_i9YCcg",
         "variant_picker",
         "buy_buttons",
+        "custom_liquid_JPakEW",
         "upsell_koala_bundles_deals_block_6nW3yN",
         "description",
         "collapse_HQqnfc",
